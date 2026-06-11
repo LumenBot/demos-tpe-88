@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FFC400">
+<title>Palomino Pizza — Pizzeria & livraison à Rambervillers (88700)</title>
+<meta name="description" content="Palomino Pizza, pizzeria à Rambervillers : pizzas artisanales livrées jusqu'à 7 km, à emporter aussi. Ouvert 7 j/7 midi et soir. 22 rue Carnot, 88700 Rambervillers.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap"></noscript>
+
+<!-- [À REMPLACER] Horaires précis (créneaux exacts midi/soir) à confirmer avec l'établissement ; téléphone volontairement omis (non public à ce jour). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Palomino Pizza",
+  "servesCuisine": "Pizza",
+  "priceRange": "€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "22 rue Carnot",
+    "postalCode": "88700",
+    "addressLocality": "Rambervillers",
+    "addressCountry": "FR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4",
+    "reviewCount": "8"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Saturday","Sunday"], "opens": "11:30", "closes": "13:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "18:00", "closes": "21:30"}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --jaune:#FFC400;
+  --noir:#111111;
+  --blanc:#ffffff;
+  --bord:3px solid var(--noir);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{overflow-x:hidden}
+@media (prefers-reduced-motion: no-preference){
+  html{scroll-behavior:smooth}
+}
+body{
+  margin:0;
+  font-family:'Space Grotesk',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  font-size:1rem;line-height:1.55;
+  color:var(--noir);background:var(--blanc);
+  overflow-x:hidden;
+  padding-bottom:104px; /* bandeau légal fixe */
+}
+@media (min-width:720px){body{padding-bottom:72px}}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3,.anton{
+  font-family:Anton,'Arial Narrow',Impact,sans-serif;
+  font-weight:400;text-transform:uppercase;
+  letter-spacing:.04em;line-height:1.05;margin:0 0 .5em;
+}
+p{margin:0 0 1em}
+a{color:inherit}
+:focus-visible{outline:3px solid currentColor;outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-999px;top:0;background:var(--noir);color:var(--jaune);padding:12px 18px;z-index:100;font-weight:700}
+.skip:focus{left:8px;top:8px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* ---------- Boutons & stickers ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  min-height:48px;padding:12px 24px;
+  border:var(--bord);cursor:pointer;text-decoration:none;
+  font:700 1.05rem 'Space Grotesk',system-ui,sans-serif;text-transform:uppercase;
+  letter-spacing:.03em;transition:transform .12s,box-shadow .12s;
+}
+.btn-dark{background:var(--noir);color:var(--jaune);box-shadow:6px 6px 0 var(--blanc)}
+.btn-yellow{background:var(--jaune);color:var(--noir);box-shadow:6px 6px 0 var(--noir)}
+.btn-white{background:var(--blanc);color:var(--noir);box-shadow:6px 6px 0 var(--noir)}
+.btn:active{transform:translate(4px,4px);box-shadow:2px 2px 0 var(--noir)}
+.btn-dark:active{box-shadow:2px 2px 0 var(--blanc)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.sticker{
+  display:inline-block;background:var(--noir);color:var(--jaune);
+  font-family:Anton,'Arial Narrow',Impact,sans-serif;text-transform:uppercase;
+  padding:8px 16px;font-size:1.05rem;letter-spacing:.05em;
+  transform:rotate(-4deg);box-shadow:5px 5px 0 rgba(17,17,17,.25);
+}
+.sticker-jaune{background:var(--jaune);color:var(--noir);border:var(--bord);box-shadow:5px 5px 0 var(--noir)}
+
+/* ---------- Header ---------- */
+header.top{
+  position:sticky;top:0;z-index:50;
+  background:var(--noir);color:var(--jaune);
+  border-bottom:4px solid var(--jaune);
+}
+.top-in{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:60px;max-width:1100px;margin:0 auto;padding:6px 16px}
+.brand{font-family:Anton,'Arial Narrow',Impact,sans-serif;font-size:1.35rem;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;display:inline-flex;align-items:center;gap:8px;min-height:44px}
+.brand svg{flex:none}
+.nav-links{display:flex;gap:4px;align-items:center}
+.nav-links a{color:var(--blanc);text-decoration:none;font-weight:700;font-size:.9rem;padding:12px 10px;min-height:44px;display:inline-flex;align-items:center}
+.nav-links a:hover{color:var(--jaune)}
+.top-cta{min-height:44px;padding:8px 16px;font-size:.9rem;box-shadow:none;border-color:var(--jaune)}
+@media (max-width:600px){.nav-links{display:none}}
+
+/* ---------- Hero ---------- */
+.hero{background:var(--jaune);padding:44px 0 56px;position:relative;overflow:hidden}
+.hero-grid{display:grid;gap:36px;align-items:center}
+@media (min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+.hero h1{font-size:clamp(2.4rem,8vw,4.2rem);max-width:14ch;overflow-wrap:break-word}
+.hero .sub{font-size:1.15rem;font-weight:500;max-width:40ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:18px;margin-top:24px}
+.hero-fig{margin:0;position:relative;padding:10px 18px 18px 6px}
+.hero-fig img{
+  border:4px solid var(--noir);box-shadow:10px 10px 0 var(--noir);
+  transform:rotate(2.5deg);background:var(--blanc);
+}
+.hero-fig .sticker{position:absolute;top:-4px;right:8px;rotate:6deg;z-index:2}
+.note-ramber{margin-top:22px;font-weight:700;display:inline-flex;align-items:center;gap:8px}
+
+/* ---------- Marquee ---------- */
+.marquee{background:var(--noir);color:var(--jaune);overflow:hidden;padding:12px 0;border-top:4px solid var(--noir)}
+.marquee-in{display:flex;gap:0;white-space:nowrap;width:max-content;animation:defile 22s linear infinite}
+.marquee span{font-family:Anton,'Arial Narrow',Impact,sans-serif;font-size:1.15rem;text-transform:uppercase;letter-spacing:.08em;padding-right:2.2rem}
+@keyframes defile{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.marquee-in{animation:none}}
+
+/* ---------- Sections ---------- */
+section{padding:60px 0;scroll-margin-top:72px}
+.sec-noir{background:var(--noir);color:var(--blanc)}
+.sec-jaune{background:var(--jaune);color:var(--noir)}
+.sec-titre{font-size:clamp(2rem,7vw,3.4rem)}
+.sec-sous{font-size:1.1rem;max-width:54ch;font-weight:500}
+.sec-noir .accent{color:var(--jaune)}
+
+/* ---------- Zone de livraison ---------- */
+.zone-grid{display:grid;gap:36px;align-items:center}
+@media (min-width:900px){.zone-grid{grid-template-columns:1fr 1fr}}
+.zone-map{max-width:430px;margin:0 auto;width:100%}
+.zone-form{background:var(--blanc);color:var(--noir);border:var(--bord);box-shadow:8px 8px 0 var(--jaune);padding:24px 20px}
+.zone-form label{display:block;font-weight:700;margin-bottom:8px}
+.zone-form input{
+  width:100%;border:var(--bord);padding:12px 14px;min-height:48px;
+  font:500 1rem 'Space Grotesk',system-ui,sans-serif;background:var(--blanc);color:var(--noir);
+}
+.zone-form input::placeholder{color:#595959;opacity:1}
+.zone-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:14px}
+.zone-result{margin:16px 0 0;font-weight:700;padding:14px;border:3px dashed var(--noir);min-height:48px}
+.zone-result.ok{background:var(--jaune);border-style:solid}
+.zone-result.ko{background:#f3f3f3;border-style:solid}
+.zone-result:empty{display:none}
+
+/* ---------- Carte des pizzas ---------- */
+.carte-head{display:grid;gap:24px;align-items:center;margin-bottom:36px}
+@media (min-width:900px){.carte-head{grid-template-columns:1.4fr 1fr}}
+.carte-head img{border:4px solid var(--noir);box-shadow:8px 8px 0 var(--jaune);transform:rotate(-2deg)}
+.menu{display:grid;gap:22px;list-style:none;margin:0;padding:0}
+@media (min-width:680px){.menu{grid-template-columns:1fr 1fr}}
+@media (min-width:1020px){.menu{grid-template-columns:1fr 1fr 1fr}}
+.pizza{
+  border:var(--bord);background:var(--blanc);padding:18px;
+  box-shadow:6px 6px 0 var(--noir);position:relative;
+  display:flex;flex-direction:column;gap:8px;
+}
+.pizza h3{font-size:1.35rem;margin:0;padding-right:84px}
+.pizza .compo{font-size:.92rem;margin:0;color:#333;flex:1}
+.pizza .prix{
+  position:absolute;top:-12px;right:12px;
+  background:var(--jaune);border:var(--bord);
+  font-family:Anton,'Arial Narrow',Impact,sans-serif;font-size:1.15rem;
+  padding:4px 10px;transform:rotate(3deg);box-shadow:3px 3px 0 var(--noir);
+}
+.pizza .tag{align-self:flex-start;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;background:var(--noir);color:var(--jaune);padding:3px 8px}
+.pizza .btn{margin-top:6px;width:100%;font-size:.95rem;min-height:46px}
+
+/* ---------- Commande ---------- */
+.cmd-grid{display:grid;gap:30px}
+@media (min-width:900px){.cmd-grid{grid-template-columns:1fr 1fr;align-items:start}}
+.panel{background:var(--blanc);border:var(--bord);box-shadow:8px 8px 0 var(--noir);padding:24px 20px}
+.cart-item{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:2px dashed #bbb;flex-wrap:wrap}
+.cart-item .nom{flex:1;font-weight:700;min-width:120px}
+.qbtn{
+  width:44px;height:44px;border:var(--bord);background:var(--jaune);color:var(--noir);
+  font:700 1.3rem 'Space Grotesk',sans-serif;cursor:pointer;flex:none;
+}
+.qbtn:active{transform:translate(1px,1px)}
+.qte{min-width:2ch;text-align:center;font-weight:700}
+.ligne-prix{font-weight:700;min-width:72px;text-align:right}
+.totaux{margin-top:16px;font-size:1.05rem}
+.totaux div{display:flex;justify-content:space-between;padding:4px 0}
+.totaux .total{font-family:Anton,'Arial Narrow',Impact,sans-serif;font-size:1.5rem;border-top:var(--bord);margin-top:8px;padding-top:10px}
+.modes{display:grid;gap:12px;margin:6px 0 18px}
+.mode{
+  display:flex;gap:12px;align-items:flex-start;border:var(--bord);padding:14px;cursor:pointer;background:#fff;
+}
+.mode:has(input:checked){background:var(--jaune);box-shadow:4px 4px 0 var(--noir)}
+.mode input{width:24px;height:24px;margin:2px 0 0;accent-color:var(--noir);flex:none}
+.mode b{display:block;text-transform:uppercase}
+.mode small{font-size:.85rem}
+.alerte{background:var(--jaune);border:var(--bord);padding:10px 14px;font-weight:700;margin:0 0 14px}
+.alerte:empty{display:none}
+#cart-live{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.vide{font-style:italic;color:#444}
+
+/* ---------- Démo / suivi ---------- */
+#demo-screen[hidden]{display:none}
+.demo-banner{
+  background:var(--noir);color:var(--jaune);padding:18px;text-align:center;
+  font-family:Anton,'Arial Narrow',Impact,sans-serif;font-size:1.45rem;text-transform:uppercase;letter-spacing:.05em;
+}
+.demo-note{text-align:center;font-weight:700;margin:14px 0 22px}
+.track{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:0;margin:22px 0 10px;text-align:center}
+.track li{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em;opacity:.55}
+.track .pastille{
+  width:44px;height:44px;margin:0 auto 6px;border:var(--bord);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;background:var(--blanc);
+  font:700 1rem 'Space Grotesk',sans-serif;
+}
+.track li.on,.track li.done{opacity:1}
+.track li.on .pastille{background:var(--jaune);box-shadow:3px 3px 0 var(--noir)}
+.track li.done .pastille{background:var(--noir);color:var(--jaune)}
+.barre{border:var(--bord);height:18px;background:var(--blanc);margin:6px 0 14px}
+.barre > div{height:100%;width:0;background:var(--jaune);border-right:var(--bord);transition:width 1.4s linear}
+@media (prefers-reduced-motion: reduce){.barre > div{transition:none}}
+#track-status{font-weight:700;text-align:center;min-height:1.5em}
+.recap-list{list-style:none;margin:0 0 12px;padding:0}
+.recap-list li{display:flex;justify-content:space-between;gap:12px;padding:4px 0;border-bottom:2px dashed #bbb}
+
+/* ---------- Avis ---------- */
+.note-globale{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:30px}
+.note-chiffre{font-family:Anton,'Arial Narrow',Impact,sans-serif;font-size:3.4rem;background:var(--jaune);color:var(--noir);border:var(--bord);padding:4px 18px;box-shadow:6px 6px 0 var(--blanc);transform:rotate(-2deg)}
+.etoiles{color:var(--jaune);font-size:1.5rem;letter-spacing:.1em}
+.avis-grid{display:grid;gap:20px}
+@media (min-width:760px){.avis-grid{grid-template-columns:1fr 1fr 1fr}}
+.avis{background:var(--blanc);color:var(--noir);border:var(--bord);box-shadow:6px 6px 0 var(--jaune);padding:20px}
+.avis p{font-weight:500;font-size:1.02rem}
+.avis footer{font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+
+/* ---------- Infos ---------- */
+.infos-grid{display:grid;gap:24px}
+@media (min-width:900px){.infos-grid{grid-template-columns:1fr 1fr 1fr}}
+.info-card{border:var(--bord);padding:22px;background:var(--blanc);box-shadow:6px 6px 0 var(--noir)}
+.info-card h3{font-size:1.3rem}
+.tel-placeholder{
+  display:inline-block;border:3px dashed var(--noir);background:var(--jaune);
+  font-family:Anton,'Arial Narrow',Impact,sans-serif;font-size:1.25rem;
+  padding:10px 16px;transform:rotate(-1.5deg);
+}
+.horaires{list-style:none;margin:0;padding:0}
+.horaires li{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:2px dashed #bbb}
+.horaires b{text-transform:uppercase;font-size:.9rem}
+.maps-link{font-weight:700;text-decoration:underline;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px}
+.img-duo{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:40px}
+.img-duo img{border:4px solid var(--noir)}
+.img-duo img:first-child{transform:rotate(-1.5deg);box-shadow:7px 7px 0 var(--jaune)}
+.img-duo img:last-child{transform:rotate(1.5deg);box-shadow:-7px 7px 0 var(--jaune)}
+
+/* ---------- Footer & bandeau légal ---------- */
+footer.site{background:var(--noir);color:var(--blanc);padding:44px 0 36px;text-align:center}
+footer.site .brand-foot{font-family:Anton,'Arial Narrow',Impact,sans-serif;font-size:1.8rem;color:var(--jaune);text-transform:uppercase}
+footer.site a{color:var(--jaune)}
+.legal{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;
+  background:var(--noir);color:var(--blanc);
+  font-size:11px;line-height:1.4;text-align:center;
+  padding:7px 12px calc(7px + env(safe-area-inset-bottom));
+  border-top:2px solid var(--jaune);
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#carte">Aller à la carte des pizzas</a>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#haut" aria-label="Palomino Pizza — haut de page">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 22 21H2L12 2Z" fill="#FFC400" stroke="#FFC400" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="11" r="1.6" fill="#111"/><circle cx="9" cy="16" r="1.6" fill="#111"/><circle cx="15" cy="16" r="1.6" fill="#111"/></svg>
+      Palomino Pizza
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#zone">Zone</a>
+      <a href="#carte">La carte</a>
+      <a href="#infos">Infos</a>
+    </nav>
+    <a class="btn btn-yellow top-cta" href="#commander">Commander</a>
+  </div>
+</header>
+
+<main id="haut">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-labelledby="titre-hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="sticker" style="margin-bottom:18px">Nouveau à Rambervillers</p>
+        <h1 id="titre-hero">Pizzas livrées jusqu'à 7&nbsp;km autour de Rambervillers</h1>
+        <p class="sub">Pâte fraîche, four bien chaud, scooter encore plus chaud. Livraison ou à emporter, 7&nbsp;j/7 midi et soir.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-dark" href="#commander">Commander
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="18" r="3"/><circle cx="19" cy="18" r="3"/><path d="M6 18h7l3-9h3M13 9H8m4-4 2 4"/></svg>
+          </a>
+          <a class="btn btn-white" href="#zone">Je suis livrable&nbsp;?</a>
+        </div>
+        <p class="note-ramber">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          22 rue Carnot, Rambervillers — 4,4&nbsp;★ sur Google
+        </p>
+      </div>
+      <figure class="hero-fig">
+        <img src="img/hero-pizza-pop.webp" width="1200" height="800" alt="Pizza garnie dans sa boîte ouverte sur fond orange vif, entourée de farine et de sauces" fetchpriority="high">
+        <span class="sticker sticker-jaune">Livraison 7 km</span>
+      </figure>
+    </div>
+  </section>
+
+  <!-- bandeau défilant décoratif -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-in">
+      <span>Pâte fraîche maison ★</span><span>Livraison 7 km ★</span><span>Ouvert 7 j/7 ★</span><span>À emporter aussi ★</span><span>Rambervillers ★</span>
+      <span>Pâte fraîche maison ★</span><span>Livraison 7 km ★</span><span>Ouvert 7 j/7 ★</span><span>À emporter aussi ★</span><span>Rambervillers ★</span>
+    </div>
+  </div>
+
+  <!-- ================= ZONE DE LIVRAISON (wow-feature) ================= -->
+  <section id="zone" class="sec-noir" aria-labelledby="titre-zone">
+    <div class="wrap">
+      <h2 id="titre-zone" class="sec-titre">On livre <span class="accent">chez vous&nbsp;?</span></h2>
+      <p class="sec-sous">Le scooter Palomino rayonne jusqu'à 7&nbsp;km autour du 22 rue Carnot. Entrez votre commune, on vous dit tout de suite.</p>
+      <div class="zone-grid">
+        <!-- Carte stylisée 100 % SVG inline — aucune tuile externe. Positions illustratives. -->
+        <svg class="zone-map" viewBox="0 0 360 330" role="img" aria-labelledby="map-t map-d">
+          <title id="map-t">Carte stylisée de la zone de livraison</title>
+          <desc id="map-d">Rambervillers au centre d'un cercle de 7 kilomètres couvrant notamment Roville-aux-Chênes, Doncières, Bru, Saint-Gorgon, Jeanménil, Autrey, Sainte-Hélène, Vomécourt, Moyemont et Ménil-sur-Belvitte.</desc>
+          <circle cx="180" cy="168" r="138" fill="none" stroke="#FFC400" stroke-width="4" stroke-dasharray="14 10"/>
+          <circle cx="180" cy="168" r="70" fill="none" stroke="#FFC400" stroke-width="1.5" opacity=".35"/>
+          <g fill="#fff" font-family="'Space Grotesk',sans-serif" font-size="11" font-weight="700" text-anchor="middle">
+            <g><circle cx="150" cy="58" r="5" fill="#FFC400" stroke="#111" stroke-width="2"/><text x="150" y="44">Roville-aux-Chênes</text></g>
+            <g><circle cx="236" cy="70" r="5" fill="#FFC400" stroke="#111" stroke-width="2"/><text x="247" y="56">Ménil-s/-Belvitte</text></g>
+            <g><circle cx="287" cy="105" r="5" fill="#FFC400" stroke="#111" stroke-width="2"/><text x="287" y="92">Doncières</text></g>
+            <g><circle cx="240" cy="124" r="5" fill="#FFC400" stroke="#111" stroke-width="2"/><text x="252" y="140">Bru</text></g>
+            <g><circle cx="268" cy="184" r="5" fill="#FFC400" stroke="#111" stroke-width="2"/><text x="278" y="202">St-Gorgon</text></g>
+            <g><circle cx="238" cy="240" r="5" fill="#FFC400" stroke="#111" stroke-width="2"/><text x="248" y="258">Jeanménil</text></g>
+            <g><circle cx="178" cy="282" r="5" fill="#FFC400" stroke="#111" stroke-width="2"/><text x="178" y="300">Autrey</text></g>
+            <g><circle cx="96" cy="252" r="5" fill="#FFC400" stroke="#111" stroke-width="2"/><text x="92" y="270">Ste-Hélène</text></g>
+            <g><circle cx="72" cy="172" r="5" fill="#FFC400" stroke="#111" stroke-width="2"/><text x="72" y="158">Vomécourt</text></g>
+            <g><circle cx="86" cy="98" r="5" fill="#FFC400" stroke="#111" stroke-width="2"/><text x="86" y="84">Moyemont</text></g>
+          </g>
+          <!-- centre : Rambervillers -->
+          <g transform="rotate(-3 180 168)">
+            <rect x="118" y="152" width="124" height="30" fill="#FFC400" stroke="#111" stroke-width="3"/>
+            <text x="180" y="173" fill="#111" font-family="Anton,'Arial Narrow',sans-serif" font-size="15" text-anchor="middle" letter-spacing="1">RAMBERVILLERS</text>
+          </g>
+          <!-- scooter stylisé -->
+          <g transform="translate(262 290)" stroke="#FFC400" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="4" cy="18" r="5"/><circle cx="30" cy="18" r="5"/>
+            <path d="M4 18h12l5-12h6M21 6h-7M27 6l3 12"/>
+            <rect x="8" y="2" width="9" height="7" fill="#FFC400" stroke="#111" stroke-width="1.5"/>
+          </g>
+          <text x="306" y="40" fill="#FFC400" font-family="Anton,'Arial Narrow',sans-serif" font-size="20">7 KM</text>
+        </svg>
+
+        <div class="zone-form">
+          <h3>Testez votre adresse</h3>
+          <!-- [À REMPLACER zone exacte] Liste des communes desservies simulée pour la démonstration — à valider avec l'établissement. -->
+          <form id="zone-check" novalidate>
+            <label for="commune">Votre adresse ou votre commune</label>
+            <input type="text" id="commune" name="commune" list="communes-list" autocomplete="address-level2" placeholder="Ex. : Jeanménil">
+            <datalist id="communes-list">
+              <option value="Rambervillers"></option><option value="Jeanménil"></option><option value="Autrey"></option>
+              <option value="Bru"></option><option value="Roville-aux-Chênes"></option><option value="Doncières"></option>
+              <option value="Saint-Gorgon"></option><option value="Vomécourt"></option><option value="Moyemont"></option>
+              <option value="Sainte-Hélène"></option><option value="Ménil-sur-Belvitte"></option><option value="Fauconcourt"></option>
+              <option value="Anglemont"></option><option value="Saint-Benoît-la-Chipotte"></option><option value="Housseras"></option>
+              <option value="Romont"></option>
+            </datalist>
+            <div class="zone-row">
+              <button type="submit" class="btn btn-yellow">Vérifier ma zone</button>
+            </div>
+          </form>
+          <p class="zone-result" id="zone-result" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LA CARTE ================= -->
+  <section id="carte" aria-labelledby="titre-carte">
+    <div class="wrap">
+      <div class="carte-head">
+        <div>
+          <h2 id="titre-carte" class="sec-titre">La carte des pizzas</h2>
+          <p class="sec-sous">Des classiques qui rassurent, des signatures qui réveillent. Tout part au four à la commande.</p>
+        </div>
+        <img src="img/part-filante.webp" width="800" height="600" alt="Main soulevant une part de pizza au fromage filant" loading="lazy" decoding="async">
+      </div>
+      <!-- [À REMPLACER] Carte et prix d'exemple : à remplacer par la carte réelle de Palomino Pizza. -->
+      <ul class="menu">
+        <li class="pizza"><span class="prix">8,50&nbsp;€</span><h3>Margherita</h3><p class="compo">Sauce tomate, mozzarella, basilic, huile d'olive</p><button type="button" class="btn btn-yellow add-btn" data-id="margherita" data-name="Margherita" data-price="8.50">Ajouter au panier</button></li>
+        <li class="pizza"><span class="prix">10,50&nbsp;€</span><h3>Reine</h3><p class="compo">Sauce tomate, jambon, champignons, mozzarella</p><button type="button" class="btn btn-yellow add-btn" data-id="reine" data-name="Reine" data-price="10.50">Ajouter au panier</button></li>
+        <li class="pizza"><span class="prix">12,50&nbsp;€</span><span class="tag">Best-seller</span><h3>La Palomino</h3><p class="compo">Crème, poulet rôti, oignons frits, poivrons, sauce du chef</p><button type="button" class="btn btn-yellow add-btn" data-id="palomino" data-name="La Palomino" data-price="12.50">Ajouter au panier</button></li>
+        <li class="pizza"><span class="prix">11,50&nbsp;€</span><h3>4 Fromages</h3><p class="compo">Mozzarella, chèvre, bleu, emmental</p><button type="button" class="btn btn-yellow add-btn" data-id="fromages" data-name="4 Fromages" data-price="11.50">Ajouter au panier</button></li>
+        <li class="pizza"><span class="prix">11,50&nbsp;€</span><h3>Orientale</h3><p class="compo">Sauce tomate, merguez, poivrons, oignons, œuf</p><button type="button" class="btn btn-yellow add-btn" data-id="orientale" data-name="Orientale" data-price="11.50">Ajouter au panier</button></li>
+        <li class="pizza"><span class="prix">12,00&nbsp;€</span><h3>Campagnarde</h3><p class="compo">Crème, lardons, pommes de terre, reblochon, oignons</p><button type="button" class="btn btn-yellow add-btn" data-id="campagnarde" data-name="Campagnarde" data-price="12.00">Ajouter au panier</button></li>
+        <li class="pizza"><span class="prix">10,50&nbsp;€</span><span class="tag">Veggie</span><h3>Végétarienne</h3><p class="compo">Légumes grillés, mozzarella, roquette, pesto</p><button type="button" class="btn btn-yellow add-btn" data-id="vege" data-name="Végétarienne" data-price="10.50">Ajouter au panier</button></li>
+        <li class="pizza"><span class="prix">11,00&nbsp;€</span><h3>Calzone</h3><p class="compo">Chausson : jambon, œuf, mozzarella, sauce tomate</p><button type="button" class="btn btn-yellow add-btn" data-id="calzone" data-name="Calzone" data-price="11.00">Ajouter au panier</button></li>
+        <li class="pizza"><span class="prix">11,00&nbsp;€</span><h3>Pepperoni</h3><p class="compo">Double pepperoni, mozzarella, origan</p><button type="button" class="btn btn-yellow add-btn" data-id="pepperoni" data-name="Pepperoni" data-price="11.00">Ajouter au panier</button></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= COMMANDE ================= -->
+  <section id="commander" class="sec-jaune" aria-labelledby="titre-cmd">
+    <div class="wrap">
+      <h2 id="titre-cmd" class="sec-titre">Votre commande</h2>
+      <p class="sec-sous">Livraison jusqu'à 7&nbsp;km ou retrait au 22 rue Carnot. Module de démonstration&nbsp;: rien n'est débité, rien n'est envoyé.</p>
+      <noscript><p class="alerte">Activez JavaScript pour tester la commande de démonstration.</p></noscript>
+
+      <div id="order-zone" class="cmd-grid">
+        <div class="panel">
+          <h3>Panier</h3>
+          <div id="cart-items"><p class="vide">Votre panier est vide — ajoutez des pizzas depuis la carte.</p></div>
+          <div class="totaux" id="cart-totaux"></div>
+          <p id="cart-live" aria-live="polite"></p>
+        </div>
+
+        <div class="panel">
+          <h3>Livraison ou retrait&nbsp;?</h3>
+          <!-- [À REMPLACER] Frais de livraison (2,50 €) et minimum de commande (15 €) factices, à confirmer avec l'établissement. -->
+          <div class="modes" role="radiogroup" aria-label="Mode de réception">
+            <label class="mode"><input type="radio" name="mode" value="livraison" checked>
+              <span><b>Livraison 🛵</b><small>Jusqu'à 7&nbsp;km — frais 2,50&nbsp;€ — minimum de commande 15&nbsp;€</small></span></label>
+            <label class="mode"><input type="radio" name="mode" value="emporter">
+              <span><b>À emporter 🏃</b><small>Retrait au 22 rue Carnot — prêt en 20&nbsp;min environ</small></span></label>
+          </div>
+          <p class="alerte" id="min-alerte"></p>
+          <button type="button" class="btn btn-dark" id="valider" style="width:100%">Valider la commande</button>
+        </div>
+      </div>
+
+      <!-- écran démo + suivi simulé -->
+      <div id="demo-screen" hidden>
+        <div class="panel" style="max-width:680px;margin:0 auto">
+          <p class="demo-banner" id="demo-title" tabindex="-1">Ceci est une démonstration</p>
+          <p class="demo-note">Aucune commande n'a été envoyée. En production&nbsp;: paiement CB en ligne ou au retrait, au choix.</p>
+          <h3>Récapitulatif</h3>
+          <ul class="recap-list" id="recap"></ul>
+          <h3 style="margin-top:24px">Suivi de commande (simulation)</h3>
+          <ol class="track" id="track"></ol>
+          <div class="barre" aria-hidden="true"><div id="barre-in"></div></div>
+          <p id="track-status" role="status" aria-live="polite"></p>
+          <button type="button" class="btn btn-yellow" id="reset-order" style="width:100%;margin-top:18px">Nouvelle commande</button>
+        </div>
+      </div>
+
+      <div class="img-duo">
+        <img src="img/pizza-box.webp" width="800" height="600" alt="Pizza au pepperoni dans une boîte de livraison ouverte" loading="lazy" decoding="async">
+        <img src="img/livreur.webp" width="800" height="600" alt="Livreur à vélo avec un sac isotherme circulant en ville" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AVIS ================= -->
+  <section id="avis" class="sec-noir" aria-labelledby="titre-avis">
+    <div class="wrap">
+      <h2 id="titre-avis" class="sec-titre">Ils ont <span class="accent">goûté</span></h2>
+      <div class="note-globale">
+        <span class="note-chiffre">4,4</span>
+        <div>
+          <div class="etoiles" aria-hidden="true">★★★★☆</div>
+          <p style="margin:0;font-weight:700">4,4 sur 5 — 8 avis Google</p>
+        </div>
+      </div>
+      <!-- [À REMPLACER] Extraits d'avis d'illustration — à remplacer par de véritables avis Google de l'établissement. -->
+      <div class="avis-grid">
+        <article class="avis"><p>«&nbsp;Pizzas généreuses et livraison rapide, rien à redire&nbsp;!&nbsp;»</p><footer>Avis Google</footer></article>
+        <article class="avis"><p>«&nbsp;Très bonne pâte, bien garnie, je recommande.&nbsp;»</p><footer>Avis Google</footer></article>
+        <article class="avis"><p>«&nbsp;Accueil sympa et pizzas encore chaudes à l'arrivée.&nbsp;»</p><footer>Avis Google</footer></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INFOS ================= -->
+  <section id="infos" aria-labelledby="titre-infos">
+    <div class="wrap">
+      <h2 id="titre-infos" class="sec-titre">Infos pratiques</h2>
+      <div class="infos-grid">
+        <div class="info-card">
+          <h3>Adresse</h3>
+          <p>Palomino Pizza<br>22 rue Carnot<br>88700 Rambervillers</p>
+          <a class="maps-link" href="https://www.google.com/maps/search/?api=1&amp;query=Palomino+Pizza+22+rue+Carnot+88700+Rambervillers" target="_blank" rel="noopener">Itinéraire sur Google Maps ↗</a>
+        </div>
+        <div class="info-card">
+          <h3>Téléphone</h3>
+          <p class="tel-placeholder">📞 [TÉL. À CONFIRMER]</p>
+          <p style="margin-top:14px;font-size:.92rem">Ici, votre numéro en un clic&nbsp;: vos clients vous appellent directement depuis le site.</p>
+        </div>
+        <div class="info-card">
+          <h3>Horaires</h3>
+          <!-- [À REMPLACER] Créneaux horaires précis à confirmer (donnée publique : ouvert 7 j/7 midi et soir, vendredi soir uniquement). -->
+          <ul class="horaires">
+            <li><b>Lun → Jeu</b><span>Midi &amp; soir</span></li>
+            <li><b>Vendredi</b><span>Soir uniquement</span></li>
+            <li><b>Sam &amp; Dim</b><span>Midi &amp; soir</span></li>
+          </ul>
+          <p style="margin-top:14px"><span class="sticker sticker-jaune" style="font-size:.9rem">Livraison jusqu'à 7 km</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p class="brand-foot">Palomino Pizza</p>
+    <p>22 rue Carnot, 88700 Rambervillers · <span style="white-space:nowrap">[TÉL. À CONFIRMER]</span></p>
+    <p style="font-size:.85rem;opacity:.8">Maquette de démonstration — <a href="#haut">retour en haut</a></p>
+  </div>
+</footer>
+
+<p class="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</p>
+
+<script>
+(function(){
+'use strict';
+var $=function(s,c){return (c||document).querySelector(s)};
+var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function money(v){return v.toFixed(2).replace('.',',')+' €'}
+function norm(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z]/g,'')}
+
+/* ---------- Vérification de zone (simulée) ---------- */
+/* [À REMPLACER zone exacte] : liste simulée des communes à moins de 7 km. */
+var ZONE=['Rambervillers','Jeanménil','Autrey','Bru','Roville-aux-Chênes','Doncières','Saint-Gorgon','Vomécourt','Moyemont','Sainte-Hélène','Ménil-sur-Belvitte','Fauconcourt','Anglemont','Saint-Benoît-la-Chipotte','Housseras','Romont'];
+var zoneForm=$('#zone-check'),zoneRes=$('#zone-result');
+if(zoneForm){zoneForm.addEventListener('submit',function(e){
+  e.preventDefault();
+  var v=$('#commune').value,nv=norm(v),found=null;
+  zoneRes.className='zone-result';
+  if(!nv){zoneRes.textContent='Dites-nous votre commune et on vous répond tout de suite !';return}
+  for(var i=0;i<ZONE.length;i++){if(nv.indexOf(norm(ZONE[i]))>-1){found=ZONE[i];break}}
+  if(found){
+    zoneRes.className='zone-result ok';
+    zoneRes.textContent='✅ Vous êtes dans la zone ! '+found+' est à moins de 7 km : on vous livre, chaud devant.';
+  }else{
+    zoneRes.className='zone-result ko';
+    zoneRes.textContent='On n’y est pas encore chez vous… mais le scooter rêve grand ! En attendant, l’à-emporter vous tend les bras au 22 rue Carnot.';
+  }
+});}
+
+/* ---------- Panier (simulation, localStorage) ---------- */
+var cart={},KEY='palomino-demo-cart';
+try{
+  var saved=JSON.parse(localStorage.getItem(KEY)||'{}'),sk;
+  if(saved&&typeof saved==='object'){
+    for(sk in saved){
+      var it=saved[sk];
+      if(it&&typeof it.n==='string'&&isFinite(it.p)&&it.q>0){cart[sk]={n:it.n,p:+it.p,q:Math.min(9,Math.floor(it.q))}}
+    }
+  }
+}catch(e){}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(cart))}catch(e){}}
+function subtotal(){var s=0,k;for(k in cart){s+=cart[k].p*cart[k].q}return s}
+function count(){var n=0,k;for(k in cart){n+=cart[k].q}return n}
+function mode(){var r=document.querySelector('input[name="mode"]:checked');return r?r.value:'livraison'}
+
+var itemsEl=$('#cart-items'),totEl=$('#cart-totaux'),liveEl=$('#cart-live'),
+    alerteEl=$('#min-alerte'),validerBtn=$('#valider');
+var FRAIS=2.5,MINI=15; /* [À REMPLACER] frais & minimum factices */
+
+function renderCart(){
+  var k,html='',st=subtotal(),m=mode();
+  if(!count()){
+    itemsEl.innerHTML='<p class="vide">Votre panier est vide — ajoutez des pizzas depuis la carte.</p>';
+    totEl.innerHTML='';
+  }else{
+    for(k in cart){
+      var it=cart[k];
+      html+='<div class="cart-item"><span class="nom">'+it.n+'</span>'
+        +'<button type="button" class="qbtn" data-act="minus" data-id="'+k+'" aria-label="Une '+it.n+' de moins">−</button>'
+        +'<span class="qte">'+it.q+'</span>'
+        +'<button type="button" class="qbtn" data-act="plus" data-id="'+k+'" aria-label="Une '+it.n+' de plus">+</button>'
+        +'<span class="ligne-prix">'+money(it.p*it.q)+'</span></div>';
+    }
+    itemsEl.innerHTML=html;
+    var frais=(m==='livraison')?FRAIS:0;
+    totEl.innerHTML='<div><span>Sous-total</span><span>'+money(st)+'</span></div>'
+      +'<div><span>'+(m==='livraison'?'Frais de livraison':'Retrait sur place')+'</span><span>'+(frais?money(frais):'offert')+'</span></div>'
+      +'<div class="total"><span>Total</span><span>'+money(st+frais)+'</span></div>';
+  }
+  var manque=(m==='livraison'&&st>0&&st<MINI);
+  alerteEl.textContent=manque?('Encore '+money(MINI-st)+' et le scooter démarre ! (minimum de commande livraison : '+money(MINI)+')'):'';
+  validerBtn.disabled=(!count()||manque);
+  liveEl.textContent=count()?(count()+' article'+(count()>1?'s':'')+' — total '+money(st+((m==='livraison')?FRAIS:0))):'Panier vide';
+  persist();
+}
+
+document.addEventListener('click',function(e){
+  var b=e.target.closest('.add-btn');
+  if(b){
+    var id=b.dataset.id;
+    if(!cart[id]){cart[id]={n:b.dataset.name,p:parseFloat(b.dataset.price),q:0}}
+    if(cart[id].q<9){cart[id].q++}
+    renderCart();
+    liveEl.textContent=cart[id].n+' ajoutée au panier — '+count()+' article'+(count()>1?'s':'');
+    return;
+  }
+  var q=e.target.closest('.qbtn');
+  if(q){
+    var k=q.dataset.id;
+    if(cart[k]){
+      if(q.dataset.act==='plus'&&cart[k].q<9){cart[k].q++}
+      if(q.dataset.act==='minus'){cart[k].q--;if(cart[k].q<1){delete cart[k]}}
+    }
+    renderCart();
+  }
+});
+Array.prototype.forEach.call(document.querySelectorAll('input[name="mode"]'),function(r){
+  r.addEventListener('change',renderCart);
+});
+
+/* ---------- Validation → écran démo + suivi simulé ---------- */
+var timers=[];
+function clearTimers(){timers.forEach(clearTimeout);timers=[]}
+function tracker(m){
+  var steps=(m==='livraison')
+    ?['Préparation','Au four','En route 🛵','Livré ✅']
+    :['Préparation','Au four','Prête à retirer','Bon appétit ✅'];
+  var ol=$('#track'),bar=$('#barre-in'),status=$('#track-status'),html='';
+  steps.forEach(function(s,i){
+    html+='<li id="step-'+i+'"><span class="pastille">'+(i+1)+'</span>'+s+'</li>';
+  });
+  ol.innerHTML=html;
+  clearTimers();
+  if(reduced){
+    steps.forEach(function(s,i){document.getElementById('step-'+i).className='done'});
+    bar.style.width='100%';
+    status.textContent='Démonstration : votre commande passerait par ces 4 étapes, suivies en temps réel.';
+    return;
+  }
+  function go(i){
+    steps.forEach(function(s,j){
+      document.getElementById('step-'+j).className=(j<i)?'done':(j===i?'on':'');
+    });
+    bar.style.width=(i/(steps.length-1)*100)+'%';
+    status.textContent='Étape '+(i+1)+'/4 : '+steps[i];
+    if(i<steps.length-1){timers.push(setTimeout(function(){go(i+1)},1700))}
+    else{document.getElementById('step-'+i).className='done';status.textContent=(m==='livraison')?'Livré ! (simulation) Bon appétit 🍕':'Prête au comptoir ! (simulation) Bon appétit 🍕'}
+  }
+  go(0);
+}
+
+validerBtn.addEventListener('click',function(){
+  if(!count()){return}
+  var m=mode(),st=subtotal(),frais=(m==='livraison')?FRAIS:0,k,html='';
+  for(k in cart){html+='<li><span>'+cart[k].q+' × '+cart[k].n+'</span><span>'+money(cart[k].p*cart[k].q)+'</span></li>'}
+  html+='<li><span>'+(m==='livraison'?'Livraison (jusqu’à 7 km)':'À emporter — 22 rue Carnot')+'</span><span>'+(frais?money(frais):'—')+'</span></li>';
+  html+='<li><span><b>Total</b></span><span><b>'+money(st+frais)+'</b></span></li>';
+  $('#recap').innerHTML=html;
+  $('#order-zone').hidden=true;
+  var demo=$('#demo-screen');
+  demo.hidden=false;
+  $('#demo-title').focus();
+  demo.scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});
+  tracker(m);
+});
+
+$('#reset-order').addEventListener('click',function(){
+  clearTimers();cart={};persist();renderCart();
+  $('#demo-screen').hidden=true;
+  $('#order-zone').hidden=false;
+  document.getElementById('carte').scrollIntoView({behavior:reduced?'auto':'smooth'});
+});
+
+renderCart();
+})();
+</script>
+</body>
+</html>

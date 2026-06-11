@@ -9,3 +9,4 @@ Maquettes de démonstration, non contractuelles.
 | coppia | https://lumenbot.github.io/demos-tpe-88/coppia/ | v1 |
 | schwartz | https://lumenbot.github.io/demos-tpe-88/schwartz/ | v1 |
 | dms | https://lumenbot.github.io/demos-tpe-88/dms/ | v1 |
+| palomino | https://lumenbot.github.io/demos-tpe-88/palomino/ | v1 |
