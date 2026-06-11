@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'Atelier Web des Vosges — Sites web pour commerces &amp; artisans · Rambervillers</title>
+<meta name="description" content="Sites professionnels pour les commerces et artisans des Vosges. Votre site est construit avant même qu'on se rencontre : regardez la démonstration sur votre téléphone, puis décidez.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap"></noscript>
+<style>
+  :root{
+    --encre:#16365C;   /* bleu des Vosges */
+    --sapin:#2F5D4E;   /* vert sapin */
+    --papier:#FBF8F2;  /* fond papier */
+    --miel:#E8A13B;    /* miel de sapin */
+    --ardoise:#46505C; /* texte courant */
+    --disp:'Archivo',Arial,sans-serif;
+    --serif:'Source Serif 4',Georgia,serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{font-family:var(--serif);background:var(--papier);color:var(--ardoise);line-height:1.55;font-size:1.06rem}
+  h1,h2,h3{font-family:var(--disp);color:var(--encre);line-height:1.12}
+  a{color:var(--encre)}
+  :focus-visible{outline:3px solid var(--miel);outline-offset:3px}
+  .wrap{max-width:64rem;margin:0 auto;padding:0 1.25rem}
+  section{padding:3.5rem 0}
+  .eyebrow{font-family:var(--disp);font-weight:800;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sapin);margin-bottom:.6rem}
+
+  /* ——— Marque & ligne bleue des Vosges ——— */
+  header.top{padding:1.1rem 0 .9rem;border-bottom:1px solid rgba(22,54,92,.14);background:var(--papier)}
+  .mark{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap}
+  .wordmark{font-family:var(--disp);font-weight:900;font-size:1.05rem;letter-spacing:.06em;color:var(--encre)}
+  .wordmark span{color:var(--sapin)}
+  .mark svg{width:4.2rem;height:1rem}
+  .ridge{display:block;width:100%;height:2.6rem}
+
+  /* ——— Hero ——— */
+  .hero{padding:4rem 0 3.4rem}
+  .hero h1{font-weight:900;font-size:clamp(2rem,6.5vw,3.4rem);letter-spacing:-.01em;max-width:21ch}
+  .hero h1 em{font-style:normal;color:var(--sapin)}
+  .hero .sub{max-width:36rem;margin-top:1.2rem;font-size:1.13rem}
+  .hero .sub b{color:var(--encre)}
+  .cta-rang{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--disp);font-weight:800;text-decoration:none;
+       padding:.95rem 1.5rem;min-height:44px;font-size:1rem;border:2px solid var(--encre);transition:transform .12s ease}
+  .btn:hover{transform:translateY(-2px)}
+  @media (prefers-reduced-motion:reduce){.btn,.btn:hover{transition:none;transform:none}}
+  .btn-plein{background:var(--encre);color:#fff}
+  .btn-ligne{color:var(--encre);background:#fff}
+
+  /* ——— Démonstrations ——— */
+  #demos{background:#fff;border-top:1px solid rgba(22,54,92,.12);border-bottom:1px solid rgba(22,54,92,.12)}
+  .demo-note{font-size:.92rem;font-style:italic;max-width:40rem;margin-top:.4rem}
+  .grille-demos{display:grid;grid-template-columns:1fr;gap:.9rem;margin-top:1.8rem}
+  @media (min-width:680px){.grille-demos{grid-template-columns:1fr 1fr}}
+  @media (min-width:1000px){.grille-demos{grid-template-columns:1fr 1fr 1fr}}
+  .demo-card{display:flex;flex-direction:column;gap:.2rem;background:var(--papier);border:1px solid rgba(22,54,92,.18);
+             border-left:.35rem solid var(--sapin);padding:1.1rem 1.2rem;text-decoration:none;min-height:44px;transition:transform .12s ease}
+  .demo-card:hover{transform:translateY(-2px);border-left-color:var(--miel)}
+  @media (prefers-reduced-motion:reduce){.demo-card:hover{transform:none}}
+  .demo-card .nom{font-family:var(--disp);font-weight:900;font-size:1.08rem;color:var(--encre)}
+  .demo-card .metier{font-size:.92rem}
+  .demo-card .voir{font-family:var(--disp);font-weight:800;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--sapin);margin-top:.45rem}
+
+  /* ——— Offres ——— */
+  .offres{display:grid;grid-template-columns:1fr;gap:1.1rem;margin-top:1.8rem}
+  @media (min-width:680px){.offres{grid-template-columns:1fr 1fr}}
+  .offre{border:2px solid var(--encre);background:#fff;padding:1.5rem 1.4rem;display:flex;flex-direction:column}
+  .offre.star{background:var(--encre);color:#EDF2F8}
+  .offre .tag{font-family:var(--disp);font-weight:800;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+  .offre.star .tag{color:var(--miel)}
+  .offre .nom{font-family:var(--disp);font-weight:900;font-size:1.4rem;margin:.3rem 0 .15rem;color:var(--encre)}
+  .offre.star .nom{color:#fff}
+  .offre .prix{font-family:var(--disp);font-weight:900;font-size:2.3rem;color:var(--sapin);line-height:1}
+  .offre.star .prix{color:var(--miel)}
+  .offre .per{font-size:.9rem;margin:.35rem 0 1rem;opacity:.85}
+  .offre ul{list-style:none;font-size:.97rem;line-height:1.6}
+  .offre ul li{padding-left:1.1rem;position:relative}
+  .offre ul li::before{content:"";position:absolute;left:0;top:.5em;width:.5rem;height:.5rem;background:var(--miel)}
+  .strip{display:flex;flex-wrap:wrap;gap:1rem 2rem;margin-top:1.6rem;font-family:var(--disp);font-weight:800;font-size:.93rem;color:var(--encre)}
+  .strip div{display:flex;align-items:center;gap:.45rem}
+  .strip svg{width:.85rem;height:.85rem;flex:none}
+
+  /* ——— Étapes ——— */
+  .etapes{display:grid;grid-template-columns:1fr;gap:1.4rem;margin-top:1.8rem}
+  @media (min-width:680px){.etapes{grid-template-columns:1fr 1fr}}
+  .etape{display:flex;gap:.9rem}
+  .etape .n{font-family:var(--disp);font-weight:900;font-size:1.6rem;color:var(--miel);line-height:1;flex:none;width:2.2rem}
+  .etape h3{font-size:1.05rem;font-weight:800;margin-bottom:.25rem}
+  .etape p{font-size:.97rem}
+
+  /* ——— Pourquoi nous / Qui sommes-nous ——— */
+  #pourquoi{background:#fff;border-top:1px solid rgba(22,54,92,.12)}
+  .why{border-left:.4rem solid var(--sapin);background:var(--papier);padding:1.4rem 1.5rem;margin-top:1.6rem}
+  .why .item{margin-bottom:1.1rem}
+  .why .item:last-child{margin-bottom:0}
+  .why .item b{font-family:var(--disp);font-weight:800;color:var(--sapin);display:block;font-size:1.02rem}
+  .who p{max-width:40rem;margin-top:1rem}
+  .who b{color:var(--encre)}
+
+  /* ——— Pied ——— */
+  .foot-band{background:var(--encre);color:#EDF2F8;padding:2.2rem 0 6.5rem}
+  .foot-band .contact{display:flex;flex-wrap:wrap;gap:.6rem 2.5rem;font-family:var(--disp);font-weight:800;font-size:1.05rem;margin-bottom:1rem}
+  .foot-band .contact span{color:var(--miel)}
+  .foot-band .legal{font-size:.8rem;opacity:.8;line-height:1.5;max-width:52rem}
+  .bandeau-legal{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#10263F;color:#D9E2EE;
+                 font-size:.74rem;line-height:1.4;text-align:center;padding:.45rem 1rem;border-top:1px solid rgba(232,161,59,.4)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap mark">
+    <div class="wordmark">L'ATELIER WEB <span>DES VOSGES</span></div>
+    <svg viewBox="0 0 90 20" aria-hidden="true"><path d="M0 18 L14 8 L26 14 L42 4 L56 12 L72 6 L90 16" fill="none" stroke="#16365C" stroke-width="2.6"/></svg>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Vos clients vous cherchent sur Google. <em>Que trouvent-ils&nbsp;?</em></h1>
+    <p class="sub">Nous fabriquons des sites professionnels pour les commerces et artisans du secteur.
+    Notre méthode est simple&nbsp;: <b>votre site est construit avant même qu'on se rencontre.</b>
+    Vous le regardez sur votre téléphone, puis vous décidez.</p>
+    <div class="cta-rang">
+      <a class="btn btn-plein" href="#demos">Voir les démonstrations</a>
+      <a class="btn btn-ligne" href="#offres">Nos deux offres</a>
+    </div>
+  </div>
+</section>
+
+<section id="demos" aria-labelledby="demos-h">
+  <div class="wrap">
+    <p class="eyebrow">Déjà construits</p>
+    <h2 id="demos-h">Les démonstrations en ligne</h2>
+    <p class="demo-note">Maquettes réalisées à notre initiative, non contractuelles et sans lien avec les établissements présentés. Textes et photos d'illustration.</p>
+    <div class="grille-demos">
+      <a class="demo-card" href="ali-baba/"><span class="nom">Snack Ali Baba</span><span class="metier">Kebab &amp; grillades du soir — Rambervillers</span><span class="voir">Voir la démo →</span></a>
+      <a class="demo-card" href="snack-de-la-place/"><span class="nom">Snack de la Place</span><span class="metier">Pizzas &amp; snacking — Rambervillers</span><span class="voir">Voir la démo →</span></a>
+      <a class="demo-card" href="coppia/"><span class="nom">La Coppia</span><span class="metier">Pizzeria artisanale — Rambervillers</span><span class="voir">Voir la démo →</span></a>
+      <a class="demo-card" href="schwartz/"><span class="nom">Maison Schwartz</span><span class="metier">Pâtisserie-chocolaterie depuis 1964</span><span class="voir">Voir la démo →</span></a>
+      <a class="demo-card" href="dms/"><span class="nom">DMS Multiservice</span><span class="metier">Paysagiste &amp; multiservices</span><span class="voir">Voir la démo →</span></a>
+      <a class="demo-card" href="palomino/"><span class="nom">Palomino Pizza</span><span class="metier">Pizzas livrées jusqu'à 7 km</span><span class="voir">Voir la démo →</span></a>
+      <a class="demo-card" href="pierron/"><span class="nom">Pierron Sanitaire</span><span class="metier">Plomberie &amp; sanitaire</span><span class="voir">Voir la démo →</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="offres" aria-labelledby="offres-h">
+  <div class="wrap">
+    <p class="eyebrow">Prix fixes, tout compris</p>
+    <h2 id="offres-h">Deux offres, rien à rallonge</h2>
+    <div class="offres">
+      <div class="offre">
+        <div class="tag">Artisans &amp; services</div>
+        <div class="nom">ESSENTIEL</div>
+        <div class="prix">790&nbsp;€</div>
+        <div class="per">puis 29&nbsp;€/mois tout compris</div>
+        <ul>
+          <li>Votre vitrine, impeccable sur mobile</li>
+          <li>Trouvé sur Google&nbsp;: «&nbsp;votre métier + votre ville&nbsp;»</li>
+          <li>Demandes de devis en ligne</li>
+          <li>Fiche Google reliée et complétée</li>
+        </ul>
+      </div>
+      <div class="offre star">
+        <div class="tag">Restaurants &amp; commerces</div>
+        <div class="nom">COMMANDE EN LIGNE</div>
+        <div class="prix">1&nbsp;490&nbsp;€</div>
+        <div class="per">puis 59&nbsp;€/mois tout compris</div>
+        <ul>
+          <li>Tout ESSENTIEL, plus&nbsp;:</li>
+          <li>Commande ou réservation en ligne</li>
+          <li>Paiement par carte <b>ou au retrait</b></li>
+          <li>Créneaux&nbsp;: vous gardez la maîtrise du rythme</li>
+        </ul>
+      </div>
+    </div>
+    <div class="strip">
+      <div><svg viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="4.4" fill="#2F5D4E"/></svg>Prix fixe, zéro surprise</div>
+      <div><svg viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="4.4" fill="#E8A13B"/></svg>En ligne en 7 jours</div>
+      <div><svg viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="4.4" fill="#16365C"/></svg>Le site vous appartient</div>
+    </div>
+  </div>
+</section>
+
+<section id="methode" aria-labelledby="methode-h">
+  <div class="wrap">
+    <p class="eyebrow">La méthode</p>
+    <h2 id="methode-h">Comment ça marche</h2>
+    <div class="etapes">
+      <div class="etape"><div class="n" aria-hidden="true">1</div><div><h3>On vous montre votre site</h3><p>Déjà construit, avec vos horaires et votre adresse. Vous le faites défiler sur votre téléphone.</p></div></div>
+      <div class="etape"><div class="n" aria-hidden="true">2</div><div><h3>Une heure ensemble</h3><p>Vos photos, vos textes, vos tarifs. C'est tout ce qu'on vous demande comme temps.</p></div></div>
+      <div class="etape"><div class="n" aria-hidden="true">3</div><div><h3>En ligne en 7 jours</h3><p>À votre nom de domaine, prêt à être trouvé sur Google par les clients du secteur.</p></div></div>
+      <div class="etape"><div class="n" aria-hidden="true">4</div><div><h3>On s'en occupe chaque mois</h3><p>Hébergement, sécurité, modifications. Abonnement sans engagement&nbsp;— et tout vous appartient.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="pourquoi" aria-labelledby="pourquoi-h">
+  <div class="wrap">
+    <p class="eyebrow">Pourquoi nous</p>
+    <h2 id="pourquoi-h">Ce qui nous distingue</h2>
+    <div class="why">
+      <div class="item"><b>Vous voyez avant de payer.</b><p>Personne d'autre ne travaille comme ça. Pas de promesse sur plaquette&nbsp;: un résultat sous vos yeux, puis votre décision.</p></div>
+      <div class="item"><b>Des outils d'aujourd'hui, des mains d'ici.</b><p>Nous produisons avec les meilleures intelligences artificielles, et nous finissons chaque site à la main. C'est ce qui rend ce prix possible.</p></div>
+      <div class="item"><b>D'ici, pour ici.</b><p>On se croise au marché de Rambervillers. Votre site n'est pas un ticket dans la file d'une agence à 400&nbsp;km.</p></div>
+    </div>
+    <div class="who">
+      <h2 style="margin-top:2.6rem">Qui sommes-nous</h2>
+      <p><b>Blaise</b> (Rambervillers) et <b>Romain</b> (Saint-Gorgon)&nbsp;— deux Vosgiens, dix ans entre développement
+      logiciel et accompagnement d'entreprises. On répond au téléphone, on passe à la boutique, on tient nos délais.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot-band">
+  <div class="wrap">
+    <svg class="ridge" viewBox="0 0 600 44" preserveAspectRatio="none" aria-hidden="true" style="margin-bottom:1.2rem">
+      <path d="M0 44 L0 30 L52 16 L108 26 L168 8 L228 22 L300 6 L364 20 L420 12 L488 24 L546 14 L600 28 L600 44 Z" fill="#E8A13B" opacity=".9"/>
+    </svg>
+    <div class="contact">
+      <!-- [À REMPLACER] Téléphone et e-mail de contact à confirmer avant impression/diffusion -->
+      <span>[06 XX XX XX XX]</span>
+      <span>[contact@atelierweb-vosges.fr]</span>
+    </div>
+    <p class="legal">L'Atelier Web des Vosges <!-- [À REMPLACER] nom commercial à valider --> ·
+    <!-- [À REMPLACER] Structure de facturation — SIRET à compléter -->
+    Démonstrations réalisées à notre initiative, non contractuelles et sans lien avec les établissements présentés.
+    Prix nets&nbsp;; régime de TVA selon structure.</p>
+  </div>
+</footer>
+
+<div class="bandeau-legal" role="contentinfo">Démonstrations non contractuelles réalisées à l'initiative de L'Atelier Web des Vosges, sans lien avec les établissements présentés. Textes et photos d'illustration.</div>
+
+</body>
+</html>
