@@ -8,3 +8,4 @@ Maquettes de démonstration, non contractuelles.
 | snack-de-la-place | https://lumenbot.github.io/demos-tpe-88/snack-de-la-place/ | v1 |
 | coppia | https://lumenbot.github.io/demos-tpe-88/coppia/ | v1 |
 | schwartz | https://lumenbot.github.io/demos-tpe-88/schwartz/ | v1 |
+| dms | https://lumenbot.github.io/demos-tpe-88/dms/ | v1 |
