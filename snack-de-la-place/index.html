@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#B5402E">
+<title>Snack de la Place — Pizzeria &amp; snack à Rambervillers (88700) · Commande en ligne</title>
+<meta name="description" content="Pizzas, paninis et burgers sur la place du Trente Septembre à Rambervillers. Snack de la Place — 5,0★ sur Google, 40 avis. Commande en ligne, retrait ou livraison, 7 j/7 midi et soir sauf jeudi soir.">
+
+<!-- Polices : Fraunces (display) + Bricolage Grotesque (texte), chargées en non-bloquant -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap"></noscript>
+
+<!-- Données réelles publiques : nom, adresse, téléphone, note Google, jours d'ouverture. -->
+<!-- [À REMPLACER] Heures précises (11 h 30–13 h 30 / 18 h–21 h 30) plausibles, à confirmer avec le commerçant. Donnée réelle : 7 j/7 midi et soir, sauf jeudi soir. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Snack de la Place",
+  "servesCuisine": ["Pizza", "Snack", "Burgers"],
+  "telephone": "+33761800929",
+  "priceRange": "€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9 place du Trente Septembre",
+    "postalCode": "88700",
+    "addressLocality": "Rambervillers",
+    "addressCountry": "FR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "40"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "11:30",
+      "closes": "13:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Friday","Saturday","Sunday"],
+      "opens": "18:00",
+      "closes": "21:30"
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --rouge:#B5402E;
+  --rouge-f:#8F2F1F;
+  --creme:#FFF6EA;
+  --creme-2:#FBE8CE;
+  --ink:#26221E;
+  --ocre:#E8A33D;
+  --fd:"Fraunces",Georgia,"Times New Roman",serif;
+  --ft:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  margin:0;font-family:var(--ft);background:var(--creme);color:var(--ink);
+  line-height:1.55;font-size:1rem;overflow-x:clip;
+  padding-bottom:180px; /* recalculé en JS selon la hauteur du bloc fixe bas */
+}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{font-family:var(--fd);font-weight:700;line-height:1.12;margin:0 0 .45em}
+h2{font-size:clamp(1.7rem,5.5vw,2.5rem)}
+p{margin:.4em 0}
+a{color:var(--rouge-f)}
+ul{padding-left:1.2em}
+:focus-visible{outline:3px solid var(--rouge);outline-offset:2px;border-radius:8px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--creme);padding:10px 16px;border-radius:0 0 12px 0;z-index:90}
+.skip:focus{left:0}
+.ic{width:1.1em;height:1.1em;flex:0 0 auto;fill:currentColor;vertical-align:-.15em}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+section{scroll-margin-top:72px}
+
+/* ---------- boutons pilules ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  min-height:50px;padding:.65em 1.7em;border-radius:999px;border:0;cursor:pointer;
+  font:700 1.05rem var(--ft);text-decoration:none;line-height:1.2;
+}
+.btn-clair{background:var(--creme);color:var(--rouge-f)}
+.btn-bord{background:transparent;color:#fff;border:2px solid rgba(255,246,234,.9)}
+.btn-plein{background:var(--rouge);color:#fff;width:100%}
+.btn-plein:hover,.btn-clair:hover{filter:brightness(1.06)}
+
+/* ---------- héro plein écran ---------- */
+.hero{
+  position:relative;min-height:96vh;min-height:96svh;display:flex;flex-direction:column;
+  color:var(--creme);overflow:hidden;border-radius:0 0 36px 36px;
+}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-voile{position:absolute;inset:0;background:linear-gradient(180deg,rgba(38,34,30,.55) 0%,rgba(38,34,30,.34) 38%,rgba(98,26,12,.85) 100%)}
+.hero-top{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px}
+.marque{margin:0;font:600 1.15rem var(--fd);letter-spacing:.02em}
+.marque span{font-style:italic;opacity:.85}
+.tel-mini{display:inline-flex;align-items:center;gap:.45em;min-height:44px;padding:0 16px;border-radius:999px;background:rgba(38,34,30,.45);color:var(--creme);text-decoration:none;font-weight:700}
+.hero-corps{position:relative;z-index:1;margin:auto auto 0;padding:24px 18px 56px;max-width:760px;text-align:center;width:100%}
+.badge-20{
+  display:inline-flex;align-items:center;gap:.5em;background:var(--creme);color:var(--rouge-f);
+  font-weight:700;font-size:.95rem;padding:.55em 1.2em;border-radius:999px;transform:rotate(-2deg);
+  box-shadow:0 4px 14px rgba(38,34,30,.35);margin-bottom:18px;
+}
+.hero h1{font-size:clamp(2.5rem,11vw,4.6rem);margin:.1em 0 .15em;text-shadow:0 2px 14px rgba(38,34,30,.45)}
+.hero-sous{font-size:clamp(1.05rem,4.2vw,1.4rem);font-weight:500;text-shadow:0 1px 8px rgba(38,34,30,.5)}
+.etoile-5{color:var(--ocre);white-space:nowrap}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:22px 0 14px}
+.hero-note{font-size:.95rem;opacity:.92}
+
+/* ---------- nav ancres collante ---------- */
+.nav-anc{
+  position:sticky;top:0;z-index:50;background:var(--creme);border-bottom:1px solid var(--creme-2);
+  display:flex;gap:8px;overflow-x:auto;padding:8px 14px;-webkit-overflow-scrolling:touch;
+}
+.nav-anc a{
+  flex:0 0 auto;display:inline-flex;align-items:center;min-height:44px;padding:0 16px;
+  border-radius:999px;background:var(--creme-2);color:var(--ink);text-decoration:none;font-weight:700;font-size:.95rem;
+}
+.nav-anc a:hover{background:var(--ocre)}
+
+/* ---------- carte ---------- */
+.s-carte{padding:48px 0 56px}
+.s-carte .intro{max-width:560px}
+.plats{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));margin-top:26px}
+.plat{
+  background:#fff;border-radius:26px;overflow:hidden;display:flex;flex-direction:column;
+  box-shadow:0 4px 18px rgba(38,34,30,.09);
+}
+.plat-img{margin:0;aspect-ratio:4/3;overflow:hidden;background:radial-gradient(circle at 50% 28%,var(--creme),var(--creme-2))}
+.plat-img img{width:100%;height:100%;object-fit:cover}
+.plat-img svg{width:100%;height:100%;display:block}
+.plat-corps{padding:16px 18px 18px;display:flex;flex-direction:column;gap:4px;flex:1}
+.plat h3{font-size:1.3rem;margin:0}
+.plat-desc{color:#5b5248;font-size:.95rem;margin:0;flex:1}
+.plat-bas{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}
+.prix{font:700 1.25rem var(--fd);color:var(--rouge-f)}
+.ajout{
+  display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;
+  border:0;border-radius:999px;background:var(--rouge);color:#fff;font:700 1rem var(--ft);cursor:pointer;
+}
+.ajout:hover{background:var(--rouge-f)}
+
+/* ---------- soirée à thème ---------- */
+.s-soiree{background:var(--rouge);color:var(--creme);padding:8px 0 56px;border-radius:36px 36px 0 0}
+.fanions{display:block;width:min(420px,86%);margin:0 auto 6px;height:44px}
+.s-soiree h2{text-align:center}
+.s-soiree .sous{text-align:center;opacity:.92;max-width:520px;margin:0 auto}
+.soiree-carte{
+  background:var(--creme);color:var(--ink);border-radius:28px;max-width:620px;margin:26px auto 0;
+  padding:26px 22px 28px;box-shadow:0 10px 30px rgba(38,34,30,.25);
+}
+.soiree-date{
+  display:inline-block;background:var(--ocre);color:var(--ink);font-weight:700;
+  padding:.4em 1.1em;border-radius:999px;margin:0 0 10px;
+}
+.soiree-carte h3{font-size:1.7rem}
+.soiree-menu{list-style:none;padding:0;margin:14px 0}
+.soiree-menu li{display:flex;gap:.6em;align-items:baseline;padding:.3em 0;border-bottom:1px dashed var(--creme-2)}
+.soiree-menu li::before{content:"●";color:var(--rouge);font-size:.6em;transform:translateY(-.2em)}
+.soiree-prix{font:700 1.2rem var(--fd);color:var(--rouge-f)}
+#resa-form{margin-top:16px;display:grid;gap:12px}
+#resa-form label{font-weight:700;display:block;margin-bottom:4px}
+#resa-form input{
+  width:100%;min-height:48px;padding:10px 14px;border:2px solid var(--creme-2);
+  border-radius:14px;font:1rem var(--ft);background:#fff;color:var(--ink);
+}
+#resa-form input:focus-visible{outline:3px solid var(--rouge);outline-offset:1px}
+#resa-conf{
+  margin-top:16px;background:var(--creme-2);border-radius:16px;padding:14px 16px;font-size:.98rem;
+}
+
+/* ---------- commande en ligne ---------- */
+.s-cmd{background:var(--creme-2);padding:48px 0 60px}
+.compteur{
+  display:inline-flex;align-items:center;gap:.5em;background:var(--ocre);color:var(--ink);
+  font-weight:700;padding:.55em 1.2em;border-radius:999px;
+}
+#note-jeudi{font-weight:700;color:var(--rouge-f)}
+.cmd-grille{display:grid;gap:18px;margin-top:22px}
+.panneau{background:#fff;border-radius:26px;padding:20px 18px 22px;box-shadow:0 4px 18px rgba(38,34,30,.08)}
+.panneau h3{font-size:1.3rem}
+#panier-liste{list-style:none;padding:0;margin:0}
+#panier-liste li{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px dashed var(--creme-2)}
+.pl-nom{flex:1;font-weight:500}
+.pl-ctl{display:inline-flex;align-items:center;gap:6px}
+.qte{
+  width:44px;height:44px;border-radius:50%;border:2px solid var(--rouge);background:#fff;
+  color:var(--rouge-f);font:700 1.25rem var(--ft);cursor:pointer;line-height:1;
+}
+.qte:hover{background:var(--creme)}
+.pl-q{min-width:1.4em;text-align:center;font-weight:700}
+.pl-prix{font-weight:700;min-width:4.6em;text-align:right}
+.totaux{margin:14px 0 0;display:grid;gap:4px}
+.totaux div{display:flex;justify-content:space-between;gap:12px}
+.totaux .tt{font:700 1.3rem var(--fd);color:var(--rouge-f);border-top:2px solid var(--creme-2);padding-top:8px;margin-top:4px}
+.modes{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.modes input{position:absolute;opacity:0;width:1px;height:1px}
+.modes label{
+  display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border-radius:999px;
+  border:2px solid var(--rouge);color:var(--rouge-f);font-weight:700;cursor:pointer;background:#fff;
+}
+.modes input:checked+label{background:var(--rouge);color:#fff}
+.modes input:focus-visible+label{outline:3px solid var(--ink);outline-offset:2px}
+.mode-note{font-size:.92rem;color:#5b5248}
+#note-mini{font-weight:700;color:var(--rouge-f)}
+#creneaux{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 18px}
+.creneau{
+  min-width:86px;min-height:44px;border-radius:999px;border:2px solid var(--rouge);
+  background:#fff;color:var(--rouge-f);font:700 1rem var(--ft);cursor:pointer;
+}
+.creneau[aria-pressed="true"]{background:var(--rouge);color:#fff}
+.creneau:disabled{border-color:#cdbfae;color:#8d8174;background:#f3ead9;text-decoration:line-through;cursor:not-allowed}
+#cmd-status{min-height:1.4em;font-weight:700;margin-top:10px}
+
+/* ---------- avis ---------- */
+.s-avis{padding:50px 0 56px;text-align:center}
+.note-geante{font:700 clamp(3.6rem,14vw,5.2rem)/1 var(--fd);color:var(--rouge-f)}
+.etoiles-rang{color:var(--ocre);display:inline-flex;gap:2px;margin:6px 0}
+.etoiles-rang .ic{width:1.6em;height:1.6em}
+.avis-grille{display:grid;gap:16px;margin-top:26px;text-align:left}
+.avis{background:#fff;border-radius:24px;padding:18px 20px;box-shadow:0 4px 18px rgba(38,34,30,.08);margin:0}
+.avis p{font-size:1.05rem;margin:0 0 .5em}
+.avis footer{font-size:.88rem;color:#5b5248;font-weight:700}
+
+/* ---------- horaires / accès ---------- */
+.s-infos{background:var(--ink);color:var(--creme);padding:48px 0 56px;border-radius:36px 36px 0 0}
+.infos-grille{display:grid;gap:26px;margin-top:18px}
+.horaires{width:100%;border-collapse:collapse}
+.horaires th,.horaires td{text-align:left;padding:9px 8px;border-bottom:1px solid rgba(255,246,234,.16)}
+.horaires .ferme{color:var(--ocre);font-weight:700}
+.horaires tr.auj{background:rgba(232,163,61,.16)}
+.horaires tr.auj td:first-child::after{content:" · aujourd’hui";font-size:.82em;color:var(--ocre);font-weight:700}
+.s-infos a{color:var(--creme)}
+.acces p{display:flex;gap:.6em;align-items:flex-start}
+.gros-tel{display:inline-flex;align-items:center;gap:.5em;font:700 1.5rem var(--ft);text-decoration:none;min-height:48px}
+
+/* ---------- footer ---------- */
+.pied{background:var(--ink);color:rgba(255,246,234,.75);padding:8px 0 30px;font-size:.92rem}
+.pied .wrap{border-top:1px solid rgba(255,246,234,.16);padding-top:18px}
+.pied a{color:rgba(255,246,234,.9)}
+
+/* ---------- bloc fixe bas : barre CTA mobile + bandeau légal ---------- */
+#bas-fixe{position:fixed;left:0;right:0;bottom:0;z-index:80}
+.cta-bar{display:flex;gap:10px;padding:10px 12px;background:rgba(38,34,30,.97)}
+.cta-bar a{
+  flex:1;display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  min-height:50px;border-radius:999px;text-decoration:none;font-weight:700;font-size:1.05rem;
+}
+.cta-cmd{background:var(--rouge);color:#fff;position:relative}
+.cta-tel{background:var(--creme);color:var(--ink)}
+.pastille{
+  display:inline-flex;align-items:center;justify-content:center;min-width:1.6em;height:1.6em;
+  border-radius:999px;background:var(--creme);color:var(--rouge-f);font-size:.85em;padding:0 .3em;
+}
+.legal{
+  margin:0;background:#1b1815;color:rgba(255,246,234,.85);font-size:11px;line-height:1.4;
+  text-align:center;padding:6px 14px 8px;
+}
+
+/* ---------- modale démo ---------- */
+dialog{
+  border:0;border-radius:26px;padding:26px 22px;max-width:430px;width:calc(100% - 36px);
+  background:var(--creme);color:var(--ink);box-shadow:0 18px 50px rgba(38,34,30,.4);
+}
+dialog::backdrop{background:rgba(38,34,30,.6)}
+dialog h2{font-size:1.6rem;color:var(--rouge-f)}
+#demo-recap ul{list-style:none;padding:12px 16px;margin:14px 0;background:#fff;border-radius:16px}
+#demo-recap li{padding:3px 0}
+
+/* ---------- ≥ 700 px ---------- */
+@media (min-width:700px){
+  .cmd-grille{grid-template-columns:1fr 1fr;align-items:start}
+  .avis-grille{grid-template-columns:repeat(3,1fr)}
+  .infos-grille{grid-template-columns:1.1fr 1fr}
+}
+/* ---------- ≥ 900 px (desktop) ---------- */
+@media (min-width:900px){
+  body{padding-bottom:96px}
+  .cta-bar{display:none}
+  .hero{border-radius:0 0 56px 56px}
+  .hero-corps{padding-bottom:84px}
+  .nav-anc{justify-content:center}
+  .s-carte,.s-cmd,.s-avis{padding-top:64px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#carte">Aller à la carte</a>
+
+<!-- Symboles SVG réutilisés -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M6.6 10.8a15.6 15.6 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1.05-.24 11.3 11.3 0 0 0 3.55.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.55a1 1 0 0 1-.25 1.05Z"/></symbol>
+  <symbol id="i-et" viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.1 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8Z"/></symbol>
+  <symbol id="i-horloge" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm1-13h-2v6l5 3 1-1.7-4-2.3Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></symbol>
+  <symbol id="i-sac" viewBox="0 0 24 24"><path d="M7 7V6a5 5 0 0 1 10 0v1h3l-1 14a2 2 0 0 1-2 1.9H7A2 2 0 0 1 5 21L4 7Zm2 0h6V6a3 3 0 0 0-6 0Z"/></symbol>
+  <symbol id="i-flamme" viewBox="0 0 24 24"><path d="M12 2s6 5.3 6 10.5a6 6 0 0 1-12 0C6 9.4 8.6 7 8.6 7S8 10.2 9.8 12C10.3 8.4 12 2 12 2Z"/></symbol>
+</svg>
+
+<!-- ======================= HÉRO ======================= -->
+<header class="hero" id="haut">
+  <img class="hero-img" src="img/hero-pizza.webp" alt="Pizza quatre fromages rustique sur une table en bois, tomates cerises et romarin" width="1200" height="750" fetchpriority="high">
+  <div class="hero-voile" aria-hidden="true"></div>
+  <div class="hero-top">
+    <p class="marque">Snack <span>de la</span> Place</p>
+    <a class="tel-mini" href="tel:+33761800929"><svg class="ic" aria-hidden="true"><use href="#i-tel"/></svg>07&nbsp;61&nbsp;80&nbsp;09&nbsp;29</a>
+  </div>
+  <div class="hero-corps">
+    <!-- [À REMPLACER] Délai de préparation indicatif, à confirmer avec le commerçant -->
+    <p class="badge-20"><svg class="ic" aria-hidden="true"><use href="#i-horloge"/></svg>Commande prête en 20&nbsp;min</p>
+    <h1>Snack de la Place</h1>
+    <p class="hero-sous">Pizzas &amp; snacking sur la place — <span class="etoile-5"><svg class="ic" aria-hidden="true"><use href="#i-et"/></svg></span> <strong>5,0 sur Google</strong> <span class="sr-only">(note de 5 sur 5)</span></p>
+    <div class="hero-cta">
+      <a class="btn btn-clair" href="#commander"><svg class="ic" aria-hidden="true"><use href="#i-sac"/></svg>Commander</a>
+      <a class="btn btn-bord" href="tel:+33761800929"><svg class="ic" aria-hidden="true"><use href="#i-tel"/></svg>Appeler</a>
+    </div>
+    <p class="hero-note">Retrait ou livraison à Rambervillers · 7&nbsp;j/7 midi &amp; soir (sauf jeudi soir)</p>
+  </div>
+</header>
+
+<nav class="nav-anc" aria-label="Sections de la page">
+  <a href="#carte">La carte</a>
+  <a href="#soiree">Soirée du mois</a>
+  <a href="#commander">Commander</a>
+  <a href="#avis">Avis</a>
+  <a href="#horaires">Horaires &amp; accès</a>
+</nav>
+
+<main>
+<!-- ======================= LA CARTE ======================= -->
+<section class="s-carte" id="carte">
+  <div class="wrap">
+    <h2>La carte</h2>
+    <p class="intro">Pâte préparée chaque jour, garnitures généreuses, et tout ce qu’il faut pour les petites comme les grandes faims.</p>
+    <!-- [À REMPLACER] Tous les articles et prix ci-dessous sont des exemples crédibles, à remplacer par la vraie carte -->
+    <div class="plats">
+      <article class="plat">
+        <figure class="plat-img"><img src="img/pizza-ronde.webp" alt="Pizza entière garnie jambon et champignons, servie sur plaque avec un filet d’huile d’olive" width="800" height="600" loading="lazy" decoding="async"></figure>
+        <div class="plat-corps">
+          <h3>Pizza Reine</h3>
+          <p class="plat-desc">Tomate, mozzarella, jambon, champignons frais</p>
+          <div class="plat-bas"><span class="prix">10,50&nbsp;€</span><button class="ajout" type="button" data-id="reine" data-nom="Pizza Reine" data-prix="1050">+ Ajouter<span class="sr-only"> la Pizza Reine au panier</span></button></div>
+        </div>
+      </article>
+      <article class="plat">
+        <figure class="plat-img"><img src="img/pizza-bbq.webp" alt="Pizza au poulet, oignon rouge et coriandre, servie sur planche en bois" width="800" height="600" loading="lazy" decoding="async"></figure>
+        <div class="plat-corps">
+          <h3>Pizza Poulet BBQ</h3>
+          <p class="plat-desc">Sauce barbecue, poulet rôti, oignon rouge, coriandre</p>
+          <div class="plat-bas"><span class="prix">12,00&nbsp;€</span><button class="ajout" type="button" data-id="bbq" data-nom="Pizza Poulet BBQ" data-prix="1200">+ Ajouter<span class="sr-only"> la Pizza Poulet BBQ au panier</span></button></div>
+        </div>
+      </article>
+      <article class="plat">
+        <figure class="plat-img"><img src="img/pizza-fine.webp" alt="Pizza fine tomate, olives et basilic, coupée en parts" width="760" height="570" loading="lazy" decoding="async"></figure>
+        <div class="plat-corps">
+          <h3>Pizza Méditerranéenne</h3>
+          <p class="plat-desc">Tomate, olives noires, basilic frais, huile d’olive</p>
+          <div class="plat-bas"><span class="prix">11,00&nbsp;€</span><button class="ajout" type="button" data-id="medit" data-nom="Pizza Méditerranéenne" data-prix="1100">+ Ajouter<span class="sr-only"> la Pizza Méditerranéenne au panier</span></button></div>
+        </div>
+      </article>
+      <article class="plat">
+        <figure class="plat-img" aria-hidden="true"><svg viewBox="0 0 120 90" role="img"><path d="M60 82 24 26a64 64 0 0 1 72 0Z" fill="#E8A33D"/><path d="M24 26a64 64 0 0 1 72 0l-6 9a53 53 0 0 0-60 0Z" fill="#B5402E"/><circle cx="52" cy="48" r="6" fill="#FFF6EA"/><circle cx="68" cy="58" r="5" fill="#FFF6EA"/><circle cx="60" cy="40" r="4" fill="#B5402E"/></svg></figure>
+        <div class="plat-corps">
+          <h3>Pizza 4 Fromages</h3>
+          <p class="plat-desc">Mozzarella, chèvre, bleu, emmental, crème</p>
+          <div class="plat-bas"><span class="prix">11,50&nbsp;€</span><button class="ajout" type="button" data-id="4from" data-nom="Pizza 4 Fromages" data-prix="1150">+ Ajouter<span class="sr-only"> la Pizza 4 Fromages au panier</span></button></div>
+        </div>
+      </article>
+      <article class="plat">
+        <figure class="plat-img" aria-hidden="true"><svg viewBox="0 0 120 90" role="img"><rect x="18" y="28" width="84" height="34" rx="17" fill="#E8A33D"/><path d="M34 36v18M52 36v18M70 36v18M88 36v18" stroke="#B5402E" stroke-width="5" stroke-linecap="round"/><rect x="24" y="58" width="72" height="8" rx="4" fill="#7FA653"/></svg></figure>
+        <div class="plat-corps">
+          <h3>Panini poulet-curry</h3>
+          <p class="plat-desc">Poulet mariné, sauce curry douce, emmental</p>
+          <div class="plat-bas"><span class="prix">5,50&nbsp;€</span><button class="ajout" type="button" data-id="pancurry" data-nom="Panini poulet-curry" data-prix="550">+ Ajouter<span class="sr-only"> le Panini poulet-curry au panier</span></button></div>
+        </div>
+      </article>
+      <article class="plat">
+        <figure class="plat-img" aria-hidden="true"><svg viewBox="0 0 120 90" role="img"><rect x="18" y="28" width="84" height="34" rx="17" fill="#E8A33D"/><path d="M34 36v18M52 36v18M70 36v18M88 36v18" stroke="#8F2F1F" stroke-width="5" stroke-linecap="round"/><rect x="24" y="58" width="72" height="8" rx="4" fill="#FFF6EA"/></svg></figure>
+        <div class="plat-corps">
+          <h3>Panini 3 fromages</h3>
+          <p class="plat-desc">Mozzarella, chèvre, emmental, origan</p>
+          <div class="plat-bas"><span class="prix">5,00&nbsp;€</span><button class="ajout" type="button" data-id="pan3f" data-nom="Panini 3 fromages" data-prix="500">+ Ajouter<span class="sr-only"> le Panini 3 fromages au panier</span></button></div>
+        </div>
+      </article>
+      <article class="plat">
+        <figure class="plat-img" aria-hidden="true"><svg viewBox="0 0 120 90" role="img"><path d="M28 42a32 19 0 0 1 64 0Z" fill="#E8A33D"/><rect x="26" y="44" width="68" height="8" rx="4" fill="#7FA653"/><rect x="28" y="54" width="64" height="10" rx="5" fill="#8C4A2F"/><rect x="26" y="66" width="68" height="12" rx="6" fill="#E8A33D"/><circle cx="48" cy="33" r="2" fill="#FFF6EA"/><circle cx="62" cy="30" r="2" fill="#FFF6EA"/><circle cx="74" cy="34" r="2" fill="#FFF6EA"/></svg></figure>
+        <div class="plat-corps">
+          <h3>Burger de la Place</h3>
+          <p class="plat-desc">Steak haché, cheddar fondant, sauce maison, salade</p>
+          <div class="plat-bas"><span class="prix">8,90&nbsp;€</span><button class="ajout" type="button" data-id="burger" data-nom="Burger de la Place" data-prix="890">+ Ajouter<span class="sr-only"> le Burger de la Place au panier</span></button></div>
+        </div>
+      </article>
+      <article class="plat">
+        <figure class="plat-img" aria-hidden="true"><svg viewBox="0 0 120 90" role="img"><rect x="28" y="22" width="64" height="46" rx="10" fill="#E8A33D"/><path d="M32 52h56v4c0 6-7 10-13 8-5 2-8 2-15 2s-10 0-15-2c-6 2-13-2-13-8Z" fill="#FFF6EA"/><path d="M38 34h44M38 42h44" stroke="#B5402E" stroke-width="4" stroke-linecap="round" opacity=".45"/></svg></figure>
+        <div class="plat-corps">
+          <h3>Croque géant</h3>
+          <p class="plat-desc">Pain de campagne, jambon, double fromage gratiné</p>
+          <div class="plat-bas"><span class="prix">4,50&nbsp;€</span><button class="ajout" type="button" data-id="croque" data-nom="Croque géant" data-prix="450">+ Ajouter<span class="sr-only"> le Croque géant au panier</span></button></div>
+        </div>
+      </article>
+      <article class="plat">
+        <figure class="plat-img" aria-hidden="true"><svg viewBox="0 0 120 90" role="img"><path d="M22 64a38 38 0 0 1 76 0Z" fill="#E8A33D"/><path d="M30 64a30 30 0 0 1 60 0Z" fill="#B5402E"/><circle cx="48" cy="56" r="4" fill="#7FA653"/><circle cx="61" cy="50" r="4" fill="#FFF6EA"/><circle cx="74" cy="57" r="4" fill="#7FA653"/></svg></figure>
+        <div class="plat-corps">
+          <h3>Tacos 2 viandes</h3>
+          <p class="plat-desc">Au choix : poulet, kebab, steak — sauce fromagère, frites</p>
+          <div class="plat-bas"><span class="prix">8,00&nbsp;€</span><button class="ajout" type="button" data-id="tacos" data-nom="Tacos 2 viandes" data-prix="800">+ Ajouter<span class="sr-only"> le Tacos 2 viandes au panier</span></button></div>
+        </div>
+      </article>
+      <article class="plat">
+        <figure class="plat-img" aria-hidden="true"><svg viewBox="0 0 120 90" role="img"><path d="M44 16h6v26h-6zM54 12h6v30h-6zM64 15h6v27h-6zM74 20h6v22h-6z" fill="#E8A33D"/><path d="M38 38h44l-5 34H43Z" fill="#B5402E"/><path d="M46 50h28" stroke="#FFF6EA" stroke-width="5" stroke-linecap="round"/></svg></figure>
+        <div class="plat-corps">
+          <h3>Frites maison</h3>
+          <p class="plat-desc">Portion généreuse, sel de Guérande</p>
+          <div class="plat-bas"><span class="prix">3,00&nbsp;€</span><button class="ajout" type="button" data-id="frites" data-nom="Frites maison" data-prix="300">+ Ajouter<span class="sr-only"> les Frites maison au panier</span></button></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= WOW : SOIRÉE À THÈME ======================= -->
+<section class="s-soiree" id="soiree">
+  <div class="wrap">
+    <svg class="fanions" viewBox="0 0 360 44" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8q180 22 360 6" fill="none" stroke="#FFF6EA" stroke-width="2" opacity=".7"/><path d="M30 12l20 3-8 20z" fill="#E8A33D"/><path d="M86 16l20 2-9 20z" fill="#FFF6EA"/><path d="M142 18l20 1-10 20z" fill="#E8A33D"/><path d="M198 19l20-1-9 20z" fill="#FFF6EA"/><path d="M254 17l20-2-8 20z" fill="#E8A33D"/><path d="M310 14l20-3-7 20z" fill="#FFF6EA"/></svg>
+    <h2>La soirée à thème du mois</h2>
+    <p class="sous">Une fois par mois, la place s’anime : grandes tablées, menu spécial et bonne humeur obligatoire.</p>
+    <!-- [À REMPLACER] Contenu d'exemple : date, thème, menu et prix de la soirée à définir chaque mois avec le commerçant -->
+    <article class="soiree-carte">
+      <p class="soiree-date">Vendredi 26 juin 2026 · à partir de 19&nbsp;h</p>
+      <h3>Soirée italienne sur la place</h3>
+      <p>Tables dehors face à la place, guirlandes allumées et playlist italienne : on sort les grandes planches et la pizza spéciale du soir.</p>
+      <ul class="soiree-menu">
+        <li>Antipasti à partager (charcuterie, focaccia, olives)</li>
+        <li>Pizza spéciale « Burrata &amp; roquette » du chef</li>
+        <li>Tiramisu maison au café</li>
+      </ul>
+      <p class="soiree-prix">Menu complet : 19,90&nbsp;€ / personne</p>
+      <button class="btn btn-plein" type="button" id="resa-ouvre" aria-expanded="false" aria-controls="resa-form">Je réserve ma place</button>
+      <form id="resa-form" hidden novalidate>
+        <div>
+          <label for="resa-nom">Votre nom</label>
+          <input id="resa-nom" name="nom" type="text" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="resa-couverts">Nombre de couverts</label>
+          <input id="resa-couverts" name="couverts" type="number" min="1" max="12" value="2" required>
+        </div>
+        <button class="btn btn-plein" type="submit">Confirmer ma réservation</button>
+      </form>
+      <p id="resa-conf" role="status" tabindex="-1" hidden></p>
+    </article>
+  </div>
+</section>
+
+<!-- ======================= COMMANDE EN LIGNE ======================= -->
+<section class="s-cmd" id="commander">
+  <div class="wrap">
+    <h2>Commande en ligne</h2>
+    <p><span class="compteur" id="compteur" aria-live="polite"><svg class="ic" aria-hidden="true"><use href="#i-flamme"/></svg><span id="compteur-txt">Calcul des créneaux…</span></span></p>
+    <p id="note-jeudi" hidden>Jeudi soir, c’est relâche&nbsp;! Les créneaux affichés sont ceux du prochain service du soir.</p>
+    <div class="cmd-grille">
+      <div class="panneau" role="region" aria-labelledby="t-panier">
+        <h3 id="t-panier">Votre panier <span id="panier-nb"></span></h3>
+        <p id="panier-vide">Votre panier est vide — <a href="#carte">parcourez la carte</a> et ajoutez vos envies.</p>
+        <ul id="panier-liste"></ul>
+        <div class="totaux">
+          <div><span>Sous-total</span><strong id="l-soustotal">0,00&nbsp;€</strong></div>
+          <!-- [À REMPLACER] Frais de livraison et minimum de commande d'exemple, à fixer avec le commerçant -->
+          <div id="ligne-livraison" hidden><span>Livraison (Rambervillers)</span><strong id="l-livraison">2,50&nbsp;€</strong></div>
+          <div class="tt"><span>Total</span><span id="l-total">0,00&nbsp;€</span></div>
+        </div>
+        <p id="note-mini" hidden>Minimum de commande en livraison&nbsp;: 15&nbsp;€.</p>
+      </div>
+      <div class="panneau">
+        <h3>Retrait ou livraison&nbsp;?</h3>
+        <div class="modes">
+          <input type="radio" name="mode" id="mode-retrait" value="retrait" checked>
+          <label for="mode-retrait">Retrait sur place</label>
+          <input type="radio" name="mode" id="mode-livraison" value="livraison">
+          <label for="mode-livraison">Livraison</label>
+        </div>
+        <p class="mode-note">Livraison à Rambervillers et alentours proches — frais&nbsp;: 2,50&nbsp;€, minimum 15&nbsp;€.</p>
+        <h3>Votre créneau <span id="creneau-jour"></span></h3>
+        <div id="creneaux" role="group" aria-label="Choix du créneau (tranches de 15 minutes)"></div>
+        <button class="btn btn-plein" type="button" id="valider">Valider ma commande</button>
+        <p id="cmd-status" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= AVIS ======================= -->
+<section class="s-avis" id="avis">
+  <div class="wrap">
+    <h2>Ils en parlent mieux que nous</h2>
+    <p class="note-geante">5,0</p>
+    <p class="etoiles-rang" aria-hidden="true"><svg class="ic"><use href="#i-et"/></svg><svg class="ic"><use href="#i-et"/></svg><svg class="ic"><use href="#i-et"/></svg><svg class="ic"><use href="#i-et"/></svg><svg class="ic"><use href="#i-et"/></svg></p>
+    <p><strong>5,0 sur 5</strong> — 40 avis Google</p>
+    <div class="avis-grille">
+      <!-- [À REMPLACER] Extraits d'avis fictifs : remplacer par 3 vrais extraits de la fiche Google (≤ 15 mots) -->
+      <blockquote class="avis">
+        <p>«&nbsp;Pizzas généreuses et toujours prêtes à l’heure, l’adresse sûre de la place.&nbsp;»</p>
+        <footer>Avis Google</footer>
+      </blockquote>
+      <blockquote class="avis">
+        <p>«&nbsp;Accueil super sympa, on sent le fait maison. Je recommande&nbsp;!&nbsp;»</p>
+        <footer>Avis Google</footer>
+      </blockquote>
+      <blockquote class="avis">
+        <p>«&nbsp;Rapport qualité-prix imbattable, commande rapide et pizzas encore chaudes.&nbsp;»</p>
+        <footer>Avis Google</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= HORAIRES / ACCÈS ======================= -->
+<section class="s-infos" id="horaires">
+  <div class="wrap">
+    <h2>Horaires &amp; accès</h2>
+    <div class="infos-grille">
+      <div>
+        <h3>Ouvert 7&nbsp;j/7 midi &amp; soir — sauf jeudi soir</h3>
+        <!-- [À REMPLACER] Heures précises plausibles, à confirmer (donnée réelle : 7 j/7 midi et soir, sauf jeudi soir) -->
+        <table class="horaires">
+          <caption class="sr-only">Horaires d’ouverture par jour</caption>
+          <thead><tr><th scope="col">Jour</th><th scope="col">Midi</th><th scope="col">Soir</th></tr></thead>
+          <tbody>
+            <tr data-jour="1"><td>Lundi</td><td>11&nbsp;h&nbsp;30 – 13&nbsp;h&nbsp;30</td><td>18&nbsp;h – 21&nbsp;h&nbsp;30</td></tr>
+            <tr data-jour="2"><td>Mardi</td><td>11&nbsp;h&nbsp;30 – 13&nbsp;h&nbsp;30</td><td>18&nbsp;h – 21&nbsp;h&nbsp;30</td></tr>
+            <tr data-jour="3"><td>Mercredi</td><td>11&nbsp;h&nbsp;30 – 13&nbsp;h&nbsp;30</td><td>18&nbsp;h – 21&nbsp;h&nbsp;30</td></tr>
+            <tr data-jour="4"><td>Jeudi</td><td>11&nbsp;h&nbsp;30 – 13&nbsp;h&nbsp;30</td><td class="ferme">Fermé</td></tr>
+            <tr data-jour="5"><td>Vendredi</td><td>11&nbsp;h&nbsp;30 – 13&nbsp;h&nbsp;30</td><td>18&nbsp;h – 21&nbsp;h&nbsp;30</td></tr>
+            <tr data-jour="6"><td>Samedi</td><td>11&nbsp;h&nbsp;30 – 13&nbsp;h&nbsp;30</td><td>18&nbsp;h – 21&nbsp;h&nbsp;30</td></tr>
+            <tr data-jour="0"><td>Dimanche</td><td>11&nbsp;h&nbsp;30 – 13&nbsp;h&nbsp;30</td><td>18&nbsp;h – 21&nbsp;h&nbsp;30</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="acces">
+        <h3>Nous trouver</h3>
+        <p><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Snack%20de%20la%20Place%2C%209%20place%20du%20Trente%20Septembre%2C%2088700%20Rambervillers" target="_blank" rel="noopener">9 place du Trente Septembre<br>88700 Rambervillers<span class="sr-only"> (itinéraire Google Maps, nouvel onglet)</span></a></p>
+        <p>Au cœur de Rambervillers, sur la place du village — retrait facile, on vous attend au comptoir.</p>
+        <p><a class="gros-tel" href="tel:+33761800929"><svg class="ic" aria-hidden="true"><use href="#i-tel"/></svg>07&nbsp;61&nbsp;80&nbsp;09&nbsp;29</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pied">
+  <div class="wrap">
+    <p><strong>Snack de la Place</strong> · 9 place du Trente Septembre, 88700 Rambervillers · <a href="tel:+33761800929">07&nbsp;61&nbsp;80&nbsp;09&nbsp;29</a></p>
+    <p>Pizzas &amp; snacking · retrait et livraison · 7&nbsp;j/7 midi et soir, sauf jeudi soir · <a href="#haut">Haut de page</a></p>
+  </div>
+</footer>
+
+<!-- Modale de démonstration (commande) -->
+<dialog id="demo-dlg" aria-labelledby="demo-titre">
+  <h2 id="demo-titre">Ceci est une démonstration</h2>
+  <p>Votre commande n’a pas été réellement envoyée — aucune donnée n’est transmise. <strong>En production&nbsp;: paiement CB en ligne ou paiement au retrait.</strong></p>
+  <div id="demo-recap"></div>
+  <button class="btn btn-plein" type="button" id="demo-ferme">Fermer</button>
+</dialog>
+
+<!-- Bloc fixe bas : barre CTA mobile + bandeau légal -->
+<div id="bas-fixe">
+  <nav class="cta-bar" aria-label="Actions rapides">
+    <a class="cta-cmd" href="#commander"><svg class="ic" aria-hidden="true"><use href="#i-sac"/></svg>Commander <span class="pastille" id="cta-nb" hidden aria-label="articles dans le panier"></span></a>
+    <a class="cta-tel" href="tel:+33761800929"><svg class="ic" aria-hidden="true"><use href="#i-tel"/></svg>Appeler</a>
+  </nav>
+  <p class="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</p>
+</div>
+
+<script>
+(function(){
+'use strict';
+var $=function(s,c){return (c||document).querySelector(s);};
+var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s));};
+var store={
+  get:function(k){try{return JSON.parse(localStorage.getItem(k));}catch(e){return null;}},
+  set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+};
+function euros(c){return (c/100).toFixed(2).replace('.',',')+' €';}
+
+/* --- Le bloc fixe bas ne doit jamais masquer le contenu --- */
+var basFixe=$('#bas-fixe');
+function calePied(){if(basFixe){document.body.style.paddingBottom=(basFixe.offsetHeight+12)+'px';}}
+window.addEventListener('resize',calePied);
+window.addEventListener('load',calePied);
+calePied();
+
+/* --- Jour courant : surlignage horaires + note jeudi --- */
+var now=new Date();
+var ligneJour=$('.horaires tr[data-jour="'+now.getDay()+'"]');
+if(ligneJour){ligneJour.classList.add('auj');}
+if(now.getDay()===4){var nj=$('#note-jeudi');if(nj){nj.hidden=false;}}
+
+/* --- Panier (localStorage, simulation) --- */
+var panier=store.get('sdlp-panier')||{};
+var FRAIS=250,MINI=1500; /* frais de livraison et minimum, en centimes (exemples) */
+var statut=$('#cmd-status');
+function disStatut(msg){if(statut){statut.textContent=msg;}}
+function nbArticles(){var n=0,k;for(k in panier){n+=panier[k].q;}return n;}
+function sousTotal(){var s=0,k;for(k in panier){s+=panier[k].p*panier[k].q;}return s;}
+function modeLivraison(){var r=$('input[name="mode"]:checked');return !!(r&&r.value==='livraison');}
+
+function rendPanier(){
+  var liste=$('#panier-liste'),vide=$('#panier-vide');
+  if(!liste){return;}
+  liste.innerHTML='';
+  var ids=Object.keys(panier);
+  ids.forEach(function(id){
+    var a=panier[id];
+    var li=document.createElement('li');
+    li.innerHTML='<span class="pl-nom">'+a.n+'</span>'
+      +'<span class="pl-ctl"><button type="button" class="qte" data-id="'+id+'" data-d="-1" aria-label="Retirer un article « '+a.n+' »">−</button>'
+      +'<span class="pl-q">'+a.q+'</span>'
+      +'<button type="button" class="qte" data-id="'+id+'" data-d="1" aria-label="Ajouter un article « '+a.n+' »">+</button></span>'
+      +'<span class="pl-prix">'+euros(a.p*a.q)+'</span>';
+    liste.appendChild(li);
+  });
+  if(vide){vide.hidden=ids.length>0;}
+  var st=sousTotal(),liv=modeLivraison();
+  $('#l-soustotal').textContent=euros(st);
+  $('#ligne-livraison').hidden=!(liv&&st>0);
+  $('#l-total').textContent=euros(st+(liv&&st>0?FRAIS:0));
+  var n=nbArticles(),badge=$('#cta-nb'),nb=$('#panier-nb');
+  if(badge){badge.hidden=n===0;badge.textContent=n;}
+  if(nb){nb.textContent=n>0?'('+n+' article'+(n>1?'s':'')+')':'';}
+  var noteMin=$('#note-mini');
+  if(noteMin){noteMin.hidden=!(liv&&st>0&&st<MINI);}
+  store.set('sdlp-panier',panier);
+}
+
+$$('.ajout').forEach(function(b){
+  b.addEventListener('click',function(){
+    var id=b.getAttribute('data-id');
+    if(!panier[id]){panier[id]={n:b.getAttribute('data-nom'),p:parseInt(b.getAttribute('data-prix'),10),q:0};}
+    panier[id].q+=1;
+    rendPanier();
+    disStatut(panier[id].n+' ajouté au panier ('+nbArticles()+' article'+(nbArticles()>1?'s':'')+').');
+  });
+});
+document.addEventListener('click',function(e){
+  var t=e.target&&e.target.closest?e.target.closest('.qte'):null;
+  if(!t){return;}
+  var id=t.getAttribute('data-id'),d=parseInt(t.getAttribute('data-d'),10);
+  if(panier[id]){panier[id].q+=d;if(panier[id].q<=0){delete panier[id];}rendPanier();}
+});
+$$('input[name="mode"]').forEach(function(r){r.addEventListener('change',rendPanier);});
+
+/* --- Créneaux du soir (15 min), simulation plausible --- */
+var creneauChoisi=null;
+function jourService(){
+  var n=new Date();
+  var d=new Date(n.getFullYear(),n.getMonth(),n.getDate());
+  var fin=new Date(d);fin.setHours(20,55,0,0); /* dernière commande pour le créneau 21 h 15 */
+  var meme=true;
+  if(n>fin||d.getDay()===4){ /* service du soir passé, ou jeudi (fermé le soir) */
+    meme=false;d.setDate(d.getDate()+1);
+    while(d.getDay()===4){d.setDate(d.getDate()+1);}
+  }
+  var noms=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+  var demain=new Date(n.getFullYear(),n.getMonth(),n.getDate()+1);
+  var lib=meme?'ce soir':(d.getTime()===demain.getTime()?'demain soir':noms[d.getDay()]+' soir');
+  return {date:d,meme:meme,libelle:lib};
+}
+var svc=jourService();
+function rendCreneaux(){
+  var zone=$('#creneaux');if(!zone){return;}
+  var graine=svc.date.getFullYear()*373+(svc.date.getMonth()+1)*31+svc.date.getDate();
+  var taux=svc.meme?Math.min(6,2+Math.floor(Math.max(0,now.getHours()-11)/2)):2;
+  var minNow=now.getHours()*60+now.getMinutes();
+  var dispo=[],i,t;
+  for(i=0;i<14;i++){ /* 18 h 00 -> 21 h 15 */
+    t=18*60+i*15;
+    if(svc.meme&&t<minNow+20){continue;} /* 20 min de préparation */
+    dispo.push({t:t,pris:((graine+i*7)%10)<taux});
+  }
+  if(dispo.length&&dispo.every(function(s){return s.pris;})){dispo[dispo.length-1].pris=false;}
+  zone.innerHTML='';
+  var libres=0;
+  dispo.forEach(function(s){
+    var h=Math.floor(s.t/60),m=s.t%60;
+    var lab=h+' h '+('0'+m).slice(-2);
+    var b=document.createElement('button');
+    b.type='button';b.className='creneau';b.textContent=lab;
+    if(s.pris){b.disabled=true;b.title='Complet';}
+    else{
+      libres++;
+      b.setAttribute('aria-pressed','false');
+      b.addEventListener('click',function(){
+        $$('.creneau[aria-pressed]').forEach(function(x){x.setAttribute('aria-pressed','false');});
+        b.setAttribute('aria-pressed','true');
+        creneauChoisi=lab;
+        disStatut('Créneau choisi : '+svc.libelle+' à '+lab+'.');
+      });
+    }
+    zone.appendChild(b);
+  });
+  var cj=$('#creneau-jour');if(cj){cj.textContent='— '+svc.libelle;}
+  var ct=$('#compteur-txt');
+  if(ct){ct.textContent=(libres<=1?'Plus qu’un créneau ':'Il reste '+libres+' créneaux ')+svc.libelle+(libres<=3?' !':'.');}
+}
+rendCreneaux();
+
+/* --- Validation de commande -> écran démo --- */
+var dlg=$('#demo-dlg');
+function ouvreDlg(){
+  if(!dlg){return;}
+  if(typeof dlg.showModal==='function'){dlg.showModal();}else{dlg.setAttribute('open','');}
+  var f=$('#demo-ferme');if(f){f.focus();}
+}
+function fermeDlg(){
+  if(!dlg){return;}
+  if(typeof dlg.close==='function'){dlg.close();}else{dlg.removeAttribute('open');videApresDemo();}
+}
+function videApresDemo(){
+  panier={};creneauChoisi=null;
+  $$('.creneau[aria-pressed]').forEach(function(x){x.setAttribute('aria-pressed','false');});
+  rendPanier();
+  disStatut('Démonstration terminée — panier réinitialisé.');
+}
+var btnValider=$('#valider');
+if(btnValider){
+  btnValider.addEventListener('click',function(){
+    var st=sousTotal();
+    if(st===0){disStatut('Votre panier est vide : ajoutez un article depuis la carte.');return;}
+    var liv=modeLivraison();
+    if(liv&&st<MINI){disStatut('Le minimum de commande en livraison est de '+euros(MINI)+'.');return;}
+    if(!creneauChoisi){disStatut('Choisissez un créneau pour '+svc.libelle+'.');return;}
+    var lignes=[],k;
+    for(k in panier){lignes.push(panier[k].q+' × '+panier[k].n+' — '+euros(panier[k].p*panier[k].q));}
+    lignes.push((liv?'Livraison à Rambervillers ('+euros(FRAIS)+')':'Retrait sur place')+' · '+svc.libelle+' à '+creneauChoisi);
+    lignes.push('Total : '+euros(st+(liv?FRAIS:0)));
+    var recap=$('#demo-recap');
+    if(recap){
+      recap.innerHTML='';
+      var ul=document.createElement('ul');
+      lignes.forEach(function(l){var li=document.createElement('li');li.textContent=l;ul.appendChild(li);});
+      recap.appendChild(ul);
+    }
+    ouvreDlg();
+  });
+}
+var btnFerme=$('#demo-ferme');
+if(btnFerme){btnFerme.addEventListener('click',fermeDlg);}
+if(dlg){dlg.addEventListener('close',videApresDemo);}
+
+/* --- Réservation soirée à thème (simulation) --- */
+var resaOuvre=$('#resa-ouvre'),resaForm=$('#resa-form'),resaConf=$('#resa-conf');
+if(resaOuvre&&resaForm&&resaConf){
+  resaOuvre.addEventListener('click',function(){
+    var dejaOuvert=!resaForm.hidden;
+    resaForm.hidden=dejaOuvert;
+    resaOuvre.setAttribute('aria-expanded',String(!dejaOuvert));
+    if(!dejaOuvert){var champ=$('#resa-nom');if(champ){champ.focus();}}
+  });
+  resaForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    var nomEl=$('#resa-nom'),nbEl=$('#resa-couverts');
+    var nom=nomEl?nomEl.value.trim():'';
+    if(!nom){disStatutResa('Indiquez votre nom pour réserver.');if(nomEl){nomEl.focus();}return;}
+    var nb=nbEl?Math.max(1,Math.min(12,parseInt(nbEl.value,10)||1)):1;
+    resaConf.textContent='';
+    var b=document.createElement('strong');
+    b.textContent='Ceci est une démonstration';
+    resaConf.appendChild(b);
+    resaConf.appendChild(document.createTextNode(' — la réservation au nom de « '+nom+' » ('+nb+' couvert'+(nb>1?'s':'')+') n’a pas été envoyée. En production : confirmation immédiate par SMS.'));
+    resaConf.hidden=false;
+    resaForm.hidden=true;
+    resaOuvre.setAttribute('aria-expanded','false');
+    resaConf.focus();
+  });
+}
+function disStatutResa(msg){
+  if(resaConf){resaConf.hidden=false;resaConf.textContent=msg;}
+}
+
+rendPanier();
+})();
+</script>
+</body>
+</html>
