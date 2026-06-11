@@ -10,3 +10,4 @@ Maquettes de démonstration, non contractuelles.
 | schwartz | https://lumenbot.github.io/demos-tpe-88/schwartz/ | v1 |
 | dms | https://lumenbot.github.io/demos-tpe-88/dms/ | v1 |
 | palomino | https://lumenbot.github.io/demos-tpe-88/palomino/ | v1 |
+| pierron | https://lumenbot.github.io/demos-tpe-88/pierron/ | v1 |
