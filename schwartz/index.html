@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#3E2A20">
+<title>Pâtisserie Chocolaterie Schwartz — Rambervillers | Maison fondée en 1964</title>
+<meta name="description" content="Pâtisserie chocolaterie Schwartz à Rambervillers, maison fondée en 1964. Maître artisan : Charbonnette des Vosges, chocolats, pièces montées. Boutiques à Rambervillers et Raon-l'Étape, expédition France entière.">
+
+<!-- Polices : chargement non bloquant (display=swap) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap"></noscript>
+
+<!-- [À REMPLACER] Les horaires ci-dessous (JSON-LD et section Boutiques) sont des horaires
+     crédibles de pâtisserie, à confirmer avec la maison. Les NAP (nom, adresses, téléphones),
+     la note 4,7/144 avis et la fondation 1964 sont les données réelles publiques. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Pâtisserie Chocolaterie Schwartz",
+  "image": "img/hero-entremets.webp",
+  "url": "./",
+  "telephone": "+33329650032",
+  "foundingDate": "1964",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Place du Trente Septembre",
+    "addressLocality": "Rambervillers",
+    "postalCode": "88700",
+    "addressCountry": "FR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "144"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:00", "closes": "12:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "14:00", "closes": "18:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "12:30" }
+  ],
+  "department": {
+    "@type": "Bakery",
+    "name": "Pâtisserie Chocolaterie Schwartz — Raon-l'Étape",
+    "telephone": "+33329429909",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Raon-l'Étape",
+      "postalCode": "88110",
+      "addressCountry": "FR"
+    }
+  }
+}
+</script>
+
+<style>
+:root{
+  --ivoire:#F7F2E9;
+  --blanc:#FDFAF4;
+  --brun:#3E2A20;
+  --brun-fonce:#2A1B12;
+  --or:#B08D57;          /* décoratif uniquement (filets, cadres) */
+  --or-texte:#7C5F33;    /* doré assombri, AA sur ivoire */
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Montserrat","Segoe UI",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ivoire);color:var(--brun);
+  font:300 16px/1.7 var(--sans);
+  /* réserve pour le bandeau légal fixe (ajustée en JS) */
+  padding-bottom:7rem;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;margin:0}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+:focus-visible{outline:2px solid var(--or-texte);outline-offset:3px}
+.skip{position:absolute;left:-200vw;top:0;background:var(--brun);color:var(--ivoire);padding:12px 20px;z-index:200;font-family:var(--sans);font-size:13px}
+.skip:focus{left:8px;top:8px}
+.wrap{max-width:1100px;margin-inline:auto;padding-inline:clamp(20px,5vw,48px)}
+section{padding-block:clamp(60px,11vw,110px)}
+
+/* ── ornements ─────────────────────────── */
+.orne{display:flex;align-items:center;justify-content:center;gap:16px;color:var(--or);margin-block:18px}
+.orne::before,.orne::after{content:"";height:1px;flex:1;max-width:150px}
+.orne::before{background:linear-gradient(90deg,transparent,var(--or))}
+.orne::after{background:linear-gradient(90deg,var(--or),transparent)}
+.hairline{border:0;border-top:1px solid var(--or);opacity:.45;max-width:680px;margin:0 auto}
+.kicker{font:500 11px/1.5 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--or-texte);margin:0 0 14px}
+.titre2{font-size:clamp(30px,6.5vw,44px)}
+.sous-italique{font:500 italic clamp(17px,3.4vw,21px)/1.5 var(--serif);color:#5C4434;margin:14px auto 0;max-width:560px}
+.centre{text-align:center}
+
+/* ── boutons ───────────────────────────── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:48px;padding:10px 30px;border:1px solid var(--brun);background:transparent;
+  font:500 12px/1.3 var(--sans);letter-spacing:.22em;text-transform:uppercase;
+  color:var(--brun);text-decoration:none;cursor:pointer;transition:background .25s,color .25s}
+.btn:hover{background:var(--brun);color:var(--ivoire)}
+.btn-plein{background:var(--brun);color:var(--ivoire)}
+.btn-plein:hover{background:var(--brun-fonce)}
+.btn-fin{min-height:44px;padding:8px 18px;letter-spacing:.16em;font-size:11px;border-color:var(--or-texte);color:var(--or-texte)}
+.btn-fin:hover{background:var(--or-texte);color:var(--ivoire)}
+
+/* ── header ────────────────────────────── */
+header.haut{position:sticky;top:0;z-index:50;background:rgba(247,242,233,.97);border-bottom:1px solid rgba(176,141,87,.4)}
+.haut-ligne{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.marque{font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:.04em;text-decoration:none;display:flex;align-items:center;min-height:44px}
+.marque small{font:400 10px/1 var(--sans);letter-spacing:.3em;color:var(--or-texte);margin-left:10px;text-transform:uppercase}
+.btn-panier{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:6px 14px;border:1px solid var(--or-texte);background:transparent;color:var(--brun);font:500 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;text-decoration:none}
+.btn-panier:hover{background:var(--or-texte);color:var(--ivoire)}
+nav.ancres{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+nav.ancres::-webkit-scrollbar{display:none}
+nav.ancres ul{display:flex;gap:4px;list-style:none;margin:0;padding:0 0 2px;justify-content:flex-start}
+nav.ancres a{display:inline-flex;align-items:center;min-height:44px;padding:4px 14px;font:500 11px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:#5C4434;white-space:nowrap}
+nav.ancres a:hover{color:var(--brun);text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--or)}
+@media(min-width:900px){nav.ancres ul{justify-content:center}}
+
+/* ── bandeau saisonnier ────────────────── */
+.saison{background:var(--brun);color:var(--ivoire);text-align:center;padding:10px 16px;font:400 13px/1.5 var(--sans)}
+.saison:empty{display:none}
+.saison strong{font:500 11px/1.5 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:#D9BC8C;display:inline-block;margin-right:10px}
+
+/* ── hero ──────────────────────────────── */
+.hero{padding-top:clamp(48px,9vw,84px)}
+.hero h1{font-size:clamp(46px,11vw,80px);font-weight:500;letter-spacing:.02em}
+.hero .maitre{display:inline-flex;align-items:center;gap:12px;font:500 11px/1.4 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--or-texte);margin-top:22px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:34px}
+.hero-note{font:400 13px/1.6 var(--sans);color:#5C4434;margin-top:20px}
+.cadre{border:1px solid var(--or);padding:clamp(8px,1.6vw,14px);margin-top:clamp(40px,7vw,64px);background:var(--blanc)}
+.etoiles{color:var(--or-texte);letter-spacing:.12em}
+
+/* ── boutique ──────────────────────────── */
+.grille-produits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,3.4vw,30px);margin-top:clamp(36px,6vw,56px)}
+@media(min-width:920px){.grille-produits{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.produit{display:flex;flex-direction:column;text-align:center}
+.produit figure{margin:0;border:1px solid rgba(176,141,87,.55);padding:6px;background:var(--blanc)}
+.produit figure>*{aspect-ratio:4/3;object-fit:cover;width:100%}
+.produit h3{font-size:clamp(17px,2.6vw,20px);font-weight:600;margin-top:14px;flex-grow:0}
+.produit .desc{font:300 12.5px/1.55 var(--sans);color:#5C4434;margin:4px 0 0;flex-grow:1}
+.produit .prix{font:400 13px/1.4 var(--sans);letter-spacing:.08em;color:var(--or-texte);margin:8px 0 12px}
+.produit .tag{font:500 9.5px/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--or-texte);margin:6px 0 0}
+.svg-prod{display:grid;place-items:center;background:#34221A}
+
+/* ── panier ────────────────────────────── */
+.panier-carte{border:1px solid var(--or);background:var(--blanc);padding:clamp(22px,4.5vw,40px);margin-top:clamp(44px,8vw,70px)}
+.panier-carte h3{font-size:clamp(24px,5vw,30px);text-align:center}
+#panier-lignes{list-style:none;margin:24px 0 0;padding:0}
+#panier-lignes li{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:14px 0;border-bottom:1px solid rgba(176,141,87,.35)}
+.l-nom{flex:1 1 160px;font-family:var(--serif);font-weight:600;font-size:17px;line-height:1.3}
+.l-qte{display:inline-flex;align-items:center;border:1px solid rgba(124,95,51,.6)}
+.l-qte button{width:44px;height:44px;border:0;background:transparent;color:var(--brun);font:400 18px/1 var(--sans);cursor:pointer}
+.l-qte button:hover{background:rgba(176,141,87,.18)}
+.l-qte span{min-width:30px;text-align:center;font:400 14px/1 var(--sans)}
+.l-total{font:400 14px/1.4 var(--sans);min-width:72px;text-align:right}
+.l-suppr{width:44px;height:44px;border:0;background:transparent;color:#7C5F33;font-size:20px;cursor:pointer}
+.l-suppr:hover{color:var(--brun)}
+fieldset.modes{border:1px solid rgba(176,141,87,.45);margin:28px 0 0;padding:18px 18px 8px}
+fieldset.modes legend{font:500 11px/1.4 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--or-texte);padding:0 10px}
+.mode{display:flex;align-items:flex-start;gap:12px;padding:10px 4px;min-height:44px;cursor:pointer}
+.mode input{width:20px;height:20px;margin-top:3px;accent-color:var(--brun);flex:none}
+.mode .m-titre{font:400 14.5px/1.45 var(--sans)}
+.mode .m-detail{font:300 12.5px/1.5 var(--sans);color:#5C4434;display:block}
+#bloc-port{margin:14px 0 0;padding:14px 16px;background:rgba(176,141,87,.12);font:300 13px/1.6 var(--sans)}
+#bloc-port table{border-collapse:collapse;margin-top:6px}
+#bloc-port td{padding:1px 14px 1px 0;font-size:12.5px;color:#5C4434}
+.totaux{margin-top:22px;font:400 14px/1.8 var(--sans)}
+.totaux .ligne{display:flex;justify-content:space-between;gap:12px}
+.totaux .grand{font-family:var(--serif);font-size:22px;font-weight:600;border-top:1px solid var(--or);padding-top:10px;margin-top:8px}
+.note-demo{font:300 12px/1.6 var(--sans);color:#5C4434;text-align:center;margin:16px 0 0}
+#panier-actions{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.alerte{font:400 13px/1.55 var(--sans);color:#7A3B2E;margin:12px 0 0}
+
+/* ── pièce montée ──────────────────────── */
+.fond-brun{background:var(--brun);color:var(--ivoire)}
+.fond-brun .kicker{color:#D9BC8C}
+.fond-brun .sous-italique{color:#E8DCC8}
+.form-pm{max-width:640px;margin:clamp(36px,6vw,52px) auto 0;text-align:left}
+.champ{margin-bottom:22px}
+.champ>label,fieldset.parfums legend{display:block;font:500 11px/1.5 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:#D9BC8C;margin-bottom:8px}
+.champ input,.champ select,.champ textarea{width:100%;min-height:48px;padding:10px 14px;border:1px solid rgba(217,188,140,.55);background:rgba(247,242,233,.06);color:var(--ivoire);font:300 15px/1.5 var(--sans)}
+.champ textarea{min-height:90px;resize:vertical}
+.champ select option{color:var(--brun)}
+fieldset.parfums{border:1px solid rgba(217,188,140,.45);padding:14px 16px 6px;margin:0 0 22px}
+fieldset.parfums legend{padding:0 8px;margin:0}
+.parfums label{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:2px 14px 2px 4px;font:300 14.5px/1.4 var(--sans);cursor:pointer}
+.parfums input{width:20px;height:20px;accent-color:#D9BC8C}
+.fond-brun .btn{border-color:#D9BC8C;color:var(--ivoire)}
+.fond-brun .btn:hover{background:#D9BC8C;color:var(--brun)}
+#pm-recap{border:1px solid var(--or);background:var(--ivoire);color:var(--brun);padding:clamp(24px,5vw,40px);margin:36px auto 0;max-width:640px;text-align:center}
+#pm-recap h3{font-size:clamp(24px,5vw,30px)}
+#pm-recap dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;text-align:left;font:300 14px/1.6 var(--sans);margin:24px 0 0}
+#pm-recap dt{font-weight:500;letter-spacing:.06em;color:var(--or-texte);text-transform:uppercase;font-size:11px;padding-top:3px}
+#pm-recap dd{margin:0}
+#pm-recap .ref{font:500 italic 18px/1.4 var(--serif);color:var(--or-texte);margin-top:6px}
+
+/* ── frise héritage ────────────────────── */
+.frise{list-style:none;margin:clamp(40px,7vw,60px) auto 0;padding:0;max-width:620px;position:relative}
+.frise::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:1px;background:var(--or)}
+.frise li{position:relative;padding:0 0 38px 38px}
+.frise li:last-child{padding-bottom:0}
+.frise li::before{content:"";position:absolute;left:0;top:7px;width:15px;height:15px;background:var(--ivoire);border:1px solid var(--or);transform:rotate(45deg)}
+.frise .annee{font:600 26px/1.1 var(--serif);color:var(--brun);display:block}
+.frise p{margin:6px 0 0;font:300 14.5px/1.65 var(--sans);color:#4E392C}
+
+/* ── boutiques ─────────────────────────── */
+.grille-boutiques{display:grid;gap:clamp(20px,4vw,34px);margin-top:clamp(36px,6vw,56px)}
+@media(min-width:760px){.grille-boutiques{grid-template-columns:1fr 1fr}}
+.boutique{border:1px solid rgba(176,141,87,.55);background:var(--blanc);padding:clamp(24px,4.5vw,38px);text-align:center}
+.boutique h3{font-size:clamp(22px,4.5vw,28px)}
+.boutique address{font:300 14.5px/1.7 var(--sans);font-style:normal;margin:14px 0 0}
+.boutique .tel{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;font:500 17px/1.2 var(--sans);letter-spacing:.06em;color:var(--brun);text-decoration:none;margin-top:8px}
+.boutique .tel:hover{color:var(--or-texte)}
+.boutique .horaires{font:300 13px/1.7 var(--sans);color:#5C4434;margin:10px 0 18px}
+
+/* ── avis ──────────────────────────────── */
+.avis-note{font:600 clamp(40px,9vw,58px)/1 var(--serif)}
+.avis-grille{display:grid;gap:26px;margin-top:clamp(34px,6vw,50px)}
+@media(min-width:820px){.avis-grille{grid-template-columns:repeat(3,1fr)}}
+.avis-grille blockquote{margin:0;text-align:center;padding:0 8px}
+.avis-grille blockquote p{font:500 italic clamp(17px,3vw,19px)/1.55 var(--serif);margin:0}
+.avis-grille blockquote p::before{content:"« "}
+.avis-grille blockquote p::after{content:" »"}
+.avis-grille cite{display:block;font:500 10.5px/1.4 var(--sans);font-style:normal;letter-spacing:.24em;text-transform:uppercase;color:var(--or-texte);margin-top:14px}
+
+/* ── footer ────────────────────────────── */
+footer.pied{background:var(--brun-fonce);color:#E8DCC8;text-align:center;padding:clamp(44px,8vw,70px) 20px clamp(36px,6vw,56px)}
+footer.pied .marque{color:var(--ivoire);justify-content:center;font-size:26px}
+footer.pied p{font:300 13px/1.7 var(--sans);max-width:560px;margin:14px auto 0}
+footer.pied a{color:#E8DCC8}
+
+/* ── modale démo ───────────────────────── */
+#demo-overlay{position:fixed;inset:0;z-index:100;background:rgba(42,27,18,.65);display:grid;place-items:center;padding:20px}
+#demo-overlay[hidden]{display:none}
+.demo-carte{background:var(--ivoire);border:1px solid var(--or);max-width:430px;width:100%;padding:clamp(28px,6vw,42px);text-align:center}
+.demo-carte h3{font-size:clamp(24px,5.5vw,30px)}
+.demo-carte p{font:300 14px/1.7 var(--sans);margin:14px 0 0}
+.demo-carte .recap{font:500 italic 17px/1.5 var(--serif);color:var(--or-texte)}
+
+/* ── bandeau légal fixe ────────────────── */
+#legal{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--brun-fonce);color:#EFE6D6;
+  font:400 11.5px/1.5 var(--sans);text-align:center;padding:9px 14px}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="haut">
+  <div class="wrap">
+    <div class="haut-ligne">
+      <a class="marque" href="#contenu">Schwartz <small>depuis 1964</small></a>
+      <a class="btn-panier" href="#panier" id="lien-panier" aria-label="Voir le panier">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.3 11.2a2 2 0 0 1-2 1.8H8.3a2 2 0 0 1-2-1.8L5 8Z"/><path d="M8.5 8V6.5a3.5 3.5 0 0 1 7 0V8"/></svg>
+        Panier <span id="panier-compte" aria-hidden="true">(0)</span>
+      </a>
+    </div>
+    <nav class="ancres" aria-label="Navigation principale">
+      <ul>
+        <li><a href="#boutique">La boutique</a></li>
+        <li><a href="#evenements">Pièces montées</a></li>
+        <li><a href="#maison">La maison</a></li>
+        <li><a href="#boutiques">Nos adresses</a></li>
+        <li><a href="#avis">Avis</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Bandeau saisonnier : contenu piloté par la variable SAISON en tête de script (bas de page). -->
+<p class="saison" id="bandeau-saison" aria-live="polite"></p>
+
+<main id="contenu">
+
+<!-- ════════ HERO ════════ -->
+<section class="hero centre wrap" aria-labelledby="titre-hero">
+  <p class="kicker">Pâtisserie &middot; Chocolaterie &middot; Rambervillers</p>
+  <h1 id="titre-hero">Maison Schwartz</h1>
+  <div class="orne" aria-hidden="true">
+    <svg width="14" height="14" viewBox="0 0 14 14"><rect x="3.4" y="3.4" width="7.2" height="7.2" transform="rotate(45 7 7)" fill="none" stroke="currentColor"/></svg>
+  </div>
+  <p class="sous-italique">Pâtissier-chocolatier à Rambervillers depuis 1964</p>
+  <p class="maitre">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 6.9 7.3.2-5.8 4.4 2.1 7-6-4.2-6 4.2 2.1-7L2.3 9.1l7.3-.2L12 2z"/></svg>
+    Maître artisan
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 6.9 7.3.2-5.8 4.4 2.1 7-6-4.2-6 4.2 2.1-7L2.3 9.1l7.3-.2L12 2z"/></svg>
+  </p>
+  <div class="hero-ctas">
+    <a class="btn btn-plein" href="#boutique">La boutique en ligne</a>
+    <a class="btn" href="#evenements">Pièce montée</a>
+  </div>
+  <p class="hero-note"><span class="etoiles" aria-hidden="true">★★★★★</span> 4,7&nbsp;/&nbsp;5 — 144 avis Google</p>
+  <div class="cadre">
+    <img src="img/hero-entremets.webp" width="1400" height="875" alt="Entremets au chocolat et à la crème, tranché, signature de la maison" fetchpriority="high">
+  </div>
+</section>
+
+<hr class="hairline">
+
+<!-- ════════ WOW 1 : CLICK & COLLECT ════════ -->
+<section id="boutique" class="wrap centre" aria-labelledby="titre-boutique">
+  <p class="kicker">Click &amp; collect — expédition France entière</p>
+  <h2 class="titre2" id="titre-boutique">La boutique de la maison</h2>
+  <p class="sous-italique">Réservez vos douceurs, retirez-les à Rambervillers ou à Raon-l'Étape — ou faites-vous livrer partout en France.</p>
+
+  <!-- [À REMPLACER] Tous les prix, grammages et descriptions de cette boutique sont des
+       exemples crédibles. La Charbonnette des Vosges, les têtes de veau de Ramber et le
+       label Vosges Terroir sont les véritables spécialités de la maison. -->
+  <div class="grille-produits">
+
+    <article class="produit">
+      <!-- TODO : remplacer par une photographie de la véritable Charbonnette (photo de la maison, après signature) -->
+      <figure><svg class="svg-prod" viewBox="0 0 400 300" role="img" aria-label="La Charbonnette des Vosges — photographie à venir"><rect width="400" height="300" fill="#34221A"/><rect x="14" y="14" width="372" height="272" fill="none" stroke="#B08D57" stroke-width="1"/><rect x="22" y="22" width="356" height="256" fill="none" stroke="#B08D57" stroke-width=".5"/><text x="200" y="158" text-anchor="middle" fill="#D9BC8C" font-family="Georgia,serif" font-style="italic" font-size="64">C</text><text x="200" y="216" text-anchor="middle" fill="#B08D57" font-family="Arial,sans-serif" font-size="13" letter-spacing="4">MAISON SCHWARTZ</text></svg></figure>
+      <h3>La Charbonnette des Vosges</h3>
+      <p class="desc">La spécialité emblématique de la maison, à la pièce.</p>
+      <p class="tag">Spécialité maison</p>
+      <p class="prix">6,90&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="charbonnette">Ajouter</button>
+    </article>
+
+    <article class="produit">
+      <!-- TODO : remplacer par une photographie des véritables têtes de veau de Ramber (photo de la maison, après signature) -->
+      <figure><svg class="svg-prod" viewBox="0 0 400 300" role="img" aria-label="Têtes de veau de Ramber en chocolat — photographie à venir"><rect width="400" height="300" fill="#34221A"/><rect x="14" y="14" width="372" height="272" fill="none" stroke="#B08D57" stroke-width="1"/><rect x="22" y="22" width="356" height="256" fill="none" stroke="#B08D57" stroke-width=".5"/><text x="200" y="158" text-anchor="middle" fill="#D9BC8C" font-family="Georgia,serif" font-style="italic" font-size="64">R</text><text x="200" y="216" text-anchor="middle" fill="#B08D57" font-family="Arial,sans-serif" font-size="13" letter-spacing="4">MAISON SCHWARTZ</text></svg></figure>
+      <h3>Têtes de veau de Ramber</h3>
+      <p class="desc">Le clin d'œil chocolaté à la tradition de Rambervillers — coffret de 6.</p>
+      <p class="tag">Spécialité maison</p>
+      <p class="prix">9,80&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="tetes-veau">Ajouter</button>
+    </article>
+
+    <article class="produit">
+      <figure><img src="img/pralines.webp" width="800" height="600" alt="Boîte de pralines fines assorties, nouée de rubans" loading="lazy" decoding="async"></figure>
+      <h3>Ballotin de pralines fines</h3>
+      <p class="desc">Assortiment de la chocolaterie — 250&nbsp;g.</p>
+      <p class="prix">14,50&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="ballotin">Ajouter</button>
+    </article>
+
+    <article class="produit">
+      <figure><img src="img/truffes.webp" width="800" height="600" alt="Truffes au chocolat noir poudrées de cacao" loading="lazy" decoding="async"></figure>
+      <h3>Truffes au chocolat noir</h3>
+      <p class="desc">Cacao intense, cœur fondant — 200&nbsp;g.</p>
+      <p class="prix">11,90&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="truffes">Ajouter</button>
+    </article>
+
+    <article class="produit">
+      <!-- TODO : remplacer par une photo libre de droits d'une tablette artisanale (ou photo de la maison) -->
+      <figure><svg class="svg-prod" viewBox="0 0 400 300" role="img" aria-label="Tablette grand cru 70 % — photographie à venir"><rect width="400" height="300" fill="#34221A"/><rect x="14" y="14" width="372" height="272" fill="none" stroke="#B08D57" stroke-width="1"/><rect x="22" y="22" width="356" height="256" fill="none" stroke="#B08D57" stroke-width=".5"/><text x="200" y="158" text-anchor="middle" fill="#D9BC8C" font-family="Georgia,serif" font-style="italic" font-size="64">70</text><text x="200" y="216" text-anchor="middle" fill="#B08D57" font-family="Arial,sans-serif" font-size="13" letter-spacing="4">MAISON SCHWARTZ</text></svg></figure>
+      <h3>Tablette grand cru 70&nbsp;%</h3>
+      <p class="desc">Chocolat noir de caractère — 100&nbsp;g.</p>
+      <p class="tag">Vosges Terroir</p>
+      <p class="prix">5,60&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="tablette">Ajouter</button>
+    </article>
+
+    <article class="produit">
+      <figure><img src="img/chocolat.webp" width="800" height="500" alt="Éclats de chocolat noir aux fruits secs" loading="lazy" decoding="async"></figure>
+      <h3>Mendiants aux fruits secs</h3>
+      <p class="desc">Chocolat noir, amandes, noisettes — 180&nbsp;g.</p>
+      <p class="prix">8,90&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="mendiants">Ajouter</button>
+    </article>
+
+    <article class="produit">
+      <!-- TODO : remplacer par une photo libre de droits d'un coffret de chocolats assortis -->
+      <figure><svg class="svg-prod" viewBox="0 0 400 300" role="img" aria-label="Coffret dégustation 24 chocolats — photographie à venir"><rect width="400" height="300" fill="#34221A"/><rect x="14" y="14" width="372" height="272" fill="none" stroke="#B08D57" stroke-width="1"/><rect x="22" y="22" width="356" height="256" fill="none" stroke="#B08D57" stroke-width=".5"/><text x="200" y="158" text-anchor="middle" fill="#D9BC8C" font-family="Georgia,serif" font-style="italic" font-size="64">24</text><text x="200" y="216" text-anchor="middle" fill="#B08D57" font-family="Arial,sans-serif" font-size="13" letter-spacing="4">MAISON SCHWARTZ</text></svg></figure>
+      <h3>Coffret dégustation</h3>
+      <p class="desc">24 chocolats choisis par le chef.</p>
+      <p class="prix">26,00&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="coffret24">Ajouter</button>
+    </article>
+
+    <article class="produit">
+      <figure><img src="img/gateau.webp" width="800" height="600" alt="Gâteau au chocolat nappé de ganache sur présentoir" loading="lazy" decoding="async"></figure>
+      <h3>Entremets signature</h3>
+      <p class="desc">Chocolat-praliné, 6 parts. Produit frais.</p>
+      <p class="tag">Retrait boutique uniquement</p>
+      <p class="prix">24,00&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="entremets">Ajouter</button>
+    </article>
+  </div>
+
+  <!-- ── Panier ── -->
+  <div class="panier-carte" id="panier" aria-labelledby="titre-panier">
+    <h3 id="titre-panier">Votre panier</h3>
+    <p class="vh" id="panier-status" role="status" aria-live="polite"></p>
+    <p id="panier-vide" class="note-demo">Votre panier est vide — choisissez une douceur ci-dessus.</p>
+    <ul id="panier-lignes"></ul>
+
+    <div id="panier-suite" hidden>
+      <fieldset class="modes">
+        <legend>Retrait ou expédition</legend>
+        <label class="mode"><input type="radio" name="mode" value="ramber" checked>
+          <span><span class="m-titre">Retrait — boutique de Rambervillers</span>
+          <span class="m-detail">Place du Trente Septembre, face à l'église. Gratuit, sous 48&nbsp;h.</span></span></label>
+        <label class="mode"><input type="radio" name="mode" value="raon">
+          <span><span class="m-titre">Retrait — boutique de Raon-l'Étape</span>
+          <span class="m-detail">Gratuit, sous 48&nbsp;h.</span></span></label>
+        <label class="mode"><input type="radio" name="mode" value="envoi" id="radio-envoi">
+          <span><span class="m-titre">Expédition France entière</span>
+          <span class="m-detail">Colis suivi — port calculé selon le poids.</span></span></label>
+      </fieldset>
+      <p class="alerte" id="alerte-frais" hidden>L'entremets est un produit frais : il se retire en boutique et ne peut pas être expédié. Retirez-le du panier pour choisir l'expédition.</p>
+
+      <!-- [À REMPLACER] Tarifs d'expédition factices, par tranches de poids (colis suivi). -->
+      <div id="bloc-port" hidden>
+        <strong>Frais de port — colis suivi (estimation)</strong>
+        <table>
+          <tr><td>Jusqu'à 500&nbsp;g</td><td>6,90&nbsp;€</td></tr>
+          <tr><td>500&nbsp;g à 1&nbsp;kg</td><td>8,90&nbsp;€</td></tr>
+          <tr><td>1&nbsp;kg à 2&nbsp;kg</td><td>11,90&nbsp;€</td></tr>
+          <tr><td>Au-delà de 2&nbsp;kg</td><td>14,90&nbsp;€</td></tr>
+        </table>
+      </div>
+
+      <div class="totaux" aria-live="polite">
+        <p class="ligne"><span>Sous-total</span> <span id="t-sous">0,00&nbsp;€</span></p>
+        <p class="ligne" id="t-poids-ligne"><span>Poids estimé</span> <span id="t-poids">0&nbsp;g</span></p>
+        <p class="ligne" id="t-port-ligne" hidden><span>Port (colis suivi)</span> <span id="t-port">—</span></p>
+        <p class="ligne grand"><span>Total</span> <span id="t-total">0,00&nbsp;€</span></p>
+      </div>
+
+      <div id="panier-actions">
+        <button class="btn btn-plein" type="button" id="btn-confirmer">Confirmer la commande</button>
+        <button class="btn btn-fin" type="button" id="btn-vider">Vider le panier</button>
+      </div>
+      <p class="note-demo">Démonstration : aucun paiement réel, aucune donnée transmise.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ WOW 2 : PIÈCE MONTÉE ════════ -->
+<section id="evenements" class="fond-brun centre" aria-labelledby="titre-pm">
+  <div class="wrap">
+    <p class="kicker">Mariages &middot; Baptêmes &middot; Communions</p>
+    <h2 class="titre2" id="titre-pm">Pièce montée &amp; événements</h2>
+    <p class="sous-italique">Confiez votre grand jour au laboratoire de la maison : décrivez votre projet, nous vous rappelons pour le composer ensemble.</p>
+
+    <form class="form-pm" id="form-pm" novalidate>
+      <div class="champ">
+        <label for="pm-occasion">Occasion</label>
+        <select id="pm-occasion" name="occasion" required>
+          <option value="">— Choisir —</option>
+          <option>Mariage</option>
+          <option>Baptême</option>
+          <option>Communion</option>
+          <option>Anniversaire</option>
+          <option>Autre événement</option>
+        </select>
+      </div>
+      <div class="champ">
+        <label for="pm-date">Date de l'événement</label>
+        <input type="date" id="pm-date" name="date" required>
+      </div>
+      <div class="champ">
+        <label for="pm-parts">Nombre de parts</label>
+        <input type="number" id="pm-parts" name="parts" min="10" max="400" step="1" inputmode="numeric" placeholder="Ex. 80" required>
+      </div>
+      <fieldset class="parfums">
+        <legend>Parfums souhaités (un ou plusieurs)</legend>
+        <label><input type="checkbox" name="parfum" value="Vanille"> Vanille</label>
+        <label><input type="checkbox" name="parfum" value="Chocolat grand cru"> Chocolat grand cru</label>
+        <label><input type="checkbox" name="parfum" value="Framboise"> Framboise</label>
+        <label><input type="checkbox" name="parfum" value="Pistache"> Pistache</label>
+        <label><input type="checkbox" name="parfum" value="Caramel beurre salé"> Caramel beurre salé</label>
+        <label><input type="checkbox" name="parfum" value="Café"> Café</label>
+      </fieldset>
+      <div class="champ">
+        <label for="pm-nom">Votre nom</label>
+        <input type="text" id="pm-nom" name="nom" autocomplete="name" required>
+      </div>
+      <div class="champ">
+        <label for="pm-tel">Votre téléphone</label>
+        <input type="tel" id="pm-tel" name="tel" autocomplete="tel" required>
+      </div>
+      <div class="champ">
+        <label for="pm-message">Précisions (facultatif)</label>
+        <textarea id="pm-message" name="message" placeholder="Thème, couleurs, nougatine, allergies…"></textarea>
+      </div>
+      <p class="alerte" id="pm-erreur" hidden style="color:#F4C9B8"></p>
+      <p class="centre" style="margin-top:6px"><button class="btn" type="submit">Envoyer ma demande</button></p>
+    </form>
+
+    <div id="pm-recap" hidden tabindex="-1" aria-labelledby="pm-recap-titre">
+      <p class="kicker" style="color:var(--or-texte)">Demande envoyée au laboratoire</p>
+      <h3 id="pm-recap-titre">Votre projet est entre de bonnes mains</h3>
+      <p class="ref" id="pm-ref"></p>
+      <dl id="pm-detail"></dl>
+      <p class="note-demo" style="margin-top:24px">Ceci est une démonstration — aucune donnée n'a été envoyée.<br>En production, la maison vous rappellerait sous 24&nbsp;h pour composer la pièce et confirmer le devis.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ HÉRITAGE ════════ -->
+<section id="maison" class="wrap" aria-labelledby="titre-maison">
+  <div class="centre">
+    <p class="kicker">Une maison de famille</p>
+    <h2 class="titre2" id="titre-maison">Depuis 1964, place du Trente Septembre</h2>
+    <p class="sous-italique">Trois générations de gourmandise au cœur de Rambervillers, face à l'église.</p>
+  </div>
+  <!-- [À REMPLACER] Jalons intermédiaires illustratifs : seules la fondation en 1964 et la
+       situation actuelle (maître artisan, Vosges Terroir, deux boutiques, expéditions)
+       sont des données réelles. Dates 1986, 1998, 2011 à confirmer avec la maison. -->
+  <ol class="frise">
+    <li><span class="annee">1964</span><p>La famille Schwartz fonde sa pâtisserie au cœur de Rambervillers, face à l'église.</p></li>
+    <li><span class="annee">1986</span><p>Le laboratoire s'agrandit : la chocolaterie rejoint la pâtisserie.</p></li>
+    <li><span class="annee">1998</span><p>Naissance de la Charbonnette des Vosges et des têtes de veau de Ramber en chocolat.</p></li>
+    <li><span class="annee">2011</span><p>La maison ouvre sa seconde boutique à Raon-l'Étape.</p></li>
+    <li><span class="annee">Aujourd'hui</span><p>Maître artisan, produits labellisés Vosges Terroir, pièces montées d'exception — et des douceurs expédiées dans la France entière.</p></li>
+  </ol>
+</section>
+
+<hr class="hairline">
+
+<!-- ════════ LES DEUX BOUTIQUES ════════ -->
+<section id="boutiques" class="wrap centre" aria-labelledby="titre-boutiques">
+  <p class="kicker">Nos adresses</p>
+  <h2 class="titre2" id="titre-boutiques">Les deux boutiques</h2>
+  <div class="grille-boutiques">
+    <div class="boutique">
+      <h3>Rambervillers</h3>
+      <address>Place du Trente Septembre — face à l'église<br>88700 Rambervillers</address>
+      <a class="tel" href="tel:+33329650032">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+        03 29 65 00 32</a>
+      <!-- [À REMPLACER] Horaires crédibles de pâtisserie, à confirmer avec la maison -->
+      <p class="horaires">Mardi – samedi : 8 h – 12 h 30 · 14 h – 18 h 30<br>Dimanche : 8 h – 12 h 30 · Fermé le lundi</p>
+      <a class="btn btn-fin" href="https://www.google.com/maps/search/?api=1&amp;query=P%C3%A2tisserie+Schwartz+place+du+Trente+Septembre+88700+Rambervillers" target="_blank" rel="noopener">Itinéraire</a>
+    </div>
+    <div class="boutique">
+      <h3>Raon-l'Étape</h3>
+      <address>88110 Raon-l'Étape</address>
+      <a class="tel" href="tel:+33329429909">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+        03 29 42 99 09</a>
+      <!-- [À REMPLACER] Horaires crédibles de pâtisserie, à confirmer avec la maison -->
+      <p class="horaires">Mardi – samedi : 8 h – 12 h 30 · 14 h – 18 h 30<br>Dimanche : 8 h – 12 h 30 · Fermé le lundi</p>
+      <a class="btn btn-fin" href="https://www.google.com/maps/search/?api=1&amp;query=P%C3%A2tisserie+Schwartz+Raon-l%27%C3%89tape" target="_blank" rel="noopener">Itinéraire</a>
+    </div>
+  </div>
+</section>
+
+<hr class="hairline">
+
+<!-- ════════ AVIS ════════ -->
+<section id="avis" class="wrap centre" aria-labelledby="titre-avis">
+  <p class="kicker">Ils nous font confiance</p>
+  <h2 class="titre2" id="titre-avis">L'avis des gourmands</h2>
+  <p class="avis-note" style="margin-top:18px">4,7<span style="font-size:.45em">&nbsp;/&nbsp;5</span></p>
+  <p class="hero-note"><span class="etoiles" aria-hidden="true">★★★★★</span> 144 avis Google</p>
+  <!-- [À REMPLACER] Extraits d'avis illustratifs (≤ 15 mots), à remplacer par de
+       véritables extraits d'avis Google de la maison -->
+  <div class="avis-grille">
+    <blockquote><p>Les meilleurs chocolats des Vosges, et un accueil charmant.</p><cite>Avis Google</cite></blockquote>
+    <blockquote><p>La Charbonnette est une merveille — on revient chaque semaine.</p><cite>Avis Google</cite></blockquote>
+    <blockquote><p>Pièce montée magnifique pour notre mariage, tous les invités conquis.</p><cite>Avis Google</cite></blockquote>
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <span class="marque" style="border:0">Schwartz <small style="color:#D9BC8C">depuis 1964</small></span>
+  <p>Pâtisserie Chocolaterie Schwartz — Maître artisan<br>
+  Place du Trente Septembre, 88700 Rambervillers · <a href="tel:+33329650032">03 29 65 00 32</a><br>
+  Raon-l'Étape · <a href="tel:+33329429909">03 29 42 99 09</a></p>
+  <p>Maquette de démonstration proposée par L'Atelier Web des Vosges.</p>
+</footer>
+
+<!-- ════════ Modale démonstration ════════ -->
+<div id="demo-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="demo-titre">
+  <div class="demo-carte">
+    <p class="kicker">Maison Schwartz</p>
+    <h3 id="demo-titre">Ceci est une démonstration</h3>
+    <p class="recap" id="demo-recap"></p>
+    <p>En production : paiement sécurisé par carte bancaire en ligne, ou règlement au retrait en boutique. Aucune donnée n'a été transmise.</p>
+    <p style="margin-top:24px"><button class="btn btn-plein" type="button" id="demo-fermer">Fermer</button></p>
+  </div>
+</div>
+
+<!-- ════════ Bandeau légal (texte exact, permanent) ════════ -->
+<p id="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</p>
+
+<script>
+/* ═════════ BANDEAU SAISONNIER — modifiable en 10 secondes ═════════
+   Pour faire vivre le site au rythme de la maison (Pâques, Noël,
+   Saint-Valentin, fête des mères…), changez simplement les deux
+   lignes ci-dessous et enregistrez : rien d'autre à toucher.
+   [À REMPLACER] à chaque saison.                                    */
+const SAISON = {
+  libelle: "Fête des Pères — 21 juin",
+  message: "Coffrets dégustation et entremets signature : pensez à réserver avant le vendredi 19 juin."
+};
+/* ══════════════════════════════════════════════════════════════════ */
+
+(function(){
+"use strict";
+var $ = function(s){ return document.querySelector(s); };
+
+/* ── Bandeau saisonnier ── */
+if (SAISON && SAISON.message) {
+  var bs = $("#bandeau-saison");
+  var st = document.createElement("strong");
+  st.textContent = SAISON.libelle;
+  bs.appendChild(st);
+  bs.appendChild(document.createTextNode(SAISON.message));
+}
+
+/* ── Réserve sous le bandeau légal fixe ── */
+function padLegal(){
+  var l = $("#legal");
+  if (l) document.body.style.paddingBottom = (l.offsetHeight + 10) + "px";
+}
+window.addEventListener("resize", padLegal);
+padLegal();
+
+/* ── Catalogue (prix/poids d'exemple, cohérents avec les fiches produits) ── */
+var PRODUITS = {
+  "charbonnette": { nom:"La Charbonnette des Vosges", prix:6.90,  poids:180 },
+  "tetes-veau":   { nom:"Têtes de veau de Ramber",    prix:9.80,  poids:220 },
+  "ballotin":     { nom:"Ballotin de pralines fines", prix:14.50, poids:320 },
+  "truffes":      { nom:"Truffes au chocolat noir",   prix:11.90, poids:260 },
+  "tablette":     { nom:"Tablette grand cru 70 %",    prix:5.60,  poids:130 },
+  "mendiants":    { nom:"Mendiants aux fruits secs",  prix:8.90,  poids:240 },
+  "coffret24":    { nom:"Coffret dégustation",        prix:26.00, poids:420 },
+  "entremets":    { nom:"Entremets signature",        prix:24.00, poids:900, frais:true }
+};
+
+/* ── Panier : localStorage avec repli mémoire ── */
+var CLE = "schwartz-panier";
+var memoire = {};
+function lirePanier(){
+  try { return JSON.parse(localStorage.getItem(CLE)) || {}; }
+  catch(e){ return memoire; }
+}
+function ecrirePanier(p){
+  memoire = p;
+  try { localStorage.setItem(CLE, JSON.stringify(p)); } catch(e){}
+}
+function eur(n){ return n.toFixed(2).replace(".", ",") + " €"; }
+function port(g){
+  if (g <= 500)  return 6.90;
+  if (g <= 1000) return 8.90;
+  if (g <= 2000) return 11.90;
+  return 14.90;
+}
+function annoncer(msg){ $("#panier-status").textContent = msg; }
+
+function rendrePanier(){
+  var p = lirePanier(), ul = $("#panier-lignes"), ids = Object.keys(p);
+  ul.textContent = "";
+  var nb = 0, sous = 0, poids = 0, frais = false;
+  ids.forEach(function(id){
+    var prod = PRODUITS[id]; if (!prod) return;
+    var q = p[id];
+    nb += q; sous += prod.prix * q; poids += prod.poids * q;
+    if (prod.frais) frais = true;
+    var li = document.createElement("li");
+    var nom = document.createElement("span"); nom.className = "l-nom"; nom.textContent = prod.nom;
+    var qte = document.createElement("span"); qte.className = "l-qte";
+    var bm = document.createElement("button"); bm.type = "button"; bm.textContent = "−";
+    bm.setAttribute("aria-label", "Retirer un " + prod.nom);
+    bm.addEventListener("click", function(){ changerQte(id, -1); });
+    var nbq = document.createElement("span"); nbq.textContent = q;
+    var bp = document.createElement("button"); bp.type = "button"; bp.textContent = "+";
+    bp.setAttribute("aria-label", "Ajouter un " + prod.nom);
+    bp.addEventListener("click", function(){ changerQte(id, 1); });
+    qte.appendChild(bm); qte.appendChild(nbq); qte.appendChild(bp);
+    var tot = document.createElement("span"); tot.className = "l-total"; tot.textContent = eur(prod.prix * q);
+    var sup = document.createElement("button"); sup.type = "button"; sup.className = "l-suppr"; sup.textContent = "×";
+    sup.setAttribute("aria-label", "Supprimer " + prod.nom + " du panier");
+    sup.addEventListener("click", function(){ changerQte(id, -99); });
+    li.appendChild(nom); li.appendChild(qte); li.appendChild(tot); li.appendChild(sup);
+    ul.appendChild(li);
+  });
+  $("#panier-compte").textContent = "(" + nb + ")";
+  $("#lien-panier").setAttribute("aria-label", "Voir le panier — " + nb + " article" + (nb > 1 ? "s" : ""));
+  $("#panier-vide").hidden = nb > 0;
+  $("#panier-suite").hidden = nb === 0;
+  if (nb === 0) return;
+
+  var radioEnvoi = $("#radio-envoi");
+  radioEnvoi.disabled = frais;
+  $("#alerte-frais").hidden = !frais;
+  if (frais && radioEnvoi.checked) {
+    document.querySelector('input[name="mode"][value="ramber"]').checked = true;
+  }
+  var envoi = radioEnvoi.checked && !frais;
+  var fraisPort = envoi ? port(poids) : 0;
+  $("#bloc-port").hidden = !envoi;
+  $("#t-port-ligne").hidden = !envoi;
+  $("#t-sous").textContent = eur(sous);
+  $("#t-poids").textContent = poids >= 1000 ? (poids/1000).toFixed(1).replace(".", ",") + " kg" : poids + " g";
+  if (envoi) $("#t-port").textContent = eur(fraisPort);
+  $("#t-total").textContent = eur(sous + fraisPort);
+}
+
+function changerQte(id, delta){
+  var p = lirePanier();
+  var q = (p[id] || 0) + delta;
+  if (q <= 0) { delete p[id]; annoncer(PRODUITS[id].nom + " retiré du panier."); }
+  else { p[id] = Math.min(q, 20); }
+  ecrirePanier(p);
+  rendrePanier();
+}
+
+document.querySelectorAll("[data-ajout]").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    var id = btn.getAttribute("data-ajout");
+    changerQte(id, 1);
+    annoncer(PRODUITS[id].nom + " ajouté au panier.");
+  });
+});
+document.querySelectorAll('input[name="mode"]').forEach(function(r){
+  r.addEventListener("change", rendrePanier);
+});
+$("#btn-vider").addEventListener("click", function(){
+  ecrirePanier({});
+  annoncer("Panier vidé.");
+  rendrePanier();
+});
+
+/* ── Modale démonstration ── */
+var overlay = $("#demo-overlay"), declencheur = null;
+function ouvrirDemo(recap, origine){
+  declencheur = origine || null;
+  $("#demo-recap").textContent = recap;
+  overlay.hidden = false;
+  $("#demo-fermer").focus();
+}
+function fermerDemo(){
+  overlay.hidden = true;
+  if (declencheur) declencheur.focus();
+}
+$("#demo-fermer").addEventListener("click", fermerDemo);
+overlay.addEventListener("click", function(e){ if (e.target === overlay) fermerDemo(); });
+document.addEventListener("keydown", function(e){
+  if (e.key === "Escape" && !overlay.hidden) fermerDemo();
+});
+
+$("#btn-confirmer").addEventListener("click", function(){
+  var p = lirePanier(), nb = 0, sous = 0, poids = 0;
+  Object.keys(p).forEach(function(id){
+    if (!PRODUITS[id]) return;
+    nb += p[id]; sous += PRODUITS[id].prix * p[id]; poids += PRODUITS[id].poids * p[id];
+  });
+  if (nb === 0) return;
+  var mode = document.querySelector('input[name="mode"]:checked').value;
+  var libelle, total = sous;
+  if (mode === "envoi") { total += port(poids); libelle = "expédition France entière (colis suivi)"; }
+  else if (mode === "raon") { libelle = "retrait à la boutique de Raon-l'Étape"; }
+  else { libelle = "retrait à la boutique de Rambervillers"; }
+  ouvrirDemo(nb + " article" + (nb > 1 ? "s" : "") + " · " + eur(total) + " — " + libelle + ".", this);
+});
+
+/* ── Formulaire pièce montée ── */
+var datePM = $("#pm-date");
+if (datePM) {
+  var demain = new Date(Date.now() + 86400000);
+  datePM.min = demain.toISOString().slice(0, 10);
+}
+$("#form-pm").addEventListener("submit", function(e){
+  e.preventDefault();
+  var f = e.target, err = $("#pm-erreur");
+  var parfums = Array.prototype.slice.call(f.querySelectorAll('input[name="parfum"]:checked'))
+                  .map(function(c){ return c.value; });
+  err.hidden = true;
+  if (!f.occasion.value || !f.date.value || !f.parts.value || !f.nom.value.trim() || !f.tel.value.trim()) {
+    err.textContent = "Merci de renseigner l'occasion, la date, le nombre de parts, votre nom et votre téléphone.";
+    err.hidden = false; return;
+  }
+  if (parfums.length === 0) {
+    err.textContent = "Merci de choisir au moins un parfum.";
+    err.hidden = false; return;
+  }
+  var d = new Date(f.date.value + "T12:00:00");
+  var dateFr = d.toLocaleDateString("fr-FR", { weekday:"long", day:"numeric", month:"long", year:"numeric" });
+  $("#pm-ref").textContent = "Référence " + "PM-" + f.date.value.replace(/-/g, "") + "-" + Math.floor(100 + Math.random() * 900);
+  var dl = $("#pm-detail"); dl.textContent = "";
+  [["Occasion", f.occasion.value],
+   ["Date", dateFr],
+   ["Parts", f.parts.value + " parts"],
+   ["Parfums", parfums.join(", ")],
+   ["Contact", f.nom.value.trim() + " — " + f.tel.value.trim()]
+  ].concat(f.message.value.trim() ? [["Précisions", f.message.value.trim()]] : [])
+   .forEach(function(paire){
+     var dt = document.createElement("dt"); dt.textContent = paire[0];
+     var dd = document.createElement("dd"); dd.textContent = paire[1];
+     dl.appendChild(dt); dl.appendChild(dd);
+   });
+  var recap = $("#pm-recap");
+  recap.hidden = false;
+  recap.scrollIntoView({ block: "center" });
+  recap.focus();
+});
+
+rendrePanier();
+})();
+</script>
+</body>
+</html>

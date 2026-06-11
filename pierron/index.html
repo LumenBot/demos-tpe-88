@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#103A66">
+<title>Plombier à Rambervillers — Pierron Sanitaire · Dépannage, fuite, salle de bains</title>
+<meta name="description" content="Plombier à Rambervillers (88700) : dépannage fuite, débouchage, chauffe-eau, salle de bains clé en main. Entreprise notée 5,0 sur Google. Appelez le 03 29 65 41 88.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400..900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400..900&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400..900&display=swap"></noscript>
+
+<!-- [À REMPLACER] L'amplitude horaire 8 h – 18 h (ici et dans le JSON-LD ci-dessous) est une
+     hypothèse de travail : seul « lun–ven » est confirmé publiquement. À valider avec M. Pierron. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Pierron Sanitaire",
+  "legalName": "SASU Pierron Julien",
+  "alternateName": "SASU Pierron Julien",
+  "telephone": ["+33 3 29 65 41 88", "+33 6 72 15 95 29"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11 rue du Magasin",
+    "postalCode": "88700",
+    "addressLocality": "Rambervillers",
+    "addressCountry": "FR"
+  },
+  "areaServed": "Rambervillers et communes alentour (environ 20 km)",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5"
+  }
+}
+</script>
+
+<style>
+:root{
+  --bleu:#103A66;
+  --bleu-fonce:#0B2944;
+  --orange:#C2410C;
+  --orange-fonce:#9A3412;
+  --encre:#15212F;
+  --gris-bord:#C9D6E4;
+  --fond:#F4F7FA;
+  --vert-fond:#DCFCE7; --vert-texte:#14532D;
+  --ambre-fond:#FEF3C7; --ambre-texte:#7C2D12;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion: no-preference){
+  html{scroll-behavior:smooth}
+}
+body{
+  margin:0;
+  font-family:'Lexend',system-ui,'Segoe UI',Roboto,Arial,sans-serif;
+  font-size:1.1875rem; /* 19 px */
+  line-height:1.55;
+  color:var(--encre);
+  background:#fff;
+  padding-bottom:calc(7.5rem + env(safe-area-inset-bottom));
+  overflow-wrap:break-word;
+}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{line-height:1.12;margin:0 0 .5em;font-weight:800;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,8vw,3.6rem);font-weight:900}
+h2{font-size:clamp(1.7rem,5.5vw,2.5rem);color:var(--bleu)}
+p{margin:0 0 1em}
+a{color:var(--bleu)}
+:focus-visible{outline:4px solid var(--orange);outline-offset:3px;border-radius:6px}
+.sombre :focus-visible{outline-color:#fff}
+.skip{
+  position:absolute;left:-999px;top:0;background:#fff;color:var(--bleu);
+  padding:1rem 1.5rem;font-weight:700;z-index:100;
+}
+.skip:focus{left:0}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+
+/* ---------- En-tête ---------- */
+.site-head{background:#fff;border-bottom:3px solid var(--bleu)}
+.site-head .wrap{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;padding-top:.9rem;padding-bottom:.9rem;flex-wrap:wrap;
+}
+.marque{display:flex;flex-direction:column;gap:.1rem;min-width:0}
+.marque strong{font-size:1.35rem;font-weight:900;color:var(--bleu);letter-spacing:-.01em}
+.marque span{font-size:.92rem;color:#3D4F63;font-weight:600}
+.tel-head{
+  display:inline-flex;align-items:center;gap:.55rem;
+  min-height:56px;padding:.6rem 1.1rem;border-radius:12px;
+  background:var(--bleu);color:#fff;text-decoration:none;
+  font-weight:800;font-size:1.05rem;white-space:nowrap;
+}
+.tel-head:hover{background:var(--bleu-fonce)}
+
+/* ---------- Bandeau horaires dynamique ---------- */
+.statut{
+  text-align:center;font-weight:700;font-size:1.05rem;
+  padding:.8rem 1.25rem;
+  background:var(--ambre-fond);color:var(--ambre-texte);
+  border-bottom:1px solid rgba(0,0,0,.08);
+}
+.statut.ouvert{background:var(--vert-fond);color:var(--vert-texte)}
+.statut a{color:inherit;font-weight:800;text-underline-offset:3px}
+
+/* ---------- Héro appel ---------- */
+.hero{background:var(--bleu);color:#fff;padding:2.5rem 0 2.75rem}
+.hero p.sous{font-size:clamp(1.15rem,4vw,1.45rem);font-weight:600;max-width:34ch;margin-bottom:1.6rem;color:#E3EDF8}
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:.7rem;
+  width:100%;min-height:64px;padding:1rem 1.4rem;margin:0 0 .9rem;
+  border-radius:14px;text-decoration:none;text-align:center;
+  font-weight:800;line-height:1.25;border:3px solid transparent;
+}
+.btn svg{flex:none}
+.btn-urgence{
+  background:var(--orange);color:#fff;border-color:#fff;
+  min-height:84px;font-size:clamp(1.25rem,4.6vw,1.6rem);
+  flex-direction:column;gap:.15rem;
+}
+.btn-urgence .num{font-size:clamp(1.5rem,6vw,2rem);font-weight:900;display:flex;align-items:center;gap:.6rem}
+.btn-urgence:hover{background:var(--orange-fonce)}
+.btn-mobile{background:#fff;color:var(--bleu);font-size:1.25rem}
+.btn-mobile:hover{background:#E3EDF8}
+.btn-devis{background:transparent;color:#fff;border-color:#fff;font-size:1.15rem}
+.btn-devis:hover{background:rgba(255,255,255,.12)}
+.hero .confiance{
+  display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin-top:1.4rem;
+  font-weight:700;font-size:1rem;color:#E3EDF8;
+}
+.hero .confiance span{display:inline-flex;align-items:center;gap:.45rem}
+.etoiles{color:#FFC861;letter-spacing:.05em}
+
+/* ---------- Sections ---------- */
+section{padding:3rem 0}
+.interventions{background:var(--fond)}
+.tuiles{display:grid;gap:1rem;margin:1.5rem 0 0;padding:0;list-style:none}
+.tuile{
+  background:#fff;border:2px solid var(--gris-bord);border-radius:14px;
+  padding:1.25rem 1.25rem 1.1rem;display:flex;gap:1rem;align-items:flex-start;
+}
+.tuile svg{flex:none;color:var(--bleu);margin-top:.15rem}
+.tuile h3{font-size:1.25rem;margin-bottom:.25rem;color:var(--bleu)}
+.tuile p{margin:0;font-size:1.02rem;color:#33445A}
+
+/* ---------- Pourquoi nous ---------- */
+.pourquoi{background:var(--bleu);color:#fff}
+.pourquoi h2{color:#fff}
+.points{display:grid;gap:1.75rem;margin:1.75rem 0 0;padding:0;list-style:none}
+.points li{display:flex;gap:1rem;align-items:flex-start}
+.points svg{flex:none;color:#FFC861;margin-top:.3rem}
+.points strong{display:block;font-size:clamp(1.3rem,4.5vw,1.6rem);font-weight:800;margin-bottom:.2rem}
+.points p{margin:0;color:#DCE8F5;font-size:1.05rem}
+
+/* ---------- Réalisations ---------- */
+.realisations figure{margin:0 0 1.25rem}
+.realisations img{border-radius:14px;width:100%}
+.realisations figcaption{font-size:.98rem;color:#3D4F63;font-weight:600;margin-top:.5rem}
+.galerie{display:grid;gap:1.25rem;margin-top:1.5rem}
+
+/* ---------- Zone ---------- */
+.zone{background:var(--fond)}
+.communes{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.25rem 0 0;padding:0;list-style:none}
+.communes li{
+  background:#fff;border:2px solid var(--gris-bord);border-radius:999px;
+  padding:.55rem 1.1rem;font-weight:700;font-size:1rem;color:var(--bleu);
+}
+
+/* ---------- Formulaire ---------- */
+.devis label{display:block;font-weight:700;margin:0 0 .35rem;color:var(--bleu)}
+.devis .champ{margin-bottom:1.4rem}
+.devis input[type="text"],.devis input[type="tel"],.devis select,.devis textarea{
+  width:100%;min-height:56px;padding:.85rem 1rem;
+  font:inherit;color:var(--encre);
+  border:2px solid #5B7188;border-radius:12px;background:#fff;
+}
+.devis textarea{min-height:130px;resize:vertical}
+.aide{font-size:.95rem;color:#3D4F63;margin:.35rem 0 0}
+.upload{
+  border:2px dashed #5B7188;border-radius:14px;background:var(--fond);
+  padding:1.25rem;text-align:center;
+}
+.upload-titre{font-weight:700;color:var(--bleu);margin:0 0 .7rem}
+.visually-hidden{
+  position:absolute;width:1px;height:1px;margin:-1px;padding:0;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+}
+.upload-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  min-height:56px;padding:.8rem 1.4rem;border-radius:12px;cursor:pointer;
+  background:var(--bleu);color:#fff;font-weight:800;font-size:1.05rem;
+}
+.upload-btn:hover{background:var(--bleu-fonce)}
+#photos:focus + .upload-btn{outline:4px solid var(--orange);outline-offset:3px}
+#liste-photos{list-style:none;margin:.9rem 0 0;padding:0;font-size:1rem;font-weight:600;color:var(--vert-texte)}
+#liste-photos li{padding:.15rem 0}
+.btn-envoyer{
+  background:var(--orange);color:#fff;border:0;cursor:pointer;
+  font:inherit;font-weight:800;font-size:1.25rem;
+  width:100%;min-height:68px;border-radius:14px;padding:1rem 1.4rem;
+}
+.btn-envoyer:hover{background:var(--orange-fonce)}
+.note-urgence{
+  background:var(--ambre-fond);color:var(--ambre-texte);
+  border-radius:12px;padding:.9rem 1.1rem;font-weight:700;font-size:1rem;margin-bottom:1.5rem;
+}
+.note-urgence a{color:inherit}
+.confirm{
+  background:var(--vert-fond);border:3px solid var(--vert-texte);
+  border-radius:14px;padding:1.75rem 1.5rem;color:var(--vert-texte);
+}
+.confirm h3{font-size:1.5rem;color:var(--vert-texte)}
+.confirm p{font-size:1.05rem}
+.confirm .btn-retour{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:56px;padding:.8rem 1.4rem;border-radius:12px;cursor:pointer;
+  background:var(--vert-texte);color:#fff;font:inherit;font-weight:800;border:0;
+}
+
+/* ---------- Avis ---------- */
+.avis{background:var(--fond);text-align:center}
+.avis .note{font-size:clamp(2.6rem,10vw,4rem);font-weight:900;color:var(--bleu);line-height:1}
+.avis .etoiles-grand{font-size:clamp(1.8rem,7vw,2.6rem);color:#D97706;letter-spacing:.08em}
+.avis blockquote{
+  margin:1.5rem auto 0;max-width:32ch;
+  font-size:clamp(1.3rem,5vw,1.7rem);font-weight:700;color:var(--encre);
+}
+.avis cite{display:block;font-style:normal;font-size:1rem;font-weight:600;color:#3D4F63;margin-top:.6rem}
+
+/* ---------- Pied de page ---------- */
+.pied{background:var(--bleu-fonce);color:#fff;padding:3rem 0 2.5rem}
+.pied h2{color:#fff;font-size:1.5rem}
+.pied address{font-style:normal;font-size:1.05rem;line-height:1.7}
+.pied a{color:#FFC861;font-weight:700;text-underline-offset:3px}
+.pied .tel-pied{
+  display:inline-flex;align-items:center;gap:.5rem;min-height:48px;
+  padding:.3rem 0;font-size:1.15rem;
+}
+.pied .entites{margin-top:1.5rem;font-size:.95rem;color:#A9BDD3}
+
+/* ---------- Bandeau légal fixe ---------- */
+.legal{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;
+  background:var(--bleu-fonce);color:#E3EDF8;
+  font-size:.8rem;line-height:1.4;text-align:center;
+  padding:.55rem .9rem calc(.55rem + env(safe-area-inset-bottom));
+  border-top:1px solid rgba(255,255,255,.25);
+}
+
+/* ---------- ≥ 640 px ---------- */
+@media (min-width:640px){
+  .tuiles{grid-template-columns:1fr 1fr}
+  .galerie{grid-template-columns:1fr 1fr}
+  .galerie figure:first-child{grid-column:1 / -1}
+  .hero .ctas{max-width:560px}
+  body{padding-bottom:calc(5rem + env(safe-area-inset-bottom))}
+}
+/* ---------- ≥ 1024 px ---------- */
+@media (min-width:1024px){
+  .tuiles{grid-template-columns:repeat(3,1fr)}
+  .points{grid-template-columns:repeat(3,1fr)}
+  .galerie{grid-template-columns:repeat(3,1fr)}
+  .galerie figure:first-child{grid-column:auto}
+  .pied .cols{display:flex;gap:4rem;flex-wrap:wrap}
+  body{padding-bottom:calc(4rem + env(safe-area-inset-bottom))}
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <div class="marque">
+      <strong>Pierron Sanitaire</strong>
+      <span>Plomberie &amp; sanitaire — Rambervillers</span>
+    </div>
+    <a class="tel-head" href="tel:+33329654188">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      03 29 65 41 88
+    </a>
+  </div>
+</header>
+
+<!-- Bandeau horaires dynamique (mis à jour par JS avec l'heure réelle).
+     [À REMPLACER] Amplitude 8 h – 18 h = hypothèse ; seul « lun–ven » est confirmé. -->
+<div class="statut" id="statut-horaires" role="status" aria-live="polite">
+  Ouvert du lundi au vendredi, 8 h – 18 h
+</div>
+
+<main id="contenu">
+
+  <!-- ============ HÉRO APPEL ============ -->
+  <section class="hero sombre" aria-labelledby="titre-hero">
+    <div class="wrap">
+      <h1 id="titre-hero">Un dégât des eaux&nbsp;?</h1>
+      <p class="sous">Fuite, canalisation bouchée, chauffe-eau en panne&nbsp;: un plombier de Rambervillers vous répond.</p>
+      <div class="ctas">
+        <a class="btn btn-urgence" href="tel:+33329654188">
+          <span>Appelez maintenant</span>
+          <span class="num">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            03&nbsp;29&nbsp;65&nbsp;41&nbsp;88
+          </span>
+        </a>
+        <a class="btn btn-mobile" href="tel:+33672159529">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+          Mobile&nbsp;: 06&nbsp;72&nbsp;15&nbsp;95&nbsp;29
+        </a>
+        <a class="btn btn-devis" href="#devis">Demander un devis</a>
+      </div>
+      <p class="confiance">
+        <span><span class="etoiles" aria-hidden="true">★★★★★</span> 5,0 sur Google</span>
+        <span>11 rue du Magasin, Rambervillers</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ INTERVENTIONS ============ -->
+  <section class="interventions" id="interventions" aria-labelledby="titre-interventions">
+    <div class="wrap">
+      <h2 id="titre-interventions">Nos interventions</h2>
+      <p>Dépannage et installation, du robinet qui goutte à la salle de bains complète.</p>
+      <!-- [À REMPLACER] Libellés et descriptions des prestations à valider avec M. Pierron. -->
+      <ul class="tuiles">
+        <li class="tuile">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.69 17.66 8.35a8 8 0 1 1-11.31 0z"/></svg>
+          <div><h3>Dépannage fuite</h3><p>Recherche et réparation de fuites d'eau, en urgence sur le secteur.</p></div>
+        </li>
+        <li class="tuile">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7a5 5 0 0 0-5 5"/></svg>
+          <div><h3>Débouchage</h3><p>Évier, WC, douche, canalisations&nbsp;: on rétablit l'écoulement.</p></div>
+        </li>
+        <li class="tuile">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h16M6 10V5a3 3 0 0 1 3-3h0M4 10l2 11h12l2-11"/></svg>
+          <div><h3>Sanitaire</h3><p>Pose et remplacement de WC, lavabos, éviers et équipements sanitaires.</p></div>
+        </li>
+        <li class="tuile">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21h6M10 21v-3M14 21v-3M5 4h14v9a5 5 0 0 1-5 5h-4a5 5 0 0 1-5-5z"/></svg>
+          <div><h3>Salle de bains clé en main</h3><p>De la dépose à la pose&nbsp;: douche, baignoire, meuble vasque, carrelage coordonné.</p></div>
+        </li>
+        <li class="tuile">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c3 4 6 7.1 6 11a6 6 0 0 1-12 0c0-3.9 3-7 6-11z"/><path d="M12 18a3 3 0 0 0 3-3"/></svg>
+          <div><h3>Chauffe-eau</h3><p>Remplacement et entretien de chauffe-eau électriques et ballons.</p></div>
+        </li>
+        <li class="tuile">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M8 3h8M12 7a5 5 0 0 1 5 5v2h3v4h-3M12 7a5 5 0 0 0-5 5v2H4v4h3M7 18h10"/></svg>
+          <div><h3>Robinetterie</h3><p>Mitigeurs, robinets thermostatiques, colonnes de douche&nbsp;: pose soignée.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ POURQUOI NOUS ============ -->
+  <section class="pourquoi sombre" aria-labelledby="titre-pourquoi">
+    <div class="wrap">
+      <h2 id="titre-pourquoi">Pourquoi Pierron Sanitaire&nbsp;?</h2>
+      <!-- [À REMPLACER] Formulations « entreprise familiale » et « intervention rapide » à confirmer avec le client. -->
+      <ul class="points">
+        <li>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5M5 10v10h14V10"/></svg>
+          <div><strong>Entreprise familiale</strong><p>Installée rue du Magasin, à Rambervillers. Vous parlez directement au plombier.</p></div>
+        </li>
+        <li>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <div><strong>5,0 ★ sur Google</strong><p>La meilleure note possible, gagnée chantier après chantier.</p></div>
+        </li>
+        <li>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>
+          <div><strong>Intervention rapide</strong><p>Sur Rambervillers et le secteur&nbsp;: peu de route, vite chez vous.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ RÉALISATIONS ============ -->
+  <section class="realisations" aria-labelledby="titre-realisations">
+    <div class="wrap">
+      <h2 id="titre-realisations">Salles de bains&nbsp;: avant, on en parle&nbsp;; après, vous en profitez</h2>
+      <p>Quelques ambiances de rénovations clé en main.</p>
+      <!-- [À REMPLACER] Photos d'illustration libres de droits — les photos des vrais chantiers de M. Pierron les remplaceront. -->
+      <div class="galerie">
+        <figure>
+          <img src="img/salle-de-bains.webp" alt="Salle de bains moderne blanche avec baignoire îlot et vasque posée" width="1200" height="800" loading="lazy" decoding="async">
+          <figcaption>Salle de bains complète&nbsp;: baignoire îlot et meuble vasque.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/douche.webp" alt="Salle de bains rénovée avec grande douche vitrée à l'italienne" width="800" height="600" loading="lazy" decoding="async">
+          <figcaption>Douche vitrée toute hauteur, accès facile.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/robinetterie.webp" alt="Robinetterie de baignoire chromée avec flexible de douche" width="800" height="600" loading="lazy" decoding="async">
+          <figcaption>Robinetterie de qualité, posée dans les règles.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ZONE D'INTERVENTION ============ -->
+  <section class="zone" id="zone" aria-labelledby="titre-zone">
+    <div class="wrap">
+      <h2 id="titre-zone">Zone d'intervention</h2>
+      <p><strong>Rambervillers et les communes alentour</strong>, dans un rayon d'environ 20&nbsp;km. Votre village n'est pas dans la liste&nbsp;? Appelez, on vous dit tout de suite si on se déplace.</p>
+      <!-- [À REMPLACER] Liste de communes indicative, à valider avec le client. -->
+      <ul class="communes">
+        <li>Rambervillers</li>
+        <li>Jeanménil</li>
+        <li>Autrey</li>
+        <li>Brû</li>
+        <li>Roville-aux-Chênes</li>
+        <li>Saint-Gorgon</li>
+        <li>Ménil-sur-Belvitte</li>
+        <li>Housseras</li>
+        <li>Padoux</li>
+        <li>Doncières</li>
+        <li>Vomécourt</li>
+        <li>Bult</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ DEVIS ============ -->
+  <section class="devis" id="devis" aria-labelledby="titre-devis">
+    <div class="wrap">
+      <h2 id="titre-devis">Demander un devis gratuit</h2>
+      <p class="note-urgence">Fuite en cours&nbsp;? N'attendez pas le formulaire&nbsp;: appelez le <a href="tel:+33329654188">03&nbsp;29&nbsp;65&nbsp;41&nbsp;88</a>.</p>
+
+      <form id="form-devis" novalidate>
+        <div class="champ">
+          <label for="nom">Votre nom</label>
+          <input type="text" id="nom" name="nom" autocomplete="name" required>
+        </div>
+        <div class="champ">
+          <label for="tel">Votre téléphone</label>
+          <input type="tel" id="tel" name="tel" autocomplete="tel" inputmode="tel" required aria-describedby="aide-tel">
+          <p class="aide" id="aide-tel">On vous rappelle à ce numéro.</p>
+        </div>
+        <div class="champ">
+          <label for="type">Type d'intervention</label>
+          <!-- [À REMPLACER] Liste des prestations à ajuster avec le client. -->
+          <select id="type" name="type" required>
+            <option value="">— Choisissez —</option>
+            <option>Urgence fuite</option>
+            <option>Débouchage</option>
+            <option>Sanitaire (WC, lavabo…)</option>
+            <option>Salle de bains clé en main</option>
+            <option>Chauffe-eau</option>
+            <option>Robinetterie</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="champ">
+          <label for="message">Décrivez le problème ou le projet</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <div class="champ upload">
+          <p class="upload-titre" id="titre-photos">Montrez-nous la fuite&nbsp;: ajoutez des photos</p>
+          <input type="file" id="photos" name="photos" accept="image/*" multiple class="visually-hidden" aria-describedby="titre-photos aide-photos">
+          <label for="photos" class="upload-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            Choisir des photos
+          </label>
+          <p class="aide" id="aide-photos">Démonstration&nbsp;: vos photos restent sur votre téléphone, rien n'est envoyé.</p>
+          <ul id="liste-photos" aria-live="polite"></ul>
+        </div>
+        <button type="submit" class="btn-envoyer">Envoyer ma demande de devis</button>
+      </form>
+
+      <div class="confirm" id="confirm-devis" hidden>
+        <h3 tabindex="-1" id="confirm-titre">Ceci est une démonstration</h3>
+        <p>Aucune donnée n'a été envoyée. En production, votre demande et vos photos partiraient directement chez Pierron Sanitaire, avec un rappel au <span id="confirm-tel"></span> dès l'ouverture.</p>
+        <button type="button" class="btn-retour" id="btn-retour">Faire une autre demande</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AVIS ============ -->
+  <section class="avis" id="avis" aria-labelledby="titre-avis">
+    <div class="wrap">
+      <h2 id="titre-avis">Ce que disent les clients</h2>
+      <p class="note">5,0</p>
+      <p class="etoiles-grand" aria-hidden="true">★★★★★</p>
+      <blockquote>
+        «&nbsp;Le meilleur plombier du coin.&nbsp;»
+        <cite>— Avis Google</cite>
+      </blockquote>
+    </div>
+  </section>
+</main>
+
+<!-- ============ PIED DE PAGE ============ -->
+<footer class="pied sombre" id="contact">
+  <div class="wrap cols">
+    <div>
+      <h2>Pierron Sanitaire</h2>
+      <address>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Pierron+Sanitaire+11+rue+du+Magasin+88700+Rambervillers" target="_blank" rel="noopener">11 rue du Magasin, 88700 Rambervillers</a><br>
+        <a class="tel-pied" href="tel:+33329654188">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          03 29 65 41 88
+        </a><br>
+        <a class="tel-pied" href="tel:+33672159529">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+          06 72 15 95 29
+        </a>
+      </address>
+    </div>
+    <div>
+      <h2>Horaires</h2>
+      <!-- [À REMPLACER] Amplitude 8 h – 18 h = hypothèse ; « lun–ven » est confirmé. -->
+      <p>Du lundi au vendredi, 8&nbsp;h&nbsp;–&nbsp;18&nbsp;h.<br>Demande en dehors des horaires&nbsp;? <a href="#devis">Laissez un message</a>, rappel à l'ouverture.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="entites">Pierron Sanitaire — SASU Pierron Julien · 11 rue du Magasin, 88700 Rambervillers</p>
+  </div>
+</footer>
+
+<!-- Bandeau légal obligatoire -->
+<div class="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ---------- Bandeau horaires dynamique ----------
+     [À REMPLACER] Amplitude 8 h – 18 h = hypothèse à valider avec le client. */
+  var OUVRE = 8, FERME = 18;
+  function majStatut(){
+    var el = document.getElementById('statut-horaires');
+    if(!el) return;
+    var n = new Date(), j = n.getDay(), h = n.getHours();
+    var jourOuvre = (j >= 1 && j <= 5);
+    if(jourOuvre && h >= OUVRE && h < FERME){
+      el.className = 'statut ouvert';
+      el.innerHTML = '🟢 Ouvert — appelez avant 18 h';
+    }else{
+      var quand;
+      if(jourOuvre && h < OUVRE){ quand = 'rappel ce matin dès 8 h'; }
+      else if(j >= 1 && j <= 4){ quand = 'rappel demain dès 8 h'; }
+      else{ quand = 'rappel lundi dès 8 h'; } /* vendredi soir, samedi, dimanche */
+      el.className = 'statut';
+      el.innerHTML = 'Fermé — <a href="#devis">laissez votre demande</a>, ' + quand;
+    }
+  }
+  majStatut();
+  setInterval(majStatut, 60000);
+
+  /* ---------- Upload photo simulé (rien n'est envoyé) ---------- */
+  var inputPhotos = document.getElementById('photos');
+  var liste = document.getElementById('liste-photos');
+  if(inputPhotos && liste){
+    inputPhotos.addEventListener('change', function(){
+      liste.textContent = '';
+      var f = inputPhotos.files;
+      for(var i = 0; i < f.length; i++){
+        var li = document.createElement('li');
+        li.textContent = '✓ ' + f[i].name;
+        liste.appendChild(li);
+      }
+    });
+  }
+
+  /* ---------- Formulaire devis 100 % simulé : aucune requête réseau ---------- */
+  var form = document.getElementById('form-devis');
+  var confirm = document.getElementById('confirm-devis');
+  if(form && confirm){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      if(!form.checkValidity()){ form.reportValidity(); return; }
+      var tel = document.getElementById('tel');
+      var ct = document.getElementById('confirm-tel');
+      if(ct){ ct.textContent = tel && tel.value ? tel.value : 'votre numéro'; }
+      form.hidden = true;
+      confirm.hidden = false;
+      var titre = document.getElementById('confirm-titre');
+      if(titre){ titre.focus(); }
+    });
+    var retour = document.getElementById('btn-retour');
+    if(retour){
+      retour.addEventListener('click', function(){
+        confirm.hidden = true;
+        form.hidden = false;
+        form.reset();
+        if(liste){ liste.textContent = ''; }
+        var nom = document.getElementById('nom');
+        if(nom){ nom.focus(); }
+      });
+    }
+  }
+})();
+</script>
+</body>
+</html>
