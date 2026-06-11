@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#17120E">
+<title>Snack Ali Baba — Kebab à Rambervillers | Ouvert tous les soirs dès 18 h</title>
+<meta name="description" content="Snack Ali Baba, le kebab préféré de Rambervillers (88700) : kebabs, assiettes, tacos, burgers. 4,5/5 sur Google (150 avis). Tous les soirs 18 h–21 h 30, dimanche jusqu'à 23 h. ☎ 06 71 09 10 21.">
+
+<!-- Google Fonts : 2 familles, chargement non bloquant -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;800&display=swap"></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Snack Ali Baba",
+  "servesCuisine": ["Kebab", "Turc", "Restauration rapide"],
+  "telephone": "+33671091021",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "70 rue Carnot",
+    "postalCode": "88700",
+    "addressLocality": "Rambervillers",
+    "addressCountry": "FR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "150",
+    "bestRating": "5"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "18:00",
+      "closes": "21:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "18:00",
+      "closes": "23:00"
+    }
+  ],
+  "priceRange": "€",
+  "paymentAccepted": "Espèces, titres-restaurant"
+}
+</script>
+
+<style>
+:root{
+  --charbon:#17120E;
+  --surface:#211A14;
+  --surface-2:#2B2118;
+  --cuivre:#C97B3D;
+  --safran:#E8A33D;
+  --creme:#F4EAD8;
+  --creme-doux:#CFC0A8;
+  --vert:#8FBF77;
+  --rouge:#E58A70;
+  --display:'Bebas Neue','Arial Narrow',Impact,sans-serif;
+  --texte:'Manrope',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--texte);
+  background:var(--charbon);
+  color:var(--creme);
+  line-height:1.6;
+  font-size:16.5px;
+  overflow-x:clip;
+  padding-bottom:7.5rem; /* le bandeau légal fixe ne masque jamais le footer */
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--safran)}
+:focus-visible{outline:3px solid var(--safran);outline-offset:2px;border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-200vw;top:0;background:var(--safran);color:var(--charbon);font-weight:800;padding:.8rem 1.2rem;z-index:60}
+.skip:focus{left:0}
+
+/* ---------- Barre haute ---------- */
+.topbar{
+  display:flex;align-items:center;justify-content:space-between;gap:.6rem;flex-wrap:wrap;
+  padding:.7rem 1.1rem;
+  border-bottom:1px solid rgba(201,123,61,.30);
+  background:linear-gradient(180deg,#1B1510,var(--charbon));
+}
+.marque{font-family:var(--display);font-size:1.5rem;letter-spacing:.12em;color:var(--creme);text-decoration:none;line-height:1}
+.marque span{color:var(--safran)}
+.pill{
+  display:inline-flex;align-items:center;gap:.45rem;
+  border:1px solid rgba(244,234,216,.22);border-radius:999px;
+  padding:.3rem .75rem;font-size:.78rem;font-weight:600;color:var(--creme-doux);
+}
+.pill .point{width:.55rem;height:.55rem;border-radius:50%;background:var(--creme-doux);flex:none}
+.pill.ouvert .point{background:var(--vert)}
+.pill.ferme .point{background:var(--rouge)}
+.tel-haut{
+  display:inline-flex;align-items:center;gap:.45rem;min-height:44px;padding:.35rem .8rem;
+  font-weight:800;text-decoration:none;color:var(--creme);font-size:.92rem;
+  border:1px solid rgba(201,123,61,.45);border-radius:8px;
+}
+.tel-haut svg{width:17px;height:17px;flex:none}
+
+/* ---------- Hero ---------- */
+.hero{padding:2.6rem 1.25rem 3rem}
+.hero-grille{max-width:68rem;margin:0 auto;display:grid;gap:1.6rem}
+.kicker{
+  font-weight:800;text-transform:uppercase;letter-spacing:.28em;font-size:.74rem;
+  color:var(--cuivre);margin-bottom:.9rem;
+}
+.hero h1{
+  font-family:var(--display);font-weight:400;
+  font-size:clamp(3rem,11.5vw,5.6rem);
+  line-height:.96;letter-spacing:.015em;color:var(--creme);
+}
+.hero h1 .safran{color:var(--safran)}
+.hero h1 .etoile-h1{color:var(--safran);white-space:nowrap}
+.hero-img{position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(201,123,61,.45);box-shadow:0 18px 60px rgba(232,163,61,.12)}
+.hero-img img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+.hero-img figcaption{
+  position:absolute;left:.8rem;bottom:.8rem;
+  background:rgba(23,18,14,.86);border:1px solid rgba(201,123,61,.5);border-radius:8px;
+  padding:.3rem .7rem;font-size:.78rem;font-weight:600;color:var(--creme);
+}
+.pitch{max-width:33rem;color:var(--creme-doux);font-size:1.05rem}
+.badge-note{
+  display:inline-flex;align-items:center;gap:.55rem;margin-top:1.15rem;
+  background:var(--surface);border:1px solid rgba(201,123,61,.45);border-radius:999px;
+  padding:.5rem 1rem;font-weight:800;font-size:.92rem;color:var(--creme);
+}
+.badge-note svg{width:17px;height:17px;flex:none}
+.cta-rang{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.5rem}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  min-height:50px;padding:.85rem 1.7rem;border-radius:10px;border:0;cursor:pointer;
+  font-family:var(--texte);font-weight:800;font-size:1.02rem;text-decoration:none;
+  transition:transform .12s ease,filter .12s ease;
+}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.btn-plein{background:var(--safran);color:var(--charbon);box-shadow:0 5px 0 #9A6420}
+.btn-ligne{border:2px solid var(--cuivre);color:var(--creme);background:transparent}
+
+/* ---------- Marquee ---------- */
+.marquee{
+  background:var(--safran);color:var(--charbon);
+  overflow:hidden;white-space:nowrap;padding:.55rem 0;
+  font-family:var(--display);letter-spacing:.16em;font-size:1.02rem;
+  border-top:1px solid #9A6420;border-bottom:1px solid #9A6420;
+}
+.marquee .piste{display:inline-block;animation:defile 30s linear infinite}
+.marquee span{margin:0 1.2rem}
+.marquee .dot{margin:0;opacity:.55}
+@keyframes defile{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- Sections ---------- */
+section{padding:3.6rem 1.25rem}
+.contenu{max-width:68rem;margin:0 auto}
+.titre-section{
+  font-family:var(--display);font-weight:400;letter-spacing:.03em;
+  font-size:clamp(2.1rem,6.5vw,3.1rem);line-height:1;margin-bottom:.45rem;
+}
+.sous-titre{color:var(--creme-doux);margin-bottom:2rem;max-width:38rem}
+
+/* ---------- La carte : lignes de menu premium ---------- */
+#carte{background:var(--surface)}
+.cats{display:grid;gap:2.4rem}
+.cat h3{
+  font-family:var(--display);font-weight:400;font-size:1.55rem;letter-spacing:.06em;
+  color:var(--safran);border-bottom:2px solid rgba(201,123,61,.4);
+  padding-bottom:.4rem;margin-bottom:1rem;
+}
+.cat-img{border-radius:12px;overflow:hidden;border:1px solid rgba(201,123,61,.35);margin-bottom:1.1rem}
+.cat-img img{width:100%;height:170px;object-fit:cover}
+.lignes{list-style:none}
+.ligne{display:flex;align-items:baseline;gap:.7rem;padding:.7rem 0}
+.ligne + .ligne{border-top:1px solid rgba(244,234,216,.07)}
+.ligne-nom{font-weight:800;color:var(--creme)}
+.ligne-desc{display:block;font-size:.85rem;font-weight:400;color:var(--creme-doux);max-width:24rem}
+.pts{flex:1;min-width:1.6rem;border-bottom:2px dotted rgba(201,123,61,.5);transform:translateY(-5px)}
+.prix{font-family:var(--display);font-size:1.35rem;letter-spacing:.04em;color:var(--safran);white-space:nowrap}
+.note-carte{margin-top:2rem;color:var(--creme-doux);font-size:.9rem;border-left:3px solid var(--cuivre);padding-left:.9rem}
+
+/* ---------- Module commande ---------- */
+#commander .etiquette{
+  display:inline-block;background:var(--cuivre);color:var(--charbon);
+  font-weight:800;font-size:.75rem;text-transform:uppercase;letter-spacing:.18em;
+  border-radius:4px;padding:.25rem .65rem;margin-bottom:.9rem;
+}
+.commande-img{border-radius:14px;overflow:hidden;border:1px solid rgba(201,123,61,.4);margin-bottom:1.6rem}
+.commande-img img{width:100%;height:200px;object-fit:cover}
+.etapes{display:grid;gap:1.2rem}
+.etape{
+  background:var(--surface);border:1px solid rgba(201,123,61,.30);border-radius:14px;
+  padding:1.2rem 1.2rem 1.35rem;min-width:0;
+}
+.etape legend{
+  font-family:var(--display);font-weight:400;font-size:1.3rem;letter-spacing:.06em;
+  color:var(--creme);padding:0 .4rem;margin-left:.4rem;
+}
+.articles{list-style:none}
+.article{display:flex;align-items:center;justify-content:space-between;gap:.8rem;padding:.55rem 0}
+.article + .article{border-top:1px solid rgba(244,234,216,.07)}
+.article-nom{font-weight:600;font-size:.96rem}
+.article-prix{display:block;font-size:.84rem;color:var(--cuivre);font-weight:800}
+.stepper{display:flex;align-items:center;gap:.15rem;flex:none}
+.stepper button{
+  width:44px;height:44px;border-radius:10px;border:1px solid rgba(201,123,61,.55);
+  background:var(--surface-2);color:var(--creme);font-size:1.45rem;line-height:1;
+  font-weight:600;cursor:pointer;
+}
+.stepper button:hover{background:#352a1e}
+.qte{min-width:2.1rem;text-align:center;font-weight:800;font-size:1.1rem;font-variant-numeric:tabular-nums}
+.choix{display:flex;align-items:center;gap:.8rem;min-height:46px;padding:.35rem 0;cursor:pointer}
+.choix input{width:22px;height:22px;accent-color:var(--safran);flex:none;cursor:pointer}
+.choix .libelle{font-weight:600;font-size:.96rem}
+.choix .libelle small{display:block;font-size:.82rem;font-weight:400;color:var(--creme-doux)}
+.choix .plus-prix{margin-left:auto;font-family:var(--display);font-size:1.1rem;color:var(--safran);white-space:nowrap}
+.paie{
+  border:1px solid rgba(201,123,61,.35);border-radius:12px;padding:.7rem .9rem;margin-top:.7rem;
+  display:flex;align-items:flex-start;gap:.8rem;cursor:pointer;position:relative;
+}
+.paie input{margin-top:.3rem;width:22px;height:22px;accent-color:var(--safran);flex:none}
+.paie-titre{display:block;font-weight:800;font-size:1rem}
+.paie-desc{display:block;font-size:.85rem;color:var(--creme-doux)}
+.paie-reco{border-color:var(--safran);background:var(--surface-2)}
+.chip-reco{
+  position:absolute;top:-.7rem;right:.8rem;
+  background:var(--safran);color:var(--charbon);font-size:.7rem;font-weight:800;
+  text-transform:uppercase;letter-spacing:.12em;border-radius:4px;padding:.15rem .5rem;
+}
+.paie-off{opacity:.55;cursor:not-allowed}
+.chip-prod{
+  display:inline-block;border:1px solid var(--creme-doux);color:var(--creme-doux);
+  font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;
+  border-radius:4px;padding:.1rem .45rem;margin-left:.4rem;vertical-align:middle;
+}
+.total-bar{
+  background:var(--surface-2);border:1px solid rgba(232,163,61,.5);border-radius:14px;
+  padding:1.2rem;display:flex;flex-direction:column;gap:.7rem;
+}
+.retrait-estime{font-weight:600;color:var(--creme-doux);font-size:.92rem}
+.retrait-estime strong{color:var(--safran)}
+.total-ligne{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;font-weight:800;font-size:1.05rem}
+.total-ligne strong{font-family:var(--display);font-size:2rem;letter-spacing:.03em;color:var(--safran)}
+.btn-texte{
+  background:none;border:0;color:var(--creme-doux);text-decoration:underline;cursor:pointer;
+  font-family:var(--texte);font-size:.88rem;min-height:44px;align-self:flex-start;padding:.4rem 0;
+}
+.btn-texte:hover{color:var(--creme)}
+.msg-erreur{color:var(--rouge);font-weight:600;font-size:.92rem;min-height:1.3em}
+.note-demo{font-size:.82rem;color:var(--creme-doux)}
+
+/* ---------- File d'attente ---------- */
+#attente{background:linear-gradient(180deg,var(--charbon),#1D1610);text-align:center}
+.attente-carte{
+  max-width:34rem;margin:0 auto;background:var(--surface);
+  border:1px solid rgba(201,123,61,.4);border-radius:16px;padding:2rem 1.4rem;
+}
+.attente-etat{display:inline-flex;align-items:center;gap:.5rem;font-weight:800;font-size:.95rem}
+.attente-etat .point{width:.6rem;height:.6rem;border-radius:50%;background:var(--creme-doux);flex:none}
+.attente-etat.ouvert .point{background:var(--vert)}
+.attente-etat.ferme .point{background:var(--rouge)}
+.attente-label{margin-top:1rem;color:var(--creme-doux);font-size:.92rem;text-transform:uppercase;letter-spacing:.18em;font-weight:600}
+.attente-grand{font-family:var(--display);font-size:clamp(3rem,13vw,4.6rem);line-height:1;color:var(--safran);margin:.2rem 0 .6rem}
+.attente-note{color:var(--creme-doux);font-size:.9rem}
+
+/* ---------- Avis ---------- */
+#avis{background:var(--surface)}
+.grille-avis{display:grid;gap:1rem}
+.avis{
+  background:var(--charbon);border:1px solid rgba(201,123,61,.3);border-radius:12px;
+  padding:1.3rem;display:flex;flex-direction:column;gap:.5rem;
+}
+.etoiles{color:var(--safran);letter-spacing:.14em;font-size:.95rem}
+.avis blockquote{font-style:italic;font-size:1rem}
+.avis cite{font-style:normal;font-size:.82rem;color:var(--creme-doux)}
+
+/* ---------- Infos pratiques ---------- */
+.grille-infos{display:grid;gap:1.8rem}
+.bloc-info h3{
+  font-family:var(--display);font-weight:400;font-size:1.3rem;letter-spacing:.07em;
+  color:var(--cuivre);margin-bottom:.5rem;
+}
+.bloc-info table{border-collapse:collapse;width:100%;max-width:21rem}
+.bloc-info td{padding:.3rem 0;vertical-align:top}
+.bloc-info td:last-child{text-align:right;font-weight:800;white-space:nowrap}
+.bloc-info tr + tr td{border-top:1px solid rgba(244,234,216,.08)}
+.tel-geant{
+  font-family:var(--display);font-size:clamp(1.8rem,6vw,2.5rem);letter-spacing:.05em;
+  color:var(--creme);text-decoration:none;border-bottom:4px solid var(--safran);
+  display:inline-block;line-height:1.25;
+}
+.badge-paie{
+  display:inline-block;background:var(--surface-2);border:1px solid rgba(201,123,61,.45);
+  border-radius:6px;padding:.3rem .7rem;font-size:.85rem;font-weight:600;margin-top:.7rem;
+}
+.lien-maps{display:inline-flex;align-items:center;min-height:44px;font-weight:600}
+
+/* ---------- Footer + bandeau légal ---------- */
+footer{
+  border-top:1px solid rgba(201,123,61,.3);
+  padding:2rem 1.25rem;text-align:center;font-size:.9rem;color:var(--creme-doux);
+}
+footer .marque{font-size:1.6rem}
+footer p{margin-top:.4rem}
+.bandeau-legal{
+  position:fixed;left:0;right:0;bottom:0;z-index:40;
+  background:#0C0907;border-top:1px solid rgba(201,123,61,.45);
+  color:#C9BBA4;font-size:.72rem;line-height:1.4;
+  padding:.5rem .9rem;text-align:center;
+}
+
+/* ---------- Modale démonstration ---------- */
+.voile{
+  position:fixed;inset:0;z-index:50;background:rgba(10,7,5,.8);
+  display:flex;align-items:center;justify-content:center;padding:1rem;
+}
+.voile[hidden]{display:none}
+.modale{
+  background:var(--surface);border:1px solid var(--safran);border-radius:16px;
+  max-width:26rem;width:100%;max-height:85vh;overflow:auto;padding:1.6rem 1.4rem;
+}
+.chip-demo{
+  display:inline-block;background:var(--safran);color:var(--charbon);
+  font-weight:800;font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;
+  border-radius:5px;padding:.3rem .7rem;margin-bottom:.9rem;
+}
+.modale h3{font-family:var(--display);font-weight:400;font-size:1.7rem;letter-spacing:.04em;line-height:1.1;margin-bottom:.8rem}
+.recap{list-style:none;margin:.6rem 0;border-top:1px solid rgba(244,234,216,.1)}
+.recap li{display:flex;justify-content:space-between;gap:1rem;padding:.45rem 0;border-bottom:1px solid rgba(244,234,216,.1);font-size:.93rem}
+.recap li span:last-child{font-weight:800;white-space:nowrap}
+.recap .recap-total{font-weight:800;font-size:1.05rem;color:var(--safran)}
+.modale .creneau-modale{margin:.7rem 0;font-weight:600}
+.modale .creneau-modale strong{color:var(--safran)}
+.modale .mention{font-size:.84rem;color:var(--creme-doux);margin-bottom:1.1rem}
+.modale-actions{display:flex;flex-wrap:wrap;gap:.7rem}
+
+/* ---------- Mouvement réduit ---------- */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .marquee .piste{animation:none}
+  .btn:hover,.btn{transition:none;transform:none}
+}
+
+/* ---------- ≥ 720 px ---------- */
+@media (min-width:720px){
+  .grille-avis{grid-template-columns:repeat(3,1fr)}
+  .grille-infos{grid-template-columns:repeat(3,1fr)}
+  .cats{grid-template-columns:1fr 1fr;column-gap:2.6rem}
+  .cat-img img{height:200px}
+}
+
+/* ---------- ≥ 980 px ---------- */
+@media (min-width:980px){
+  body{padding-bottom:5rem}
+  .hero{padding:4.5rem 1.25rem}
+  .hero-grille{
+    grid-template-columns:1.05fr .95fr;align-items:center;column-gap:3rem;
+    grid-template-areas:"haut img" "bas img";
+  }
+  .hero-haut{grid-area:haut;align-self:end}
+  .hero-img{grid-area:img}
+  .hero-bas{grid-area:bas;align-self:start}
+  .etapes{
+    grid-template-columns:1.15fr .85fr;
+    grid-template-areas:"articles supps" "articles paie" "total total";
+  }
+  .etape-articles{grid-area:articles}
+  .etape-supps{grid-area:supps}
+  .etape-paie{grid-area:paie}
+  .total-bar{grid-area:total;flex-direction:row;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .commande-img img{height:260px}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#carte">Aller à la carte</a>
+
+<header class="topbar">
+  <a class="marque" href="#haut" id="haut">Ali&nbsp;Baba<span>.</span></a>
+  <span class="pill" id="pill-etat"><span class="point" aria-hidden="true"></span><span id="pill-texte">Ouvert tous les soirs dès 18&nbsp;h</span></span>
+  <a class="tel-haut" href="tel:+33671091021">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    06&nbsp;71&nbsp;09&nbsp;10&nbsp;21
+  </a>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" aria-labelledby="titre-hero">
+  <div class="hero-grille">
+    <div class="hero-haut">
+      <p class="kicker">Snack Ali Baba · 70 rue Carnot, Rambervillers</p>
+      <h1 id="titre-hero">Le kebab <span class="safran">préféré</span> de Rambervillers <span class="etoile-h1">— 4,5★</span></h1>
+    </div>
+    <figure class="hero-img">
+      <img src="img/hero-flammes.webp" width="1300" height="1300" fetchpriority="high" alt="Kebabs roulés, garnis de viande grillée, empilés devant les flammes du grill">
+      <figcaption>Grillé à la flamme, chaque soir</figcaption>
+    </figure>
+    <div class="hero-bas">
+      <!-- [À REMPLACER] Texte d'accroche d'exemple, à ajuster avec le commerçant -->
+      <p class="pitch">La broche tourne, la braise est prête. Kebabs, assiettes, tacos et burgers préparés à la commande, tous les soirs dès 18&nbsp;h — sur place ou à emporter.</p>
+      <p class="badge-note">
+        <svg viewBox="0 0 24 24" fill="#E8A33D" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        4,5&nbsp;/&nbsp;5 · 150 avis Google
+      </p>
+      <div class="cta-rang">
+        <a class="btn btn-plein" href="#commander">Commander</a>
+        <a class="btn btn-ligne" href="tel:+33671091021">Appeler le snack</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="piste">
+    <span>Kebab</span><span class="dot">●</span><span>Assiettes</span><span class="dot">●</span><span>Tacos</span><span class="dot">●</span><span>Burgers</span><span class="dot">●</span><span>Tous les soirs dès 18&nbsp;h</span><span class="dot">●</span><span>Espèces &amp; titres-resto</span><span class="dot">●</span>
+    <span>Kebab</span><span class="dot">●</span><span>Assiettes</span><span class="dot">●</span><span>Tacos</span><span class="dot">●</span><span>Burgers</span><span class="dot">●</span><span>Tous les soirs dès 18&nbsp;h</span><span class="dot">●</span><span>Espèces &amp; titres-resto</span><span class="dot">●</span>
+  </div>
+</div>
+
+<!-- ================= LA CARTE ================= -->
+<section id="carte" aria-labelledby="titre-carte">
+  <div class="contenu">
+    <h2 class="titre-section" id="titre-carte">La carte du soir</h2>
+    <p class="sous-titre">Viande grillée à la broche, pain et galettes garnis à la commande. Simple, généreux, régulier.</p>
+    <!-- [À REMPLACER] Intitulés, descriptions et prix de la carte : exemples crédibles à valider avec le commerçant -->
+    <div class="cats">
+
+      <div class="cat">
+        <h3>Kebabs, sandwichs &amp; burgers</h3>
+        <div class="cat-img"><img src="img/burger.webp" width="800" height="600" loading="lazy" decoding="async" alt="Deux burgers artisanaux servis sur une planche en bois, fond sombre"></div>
+        <ul class="lignes">
+          <li class="ligne"><span class="ligne-nom">Kebab sandwich<span class="ligne-desc">Pain doré, viande à la broche, crudités, sauce au choix</span></span><span class="pts" aria-hidden="true"></span><span class="prix">7,50&nbsp;€</span></li>
+          <li class="ligne"><span class="ligne-nom">Kebab galette<span class="ligne-desc">La même générosité, roulée dans une galette grillée</span></span><span class="pts" aria-hidden="true"></span><span class="prix">8,00&nbsp;€</span></li>
+          <li class="ligne"><span class="ligne-nom">Américain<span class="ligne-desc">Baguette garnie, viande au choix, frites dedans</span></span><span class="pts" aria-hidden="true"></span><span class="prix">8,00&nbsp;€</span></li>
+          <li class="ligne"><span class="ligne-nom">Burger maison<span class="ligne-desc">Pain moelleux, steak ou viande kebab, cheddar fondu</span></span><span class="pts" aria-hidden="true"></span><span class="prix">8,50&nbsp;€</span></li>
+        </ul>
+      </div>
+
+      <div class="cat">
+        <h3>Assiettes</h3>
+        <div class="cat-img"><img src="img/assiette.webp" width="800" height="600" loading="lazy" decoding="async" alt="Assiette généreuse : brochettes grillées, frites, tomates et oignons"></div>
+        <ul class="lignes">
+          <li class="ligne"><span class="ligne-nom">Assiette kebab<span class="ligne-desc">Viande à la broche, frites, salade, pain</span></span><span class="pts" aria-hidden="true"></span><span class="prix">11,50&nbsp;€</span></li>
+          <li class="ligne"><span class="ligne-nom">Assiette brochettes<span class="ligne-desc">Brochettes grillées à la braise, frites, tomates, oignons</span></span><span class="pts" aria-hidden="true"></span><span class="prix">13,00&nbsp;€</span></li>
+          <li class="ligne"><span class="ligne-nom">Assiette mixte grill<span class="ligne-desc">Le grand plateau : kebab, brochette, grillades, frites</span></span><span class="pts" aria-hidden="true"></span><span class="prix">14,50&nbsp;€</span></li>
+        </ul>
+      </div>
+
+      <div class="cat">
+        <h3>Tacos</h3>
+        <ul class="lignes">
+          <li class="ligne"><span class="ligne-nom">Tacos M<span class="ligne-desc">1 viande, sauce fromagère, frites — pressé et grillé</span></span><span class="pts" aria-hidden="true"></span><span class="prix">8,00&nbsp;€</span></li>
+          <li class="ligne"><span class="ligne-nom">Tacos L<span class="ligne-desc">2 viandes au choix</span></span><span class="pts" aria-hidden="true"></span><span class="prix">9,50&nbsp;€</span></li>
+          <li class="ligne"><span class="ligne-nom">Tacos XL<span class="ligne-desc">3 viandes — pour les très grandes faims</span></span><span class="pts" aria-hidden="true"></span><span class="prix">11,00&nbsp;€</span></li>
+        </ul>
+      </div>
+
+      <div class="cat">
+        <h3>Menus &amp; accompagnements</h3>
+        <ul class="lignes">
+          <li class="ligne"><span class="ligne-nom">Menu kebab<span class="ligne-desc">Sandwich + frites + boisson 33&nbsp;cl</span></span><span class="pts" aria-hidden="true"></span><span class="prix">10,50&nbsp;€</span></li>
+          <li class="ligne"><span class="ligne-nom">Menu tacos M<span class="ligne-desc">Tacos M + boisson 33&nbsp;cl</span></span><span class="pts" aria-hidden="true"></span><span class="prix">10,50&nbsp;€</span></li>
+          <li class="ligne"><span class="ligne-nom">Menu enfant<span class="ligne-desc">Petit sandwich ou nuggets + frites + boisson</span></span><span class="pts" aria-hidden="true"></span><span class="prix">7,00&nbsp;€</span></li>
+          <li class="ligne"><span class="ligne-nom">Frites maison<span class="ligne-desc">Bien dorées, bien chaudes</span></span><span class="pts" aria-hidden="true"></span><span class="prix">3,50&nbsp;€</span></li>
+          <li class="ligne"><span class="ligne-nom">Boisson 33&nbsp;cl</span><span class="pts" aria-hidden="true"></span><span class="prix">1,80&nbsp;€</span></li>
+        </ul>
+      </div>
+
+    </div>
+    <p class="note-carte">Sauces au choix : blanche, samouraï, algérienne, harissa, barbecue, ketchup, mayonnaise. Carte complète et tarifs au comptoir ou au 06&nbsp;71&nbsp;09&nbsp;10&nbsp;21.</p>
+  </div>
+</section>
+
+<!-- ================= MODULE COMMANDE (wow-feature) ================= -->
+<section id="commander" aria-labelledby="titre-commander">
+  <div class="contenu">
+    <p class="etiquette">Nouveau · commande en ligne</p>
+    <h2 class="titre-section" id="titre-commander">Commandez, c'est prêt en arrivant</h2>
+    <p class="sous-titre">Composez votre commande, on la met sur la braise. Vous passez la récupérer — et vous payez au comptoir si vous préférez. <strong>Module de démonstration&nbsp;: rien n'est envoyé, tout reste dans votre navigateur.</strong></p>
+
+    <div class="commande-img"><img src="img/grillades.webp" width="800" height="600" loading="lazy" decoding="async" alt="Grand plateau de grillades et brochettes variées sur fond sombre"></div>
+
+    <form id="form-commande" class="etapes">
+
+      <fieldset class="etape etape-articles">
+        <legend>1 · Vos articles</legend>
+        <!-- [À REMPLACER] Sélection et prix d'exemple, alignés sur la carte ci-dessus -->
+        <ul class="articles">
+          <li class="article" data-id="kebab" data-nom="Kebab sandwich" data-prix="7.50">
+            <span class="article-nom">Kebab sandwich<span class="article-prix">7,50&nbsp;€</span></span>
+            <span class="stepper">
+              <button type="button" class="moins" aria-label="Retirer un Kebab sandwich">−</button>
+              <span class="qte" data-qte>0</span>
+              <button type="button" class="plus" aria-label="Ajouter un Kebab sandwich">+</button>
+            </span>
+          </li>
+          <li class="article" data-id="galette" data-nom="Kebab galette" data-prix="8.00">
+            <span class="article-nom">Kebab galette<span class="article-prix">8,00&nbsp;€</span></span>
+            <span class="stepper">
+              <button type="button" class="moins" aria-label="Retirer un Kebab galette">−</button>
+              <span class="qte" data-qte>0</span>
+              <button type="button" class="plus" aria-label="Ajouter un Kebab galette">+</button>
+            </span>
+          </li>
+          <li class="article" data-id="assiette" data-nom="Assiette kebab" data-prix="11.50">
+            <span class="article-nom">Assiette kebab<span class="article-prix">11,50&nbsp;€</span></span>
+            <span class="stepper">
+              <button type="button" class="moins" aria-label="Retirer une Assiette kebab">−</button>
+              <span class="qte" data-qte>0</span>
+              <button type="button" class="plus" aria-label="Ajouter une Assiette kebab">+</button>
+            </span>
+          </li>
+          <li class="article" data-id="mixte" data-nom="Assiette mixte grill" data-prix="14.50">
+            <span class="article-nom">Assiette mixte grill<span class="article-prix">14,50&nbsp;€</span></span>
+            <span class="stepper">
+              <button type="button" class="moins" aria-label="Retirer une Assiette mixte grill">−</button>
+              <span class="qte" data-qte>0</span>
+              <button type="button" class="plus" aria-label="Ajouter une Assiette mixte grill">+</button>
+            </span>
+          </li>
+          <li class="article" data-id="tacosl" data-nom="Tacos L" data-prix="9.50">
+            <span class="article-nom">Tacos L<span class="article-prix">9,50&nbsp;€</span></span>
+            <span class="stepper">
+              <button type="button" class="moins" aria-label="Retirer un Tacos L">−</button>
+              <span class="qte" data-qte>0</span>
+              <button type="button" class="plus" aria-label="Ajouter un Tacos L">+</button>
+            </span>
+          </li>
+          <li class="article" data-id="menu" data-nom="Menu kebab" data-prix="10.50">
+            <span class="article-nom">Menu kebab<span class="article-prix">10,50&nbsp;€</span></span>
+            <span class="stepper">
+              <button type="button" class="moins" aria-label="Retirer un Menu kebab">−</button>
+              <span class="qte" data-qte>0</span>
+              <button type="button" class="plus" aria-label="Ajouter un Menu kebab">+</button>
+            </span>
+          </li>
+          <li class="article" data-id="frites" data-nom="Frites maison" data-prix="3.50">
+            <span class="article-nom">Frites maison<span class="article-prix">3,50&nbsp;€</span></span>
+            <span class="stepper">
+              <button type="button" class="moins" aria-label="Retirer des Frites maison">−</button>
+              <span class="qte" data-qte>0</span>
+              <button type="button" class="plus" aria-label="Ajouter des Frites maison">+</button>
+            </span>
+          </li>
+          <li class="article" data-id="boisson" data-nom="Boisson 33 cl" data-prix="1.80">
+            <span class="article-nom">Boisson 33&nbsp;cl<span class="article-prix">1,80&nbsp;€</span></span>
+            <span class="stepper">
+              <button type="button" class="moins" aria-label="Retirer une Boisson 33 cl">−</button>
+              <span class="qte" data-qte>0</span>
+              <button type="button" class="plus" aria-label="Ajouter une Boisson 33 cl">+</button>
+            </span>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="etape etape-supps">
+        <legend>2 · Vos suppléments</legend>
+        <!-- [À REMPLACER] Suppléments et prix d'exemple -->
+        <label class="choix"><input type="checkbox" class="supp" value="Fromage" data-prix="1.00"><span class="libelle">Fromage<small>Cheddar fondu sur la viande</small></span><span class="plus-prix">+1,00&nbsp;€</span></label>
+        <label class="choix"><input type="checkbox" class="supp" value="Double viande" data-prix="2.50"><span class="libelle">Double viande<small>Pour les grandes faims</small></span><span class="plus-prix">+2,50&nbsp;€</span></label>
+        <label class="choix"><input type="checkbox" class="supp" value="Sauce supplémentaire" data-prix="0.50"><span class="libelle">Sauce supplémentaire<small>Blanche, samouraï, algérienne…</small></span><span class="plus-prix">+0,50&nbsp;€</span></label>
+        <label class="choix"><input type="checkbox" class="supp" value="Oignons frits" data-prix="0.50"><span class="libelle">Oignons frits<small>Le petit croquant en plus</small></span><span class="plus-prix">+0,50&nbsp;€</span></label>
+      </fieldset>
+
+      <fieldset class="etape etape-paie">
+        <legend>3 · Le paiement</legend>
+        <label class="paie paie-reco">
+          <input type="radio" name="paiement" value="retrait" checked>
+          <span>
+            <span class="paie-titre">💶 Je paie au retrait</span>
+            <span class="paie-desc">Espèces et titres-restaurant acceptés au comptoir.</span>
+          </span>
+          <span class="chip-reco" aria-hidden="true">Le plus simple</span>
+        </label>
+        <label class="paie paie-off">
+          <input type="radio" name="paiement" value="cb" disabled>
+          <span>
+            <span class="paie-titre">💳 Carte bancaire en ligne <span class="chip-prod">En production</span></span>
+            <span class="paie-desc">Le paiement CB sera branché sur le site définitif.</span>
+          </span>
+        </label>
+      </fieldset>
+
+      <div class="total-bar">
+        <p class="retrait-estime">Retrait estimé&nbsp;: <strong id="retrait-estime">~20&nbsp;min après la commande</strong></p>
+        <p class="total-ligne" aria-live="polite">Total <strong id="total">0,00&nbsp;€</strong></p>
+        <p class="msg-erreur" id="msg-erreur" role="status"></p>
+        <button type="submit" class="btn btn-plein">Valider ma commande</button>
+        <button type="button" class="btn-texte" id="vider">Vider le panier</button>
+        <p class="note-demo">Démonstration — aucune donnée envoyée, aucun paiement réel.</p>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<!-- ================= FILE D'ATTENTE ================= -->
+<section id="attente" aria-labelledby="titre-attente">
+  <div class="contenu">
+    <h2 class="titre-section" id="titre-attente">La file d'attente, en direct</h2>
+    <p class="sous-titre" style="margin-left:auto;margin-right:auto">Le site calcule votre créneau de retrait selon l'heure et l'affluence du soir.</p>
+    <div class="attente-carte" aria-live="polite">
+      <p class="attente-etat" id="attente-etat"><span class="point" aria-hidden="true"></span><span id="attente-etat-txt">Ouvert tous les soirs dès 18&nbsp;h</span></p>
+      <p class="attente-label">Votre commande pour</p>
+      <p class="attente-grand" id="attente-creneau">18&nbsp;h&nbsp;20</p>
+      <!-- [À REMPLACER] Temps de préparation estimé (20-25 min) : hypothèse à valider avec le commerçant -->
+      <p class="attente-note" id="attente-phrase">Comptez environ 20 à 25 minutes de préparation après la commande.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AVIS ================= -->
+<section id="avis" aria-labelledby="titre-avis">
+  <div class="contenu">
+    <h2 class="titre-section" id="titre-avis">150 avis, 4,5 sur 5</h2>
+    <p class="sous-titre">Ce que disent les clients sur Google.</p>
+    <!-- [À REMPLACER] Vérifier la formulation exacte des extraits sur la fiche Google avant production -->
+    <div class="grille-avis">
+      <article class="avis">
+        <p class="etoiles" aria-hidden="true">★★★★★</p>
+        <blockquote>«&nbsp;Jamais trouvé un kebab aussi bon, et l'hygiène est irréprochable.&nbsp;»</blockquote>
+        <cite>Avis Google</cite>
+      </article>
+      <article class="avis">
+        <p class="etoiles" aria-hidden="true">★★★★★</p>
+        <blockquote>«&nbsp;Le meilleur kebab du coin, les patrons sont toujours souriants.&nbsp;»</blockquote>
+        <cite>Avis Google</cite>
+      </article>
+      <article class="avis">
+        <p class="etoiles" aria-hidden="true">★★★★★</p>
+        <blockquote>«&nbsp;On fait la route depuis les villages voisins, ça vaut le détour.&nbsp;»</blockquote>
+        <cite>Avis Google</cite>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HORAIRES / ACCÈS ================= -->
+<section id="infos" aria-labelledby="titre-infos">
+  <div class="contenu">
+    <h2 class="titre-section" id="titre-infos">Horaires &amp; accès</h2>
+    <p class="sous-titre">Tous les soirs, en plein centre de Rambervillers.</p>
+    <div class="grille-infos">
+      <div class="bloc-info">
+        <h3>Horaires</h3>
+        <table>
+          <tbody>
+            <tr><td>Lundi – samedi</td><td>18&nbsp;h – 21&nbsp;h&nbsp;30</td></tr>
+            <tr><td>Dimanche</td><td>18&nbsp;h – 23&nbsp;h</td></tr>
+          </tbody>
+        </table>
+        <p class="badge-paie">💶 Espèces et titres-restaurant acceptés</p>
+      </div>
+      <div class="bloc-info">
+        <h3>Commander</h3>
+        <a class="tel-geant" href="tel:+33671091021">06&nbsp;71&nbsp;09&nbsp;10&nbsp;21</a>
+        <p style="margin-top:.6rem;color:var(--creme-doux)">Sur place ou à emporter.</p>
+      </div>
+      <div class="bloc-info">
+        <h3>Nous trouver</h3>
+        <p><strong>70 rue Carnot</strong><br>88700 Rambervillers</p>
+        <p><a class="lien-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Snack+Ali+Baba+70+rue+Carnot+88700+Rambervillers" target="_blank" rel="noopener">Ouvrir dans Google Maps ↗</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p class="marque">Ali&nbsp;Baba<span>.</span></p>
+  <p>Snack Ali Baba · 70 rue Carnot, 88700 Rambervillers · <a href="tel:+33671091021">06 71 09 10 21</a></p>
+  <p>Tous les soirs 18&nbsp;h – 21&nbsp;h&nbsp;30 · dimanche jusqu'à 23&nbsp;h · espèces &amp; titres-restaurant</p>
+</footer>
+
+<p class="bandeau-legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</p>
+
+<!-- ================= MODALE « DÉMONSTRATION » ================= -->
+<div class="voile" id="voile" hidden>
+  <div class="modale" role="dialog" aria-modal="true" aria-labelledby="modale-titre">
+    <p class="chip-demo">Ceci est une démonstration</p>
+    <h3 id="modale-titre">Commande enregistrée (simulation)</h3>
+    <ul class="recap" id="recap"></ul>
+    <p class="creneau-modale">Retrait estimé&nbsp;: <strong id="modale-creneau">—</strong> · paiement au retrait (espèces &amp; titres-restaurant).</p>
+    <p class="mention">Aucune donnée n'a été envoyée&nbsp;: tout se passe dans votre navigateur. En production&nbsp;: paiement CB en ligne ou au retrait, et la commande arrive directement en cuisine.</p>
+    <div class="modale-actions">
+      <button type="button" class="btn btn-plein" id="modale-fermer">Fermer</button>
+      <button type="button" class="btn btn-ligne" id="modale-vider">Vider le panier et fermer</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  function $(id) { return document.getElementById(id); }
+
+  function fmtEUR(n) { return n.toFixed(2).replace('.', ',') + ' €'; }
+
+  function fmtHeure(d) {
+    var h = d.getHours(), m = d.getMinutes();
+    return m === 0 ? h + ' h' : h + ' h ' + (m < 10 ? '0' : '') + m;
+  }
+
+  /* ---------- Horaires réels : tous les soirs 18 h – 21 h 30, dimanche jusqu'à 23 h ---------- */
+  function bornesDuJour(d) {
+    var ouvre = new Date(d); ouvre.setHours(18, 0, 0, 0);
+    var ferme = new Date(d);
+    if (d.getDay() === 0) { ferme.setHours(23, 0, 0, 0); } else { ferme.setHours(21, 30, 0, 0); }
+    return { ouvre: ouvre, ferme: ferme };
+  }
+
+  function etatActuel() {
+    var now = new Date();
+    var b = bornesDuJour(now);
+    if (now < b.ouvre) {
+      return {
+        ouvert: false,
+        pill: 'Fermé — ouvre ce soir à 18 h',
+        creneau: '18 h 20',
+        phrase: 'Ouvre ce soir à 18 h — votre commande pour 18 h 20.'
+      };
+    }
+    if (now <= b.ferme) {
+      var attente = 20 + (now.getMinutes() % 6); /* 20 à 25 min selon l'affluence */
+      var c = new Date(now.getTime() + attente * 60000);
+      c.setMinutes(Math.ceil(c.getMinutes() / 5) * 5, 0, 0);
+      var lab = '~' + fmtHeure(c);
+      return {
+        ouvert: true,
+        pill: 'Ouvert — jusqu’à ' + fmtHeure(b.ferme),
+        creneau: lab,
+        phrase: 'Commandez maintenant : préparation en cours, environ ' + attente + ' min.'
+      };
+    }
+    return {
+      ouvert: false,
+      pill: 'Fermé — réouvre demain à 18 h',
+      creneau: 'demain 18 h 20',
+      phrase: 'Réouvre demain soir à 18 h — votre commande pour 18 h 20.'
+    };
+  }
+
+  var dernierEtat = etatActuel();
+
+  function majEtat() {
+    dernierEtat = etatActuel();
+    var pill = $('pill-etat'), pillTxt = $('pill-texte');
+    if (pill && pillTxt) {
+      pill.classList.toggle('ouvert', dernierEtat.ouvert);
+      pill.classList.toggle('ferme', !dernierEtat.ouvert);
+      pillTxt.textContent = dernierEtat.pill;
+    }
+    var aEtat = $('attente-etat'), aTxt = $('attente-etat-txt'),
+        aCreneau = $('attente-creneau'), aPhrase = $('attente-phrase');
+    if (aEtat && aTxt) {
+      aEtat.classList.toggle('ouvert', dernierEtat.ouvert);
+      aEtat.classList.toggle('ferme', !dernierEtat.ouvert);
+      aTxt.textContent = dernierEtat.pill;
+    }
+    if (aCreneau) { aCreneau.textContent = dernierEtat.creneau; }
+    if (aPhrase) { aPhrase.textContent = dernierEtat.phrase; }
+    var retrait = $('retrait-estime');
+    if (retrait) { retrait.textContent = dernierEtat.creneau; }
+  }
+
+  majEtat();
+  setInterval(majEtat, 30000);
+
+  /* ---------- Panier simulé (localStorage) ---------- */
+  var CLE = 'alibaba-demo-panier-v1';
+  var panier = { q: {}, s: {} };
+
+  function lirePanier() {
+    try {
+      var brut = localStorage.getItem(CLE);
+      if (!brut) { return; }
+      var o = JSON.parse(brut);
+      if (o && typeof o === 'object') {
+        if (o.q && typeof o.q === 'object') { panier.q = o.q; }
+        if (o.s && typeof o.s === 'object') { panier.s = o.s; }
+      }
+    } catch (e) { /* stockage indisponible : panier en mémoire seulement */ }
+  }
+
+  function ecrirePanier() {
+    try { localStorage.setItem(CLE, JSON.stringify(panier)); } catch (e) { /* silencieux */ }
+  }
+
+  var form = $('form-commande');
+  if (!form) { return; }
+
+  var articles = Array.prototype.slice.call(form.querySelectorAll('.article'));
+  var supps = Array.prototype.slice.call(form.querySelectorAll('.supp'));
+  var totalEl = $('total'), erreurEl = $('msg-erreur');
+
+  function nbArticles() {
+    var n = 0;
+    articles.forEach(function (a) { n += panier.q[a.getAttribute('data-id')] || 0; });
+    return n;
+  }
+
+  function totalPanier() {
+    var t = 0;
+    articles.forEach(function (a) {
+      var q = panier.q[a.getAttribute('data-id')] || 0;
+      t += q * parseFloat(a.getAttribute('data-prix') || '0');
+    });
+    if (nbArticles() > 0) {
+      supps.forEach(function (s) {
+        if (panier.s[s.value]) { t += parseFloat(s.getAttribute('data-prix') || '0'); }
+      });
+    }
+    return t;
+  }
+
+  function rendre() {
+    articles.forEach(function (a) {
+      var span = a.querySelector('[data-qte]');
+      if (span) { span.textContent = String(panier.q[a.getAttribute('data-id')] || 0); }
+    });
+    supps.forEach(function (s) { s.checked = !!panier.s[s.value]; });
+    if (totalEl) { totalEl.textContent = fmtEUR(totalPanier()); }
+  }
+
+  function changerQte(id, delta) {
+    var q = (panier.q[id] || 0) + delta;
+    panier.q[id] = Math.max(0, Math.min(9, q));
+    if (erreurEl) { erreurEl.textContent = ''; }
+    ecrirePanier();
+    rendre();
+  }
+
+  articles.forEach(function (a) {
+    var id = a.getAttribute('data-id');
+    var plus = a.querySelector('.plus'), moins = a.querySelector('.moins');
+    if (plus) { plus.addEventListener('click', function () { changerQte(id, 1); }); }
+    if (moins) { moins.addEventListener('click', function () { changerQte(id, -1); }); }
+  });
+
+  supps.forEach(function (s) {
+    s.addEventListener('change', function () {
+      panier.s[s.value] = s.checked;
+      ecrirePanier();
+      rendre();
+    });
+  });
+
+  function viderPanier() {
+    panier = { q: {}, s: {} };
+    ecrirePanier();
+    rendre();
+  }
+
+  var btnVider = $('vider');
+  if (btnVider) { btnVider.addEventListener('click', function () { viderPanier(); if (erreurEl) { erreurEl.textContent = ''; } }); }
+
+  /* ---------- Modale « Ceci est une démonstration » ---------- */
+  var voile = $('voile'), recapEl = $('recap'),
+      btnFermer = $('modale-fermer'), btnModaleVider = $('modale-vider'),
+      modaleCreneau = $('modale-creneau');
+  var dernierFocus = null;
+
+  function ligneRecap(gauche, droite, classe) {
+    var li = document.createElement('li');
+    if (classe) { li.className = classe; }
+    var s1 = document.createElement('span'); s1.textContent = gauche;
+    var s2 = document.createElement('span'); s2.textContent = droite;
+    li.appendChild(s1); li.appendChild(s2);
+    return li;
+  }
+
+  function ouvrirModale() {
+    if (!voile || !recapEl) { return; }
+    recapEl.innerHTML = '';
+    articles.forEach(function (a) {
+      var q = panier.q[a.getAttribute('data-id')] || 0;
+      if (q > 0) {
+        var prix = parseFloat(a.getAttribute('data-prix') || '0');
+        recapEl.appendChild(ligneRecap(q + ' × ' + a.getAttribute('data-nom'), fmtEUR(q * prix)));
+      }
+    });
+    supps.forEach(function (s) {
+      if (panier.s[s.value]) {
+        recapEl.appendChild(ligneRecap('Supplément ' + s.value.toLowerCase(), '+' + fmtEUR(parseFloat(s.getAttribute('data-prix') || '0'))));
+      }
+    });
+    recapEl.appendChild(ligneRecap('Total', fmtEUR(totalPanier()), 'recap-total'));
+    if (modaleCreneau) { modaleCreneau.textContent = dernierEtat.creneau; }
+    dernierFocus = document.activeElement;
+    voile.hidden = false;
+    if (btnFermer) { btnFermer.focus(); }
+  }
+
+  function fermerModale() {
+    if (!voile) { return; }
+    voile.hidden = true;
+    if (dernierFocus && typeof dernierFocus.focus === 'function') { dernierFocus.focus(); }
+  }
+
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    if (nbArticles() === 0) {
+      if (erreurEl) { erreurEl.textContent = 'Ajoutez au moins un article pour valider.'; }
+      return;
+    }
+    if (erreurEl) { erreurEl.textContent = ''; }
+    majEtat();
+    ouvrirModale();
+  });
+
+  if (btnFermer) { btnFermer.addEventListener('click', fermerModale); }
+  if (btnModaleVider) {
+    btnModaleVider.addEventListener('click', function () { viderPanier(); fermerModale(); });
+  }
+  if (voile) {
+    voile.addEventListener('click', function (ev) { if (ev.target === voile) { fermerModale(); } });
+  }
+  document.addEventListener('keydown', function (ev) {
+    if (!voile || voile.hidden) { return; }
+    if (ev.key === 'Escape') { fermerModale(); return; }
+    if (ev.key === 'Tab') {
+      var focusables = voile.querySelectorAll('button');
+      if (!focusables.length) { return; }
+      var premier = focusables[0], dernier = focusables[focusables.length - 1];
+      if (ev.shiftKey && document.activeElement === premier) { ev.preventDefault(); dernier.focus(); }
+      else if (!ev.shiftKey && document.activeElement === dernier) { ev.preventDefault(); premier.focus(); }
+    }
+  });
+
+  lirePanier();
+  rendre();
+})();
+</script>
+
+</body>
+</html>
