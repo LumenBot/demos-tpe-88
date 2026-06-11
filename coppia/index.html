@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#2E5339">
+<title>La Coppia — Pizzeria à Rambervillers · Pizzas artisanales à emporter</title>
+<meta name="description" content="La Coppia, pizzeria à Rambervillers depuis 2016 — 4,6★ sur Google (235 avis). Pizzas artisanales à emporter, commande en ligne et réservation de table. Fermé dimanche et lundi.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Marcellus&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Marcellus&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Marcellus&display=swap"></noscript>
+
+<!-- [À REMPLACER] Horaires détaillés (11h30–13h30 / 18h00–21h30) à confirmer avec l'établissement. Donnée réelle certaine : fermé dimanche et lundi. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "La Coppia",
+  "servesCuisine": ["Pizza", "Italien"],
+  "foundingDate": "2016",
+  "priceRange": "€",
+  "telephone": "+33329656259",
+  "acceptsReservations": "True",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9 avenue du 17e BCP",
+    "postalCode": "88700",
+    "addressLocality": "Rambervillers",
+    "addressCountry": "FR"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=La+Coppia+9+avenue+du+17e+BCP+88700+Rambervillers",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "235"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "11:30",
+      "closes": "13:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "18:00",
+      "closes": "21:30"
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --green:#2E5339;
+  --green-deep:#22402B;
+  --ink:#263126;
+  --muted:#5A6253;
+  --cream:#FAF6EF;
+  --cream-2:#F3ECDD;
+  --tomato:#C24B33;
+  --tomato-ink:#A93F28;
+  --line:#D9CFBB;
+  --hairline:#C9BFA9;
+  --legal-h:112px;
+  --font-display:'Marcellus',Georgia,'Times New Roman',serif;
+  --font-body:'Lora',Georgia,serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  margin:0;
+  font-family:var(--font-body);
+  font-size:1rem;line-height:1.65;
+  color:var(--ink);
+  background:var(--cream);
+  padding-bottom:calc(var(--legal-h) + 10px);
+  overflow-x:hidden;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--green)}
+:focus-visible{outline:3px solid var(--tomato-ink);outline-offset:2px;border-radius:2px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--green);color:#fff;padding:.8rem 1.2rem;z-index:60}
+.skip:focus-visible{left:8px;top:8px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+section{scroll-margin-top:1rem}
+
+/* ---------- typographie éditoriale ---------- */
+h1,h2,h3,.disp{font-family:var(--font-display);font-weight:400;letter-spacing:.04em;line-height:1.15;margin:0}
+.sec-head{text-align:center;margin:0 auto 2.4rem;max-width:46rem}
+.eyebrow{font-family:var(--font-body);font-style:italic;color:var(--tomato-ink);margin:0 0 .45rem;font-size:1rem;letter-spacing:.02em}
+.sec-head h2{font-size:clamp(1.7rem,5.4vw,2.4rem);letter-spacing:.1em;text-transform:uppercase;color:var(--green-deep)}
+.filet{width:74px;height:1px;background:var(--hairline);margin:1.1rem auto 0;position:relative}
+.filet::after{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;background:var(--tomato);transform:translate(-50%,-50%) rotate(45deg)}
+.lead{max-width:38rem;margin:1rem auto 0;text-align:center;color:var(--muted)}
+
+/* ---------- header ---------- */
+.topbar{background:var(--green-deep);color:#F4EFE3;font-size:.84rem;text-align:center;padding:.45rem 1rem}
+.topbar a{color:#fff;text-decoration:underline;text-underline-offset:3px;padding:0 .4rem;display:inline-flex;align-items:center;min-height:44px;margin:-.5rem 0;vertical-align:middle}
+header.site{border-bottom:1px solid var(--line);background:var(--cream)}
+.brand{display:block;text-align:center;padding:1.15rem 1rem .35rem;text-decoration:none;color:var(--green-deep)}
+.brand .name{font-family:var(--font-display);font-size:1.85rem;letter-spacing:.16em;text-transform:uppercase}
+.brand .sub{font-style:italic;font-size:.88rem;color:var(--muted);letter-spacing:.05em}
+nav.main ul{list-style:none;margin:0;padding:.15rem .5rem .55rem;display:flex;flex-wrap:wrap;justify-content:center;gap:0 .35rem}
+nav.main a{display:inline-flex;align-items:center;min-height:44px;padding:.2rem .65rem;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+nav.main a:hover{color:var(--tomato-ink)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;margin:0}
+.hero img{width:100%;height:min(78vh,620px);object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,28,18,.18) 0%,rgba(18,28,18,.08) 35%,rgba(16,26,16,.88) 100%)}
+.hero-inner{position:absolute;inset:auto 0 0 0;z-index:1;text-align:center;color:#FAF6EF;padding:0 1.25rem 2.4rem}
+.hero-inner .kicker{font-style:italic;font-size:1.02rem;margin:0 0 .35rem;color:#F2E9D6}
+.hero-inner h1{font-size:clamp(2.7rem,10vw,4.6rem);letter-spacing:.12em;text-transform:uppercase;color:#fff;text-shadow:0 1px 14px rgba(0,0,0,.35)}
+.hero-claim{margin:.7rem auto 1.4rem;font-size:clamp(1rem,3.6vw,1.2rem);letter-spacing:.03em;color:#FAF6EF}
+.hero-claim .star{color:#F2C94C}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:50px;padding:.7rem 1.5rem;font-family:var(--font-body);font-weight:600;font-size:.84rem;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background-color .18s,color .18s,border-color .18s}
+.btn svg{flex:none}
+.btn-tomato{background:var(--tomato);color:#fff;border-color:var(--tomato)}
+.btn-tomato:hover{background:var(--tomato-ink);border-color:var(--tomato-ink)}
+.btn-ghost{background:rgba(0,0,0,.18);color:#fff;border-color:#FAF6EF}
+.btn-ghost:hover{background:#FAF6EF;color:var(--green-deep)}
+.btn-green{background:var(--green);color:#fff;border-color:var(--green)}
+.btn-green:hover{background:var(--green-deep)}
+.btn-outline{background:transparent;color:var(--green-deep);border-color:var(--green)}
+.btn-outline:hover{background:var(--green);color:#fff}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+
+/* ---------- carte (liste éditoriale) ---------- */
+#carte{padding:4rem 0 3rem}
+.menu-note{text-align:center;font-style:italic;color:var(--muted);margin:-1.4rem auto 2.2rem;max-width:34rem}
+.menu-group{margin:0 0 2.6rem}
+.menu-group>h3{text-align:center;font-size:1.18rem;letter-spacing:.22em;text-transform:uppercase;color:var(--tomato-ink);margin-bottom:1.6rem}
+.menu-list{list-style:none;margin:0;padding:0;display:grid;gap:1.45rem}
+@media (min-width:960px){.menu-list{grid-template-columns:1fr 1fr;column-gap:4.5rem;row-gap:1.7rem}}
+.dish-line{display:flex;align-items:center;gap:.5rem}
+.dish-name{font-family:var(--font-display);font-size:1.08rem;letter-spacing:.05em;color:var(--green-deep)}
+.dots{flex:1;border-bottom:2px dotted var(--hairline);transform:translateY(.35em);min-width:1.2rem}
+.dish-price{font-family:var(--font-display);font-size:1.05rem;color:var(--ink);white-space:nowrap}
+.dish-desc{margin:.15rem 3.2rem .0 0;font-style:italic;font-size:.93rem;color:var(--muted)}
+.add{flex:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--green);background:transparent;color:var(--green);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background-color .15s,color .15s}
+.add:hover{background:var(--green);color:#fff}
+.add:active{background:var(--green-deep);color:#fff}
+
+/* ---------- duo photos ---------- */
+.duo{display:grid;gap:1.4rem;margin:3rem 0 0}
+@media (min-width:820px){.duo{grid-template-columns:3fr 2fr;align-items:end}}
+.duo figure{margin:0}
+.duo img{width:100%;object-fit:cover;height:100%}
+.duo figcaption{font-style:italic;font-size:.88rem;color:var(--muted);padding-top:.55rem;text-align:center}
+
+/* ---------- commande (tunnel) ---------- */
+#commander{background:var(--cream-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:4rem 0}
+.tunnel{max-width:680px;margin:0 auto;background:var(--cream);border:1px solid var(--line);padding:1.5rem 1.25rem 2rem}
+@media (min-width:700px){.tunnel{padding:2.2rem 2.5rem 2.6rem}}
+.steps{list-style:none;display:flex;justify-content:center;gap:1.4rem;margin:0 0 1.8rem;padding:0 0 1.1rem;border-bottom:1px solid var(--line)}
+.steps li{font-family:var(--font-display);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:.45rem}
+.steps .num{display:inline-flex;align-items:center;justify-content:center;width:1.7rem;height:1.7rem;border-radius:50%;border:1px solid var(--hairline);font-size:.85rem}
+.steps li[aria-current="step"]{color:var(--tomato-ink)}
+.steps li[aria-current="step"] .num{border-color:var(--tomato-ink);background:var(--tomato-ink);color:#fff}
+.steps .lbl{display:none}
+@media (min-width:560px){.steps .lbl{display:inline}}
+.step-title{font-size:1.35rem;letter-spacing:.08em;text-transform:uppercase;color:var(--green-deep);text-align:center;margin-bottom:1.2rem}
+.cart-empty{text-align:center;font-style:italic;color:var(--muted);padding:1.4rem 0}
+.cart-rows{list-style:none;margin:0;padding:0}
+.cart-rows li{display:flex;align-items:center;gap:.65rem;padding:.7rem 0;border-bottom:1px dotted var(--hairline)}
+.cr-name{flex:1;font-family:var(--font-display);letter-spacing:.04em;min-width:0}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line)}
+.qty button{width:44px;height:44px;border:0;background:transparent;color:var(--green-deep);cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.qty button:hover{background:var(--cream-2)}
+.qty .q{min-width:2rem;text-align:center;font-weight:600}
+.cr-amt{font-family:var(--font-display);white-space:nowrap;min-width:4.4rem;text-align:right}
+.cart-total{display:flex;justify-content:space-between;align-items:baseline;margin:1.1rem 0 1.4rem;font-family:var(--font-display);font-size:1.25rem;letter-spacing:.06em}
+.tunnel-nav{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center}
+.back-link{background:none;border:0;color:var(--muted);font-family:var(--font-body);font-style:italic;font-size:.95rem;cursor:pointer;min-height:44px;padding:0 .8rem;text-decoration:underline;text-underline-offset:3px}
+.capacity{display:flex;gap:.6rem;align-items:flex-start;background:#EEF2EA;border-left:3px solid var(--green);padding:.85rem 1rem;margin:0 0 1.3rem;font-size:.95rem}
+.capacity svg{flex:none;margin-top:.2rem}
+.svc{display:flex;gap:.6rem;justify-content:center;margin-bottom:1.2rem}
+.svc label{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:.4rem 1.3rem;border:1px solid var(--green);color:var(--green-deep);font-family:var(--font-display);letter-spacing:.12em;text-transform:uppercase;font-size:.85rem;cursor:pointer}
+.svc input{position:absolute;opacity:0;width:1px;height:1px}
+.svc input:checked+label{background:var(--green);color:#fff}
+.svc input:focus-visible+label{outline:3px solid var(--tomato-ink);outline-offset:2px}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:.55rem;margin-bottom:1.3rem}
+.slot{min-height:48px;border:1px solid var(--line);background:#fff;font-family:var(--font-display);font-size:.98rem;letter-spacing:.04em;color:var(--ink);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.15;padding:.3rem}
+.slot:hover{border-color:var(--green)}
+.slot[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.slot[disabled]{background:transparent;border-style:dashed;color:#71695A;cursor:not-allowed}
+.slot small{font-family:var(--font-body);font-style:italic;font-size:.7rem}
+.fields{display:grid;gap:1rem;margin:0 0 1.4rem}
+@media (min-width:620px){.fields{grid-template-columns:1fr 1fr}}
+.field label{display:block;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.35rem;color:var(--green-deep)}
+.field input,.field select{width:100%;min-height:48px;border:1px solid var(--line);background:#fff;padding:.55rem .8rem;font-family:var(--font-body);font-size:1rem;color:var(--ink)}
+.field input:focus-visible,.field select:focus-visible{outline:3px solid var(--tomato-ink);outline-offset:1px}
+.recap{border:1px solid var(--line);padding:1.1rem 1.2rem;margin-bottom:1.4rem}
+.recap dt{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:.8rem}
+.recap dt:first-child{margin-top:0}
+.recap dd{margin:0;font-family:var(--font-display);font-size:1.05rem}
+.demo-screen{text-align:center;border:1px solid var(--green);background:#EEF2EA;padding:2.2rem 1.4rem}
+.demo-screen h3{font-size:1.5rem;letter-spacing:.1em;text-transform:uppercase;color:var(--green-deep);margin:.9rem 0 .7rem}
+.demo-screen p{max-width:30rem;margin:.4rem auto}
+.demo-screen .strong{font-weight:600;color:var(--tomato-ink)}
+.hint{text-align:center;font-style:italic;color:var(--muted);font-size:.9rem;margin-top:1.1rem}
+
+/* ---------- réservation ---------- */
+#reserver{padding:4rem 0}
+.resa{max-width:680px;margin:0 auto}
+.resa-form{border:1px solid var(--line);background:#fff;padding:1.5rem 1.25rem}
+@media (min-width:700px){.resa-form{padding:2rem 2.4rem}}
+.form-msg{margin:1rem 0 0;padding:1rem 1.2rem;border-left:3px solid var(--tomato);background:var(--cream-2);font-size:.97rem}
+.form-msg.ok{border-left-color:var(--green)}
+
+/* ---------- avis ---------- */
+#avis{background:var(--green-deep);color:#F4EFE3;padding:4rem 0}
+#avis .eyebrow{color:#E9B9A8}
+#avis .sec-head h2{color:#fff}
+#avis .filet{background:#5C7861}
+.score{display:flex;flex-direction:column;align-items:center;gap:.3rem;margin-bottom:2.2rem}
+.score .big{font-family:var(--font-display);font-size:3.4rem;line-height:1;color:#fff}
+.score .stars{color:#F2C94C;letter-spacing:.18em;font-size:1.25rem}
+.score .src{font-style:italic;font-size:.95rem;color:#D9D2BE}
+.quotes{display:grid;gap:1.6rem;max-width:1000px;margin:0 auto}
+@media (min-width:880px){.quotes{grid-template-columns:1fr 1fr 1fr;gap:2.4rem}}
+.quotes blockquote{margin:0;text-align:center;padding:0 .6rem}
+.quotes p{font-style:italic;font-size:1.06rem;line-height:1.6;margin:0 0 .7rem;color:#FAF6EF}
+.quotes cite{font-style:normal;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:#C9C0A6}
+
+/* ---------- accès ---------- */
+#acces{padding:4rem 0}
+.acces-grid{display:grid;gap:2.4rem;max-width:900px;margin:0 auto}
+@media (min-width:820px){.acces-grid{grid-template-columns:1fr 1fr;gap:4rem}}
+.acces-grid h3{font-size:1.05rem;letter-spacing:.2em;text-transform:uppercase;color:var(--tomato-ink);margin-bottom:1rem;text-align:center}
+.coord{list-style:none;margin:0;padding:0;text-align:center}
+.coord li{margin-bottom:1rem}
+.coord a{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;color:var(--green-deep);text-decoration:underline;text-underline-offset:3px}
+.coord .disp{font-size:1.15rem}
+.hours{width:100%;border-collapse:collapse;max-width:24rem;margin:0 auto}
+.hours th,.hours td{padding:.5rem .4rem;border-bottom:1px dotted var(--hairline);font-size:.97rem;text-align:left}
+.hours th{font-family:var(--font-display);font-weight:400;letter-spacing:.05em}
+.hours td{text-align:right}
+.hours .closed td,.hours .closed th{color:var(--tomato-ink);font-style:italic}
+.takeaway{margin-top:1.2rem;text-align:center;font-style:italic;color:var(--muted);font-size:.95rem}
+
+/* ---------- footer ---------- */
+footer.site{background:var(--green-deep);color:#D9D2BE;text-align:center;padding:2.6rem 1.25rem 2.2rem;font-size:.92rem}
+footer.site .name{font-family:var(--font-display);font-size:1.4rem;letter-spacing:.18em;text-transform:uppercase;color:#fff;margin-bottom:.6rem}
+footer.site a{color:#fff;display:inline-flex;align-items:center;min-height:44px;margin:-.6rem 0;padding:0 .15rem;vertical-align:middle}
+footer.site p{margin:.3rem 0}
+
+/* ---------- mini-panier flottant ---------- */
+.minicart{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--legal-h) + 10px);z-index:40;display:inline-flex;align-items:center;gap:.7rem;min-height:52px;padding:.6rem 1.4rem;background:var(--tomato);color:#fff;text-decoration:none;font-family:var(--font-body);font-weight:600;font-size:.92rem;letter-spacing:.06em;box-shadow:0 4px 18px rgba(30,20,10,.3);white-space:nowrap;max-width:calc(100vw - 20px)}
+.minicart span{overflow:hidden;text-overflow:ellipsis}
+.minicart:hover{background:var(--tomato-ink)}
+.minicart[hidden]{display:none}
+
+/* ---------- bandeau légal ---------- */
+.legal{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#1C291D;color:#CFC9B8;font-size:.72rem;line-height:1.45;text-align:center;padding:.5rem .9rem;border-top:1px solid #3A4D3C}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+</style>
+</head>
+<body>
+<a class="skip" href="#top">Aller au contenu</a>
+
+<div class="topbar">À emporter du mardi au samedi — <a href="tel:+33329656259">03 29 65 62 59</a></div>
+
+<header class="site">
+  <a class="brand" href="#top" aria-label="La Coppia — retour en haut de page">
+    <span class="name">La Coppia</span><br>
+    <span class="sub">Pizzeria artisanale · Rambervillers · depuis 2016</span>
+  </a>
+  <nav class="main" aria-label="Navigation principale">
+    <ul>
+      <li><a href="#carte">La carte</a></li>
+      <li><a href="#commander">Commander</a></li>
+      <li><a href="#reserver">Réserver</a></li>
+      <li><a href="#avis">Avis</a></li>
+      <li><a href="#acces">Accès</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <figure class="hero">
+    <img src="img/hero-margherita.webp" alt="Pizza margherita au feu de bois, bord gonflé et basilic frais, sur une table en marbre" width="1400" height="875" fetchpriority="high" decoding="async">
+    <div class="hero-inner">
+      <p class="kicker">Pizzeria artisanale à Rambervillers</p>
+      <h1>La Coppia</h1>
+      <p class="hero-claim">La pizzeria n°1 de Rambervillers — <span class="star" aria-hidden="true">★</span> 4,6, 235 avis</p>
+      <div class="cta-row">
+        <a class="btn btn-tomato" href="#commander">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2 3h3l2.6 12.5a1 1 0 0 0 1 .8h9.7a1 1 0 0 0 1-.8L21 7H6"/></svg>
+          Commander à emporter
+        </a>
+        <a class="btn btn-ghost" href="#reserver">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="1"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+          Réserver une table
+        </a>
+      </div>
+    </div>
+  </figure>
+
+  <!-- ============ CARTE ============ -->
+  <section id="carte" aria-labelledby="carte-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">La carta</p>
+        <h2 id="carte-h">Nos pizzas</h2>
+        <div class="filet" aria-hidden="true"></div>
+        <p class="lead">Pâte maturée, sauce tomate maison, produits choisis. Chaque pizza est préparée à la commande.</p>
+        <!-- [À REMPLACER] Texte d'introduction de la carte : à valider avec l'établissement (méthode de travail réelle). -->
+      </header>
+
+      <p class="menu-note">Base tomate ou crème — toutes nos pizzas existent en pâte fine ou bord généreux.</p>
+      <!-- [À REMPLACER] Carte complète : noms, ingrédients et prix ci-dessous sont des exemples crédibles, à remplacer par la carte réelle de La Coppia. -->
+
+      <div class="menu-group">
+        <h3>Le classiche</h3>
+        <ul class="menu-list">
+          <li>
+            <div class="dish-line">
+              <span class="dish-name">Margherita</span><span class="dots" aria-hidden="true"></span><span class="dish-price">9,00&nbsp;€</span>
+              <button type="button" class="add" data-add="Margherita" data-price="9.00" aria-label="Ajouter la Margherita (9,00 €) à ma commande"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <p class="dish-desc">tomate, fior di latte, basilic frais, huile d’olive vierge</p>
+          </li>
+          <li>
+            <div class="dish-line">
+              <span class="dish-name">Marinara</span><span class="dots" aria-hidden="true"></span><span class="dish-price">9,00&nbsp;€</span>
+              <button type="button" class="add" data-add="Marinara" data-price="9.00" aria-label="Ajouter la Marinara (9,00 €) à ma commande"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <p class="dish-desc">tomate, ail, origan, huile d’olive — la napolitaine d’origine</p>
+          </li>
+          <li>
+            <div class="dish-line">
+              <span class="dish-name">Regina</span><span class="dots" aria-hidden="true"></span><span class="dish-price">10,50&nbsp;€</span>
+              <button type="button" class="add" data-add="Regina" data-price="10.50" aria-label="Ajouter la Regina (10,50 €) à ma commande"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <p class="dish-desc">tomate, mozzarella, jambon blanc, champignons frais</p>
+          </li>
+          <li>
+            <div class="dish-line">
+              <span class="dish-name">Diavola</span><span class="dots" aria-hidden="true"></span><span class="dish-price">11,50&nbsp;€</span>
+              <button type="button" class="add" data-add="Diavola" data-price="11.50" aria-label="Ajouter la Diavola (11,50 €) à ma commande"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <p class="dish-desc">tomate, mozzarella, salami piquant, olives noires</p>
+          </li>
+          <li>
+            <div class="dish-line">
+              <span class="dish-name">Quattro formaggi</span><span class="dots" aria-hidden="true"></span><span class="dish-price">12,00&nbsp;€</span>
+              <button type="button" class="add" data-add="Quattro formaggi" data-price="12.00" aria-label="Ajouter la Quattro formaggi (12,00 €) à ma commande"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <p class="dish-desc">crème, mozzarella, gorgonzola, chèvre, parmesan</p>
+          </li>
+          <li>
+            <div class="dish-line">
+              <span class="dish-name">Calzone</span><span class="dots" aria-hidden="true"></span><span class="dish-price">11,00&nbsp;€</span>
+              <button type="button" class="add" data-add="Calzone" data-price="11.00" aria-label="Ajouter le Calzone (11,00 €) à ma commande"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <p class="dish-desc">chausson doré — tomate, mozzarella, jambon, œuf</p>
+          </li>
+          <li>
+            <div class="dish-line">
+              <span class="dish-name">Vegetariana</span><span class="dots" aria-hidden="true"></span><span class="dish-price">11,50&nbsp;€</span>
+              <button type="button" class="add" data-add="Vegetariana" data-price="11.50" aria-label="Ajouter la Vegetariana (11,50 €) à ma commande"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <p class="dish-desc">tomate, mozzarella, légumes grillés, pesto de basilic</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-group">
+        <h3>Le speciali</h3>
+        <ul class="menu-list">
+          <li>
+            <div class="dish-line">
+              <span class="dish-name">Capricciosa</span><span class="dots" aria-hidden="true"></span><span class="dish-price">12,00&nbsp;€</span>
+              <button type="button" class="add" data-add="Capricciosa" data-price="12.00" aria-label="Ajouter la Capricciosa (12,00 €) à ma commande"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <p class="dish-desc">tomate, mozzarella, jambon, artichauts, champignons, olives</p>
+          </li>
+          <li>
+            <div class="dish-line">
+              <span class="dish-name">Burrata</span><span class="dots" aria-hidden="true"></span><span class="dish-price">13,50&nbsp;€</span>
+              <button type="button" class="add" data-add="Burrata" data-price="13.50" aria-label="Ajouter la Burrata (13,50 €) à ma commande"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <p class="dish-desc">tomate, burrata crémeuse entière, roquette, jambon de Parme</p>
+          </li>
+          <li>
+            <div class="dish-line">
+              <span class="dish-name">Tartufo</span><span class="dots" aria-hidden="true"></span><span class="dish-price">14,00&nbsp;€</span>
+              <button type="button" class="add" data-add="Tartufo" data-price="14.00" aria-label="Ajouter la Tartufo (14,00 €) à ma commande"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <p class="dish-desc">crème, mozzarella, champignons, huile de truffe, parmesan</p>
+          </li>
+          <li>
+            <div class="dish-line">
+              <span class="dish-name">Montagnarde</span><span class="dots" aria-hidden="true"></span><span class="dish-price">12,50&nbsp;€</span>
+              <button type="button" class="add" data-add="Montagnarde" data-price="12.50" aria-label="Ajouter la Montagnarde (12,50 €) à ma commande"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <p class="dish-desc">crème, mozzarella, munster des Vosges, lardons fumés, oignons</p>
+          </li>
+          <li>
+            <div class="dish-line">
+              <span class="dish-name">La Coppia</span><span class="dots" aria-hidden="true"></span><span class="dish-price">13,00&nbsp;€</span>
+              <button type="button" class="add" data-add="La Coppia" data-price="13.00" aria-label="Ajouter La Coppia (13,00 €) à ma commande"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <p class="dish-desc">notre signature — mozzarella di bufala, jambon de Parme, copeaux de parmesan, basilic</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-group">
+        <h3>Dolci</h3>
+        <ul class="menu-list">
+          <li>
+            <div class="dish-line">
+              <span class="dish-name">Tiramisù maison</span><span class="dots" aria-hidden="true"></span><span class="dish-price">4,50&nbsp;€</span>
+              <button type="button" class="add" data-add="Tiramisù maison" data-price="4.50" aria-label="Ajouter le Tiramisù maison (4,50 €) à ma commande"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <p class="dish-desc">mascarpone, café, cacao — la recette classique</p>
+          </li>
+          <li>
+            <div class="dish-line">
+              <span class="dish-name">Panna cotta</span><span class="dots" aria-hidden="true"></span><span class="dish-price">4,00&nbsp;€</span>
+              <button type="button" class="add" data-add="Panna cotta" data-price="4.00" aria-label="Ajouter la Panna cotta (4,00 €) à ma commande"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <p class="dish-desc">coulis de fruits rouges</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="duo">
+        <figure>
+          <img src="img/four-a-bois.webp" alt="Pizza sur planche de bois devant les flammes d’un four à bois" width="800" height="600" loading="lazy" decoding="async">
+          <figcaption>Le feu vif saisit la pâte en quelques minutes.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/burrata.webp" alt="Pizza à la burrata et à la roquette servie sur un plat en bois sombre" width="760" height="760" loading="lazy" decoding="async">
+          <figcaption>La Burrata, fraîcheur et caractère.</figcaption>
+        </figure>
+        <!-- [À REMPLACER] Photos d'illustration libres de droits — à remplacer par les photos réelles de l'établissement après signature. -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMMANDE À EMPORTER (wow-feature) ============ -->
+  <section id="commander" aria-labelledby="cmd-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">À emporter</p>
+        <h2 id="cmd-h">Commander à emporter</h2>
+        <div class="filet" aria-hidden="true"></div>
+        <p class="lead">Choisissez vos pizzas dans la carte ci-dessus, puis votre créneau de retrait. À emporter uniquement — pas de livraison.</p>
+      </header>
+
+      <div class="tunnel">
+        <ol class="steps" aria-label="Étapes de la commande">
+          <li id="stp-1" aria-current="step"><span class="num">1</span><span class="lbl">Panier</span></li>
+          <li id="stp-2"><span class="num">2</span><span class="lbl">Retrait</span></li>
+          <li id="stp-3"><span class="num">3</span><span class="lbl">Confirmation</span></li>
+        </ol>
+
+        <!-- Étape 1 : panier -->
+        <div id="step-1">
+          <h3 class="step-title" tabindex="-1">Votre panier</h3>
+          <p class="cart-empty" id="cart-empty">Votre panier est vide — ajoutez vos pizzas depuis <a href="#carte">la carte</a>.</p>
+          <ul class="cart-rows" id="cart-rows"></ul>
+          <p class="cart-total" id="cart-total" hidden><span>Total</span><span id="cart-total-amt">0,00&nbsp;€</span></p>
+          <div class="tunnel-nav">
+            <button type="button" class="btn btn-green" id="to-step-2" disabled>Choisir mon créneau</button>
+          </div>
+        </div>
+
+        <!-- Étape 2 : créneau de retrait -->
+        <div id="step-2" hidden>
+          <h3 class="step-title" tabindex="-1">Retrait à la pizzeria</h3>
+          <p class="capacity">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            <span><strong>Préparation maîtrisée&nbsp;: 4 commandes max par créneau.</strong> Votre pizza sort du four quand vous arrivez — jamais d’attente, jamais de pizza tiède.</span>
+            <!-- [À REMPLACER] Capacité par créneau (4) : valeur d'exemple à ajuster avec l'établissement. -->
+          </p>
+          <div class="svc" role="radiogroup" aria-label="Service de retrait">
+            <input type="radio" name="svc" id="svc-midi" value="midi" checked>
+            <label for="svc-midi">Ce midi</label>
+            <input type="radio" name="svc" id="svc-soir" value="soir">
+            <label for="svc-soir">Ce soir</label>
+          </div>
+          <div class="slots" id="slots"></div>
+          <div class="fields">
+            <p class="field"><label for="ord-name">Votre nom</label><input id="ord-name" name="ord-name" type="text" autocomplete="name" placeholder="Ex. : M. Dupont"></p>
+            <p class="field"><label for="ord-tel">Téléphone</label><input id="ord-tel" name="ord-tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="06 …"></p>
+          </div>
+          <div class="tunnel-nav">
+            <button type="button" class="back-link" id="back-1">← Revenir au panier</button>
+            <button type="button" class="btn btn-green" id="to-step-3" disabled>Voir le récapitulatif</button>
+          </div>
+        </div>
+
+        <!-- Étape 3 : récapitulatif -->
+        <div id="step-3" hidden>
+          <h3 class="step-title" tabindex="-1">Récapitulatif</h3>
+          <dl class="recap">
+            <dt>Commande</dt>
+            <dd id="rec-items">—</dd>
+            <dt>Total</dt>
+            <dd id="rec-total">—</dd>
+            <dt>Retrait</dt>
+            <dd id="rec-slot">—</dd>
+            <dt>Au nom de</dt>
+            <dd id="rec-name">—</dd>
+          </dl>
+          <div class="tunnel-nav">
+            <button type="button" class="back-link" id="back-2">← Modifier le créneau</button>
+            <button type="button" class="btn btn-tomato" id="confirm-order">Confirmer la commande</button>
+          </div>
+        </div>
+
+        <!-- Écran final démonstration -->
+        <div id="demo-screen" class="demo-screen" hidden role="status">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#2E5339" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.5"/></svg>
+          <h3>Ceci est une démonstration</h3>
+          <p>Aucune commande n’a été transmise et aucune donnée n’a été enregistrée.</p>
+          <p class="strong">En production&nbsp;: paiement CB en ligne ou paiement au retrait, au choix du client.</p>
+          <p id="demo-detail"></p>
+          <div class="tunnel-nav" style="margin-top:1.2rem">
+            <button type="button" class="btn btn-outline" id="restart">Refaire la démonstration</button>
+          </div>
+        </div>
+
+        <p class="hint" id="cmd-hint">Module de commande simulé — rien n’est envoyé ni facturé.</p>
+        <noscript><p class="form-msg">La commande en ligne nécessite JavaScript. Appelez-nous au <a href="tel:+33329656259">03 29 65 62 59</a>.</p></noscript>
+      </div>
+      <p class="sr-only" aria-live="polite" id="live"></p>
+    </div>
+  </section>
+
+  <!-- ============ RÉSERVATION ============ -->
+  <section id="reserver" aria-labelledby="resa-h">
+    <div class="wrap resa">
+      <header class="sec-head">
+        <p class="eyebrow">Sur place</p>
+        <h2 id="resa-h">Réserver une table</h2>
+        <div class="filet" aria-hidden="true"></div>
+        <p class="lead">Service soigné, salle intime&nbsp;: la réservation est conseillée, surtout le week-end.</p>
+      </header>
+      <form class="resa-form" id="resa-form" novalidate>
+        <div class="fields">
+          <p class="field"><label for="r-date">Date</label><input id="r-date" name="r-date" type="date" required></p>
+          <p class="field"><label for="r-time">Heure</label>
+            <select id="r-time" name="r-time" required>
+              <option value="">Choisir…</option>
+              <optgroup label="Midi">
+                <option>12h00</option><option>12h15</option><option>12h30</option><option>12h45</option><option>13h00</option>
+              </optgroup>
+              <optgroup label="Soir">
+                <option>18h30</option><option>19h00</option><option>19h30</option><option>20h00</option><option>20h30</option><option>21h00</option>
+              </optgroup>
+            </select>
+          </p>
+          <p class="field"><label for="r-guests">Couverts</label>
+            <select id="r-guests" name="r-guests" required>
+              <option value="">Choisir…</option>
+              <option>1 personne</option><option>2 personnes</option><option>3 personnes</option><option>4 personnes</option><option>5 personnes</option><option>6 personnes</option><option>7 personnes</option><option>8 personnes</option>
+            </select>
+          </p>
+          <p class="field"><label for="r-name">Votre nom</label><input id="r-name" name="r-name" type="text" autocomplete="name" required></p>
+        </div>
+        <div class="tunnel-nav">
+          <button type="submit" class="btn btn-green">Demander la réservation</button>
+        </div>
+        <div id="resa-msg" aria-live="polite"></div>
+        <p class="hint">Formulaire simulé — en production, vous recevriez une confirmation par SMS.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ AVIS ============ -->
+  <section id="avis" aria-labelledby="avis-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">Ils en parlent</p>
+        <h2 id="avis-h">Vos avis</h2>
+        <div class="filet" aria-hidden="true"></div>
+      </header>
+      <div class="score">
+        <span class="big">4,6<span style="font-size:1.6rem">/5</span></span>
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span class="src">235 avis Google</span>
+      </div>
+      <!-- [À REMPLACER] Extraits d'avis illustratifs : à remplacer par 2-3 citations réelles (≤ 15 mots) de la fiche Google de l'établissement. -->
+      <div class="quotes">
+        <blockquote>
+          <p>«&nbsp;La meilleure pizza du secteur, pâte fine et ingrédients de qualité.&nbsp;»</p>
+          <cite>Avis Google</cite>
+        </blockquote>
+        <blockquote>
+          <p>«&nbsp;Accueil chaleureux, pizzas généreuses, on sent le fait maison.&nbsp;»</p>
+          <cite>Avis Google</cite>
+        </blockquote>
+        <blockquote>
+          <p>«&nbsp;Toujours excellent, et les commandes à emporter sont prêtes à l’heure.&nbsp;»</p>
+          <cite>Avis Google</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACCÈS / HORAIRES ============ -->
+  <section id="acces" aria-labelledby="acces-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">Nous trouver</p>
+        <h2 id="acces-h">Accès &amp; horaires</h2>
+        <div class="filet" aria-hidden="true"></div>
+      </header>
+      <div class="acces-grid">
+        <div>
+          <h3>La pizzeria</h3>
+          <ul class="coord">
+            <li>
+              <span class="disp">9 avenue du 17e BCP</span><br>88700 Rambervillers<br>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=La+Coppia+9+avenue+du+17e+BCP+88700+Rambervillers" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Itinéraire Google Maps
+              </a>
+            </li>
+            <li>
+              <a href="tel:+33329656259">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7a2 2 0 0 1 1.7 2.05Z"/></svg>
+                <span class="disp">03 29 65 62 59</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Horaires</h3>
+          <!-- [À REMPLACER] Plages horaires d'exemple — à confirmer. Réel et certain : fermeture le dimanche et le lundi. -->
+          <table class="hours">
+            <tbody>
+              <tr><th scope="row">Mardi — Samedi</th><td>11h30 – 13h30<br>18h00 – 21h30</td></tr>
+              <tr class="closed"><th scope="row">Dimanche</th><td>Fermé</td></tr>
+              <tr class="closed"><th scope="row">Lundi</th><td>Fermé</td></tr>
+            </tbody>
+          </table>
+          <p class="takeaway">Vente à emporter uniquement — pas de livraison.<br>Pizzeria à Rambervillers depuis 2016.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <p class="name">La Coppia</p>
+  <p>9 avenue du 17e BCP, 88700 Rambervillers · <a href="tel:+33329656259">03 29 65 62 59</a></p>
+  <p>Pizzeria artisanale depuis 2016 · Fermé dimanche et lundi</p>
+</footer>
+
+<a class="minicart" id="minicart" href="#commander" hidden>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2 3h3l2.6 12.5a1 1 0 0 0 1 .8h9.7a1 1 0 0 0 1-.8L21 7H6"/></svg>
+  <span id="minicart-txt">Voir ma commande</span>
+</a>
+
+<aside class="legal" id="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</aside>
+
+<script>
+(function(){
+'use strict';
+var KEY='coppia-cart';
+var $=function(id){return document.getElementById(id)};
+
+/* ---- bandeau légal : hauteur réelle ---- */
+function syncLegal(){
+  var b=$('legal');
+  if(b){document.documentElement.style.setProperty('--legal-h',b.offsetHeight+'px');}
+}
+window.addEventListener('resize',syncLegal);
+syncLegal();
+
+/* ---- catalogue construit depuis la carte ---- */
+var CAT={};
+var addBtns=document.querySelectorAll('[data-add]');
+for(var i=0;i<addBtns.length;i++){
+  CAT[addBtns[i].getAttribute('data-add')]=parseFloat(addBtns[i].getAttribute('data-price'));
+}
+
+/* ---- panier (localStorage) ---- */
+var cart={};
+try{
+  var raw=localStorage.getItem(KEY);
+  if(raw){
+    var parsed=JSON.parse(raw);
+    for(var k in parsed){ if(CAT[k] && parsed[k]>0){ cart[k]=Math.min(20,parseInt(parsed[k],10)||0); } }
+  }
+}catch(e){cart={};}
+function save(){ try{localStorage.setItem(KEY,JSON.stringify(cart));}catch(e){} }
+function fmt(n){ return n.toFixed(2).replace('.',',')+' €'; }
+function announce(msg){ var l=$('live'); if(l){ l.textContent=''; l.textContent=msg; } }
+
+function cartCount(){ var c=0; for(var k in cart){c+=cart[k];} return c; }
+function cartTotal(){ var t=0; for(var k in cart){t+=cart[k]*(CAT[k]||0);} return t; }
+
+function renderCart(){
+  var rows=$('cart-rows'), empty=$('cart-empty'), totalP=$('cart-total');
+  rows.textContent='';
+  var names=Object.keys(cart);
+  var has=names.length>0;
+  empty.hidden=has;
+  totalP.hidden=!has;
+  $('to-step-2').disabled=!has;
+  names.forEach(function(name){
+    var q=cart[name];
+    var li=document.createElement('li');
+    var nm=document.createElement('span'); nm.className='cr-name'; nm.textContent=name;
+    var qty=document.createElement('span'); qty.className='qty';
+    var minus=document.createElement('button'); minus.type='button';
+    minus.setAttribute('aria-label','Retirer un '+name);
+    minus.innerHTML='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg>';
+    minus.addEventListener('click',function(){ changeQty(name,-1); announce('Panier : '+cartCount()+' article(s), total '+fmt(cartTotal())); });
+    var qv=document.createElement('span'); qv.className='q'; qv.textContent=q;
+    var plus=document.createElement('button'); plus.type='button';
+    plus.setAttribute('aria-label','Ajouter un '+name);
+    plus.innerHTML='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>';
+    plus.addEventListener('click',function(){ changeQty(name,1); announce('Panier : '+cartCount()+' article(s), total '+fmt(cartTotal())); });
+    qty.appendChild(minus); qty.appendChild(qv); qty.appendChild(plus);
+    var amt=document.createElement('span'); amt.className='cr-amt'; amt.textContent=fmt(q*(CAT[name]||0));
+    li.appendChild(nm); li.appendChild(qty); li.appendChild(amt);
+    rows.appendChild(li);
+  });
+  $('cart-total-amt').textContent=fmt(cartTotal());
+  /* mini-panier */
+  var mc=$('minicart'), n=cartCount();
+  if(n>0){
+    mc.hidden=false;
+    $('minicart-txt').textContent=n+(n>1?' articles':' article')+' · '+fmt(cartTotal())+' — Commander';
+  }else{ mc.hidden=true; }
+}
+
+function changeQty(name,delta){
+  cart[name]=(cart[name]||0)+delta;
+  if(cart[name]<=0){ delete cart[name]; }
+  if(cart[name]>20){ cart[name]=20; }
+  save(); renderCart();
+}
+
+for(var j=0;j<addBtns.length;j++){
+  (function(btn){
+    btn.addEventListener('click',function(){
+      var name=btn.getAttribute('data-add');
+      changeQty(name,1);
+      announce(name+' ajouté au panier — '+cartCount()+' article(s), total '+fmt(cartTotal()));
+    });
+  })(addBtns[j]);
+}
+
+/* ---- étapes du tunnel ---- */
+var stepEls=[$('step-1'),$('step-2'),$('step-3')];
+var stepDots=[$('stp-1'),$('stp-2'),$('stp-3')];
+function goStep(n){
+  $('demo-screen').hidden=true;
+  $('cmd-hint').hidden=false;
+  for(var i=0;i<3;i++){
+    stepEls[i].hidden=(i!==n);
+    if(i===n){ stepDots[i].setAttribute('aria-current','step'); }
+    else{ stepDots[i].removeAttribute('aria-current'); }
+  }
+  var h=stepEls[n].querySelector('.step-title');
+  if(h){ h.focus({preventScroll:true}); }
+}
+
+/* ---- créneaux de retrait ---- */
+var SLOT_DATA={
+  midi:{times:['11:45','12:00','12:15','12:30','12:45','13:00','13:15','13:30'],full:['12:30','13:00']},
+  soir:{times:['18:15','18:30','18:45','19:00','19:15','19:30','19:45','20:00','20:15','20:30','20:45','21:00','21:15','21:30'],full:['19:30','19:45','20:30']}
+};
+var selectedSlot=null, selectedSvc='midi';
+function renderSlots(){
+  var box=$('slots'); box.textContent='';
+  selectedSlot=null; $('to-step-3').disabled=true;
+  var data=SLOT_DATA[selectedSvc];
+  data.times.forEach(function(t){
+    var full=data.full.indexOf(t)>-1;
+    var b=document.createElement('button');
+    b.type='button'; b.className='slot';
+    b.setAttribute('data-slot',t);
+    b.setAttribute('aria-pressed','false');
+    if(full){
+      b.disabled=true;
+      b.innerHTML=t.replace(':','h')+'<small>Complet</small>';
+      b.setAttribute('aria-label','Créneau '+t.replace(':','h')+' complet');
+    }else{
+      b.textContent=t.replace(':','h');
+      b.addEventListener('click',function(){
+        var prev=box.querySelector('[aria-pressed="true"]');
+        if(prev){ prev.setAttribute('aria-pressed','false'); }
+        b.setAttribute('aria-pressed','true');
+        selectedSlot=t;
+        $('to-step-3').disabled=false;
+        announce('Créneau de retrait choisi : '+t.replace(':','h'));
+      });
+    }
+    box.appendChild(b);
+  });
+}
+$('svc-midi').addEventListener('change',function(){ selectedSvc='midi'; renderSlots(); });
+$('svc-soir').addEventListener('change',function(){ selectedSvc='soir'; renderSlots(); });
+renderSlots();
+
+/* ---- navigation tunnel ---- */
+$('to-step-2').addEventListener('click',function(){ goStep(1); });
+$('back-1').addEventListener('click',function(){ goStep(0); });
+$('to-step-3').addEventListener('click',function(){
+  var items=Object.keys(cart).map(function(n){ return cart[n]+' × '+n; }).join(' · ');
+  $('rec-items').textContent=items||'—';
+  $('rec-total').textContent=fmt(cartTotal());
+  var svcLbl=(selectedSvc==='midi')?'ce midi':'ce soir';
+  $('rec-slot').textContent=(selectedSlot?selectedSlot.replace(':','h'):'—')+' '+svcLbl+' — 9 av. du 17e BCP, Rambervillers';
+  var nm=$('ord-name').value.trim();
+  $('rec-name').textContent=nm||'(nom non renseigné)';
+  goStep(2);
+});
+$('back-2').addEventListener('click',function(){ goStep(1); });
+
+$('confirm-order').addEventListener('click',function(){
+  var detail='Dans la vraie vie, votre commande de '+cartCount()+' article(s) ('+fmt(cartTotal())+') serait à retirer à '+(selectedSlot?selectedSlot.replace(':','h'):'—')+'.';
+  $('demo-detail').textContent=detail;
+  for(var i=0;i<3;i++){ stepEls[i].hidden=true; stepDots[i].removeAttribute('aria-current'); }
+  $('cmd-hint').hidden=true;
+  $('demo-screen').hidden=false;
+  cart={}; save(); renderCart();
+  $('demo-screen').querySelector('h3').setAttribute('tabindex','-1');
+  $('demo-screen').querySelector('h3').focus({preventScroll:true});
+});
+$('restart').addEventListener('click',function(){
+  goStep(0);
+  var c=document.getElementById('carte');
+  if(c){ c.scrollIntoView(); }
+});
+
+renderCart();
+
+/* ---- réservation simulée ---- */
+var rd=$('r-date');
+if(rd){
+  var today=new Date();
+  var iso=today.getFullYear()+'-'+String(today.getMonth()+1).padStart(2,'0')+'-'+String(today.getDate()).padStart(2,'0');
+  rd.min=iso;
+}
+$('resa-form').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var msg=$('resa-msg');
+  var d=$('r-date').value, t=$('r-time').value, g=$('r-guests').value, n=$('r-name').value.trim();
+  if(!d||!t||!g||!n){
+    msg.innerHTML='<p class="form-msg">Merci de renseigner la date, l’heure, le nombre de couverts et votre nom.</p>';
+    return;
+  }
+  var day=new Date(d+'T12:00:00').getDay();
+  if(day===0||day===1){
+    msg.innerHTML='<p class="form-msg">La Coppia est fermée le dimanche et le lundi — choisissez un autre jour, nous vous régalerons du mardi au samedi.</p>';
+    return;
+  }
+  var dateFr=new Date(d+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'});
+  msg.innerHTML='<p class="form-msg ok"><strong>Demande enregistrée (démonstration)&nbsp;:</strong> table pour '+g+' le '+dateFr+' à '+t+', au nom de '+n.replace(/[<>&]/g,'')+'.<br>Ceci est une démonstration — aucune réservation réelle n’a été transmise. En production, la confirmation arriverait par SMS.</p>';
+});
+})();
+</script>
+</body>
+</html>
