@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1B1714">
+<title>Pizzeria Il Forno — Pizzeria à Saint-Dié-des-Vosges · Pizzas à emporter, 4,9★</title>
+<meta name="description" content="Il Forno, la pizzeria 4,9★ de Saint-Dié-des-Vosges (245 avis Google). Pizzas artisanales à emporter, commande coupe-file en ligne. 4 rue Pasteur, à 150 m de la gare.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700;800&display=swap"></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Pizzeria Il Forno",
+  "servesCuisine": ["Pizza", "Italien"],
+  "priceRange": "€",
+  "telephone": "+33635589501",
+  "acceptsReservations": "False",
+  "description": "Pizzeria artisanale à Saint-Dié-des-Vosges — pizzas à emporter uniquement.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4 rue Pasteur",
+    "postalCode": "88100",
+    "addressLocality": "Saint-Dié-des-Vosges",
+    "addressCountry": "FR"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Pizzeria+Il+Forno+4+rue+Pasteur+88100+Saint-Di%C3%A9-des-Vosges",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "245"
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"18:30","closes":"21:30"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday","Thursday"],"opens":"11:30","closes":"14:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday","Thursday"],"opens":"18:30","closes":"21:30"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"11:30","closes":"14:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"18:30","closes":"22:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"18:30","closes":"21:30"}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --farine:#FAF7F2;
+  --charbon:#1B1714;
+  --basilic:#3D6B4F;
+  --clair:#F4EFE7;
+  --gris:#5C544C;
+  --ligne:#E6DFD3;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,system-ui,sans-serif;
+  background:var(--farine);
+  color:var(--charbon);
+  line-height:1.6;
+  font-size:16px;
+  padding-bottom:96px;
+  overflow-x:hidden;
+}
+h1,h2,h3{font-family:Sora,Inter,sans-serif;line-height:1.12;letter-spacing:-.02em}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--basilic);outline-offset:2px}
+.dark :focus-visible{outline-color:var(--farine)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:8px;background:var(--charbon);color:#fff;padding:12px 18px;z-index:300}
+.skip:focus{left:8px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.dots{background-image:radial-gradient(rgba(27,23,20,.055) 1px,transparent 1.3px);background-size:15px 15px}
+
+/* ——— Boutons : blocs francs, angles vifs ——— */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-family:Sora,sans-serif;font-weight:700;font-size:1rem;
+  min-height:48px;padding:12px 24px;border:2px solid var(--charbon);
+  background:var(--basilic);color:#fff;border-color:var(--basilic);
+  text-decoration:none;cursor:pointer;border-radius:0;
+  transition:transform .12s ease,background .12s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--charbon);border-color:var(--charbon)}
+.dark .btn.ghost{color:var(--farine);border-color:var(--farine)}
+
+/* ——— Header ——— */
+header{border-bottom:2px solid var(--charbon);background:var(--farine)}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Sora,sans-serif;font-weight:800;font-size:1.3rem;letter-spacing:.02em}
+.logo svg{flex:none}
+.logo small{display:block;font-family:Inter,sans-serif;font-weight:400;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
+nav.anchors{display:flex;flex-wrap:wrap;gap:2px 4px;padding:0 0 10px}
+nav.anchors a{font-size:.85rem;font-weight:600;text-decoration:none;padding:13px 10px;color:var(--charbon)}
+nav.anchors a:hover{color:var(--basilic)}
+
+/* ——— Hero ——— */
+.hero{padding:40px 0 0}
+.hero-grid{display:grid;gap:28px}
+.kicker{font-family:Sora,sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--basilic);margin-bottom:14px}
+.hero h1{font-size:clamp(2rem,7.4vw,3.4rem);font-weight:800}
+.hero h1 .em{color:var(--basilic)}
+.hero p.lede{margin:18px 0 6px;font-size:1.06rem;color:var(--gris);max-width:34em}
+.statut{display:inline-flex;align-items:center;gap:8px;margin:14px 0 4px;font-size:.9rem;font-weight:600;border:2px solid var(--charbon);padding:8px 14px;background:#fff}
+.statut .pin{width:10px;height:10px;background:var(--basilic);flex:none}
+.statut.ferme .pin{background:var(--gris)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 30px}
+.hero-img{border:2px solid var(--charbon);box-shadow:8px 8px 0 var(--charbon)}
+.hero-img img{width:100%;height:auto}
+
+/* ——— Bande charbon ——— */
+.strip{background:var(--charbon);color:var(--clair);overflow:hidden;white-space:nowrap;padding:12px 0;margin-top:42px;border-top:2px solid var(--charbon)}
+.strip span{font-family:Sora,sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase}
+
+/* ——— Sections ——— */
+section{padding:56px 0}
+.sec-head{margin-bottom:30px}
+.sec-head h2{font-size:clamp(1.6rem,5vw,2.3rem);font-weight:800}
+.sec-head p{color:var(--gris);margin-top:8px;max-width:36em}
+.dark{background:var(--charbon);color:var(--clair)}
+.dark .sec-head p{color:#C9C0B4}
+.dark .kicker{color:var(--farine);opacity:.85}
+
+/* ——— Pizza du mois ——— */
+.mois-grid{display:grid;gap:28px;align-items:center}
+.mois-visu{border:2px solid var(--farine);max-width:420px}
+.mois-visu img{width:100%;height:auto}
+.mois-card h3{font-size:clamp(1.7rem,6vw,2.6rem);font-weight:800;margin:6px 0 12px}
+.mois-card .ingr{color:#C9C0B4;max-width:30em}
+.mois-prix{font-family:Sora,sans-serif;font-weight:800;font-size:1.6rem;margin:16px 0}
+.badge-mois{display:inline-block;background:var(--basilic);color:#fff;font-family:Sora,sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;padding:7px 14px}
+
+/* ——— Carte ——— */
+.carte-grid{display:grid;gap:14px}
+.pz{display:flex;align-items:center;gap:14px;background:#fff;border:2px solid var(--charbon);padding:16px}
+.pz .tx{flex:1;min-width:0}
+.pz h3{font-size:1.05rem;font-weight:700}
+.pz p{font-size:.87rem;color:var(--gris);margin-top:2px}
+.pz .px{font-family:Sora,sans-serif;font-weight:700;font-size:1.05rem;white-space:nowrap}
+.add{flex:none;width:48px;height:48px;border:2px solid var(--basilic);background:var(--basilic);color:#fff;font-size:1.5rem;font-weight:700;line-height:1;cursor:pointer;border-radius:0;transition:transform .12s ease}
+.add:hover{transform:scale(1.07)}
+.cat{font-family:Sora,sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--basilic);margin:18px 0 4px}
+
+/* ——— Commander ——— */
+.cmd-grid{display:grid;gap:32px}
+.panier,.creneaux{background:#fff;border:2px solid var(--charbon);padding:22px}
+.panier h3,.creneaux h3{font-size:1.15rem;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.num{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;background:var(--charbon);color:var(--farine);font-family:Sora,sans-serif;font-size:.95rem;flex:none}
+#cart-items{list-style:none}
+#cart-items li{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--ligne)}
+#cart-items .nm{flex:1;font-weight:600;font-size:.95rem;min-width:0}
+#cart-items .lt{font-family:Sora,sans-serif;font-weight:700;white-space:nowrap}
+.qty{display:flex;align-items:center;gap:2px}
+.qty button{width:44px;height:44px;border:2px solid var(--charbon);background:var(--farine);font-size:1.2rem;font-weight:700;cursor:pointer;border-radius:0}
+.qty span{min-width:28px;text-align:center;font-weight:700}
+.vide{color:var(--gris);font-size:.95rem;padding:8px 0}
+.total-row{display:flex;justify-content:space-between;align-items:center;padding-top:14px;font-family:Sora,sans-serif;font-weight:800;font-size:1.2rem}
+.cap-note{display:flex;gap:10px;align-items:flex-start;background:var(--farine);border-left:4px solid var(--basilic);padding:12px 14px;font-size:.88rem;color:var(--gris);margin-bottom:16px}
+#slot-day{font-weight:700;font-size:.95rem;margin-bottom:12px}
+#slots{display:flex;flex-wrap:wrap;gap:10px}
+.slot{min-height:48px;padding:10px 14px;border:2px solid var(--charbon);background:#fff;font-family:Sora,sans-serif;font-weight:600;font-size:.95rem;cursor:pointer;border-radius:0}
+.slot[aria-pressed="true"]{background:var(--basilic);border-color:var(--basilic);color:#fff}
+.slot:disabled{border-color:var(--ligne);color:#6E655B;background:var(--farine);cursor:not-allowed;text-decoration:line-through}
+.slot:disabled small{text-decoration:none;display:block;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase}
+.field{margin:18px 0}
+.field label{display:block;font-weight:600;font-size:.92rem;margin-bottom:6px}
+.field input{width:100%;min-height:48px;padding:10px 14px;border:2px solid var(--charbon);background:#fff;font:inherit;border-radius:0}
+#cmd-msg{min-height:1.4em;font-weight:600;font-size:.92rem;color:#9C3B22;margin-top:10px}
+
+/* ——— Maison ——— */
+.maison-grid{display:grid;gap:28px;align-items:center}
+.maison-visu{border:2px solid var(--charbon);box-shadow:-8px 8px 0 var(--basilic);max-width:420px}
+.maison ul{list-style:none;margin-top:18px;display:grid;gap:10px}
+.maison li{display:flex;gap:12px;align-items:flex-start;font-size:.97rem}
+.maison li svg{flex:none;margin-top:3px}
+
+/* ——— Avis ——— */
+.note-bloc{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+.note-bloc .n{font-family:Sora,sans-serif;font-weight:800;font-size:3.4rem;line-height:1}
+.stars{display:inline-flex;gap:3px}
+.avis-grid{display:grid;gap:16px}
+.avis{border:1px solid rgba(250,247,242,.3);padding:20px}
+.avis p{font-size:.98rem}
+.avis footer{margin-top:10px;font-size:.8rem;color:#C9C0B4}
+
+/* ——— Accès ——— */
+.acces-grid{display:grid;gap:32px}
+.acc-card{background:#fff;border:2px solid var(--charbon);padding:22px}
+.acc-card h3{font-size:1.1rem;margin-bottom:12px}
+.acc-card p{font-size:.95rem;margin-bottom:8px}
+.acc-card a.lien{font-weight:600;color:var(--basilic);text-underline-offset:3px}
+table.horaires{width:100%;border-collapse:collapse;font-size:.93rem}
+table.horaires td{padding:9px 6px;border-bottom:1px solid var(--ligne);vertical-align:top}
+table.horaires td:last-child{text-align:right}
+@media(min-width:560px){table.horaires td:last-child{white-space:nowrap}}
+table.horaires tr.today td{font-weight:700;border-left:4px solid var(--basilic);padding-left:10px}
+
+/* ——— Footer ——— */
+footer.site{background:var(--charbon);color:#C9C0B4;padding:36px 0 30px;font-size:.88rem}
+footer.site .f-grid{display:grid;gap:18px}
+footer.site strong{color:var(--farine);font-family:Sora,sans-serif}
+footer.site a{color:var(--farine)}
+
+/* ——— FAB panier ——— */
+#fab{position:fixed;right:16px;bottom:96px;z-index:90;display:flex;align-items:center;gap:10px;min-height:54px;padding:12px 20px;background:var(--charbon);color:var(--farine);border:2px solid var(--farine);font-family:Sora,sans-serif;font-weight:700;font-size:.95rem;text-decoration:none;box-shadow:0 4px 14px rgba(27,23,20,.35)}
+#fab .ct{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:26px;padding:0 6px;background:var(--basilic);color:#fff;font-size:.85rem}
+
+/* ——— Bandeau légal ——— */
+#legal{position:fixed;left:0;right:0;bottom:0;z-index:100;background:var(--charbon);color:#D8D1C7;font-size:11.5px;line-height:1.45;padding:8px 14px;text-align:center;border-top:1px solid rgba(250,247,242,.25)}
+
+/* ——— Overlay démo ——— */
+#demo-overlay{position:fixed;inset:0;z-index:200;background:rgba(27,23,20,.82);display:none;align-items:center;justify-content:center;padding:20px}
+#demo-overlay.open{display:flex}
+.demo-box{background:var(--farine);color:var(--charbon);max-width:430px;width:100%;padding:36px 28px;text-align:center;border:2px solid var(--charbon);box-shadow:10px 10px 0 var(--basilic)}
+.demo-box .ic{margin:0 auto 18px;width:64px;height:64px;display:flex;align-items:center;justify-content:center;background:var(--basilic)}
+.demo-box h3{font-size:1.4rem;margin-bottom:10px}
+.demo-box p{font-size:.95rem;color:var(--gris);margin-bottom:10px}
+.demo-box p.big{font-size:1.08rem;color:var(--charbon);font-weight:600}
+
+@media (min-width:760px){
+  .hero-grid{grid-template-columns:1.05fr .95fr;align-items:center}
+  .carte-grid{grid-template-columns:1fr 1fr}
+  .cmd-grid{grid-template-columns:1fr 1fr;align-items:start}
+  .mois-grid{grid-template-columns:auto 1fr;gap:48px}
+  .maison-grid{grid-template-columns:auto 1fr;gap:48px}
+  .avis-grid{grid-template-columns:repeat(3,1fr)}
+  .acces-grid{grid-template-columns:1.1fr .9fr}
+  footer.site .f-grid{grid-template-columns:1fr 1fr 1fr}
+  nav.anchors{padding:0 0 12px}
+  #fab{bottom:64px}
+  #legal{font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div id="live" class="sr-only" aria-live="polite"></div>
+
+<header>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="logo" href="#" aria-label="Il Forno — retour en haut de page">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><rect x="1" y="1" width="32" height="32" stroke="#1B1714" stroke-width="2"/><path d="M7 21c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="#1B1714" stroke-width="2"/><path d="M11 21h12" stroke="#3D6B4F" stroke-width="3"/></svg>
+        <span>IL FORNO<small>Pizzeria · Saint-Dié</small></span>
+      </a>
+      <a class="btn" href="#commander">Commander</a>
+    </div>
+    <nav class="anchors" aria-label="Sections de la page">
+      <a href="#pizza-du-mois">Pizza du mois</a>
+      <a href="#carte">La carte</a>
+      <a href="#commander">Commander</a>
+      <a href="#maison">Notre maison</a>
+      <a href="#avis">Avis</a>
+      <a href="#acces">Accès</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero dots">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">Four &amp; farine · 4 rue Pasteur</p>
+        <h1>La pizzeria <span class="em">4,9★</span> de Saint-Dié — à&nbsp;emporter</h1>
+        <p class="lede">245 avis Google, une pâte pétrie chaque jour et un four qui ne ment pas. Commandez en ligne, passez prendre votre pizza à l'heure pile — à 150&nbsp;m de la gare.</p>
+        <!-- [À REMPLACER] Phrase d'accroche d'exemple, à valider avec l'établissement -->
+        <p class="statut" id="statut"><span class="pin" aria-hidden="true"></span><span id="statut-tx">À emporter uniquement</span></p>
+        <div class="cta-row">
+          <a class="btn" href="#commander">Commander sans file</a>
+          <a class="btn ghost" href="tel:+33635589501">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            06 35 58 95 01
+          </a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="img/hero-pelle.webp" alt="Pizza au pepperoni sortie du four sur une pelle en bois, pâte étalée sur le plan fariné" width="1400" height="900" fetchpriority="high">
+      </div>
+    </div>
+    <div class="strip" aria-hidden="true">
+      <span>À emporter uniquement&nbsp;&nbsp;·&nbsp;&nbsp;4,9★ sur Google&nbsp;&nbsp;·&nbsp;&nbsp;150 m de la gare&nbsp;&nbsp;·&nbsp;&nbsp;Pâte maison&nbsp;&nbsp;·&nbsp;&nbsp;À emporter uniquement&nbsp;&nbsp;·&nbsp;&nbsp;4,9★ sur Google&nbsp;&nbsp;·&nbsp;&nbsp;150 m de la gare</span>
+    </div>
+  </div>
+
+  <!-- ============ WOW 1 : PIZZA DU MOIS ============ -->
+  <section id="pizza-du-mois" class="dark">
+    <div class="wrap mois-grid">
+      <div class="mois-visu">
+        <img src="img/part-filante.webp" alt="Part de pizza au pepperoni soulevée, mozzarella filante, sur fond noir" width="760" height="950" loading="lazy">
+      </div>
+      <div class="mois-card">
+        <span class="badge-mois">La pizza du mois — Juin</span>
+        <!-- [À REMPLACER] Nom, ingrédients et prix de la pizza du mois : contenu d'exemple -->
+        <h3>La Primavera</h3>
+        <p class="ingr">Crème de burrata, pesto de basilic frais, tomates confites, jambon cru, roquette et un filet d'huile d'olive au sortir du four. En série limitée jusqu'à la fin du mois.</p>
+        <p class="mois-prix">13,50&nbsp;€</p>
+        <button class="btn add-item" type="button" data-n="La Primavera (pizza du mois)" data-p="13.5">Ajouter au panier</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CARTE ============ -->
+  <section id="carte" class="dots">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">La carte</p>
+        <h2>Nos pizzas, sorties du four</h2>
+        <p>Base tomate ou crème, pâte maison étalée à la commande. Tout est à emporter.</p>
+      </div>
+      <!-- [À REMPLACER] Carte d'exemple : noms, ingrédients et prix factices à remplacer par la carte réelle -->
+      <p class="cat">Les classiques</p>
+      <div class="carte-grid">
+        <article class="pz"><div class="tx"><h3>Margherita</h3><p>Tomate, mozzarella, basilic, huile d'olive</p></div><span class="px">9,00&nbsp;€</span><button class="add add-item" type="button" data-n="Margherita" data-p="9" aria-label="Ajouter la Margherita au panier">+</button></article>
+        <article class="pz"><div class="tx"><h3>Regina</h3><p>Tomate, mozzarella, jambon, champignons frais</p></div><span class="px">10,50&nbsp;€</span><button class="add add-item" type="button" data-n="Regina" data-p="10.5" aria-label="Ajouter la Regina au panier">+</button></article>
+        <article class="pz"><div class="tx"><h3>Diavola</h3><p>Tomate, mozzarella, pepperoni, piment doux</p></div><span class="px">11,50&nbsp;€</span><button class="add add-item" type="button" data-n="Diavola" data-p="11.5" aria-label="Ajouter la Diavola au panier">+</button></article>
+        <article class="pz"><div class="tx"><h3>Quattro Formaggi</h3><p>Crème, mozzarella, gorgonzola, chèvre, emmental</p></div><span class="px">12,00&nbsp;€</span><button class="add add-item" type="button" data-n="Quattro Formaggi" data-p="12" aria-label="Ajouter la Quattro Formaggi au panier">+</button></article>
+        <article class="pz"><div class="tx"><h3>Calzone</h3><p>Chausson : tomate, mozzarella, jambon, œuf</p></div><span class="px">11,00&nbsp;€</span><button class="add add-item" type="button" data-n="Calzone" data-p="11" aria-label="Ajouter la Calzone au panier">+</button></article>
+        <article class="pz"><div class="tx"><h3>Quatre Saisons</h3><p>Tomate, mozzarella, artichauts, champignons, jambon, olives</p></div><span class="px">11,50&nbsp;€</span><button class="add add-item" type="button" data-n="Quatre Saisons" data-p="11.5" aria-label="Ajouter la Quatre Saisons au panier">+</button></article>
+      </div>
+      <p class="cat">Les signatures</p>
+      <div class="carte-grid">
+        <article class="pz"><div class="tx"><h3>La Forno</h3><p>Tomate, fior di latte, bresaola, parmesan, roquette</p></div><span class="px">13,00&nbsp;€</span><button class="add add-item" type="button" data-n="La Forno" data-p="13" aria-label="Ajouter La Forno au panier">+</button></article>
+        <article class="pz"><div class="tx"><h3>La Vosgienne</h3><p>Crème, munster, lardons fumés, pommes de terre, oignons</p></div><span class="px">12,50&nbsp;€</span><button class="add add-item" type="button" data-n="La Vosgienne" data-p="12.5" aria-label="Ajouter La Vosgienne au panier">+</button></article>
+        <article class="pz"><div class="tx"><h3>Bufala</h3><p>Tomate, mozzarella di bufala, tomates cerises, basilic</p></div><span class="px">13,50&nbsp;€</span><button class="add add-item" type="button" data-n="Bufala" data-p="13.5" aria-label="Ajouter la Bufala au panier">+</button></article>
+        <article class="pz"><div class="tx"><h3>Norvégienne</h3><p>Crème, mozzarella, saumon fumé, citron, aneth</p></div><span class="px">13,50&nbsp;€</span><button class="add add-item" type="button" data-n="Norvégienne" data-p="13.5" aria-label="Ajouter la Norvégienne au panier">+</button></article>
+        <article class="pz"><div class="tx"><h3>Orientale</h3><p>Tomate, mozzarella, merguez, poivrons, oignons rouges</p></div><span class="px">11,50&nbsp;€</span><button class="add add-item" type="button" data-n="Orientale" data-p="11.5" aria-label="Ajouter l'Orientale au panier">+</button></article>
+        <article class="pz"><div class="tx"><h3>Vegetariana</h3><p>Tomate, mozzarella, courgettes, aubergines, poivrons, olives</p></div><span class="px">11,00&nbsp;€</span><button class="add add-item" type="button" data-n="Vegetariana" data-p="11" aria-label="Ajouter la Vegetariana au panier">+</button></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WOW 2 : COMMANDE COUPE-FILE ============ -->
+  <section id="commander">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Commande coupe-file</p>
+        <h2>Plus de file&nbsp;: votre pizza à l'heure pile</h2>
+        <p>Choisissez votre créneau de retrait. Chaque créneau de 15&nbsp;minutes est plafonné&nbsp;: quand c'est complet, c'est complet — votre pizza ne fait jamais la queue au four.</p>
+      </div>
+      <div class="cmd-grid">
+        <div class="panier">
+          <h3><span class="num" aria-hidden="true">1</span>Votre panier</h3>
+          <ul id="cart-items"></ul>
+          <p class="vide" id="cart-vide">Votre panier est vide — ajoutez des pizzas depuis la carte ci-dessus.</p>
+          <div class="total-row"><span>Total</span><span id="cart-total">0,00&nbsp;€</span></div>
+        </div>
+        <form class="creneaux" id="cmd-form" novalidate>
+          <h3><span class="num" aria-hidden="true">2</span>Votre créneau de retrait</h3>
+          <div class="cap-note">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#3D6B4F" stroke-width="2"/><path d="M12 7v5l3 3" stroke="#3D6B4F" stroke-width="2" stroke-linecap="round"/></svg>
+            <span id="cap-info">Créneaux plafonnés à 4 commandes — les créneaux complets sont grisés.</span>
+          </div>
+          <p id="slot-day"></p>
+          <div id="slots" role="group" aria-label="Créneaux de retrait disponibles"></div>
+          <div class="field">
+            <label for="prenom">Votre prénom (pour le retrait)</label>
+            <input id="prenom" name="prenom" type="text" autocomplete="given-name" required>
+          </div>
+          <button class="btn" type="submit" id="cmd-btn">Valider ma commande</button>
+          <p id="cmd-msg" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NOTRE MAISON ============ -->
+  <section id="maison" class="dots">
+    <div class="wrap maison-grid">
+      <div class="maison-visu">
+        <img src="img/pizza-olives.webp" alt="Pizza aux olives noires et fromage gratiné sur planche en bois" width="760" height="950" loading="lazy">
+      </div>
+      <div class="maison">
+        <p class="kicker">Notre maison</p>
+        <h2>Une pizzeria de quartier, un four, deux mains</h2>
+        <!-- [À REMPLACER] Texte de présentation d'exemple, à réécrire avec l'établissement -->
+        <p style="margin-top:14px;color:var(--gris)">Rue Pasteur, à deux pas de la gare, Il Forno fait des pizzas comme on les aime&nbsp;: une pâte qui repose le temps qu'il faut, des produits frais travaillés simplement, et un four surveillé de près. Tout part à emporter — et tout part vite.</p>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20c0-7 3.6-12 8-12s8 5 8 12" stroke="#3D6B4F" stroke-width="2"/><path d="M2 20h20" stroke="#1B1714" stroke-width="2" stroke-linecap="round"/></svg><span><strong>Pâte maison</strong> — pétrie chaque jour, étalée à la commande</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3c3 4 7 5 7 10a7 7 0 1 1-14 0c0-5 4-6 7-10Z" stroke="#3D6B4F" stroke-width="2" stroke-linejoin="round"/></svg><span><strong>Produits frais</strong> — légumes, fromages et charcuteries choisis</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12a9 9 0 0 1 18 0v7H3v-7Z" stroke="#3D6B4F" stroke-width="2"/><path d="M8 19v-5h8v5" stroke="#1B1714" stroke-width="2"/></svg><span><strong>Le four d'abord</strong> — chaque pizza sort à l'heure de votre créneau</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AVIS ============ -->
+  <section id="avis" class="dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Ils en parlent mieux que nous</p>
+        <h2>4,9 sur 5 — 245 avis Google</h2>
+      </div>
+      <div class="note-bloc">
+        <span class="n">4,9</span>
+        <span class="stars" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#FAF7F2"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.4l7-.8Z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#FAF7F2"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.4l7-.8Z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#FAF7F2"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.4l7-.8Z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#FAF7F2"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.4l7-.8Z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#FAF7F2"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.4l7-.8Z"/></svg>
+        </span>
+        <span class="sr-only">4,9 étoiles sur 5</span>
+      </div>
+      <!-- [À REMPLACER] Extraits d'avis illustratifs (formulations d'exemple) : remplacer par de vrais extraits d'avis Google -->
+      <div class="avis-grid">
+        <blockquote class="avis"><p>«&nbsp;Les meilleures pizzas de Saint-Dié, pâte parfaite et garnitures généreuses.&nbsp;»</p><footer>Avis Google · extrait illustratif</footer></blockquote>
+        <blockquote class="avis"><p>«&nbsp;Accueil adorable, commande prête à l'heure, on revient chaque semaine.&nbsp;»</p><footer>Avis Google · extrait illustratif</footer></blockquote>
+        <blockquote class="avis"><p>«&nbsp;Produits frais, cuisson impeccable — ça vaut largement le détour.&nbsp;»</p><footer>Avis Google · extrait illustratif</footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACCÈS ============ -->
+  <section id="acces">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Accès &amp; horaires</p>
+        <h2>À 150&nbsp;m de la gare, en plein centre</h2>
+      </div>
+      <div class="acces-grid">
+        <div class="acc-card">
+          <h3>Nous trouver</h3>
+          <p><strong>Pizzeria Il Forno</strong><br>4 rue Pasteur<br>88100 Saint-Dié-des-Vosges</p>
+          <p>Sortez de la gare, deux minutes à pied&nbsp;: vous y êtes. Vente à emporter uniquement.</p>
+          <p><a class="lien" href="https://www.google.com/maps/search/?api=1&amp;query=Pizzeria+Il+Forno+4+rue+Pasteur+88100+Saint-Di%C3%A9-des-Vosges" target="_blank" rel="noopener">Ouvrir l'itinéraire dans Google Maps</a></p>
+          <p><a class="lien" href="tel:+33635589501">06 35 58 95 01</a></p>
+        </div>
+        <div class="acc-card">
+          <h3>Horaires</h3>
+          <table class="horaires" id="tbl-horaires">
+            <tr data-d="1"><td>Lundi</td><td>Fermé</td></tr>
+            <tr data-d="2"><td>Mardi</td><td>18&nbsp;h&nbsp;30 – 21&nbsp;h&nbsp;30</td></tr>
+            <tr data-d="3"><td>Mercredi</td><td>11&nbsp;h&nbsp;30 – 14&nbsp;h&nbsp;· 18&nbsp;h&nbsp;30 – 21&nbsp;h&nbsp;30</td></tr>
+            <tr data-d="4"><td>Jeudi</td><td>11&nbsp;h&nbsp;30 – 14&nbsp;h&nbsp;· 18&nbsp;h&nbsp;30 – 21&nbsp;h&nbsp;30</td></tr>
+            <tr data-d="5"><td>Vendredi</td><td>11&nbsp;h&nbsp;30 – 14&nbsp;h&nbsp;· 18&nbsp;h&nbsp;30 – 22&nbsp;h</td></tr>
+            <tr data-d="6"><td>Samedi</td><td>11&nbsp;h&nbsp;30 – 14&nbsp;h&nbsp;· 18&nbsp;h&nbsp;30 – 22&nbsp;h</td></tr>
+            <tr data-d="0"><td>Dimanche</td><td>18&nbsp;h&nbsp;30 – 21&nbsp;h&nbsp;30</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap f-grid">
+    <div>
+      <strong>IL FORNO</strong><br>
+      Pizzeria artisanale — à emporter<br>
+      4 rue Pasteur, 88100 Saint-Dié-des-Vosges
+    </div>
+    <div>
+      <strong>Commander</strong><br>
+      <a href="tel:+33635589501">06 35 58 95 01</a><br>
+      ou <a href="#commander">en ligne, avec créneau coupe-file</a>
+    </div>
+    <div>
+      <strong>4,9★ · 245 avis Google</strong><br>
+      Fermé le lundi.<br>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Pizzeria+Il+Forno+4+rue+Pasteur+88100+Saint-Di%C3%A9-des-Vosges" target="_blank" rel="noopener">Itinéraire Google Maps</a>
+    </div>
+  </div>
+</footer>
+
+<a href="#commander" id="fab" aria-label="Voir le panier et commander"><span class="ct" id="fab-count">0</span>Panier</a>
+
+<div id="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</div>
+
+<div id="demo-overlay" role="dialog" aria-modal="true" aria-labelledby="demo-titre">
+  <div class="demo-box">
+    <div class="ic" aria-hidden="true">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 9.5 18 20 6.5" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <h3 id="demo-titre">Ceci est une démonstration</h3>
+    <p class="big" id="demo-msg">Plus de file&nbsp;: votre pizza vous attend à 19&nbsp;h&nbsp;30.</p>
+    <p>En production&nbsp;: confirmation par SMS, paiement CB en ligne ou au retrait. Aucune donnée n'est envoyée ni enregistrée.</p>
+    <button class="btn" type="button" id="demo-close">Fermer</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var EUR=function(n){return n.toFixed(2).replace(".",",")+" €";};
+  var live=document.getElementById("live");
+  function say(t){live.textContent="";setTimeout(function(){live.textContent=t;},50);}
+
+  /* ——— Horaires réels (0=dim … 6=sam) ——— */
+  var HOURS={0:[["18:30","21:30"]],1:[],2:[["18:30","21:30"]],
+    3:[["11:30","14:00"],["18:30","21:30"]],4:[["11:30","14:00"],["18:30","21:30"]],
+    5:[["11:30","14:00"],["18:30","22:00"]],6:[["11:30","14:00"],["18:30","22:00"]]};
+  var JOURS=["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+  function mins(h){var p=h.split(":");return +p[0]*60+ +p[1];}
+  function fmt(m){var h=Math.floor(m/60),mn=m%60;return h+" h"+(mn?" "+(mn<10?"0":"")+mn:"");}
+
+  /* ——— Statut ouvert/fermé (hero) ——— */
+  var now=new Date(),d0=now.getDay(),m0=now.getHours()*60+now.getMinutes();
+  (function(){
+    var el=document.getElementById("statut"),tx=document.getElementById("statut-tx"),i,r;
+    for(i=0;i<HOURS[d0].length;i++){r=HOURS[d0][i];
+      if(m0>=mins(r[0])&&m0<mins(r[1])){tx.textContent="Ouvert — jusqu'à "+fmt(mins(r[1]))+" · à emporter";return;}
+      if(m0<mins(r[0])){tx.textContent="Aujourd'hui "+fmt(mins(r[0]))+" – "+fmt(mins(r[1]))+" · à emporter";return;}}
+    var d=d0;for(i=1;i<=7;i++){d=(d0+i)%7;if(HOURS[d].length){el.classList.add("ferme");
+      tx.textContent="Fermé — réouverture "+(i===1?"demain":JOURS[d])+" "+fmt(mins(HOURS[d][0][0]));return;}}
+  })();
+  var rows=document.querySelectorAll("#tbl-horaires tr");
+  for(var i=0;i<rows.length;i++){if(+rows[i].getAttribute("data-d")===d0)rows[i].className="today";}
+
+  /* ——— Panier (localStorage, simulation) ——— */
+  var KEY="ilforno-demo-cart",cart={};
+  try{cart=JSON.parse(localStorage.getItem(KEY)||"{}")||{};}catch(e){cart={};}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(cart));}catch(e){}}
+  var list=document.getElementById("cart-items"),vide=document.getElementById("cart-vide"),
+      totEl=document.getElementById("cart-total"),fab=document.getElementById("fab-count");
+  function render(){
+    list.innerHTML="";var names=Object.keys(cart),tot=0,ct=0;
+    vide.style.display=names.length?"none":"block";
+    names.forEach(function(n){
+      var it=cart[n];tot+=it.p*it.q;ct+=it.q;
+      var li=document.createElement("li");
+      var nm=document.createElement("span");nm.className="nm";nm.textContent=n;
+      var q=document.createElement("span");q.className="qty";
+      var bm=document.createElement("button");bm.type="button";bm.textContent="−";
+      bm.setAttribute("aria-label","Retirer une "+n);
+      bm.onclick=function(){it.q--;if(it.q<=0)delete cart[n];save();render();say(n+" mis à jour");};
+      var qn=document.createElement("span");qn.textContent=it.q;
+      var bp=document.createElement("button");bp.type="button";bp.textContent="+";
+      bp.setAttribute("aria-label","Ajouter une "+n);
+      bp.onclick=function(){it.q++;save();render();say(n+" mis à jour");};
+      q.appendChild(bm);q.appendChild(qn);q.appendChild(bp);
+      var lt=document.createElement("span");lt.className="lt";lt.textContent=EUR(it.p*it.q);
+      li.appendChild(nm);li.appendChild(q);li.appendChild(lt);list.appendChild(li);
+    });
+    totEl.textContent=EUR(tot);fab.textContent=ct;
+  }
+  document.querySelectorAll(".add-item").forEach(function(b){
+    b.addEventListener("click",function(){
+      var n=b.getAttribute("data-n"),p=parseFloat(b.getAttribute("data-p"));
+      if(cart[n])cart[n].q++;else cart[n]={q:1,p:p};
+      save();render();say(n+" ajoutée au panier");
+    });
+  });
+  render();
+
+  /* ——— Coupe-file : créneaux 15 min plafonnés, calés sur le jour courant ——— */
+  var slotsEl=document.getElementById("slots"),dayEl=document.getElementById("slot-day"),
+      capEl=document.getElementById("cap-info"),selected=null,slotDayLabel="";
+  function buildSlots(){
+    var d=d0,offset=0,avail=[],j;
+    for(j=0;j<=7;j++){
+      d=(d0+j)%7;offset=j;avail=[];
+      HOURS[d].forEach(function(r){
+        for(var m=mins(r[0]);m<=mins(r[1])-15;m+=15){
+          if(j===0&&m<m0+25)continue; /* 25 min de préparation minimum */
+          avail.push({m:m,full:((m/15)+d*3)%4===1}); /* plafond simulé : certains créneaux complets */
+        }
+      });
+      if(avail.length)break;
+    }
+    slotDayLabel=offset===0?"aujourd'hui":(offset===1?"demain ("+JOURS[d]+")":JOURS[d]);
+    dayEl.textContent="Retrait "+slotDayLabel+" :";
+    var free=0;
+    avail.forEach(function(s){
+      var b=document.createElement("button");b.type="button";b.className="slot";
+      b.setAttribute("aria-pressed","false");
+      if(s.full){b.disabled=true;b.innerHTML=fmt(s.m)+"<small>Complet</small>";}
+      else{free++;b.textContent=fmt(s.m);
+        b.addEventListener("click",function(){
+          var prev=slotsEl.querySelector('[aria-pressed="true"]');
+          if(prev)prev.setAttribute("aria-pressed","false");
+          b.setAttribute("aria-pressed","true");selected=fmt(s.m);
+          say("Créneau "+selected+" sélectionné");
+        });}
+      slotsEl.appendChild(b);
+    });
+    capEl.textContent="Créneaux plafonnés à 4 commandes — il reste "+free+" créneau"+(free>1?"x":"")+" "+slotDayLabel+".";
+  }
+  buildSlots();
+
+  /* ——— Validation → écran démo ——— */
+  var form=document.getElementById("cmd-form"),msg=document.getElementById("cmd-msg"),
+      ov=document.getElementById("demo-overlay"),dm=document.getElementById("demo-msg"),
+      cl=document.getElementById("demo-close"),lastFocus=null;
+  form.addEventListener("submit",function(e){
+    e.preventDefault();msg.textContent="";
+    if(!Object.keys(cart).length){msg.textContent="Votre panier est vide : ajoutez au moins une pizza.";say(msg.textContent);return;}
+    if(!selected){msg.textContent="Choisissez un créneau de retrait disponible.";say(msg.textContent);return;}
+    var pn=document.getElementById("prenom").value.trim();
+    if(!pn){msg.textContent="Indiquez votre prénom pour le retrait.";say(msg.textContent);return;}
+    dm.innerHTML="Plus de file, "+pn.replace(/[<>&]/g,"")+" : votre pizza vous attend "+slotDayLabel+" à <strong>"+selected+"</strong>.";
+    lastFocus=document.activeElement;ov.classList.add("open");cl.focus();
+    cart={};save();render();form.reset();
+    var prev=slotsEl.querySelector('[aria-pressed="true"]');
+    if(prev)prev.setAttribute("aria-pressed","false");selected=null;
+    say("Commande de démonstration confirmée");
+  });
+  function close(){ov.classList.remove("open");if(lastFocus)lastFocus.focus();}
+  cl.addEventListener("click",close);
+  ov.addEventListener("click",function(e){if(e.target===ov)close();});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&ov.classList.contains("open"))close();});
+
+  /* ——— FAB au-dessus du bandeau légal ——— */
+  var legal=document.getElementById("legal"),fabBtn=document.getElementById("fab");
+  function place(){var h=legal.offsetHeight;fabBtn.style.bottom=(h+12)+"px";document.body.style.paddingBottom=(h+76)+"px";}
+  place();window.addEventListener("resize",place);
+})();
+</script>
+</body>
+</html>

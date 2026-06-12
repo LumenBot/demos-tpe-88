@@ -37,3 +37,9 @@ Racine du site : page de présentation (placeholders contact/SIRET à compléter
   aucune ressource bloquante.
 - Git : `git add` explicite uniquement (jamais `-A` ni `.`), `docs/` jamais versionné,
   contrôle `git log --all --stat` avant tout push.
+
+## Lot 3 — Saint-Dié / Raon
+
+| Maquette | URL | Statut |
+| --- | --- | --- |
+| il-forno | https://lumenbot.github.io/demos-tpe-88/il-forno/ | v1 · DoD ✓ |
