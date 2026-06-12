@@ -20,3 +20,4 @@ Maquettes de démonstration, non contractuelles.
 | Maquette | URL | Statut |
 | --- | --- | --- |
 | akdeniz | https://lumenbot.github.io/demos-tpe-88/akdeniz/ | v1 |
+| casa-familia | https://lumenbot.github.io/demos-tpe-88/casa-familia/ | v1 |
