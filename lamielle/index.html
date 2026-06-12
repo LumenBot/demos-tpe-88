@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#2B1A12">
+<title>Lamielle Chocolatier — Chocolatier à Épinal | Coffrets, click &amp; collect, expédition</title>
+<meta name="description" content="Lamielle Chocolatier, 13 rue Rualménil à Épinal : chocolats fins, clémentines confites, coffrets à composer, click & collect et expédition France. Chocolatier à Épinal — 4,4★ sur Google.">
+
+<!-- Polices : DM Serif Display + DM Sans, chargement non bloquant -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap"></noscript>
+
+<script>
+/* ── BANDEAU SAISONNIER PARAMÉTRABLE ─────────────────────────────────────
+   [À REMPLACER] Changer SAISON_ACTIVE selon le calendrier de la maison :
+   "peres" | "meres" | "noel" | "paques" — textes et dates modifiables ci-dessous. */
+var SAISON_ACTIVE = "peres";
+var SAISONS = {
+  peres:  { kicker:"En ce moment", titre:"Fête des Pères — dimanche 21 juin",
+            texte:"Coffret « Force noire » 70 %, tablettes grand cru et clémentines confites. Commandez avant le vendredi 19 juin pour un retrait le samedi matin.",
+            cta:"Composer son coffret", ancre:"#coffret" },
+  meres:  { kicker:"En ce moment", titre:"Fête des Mères — dimanche 7 juin",
+            texte:"Cœurs pralinés, coffrets rubans et créations personnalisées. Commandez avant le vendredi 5 juin.",
+            cta:"Composer son coffret", ancre:"#coffret" },
+  noel:   { kicker:"Les fêtes approchent", titre:"Noël à la chocolaterie",
+            texte:"Coffrets de fêtes, truffes et pièces en chocolat. Expéditions garanties avant le 24 décembre pour toute commande passée avant le 18.",
+            cta:"Voir la boutique", ancre:"#boutique" },
+  paques: { kicker:"C'est la saison", titre:"Pâques — moulages de la maison",
+            texte:"Œufs, poules et sujets garnis, moulés dans notre atelier d'Épinal. Pensez à réserver vos pièces garnies.",
+            cta:"Voir la boutique", ancre:"#boutique" }
+};
+</script>
+
+<!-- Données réelles publiques : NAP, note Google, horaires. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Lamielle Chocolatier",
+  "image": "img/hero-cacao.webp",
+  "url": "./",
+  "telephone": "+33329822001",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "13 rue Rualménil",
+    "addressLocality": "Épinal",
+    "postalCode": "88000",
+    "addressCountry": "FR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4",
+    "reviewCount": "151"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "15:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:30", "closes": "12:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "14:00", "closes": "19:00" }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --cacao:#2B1A12;
+  --cacao-2:#1F120C;
+  --creme:#F5EDE3;
+  --creme-2:#EFE3D3;
+  --cuivre:#B0653A;        /* accents larges, bordures, gros titres uniquement */
+  --cuivre-txt:#8C4A26;    /* cuivre assombri : AA sur crème en petit texte */
+  --cuivre-clair:#D98C5F;  /* cuivre éclairci : AA sur cacao en petit texte */
+  --encre:#241holder;
+  --serif:"DM Serif Display",Georgia,serif;
+  --sans:"DM Sans","Segoe UI",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--creme);color:var(--cacao);font:400 16px/1.65 var(--sans);padding-bottom:7.5rem}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0;letter-spacing:.01em}
+p{margin:0 0 1em}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+:focus-visible{outline:3px solid var(--cuivre);outline-offset:2px}
+.skip{position:absolute;left:-200vw;top:0;background:var(--cacao);color:var(--creme);padding:12px 20px;z-index:300;font-size:14px}
+.skip:focus{left:8px;top:8px}
+.wrap{max-width:1140px;margin-inline:auto;padding-inline:clamp(18px,4.5vw,48px)}
+section{padding-block:clamp(52px,9vw,96px);scroll-margin-top:76px}
+
+/* ── typographie de section : numéros graphiques, zéro ornement ── */
+.num{font:700 13px/1 var(--sans);letter-spacing:.28em;color:var(--cuivre-txt);text-transform:uppercase;display:flex;align-items:center;gap:14px;margin:0 0 16px}
+.num::before{content:"";width:34px;height:4px;background:var(--cuivre)}
+.sombre .num{color:var(--cuivre-clair)}
+.t2{font-size:clamp(32px,7vw,52px);max-width:18ch}
+.chapo{font-size:clamp(16px,2.6vw,18px);max-width:58ch;margin-top:14px;color:#4A332*;}
+.chapo,.txt{color:#4A3325}
+.sombre .chapo,.sombre .txt{color:#E7D9C8}
+
+/* ── boutons : francs, coins droits, ≥44px ── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 26px;
+  border:2px solid var(--cacao);background:var(--cacao);color:var(--creme);font:700 15px/1.2 var(--sans);
+  letter-spacing:.04em;text-decoration:none;cursor:pointer;transition:transform .15s,background .2s}
+.btn:hover{background:var(--cacao-2)}
+.btn:active{transform:translateY(1px)}
+.btn-creme{background:var(--creme);border-color:var(--creme);color:var(--cacao)}
+.btn-creme:hover{background:#fff}
+.btn-ligne{background:transparent;color:var(--cacao)}
+.btn-ligne:hover{background:var(--cacao);color:var(--creme)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.btn[disabled]:hover{background:var(--cacao)}
+
+/* ── header ── */
+header.haut{position:sticky;top:0;z-index:90;background:var(--creme);border-bottom:3px solid var(--cacao)}
+.haut-in{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:64px}
+.marque{font-family:var(--serif);font-size:clamp(20px,4.5vw,26px);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+.marque b{color:var(--cuivre-txt);font-weight:400}
+.haut-droite{display:flex;align-items:center;gap:8px}
+.tel-haut{display:none;align-items:center;gap:8px;font-weight:700;font-size:15px;text-decoration:none;min-height:44px;padding:0 10px}
+.btn-panier{position:relative;display:inline-flex;align-items:center;gap:8px;min-height:44px;min-width:44px;padding:8px 14px;
+  background:var(--cacao);color:var(--creme);border:2px solid var(--cacao);font:700 14px var(--sans);cursor:pointer}
+.btn-panier .bulle{background:var(--cuivre);color:#fff;font-size:12px;line-height:1;min-width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;padding:0 5px}
+nav.ancres{border-top:1px solid #D9C9B4;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+nav.ancres::-webkit-scrollbar{display:none}
+nav.ancres ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav.ancres a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;font:500 14px var(--sans);text-decoration:none;white-space:nowrap;color:#4A3325}
+nav.ancres a:hover{color:var(--cacao);box-shadow:inset 0 -3px 0 var(--cuivre)}
+@media(min-width:900px){.tel-haut{display:inline-flex}}
+
+/* ── hero : grand aplat cacao, image en décalage cuivre ── */
+.hero{background:var(--cacao);color:var(--creme);padding-block:clamp(48px,8vw,96px) clamp(56px,9vw,110px)}
+.hero-grille{display:grid;gap:clamp(28px,5vw,56px);align-items:center}
+.hero h1{font-size:clamp(38px,9.4vw,64px);color:var(--creme)}
+.hero h1 em{font-style:normal;color:var(--cuivre-clair)}
+.hero .sur{font:700 13px/1.4 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--cuivre-clair);margin:0 0 18px;display:flex;align-items:center;gap:14px}
+.hero .sur::before{content:"";width:34px;height:4px;background:var(--cuivre)}
+.hero p.accroche{color:#E7D9C8;font-size:clamp(16px,2.8vw,19px);max-width:46ch;margin:18px 0 26px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.note-chip{display:inline-flex;align-items:center;gap:8px;margin-top:26px;border:1px solid rgba(217,140,95,.5);padding:9px 14px;font-size:14px;color:#E7D9C8}
+.note-chip svg{flex:none}
+.hero-img{position:relative}
+.hero-img img{width:100%;border:0;box-shadow:12px 12px 0 var(--cuivre)}
+@media(min-width:880px){.hero-grille{grid-template-columns:1.05fr .95fr}}
+
+/* ── jauge coffret ── */
+.compo-cadre{background:#FBF6EE;border:3px solid var(--cacao);padding:clamp(18px,3.5vw,34px);margin-top:30px}
+.formats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0;padding:0;border:0}
+.formats legend{font:700 13px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--cuivre-txt);padding:0;margin-bottom:12px}
+.format-c{position:relative}
+.format-c input{position:absolute;opacity:0}
+.format-c label{display:block;border:2px solid var(--cacao);padding:14px 16px;cursor:pointer;min-height:44px;background:var(--creme);transition:background .15s}
+.format-c label b{font-family:var(--serif);font-weight:400;font-size:clamp(20px,4vw,26px);display:block}
+.format-c label span{font-size:13.5px;color:#4A3325}
+.format-c input:checked+label{background:var(--cacao);color:var(--creme)}
+.format-c input:checked+label span{color:#E7D9C8}
+.format-c input:focus-visible+label{outline:3px solid var(--cuivre);outline-offset:2px}
+.cat-titre{font:700 13px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--cuivre-txt);margin:26px 0 10px;display:flex;align-items:center;gap:10px}
+.cat-titre::after{content:"";height:2px;flex:1;background:#E2D2BC}
+.choco-l{list-style:none;margin:0;padding:0}
+.choco-l li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #EADCC8}
+.choco-l .cnom{font-weight:500;font-size:15.5px}
+.badge-spe{display:inline-block;background:var(--cuivre);color:#fff;font:700 10.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:4px 7px;margin-left:8px;vertical-align:2px}
+.stepper{display:flex;align-items:center;gap:2px;flex:none}
+.stepper button{width:44px;height:44px;border:2px solid var(--cacao);background:var(--creme);color:var(--cacao);font:700 20px/1 var(--sans);cursor:pointer}
+.stepper button:hover{background:var(--cacao);color:var(--creme)}
+.stepper button[disabled]{opacity:.35;cursor:not-allowed}
+.stepper button[disabled]:hover{background:var(--creme);color:var(--cacao)}
+.stepper .q{min-width:34px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+.jauge-bloc{position:sticky;bottom:7.2rem;background:var(--cacao);color:var(--creme);padding:14px 16px;margin-top:26px;z-index:5}
+.jauge-tete{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:14.5px;flex-wrap:wrap}
+.jauge-tete b{font-variant-numeric:tabular-nums}
+.jauge{height:12px;background:#4A3325;margin-top:10px;overflow:hidden}
+.jauge>div{height:100%;width:0%;background:var(--cuivre);transition:width .25s}
+.compo-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:18px}
+.lien-raz{background:none;border:0;min-height:44px;padding:0 8px;font:500 14px var(--sans);color:#4A3325;text-decoration:underline;cursor:pointer}
+.compo-grille{display:grid;gap:clamp(24px,4vw,44px)}
+@media(min-width:880px){.compo-grille{grid-template-columns:1fr 1fr;align-items:start}.compo-img{position:sticky;top:90px}}
+.compo-img img{box-shadow:-12px 12px 0 var(--cuivre)}
+.compo-img figcaption{font-size:13.5px;color:#4A3325;margin-top:14px}
+
+/* ── boutique sombre ── */
+.sombre{background:var(--cacao);color:var(--creme)}
+.sombre .t2{color:var(--creme)}
+.prod-grille{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));margin-top:34px}
+.prod{background:#FBF6EE;color:var(--cacao);display:flex;flex-direction:column;border:0}
+.prod .ph{aspect-ratio:1/1;overflow:hidden;background:var(--creme-2)}
+.prod .ph img,.prod .ph svg{width:100%;height:100%;object-fit:cover;display:block}
+.prod .in{padding:13px 14px 15px;display:flex;flex-direction:column;gap:8px;flex:1}
+.prod h3{font-size:18.5px;line-height:1.15}
+.prod .pds{font-size:13px;color:#4A3325}
+.prod .bas{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.prod .prix{font-family:var(--serif);font-size:21px}
+.btn-add{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;border:2px solid var(--cacao);background:var(--cacao);color:var(--creme);cursor:pointer;font:700 13px var(--sans);padding:0 12px;gap:6px}
+.btn-add:hover{background:var(--cuivre-txt);border-color:var(--cuivre-txt)}
+.ship-note{margin-top:26px;border:1px solid rgba(217,140,95,.45);padding:16px 18px;font-size:14.5px;color:#E7D9C8;display:flex;gap:12px;align-items:flex-start}
+.ship-note svg{flex:none;margin-top:2px}
+
+/* ── créations sur mesure ── */
+.sur-grille{display:grid;gap:clamp(26px,4vw,48px);margin-top:8px}
+@media(min-width:900px){.sur-grille{grid-template-columns:.9fr 1.1fr;align-items:start}}
+form.fiche{border-left:6px solid var(--cuivre);background:#FBF6EE;padding:clamp(18px,3.5vw,30px)}
+.champ{margin-bottom:16px}
+.champ label{display:block;font:700 13px/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;margin-bottom:7px;color:#4A3325}
+.champ input,.champ select,.champ textarea{width:100%;min-height:48px;border:2px solid var(--cacao);background:#fff;color:var(--cacao);font:400 16px var(--sans);padding:10px 12px;border-radius:0;-webkit-appearance:none;appearance:none}
+.champ textarea{min-height:110px;resize:vertical}
+.champ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%232B1A12' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:36px}
+.recap{border:3px solid var(--cacao);background:var(--creme);padding:18px 20px;margin-top:18px}
+.recap[hidden]{display:none}
+.recap h3{font-size:22px;margin-bottom:8px}
+.recap dl{margin:0 0 10px;font-size:15px}
+.recap dt{font-weight:700;margin-top:8px}
+.recap dd{margin:0}
+.demo-note{background:var(--cacao);color:var(--creme);padding:10px 14px;font-size:14px;margin-top:12px}
+
+/* ── bandeau saisonnier ── */
+.saison{background:var(--cacao);color:var(--creme);border-top:8px solid var(--cuivre);border-bottom:8px solid var(--cuivre);padding-block:clamp(40px,6vw,64px)}
+.saison .num{color:var(--cuivre-clair)}
+.saison-in{display:grid;gap:20px}
+@media(min-width:880px){.saison-in{grid-template-columns:1fr auto;align-items:center}}
+.saison h2{font-size:clamp(28px,6vw,44px);color:var(--creme)}
+.saison p{color:#E7D9C8;max-width:60ch;margin:10px 0 0}
+
+/* ── retrait / expédition ── */
+.duo{display:grid;gap:16px;margin-top:34px}
+@media(min-width:780px){.duo{grid-template-columns:1fr 1fr}}
+.mode{border:3px solid var(--cacao);padding:clamp(20px,3.5vw,30px);background:#FBF6EE}
+.mode.inv{background:var(--cacao);color:var(--creme)}
+.mode h3{font-size:clamp(23px,4.5vw,28px);display:flex;align-items:center;gap:12px}
+.mode.inv h3{color:var(--creme)}
+.mode ul{margin:14px 0 0;padding-left:20px;font-size:15.5px}
+.mode li{margin-bottom:8px}
+.mode .txt-s{font-size:14px;color:#4A3325;margin-top:12px}
+.mode.inv .txt-s{color:#E7D9C8}
+
+/* ── avis ── */
+.avis-tete{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-top:10px}
+.avis-note{font-family:var(--serif);font-size:clamp(56px,12vw,84px);color:var(--cuivre-txt);line-height:1}
+.etoiles{display:inline-flex;gap:3px}
+.avis-grille{display:grid;gap:14px;margin-top:30px}
+@media(min-width:780px){.avis-grille{grid-template-columns:repeat(3,1fr)}}
+.avis-c{background:var(--cacao);color:var(--creme);padding:22px 20px}
+.avis-c blockquote{margin:0;font-family:var(--serif);font-size:19px;line-height:1.35}
+.avis-c footer{margin-top:14px;font-size:13px;color:var(--cuivre-clair);letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+
+/* ── footer ── */
+footer.pied{background:var(--cacao-2);color:var(--creme);padding:clamp(48px,7vw,72px) 0 30px}
+.pied-grille{display:grid;gap:30px}
+@media(min-width:840px){.pied-grille{grid-template-columns:1.2fr 1fr 1fr}}
+.pied h2{font-size:26px;color:var(--creme)}
+.pied h3{font:700 13px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--cuivre-clair);margin-bottom:14px}
+.pied a{text-decoration:underline;text-underline-offset:3px}
+.pied a,.pied p,.pied td{color:#E7D9C8;font-size:15px}
+.pied .gros-tel{display:inline-flex;align-items:center;gap:10px;font:400 24px var(--serif);color:var(--creme);text-decoration:none;min-height:44px;margin-top:8px}
+table.hor{border-collapse:collapse;width:100%}
+table.hor td{padding:5px 0;vertical-align:top}
+table.hor td:first-child{font-weight:700;padding-right:14px;white-space:nowrap}
+.pied-bas{margin-top:40px;padding-top:18px;border-top:1px solid #4A3325;font-size:12.5px;color:#C9B49B}
+
+/* ── panier / overlays ── */
+.voile{position:fixed;inset:0;background:rgba(31,18,12,.6);z-index:120;display:none}
+.voile.on{display:block}
+.tiroir{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--creme);z-index:130;transform:translateX(102%);transition:transform .25s;display:flex;flex-direction:column;border-left:3px solid var(--cacao)}
+.tiroir.on{transform:none}
+.tiroir-tete{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:3px solid var(--cacao)}
+.tiroir-tete h2{font-size:26px}
+.btn-x{width:44px;height:44px;border:2px solid var(--cacao);background:transparent;font-size:20px;cursor:pointer;color:var(--cacao)}
+.btn-x:hover{background:var(--cacao);color:var(--creme)}
+.tiroir-corps{flex:1;overflow-y:auto;padding:18px}
+.lpanier{list-style:none;margin:0;padding:0}
+.lpanier li{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid #E2D2BC;font-size:15px}
+.lpanier .qx{font-weight:700;font-variant-numeric:tabular-nums}
+.btn-sup{width:44px;height:44px;border:0;background:none;cursor:pointer;color:#8C4A26;display:inline-flex;align-items:center;justify-content:center}
+.btn-sup:hover{background:#EFE3D3}
+.modes-radio{margin:18px 0 0;padding:0;border:0}
+.modes-radio legend{font:700 13px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--cuivre-txt);margin-bottom:10px;padding:0}
+.modes-radio .opt{display:flex;align-items:flex-start;gap:10px;border:2px solid var(--cacao);padding:12px;margin-bottom:10px;cursor:pointer;background:#FBF6EE}
+.modes-radio input{width:20px;height:20px;margin:3px 0 0;accent-color:var(--cuivre-txt);flex:none}
+.modes-radio b{display:block;font-size:15px}
+.modes-radio span{font-size:13.5px;color:#4A3325}
+.totaux{margin-top:16px;font-size:15px}
+.totaux div{display:flex;justify-content:space-between;padding:4px 0}
+.totaux .tt{font-family:var(--serif);font-size:24px;border-top:3px solid var(--cacao);margin-top:8px;padding-top:10px}
+.tiroir-pied{padding:16px 18px;border-top:3px solid var(--cacao)}
+.tiroir-pied .btn{width:100%}
+.vide-msg{text-align:center;color:#4A3325;padding:30px 10px}
+/* écran démo */
+.demo-ecran{position:fixed;inset:0;z-index:140;display:none;align-items:center;justify-content:center;padding:20px}
+.demo-ecran.on{display:flex}
+.demo-boite{background:var(--creme);border:3px solid var(--cacao);max-width:440px;width:100%;padding:30px 26px;text-align:center;box-shadow:12px 12px 0 var(--cuivre)}
+.demo-boite h2{font-size:30px;margin:14px 0 10px}
+.demo-boite p{font-size:15px;color:#4A3325}
+/* toast aria-live */
+#toast{position:fixed;left:50%;transform:translateX(-50%);bottom:8.6rem;background:var(--cacao);color:var(--creme);padding:11px 18px;font-size:14.5px;z-index:110;opacity:0;transition:opacity .2s;pointer-events:none;max-width:92vw;text-align:center}
+#toast.on{opacity:1}
+
+/* ── bandeau légal fixe ── */
+#legal{position:fixed;left:0;right:0;bottom:0;z-index:100;background:var(--cacao-2);color:#E7D9C8;font-size:11.5px;line-height:1.45;padding:8px 14px;text-align:center;border-top:2px solid var(--cuivre)}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="haut">
+  <div class="wrap haut-in">
+    <a class="marque" href="#contenu">Lamielle <b>&nbsp;Chocolatier</b></a>
+    <div class="haut-droite">
+      <a class="tel-haut" href="tel:+33329822001">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+        03 29 82 20 01</a>
+      <button class="btn-panier" id="ouvre-panier" aria-haspopup="dialog">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        Panier <span class="bulle" id="compte-panier" aria-hidden="true">0</span>
+        <span class="vh" id="compte-panier-vh">, 0 article</span>
+      </button>
+    </div>
+  </div>
+  <nav class="ancres" aria-label="Sections de la page">
+    <div class="wrap">
+      <ul>
+        <li><a href="#coffret">Composer un coffret</a></li>
+        <li><a href="#boutique">Boutique</a></li>
+        <li><a href="#surmesure">Sur-mesure</a></li>
+        <li><a href="#retrait">Retrait &amp; expédition</a></li>
+        <li><a href="#avis">Avis</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="contenu">
+
+  <!-- ════════ HERO ════════ -->
+  <section class="hero" aria-labelledby="titre-hero" style="padding-top:clamp(40px,7vw,80px)">
+    <div class="wrap hero-grille">
+      <div>
+        <p class="sur">Maison de tradition · Épinal</p>
+        <h1 id="titre-hero">Chocolatier à Épinal,<br><em>l'exigence du cacao</em></h1>
+        <p class="accroche">Ganaches, pralinés et clémentines confites travaillés dans notre atelier de la rue Rualménil. Composez votre coffret en ligne, retirez-le en boutique — ou faites-le voyager partout en France.</p>
+        <div class="hero-cta">
+          <a class="btn btn-creme" href="#coffret">Composer mon coffret</a>
+          <a class="btn btn-ligne" style="color:var(--creme);border-color:var(--creme)" href="tel:+33329822001">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            Appeler la boutique</a>
+        </div>
+        <p class="note-chip">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#D98C5F" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
+          <strong>4,4 / 5</strong>&nbsp;· 151 avis Google
+        </p>
+      </div>
+      <div class="hero-img">
+        <img src="img/hero-cacao.webp" alt="Tablettes de chocolat noir empilées, entourées d'éclats et de fèves de cacao" width="1200" height="900" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ 01 · COMPOSEZ VOTRE COFFRET ════════ -->
+  <section id="coffret" aria-labelledby="titre-coffret">
+    <div class="wrap">
+      <p class="num">01 · L'atelier des coffrets</p>
+      <h2 class="t2" id="titre-coffret">Composez votre coffret, pièce par pièce</h2>
+      <p class="chapo">Choisissez votre format, puis remplissez l'écrin parmi nos ganaches, pralinés et spécialités. La jauge se remplit au fil de vos choix — comme au comptoir de la boutique.</p>
+
+      <div class="compo-grille">
+        <figure class="compo-img" style="margin:30px 0 0">
+          <img src="img/coffret.webp" alt="Coffret ouvert de pralines fines aux reflets cuivrés" width="800" height="600" loading="lazy" decoding="async">
+          <figcaption>L'écrin de la maison : chaque pièce est moulée et garnie à l'atelier d'Épinal.</figcaption>
+        </figure>
+
+        <div class="compo-cadre">
+          <fieldset class="formats">
+            <legend>1 · Choisissez le format</legend>
+            <!-- [À REMPLACER] Prix au poids des coffrets : tarifs d'exemple. -->
+            <div class="format-c">
+              <input type="radio" name="format" id="f250" value="f250" checked>
+              <label for="f250"><b>250 g</b><span>16 pièces · 24,50 €</span></label>
+            </div>
+            <div class="format-c">
+              <input type="radio" name="format" id="f500" value="f500">
+              <label for="f500"><b>500 g</b><span>32 pièces · 46,90 €</span></label>
+            </div>
+          </fieldset>
+
+          <h3 class="vh">2 · Choisissez vos chocolats</h3>
+          <div id="liste-chocos"><!-- généré en JS, fallback noscript ci-dessous --></div>
+          <noscript><p>La composition interactive du coffret nécessite JavaScript. Appelez-nous au <a href="tel:+33329822001">03 29 82 20 01</a> pour composer votre coffret.</p></noscript>
+
+          <div class="jauge-bloc">
+            <div class="jauge-tete">
+              <span id="jauge-texte" aria-live="polite">0 pièce sur 16 · ≈ 0 g sur 250 g</span>
+              <b id="jauge-prix">24,50 €</b>
+            </div>
+            <div class="jauge" aria-hidden="true"><div id="jauge-fill"></div></div>
+          </div>
+
+          <div class="compo-actions">
+            <button class="btn" id="ajout-coffret" disabled>Ajouter le coffret au panier</button>
+            <button class="lien-raz" id="raz-coffret" type="button">Tout effacer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ 02 · BOUTIQUE CLICK & COLLECT ════════ -->
+  <section id="boutique" class="sombre" aria-labelledby="titre-boutique">
+    <div class="wrap">
+      <p class="num">02 · La boutique en ligne</p>
+      <h2 class="t2" id="titre-boutique">Click &amp; collect — ou expédition partout en France</h2>
+      <p class="chapo">Commandez vos classiques de la maison : retrait au 13 rue Rualménil dès le lendemain, ou expédition soignée à domicile.</p>
+
+      <!-- [À REMPLACER] Prix, poids et intitulés des produits : exemples crédibles à valider avec la maison. -->
+      <div class="prod-grille" id="grille-produits">
+        <article class="prod">
+          <div class="ph"><img src="img/assortiment.webp" alt="Assortiment de pralines et truffes de la maison" width="800" height="600" loading="lazy" decoding="async"></div>
+          <div class="in">
+            <h3>Assortiment signature</h3>
+            <p class="pds">Coffret 250 g · 16 pièces</p>
+            <div class="bas"><span class="prix">24,50&nbsp;€</span>
+              <button class="btn-add" data-id="b1" data-nom="Assortiment signature 250 g" data-prix="24.50" data-g="250">+ <span class="vh">Ajouter l'assortiment signature au panier</span><span aria-hidden="true">Ajouter</span></button></div>
+          </div>
+        </article>
+        <article class="prod">
+          <div class="ph"><img src="img/tablettes.webp" alt="Tablettes de chocolat noir et au lait sur fond clair" width="800" height="1000" loading="lazy" decoding="async"></div>
+          <div class="in">
+            <h3>Tablette grand cru noir 70 %</h3>
+            <p class="pds">100 g · pure origine Équateur</p>
+            <div class="bas"><span class="prix">6,90&nbsp;€</span>
+              <button class="btn-add" data-id="b2" data-nom="Tablette grand cru noir 70 %" data-prix="6.90" data-g="100">+ <span class="vh">Ajouter la tablette grand cru au panier</span><span aria-hidden="true">Ajouter</span></button></div>
+          </div>
+        </article>
+        <article class="prod">
+          <div class="ph"><img src="img/chocolat-empile.webp" alt="Chocolat au lait aux amandes et raisins, empilé sur fond sombre" width="800" height="1000" loading="lazy" decoding="async"></div>
+          <div class="in">
+            <h3>Bloc gourmand lait &amp; fruits secs</h3>
+            <p class="pds">200 g · amandes, raisins dorés</p>
+            <div class="bas"><span class="prix">11,90&nbsp;€</span>
+              <button class="btn-add" data-id="b3" data-nom="Bloc gourmand lait & fruits secs" data-prix="11.90" data-g="200">+ <span class="vh">Ajouter le bloc gourmand au panier</span><span aria-hidden="true">Ajouter</span></button></div>
+          </div>
+        </article>
+        <article class="prod">
+          <div class="ph">
+            <svg viewBox="0 0 200 200" role="img" aria-label="Illustration graphique : quartiers de clémentine confite" preserveAspectRatio="xMidYMid slice"><rect width="200" height="200" fill="#2B1A12"/><circle cx="100" cy="100" r="62" fill="#B0653A"/><g fill="#2B1A12"><path d="M100 100 100 44A56 56 0 0 1 148 72Z"/><path d="M100 100 148 128A56 56 0 0 1 100 156Z"/><path d="M100 100 52 128A56 56 0 0 1 52 72Z"/></g><circle cx="100" cy="100" r="9" fill="#F5EDE3"/></svg>
+          </div>
+          <div class="in">
+            <h3>Clémentines confites enrobées</h3>
+            <p class="pds">200 g · la spécialité de la maison</p>
+            <div class="bas"><span class="prix">16,90&nbsp;€</span>
+              <button class="btn-add" data-id="b4" data-nom="Clémentines confites enrobées" data-prix="16.90" data-g="200">+ <span class="vh">Ajouter les clémentines confites au panier</span><span aria-hidden="true">Ajouter</span></button></div>
+          </div>
+        </article>
+        <article class="prod">
+          <div class="ph">
+            <svg viewBox="0 0 200 200" role="img" aria-label="Illustration graphique : truffes au cacao" preserveAspectRatio="xMidYMid slice"><rect width="200" height="200" fill="#B0653A"/><circle cx="68" cy="74" r="30" fill="#2B1A12"/><circle cx="138" cy="96" r="24" fill="#2B1A12"/><circle cx="86" cy="146" r="26" fill="#2B1A12"/><circle cx="60" cy="66" r="6" fill="#D98C5F"/><circle cx="132" cy="88" r="5" fill="#D98C5F"/><circle cx="78" cy="138" r="5" fill="#D98C5F"/></svg>
+          </div>
+          <div class="in">
+            <h3>Truffes au cacao torréfié</h3>
+            <p class="pds">180 g · ballotin</p>
+            <div class="bas"><span class="prix">13,50&nbsp;€</span>
+              <button class="btn-add" data-id="b5" data-nom="Truffes au cacao torréfié" data-prix="13.50" data-g="180">+ <span class="vh">Ajouter les truffes au panier</span><span aria-hidden="true">Ajouter</span></button></div>
+          </div>
+        </article>
+        <article class="prod">
+          <div class="ph">
+            <svg viewBox="0 0 200 200" role="img" aria-label="Illustration graphique : orangettes enrobées de chocolat" preserveAspectRatio="xMidYMid slice"><rect width="200" height="200" fill="#F5EDE3"/><g transform="rotate(-24 100 100)"><rect x="40" y="52" width="120" height="20" fill="#2B1A12"/><rect x="40" y="90" width="120" height="20" fill="#B0653A"/><rect x="40" y="128" width="120" height="20" fill="#2B1A12"/></g></svg>
+          </div>
+          <div class="in">
+            <h3>Orangettes confites</h3>
+            <p class="pds">150 g · écorces maison, noir 64 %</p>
+            <div class="bas"><span class="prix">9,80&nbsp;€</span>
+              <button class="btn-add" data-id="b6" data-nom="Orangettes confites" data-prix="9.80" data-g="150">+ <span class="vh">Ajouter les orangettes au panier</span><span aria-hidden="true">Ajouter</span></button></div>
+          </div>
+        </article>
+        <article class="prod">
+          <div class="ph">
+            <svg viewBox="0 0 200 200" role="img" aria-label="Illustration graphique : mendiants aux fruits secs" preserveAspectRatio="xMidYMid slice"><rect width="200" height="200" fill="#2B1A12"/><g><circle cx="64" cy="64" r="34" fill="#F5EDE3"/><circle cx="142" cy="84" r="30" fill="#B0653A"/><circle cx="92" cy="146" r="32" fill="#F5EDE3"/><circle cx="56" cy="56" r="6" fill="#B0653A"/><circle cx="74" cy="68" r="5" fill="#2B1A12"/><circle cx="136" cy="76" r="5" fill="#2B1A12"/><circle cx="84" cy="138" r="6" fill="#B0653A"/><circle cx="102" cy="152" r="5" fill="#2B1A12"/></g></svg>
+          </div>
+          <div class="in">
+            <h3>Mendiants noir &amp; lait</h3>
+            <p class="pds">160 g · amandes, noisettes, écorces</p>
+            <div class="bas"><span class="prix">11,50&nbsp;€</span>
+              <button class="btn-add" data-id="b7" data-nom="Mendiants noir & lait" data-prix="11.50" data-g="160">+ <span class="vh">Ajouter les mendiants au panier</span><span aria-hidden="true">Ajouter</span></button></div>
+          </div>
+        </article>
+      </div>
+
+      <p class="ship-note">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D98C5F" stroke-width="2" aria-hidden="true"><path d="M5 8h11v9H5z"/><path d="M16 11h3l2 3v3h-5"/><circle cx="8" cy="19" r="1.6"/><circle cx="18" cy="19" r="1.6"/></svg>
+        <!-- [À REMPLACER] Tranches de frais de port factices, à ajuster aux tarifs réels d'expédition. -->
+        <span><strong>Expédition France métropolitaine</strong> (simulation) : 6,90&nbsp;€ jusqu'à 500&nbsp;g · 8,90&nbsp;€ jusqu'à 1&nbsp;kg · 11,90&nbsp;€ au-delà · <strong>offerte dès 79&nbsp;€</strong>. Colis isotherme par temps chaud. Retrait en boutique toujours gratuit.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ════════ 03 · CRÉATIONS PERSONNALISÉES ════════ -->
+  <section id="surmesure" aria-labelledby="titre-surmesure">
+    <div class="wrap">
+      <p class="num">03 · L'atelier sur-mesure</p>
+      <h2 class="t2" id="titre-surmesure">Créations personnalisées</h2>
+      <div class="sur-grille">
+        <div>
+          <p class="chapo" style="margin-top:14px">Du portrait en chocolat à la pièce d'exception pour un mariage, un baptême ou vos cadeaux d'entreprise : l'atelier réalise vos idées les plus gourmandes. Décrivez votre projet, la maison vous rappelle pour l'affiner.</p>
+          <ul class="txt" style="font-size:15.5px;padding-left:20px">
+            <li style="margin-bottom:8px">Pièces uniques moulées et décorées à la main</li>
+            <li style="margin-bottom:8px">Coffrets personnalisés à votre message</li>
+            <li>Quantités événementielles (mariages, comités, entreprises)</li>
+          </ul>
+        </div>
+        <form class="fiche" id="form-creation" novalidate>
+          <div class="champ">
+            <label for="c-occasion">L'occasion</label>
+            <select id="c-occasion" name="occasion" required>
+              <option value="">Choisir…</option>
+              <option>Anniversaire</option>
+              <option>Mariage</option>
+              <option>Baptême / communion</option>
+              <option>Cadeau d'entreprise</option>
+              <option>Portrait en chocolat</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="champ">
+            <label for="c-desc">Décrivez votre idée</label>
+            <textarea id="c-desc" name="description" required placeholder="Ex. : un portrait en chocolat d'après photo, environ 20 cm…"></textarea>
+          </div>
+          <div class="champ">
+            <label for="c-date">Pour quelle date&nbsp;?</label>
+            <input type="date" id="c-date" name="date" required>
+          </div>
+          <div class="champ">
+            <label for="c-nom">Votre nom</label>
+            <input type="text" id="c-nom" name="nom" autocomplete="name" required>
+          </div>
+          <div class="champ">
+            <label for="c-tel">Votre téléphone</label>
+            <input type="tel" id="c-tel" name="tel" autocomplete="tel" inputmode="tel" required>
+          </div>
+          <button class="btn" type="submit">Envoyer ma demande</button>
+          <div class="recap" id="recap-creation" hidden tabindex="-1" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ BANDEAU SAISONNIER (paramétrable en tête de page) ════════ -->
+  <section class="saison" id="saison" aria-labelledby="titre-saison">
+    <div class="wrap saison-in">
+      <div>
+        <p class="num" id="saison-kicker">En ce moment</p>
+        <h2 id="titre-saison">Fête des Pères — dimanche 21 juin</h2>
+        <p id="saison-texte">Coffret « Force noire » 70 %, tablettes grand cru et clémentines confites. Commandez avant le vendredi 19 juin pour un retrait le samedi matin.</p>
+      </div>
+      <a class="btn btn-creme" id="saison-cta" href="#coffret">Composer son coffret</a>
+    </div>
+  </section>
+
+  <!-- ════════ 04 · RETRAIT & EXPÉDITION ════════ -->
+  <section id="retrait" aria-labelledby="titre-retrait">
+    <div class="wrap">
+      <p class="num">04 · Recevoir vos chocolats</p>
+      <h2 class="t2" id="titre-retrait">Deux façons de vous régaler</h2>
+      <div class="duo">
+        <div class="mode">
+          <h3>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8C4A26" stroke-width="2" aria-hidden="true"><path d="M3 9.5 5 4h14l2 5.5"/><path d="M4 10v10h16V10"/><path d="M9 20v-6h6v6"/></svg>
+            Retrait en boutique</h3>
+          <ul>
+            <li>Au <a href="https://www.google.com/maps/search/?api=1&amp;query=Lamielle+Chocolatier+13+rue+Rualm%C3%A9nil+88000+%C3%89pinal" target="_blank" rel="noopener">13 rue Rualménil, 88000 Épinal</a></li>
+            <li>Commande prête <strong>dès le lendemain</strong> (jours d'ouverture)</li>
+            <li>Gratuit — règlement en ligne ou au comptoir</li>
+          </ul>
+          <p class="txt-s">Lundi 15 h – 19 h · mardi à samedi 9 h 30 – 12 h / 14 h – 19 h.</p>
+        </div>
+        <div class="mode inv">
+          <h3>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#D98C5F" stroke-width="2" aria-hidden="true"><path d="M21 8.5 12 4 3 8.5v7L12 20l9-4.5z"/><path d="M3 8.5 12 13l9-4.5"/><path d="M12 13v7"/></svg>
+            Expédition France</h3>
+          <ul>
+            <li>Emballage atelier &amp; calage soigné</li>
+            <li>Colis isotherme par temps chaud</li>
+            <li>Expédition sous <strong>48 h ouvrées</strong> (simulation)</li>
+          </ul>
+          <!-- [À REMPLACER] Tranches de port factices (mêmes valeurs que la boutique). -->
+          <p class="txt-s">6,90 € ≤ 500 g · 8,90 € ≤ 1 kg · 11,90 € au-delà · offerte dès 79 €.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ 05 · AVIS ════════ -->
+  <section id="avis" aria-labelledby="titre-avis" style="padding-top:0">
+    <div class="wrap">
+      <p class="num">05 · Ils en parlent</p>
+      <h2 class="t2" id="titre-avis">La confiance des gourmands</h2>
+      <div class="avis-tete">
+        <span class="avis-note">4,4</span>
+        <span>
+          <span class="etoiles" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#8C4A26"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#8C4A26"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#8C4A26"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#8C4A26"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24"><defs><linearGradient id="demi"><stop offset="40%" stop-color="#8C4A26"/><stop offset="40%" stop-color="#D9C9B4"/></linearGradient></defs><path fill="url(#demi)" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
+          </span><br>
+          <strong>4,4 / 5</strong> — 151 avis Google
+        </span>
+      </div>
+      <!-- [À REMPLACER] Extraits illustratifs (≤ 15 mots) à remplacer par de vrais avis Google choisis avec la maison. -->
+      <div class="avis-grille">
+        <article class="avis-c">
+          <blockquote>« Un chocolatier d'exception — les clémentines confites sont inoubliables. »</blockquote>
+          <footer>Avis Google</footer>
+        </article>
+        <article class="avis-c">
+          <blockquote>« Accueil charmant, coffrets magnifiques. On revient à chaque passage à Épinal. »</blockquote>
+          <footer>Avis Google</footer>
+        </article>
+        <article class="avis-c">
+          <blockquote>« La vraie maison de tradition, et des créations personnalisées épatantes. »</blockquote>
+          <footer>Avis Google</footer>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ════════ FOOTER NAP ════════ -->
+<footer class="pied" id="contact">
+  <div class="wrap">
+    <div class="pied-grille">
+      <div>
+        <h2>Lamielle Chocolatier</h2>
+        <p style="margin-top:10px">Chocolatier à Épinal — chocolats fins, coffrets, clémentines confites et créations personnalisées.</p>
+        <a class="gros-tel" href="tel:+33329822001">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D98C5F" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          03 29 82 20 01</a>
+      </div>
+      <div>
+        <h3>Boutique</h3>
+        <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Lamielle+Chocolatier+13+rue+Rualm%C3%A9nil+88000+%C3%89pinal" target="_blank" rel="noopener">13 rue Rualménil<br>88000 Épinal</a></p>
+        <p style="margin-top:10px">4,4★ · 151 avis Google</p>
+      </div>
+      <div>
+        <h3>Horaires</h3>
+        <table class="hor">
+          <tr><td>Lundi</td><td>15 h – 19 h</td></tr>
+          <tr><td>Mar – sam</td><td>9 h 30 – 12 h<br>14 h – 19 h</td></tr>
+          <tr><td>Dimanche</td><td>Fermé</td></tr>
+        </table>
+      </div>
+    </div>
+    <p class="pied-bas">Maquette de démonstration — aucune donnée n'est collectée, aucun paiement n'est réel.</p>
+  </div>
+</footer>
+
+<!-- ════════ PANIER (tiroir) ════════ -->
+<div class="voile" id="voile"></div>
+<aside class="tiroir" id="tiroir" role="dialog" aria-modal="true" aria-labelledby="titre-panier" hidden>
+  <div class="tiroir-tete">
+    <h2 id="titre-panier">Votre panier</h2>
+    <button class="btn-x" id="ferme-panier" aria-label="Fermer le panier">✕</button>
+  </div>
+  <div class="tiroir-corps">
+    <ul class="lpanier" id="liste-panier"></ul>
+    <p class="vide-msg" id="panier-vide">Votre panier est vide.<br>Composez un coffret ou piochez dans la boutique&nbsp;!</p>
+    <div id="panier-suite" hidden>
+      <fieldset class="modes-radio">
+        <legend>Mode de réception</legend>
+        <label class="opt"><input type="radio" name="livraison" value="retrait" checked>
+          <span><b>Retrait en boutique — gratuit</b><span>13 rue Rualménil, Épinal · prêt dès le lendemain</span></span></label>
+        <label class="opt"><input type="radio" name="livraison" value="envoi">
+          <span><b>Expédition France (simulation)</b><span>Port calculé au poids · offert dès 79 €</span></span></label>
+      </fieldset>
+      <div class="totaux">
+        <div><span>Sous-total</span><span id="t-sous">0,00 €</span></div>
+        <div><span>Poids total</span><span id="t-poids">0 g</span></div>
+        <div><span>Frais d'envoi</span><span id="t-port">—</span></div>
+        <div class="tt"><span>Total</span><span id="t-total">0,00 €</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="tiroir-pied">
+    <button class="btn" id="valider" disabled>Commander — démonstration</button>
+  </div>
+</aside>
+
+<!-- ════════ ÉCRAN DÉMO ════════ -->
+<div class="demo-ecran" id="demo" role="dialog" aria-modal="true" aria-labelledby="demo-titre">
+  <div class="demo-boite">
+    <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#8C4A26" stroke-width="2" aria-hidden="true" style="margin-inline:auto"><circle cx="12" cy="12" r="10"/><path d="m8 12.5 2.6 2.6L16 9.5"/></svg>
+    <h2 id="demo-titre">Ceci est une démonstration</h2>
+    <p id="demo-texte">En production, votre commande serait confirmée par e-mail, réglée par carte bancaire sécurisée ou au retrait en boutique, puis préparée par l'atelier — et expédiée sous 48 h si vous avez choisi la livraison.</p>
+    <p style="font-size:13px;color:#8C4A26;font-weight:700;letter-spacing:.08em;text-transform:uppercase">Aucune donnée n'a été envoyée</p>
+    <button class="btn" id="ferme-demo">Fermer</button>
+  </div>
+</div>
+
+<p id="toast" role="status" aria-live="polite"></p>
+
+<!-- ════════ BANDEAU LÉGAL ════════ -->
+<div id="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</div>
+
+<script>
+(function(){
+'use strict';
+var $=function(s){return document.querySelector(s)};
+function eur(n){return n.toFixed(2).replace('.',',')+' €'}
+
+/* ── bandeau saisonnier : rendu depuis la variable de tête ── */
+try{
+  var s=SAISONS[SAISON_ACTIVE];
+  if(s){$('#saison-kicker').textContent=s.kicker;$('#titre-saison').textContent=s.titre;
+    $('#saison-texte').textContent=s.texte;var c=$('#saison-cta');c.textContent=s.cta;c.setAttribute('href',s.ancre);}
+}catch(e){}
+
+/* ── réserve sous le bandeau légal ── */
+function calePied(){var l=$('#legal');document.body.style.paddingBottom=(l.offsetHeight+18)+'px';
+  $('#toast').style.bottom=(l.offsetHeight+14)+'px';}
+calePied();addEventListener('resize',calePied);
+
+/* ── toast aria-live ── */
+var toastT;
+function toast(msg){var t=$('#toast');t.textContent=msg;t.classList.add('on');
+  clearTimeout(toastT);toastT=setTimeout(function(){t.classList.remove('on')},2600);}
+
+/* ══ COMPOSEZ VOTRE COFFRET ══ */
+/* [À REMPLACER] Noms des chocolats : assortiment d'exemple, à remplacer par la carte réelle. */
+var CHOCOS=[
+  {id:'g1',cat:'Ganaches',nom:'Ganache noire 70 % Équateur'},
+  {id:'g2',cat:'Ganaches',nom:'Ganache lait & fève tonka'},
+  {id:'g3',cat:'Ganaches',nom:'Ganache café moka'},
+  {id:'p1',cat:'Pralinés',nom:'Praliné noisette du Piémont'},
+  {id:'p2',cat:'Pralinés',nom:'Praliné amande & fleur de sel'},
+  {id:'p3',cat:'Pralinés',nom:'Praliné feuilleté croustillant'},
+  {id:'s1',cat:'Spécialités',nom:'Clémentine confite enrobée noir',spe:true},
+  {id:'s2',cat:'Spécialités',nom:'Truffe au cacao torréfié'},
+  {id:'s3',cat:'Spécialités',nom:'Caramel beurre salé enrobé lait'}];
+/* [À REMPLACER] Prix au poids des coffrets (exemples). */
+var FORMATS={f250:{g:250,p:16,prix:24.50,label:'250 g'},f500:{g:500,p:32,prix:46.90,label:'500 g'}};
+var qte={},fmt='f250';
+
+function renduChocos(){
+  var html='',cat='';
+  CHOCOS.forEach(function(c){
+    if(c.cat!==cat){if(cat)html+='</ul>';cat=c.cat;html+='<p class="cat-titre">'+cat+'</p><ul class="choco-l">';}
+    html+='<li><span class="cnom">'+c.nom+(c.spe?'<span class="badge-spe">Spécialité maison</span>':'')+'</span>'
+      +'<span class="stepper">'
+      +'<button type="button" data-m="'+c.id+'" aria-label="Retirer une pièce : '+c.nom+'">−</button>'
+      +'<span class="q" id="q-'+c.id+'">0</span>'
+      +'<button type="button" data-p="'+c.id+'" aria-label="Ajouter une pièce : '+c.nom+'">+</button>'
+      +'</span></li>';
+  });
+  $('#liste-chocos').innerHTML=html+'</ul>';
+}
+function piecesTotal(){var t=0;for(var k in qte)t+=qte[k];return t}
+function majJauge(){
+  var f=FORMATS[fmt],n=piecesTotal(),g=Math.round(n*f.g/f.p);
+  $('#jauge-texte').textContent=n+(n>1?' pièces':' pièce')+' sur '+f.p+' · ≈ '+g+' g sur '+f.g+' g';
+  $('#jauge-prix').textContent=eur(f.prix);
+  $('#jauge-fill').style.width=Math.min(100,n/f.p*100)+'%';
+  var plein=(n===f.p);
+  $('#ajout-coffret').disabled=!plein;
+  $('#ajout-coffret').textContent=plein?'Ajouter le coffret au panier — '+eur(f.prix):'Ajouter le coffret au panier';
+  document.querySelectorAll('#liste-chocos [data-p]').forEach(function(b){b.disabled=plein});
+  CHOCOS.forEach(function(c){
+    var q=qte[c.id]||0;$('#q-'+c.id).textContent=q;
+    document.querySelector('[data-m="'+c.id+'"]').disabled=(q===0);
+  });
+}
+renduChocos();majJauge();
+$('#liste-chocos').addEventListener('click',function(e){
+  var p=e.target.getAttribute('data-p'),m=e.target.getAttribute('data-m');
+  if(p&&piecesTotal()<FORMATS[fmt].p){qte[p]=(qte[p]||0)+1;majJauge();}
+  if(m&&qte[m]>0){qte[m]--;majJauge();}
+});
+document.querySelectorAll('input[name="format"]').forEach(function(r){
+  r.addEventListener('change',function(){fmt=r.value;qte={};majJauge();
+    toast('Format '+FORMATS[fmt].label+' sélectionné — composition remise à zéro.');});
+});
+$('#raz-coffret').addEventListener('click',function(){qte={};majJauge();toast('Coffret vidé.')});
+
+/* ══ PANIER (localStorage) ══ */
+var CLE='lamiellePanier';
+function lirePanier(){try{return JSON.parse(localStorage.getItem(CLE))||[]}catch(e){return[]}}
+function ecrirePanier(p){try{localStorage.setItem(CLE,JSON.stringify(p))}catch(e){}}
+function ajoutPanier(item){
+  var p=lirePanier(),t=p.find(function(x){return x.id===item.id});
+  if(t)t.qte++;else{item.qte=1;p.push(item);}
+  ecrirePanier(p);majPanier();
+}
+/* [À REMPLACER] Tranches de port factices. */
+function calcPort(g,sous){if(sous>=79)return 0;if(g<=500)return 6.90;if(g<=1000)return 8.90;return 11.90}
+
+function majPanier(){
+  var p=lirePanier(),n=p.reduce(function(a,x){return a+x.qte},0);
+  $('#compte-panier').textContent=n;
+  $('#compte-panier-vh').textContent=', '+n+' article'+(n>1?'s':'');
+  var ul=$('#liste-panier');ul.innerHTML='';
+  p.forEach(function(x,i){
+    var li=document.createElement('li');
+    li.innerHTML='<span><span class="qx">'+x.qte+' ×</span> '+x.nom+'</span>'
+      +'<span style="display:flex;align-items:center;gap:4px;flex:none">'+eur(x.prix*x.qte)
+      +'<button class="btn-sup" data-i="'+i+'" aria-label="Retirer '+x.nom+' du panier">'
+      +'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2m-9 0 1 14h8l1-14"/></svg></button></span>';
+    ul.appendChild(li);
+  });
+  $('#panier-vide').hidden=p.length>0;
+  $('#panier-suite').hidden=p.length===0;
+  $('#valider').disabled=p.length===0;
+  if(p.length){
+    var sous=p.reduce(function(a,x){return a+x.prix*x.qte},0);
+    var g=p.reduce(function(a,x){return a+x.g*x.qte},0);
+    var envoi=document.querySelector('input[name="livraison"]:checked').value==='envoi';
+    var port=envoi?calcPort(g,sous):0;
+    $('#t-sous').textContent=eur(sous);
+    $('#t-poids').textContent=g>=1000?(g/1000).toFixed(1).replace('.',',')+' kg':g+' g';
+    $('#t-port').textContent=envoi?(port===0?'Offerts':eur(port)):'Retrait gratuit';
+    $('#t-total').textContent=eur(sous+port);
+  }
+}
+$('#liste-panier').addEventListener('click',function(e){
+  var b=e.target.closest('[data-i]');if(!b)return;
+  var p=lirePanier();p.splice(+b.getAttribute('data-i'),1);ecrirePanier(p);majPanier();
+});
+document.querySelectorAll('input[name="livraison"]').forEach(function(r){r.addEventListener('change',majPanier)});
+
+$('#ajout-coffret').addEventListener('click',function(){
+  var f=FORMATS[fmt],detail=[];
+  CHOCOS.forEach(function(c){if(qte[c.id])detail.push(qte[c.id]+' '+c.nom)});
+  ajoutPanier({id:'coffret-'+fmt+'-'+Date.now(),nom:'Coffret composé '+f.label+' ('+f.p+' pièces)',prix:f.prix,g:f.g});
+  qte={};majJauge();toast('Coffret '+f.label+' ajouté au panier.');
+});
+document.querySelectorAll('.btn-add').forEach(function(b){
+  b.addEventListener('click',function(){
+    ajoutPanier({id:b.dataset.id,nom:b.dataset.nom,prix:parseFloat(b.dataset.prix),g:parseInt(b.dataset.g,10)});
+    toast(b.dataset.nom+' — ajouté au panier.');
+  });
+});
+
+/* ── ouverture / fermeture du tiroir ── */
+var retourFocus=null;
+function ouvrePanier(){retourFocus=document.activeElement;majPanier();
+  $('#tiroir').hidden=false;requestAnimationFrame(function(){$('#tiroir').classList.add('on')});
+  $('#voile').classList.add('on');$('#ferme-panier').focus();}
+function fermePanier(){$('#tiroir').classList.remove('on');$('#voile').classList.remove('on');
+  setTimeout(function(){$('#tiroir').hidden=true},250);
+  if(retourFocus)retourFocus.focus();}
+$('#ouvre-panier').addEventListener('click',ouvrePanier);
+$('#ferme-panier').addEventListener('click',fermePanier);
+$('#voile').addEventListener('click',fermePanier);
+addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  if($('#demo').classList.contains('on'))fermeDemo();
+  else if($('#tiroir').classList.contains('on'))fermePanier();
+});
+
+/* ── écran « Ceci est une démonstration » ── */
+function ouvreDemo(){$('#demo').classList.add('on');$('#voile').classList.add('on');$('#ferme-demo').focus()}
+function fermeDemo(){$('#demo').classList.remove('on');$('#voile').classList.remove('on')}
+$('#valider').addEventListener('click',function(){
+  var envoi=document.querySelector('input[name="livraison"]:checked').value==='envoi';
+  $('#demo-texte').textContent=envoi
+    ?'En production, votre commande serait réglée par carte bancaire sécurisée, préparée par l’atelier puis expédiée sous 48 h à votre adresse, avec un suivi de colis.'
+    :'En production, votre commande serait réglée en ligne ou au comptoir, puis prête à retirer dès le lendemain au 13 rue Rualménil, à Épinal.';
+  ecrirePanier([]);fermePanier();ouvreDemo();majPanier();
+});
+$('#ferme-demo').addEventListener('click',fermeDemo);
+
+/* ══ CRÉATIONS PERSONNALISÉES (simulation) ══ */
+$('#form-creation').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target;
+  if(!f.checkValidity()){f.reportValidity();return;}
+  var d=f.elements['date'].value,dd='';
+  if(d){var p=d.split('-');dd=p[2]+'/'+p[1]+'/'+p[0];}
+  try{localStorage.setItem('lamielleCreation',JSON.stringify({
+    occasion:f.elements['occasion'].value,date:d}))}catch(err){}
+  var r=$('#recap-creation');
+  r.innerHTML='<h3>Demande envoyée — démonstration</h3>'
+    +'<dl><dt>Occasion</dt><dd>'+f.elements['occasion'].value+'</dd>'
+    +'<dt>Pour le</dt><dd>'+dd+'</dd>'
+    +'<dt>Votre projet</dt><dd>'+f.elements['description'].value.replace(/</g,'&lt;')+'</dd></dl>'
+    +'<p class="demo-note">Ceci est une démonstration — aucune donnée n’a été envoyée. En production : la maison vous rappelle sous 24 h ouvrées pour affiner le projet et le devis.</p>';
+  r.hidden=false;r.focus();
+});
+})();
+</script>
+</body>
+</html>

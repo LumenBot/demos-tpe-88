@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#101D33">
+<title>Électricien à Épinal — WS Electricité · Installation, dépannage, mise aux normes</title>
+<meta name="description" content="WS Electricité, électricien à Épinal (88000) : installation, rénovation, dépannage, mise aux normes, chauffage électrique, plafonds suspendus. 5,0★ sur Google. 6 h - 20 h, 7 j/7. Devis gratuit.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap"></noscript>
+<link rel="preload" as="image" href="img/hero-electricien.webp" fetchpriority="high">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "WS Electricité",
+  "image": "img/hero-electricien.webp",
+  "telephone": "+33686566058",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "16 rue du Boudiou",
+    "postalCode": "88000",
+    "addressLocality": "Épinal",
+    "addressCountry": "FR"
+  },
+  "areaServed": "Épinal et alentours",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "06:00",
+    "closes": "20:00"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "20"
+  }
+}
+</script>
+
+<style>
+:root{
+  --navy:#101D33;
+  --navy-soft:#1B2B4A;
+  --yellow:#F5C518;
+  --bg:#F4F6F9;
+  --line:#E2E7F0;
+  --muted:#46536F;
+  --white:#FFFFFF;
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+  .pulse{animation:pulse 2s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  font-family:'Outfit',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  color:var(--navy);
+  background:var(--white);
+  line-height:1.55;
+  position:relative;
+  padding-bottom:96px; /* place pour le bandeau légal fixe */
+}
+/* ——— signature : fine ligne jaune signal qui parcourt la page ——— */
+body::before{
+  content:"";position:absolute;top:0;left:0;width:3px;height:100%;
+  background:var(--yellow);z-index:5;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.sr-only{position:absolute;width:1px!important;height:1px!important;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+:focus-visible{outline:3px solid var(--navy);outline-offset:2px;border-radius:4px}
+.on-dark :focus-visible,.skip:focus-visible{outline-color:var(--yellow)}
+.skip{position:absolute;left:8px;top:-60px;background:var(--navy);color:#fff;padding:12px 18px;z-index:200;border-radius:0 0 8px 8px;text-decoration:none;font-weight:600;transition:top .2s}
+.skip:focus{top:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* ——— boutons ——— */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:50px;padding:12px 24px;border-radius:10px;font-family:inherit;
+  font-size:1.02rem;font-weight:700;text-decoration:none;border:2px solid transparent;
+  cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{flex:none}
+.btn-y{background:var(--yellow);color:var(--navy)}
+.btn-n{background:var(--navy);color:var(--white)}
+.btn-ghost{background:transparent;color:var(--navy);border-color:var(--navy)}
+
+/* ——— header ——— */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);
+  border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:66px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:1.15rem;letter-spacing:.01em;padding:8px 0}
+.logo-mark{width:38px;height:38px;border:2px solid var(--navy);border-radius:9px;
+  display:grid;place-items:center;font-size:.82rem;font-weight:800;position:relative;background:#fff}
+.logo-mark::after{content:"";position:absolute;right:-2px;bottom:-2px;width:12px;height:12px;
+  background:var(--yellow);border-radius:0 0 7px 0}
+.logo small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.22em;color:var(--muted);text-transform:uppercase}
+nav.main-nav{display:none}
+nav.main-nav a{text-decoration:none;font-weight:600;font-size:.95rem;padding:12px 13px;border-radius:8px;color:var(--navy-soft)}
+nav.main-nav a:hover{background:var(--bg)}
+.hd .btn{min-height:46px;padding:10px 18px;font-size:.95rem}
+@media (max-width:459px){.hd .tel-txt{display:none}.hd .btn{padding:10px 14px}}
+
+/* ——— sections / repères de circuit ——— */
+section{position:relative;scroll-margin-top:84px}
+.kick{display:flex;align-items:center;gap:12px;font-size:.8rem;font-weight:700;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.kick::before{content:"";flex:none;width:11px;height:11px;border:2.5px solid var(--yellow);
+  border-radius:50%;background:#fff}
+h2{font-size:clamp(1.65rem,4.5vw,2.3rem);font-weight:800;line-height:1.15;letter-spacing:-.01em;margin-bottom:14px}
+.lead{color:var(--muted);max-width:62ch}
+
+/* ——— hero clair, en grille ——— */
+.hero{background:
+  linear-gradient(rgba(16,29,51,.035) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(16,29,51,.035) 1px,transparent 1px);
+  background-size:30px 30px;border-bottom:1px solid var(--line);padding:44px 0 52px}
+.hero-grid{display:grid;gap:34px;align-items:center}
+.hero .kick{margin-bottom:18px}
+h1{font-size:clamp(2.1rem,6.5vw,3.3rem);font-weight:800;line-height:1.06;letter-spacing:-.02em}
+h1 .h1-sub{display:block;font-size:clamp(1.05rem,3vw,1.35rem);font-weight:600;color:var(--muted);letter-spacing:0;margin-top:12px;line-height:1.4}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--line);
+  border-radius:999px;padding:9px 16px;font-weight:600;font-size:.92rem}
+.badge .dot{width:9px;height:9px;border-radius:50%;background:#1E9E55;flex:none}
+.badge.closed .dot{background:#C2410C}
+.stars{color:var(--yellow);letter-spacing:.05em}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-note{margin-top:18px;font-size:.92rem;color:var(--muted)}
+.hero-fig{position:relative}
+.hero-fig img{border-radius:var(--radius);width:100%;aspect-ratio:14/9;object-fit:cover}
+.hero-fig::before{content:"";position:absolute;inset:-12px auto auto -12px;width:64px;height:64px;
+  border-top:3px solid var(--yellow);border-left:3px solid var(--yellow);border-radius:14px 0 0 0}
+.hero-fig::after{content:"";position:absolute;right:-12px;bottom:-12px;width:64px;height:64px;
+  border-bottom:3px solid var(--yellow);border-right:3px solid var(--yellow);border-radius:0 0 14px 0}
+
+/* ——— prestations ——— */
+.prestations{background:var(--bg);padding:60px 0}
+.cards{display:grid;gap:18px;margin-top:30px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;
+  position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;top:0;left:0;width:42px;height:3px;background:var(--yellow)}
+.card .ico{width:48px;height:48px;border:1.5px solid var(--navy);border-radius:11px;
+  display:grid;place-items:center;margin-bottom:14px;color:var(--navy)}
+.card h3{font-size:1.12rem;font-weight:700;margin-bottom:6px}
+.card p{font-size:.95rem;color:var(--muted)}
+.card img{border-radius:10px;margin-bottom:16px;aspect-ratio:8/5;object-fit:cover;width:100%}
+
+/* ——— devis (wow) ——— */
+.devis{padding:60px 0}
+.devis-box{border:1.5px solid var(--navy);border-radius:var(--radius);padding:26px 22px;margin-top:28px;
+  position:relative;background:#fff}
+.devis-box::before{content:"";position:absolute;top:-7px;left:34px;width:12px;height:12px;
+  border:2.5px solid var(--yellow);border-radius:50%;background:#fff}
+.f-grid{display:grid;gap:16px}
+.field label{display:block;font-weight:600;font-size:.94rem;margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;min-height:50px;padding:12px 14px;
+  border:1.5px solid var(--line);border-radius:10px;font-family:inherit;font-size:1rem;
+  color:var(--navy);background:#fff}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:3px solid var(--navy);outline-offset:1px;border-color:var(--navy)}
+.upload{border:2px dashed var(--navy-soft);border-radius:12px;padding:22px 16px;text-align:center;
+  display:block;cursor:pointer;background:var(--bg)}
+.upload:focus-within{outline:3px solid var(--navy);outline-offset:2px}
+.upload strong{display:block;margin-top:8px;font-size:1rem}
+.upload span{display:block;font-size:.85rem;color:var(--muted);margin-top:4px}
+.upload svg{margin:0 auto;color:var(--navy)}
+#fileList{list-style:none;margin-top:4px}
+#fileList li{display:flex;align-items:center;gap:10px;background:var(--bg);border:1px solid var(--line);
+  border-radius:9px;padding:4px 6px 4px 14px;margin-top:8px;font-size:.92rem;font-weight:600}
+#fileList li svg{flex:none;color:var(--muted)}
+#fileList .fsize{color:var(--muted);font-weight:400;margin-left:auto}
+#fileList button{background:none;border:0;cursor:pointer;font-family:inherit;color:var(--muted);
+  min-width:44px;min-height:44px;font-size:1.25rem;line-height:1;border-radius:8px}
+#fileList button:hover{color:var(--navy);background:#fff}
+.sim-note{font-size:.85rem;color:var(--muted);display:flex;gap:8px;align-items:flex-start}
+.sim-note svg{flex:none;margin-top:2px;color:var(--navy)}
+/* écran de confirmation démo */
+.demo-ok{text-align:center;padding:26px 10px}
+.demo-ok .big{width:74px;height:74px;border-radius:50%;background:var(--yellow);display:grid;
+  place-items:center;margin:0 auto 18px;color:var(--navy)}
+.demo-ok h3{font-size:1.5rem;font-weight:800;margin-bottom:10px}
+.demo-ok p{color:var(--muted);max-width:50ch;margin:0 auto 8px}
+.demo-ok .btn{margin-top:18px}
+
+/* ——— particuliers & pro ——— */
+.pro{background:var(--navy);color:#fff;padding:60px 0}
+.pro .kick{color:#B9C4DA}
+.pro .kick::before{background:var(--navy)}
+.pro-grid{display:grid;gap:30px;align-items:center;margin-top:8px}
+.pro .lead{color:#C7D0E2}
+.pro ul{list-style:none;margin-top:22px;display:grid;gap:14px}
+.pro li{display:flex;gap:12px;align-items:flex-start}
+.pro li svg{flex:none;color:var(--yellow);margin-top:3px}
+.pro li strong{display:block}
+.pro li span{color:#B9C4DA;font-size:.93rem}
+.pro figure img{border-radius:var(--radius);width:100%;aspect-ratio:4/3;object-fit:cover}
+.pro figure{position:relative}
+.pro figure::after{content:"";position:absolute;right:-10px;top:-10px;width:56px;height:56px;
+  border-top:3px solid var(--yellow);border-right:3px solid var(--yellow);border-radius:0 14px 0 0}
+.pro .btn-y{margin-top:26px}
+
+/* ——— zone ——— */
+.zone{padding:60px 0;border-bottom:1px solid var(--line)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{border:1.5px solid var(--line);background:var(--bg);border-radius:999px;padding:9px 16px;
+  font-weight:600;font-size:.93rem}
+.chip.main{background:var(--yellow);border-color:var(--yellow);color:var(--navy);font-weight:700}
+
+/* ——— avis ——— */
+.avis{background:var(--bg);padding:60px 0}
+.avis-grid{display:grid;gap:18px;margin-top:28px}
+.avis-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.avis-card .stars{font-size:1.05rem}
+.avis-card blockquote{font-weight:600;font-size:1.02rem;margin:10px 0 12px;line-height:1.45}
+.avis-card cite{font-style:normal;font-size:.85rem;color:var(--muted)}
+.avis-total{display:inline-flex;align-items:center;gap:12px;background:var(--navy);color:#fff;
+  border-radius:12px;padding:14px 20px;margin-top:26px;font-weight:600}
+.avis-total b{font-size:1.5rem;font-weight:800}
+
+/* ——— footer ——— */
+footer{background:var(--navy);color:#fff;padding:54px 0 40px}
+.ft-grid{display:grid;gap:30px}
+.ft h3{font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;color:#9FACC6;margin-bottom:14px;font-weight:700}
+.ft p,.ft a{color:#E4E9F2;font-size:.98rem}
+.ft a{text-decoration:none;display:inline-flex;align-items:center;gap:9px;padding:6px 0;min-height:44px}
+.ft a:hover{color:var(--yellow)}
+.ft .tel-big{font-size:1.3rem;font-weight:800;color:var(--yellow)}
+.ft-bottom{border-top:1px solid #2A3A5C;margin-top:36px;padding-top:20px;font-size:.85rem;color:#9FACC6}
+
+/* ——— bandeau légal fixe ——— */
+.legal{position:fixed;left:0;right:0;bottom:0;z-index:100;background:var(--navy);color:#D5DCE9;
+  font-size:.72rem;line-height:1.45;text-align:center;padding:8px 14px calc(8px + env(safe-area-inset-bottom));
+  border-top:2px solid var(--yellow)}
+
+/* ——— ≥ 760px ——— */
+@media (min-width:760px){
+  nav.main-nav{display:flex;gap:2px}
+  .hero{padding:64px 0 72px}
+  .hero-grid{grid-template-columns:1.08fr 1fr;gap:48px}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .f-grid .full{grid-column:1/-1}
+  .devis-box{padding:36px}
+  .pro-grid{grid-template-columns:1fr .9fr;gap:54px}
+  .avis-grid{grid-template-columns:repeat(3,1fr)}
+  .ft-grid{grid-template-columns:1.2fr 1fr 1fr}
+  .legal{font-size:.78rem}
+  body{padding-bottom:72px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.6l2.9 5.8 6.4.9-4.6 4.5 1.1 6.4L12 17.2l-5.8 3 1.1-6.4-4.6-4.5 6.4-.9z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.6a12.5 12.5 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.5l5 5 10-11"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 11v5"/><circle cx="12" cy="8" r=".4" fill="currentColor" stroke="currentColor" stroke-width="1.4"/></symbol>
+    <symbol id="i-img" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="9" cy="10" r="1.7" fill="none" stroke="currentColor" stroke-width="1.7"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M5 18l5-5 3 3 3.5-3.5L20 16"/></symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#" aria-label="WS Electricité — retour en haut de page">
+      <span class="logo-mark" aria-hidden="true">WS</span>
+      <span>WS Electricité<small>Électricien · Épinal</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#prestations">Prestations</a>
+      <a href="#devis">Devis</a>
+      <a href="#pro">Professionnels</a>
+      <a href="#zone">Zone</a>
+      <a href="#avis">Avis</a>
+    </nav>
+    <a class="btn btn-y" href="tel:+33686566058" aria-label="Appeler le 06 86 56 60 58">
+      <svg width="19" height="19" aria-hidden="true"><use href="#i-phone"/></svg>
+      <span class="tel-txt">06 86 56 60 58</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" aria-label="Présentation">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kick">Électricité générale — Épinal (88)</p>
+        <h1>Électricien à Épinal
+          <span class="h1-sub">Installation · rénovation · dépannage — pour les particuliers et les professionnels.</span>
+        </h1>
+        <div class="badges">
+          <span class="badge"><span class="stars" aria-hidden="true">★★★★★</span> 5,0 · 20 avis Google</span>
+          <span class="badge" id="openBadge"><span class="dot pulse" aria-hidden="true"></span> 6 h - 20 h, 7 j/7</span>
+        </div>
+        <!-- [À REMPLACER] : accroche d'exemple, à valider avec l'artisan -->
+        <p class="lead">Du remplacement d'une prise à la rénovation complète d'un tableau, chaque
+        intervention est faite dans les règles de l'art : travail précis, normes respectées, chantier propre.</p>
+        <div class="hero-cta" style="margin-top:26px">
+          <a class="btn btn-y" href="tel:+33686566058">
+            <svg width="20" height="20" aria-hidden="true"><use href="#i-phone"/></svg>
+            Appeler maintenant
+          </a>
+          <a class="btn btn-n" href="#devis">Demander un devis</a>
+        </div>
+        <p class="hero-note">Devis gratuit · Réponse rapide · Épinal et alentours</p>
+      </div>
+      <div class="hero-fig">
+        <img src="img/hero-electricien.webp" alt="Électricien au travail sur un boîtier électrique mural, casque de chantier jaune" width="1400" height="900" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRESTATIONS ===================== -->
+  <section class="prestations" id="prestations" aria-label="Prestations">
+    <div class="wrap">
+      <p class="kick">Prestations</p>
+      <h2>Six savoir-faire, une même exigence.</h2>
+      <p class="lead">Chaque chantier commence par un diagnostic clair et un devis détaillé, sans surprise.</p>
+      <!-- [À REMPLACER] : intitulés et descriptions de prestations à valider avec l'artisan -->
+      <div class="cards">
+        <article class="card">
+          <img src="img/luminaire.webp" alt="Suspension allumée sur un mur bleu-vert" width="800" height="600" loading="lazy" decoding="async">
+          <span class="ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.4c.7.6 1.2 1.5 1.2 2.6h5.6c0-1.1.5-2 1.2-2.6A6 6 0 0 0 12 3z"/></svg></span>
+          <h3>Installation &amp; éclairage</h3>
+          <p>Création de circuits, prises, interrupteurs, luminaires intérieurs et extérieurs.</p>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 9.5V21h14V9.5"/><path d="M12.8 11l-2.3 4h3l-2.3 4"/></svg></span>
+          <h3>Rénovation électrique</h3>
+          <p>Remise à neuf complète ou partielle de votre installation, en site occupé.</p>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M13.2 7l-4 6h3l-1.4 4 4-6h-3z"/></svg></span>
+          <h3>Dépannage</h3>
+          <p>Panne, court-circuit, disjoncteur qui saute : recherche de panne et réparation rapides.</p>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.4 8-8 9-4.6-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4.5"/></svg></span>
+          <h3>Mise aux normes</h3>
+          <p>Tableaux, différentiels, terre : votre installation conforme à la norme NF C 15-100.</p>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="11" rx="2"/><path d="M7.5 7v11M12 7v11M16.5 7v11M6 21h12"/></svg></span>
+          <h3>Chauffage électrique</h3>
+          <p>Pose et remplacement de radiateurs, programmation et pilotage des consommations.</p>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="13" rx="1.5"/><path d="M3 9.5h18M9 4.5v13M15 4.5v13M12 17.5V21"/></svg></span>
+          <h3>Plafonds suspendus</h3>
+          <p>Faux plafonds avec spots intégrés : isolation, finition nette et lumière maîtrisée.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEVIS + UPLOAD PHOTOS (simulé) ===================== -->
+  <section class="devis" id="devis" aria-label="Demande de devis">
+    <div class="wrap">
+      <p class="kick">Devis gratuit</p>
+      <h2>Montrez-nous votre tableau.</h2>
+      <p class="lead">Ajoutez une ou deux photos de votre tableau électrique ou de votre projet :
+      le diagnostic est plus rapide et le devis plus juste.</p>
+
+      <div class="devis-box">
+        <form id="devisForm" action="#" novalidate>
+          <div class="f-grid">
+            <div class="field">
+              <label for="f-nom">Votre nom</label>
+              <input type="text" id="f-nom" name="nom" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-tel">Votre téléphone</label>
+              <input type="tel" id="f-tel" name="tel" autocomplete="tel" inputmode="tel" required>
+            </div>
+            <div class="field full">
+              <label for="f-type">Type de demande</label>
+              <select id="f-type" name="type">
+                <option>Dépannage</option>
+                <option>Installation / éclairage</option>
+                <option>Rénovation électrique</option>
+                <option>Mise aux normes</option>
+                <option>Chauffage électrique</option>
+                <option>Plafond suspendu</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="f-msg">Décrivez votre besoin</label>
+              <!-- [À REMPLACER] : exemple de placeholder -->
+              <textarea id="f-msg" name="msg" placeholder="Ex. : tableau ancien à remplacer, maison des années 70…"></textarea>
+            </div>
+            <div class="field full">
+              <label class="upload" for="f-photos">
+                <svg width="34" height="34" aria-hidden="true"><use href="#i-img"/></svg>
+                <strong>Ajouter des photos de votre tableau</strong>
+                <span>JPG ou PNG · jusqu'à 4 photos</span>
+                <input class="sr-only" type="file" id="f-photos" accept="image/*" multiple>
+              </label>
+              <ul id="fileList" aria-live="polite"></ul>
+            </div>
+            <p class="sim-note full">
+              <svg width="18" height="18" aria-hidden="true"><use href="#i-info"/></svg>
+              <span>Démonstration : vos photos restent sur votre téléphone, rien n'est envoyé ni enregistré.</span>
+            </p>
+            <div class="full">
+              <button class="btn btn-y" type="submit" style="width:100%">Envoyer ma demande de devis</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="demo-ok" id="demoOk" hidden tabindex="-1" role="status">
+          <span class="big" aria-hidden="true"><svg width="36" height="36"><use href="#i-check"/></svg></span>
+          <h3>Ceci est une démonstration</h3>
+          <p id="okMsg">En production, votre demande partirait directement chez WS Electricité, qui vous rappellerait pour un devis gratuit.</p>
+          <p>Aucune donnée n'a été envoyée ni conservée.</p>
+          <button class="btn btn-ghost" type="button" id="backBtn">Revenir au formulaire</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PARTICULIERS & PROFESSIONNELS ===================== -->
+  <section class="pro on-dark" id="pro" aria-label="Particuliers et professionnels">
+    <div class="wrap">
+      <p class="kick">Particuliers &amp; professionnels</p>
+      <div class="pro-grid">
+        <div>
+          <h2 style="color:#fff">Un artisan, deux terrains : votre maison, votre activité.</h2>
+          <!-- [À REMPLACER] : formulations d'exemple sur les chantiers pro, à valider avec l'artisan -->
+          <p class="lead">Aux côtés des particuliers au quotidien, WS Electricité accompagne aussi
+          les professionnels d'Épinal dans leurs projets et leurs urgences.</p>
+          <ul>
+            <li>
+              <svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg>
+              <span><strong>Locaux commerciaux &amp; bureaux</strong>
+              <span>Aménagement électrique complet : éclairage, prises, tableau dédié.</span></span>
+            </li>
+            <li>
+              <svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg>
+              <span><strong>Dépannages d'urgence</strong>
+              <span>Une panne qui bloque votre activité : intervention prioritaire, 7 j/7 de 6 h à 20 h.</span></span>
+            </li>
+            <li>
+              <svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg>
+              <span><strong>Suivi &amp; conformité</strong>
+              <span>Installations vérifiées et documentées, prêtes pour vos contrôles.</span></span>
+            </li>
+          </ul>
+          <a class="btn btn-y" href="#devis">Parler de votre projet</a>
+        </div>
+        <figure>
+          <img src="img/electricien-pro.webp" alt="Électricien professionnel en casque de chantier jaune, bras croisés" width="800" height="600" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ZONE D'INTERVENTION ===================== -->
+  <section class="zone" id="zone" aria-label="Zone d'intervention">
+    <div class="wrap">
+      <p class="kick">Zone d'intervention</p>
+      <h2>Épinal et ses alentours.</h2>
+      <p class="lead">Basé rue du Boudiou, au cœur d'Épinal, avec des déplacements rapides dans tout le secteur.</p>
+      <!-- [À REMPLACER] : liste de communes d'exemple, périmètre exact à valider avec l'artisan -->
+      <div class="chips">
+        <span class="chip main">Épinal</span>
+        <span class="chip">Golbey</span>
+        <span class="chip">Chantraine</span>
+        <span class="chip">Dinozé</span>
+        <span class="chip">Jeuxey</span>
+        <span class="chip">Deyvillers</span>
+        <span class="chip">Chavelot</span>
+        <span class="chip">Thaon-les-Vosges</span>
+        <span class="chip">Arches</span>
+        <span class="chip">… et au-delà sur demande</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AVIS ===================== -->
+  <section class="avis" id="avis" aria-label="Avis clients">
+    <div class="wrap">
+      <p class="kick">Avis clients</p>
+      <h2>5,0 sur 5 — la note parle d'elle-même.</h2>
+      <!-- [À REMPLACER] : extraits illustratifs, à remplacer par de vrais avis Google de l'établissement -->
+      <div class="avis-grid">
+        <article class="avis-card">
+          <p class="stars" aria-label="5 étoiles sur 5">★★★★★</p>
+          <blockquote>« Travail soigné et explications claires du début à la fin. »</blockquote>
+          <cite>Avis Google — extrait d'illustration</cite>
+        </article>
+        <article class="avis-card">
+          <p class="stars" aria-label="5 étoiles sur 5">★★★★★</p>
+          <blockquote>« Intervenu très vite pour une panne, efficace et de bon conseil. »</blockquote>
+          <cite>Avis Google — extrait d'illustration</cite>
+        </article>
+        <article class="avis-card">
+          <p class="stars" aria-label="5 étoiles sur 5">★★★★★</p>
+          <blockquote>« Aménagement de notre local impeccable, délais tenus. »</blockquote>
+          <cite>Avis Google — extrait d'illustration</cite>
+        </article>
+      </div>
+      <p class="avis-total"><b>5,0★</b> sur 20 avis Google</p>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== FOOTER / NAP ===================== -->
+<footer id="contact" class="on-dark">
+  <div class="wrap ft-grid">
+    <div class="ft">
+      <h3>WS Electricité</h3>
+      <p style="max-width:38ch">Électricien à Épinal — installation, rénovation, dépannage, mise aux normes,
+      chauffage électrique et plafonds suspendus. Particuliers &amp; professionnels.</p>
+    </div>
+    <div class="ft">
+      <h3>Contact</h3>
+      <a class="tel-big" href="tel:+33686566058">
+        <svg width="20" height="20" aria-hidden="true"><use href="#i-phone"/></svg>
+        06 86 56 60 58</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=WS+Electricit%C3%A9+16+rue+du+Boudiou+88000+%C3%89pinal" target="_blank" rel="noopener">
+        <svg width="20" height="20" aria-hidden="true"><use href="#i-pin"/></svg>
+        16 rue du Boudiou, 88000 Épinal</a>
+    </div>
+    <div class="ft">
+      <h3>Horaires</h3>
+      <p style="display:flex;gap:9px;align-items:center">
+        <svg width="20" height="20" aria-hidden="true"><use href="#i-clock"/></svg>
+        7 j/7 — 6 h à 20 h</p>
+      <p style="margin-top:10px;color:#9FACC6;font-size:.9rem">Devis gratuit sur simple appel ou via le formulaire.</p>
+    </div>
+  </div>
+  <div class="wrap ft-bottom">
+    <p>WS Electricité · 16 rue du Boudiou, 88000 Épinal · Photos d'illustration libres de droits (Pexels/Unsplash).</p>
+    <!-- [À REMPLACER] : mentions légales complètes (SIRET, assurance décennale, TVA) à fournir par l'artisan -->
+  </div>
+</footer>
+
+<div class="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</div>
+
+<script>
+(function(){
+  "use strict";
+  /* Badge horaires : ouvert 6 h - 20 h, 7 j/7 */
+  var badge=document.getElementById('openBadge');
+  var h=new Date().getHours();
+  var open=h>=6&&h<20;
+  badge.innerHTML='<span class="dot'+(open?' pulse':'')+'" aria-hidden="true"></span> '+
+    (open?'Ouvert maintenant · 6 h - 20 h, 7 j/7':'6 h - 20 h, 7 j/7 — rappel dès 6 h');
+  if(!open){badge.classList.add('closed');}
+
+  /* Upload photos — simulation 100 % locale (aucun envoi) */
+  var input=document.getElementById('f-photos');
+  var list=document.getElementById('fileList');
+  var files=[];
+  function fmt(n){return n>1048576?(n/1048576).toFixed(1)+' Mo':Math.max(1,Math.round(n/1024))+' Ko';}
+  function render(){
+    list.innerHTML='';
+    files.forEach(function(f,i){
+      var li=document.createElement('li');
+      var sv=document.createElementNS('http://www.w3.org/2000/svg','svg');
+      sv.setAttribute('width','18');sv.setAttribute('height','18');sv.setAttribute('aria-hidden','true');
+      var use=document.createElementNS('http://www.w3.org/2000/svg','use');
+      use.setAttribute('href','#i-img');sv.appendChild(use);
+      var name=document.createElement('span');name.textContent=f.name;
+      var size=document.createElement('span');size.className='fsize';size.textContent=fmt(f.size);
+      var rm=document.createElement('button');rm.type='button';rm.textContent='×';
+      rm.setAttribute('aria-label','Retirer '+f.name);
+      rm.addEventListener('click',function(){files.splice(i,1);render();});
+      li.appendChild(sv);li.appendChild(name);li.appendChild(size);li.appendChild(rm);
+      list.appendChild(li);
+    });
+  }
+  input.addEventListener('change',function(){
+    Array.prototype.slice.call(input.files,0,4-files.length).forEach(function(f){files.push({name:f.name,size:f.size});});
+    input.value='';
+    render();
+  });
+
+  /* Soumission simulée → écran démonstration */
+  var form=document.getElementById('devisForm');
+  var ok=document.getElementById('demoOk');
+  var okMsg=document.getElementById('okMsg');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=files.length;
+    var sujet=n?('votre demande et '+(n>1?'vos '+n+' photos partiraient':'votre photo partiraient')):'votre demande partirait';
+    okMsg.textContent='En production, '+sujet+' directement chez WS Electricité, qui vous rappellerait pour un devis gratuit.';
+    form.hidden=true;ok.hidden=false;ok.focus();
+  });
+  document.getElementById('backBtn').addEventListener('click',function(){
+    ok.hidden=true;form.hidden=false;document.getElementById('f-nom').focus();
+  });
+})();
+</script>
+</body>
+</html>

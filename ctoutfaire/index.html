@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#38424D">
+<title>C'Toutfaire — Plombier multiservices à Épinal | Fuites, chauffe-eau, petits travaux</title>
+<meta name="description" content="C'Toutfaire, plombier multiservices à Épinal : dépannage plomberie, remplacement de chauffe-eau, montage et petits travaux. Un seul artisan, plusieurs métiers. 06 64 67 12 09.">
+
+<!-- Police : Rubik (unique famille), chargement non bloquant -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400..800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400..800&display=swap"></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "C'Toutfaire",
+  "description": "Plombier multiservices à Épinal : plomberie, sanitaire, chauffe-eau, montage et petits travaux.",
+  "telephone": "+33664671209",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "37 rue Dom Pothier",
+    "postalCode": "88000",
+    "addressLocality": "Épinal",
+    "addressCountry": "FR"
+  },
+  "areaServed": "Épinal et alentours",
+  "image": "img/hero-atelier.webp",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "66"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "17:30"
+  }]
+}
+</script>
+
+<style>
+:root{
+  --sauge:#E8EDE3;
+  --sauge-2:#DDE5D3;
+  --lisere:#C5D2B8;
+  --vert:#45573C;
+  --vert-fonce:#36452F;
+  --ardoise:#38424D;
+  --ardoise-fonce:#2C343D;
+  --encre:#2A332C;
+  --blanc:#FFFFFF;
+  /* signature : coins coupés, jamais d'arrondis */
+  --coupe:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,0 100%);
+  --coupe2:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));
+  --coupe-s:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+body{
+  font-family:'Rubik',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  background:var(--sauge);color:var(--encre);
+  font-size:1.0625rem;line-height:1.6;
+  overflow-x:clip;
+  padding-bottom:84px; /* place pour le bandeau légal fixe */
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--vert-fonce)}
+:focus-visible{outline:3px solid var(--vert);outline-offset:3px}
+.sur-sombre :focus-visible,header :focus-visible{outline-color:var(--sauge)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--blanc);color:var(--vert-fonce);padding:12px 18px;z-index:300;font-weight:700}
+.skip:focus{left:8px;top:8px}
+.wrap{max-width:1100px;margin-inline:auto;padding-inline:20px}
+h1,h2,h3{line-height:1.15;font-weight:800;letter-spacing:-.01em}
+h2{font-size:clamp(1.5rem,4.5vw,2.1rem);color:var(--ardoise)}
+section{padding:56px 0}
+.sous-titre{margin:10px 0 30px;max-width:46ch;color:#46524A}
+
+/* ===== Boutons (tap >= 48px) ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:52px;padding:12px 24px;font:inherit;font-weight:700;font-size:1.05rem;
+  text-decoration:none;border:0;cursor:pointer;clip-path:var(--coupe-s);
+  transition:transform .15s,background-color .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-vert{background:var(--vert);color:var(--blanc)}
+.btn-vert:hover{background:var(--vert-fonce)}
+.btn-clair{background:var(--sauge);color:var(--ardoise-fonce)}
+.btn-contour{background:transparent;color:var(--blanc);box-shadow:inset 0 0 0 2px var(--sauge);clip-path:none}
+.btn svg{flex:none}
+
+/* ===== Header ===== */
+header{position:sticky;top:0;z-index:90;background:var(--ardoise);color:var(--blanc)}
+.barre{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.logo{display:flex;align-items:center;gap:10px;color:var(--blanc);text-decoration:none;font-weight:800;font-size:1.25rem;min-height:44px}
+.logo .puce{width:34px;height:34px;background:var(--vert);display:grid;place-items:center;clip-path:var(--coupe-s);flex:none}
+.logo small{display:block;font-size:.7rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#C7D2BC;line-height:1.2}
+.tel-header{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:8px 16px;
+  background:var(--sauge);color:var(--ardoise-fonce);font-weight:700;text-decoration:none;clip-path:var(--coupe-s);white-space:nowrap}
+@media (max-width:519px){
+  .logo small{display:none}
+  .tel-header{padding:8px 12px;font-size:.98rem}
+}
+
+/* ===== Hero : photo + panneau ardoise ===== */
+.hero{position:relative;padding:0}
+.hero img{width:100%;height:clamp(300px,48vh,500px);object-fit:cover}
+.panneau{position:relative;z-index:2;margin-top:-84px;max-width:620px;
+  background:var(--ardoise);color:var(--blanc);padding:28px 26px 30px;
+  clip-path:var(--coupe);border-left:6px solid var(--vert)}
+.panneau h1{font-size:clamp(1.6rem,5.4vw,2.4rem);color:var(--blanc)}
+.panneau .accroche{margin:12px 0 18px;color:#D8DEE5;max-width:50ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{display:inline-flex;align-items:center;gap:6px;background:var(--ardoise-fonce);color:var(--sauge);
+  font-size:.85rem;font-weight:600;padding:6px 12px;clip-path:var(--coupe-s)}
+.chip svg{flex:none}
+.cta-rang{display:flex;flex-wrap:wrap;gap:12px}
+
+/* ===== Badges métier ===== */
+.badge{display:inline-block;background:var(--vert);color:var(--blanc);font-size:.72rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;padding:4px 12px;clip-path:var(--coupe-s)}
+
+/* ===== Wow : tuiles problème ===== */
+#probleme{background:var(--sauge)}
+.tuiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.tuile{display:flex;flex-direction:column;align-items:flex-start;gap:10px;
+  min-height:128px;padding:18px;font:inherit;text-align:left;cursor:pointer;
+  background:var(--blanc);color:var(--ardoise);border:2px solid var(--lisere);
+  clip-path:var(--coupe2);transition:border-color .15s,transform .15s}
+.tuile:hover{border-color:var(--vert);transform:translateY(-2px)}
+.tuile[aria-pressed="true"]{border-color:var(--vert);background:var(--sauge-2)}
+.tuile svg{color:var(--vert)}
+.tuile strong{font-size:1.1rem;font-weight:700}
+.tuile span{font-size:.88rem;color:#51604F;line-height:1.35}
+#tuile-status{margin-top:16px;min-height:1.6em;font-weight:600;color:var(--vert-fonce)}
+
+/* ===== Prestations ===== */
+#prestations{background:var(--blanc)}
+.grille{display:grid;grid-template-columns:1fr;gap:16px}
+.carte{background:var(--sauge);padding:22px;clip-path:var(--coupe);border-bottom:4px solid var(--vert)}
+.carte .haut{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.carte svg{color:var(--vert)}
+.carte h3{font-size:1.15rem;color:var(--ardoise);margin-bottom:6px}
+.carte p{font-size:.95rem;color:#43504A}
+.figure-presta{margin-top:26px;clip-path:var(--coupe)}
+
+/* ===== Engagements (fond ardoise) ===== */
+#engagements{background:var(--ardoise);color:var(--blanc)}
+#engagements h2{color:var(--blanc)}
+#engagements .sous-titre{color:#C9D1D9}
+.engagements-grille{display:grid;grid-template-columns:1fr;gap:16px}
+.engagement{background:var(--ardoise-fonce);padding:22px;clip-path:var(--coupe);border-left:5px solid var(--vert)}
+.engagement .num{font-size:.8rem;font-weight:800;letter-spacing:.18em;color:#9FB18F;text-transform:uppercase}
+.engagement h3{margin:8px 0 8px;font-size:1.2rem;color:var(--sauge)}
+.engagement p{color:#D2D9E0;font-size:.97rem}
+.figure-atelier{margin-top:26px;clip-path:var(--coupe)}
+
+/* ===== Avis ===== */
+#avis{background:var(--sauge-2)}
+.note-bloc{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin-bottom:26px}
+.note-bloc .note{font-size:2.6rem;font-weight:800;color:var(--ardoise);line-height:1}
+.avis-grille{display:grid;grid-template-columns:1fr;gap:14px}
+.avis{background:var(--blanc);padding:20px;clip-path:var(--coupe)}
+.avis blockquote{font-weight:500;color:var(--encre)}
+.avis footer{margin-top:10px;font-size:.85rem;color:#5A6660}
+
+/* ===== Zone ===== */
+#zone{background:var(--blanc)}
+.communes{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 22px;list-style:none}
+.communes li{background:var(--sauge);color:var(--vert-fonce);font-weight:600;font-size:.95rem;
+  padding:10px 16px;clip-path:var(--coupe-s)}
+
+/* ===== Formulaire ===== */
+#demande{background:var(--sauge)}
+form{display:grid;gap:18px;max-width:640px}
+label{font-weight:700;color:var(--ardoise);display:block;margin-bottom:6px}
+input,select,textarea{width:100%;min-height:52px;padding:12px 14px;font:inherit;color:var(--encre);
+  background:var(--blanc);border:2px solid #9FB18F}
+textarea{min-height:130px;resize:vertical}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--vert);outline-offset:2px;border-color:var(--vert)}
+.note-demo{font-size:.85rem;color:#5A6660}
+#demo-ecran{max-width:640px;background:var(--ardoise);color:var(--blanc);padding:30px 26px;clip-path:var(--coupe);border-left:6px solid var(--vert)}
+#demo-ecran h3{font-size:1.5rem;color:var(--sauge);margin-bottom:12px}
+#demo-ecran h3:focus-visible,#demo-ecran h3:focus{outline:none}
+#demo-ecran p{color:#D8DEE5;margin-bottom:12px}
+
+/* ===== Footer ===== */
+.pied{background:var(--ardoise-fonce);color:#D2D9E0;padding:48px 0 40px}
+.pied h2{color:var(--sauge);font-size:1.3rem;margin-bottom:18px}
+.pied-grille{display:grid;grid-template-columns:1fr;gap:22px}
+.pied a{color:var(--sauge);display:inline-flex;align-items:center;gap:8px;min-height:44px;text-decoration:underline}
+.pied strong{color:var(--blanc)}
+.pied ul{list-style:none}
+.pied .micro{margin-top:26px;font-size:.8rem;color:#97A2AC}
+
+/* ===== Bandeau légal fixe ===== */
+.legal{position:fixed;left:0;right:0;bottom:0;z-index:200;background:var(--ardoise-fonce);color:#D7DEE5;
+  font-size:.75rem;line-height:1.45;text-align:center;padding:9px 14px;border-top:1px solid #46525E}
+
+/* ===== >= 800px ===== */
+@media (min-width:800px){
+  section{padding:76px 0}
+  .tuiles{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .grille{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .engagements-grille{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .avis-grille{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .pied-grille{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .panneau{margin-top:-120px;padding:36px 38px 38px}
+  .duo{display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:start}
+  .figure-presta,.figure-atelier{margin-top:0}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header>
+  <div class="wrap barre">
+    <a class="logo" href="#contenu">
+      <span class="puce" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      </span>
+      <span>C'Toutfaire<small>Plombier multiservices · Épinal</small></span>
+    </a>
+    <a class="tel-header" href="tel:+33664671209" aria-label="Appeler C'Toutfaire au 06 64 67 12 09">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.6 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+      06 64 67 12 09
+    </a>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <img src="img/hero-atelier.webp" width="1300" height="840" alt="Mur d'atelier avec des outils à bois soigneusement rangés" fetchpriority="high" decoding="async">
+    <div class="wrap">
+      <div class="panneau sur-sombre">
+        <div class="chips">
+          <span class="chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#E3B33C" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            4,8 sur 5 — 66 avis Google
+          </span>
+          <span class="chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Épinal et alentours
+          </span>
+        </div>
+        <h1>Plomberie &amp; petits travaux à Épinal</h1>
+        <p class="accroche">Un seul artisan, plusieurs métiers. Fuite, chauffe-eau, montage, réparation : vous appelez une fois, c'est réglé.</p>
+        <div class="cta-rang">
+          <a class="btn btn-clair" href="#probleme">Décrire mon problème</a>
+          <a class="btn btn-contour" href="tel:+33664671209">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.6 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+            06 64 67 12 09
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== WOW : sélecteur de problème ===== -->
+  <section id="probleme" aria-labelledby="titre-probleme">
+    <div class="wrap">
+      <span class="badge">En 10 secondes</span>
+      <h2 id="titre-probleme">Quel est votre problème&nbsp;?</h2>
+      <p class="sous-titre">Touchez une tuile&nbsp;: votre demande se remplit toute seule, il ne reste qu'à l'envoyer.</p>
+      <!-- [À REMPLACER] : messages d'exemple pré-remplis, à ajuster avec l'artisan -->
+      <div class="tuiles">
+        <button class="tuile" type="button" aria-pressed="false" data-type="fuite" data-label="Fuite d'eau"
+          data-msg="Bonjour, j'ai une fuite sous l'évier de la cuisine. J'ai fermé le robinet d'arrêt. Pouvez-vous passer rapidement ?">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.69C12 2.69 5.5 9.9 5.5 14.5a6.5 6.5 0 0 0 13 0C18.5 9.9 12 2.69 12 2.69z"/></svg>
+          <strong>Fuite d'eau</strong>
+          <span>Robinet, évier, WC, tuyau qui goutte</span>
+        </button>
+        <button class="tuile" type="button" aria-pressed="false" data-type="chauffe-eau" data-label="Chauffe-eau"
+          data-msg="Bonjour, mon chauffe-eau ne chauffe plus depuis ce matin (ballon électrique). Quel délai pour un dépannage ou un remplacement ?">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c0 5-5.5 6.5-5.5 12a5.5 5.5 0 0 0 11 0C17.5 9.5 13.5 8 12 2z"/><path d="M12 18a2.5 2.5 0 0 0 2.5-2.5c0-1.5-1.2-2.3-2.5-4-1.3 1.7-2.5 2.5-2.5 4A2.5 2.5 0 0 0 12 18z"/></svg>
+          <strong>Chauffe-eau</strong>
+          <span>Plus d'eau chaude, panne, remplacement</span>
+        </button>
+        <button class="tuile" type="button" aria-pressed="false" data-type="petits-travaux" data-label="Petits travaux"
+          data-msg="Bonjour, j'aurais deux étagères et une tringle à rideaux à fixer, et une porte qui frotte à reprendre. Quelles sont vos disponibilités ?">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          <strong>Petits travaux</strong>
+          <span>Montage, fixations, petites réparations</span>
+        </button>
+        <button class="tuile" type="button" aria-pressed="false" data-type="autre" data-label="Autre demande"
+          data-msg="Bonjour, voici mon besoin : ">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <strong>Autre</strong>
+          <span>Décrivez, on vous dit si c'est possible</span>
+        </button>
+      </div>
+      <p id="tuile-status" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- ===== PRESTATIONS ===== -->
+  <section id="prestations" aria-labelledby="titre-prestations">
+    <div class="wrap">
+      <span class="badge">Multi-métiers</span>
+      <h2 id="titre-prestations">Ce que C'Toutfaire fait pour vous</h2>
+      <p class="sous-titre">Le cœur du métier, c'est la plomberie. Autour, tout ce qui rend service dans une maison.</p>
+      <div class="duo">
+        <div class="grille">
+          <!-- [À REMPLACER] : intitulés et exemples de prestations à valider avec l'artisan -->
+          <div class="carte">
+            <div class="haut">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.69C12 2.69 5.5 9.9 5.5 14.5a6.5 6.5 0 0 0 13 0C18.5 9.9 12 2.69 12 2.69z"/></svg>
+              <span class="badge">Plomberie</span>
+            </div>
+            <h3>Fuites &amp; robinetterie</h3>
+            <p>Recherche de fuite, remplacement de robinets, joints, flexibles, chasses d'eau.</p>
+          </div>
+          <div class="carte">
+            <div class="haut">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V8a4 4 0 0 1 4-4h1a4 4 0 0 1 4 4v1"/><path d="M13 9h4"/><path d="M15 9v3"/><path d="M11 16l1.5 1.5"/><path d="M15 14l1.5 1.5"/><path d="M18 11.5 19.5 13"/></svg>
+              <span class="badge">Sanitaire</span>
+            </div>
+            <h3>Salle de bains &amp; WC</h3>
+            <p>Pose et remplacement de lavabos, éviers, WC, colonnes et parois de douche.</p>
+          </div>
+          <div class="carte">
+            <div class="haut">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="17"/><path d="M10 22v-3"/><path d="M14 22v-3"/><path d="M12 6c-1 1.4-2 2.2-2 3.4a2 2 0 0 0 4 0C14 8.2 13 7.4 12 6z"/><path d="M10 14h4"/></svg>
+              <span class="badge">Chauffe-eau</span>
+            </div>
+            <h3>Dépannage &amp; remplacement</h3>
+            <p>Diagnostic, résistance, groupe de sécurité, remplacement complet du ballon.</p>
+          </div>
+          <div class="carte">
+            <div class="haut">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              <span class="badge">Montage</span>
+            </div>
+            <h3>Montage &amp; fixations</h3>
+            <p>Meubles en kit, tringles, étagères, supports TV, luminaires — fixés droit, fixés solide.</p>
+          </div>
+          <div class="carte">
+            <div class="haut">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+              <span class="badge">Entretien</span>
+            </div>
+            <h3>Entretien de la maison</h3>
+            <p>Détartrage du chauffe-eau, joints silicone, robinetterie : on entretient avant que ça casse.</p>
+          </div>
+          <div class="carte">
+            <div class="haut">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span class="badge">Dépannage</span>
+            </div>
+            <h3>Petits dépannages</h3>
+            <p>Porte qui frotte, siphon bouché, chasse d'eau qui coule : les petites pannes du quotidien.</p>
+          </div>
+        </div>
+        <img class="figure-presta" src="img/outils-bois.webp" width="800" height="600" alt="Scie, perceuse et marteau disposés sur des planches de bois" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ENGAGEMENTS ===== -->
+  <section id="engagements" class="sur-sombre" aria-labelledby="titre-engagements">
+    <div class="wrap">
+      <span class="badge">La méthode</span>
+      <h2 id="titre-engagements">Trois engagements, tenus</h2>
+      <p class="sous-titre">Ce que les clients disent retrouver à chaque intervention.</p>
+      <!-- [À REMPLACER] : formulations d'exemple inspirées des thèmes récurrents des avis publics, à valider avec l'artisan -->
+      <div class="duo">
+        <div class="engagements-grille">
+          <div class="engagement">
+            <span class="num">01 — Réactivité</span>
+            <h3>Réactif quand ça presse</h3>
+            <p>Un chauffe-eau en panne n'attend pas une semaine. Exemple récent&nbsp;: ballon remplacé en environ 30&nbsp;heures, diagnostic compris.</p>
+          </div>
+          <div class="engagement">
+            <span class="num">02 — Transparence</span>
+            <h3>Tout est expliqué avant</h3>
+            <p>Ce qui sera fait, comment, et pour quel prix. Vous validez avant que le chantier commence. Pas de jargon, pas de surprise.</p>
+          </div>
+          <div class="engagement">
+            <span class="num">03 — Simplicité</span>
+            <h3>Un seul interlocuteur</h3>
+            <p>Plomberie, fixations, petites réparations&nbsp;: une seule personne à appeler, un seul devis, un chantier coordonné.</p>
+          </div>
+        </div>
+        <img class="figure-atelier" src="img/outillage.webp" width="800" height="600" alt="Râtelier de pinces et d'outils dans l'atelier" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AVIS ===== -->
+  <section id="avis" aria-labelledby="titre-avis">
+    <div class="wrap">
+      <span class="badge">Avis Google</span>
+      <h2 id="titre-avis">Ils ont appelé une fois, c'était réglé</h2>
+      <div class="note-bloc">
+        <span class="note">4,8<span style="font-size:1.2rem;color:#5A6660">/5</span></span>
+        <svg width="130" height="26" viewBox="0 0 130 26" aria-hidden="true">
+          <defs><linearGradient id="demi"><stop offset="80%" stop-color="#B07D00"/><stop offset="80%" stop-color="#C9CFC4"/></linearGradient></defs>
+          <g fill="#B07D00">
+            <polygon points="13 1 16.4 7.9 24 9 18.5 14.3 19.8 21.9 13 18.3 6.2 21.9 7.5 14.3 2 9 9.6 7.9"/>
+            <polygon points="39 1 42.4 7.9 50 9 44.5 14.3 45.8 21.9 39 18.3 32.2 21.9 33.5 14.3 28 9 35.6 7.9" />
+            <polygon points="65 1 68.4 7.9 76 9 70.5 14.3 71.8 21.9 65 18.3 58.2 21.9 59.5 14.3 54 9 61.6 7.9"/>
+            <polygon points="91 1 94.4 7.9 102 9 96.5 14.3 97.8 21.9 91 18.3 84.2 21.9 85.5 14.3 80 9 87.6 7.9"/>
+          </g>
+          <polygon fill="url(#demi)" points="117 1 120.4 7.9 128 9 122.5 14.3 123.8 21.9 117 18.3 110.2 21.9 111.5 14.3 106 9 113.6 7.9"/>
+        </svg>
+        <span><strong>4,8 sur 5</strong> — 66 avis Google</span>
+      </div>
+      <!-- [À REMPLACER] : extraits illustratifs (moins de 15 mots), à remplacer par de vrais extraits choisis avec l'artisan -->
+      <div class="avis-grille">
+        <article class="avis">
+          <blockquote>«&nbsp;Travail rapide et soigné, avec des explications claires du début à la fin.&nbsp;»</blockquote>
+          <footer>Avis Google — extrait d'illustration</footer>
+        </article>
+        <article class="avis">
+          <blockquote>«&nbsp;Chauffe-eau remplacé en trente heures, prix annoncé respecté. Je recommande.&nbsp;»</blockquote>
+          <footer>Avis Google — extrait d'illustration</footer>
+        </article>
+        <article class="avis">
+          <blockquote>«&nbsp;Ponctuel, efficace et de bon conseil, même pour les petits travaux.&nbsp;»</blockquote>
+          <footer>Avis Google — extrait d'illustration</footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ZONE ===== -->
+  <section id="zone" aria-labelledby="titre-zone">
+    <div class="wrap">
+      <span class="badge">Secteur</span>
+      <h2 id="titre-zone">Zone d'intervention</h2>
+      <p class="sous-titre">Basé rue Dom Pothier, à Épinal. Déplacements dans la ville et les communes voisines.</p>
+      <!-- [À REMPLACER] : liste de communes d'exemple, à valider avec l'artisan -->
+      <ul class="communes">
+        <li>Épinal</li><li>Golbey</li><li>Chantraine</li><li>Deyvillers</li><li>Jeuxey</li>
+        <li>Dinozé</li><li>Dogneville</li><li>Les Forges</li><li>Arches</li><li>Thaon-les-Vosges</li>
+      </ul>
+      <p>Vous êtes un peu plus loin&nbsp;? <a href="#demande">Demandez quand même</a>&nbsp;: la réponse est gratuite.</p>
+    </div>
+  </section>
+
+  <!-- ===== DEMANDE ===== -->
+  <section id="demande" aria-labelledby="titre-demande">
+    <div class="wrap">
+      <span class="badge">Réponse rapide</span>
+      <h2 id="titre-demande">Décrivez, on s'occupe du reste</h2>
+      <p class="sous-titre">Laissez votre demande&nbsp;: vous êtes rappelé pour un rendez-vous ou un devis gratuit.</p>
+      <div aria-live="polite">
+        <form id="form-demande" novalidate>
+          <div>
+            <label for="type">Type d'intervention</label>
+            <select id="type" name="type" required>
+              <option value="" selected>Choisissez un type d'intervention</option>
+              <option value="fuite">Fuite d'eau</option>
+              <option value="chauffe-eau">Chauffe-eau</option>
+              <option value="petits-travaux">Petits travaux &amp; fixations</option>
+              <option value="autre">Autre demande</option>
+            </select>
+          </div>
+          <div>
+            <label for="nom">Votre nom</label>
+            <input id="nom" name="nom" type="text" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="telephone">Votre téléphone</label>
+            <input id="telephone" name="telephone" type="tel" autocomplete="tel" inputmode="tel" required>
+          </div>
+          <div>
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" placeholder="Décrivez le problème en quelques mots…"></textarea>
+          </div>
+          <div>
+            <button class="btn btn-vert" type="submit">Envoyer ma demande</button>
+          </div>
+          <p class="note-demo">Démonstration&nbsp;: aucune donnée n'est envoyée ni conservée.</p>
+        </form>
+        <div id="demo-ecran" hidden>
+          <h3 tabindex="-1">Ceci est une démonstration</h3>
+          <p>Sur le site définitif, votre demande arriverait immédiatement à l'artisan, avec votre numéro pour vous rappeler.</p>
+          <!-- [À REMPLACER] : délai de rappel d'exemple, à valider avec l'artisan -->
+          <p>En production&nbsp;: accusé de réception instantané et rappel sous 24&nbsp;h ouvrées.</p>
+          <button class="btn btn-clair" type="button" id="btn-retour">Revenir au formulaire</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER NAP ===== -->
+<footer class="pied sur-sombre">
+  <div class="wrap">
+    <h2>C'Toutfaire — plombier multiservices à Épinal</h2>
+    <div class="pied-grille">
+      <div>
+        <strong>Adresse</strong>
+        <p><a href="https://www.google.com/maps/search/?api=1&amp;query=C%27Toutfaire%2C+37+rue+Dom+Pothier%2C+88000+%C3%89pinal" target="_blank" rel="noopener">37 rue Dom Pothier,<br>88000 Épinal</a></p>
+      </div>
+      <div>
+        <strong>Téléphone</strong>
+        <p><a href="tel:+33664671209">06 64 67 12 09</a></p>
+        <p>4,8★ — 66 avis Google</p>
+      </div>
+      <div>
+        <strong>Horaires</strong>
+        <ul>
+          <li>Lundi – vendredi : 9 h – 17 h 30</li>
+          <li>Samedi – dimanche : fermé</li>
+        </ul>
+      </div>
+    </div>
+    <p class="micro">Maquette de démonstration — contenus d'exemple. Photos d'illustration libres de droits (Unsplash/Pexels).</p>
+  </div>
+</footer>
+
+<!-- Bandeau légal obligatoire -->
+<div class="legal" role="contentinfo">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</div>
+
+<script>
+(function(){
+  var reduit = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var tuiles = document.querySelectorAll('.tuile');
+  var champType = document.getElementById('type');
+  var champMsg = document.getElementById('message');
+  var statut = document.getElementById('tuile-status');
+  var form = document.getElementById('form-demande');
+  var ecran = document.getElementById('demo-ecran');
+
+  tuiles.forEach(function(t){
+    t.addEventListener('click', function(){
+      tuiles.forEach(function(o){ o.setAttribute('aria-pressed','false'); });
+      t.setAttribute('aria-pressed','true');
+      if (ecran && !ecran.hidden){ ecran.hidden = true; form.hidden = false; }
+      champType.value = t.dataset.type;
+      champMsg.value = t.dataset.msg;
+      statut.textContent = 'Demande pré-remplie : ' + t.dataset.label + '. Le formulaire est prêt plus bas, vérifiez puis envoyez.';
+      document.getElementById('demande').scrollIntoView({ behavior: reduit.matches ? 'auto' : 'smooth' });
+      setTimeout(function(){ champType.focus({ preventScroll: true }); }, reduit.matches ? 0 : 500);
+    });
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (!form.checkValidity()){ form.reportValidity(); return; }
+    form.hidden = true;
+    ecran.hidden = false;
+    ecran.querySelector('h3').focus();
+  });
+
+  document.getElementById('btn-retour').addEventListener('click', function(){
+    ecran.hidden = true;
+    form.hidden = false;
+    champType.focus();
+  });
+})();
+</script>
+</body>
+</html>

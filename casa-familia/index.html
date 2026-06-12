@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#C0613B">
+<title>Casa Familia — Pizzeria à Épinal · Pizzas à emporter, fidélité 10+1</title>
+<meta name="description" content="Casa Familia, pizzeria familiale à Épinal — 4,9★ sur Google (123 avis). Pizzas artisanales à emporter, commande en ligne, carte de fidélité 10+1. Mardi-samedi midi et soir, dimanche soir.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap"></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Casa Familia",
+  "servesCuisine": ["Pizza"],
+  "priceRange": "€",
+  "telephone": "+33372739431",
+  "acceptsReservations": "False",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "30 rue de l'Épargne",
+    "postalCode": "88000",
+    "addressLocality": "Épinal",
+    "addressCountry": "FR"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Casa+Familia+30+rue+de+l%27Epargne+88000+Epinal",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "123"
+  },
+  "potentialAction": {
+    "@type": "OrderAction",
+    "deliveryMethod": "http://purl.org/goodrelations/v1#DeliveryModePickUp"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "11:00",
+      "closes": "14:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "18:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "18:00",
+      "closes": "22:00"
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --cream:#FBF3E4; --cream2:#F5E8CE; --paper:#FFFDF6;
+  --terra:#C0613B; --terra-deep:#9C4A28; --terra-tint:#F2DCC9;
+  --rose:#5A6B4F; --rose-deep:#46543D;
+  --ink:#332E25; --muted:#6B6352; --line:#E4D4B6;
+  --legal-h:96px;
+  --fd:'Caveat',cursive;
+  --fb:'Nunito Sans',system-ui,Segoe UI,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+body{
+  margin:0;font-family:var(--fb);font-size:1rem;line-height:1.6;
+  color:var(--ink);background:var(--cream);
+  padding-bottom:calc(var(--legal-h) + 12px);overflow-x:hidden;
+}
+body.lock{overflow:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--terra-deep)}
+:focus-visible{outline:3px solid var(--terra-deep);outline-offset:2px;border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-9999px;top:0;background:var(--terra-deep);color:#fff;padding:.9rem 1.2rem;z-index:90;font-weight:800;border-radius:0 0 10px 0}
+.skip:focus-visible{left:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 1.15rem}
+section{scroll-margin-top:.8rem}
+
+h1,h2,h3{margin:0;line-height:1.12}
+h1{font:800 clamp(2.05rem,7.2vw,3.4rem)/1.07 var(--fb);letter-spacing:-.01em}
+.hand{font-family:var(--fd);font-weight:700}
+.sec-head{max-width:46rem;margin:0 auto 2rem;text-align:center}
+.sec-head h2{font:700 clamp(2.3rem,6vw,3.1rem)/1.05 var(--fd);color:var(--terra-deep)}
+.eyebrow{margin:0 0 .2rem;font-size:.82rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep)}
+.sec-head p{color:var(--muted);margin:.6rem 0 0}
+.ic{width:1.1em;height:1.1em;fill:currentColor;vertical-align:-.18em;flex:none}
+
+/* ---- boutons ---- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  min-height:48px;padding:.65rem 1.4rem;border-radius:999px;border:2px solid transparent;
+  font:800 1rem var(--fb);text-decoration:none;cursor:pointer;transition:transform .15s,background .15s}
+.btn:active{transform:scale(.97)}
+.btn-p{background:var(--terra-deep);color:#fff}
+.btn-p:hover{background:#86401f}
+.btn-o{border-color:var(--rose-deep);color:var(--rose-deep);background:transparent}
+.btn-o:hover{background:var(--rose-deep);color:#fff}
+
+/* ---- header ---- */
+header{padding:.9rem 0 .4rem}
+.topbar{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .9rem}
+.brand{display:flex;flex-direction:column;text-decoration:none;color:var(--ink)}
+.brand b{font:800 1.45rem/1 var(--fb);letter-spacing:-.01em}
+.brand span{font:600 1.15rem/1.1 var(--fd);color:var(--terra-deep)}
+.top-tel{margin-left:auto;display:inline-flex;align-items:center;gap:.45rem;min-height:44px;
+  padding:.35rem .95rem;border-radius:999px;background:var(--terra-tint);color:var(--terra-deep);
+  font-weight:800;text-decoration:none;font-size:.95rem}
+nav.main{margin-top:.45rem}
+nav.main ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.1rem .2rem}
+nav.main a{display:inline-flex;align-items:center;min-height:44px;padding:.4rem .7rem;
+  font-weight:700;font-size:.92rem;color:var(--ink);text-decoration:none;border-radius:8px}
+nav.main a:hover{color:var(--terra-deep);background:var(--cream2)}
+
+/* ---- hero ---- */
+.hero{padding:1.6rem 0 2.6rem;background:linear-gradient(180deg,var(--cream) 0%,var(--cream2) 100%)}
+.hero-grid{display:grid;gap:1.8rem;align-items:center}
+.hero .hand-kick{font:700 1.7rem/1 var(--fd);color:var(--terra);display:block;margin-bottom:.5rem;transform:rotate(-1.5deg)}
+.rating{display:inline-flex;align-items:center;gap:.5rem;margin:.9rem 0 0;padding:.45rem .9rem;
+  background:var(--paper);border:1px solid var(--line);border-radius:999px;font-weight:800;font-size:.95rem}
+.rating svg{color:var(--terra)}
+.hero p.lead{color:var(--muted);margin:.9rem 0 0;max-width:34rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.4rem}
+.badges{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1.3rem;padding:0;list-style:none}
+.badges li{font-size:.82rem;font-weight:800;color:var(--rose-deep);background:#fff;
+  border:1px solid var(--line);border-radius:999px;padding:.32rem .75rem}
+.hero-fig{margin:0;position:relative;max-width:480px;justify-self:center;width:100%}
+.hero-fig img{width:100%;border-radius:48% 52% 55% 45%/52% 46% 54% 48%;
+  box-shadow:0 18px 40px rgba(156,74,40,.22)}
+.hero-fig figcaption{position:absolute;right:.2rem;bottom:-.9rem;font:600 1.35rem/1.1 var(--fd);
+  color:var(--terra-deep);transform:rotate(-3deg);background:var(--cream);padding:.1rem .6rem;border-radius:8px}
+
+/* ---- carte ---- */
+.carte{padding:3rem 0 2.6rem}
+.menu-pics{display:grid;gap:1rem;margin:0 0 1.8rem}
+.menu-pics figure{margin:0;position:relative}
+.menu-pics img{width:100%;border-radius:18px;border:6px solid #fff;box-shadow:0 8px 22px rgba(51,46,37,.12)}
+.menu-pics figcaption{position:absolute;left:.9rem;bottom:.6rem;font:600 1.3rem/1.1 var(--fd);
+  color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.55);transform:rotate(-2deg)}
+.menu-list{list-style:none;margin:0;padding:0;display:grid;gap:.9rem}
+.dish{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:1rem 1.1rem;
+  display:grid;grid-template-columns:1fr auto;gap:.2rem .9rem;align-items:center}
+.dish h3{font:800 1.08rem/1.25 var(--fb)}
+.dish .desc{grid-column:1;margin:.15rem 0 0;color:var(--muted);font-size:.92rem;line-height:1.45}
+.dish .price{font-weight:800;color:var(--terra-deep);white-space:nowrap}
+.dish .add{grid-column:2;grid-row:2;justify-self:end;display:inline-flex;align-items:center;gap:.35rem;
+  min-height:44px;padding:.35rem 1rem;border-radius:999px;border:2px solid var(--terra-deep);
+  background:transparent;color:var(--terra-deep);font:800 .92rem var(--fb);cursor:pointer;transition:background .15s,color .15s}
+.dish .add:hover{background:var(--terra-deep);color:#fff}
+.carte-note{text-align:center;color:var(--muted);font-size:.9rem;margin:1.4rem auto 0;max-width:36rem}
+
+/* ---- commander ---- */
+.order{padding:3rem 0;background:var(--cream2)}
+.order-grid{display:grid;gap:1.4rem}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:1.3rem 1.2rem}
+.card>h3{font:800 1.15rem var(--fb);margin-bottom:.8rem;display:flex;align-items:center;gap:.5rem}
+.card>h3 svg{color:var(--terra-deep)}
+.steps{list-style:none;counter-reset:s;margin:0 0 1.6rem;padding:0;display:grid;gap:.5rem}
+.steps li{counter-increment:s;display:flex;gap:.7rem;align-items:baseline;color:var(--muted);font-size:.95rem}
+.steps li::before{content:counter(s);flex:none;width:1.7rem;height:1.7rem;border-radius:50%;
+  background:var(--terra-deep);color:#fff;font-weight:800;font-size:.85rem;display:inline-flex;
+  align-items:center;justify-content:center;transform:translateY(.25rem)}
+#cart-items{list-style:none;margin:0;padding:0;display:grid;gap:.45rem}
+.cart-empty{color:var(--muted);font-size:.95rem;padding:.4rem 0}
+.cart-row{display:flex;align-items:center;gap:.6rem;padding:.35rem 0;border-bottom:1px dashed var(--line)}
+.cart-name{flex:1;font-weight:700;font-size:.97rem}
+.cart-qty{display:inline-flex;align-items:center;gap:.45rem}
+.cart-qty b{min-width:1.2rem;text-align:center}
+.qty{width:44px;height:44px;border-radius:50%;border:2px solid var(--rose-deep);background:transparent;
+  color:var(--rose-deep);font:800 1.2rem var(--fb);cursor:pointer;line-height:1}
+.qty:hover{background:var(--rose-deep);color:#fff}
+.cart-line{font-weight:800;min-width:4.4rem;text-align:right;font-size:.95rem}
+.cart-total{display:flex;justify-content:space-between;align-items:center;margin-top:.9rem;
+  font-weight:800;font-size:1.15rem}
+.cart-total span:last-child{color:var(--terra-deep);font-size:1.3rem}
+
+/* carte de fidélité */
+.fid{background:var(--cream);border:2px dashed var(--terra);border-radius:18px;padding:1.3rem 1.2rem;position:relative}
+.fid h3{font:700 1.9rem/1 var(--fd);color:var(--terra-deep);margin-bottom:.2rem}
+.fid .fid-sub{color:var(--muted);font-size:.92rem;margin:.2rem 0 1rem}
+.stamps-row{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}
+#stamps{display:grid;grid-template-columns:repeat(5,46px);gap:.5rem}
+.stamp{width:46px;height:46px;border-radius:50%;border:2px dashed var(--terra);background:#fff;
+  display:inline-flex;align-items:center;justify-content:center;font-weight:800;color:transparent}
+.stamp.on{background:var(--terra);border-style:solid;color:#fff}
+.stamp.on::after,.stamp.new::after{content:"✓"}
+.stamp.new{background:var(--rose);border:2px solid var(--rose-deep);color:#fff}
+.gift{width:54px;height:54px;border-radius:50%;background:var(--terra-tint);border:2px solid var(--terra-deep);
+  display:inline-flex;align-items:center;justify-content:center;font:700 1.1rem var(--fd);color:var(--terra-deep)}
+#stamp-txt{margin:.8rem 0 0;font-weight:800;font-size:.98rem}
+.fid-legend{margin:.4rem 0 0;color:var(--muted);font-size:.82rem}
+#reward{margin:1rem 0 0;border:1px solid var(--line);border-radius:14px;padding:.9rem 1rem;background:#fff}
+#reward legend{font-weight:800;padding:0 .3rem}
+#reward label{display:flex;gap:.6rem;align-items:flex-start;padding:.55rem .3rem;min-height:44px;cursor:pointer;border-radius:8px}
+#reward label:hover{background:var(--cream)}
+#reward input{width:1.25rem;height:1.25rem;margin:.15rem 0 0;accent-color:var(--terra-deep);flex:none}
+#reward .rl b{display:block}
+#reward .rl small{color:var(--muted);line-height:1.4;display:block}
+
+/* formulaire */
+.f-row{margin-top:1rem}
+label.lbl{display:block;font-weight:800;font-size:.92rem;margin-bottom:.35rem}
+select,input[type=text],input[type=tel]{width:100%;min-height:48px;border:2px solid var(--line);
+  border-radius:12px;background:#fff;padding:.55rem .8rem;font:400 1rem var(--fb);color:var(--ink)}
+select:focus-visible,input:focus-visible{outline:3px solid var(--terra-deep);outline-offset:1px}
+.pay label{display:flex;align-items:center;gap:.6rem;min-height:48px;padding:.45rem .7rem;
+  border:2px solid var(--line);border-radius:12px;background:#fff;font-weight:700;cursor:pointer;margin-top:.5rem}
+.pay input{width:1.25rem;height:1.25rem;accent-color:var(--terra-deep);flex:none}
+.pay label:has(input:checked){border-color:var(--rose-deep);background:#F2F1E7}
+#form-msg{min-height:1.3rem;font-weight:800;color:var(--terra-deep);margin:.7rem 0 0}
+#submit{width:100%;margin-top:.6rem}
+.order-foot{color:var(--muted);font-size:.85rem;margin-top:.8rem;text-align:center}
+
+/* ---- bandeau solidaire ---- */
+.solid{background:var(--rose);color:#fff;padding:2.6rem 0;text-align:center}
+.solid .hand-big{font:700 clamp(1.9rem,5.5vw,2.8rem)/1.15 var(--fd);display:block;max-width:34rem;margin:0 auto}
+.solid svg{width:2.2rem;height:2.2rem;fill:#fff;margin-bottom:.6rem}
+.solid p{max-width:40rem;margin:1rem auto 0;color:#EFF3EA;font-size:.97rem}
+.solid .count{display:inline-block;margin-top:1.1rem;background:var(--rose-deep);border-radius:999px;
+  padding:.5rem 1.2rem;font-weight:800;font-size:.95rem}
+
+/* ---- histoire ---- */
+.story{padding:3rem 0}
+.story-grid{display:grid;gap:1.8rem;align-items:center}
+.story-fig{margin:0;position:relative}
+.story-fig img{width:100%;border-radius:22px;border:8px solid #fff;box-shadow:0 12px 30px rgba(51,46,37,.14);transform:rotate(-1.2deg)}
+.story-fig figcaption{position:absolute;left:1rem;bottom:-.7rem;font:600 1.35rem var(--fd);color:var(--terra-deep);
+  background:var(--cream);padding:.1rem .6rem;border-radius:8px;transform:rotate(-2deg)}
+.story-txt h2{font:700 clamp(2.2rem,5.5vw,2.9rem)/1.05 var(--fd);color:var(--terra-deep);margin-bottom:.8rem}
+.story-txt p{color:var(--muted)}
+.pull{font:600 1.6rem/1.3 var(--fd);color:var(--rose-deep);border-left:4px solid var(--terra);
+  padding-left:.9rem;margin:1.2rem 0 0}
+
+/* ---- avis ---- */
+.avis{padding:3rem 0;background:var(--cream2)}
+.avis-grid{display:grid;gap:1rem}
+.avis blockquote{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:1.2rem 1.2rem 1rem}
+.stars{display:inline-flex;gap:.15rem;color:var(--terra);margin-bottom:.5rem}
+.stars svg{width:1.05rem;height:1.05rem;fill:currentColor}
+.avis blockquote p{margin:0;font-weight:700;line-height:1.5}
+.avis cite{display:block;margin-top:.6rem;color:var(--muted);font-style:normal;font-size:.85rem}
+
+/* ---- accès ---- */
+.acces{padding:3rem 0}
+.acces-grid{display:grid;gap:1.4rem}
+.acces address{font-style:normal;color:var(--muted);margin:.2rem 0 1rem}
+.acces address b{color:var(--ink)}
+.hours{width:100%;border-collapse:collapse;font-size:.95rem}
+.hours th,.hours td{text-align:left;padding:.5rem .2rem;border-bottom:1px dashed var(--line)}
+.hours th{font-weight:800;white-space:nowrap;padding-right:1rem}
+.hours .closed{color:var(--terra-deep);font-weight:800}
+.takeaway{display:inline-flex;align-items:center;gap:.45rem;margin-top:1rem;background:var(--terra-tint);
+  color:var(--terra-deep);font-weight:800;font-size:.88rem;border-radius:999px;padding:.4rem .9rem}
+
+/* ---- footer ---- */
+footer{background:var(--ink);color:#E9E2D2;padding:2.2rem 0 2.6rem;font-size:.9rem}
+footer .f-brand{font:800 1.3rem var(--fb);color:#fff}
+footer .f-hand{font:600 1.25rem var(--fd);color:var(--terra-tint)}
+footer p{margin:.5rem 0 0}
+footer a{color:#fff}
+
+/* ---- flottant + bandeau légal + overlay ---- */
+#fab{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--legal-h) + 12px);z-index:60;
+  display:inline-flex;align-items:center;gap:.55rem;min-height:50px;padding:.6rem 1.3rem;border:none;
+  border-radius:999px;background:var(--rose-deep);color:#fff;font:800 .97rem var(--fb);cursor:pointer;
+  box-shadow:0 8px 24px rgba(51,46,37,.35);white-space:nowrap}
+#fab svg{fill:#fff}
+.legal{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--ink);color:#E9E2D2;
+  font-size:.72rem;line-height:1.35;padding:.55rem .9rem;text-align:center;margin:0}
+#demo{position:fixed;inset:0;z-index:100;background:rgba(51,46,37,.55);display:flex;
+  align-items:center;justify-content:center;padding:1rem}
+#demo[hidden]{display:none}
+.demo-panel{background:var(--cream);border-radius:22px;max-width:30rem;width:100%;max-height:88vh;
+  overflow:auto;padding:1.6rem 1.4rem;box-shadow:0 24px 60px rgba(0,0,0,.4)}
+.demo-kicker{font:700 2rem/1 var(--fd);color:var(--terra);margin:0}
+.demo-panel h2{font:800 1.3rem var(--fb);margin:.3rem 0 1rem}
+#demo-recap ul{margin:0 0 .8rem;padding-left:1.1rem}
+#demo-recap li{margin:.15rem 0}
+#demo-recap p{margin:.4rem 0}
+.recap-fid{background:var(--terra-tint);border-radius:10px;padding:.55rem .8rem;font-weight:700}
+.demo-note{background:#fff;border:2px solid var(--terra-deep);border-radius:12px;padding:.85rem 1rem;line-height:1.5}
+.demo-sub{color:var(--muted);font-size:.85rem}
+#demo-close{width:100%;margin-top:.4rem}
+
+/* ---- responsive ---- */
+@media (min-width:700px){
+  .menu-pics{grid-template-columns:1fr 1fr}
+  .menu-list{grid-template-columns:1fr 1fr}
+  .avis-grid{grid-template-columns:repeat(3,1fr)}
+  .acces-grid{grid-template-columns:1fr 1fr}
+  :root{--legal-h:64px}
+}
+@media (min-width:980px){
+  .hero-grid{grid-template-columns:1.05fr .95fr}
+  .order-grid{grid-template-columns:1.1fr .9fr;align-items:start}
+  .story-grid{grid-template-columns:.95fr 1.05fr}
+  nav.main a{font-size:1rem}
+  :root{--legal-h:48px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.6-5 4.5 1.5 6.6L12 16.9 6 20l1.5-6.6-5-4.5 6.6-.6z"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011-.25c1.12.37 2.33.57 3.59.57a1 1 0 011 1V20a1 1 0 01-1 1C10.4 21 3 13.6 3 4.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7.6-4.8-10-9a5.6 5.6 0 019.5-5.7l.5.6.5-.6A5.6 5.6 0 0122 12c-2.4 4.2-10 9-10 9z"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M7 7V6a5 5 0 0110 0v1h3l-1 14H5L4 7zm2 0h6V6a3 3 0 00-6 0z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 10.6l4 2.3-.8 1.3L11 13V7h2z"/></symbol>
+</svg>
+
+<p class="sr-only" id="live" aria-live="polite"></p>
+
+<header class="wrap">
+  <div class="topbar">
+    <a class="brand" href="#main">
+      <b>Casa Familia</b>
+      <span>pizzeria di famiglia — Épinal</span>
+    </a>
+    <a class="top-tel" href="tel:+33372739431"><svg class="ic" aria-hidden="true"><use href="#i-tel"/></svg>03 72 73 94 31</a>
+  </div>
+  <nav class="main" aria-label="Navigation principale">
+    <ul>
+      <li><a href="#carte">La carte</a></li>
+      <li><a href="#commander">Commander</a></li>
+      <li><a href="#histoire">Notre histoire</a></li>
+      <li><a href="#avis">Avis</a></li>
+      <li><a href="#acces">Accès &amp; horaires</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-labelledby="hero-t">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hand-kick">Benvenuti a casa !</span>
+        <h1 id="hero-t">La pizzeria familiale d'Épinal</h1>
+        <p class="rating">
+          <svg class="ic" aria-hidden="true"><use href="#i-star"/></svg>
+          4,9 / 5 — 123 avis Google
+        </p>
+        <p class="lead">Des pizzas généreuses, préparées en famille rue de l'Épargne et sorties du four
+          juste pour vous. À emporter uniquement — commandez, on s'occupe du reste.</p>
+        <div class="hero-cta">
+          <a class="btn btn-p" href="#commander"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>Commander à emporter</a>
+          <a class="btn btn-o" href="tel:+33372739431"><svg class="ic" aria-hidden="true"><use href="#i-tel"/></svg>Appeler</a>
+        </div>
+        <ul class="badges">
+          <li>À emporter uniquement</li>
+          <li>Fidélité : 10 pizzas, la 11e offerte</li>
+          <li>Paiement au retrait ou CB</li>
+        </ul>
+      </div>
+      <figure class="hero-fig">
+        <img src="img/hero-part.webp" alt="Une main soulève une part de pizza aux tomates cerises et au basilic, devant un mur de briques" width="1100" height="1100" fetchpriority="high" decoding="async">
+        <figcaption>sortie du four à l'instant</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= CARTE ================= -->
+  <section class="carte" id="carte" aria-labelledby="carte-t">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Faites votre choix</p>
+        <h2 id="carte-t">La carte de la maison</h2>
+        <p>Base tomate ou crème, pâte étalée à la main. Ajoutez vos pizzas au panier, le reste se passe en bas de page.</p>
+      </div>
+
+      <div class="menu-pics">
+        <figure>
+          <img src="img/pizza-pepperoni.webp" alt="Pizza pepperoni entière servie sur une table en bois garnie" width="800" height="600" loading="lazy" decoding="async">
+          <figcaption>la diavola du vendredi soir</figcaption>
+        </figure>
+        <figure>
+          <img src="img/pizza-epinards.webp" alt="Pizza aux épinards et olives, au bord doré et gonflé, posée sur une planche en bois" width="800" height="600" loading="lazy" decoding="async">
+          <figcaption>la verde du marché</figcaption>
+        </figure>
+      </div>
+
+      <!-- [À REMPLACER] : carte et prix d'exemple, à remplacer par la carte réelle de Casa Familia -->
+      <ul class="menu-list">
+        <li class="dish"><h3>Margherita</h3><span class="price">9,00 €</span><p class="desc">tomate, mozzarella fior di latte, basilic frais</p><button type="button" class="add" data-n="Margherita" data-p="9">+ Ajouter<span class="sr-only"> la Margherita au panier</span></button></li>
+        <li class="dish"><h3>Regina</h3><span class="price">10,50 €</span><p class="desc">tomate, mozzarella, jambon, champignons</p><button type="button" class="add" data-n="Regina" data-p="10.5">+ Ajouter<span class="sr-only"> la Regina au panier</span></button></li>
+        <li class="dish"><h3>Diavola</h3><span class="price">12,00 €</span><p class="desc">tomate, mozzarella, pepperoni, olives noires</p><button type="button" class="add" data-n="Diavola" data-p="12">+ Ajouter<span class="sr-only"> la Diavola au panier</span></button></li>
+        <li class="dish"><h3>Quattro formaggi</h3><span class="price">12,00 €</span><p class="desc">crème, mozzarella, gorgonzola, chèvre, emmental</p><button type="button" class="add" data-n="Quattro formaggi" data-p="12">+ Ajouter<span class="sr-only"> la Quattro formaggi au panier</span></button></li>
+        <li class="dish"><h3>Calzone della nonna</h3><span class="price">11,50 €</span><p class="desc">chausson garni : tomate, mozzarella, jambon, œuf</p><button type="button" class="add" data-n="Calzone della nonna" data-p="11.5">+ Ajouter<span class="sr-only"> la Calzone au panier</span></button></li>
+        <li class="dish"><h3>Verde</h3><span class="price">11,50 €</span><p class="desc">crème, épinards, champignons, olives, bord gonflé</p><button type="button" class="add" data-n="Verde" data-p="11.5">+ Ajouter<span class="sr-only"> la Verde au panier</span></button></li>
+        <li class="dish"><h3>Familia</h3><span class="price">13,50 €</span><p class="desc">tomate, mozzarella, jambon cru, roquette, copeaux de parmesan</p><button type="button" class="add" data-n="Familia" data-p="13.5">+ Ajouter<span class="sr-only"> la Familia au panier</span></button></li>
+        <li class="dish"><h3>Campagnarde</h3><span class="price">12,50 €</span><p class="desc">crème, lardons, oignons confits, fromage à raclette</p><button type="button" class="add" data-n="Campagnarde" data-p="12.5">+ Ajouter<span class="sr-only"> la Campagnarde au panier</span></button></li>
+        <li class="dish"><h3>Orientale</h3><span class="price">12,00 €</span><p class="desc">tomate, merguez, poivrons, oignons rouges</p><button type="button" class="add" data-n="Orientale" data-p="12">+ Ajouter<span class="sr-only"> l'Orientale au panier</span></button></li>
+        <li class="dish"><h3>Tonno</h3><span class="price">11,00 €</span><p class="desc">tomate, thon, oignons rouges, olives noires</p><button type="button" class="add" data-n="Tonno" data-p="11">+ Ajouter<span class="sr-only"> la Tonno au panier</span></button></li>
+        <li class="dish"><h3>Chèvre-miel</h3><span class="price">12,50 €</span><p class="desc">crème, chèvre, miel, noix</p><button type="button" class="add" data-n="Chèvre-miel" data-p="12.5">+ Ajouter<span class="sr-only"> la Chèvre-miel au panier</span></button></li>
+        <li class="dish"><h3>Végétariane</h3><span class="price">11,50 €</span><p class="desc">tomate, légumes grillés, mozzarella, basilic</p><button type="button" class="add" data-n="Végétariane" data-p="11.5">+ Ajouter<span class="sr-only"> la Végétariane au panier</span></button></li>
+      </ul>
+      <p class="carte-note">Envie d'une pizza sur mesure ou d'un dessert maison ? Appelez-nous au
+        <a href="tel:+33372739431">03 72 73 94 31</a>, on vous la prépare.</p>
+    </div>
+  </section>
+
+  <!-- ================= COMMANDER (wow-feature 1) ================= -->
+  <section class="order" id="commander" aria-labelledby="order-t">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">À emporter, sans attendre</p>
+        <h2 id="order-t">Commander à emporter</h2>
+        <p>Votre commande passe directement en cuisine et vous attend au comptoir, chaude, à l'heure choisie.</p>
+      </div>
+
+      <ol class="steps">
+        <li>Choisissez vos pizzas dans la carte ci-dessus</li>
+        <li>Sélectionnez votre créneau de retrait</li>
+        <li>Payez au retrait — ou par carte en ligne si vous préférez</li>
+      </ol>
+
+      <noscript><p class="order-foot"><strong>La commande en ligne nécessite JavaScript.</strong>
+        Appelez-nous : <a href="tel:+33372739431">03 72 73 94 31</a>.</p></noscript>
+
+      <form id="order-form" class="order-grid" novalidate>
+        <div>
+          <div class="card">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>Votre panier</h3>
+            <ul id="cart-items">
+              <li class="cart-empty">Votre panier est vide — choisissez vos pizzas dans la carte ci-dessus.</li>
+            </ul>
+            <p class="cart-total"><span>Total</span><span id="cart-total">0,00 €</span></p>
+          </div>
+
+          <div class="card f-row">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Retrait &amp; paiement</h3>
+            <!-- [À REMPLACER] : créneaux d'exemple — en production, créneaux réels alimentés par la caisse (booq) -->
+            <div class="f-row" style="margin-top:0">
+              <label class="lbl" for="slot">Créneau de retrait</label>
+              <select id="slot" name="slot">
+                <option selected>Dès que possible (env. 20 min)</option>
+                <optgroup label="Ce midi (mar.–sam.)">
+                  <option>12 h 00</option><option>12 h 15</option><option>12 h 30</option><option>12 h 45</option>
+                  <option>13 h 00</option><option>13 h 15</option><option>13 h 30</option><option>13 h 45</option>
+                </optgroup>
+                <optgroup label="Ce soir (mar.–dim.)">
+                  <option>18 h 30</option><option>18 h 45</option><option>19 h 00</option><option>19 h 15</option>
+                  <option>19 h 30</option><option>19 h 45</option><option>20 h 00</option><option>20 h 15</option>
+                  <option>20 h 30</option><option>20 h 45</option><option>21 h 00</option><option>21 h 15</option>
+                  <option>21 h 30</option>
+                </optgroup>
+              </select>
+            </div>
+            <fieldset class="pay" style="border:none;margin:1rem 0 0;padding:0">
+              <legend class="lbl">Paiement</legend>
+              <label><input type="radio" name="pay" value="Paiement au retrait (CB ou espèces)" checked>Au retrait — CB ou espèces</label>
+              <label><input type="radio" name="pay" value="Paiement CB en ligne">Carte bancaire en ligne</label>
+            </fieldset>
+            <div class="f-row">
+              <label class="lbl" for="c-name">Votre prénom</label>
+              <input type="text" id="c-name" name="name" autocomplete="given-name" placeholder="Pour vous appeler au comptoir">
+            </div>
+            <div class="f-row">
+              <label class="lbl" for="c-tel">Votre téléphone</label>
+              <input type="tel" id="c-tel" name="tel" autocomplete="tel" placeholder="En cas d'imprévu en cuisine">
+            </div>
+            <p id="form-msg" aria-live="polite"></p>
+            <button type="submit" id="submit" class="btn btn-p">Valider ma commande</button>
+            <p class="order-foot">Démonstration : rien n'est envoyé, rien n'est débité.</p>
+          </div>
+        </div>
+
+        <!-- carte de fidélité digitale 10+1 (programme public de la maison) -->
+        <div class="fid">
+          <h3>La carte de la famille</h3>
+          <p class="fid-sub">10 pizzas achetées = la 11e offerte. Votre carte vous suit ici, plus rien à tamponner ni à perdre.</p>
+          <div class="stamps-row">
+            <div id="stamps" role="img" aria-label="Carte de fidélité : 7 tampons sur 10">
+              <span class="stamp on"></span><span class="stamp on"></span><span class="stamp on"></span><span class="stamp on"></span><span class="stamp on"></span>
+              <span class="stamp on"></span><span class="stamp on"></span><span class="stamp"></span><span class="stamp"></span><span class="stamp"></span>
+            </div>
+            <span class="gift" aria-hidden="true">11e</span>
+          </div>
+          <p id="stamp-txt">7/10 tampons</p>
+          <p class="fid-legend">Tampons simulés pour la démonstration — chaque pizza commandée ajoute un tampon.</p>
+
+          <fieldset id="reward" hidden>
+            <legend>Carte pleine — à vous de choisir</legend>
+            <label>
+              <input type="radio" name="reward" value="11e pizza offerte sur cette commande" checked>
+              <span class="rl"><b>Ma 11e pizza offerte</b>
+              <small>La pizza de votre choix, offerte par la maison.</small></span>
+            </label>
+            <label>
+              <input type="radio" name="reward" value="11e pizza offerte aux Restos du Cœur — dessert ou boisson 33 cl offert en retour">
+              <span class="rl"><b>Je l'offre aux Restos du Cœur</b>
+              <small>Votre pizza devient un repas chaud pour quelqu'un qui en a besoin — et la maison vous offre un dessert ou une boisson 33 cl.</small></span>
+            </label>
+          </fieldset>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= BANDEAU SOLIDAIRE (wow-feature 2) ================= -->
+  <section class="solid" aria-labelledby="solid-t">
+    <div class="wrap">
+      <svg aria-hidden="true"><use href="#i-heart"/></svg>
+      <h2 id="solid-t" class="hand-big">« Un petit geste pour vous, un grand repas pour eux »</h2>
+      <p>Quand votre carte de fidélité est pleine, vous pouvez offrir votre 11e pizza aux
+        <strong>Restos du Cœur</strong> plutôt que de la garder. En retour, la maison vous offre
+        un dessert ou une boisson 33 cl. Merci pour eux.</p>
+      <!-- [À REMPLACER] : compteur d'exemple — à mettre à jour avec le vrai total de la maison -->
+      <p class="count">Déjà 137 pizzas offertes par nos clients</p>
+    </div>
+  </section>
+
+  <!-- ================= HISTOIRE ================= -->
+  <section class="story" id="histoire" aria-labelledby="story-t">
+    <div class="wrap story-grid">
+      <figure class="story-fig">
+        <img src="img/notre-cuisine.webp" alt="Jeune couple préparant une recette ensemble dans la cuisine" width="800" height="600" loading="lazy" decoding="async">
+        <figcaption>tout commence en cuisine</figcaption>
+      </figure>
+      <div class="story-txt">
+        <p class="eyebrow">Notre histoire</p>
+        <h2 id="story-t">Une famille, un four</h2>
+        <!-- [À REMPLACER] : texte d'exemple — la vraie histoire de la maison sera écrite avec vous -->
+        <p>Casa Familia, c'est l'histoire d'un couple et d'un four, à l'angle de la rue de l'Épargne
+          et de la rue Viviani. La pâte est pétrie chaque jour, les sauces mijotent le matin, et
+          chaque pizza part du four directement dans vos mains.</p>
+        <p>Pas de salle, pas de chichis : tout est à emporter, comme un plat qu'on vient chercher
+          chez des amis. C'est notre façon de faire de la pizza — simple, généreuse, familiale.</p>
+        <p class="pull">« Ici, tout le monde fait partie de la famille. »</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AVIS ================= -->
+  <section class="avis" id="avis" aria-labelledby="avis-t">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">4,9 / 5 sur Google — 123 avis</p>
+        <h2 id="avis-t">Le mot des clients</h2>
+      </div>
+      <!-- [À REMPLACER] : extraits d'exemple — à remplacer par 3 vrais extraits d'avis Google (≤ 15 mots) -->
+      <div class="avis-grid">
+        <blockquote>
+          <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+          <span class="sr-only">5 étoiles sur 5.</span>
+          <p>« Les meilleures pizzas d'Épinal, pâte parfaite et garniture généreuse. »</p>
+          <cite>Avis Google</cite>
+        </blockquote>
+        <blockquote>
+          <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+          <span class="sr-only">5 étoiles sur 5.</span>
+          <p>« Accueil adorable, commande toujours prête à l'heure. On y retourne chaque semaine. »</p>
+          <cite>Avis Google</cite>
+        </blockquote>
+        <blockquote>
+          <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+          <span class="sr-only">5 étoiles sur 5.</span>
+          <p>« Une vraie pizzeria de famille : produits frais, fait maison, prix justes. »</p>
+          <cite>Avis Google</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACCÈS / HORAIRES ================= -->
+  <section class="acces" id="acces" aria-labelledby="acces-t">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">On vous attend</p>
+        <h2 id="acces-t">Nous trouver</h2>
+      </div>
+      <div class="acces-grid">
+        <div class="card">
+          <h3><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>Adresse</h3>
+          <address>
+            <b>Casa Familia</b><br>
+            30 rue de l'Épargne (angle rue Viviani)<br>
+            88000 Épinal
+          </address>
+          <p style="margin:0 0 1rem"><a href="tel:+33372739431" style="font-weight:800">
+            <svg class="ic" aria-hidden="true"><use href="#i-tel"/></svg> 03 72 73 94 31</a></p>
+          <a class="btn btn-o" href="https://www.google.com/maps/search/?api=1&amp;query=Casa+Familia+30+rue+de+l%27Epargne+88000+Epinal" target="_blank" rel="noopener">Itinéraire sur Google Maps</a>
+        </div>
+        <div class="card">
+          <h3><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Horaires</h3>
+          <table class="hours">
+            <tr><th scope="row">Lundi</th><td class="closed">Fermé</td></tr>
+            <tr><th scope="row">Mardi – Samedi</th><td>11 h – 14 h &nbsp;·&nbsp; 18 h – 22 h</td></tr>
+            <tr><th scope="row">Dimanche</th><td>18 h – 22 h</td></tr>
+          </table>
+          <p class="takeaway"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>À emporter uniquement</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="f-brand">Casa Familia <span class="f-hand">— pizzeria di famiglia</span></p>
+    <p>30 rue de l'Épargne, 88000 Épinal · <a href="tel:+33372739431">03 72 73 94 31</a> · à emporter uniquement</p>
+    <p>Mar.–sam. 11 h-14 h / 18 h-22 h · dim. 18 h-22 h · lun. fermé</p>
+    <p style="opacity:.7;margin-top:1rem">Maquette de démonstration — L'Atelier Web des Vosges.</p>
+  </div>
+</footer>
+
+<button type="button" id="fab" hidden>
+  <svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>
+  Voir ma commande · <span id="fab-txt"></span>
+</button>
+
+<p class="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</p>
+
+<!-- écran de démonstration -->
+<div id="demo" hidden role="dialog" aria-modal="true" aria-labelledby="demo-t">
+  <div class="demo-panel">
+    <p class="demo-kicker">Grazie mille !</p>
+    <h2 id="demo-t">Votre commande de démonstration</h2>
+    <div id="demo-recap"></div>
+    <p class="demo-note"><strong>Ceci est une démonstration — en production : branché sur votre système de commande actuel (booq), aucun changement de caisse.</strong></p>
+    <p class="demo-sub">Aucune donnée n'a été envoyée : tout se passe dans votre navigateur.</p>
+    <button type="button" id="demo-close" class="btn btn-p">Fermer la démonstration</button>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+var KEY="cf-cart-v1",SKEY="cf-stamps-v1";
+function put(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function get(k){try{return localStorage.getItem(k)}catch(e){return null}}
+var cart={};
+try{cart=JSON.parse(get(KEY)||"{}")||{}}catch(e){cart={}}
+var base=parseInt(get(SKEY)||"7",10);
+if(isNaN(base)||base<0||base>9){base=7}
+
+var $=function(s){return document.querySelector(s)};
+var live=$("#live"),items=$("#cart-items"),totalEl=$("#cart-total"),
+    fab=$("#fab"),fabTxt=$("#fab-txt"),stamps=$("#stamps"),stampTxt=$("#stamp-txt"),
+    reward=$("#reward"),formMsg=$("#form-msg"),form=$("#order-form"),
+    demo=$("#demo"),recap=$("#demo-recap"),closeBtn=$("#demo-close"),submitBtn=$("#submit");
+
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return"&#"+c.charCodeAt(0)+";"})}
+function eur(n){return n.toFixed(2).replace(".",",")+" €"}
+function say(m){if(live){live.textContent=m}}
+function count(){var n=0,k;for(k in cart){n+=cart[k].q}return n}
+function total(){var t=0,k;for(k in cart){t+=cart[k].q*cart[k].p}return t}
+function persist(){put(KEY,JSON.stringify(cart))}
+
+function render(){
+  var n=count(),t=total(),h="",k;
+  if(n===0){h='<li class="cart-empty">Votre panier est vide — choisissez vos pizzas dans la carte ci-dessus.</li>'}
+  else{for(k in cart){
+    h+='<li class="cart-row"><span class="cart-name">'+esc(k)+'</span>'+
+       '<span class="cart-qty"><button type="button" class="qty" data-n="'+esc(k)+'" data-d="-1" aria-label="Retirer une '+esc(k)+'">−</button>'+
+       '<b>'+cart[k].q+'</b>'+
+       '<button type="button" class="qty" data-n="'+esc(k)+'" data-d="1" aria-label="Ajouter une '+esc(k)+'">+</button></span>'+
+       '<span class="cart-line">'+eur(cart[k].q*cart[k].p)+'</span></li>'
+  }}
+  items.innerHTML=h;
+  totalEl.textContent=eur(t);
+  if(n>0){fab.hidden=false;fabTxt.textContent=n+(n>1?" pizzas":" pizza")+" · "+eur(t)}
+  else{fab.hidden=true}
+  var s=Math.min(base+n,10),sp=stamps.children,i;
+  for(i=0;i<10;i++){sp[i].className="stamp"+(i<base?" on":(i<s?" new":""))}
+  stamps.setAttribute("aria-label","Carte de fidélité : "+s+" tampons sur 10");
+  stampTxt.textContent=s+"/10 tampons"+(n>0?" (dont "+(s-base)+" avec cette commande)":"");
+  reward.hidden=(base+n)<10;
+  persist();
+}
+
+document.addEventListener("click",function(e){
+  var b=e.target.closest("button");if(!b){return}
+  if(b.classList.contains("add")){
+    var n=b.getAttribute("data-n"),p=parseFloat(b.getAttribute("data-p"));
+    if(!cart[n]){cart[n]={p:p,q:0}}
+    cart[n].q++;render();
+    say(n+" ajoutée au panier — "+count()+" pizza(s), total "+eur(total()));
+  }else if(b.classList.contains("qty")){
+    var n2=b.getAttribute("data-n"),d=parseInt(b.getAttribute("data-d"),10);
+    if(cart[n2]){cart[n2].q+=d;if(cart[n2].q<=0){delete cart[n2]}
+      render();say("Panier mis à jour — "+count()+" pizza(s), total "+eur(total()))}
+  }
+});
+
+fab.addEventListener("click",function(){
+  document.getElementById("commander").scrollIntoView();
+});
+
+form.addEventListener("submit",function(e){
+  e.preventDefault();formMsg.textContent="";
+  if(count()===0){
+    formMsg.textContent="Ajoutez au moins une pizza à votre panier avant de valider.";
+    say(formMsg.textContent);return;
+  }
+  var k,h="<ul>";
+  for(k in cart){h+="<li>"+cart[k].q+" × "+esc(k)+" — "+eur(cart[k].q*cart[k].p)+"</li>"}
+  h+="</ul><p><strong>Total : "+eur(total())+"</strong></p>";
+  var slot=$("#slot");
+  var pay=document.querySelector('input[name="pay"]:checked');
+  h+="<p>Retrait : "+esc(slot.options[slot.selectedIndex].text)+"<br>"+esc(pay.value)+"</p>";
+  var name=$("#c-name").value.trim();
+  if(name){h+="<p>Au nom de : "+esc(name)+"</p>"}
+  var n=count(),s=base+n;
+  if(s>=10){
+    var r=document.querySelector('input[name="reward"]:checked');
+    h+='<p class="recap-fid">Carte de fidélité pleine — '+esc(r?r.value:"11e pizza offerte")+"</p>";
+  }else{
+    h+='<p class="recap-fid">Carte de fidélité : '+s+"/10 tampons</p>";
+  }
+  recap.innerHTML=h;
+  demo.hidden=false;document.body.classList.add("lock");closeBtn.focus();
+});
+
+function closeDemo(){
+  demo.hidden=true;document.body.classList.remove("lock");
+  var ns=base+count();
+  if(ns>=10){ns-=10}
+  if(ns>9){ns=9}
+  base=ns;put(SKEY,String(base));
+  cart={};form.reset();render();
+  say("Démonstration terminée — panier vidé, carte de fidélité : "+base+"/10 tampons.");
+  submitBtn.focus();
+}
+closeBtn.addEventListener("click",closeDemo);
+demo.addEventListener("click",function(e){if(e.target===demo){closeDemo()}});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!demo.hidden){closeDemo()}});
+
+render();
+})();
+</script>
+</body>
+</html>
