@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1C2A44">
+<title>Chocolats Carl — Chocolatier à Saint-Dié-des-Vosges · Coffrets &amp; expédition France</title>
+<meta name="description" content="Chocolats Carl, chocolatier à Saint-Dié-des-Vosges (6 rue Thiers) : ganaches, pralinés, coffrets à composer, bûches et créations. Retrait en boutique ou expédition partout en France. 4,4★ sur Google.">
+
+<!-- Polices : Libre Baskerville (display) + Red Hat Text (texte), chargement non bloquant -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Red+Hat+Text:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Red+Hat+Text:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Red+Hat+Text:wght@400;500;700&display=swap"></noscript>
+
+<!-- Données réelles publiques : NAP, note Google, horaires -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Chocolats Carl",
+  "description": "Chocolatier-pâtissier à Saint-Dié-des-Vosges : ganaches, pralinés, coffrets, bûches et créations.",
+  "image": "img/hero-coeurs.webp",
+  "telephone": "+33329561561",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "6 rue Thiers",
+    "postalCode": "88100",
+    "addressLocality": "Saint-Dié-des-Vosges",
+    "addressCountry": "FR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 48.2857691, "longitude": 6.9494438 },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "126" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "14:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "12:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "14:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:30", "closes": "12:00" }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --nuit:#1C2A44; --nuit-d:#131F35; --cacao:#4A3225; --cacao-d:#37251B;
+  --creme:#F4EDE2; --clair:#FBF7F0; --encre:#241B12; --mut:#5C5044;
+  --ligne:#E0D5C3; --legal-h:64px;
+  --serif:'Libre Baskerville',Georgia,'Times New Roman',serif;
+  --sans:'Red Hat Text',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--creme);color:var(--encre);font-size:16px;line-height:1.6;padding-bottom:calc(var(--legal-h) + 86px)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);line-height:1.2;font-weight:700;color:var(--nuit)}
+[hidden]{display:none!important}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+:focus-visible{outline:3px solid var(--cacao);outline-offset:2px;border-radius:3px}
+.sombre :focus-visible,.topbar :focus-visible,.legal :focus-visible,.panier-flot:focus-visible{outline-color:var(--creme)}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+.skip{position:absolute;left:8px;top:-60px;z-index:200;background:var(--nuit);color:#fff;padding:12px 18px;border-radius:0 0 8px 8px;text-decoration:none;transition:top .2s}
+.skip:focus{top:0}
+
+/* ── Liseré « colis postal » : signature graphique ── */
+.liseret{height:9px;background:repeating-linear-gradient(135deg,var(--nuit) 0 14px,var(--clair) 14px 28px,var(--cacao) 28px 42px,var(--clair) 42px 56px)}
+
+/* ── En-tête ── */
+.topbar{position:sticky;top:0;z-index:50;background:var(--nuit);color:var(--creme);box-shadow:0 2px 10px rgba(19,31,53,.35)}
+.topbar-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:8px;padding:6px 14px;flex-wrap:wrap}
+.marque{font-family:var(--serif);font-weight:700;font-size:19px;color:#fff;text-decoration:none;display:flex;align-items:center;gap:9px;padding:8px 4px;min-height:44px}
+.marque svg{flex:none}
+.marque small{display:block;font-family:var(--sans);font-weight:500;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#B9C3D8;line-height:1.2}
+.tel-top{margin-left:auto;display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:1px solid rgba(244,237,226,.4);border-radius:999px;color:#fff;text-decoration:none;font-weight:700;font-size:14px;white-space:nowrap}
+nav.ancres{flex-basis:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;display:flex;gap:2px;padding-bottom:4px}
+nav.ancres::-webkit-scrollbar{display:none}
+nav.ancres a{flex:none;color:#D9DEE9;text-decoration:none;font-size:13.5px;font-weight:500;padding:11px 11px;min-height:44px;display:inline-flex;align-items:center;border-radius:6px}
+nav.ancres a:hover{color:#fff;background:rgba(244,237,226,.1)}
+@media (min-width:900px){
+  .topbar-in{flex-wrap:nowrap;padding:8px 20px}
+  nav.ancres{flex-basis:auto;margin-left:24px;padding-bottom:0}
+  .tel-top{margin-left:auto}
+}
+
+section{scroll-margin-top:108px}
+.bloc{max-width:1100px;margin:0 auto;padding:52px 18px}
+.kicker{font-size:11.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--cacao);display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:26px;height:2px;background:var(--cacao);flex:none}
+.sombre .kicker{color:#C9B49A}.sombre .kicker::before{background:#C9B49A}
+h2{font-size:clamp(26px,5.5vw,38px);margin:10px 0 12px}
+.intro{color:var(--mut);max-width:62ch}
+.sombre .intro{color:#C8CEDC}
+
+/* ── Hero ── */
+.hero{background:var(--creme)}
+.hero-in{max-width:1100px;margin:0 auto;padding:38px 18px 50px;display:grid;gap:34px;align-items:center}
+@media (min-width:880px){.hero-in{grid-template-columns:1.1fr .9fr;padding-top:56px}}
+.hero .kicker{color:var(--nuit)}.hero .kicker::before{background:var(--nuit)}
+.hero h1{font-size:clamp(31px,7.5vw,52px);margin:14px 0 16px}
+.hero h1 em{font-style:italic;color:var(--cacao)}
+.hero p.pitch{font-size:17px;color:var(--mut);max-width:54ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:12px 22px;border-radius:8px;font:700 15.5px var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-nuit{background:var(--nuit);color:#fff;box-shadow:0 6px 16px rgba(28,42,68,.3)}
+.btn-ghost{background:transparent;color:var(--nuit);border-color:var(--nuit)}
+.btn-cacao{background:var(--cacao);color:#fff}
+.btn[disabled]{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+.note-hero{margin-top:22px;display:flex;align-items:center;gap:10px;font-size:14px;color:var(--mut)}
+.etoiles{display:inline-flex;gap:2px}
+.fig-hero{position:relative;max-width:430px;margin:0 auto;width:100%}
+
+/* ── Cadre « timbre-poste » (bords dentelés) ── */
+.timbre{position:relative;padding:13px;background-color:var(--clair);
+  background-image:
+    radial-gradient(circle 5px,var(--creme) 4.6px,rgba(0,0,0,0) 5.2px),
+    radial-gradient(circle 5px,var(--creme) 4.6px,rgba(0,0,0,0) 5.2px),
+    radial-gradient(circle 5px,var(--creme) 4.6px,rgba(0,0,0,0) 5.2px),
+    radial-gradient(circle 5px,var(--creme) 4.6px,rgba(0,0,0,0) 5.2px);
+  background-size:18px 18px;
+  background-repeat:repeat-x,repeat-x,repeat-y,repeat-y;
+  background-position:left 0 top -9px,left 0 bottom -9px,left -9px top 0,right -9px top 0;
+  box-shadow:0 18px 40px rgba(28,42,68,.22)}
+.timbre img{border:1px solid var(--ligne)}
+.timbre .valeur{position:absolute;right:22px;bottom:22px;background:var(--nuit);color:var(--creme);font:700 12px/1.3 var(--sans);letter-spacing:.08em;padding:7px 10px;text-align:center}
+.timbre .valeur strong{display:block;font-family:var(--serif);font-size:18px}
+.cachet{position:absolute;top:-26px;right:-10px;width:150px;transform:rotate(-9deg);pointer-events:none}
+@media (max-width:879px){.cachet{width:124px;top:-22px;right:-4px}}
+
+/* ── Boutique d'expédition ── */
+.bandeau-envoi{display:inline-flex;align-items:center;gap:9px;background:var(--nuit);color:var(--creme);font-size:13px;font-weight:700;padding:9px 16px;border-radius:999px;margin:16px 0 4px}
+.grille{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));margin-top:28px}
+.prod{background:var(--clair);border:1px solid var(--ligne);border-radius:12px;padding:16px 14px;display:flex;flex-direction:column;gap:8px}
+.prod h3{font-size:16.5px;color:var(--nuit)}
+.prod .desc{font-size:13px;color:var(--mut);flex:1}
+.prod .ligne-prix{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-top:2px}
+.prix{font-family:var(--serif);font-weight:700;font-size:19px;color:var(--cacao)}
+.poids{font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--mut);border:1px dashed var(--mut);border-radius:4px;padding:2px 7px;text-transform:uppercase;white-space:nowrap}
+.prod .btn{min-height:44px;padding:9px 12px;font-size:14px;border-radius:7px}
+.tuile-photo{grid-column:1/-1;position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--ligne)}
+.tuile-photo img{width:100%;height:240px;object-fit:cover}
+.tuile-photo figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(19,31,53,.86));color:var(--creme);font-size:13.5px;font-weight:500;padding:34px 16px 12px}
+@media (min-width:880px){.tuile-photo img{height:280px}}
+
+/* ── Étiquette tarifs d'expédition ── */
+.etiquette{margin-top:26px;background:var(--clair);border:1.5px solid var(--nuit);border-radius:10px;overflow:hidden;max-width:560px}
+.etiquette-tete{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--nuit);color:var(--creme);padding:9px 14px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.etiquette-tete svg{color:var(--creme)}
+.etiquette table{width:100%;border-collapse:collapse;font-size:14.5px}
+.etiquette td{padding:10px 14px;border-bottom:1px dashed var(--ligne)}
+.etiquette td:last-child{text-align:right;font-weight:700;color:var(--nuit);white-space:nowrap}
+.etiquette .franco td{border-bottom:0;color:var(--cacao);font-weight:700}
+
+/* ── Coffrets (section sombre) ── */
+.sombre{background:var(--nuit);color:#E8E4DA}
+.sombre h2{color:#fff}
+.taille-choix{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 8px}
+.taille-choix label{flex:1;min-width:150px;cursor:pointer}
+.taille-choix input{position:absolute;opacity:0;width:44px;height:44px}
+.taille-carte{display:block;border:1.5px solid rgba(244,237,226,.4);border-radius:10px;padding:14px 16px;min-height:44px;transition:background .15s,border-color .15s}
+.taille-carte strong{display:block;font-family:var(--serif);font-size:19px;color:#fff}
+.taille-carte span{font-size:13px;color:#C8CEDC}
+.taille-choix input:checked + .taille-carte{background:var(--creme);border-color:var(--creme)}
+.taille-choix input:checked + .taille-carte strong{color:var(--nuit)}
+.taille-choix input:checked + .taille-carte span{color:var(--cacao);font-weight:700}
+.taille-choix input:focus-visible + .taille-carte{outline:3px solid var(--creme);outline-offset:2px}
+.saveurs{list-style:none;display:grid;gap:10px;margin-top:18px}
+@media (min-width:760px){.saveurs{grid-template-columns:1fr 1fr}}
+.saveur{display:flex;align-items:center;gap:12px;background:rgba(251,247,240,.08);border:1px solid rgba(244,237,226,.18);border-radius:10px;padding:10px 12px}
+.saveur .s-tx{flex:1;min-width:0}
+.saveur strong{display:block;font-size:14.5px;color:#fff}
+.saveur span{font-size:12.5px;color:#B9C3D8}
+.stepper{display:flex;align-items:center;gap:2px}
+.stepper button{width:44px;height:44px;border-radius:8px;border:1px solid rgba(244,237,226,.45);background:transparent;color:#fff;font-size:20px;font-weight:700;cursor:pointer;line-height:1}
+.stepper button:hover{background:rgba(244,237,226,.14)}
+.stepper button[disabled]{opacity:.3;cursor:not-allowed}
+.stepper output{min-width:30px;text-align:center;font-weight:700;font-size:16px;color:#fff}
+.coffret-pied{margin-top:22px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.compteur{flex-basis:100%;font-size:15px;font-weight:700;color:#fff}
+.jauge{height:6px;border-radius:3px;background:rgba(244,237,226,.18);overflow:hidden;margin-top:8px}
+.jauge i{display:block;height:100%;width:0;background:var(--creme);transition:width .2s}
+
+/* ── Créations ── */
+.crea-grid{display:grid;gap:30px;margin-top:26px}
+@media (min-width:880px){.crea-grid{grid-template-columns:.85fr 1.15fr;align-items:start}}
+.carte-photo{border-radius:12px;overflow:hidden;border:1px solid var(--ligne);box-shadow:0 14px 30px rgba(74,50,37,.16)}
+form .champ{margin-bottom:16px}
+label.lbl{display:block;font-size:13.5px;font-weight:700;color:var(--nuit);margin-bottom:6px}
+input[type=date],input[type=number],select,textarea{width:100%;min-height:48px;border:1.5px solid var(--cacao);border-radius:8px;background:var(--clair);padding:11px 13px;font:inherit;color:var(--encre)}
+textarea{resize:vertical;min-height:84px}
+.recap{margin-top:18px;background:var(--clair);border:1.5px solid var(--nuit);border-radius:10px;padding:18px}
+.recap h3{font-size:18px;margin-bottom:8px}
+.recap p{font-size:14.5px}
+.recap .demo-tag{display:inline-block;margin-top:10px;background:var(--cacao);color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;border-radius:4px}
+
+/* ── La boutique ── */
+.adresse-grid{display:grid;gap:22px;margin-top:26px}
+@media (min-width:820px){.adresse-grid{grid-template-columns:1.1fr .9fr}}
+.fiche-adresse{background:var(--clair);border:1.5px solid var(--nuit);border-radius:10px;overflow:hidden}
+.fiche-adresse .corps{padding:20px}
+.fiche-adresse .destinataire{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--mut)}
+.fiche-adresse address{font-style:normal;font-family:var(--serif);font-size:21px;color:var(--nuit);margin:8px 0 16px;line-height:1.45}
+.cta-ligne{display:flex;flex-wrap:wrap;gap:10px}
+.horaires{width:100%;border-collapse:collapse;font-size:14.5px;background:var(--clair);border:1px solid var(--ligne);border-radius:10px;overflow:hidden}
+.horaires caption{caption-side:top;text-align:left;font:700 13px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--cacao);padding-bottom:10px}
+.horaires th{text-align:left;font-weight:700;color:var(--nuit)}
+.horaires th,.horaires td{padding:11px 14px;border-bottom:1px dashed var(--ligne)}
+.horaires tr:last-child th,.horaires tr:last-child td{border-bottom:0}
+.horaires td{text-align:right;white-space:nowrap}
+
+/* ── Avis ── */
+.avis-tete{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:18px}
+.avis-note{font-family:var(--serif);font-size:44px;font-weight:700;color:var(--nuit)}
+.avis-grid{display:grid;gap:14px;margin-top:24px}
+@media (min-width:760px){.avis-grid{grid-template-columns:repeat(3,1fr)}}
+.avis-carte{background:var(--clair);border:1px solid var(--ligne);border-left:4px solid var(--nuit);border-radius:10px;padding:18px}
+.avis-carte blockquote{font-family:var(--serif);font-style:italic;font-size:15.5px;color:var(--encre)}
+.avis-carte footer{margin-top:10px;font-size:12.5px;font-weight:700;color:var(--mut)}
+
+/* ── Pied de page ── */
+.pied{background:var(--nuit-d);color:#B9C3D8;font-size:14px}
+.pied-in{max-width:1100px;margin:0 auto;padding:38px 18px;display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between}
+.pied strong{color:#fff;font-family:var(--serif);font-size:17px}
+.pied a{color:#D9DEE9;min-height:44px;display:inline-flex;align-items:center;text-decoration:underline}
+.pied ul{list-style:none}
+.pied .mini{flex-basis:100%;font-size:12px;color:#8B97AF;border-top:1px solid rgba(244,237,226,.12);padding-top:16px}
+
+/* ── Bandeau légal fixe ── */
+.legal{position:fixed;left:0;right:0;bottom:0;z-index:100;background:var(--nuit-d);color:#E2DED4;font-size:11px;line-height:1.5;text-align:center;padding:7px 12px;border-top:1px solid rgba(244,237,226,.22)}
+
+/* ── Panier flottant ── */
+.panier-flot{position:fixed;right:14px;bottom:calc(var(--legal-h) + 12px);z-index:80;display:inline-flex;align-items:center;gap:9px;min-height:52px;padding:12px 18px;border:0;border-radius:999px;background:var(--cacao);color:#fff;font:700 15px var(--sans);cursor:pointer;box-shadow:0 8px 22px rgba(36,27,18,.4)}
+.panier-flot .bulle{background:var(--creme);color:var(--cacao);font-size:13px;min-width:24px;height:24px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;padding:0 6px}
+.panier-flot.pulse{animation:pulse .45s ease}
+@keyframes pulse{50%{transform:scale(1.07)}}
+
+/* ── Tiroir colis ── */
+.voile{position:fixed;inset:0;z-index:70;background:rgba(19,31,53,.58)}
+.tiroir{position:fixed;left:0;right:0;bottom:var(--legal-h);z-index:75;margin:0 auto;max-width:520px;max-height:calc(100dvh - var(--legal-h) - 24px);overflow:auto;background:var(--creme);border-radius:14px 14px 0 0;box-shadow:0 -12px 40px rgba(19,31,53,.4)}
+.tiroir-tete{display:flex;align-items:flex-start;gap:10px;padding:16px 18px 4px}
+.tiroir-tete h2{font-size:23px;margin:0}
+.tiroir-tete p{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--mut)}
+.fermer{margin-left:auto;width:44px;height:44px;border-radius:8px;border:1px solid var(--ligne);background:var(--clair);font-size:19px;cursor:pointer;color:var(--nuit);flex:none}
+.tiroir-corps{padding:8px 18px 20px}
+.p-liste{list-style:none}
+.p-liste .vide{padding:18px 0;color:var(--mut);font-size:14.5px}
+.p-item{display:flex;align-items:center;gap:8px;padding:12px 0;border-bottom:1px dashed var(--ligne)}
+.p-item .p-tx{flex:1;min-width:0}
+.p-item strong{display:block;font-size:14px;color:var(--nuit)}
+.p-item span{font-size:12.5px;color:var(--mut)}
+.p-item .stepper button{border-color:var(--cacao);color:var(--cacao);background:var(--clair)}
+.p-item .stepper output{color:var(--encre);min-width:26px}
+.suppr{width:44px;height:44px;border:0;background:transparent;color:var(--mut);font-size:16px;cursor:pointer;border-radius:8px}
+.suppr:hover{color:#8A2D1F;background:rgba(138,45,31,.08)}
+.mode{border:1.5px solid var(--nuit);border-radius:10px;margin-top:16px;padding:14px}
+.mode legend{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--nuit);padding:0 6px}
+.mode label{display:flex;gap:11px;align-items:flex-start;padding:9px 4px;cursor:pointer;min-height:44px}
+.mode input{width:20px;height:20px;margin-top:3px;accent-color:var(--nuit);flex:none}
+.mode strong{font-size:14.5px;color:var(--nuit)}
+.mode small{display:block;font-size:12.5px;color:var(--mut)}
+.totaux{margin-top:16px;font-size:14.5px}
+.totaux div{display:flex;justify-content:space-between;gap-row:4px;padding:5px 0}
+.totaux dt{color:var(--mut)}
+.totaux dd{font-weight:700;color:var(--nuit)}
+.totaux .grand{border-top:1.5px solid var(--nuit);margin-top:6px;padding-top:10px}
+.totaux .grand dt{color:var(--encre);font-weight:700}
+.totaux .grand dd{font-family:var(--serif);font-size:20px;color:var(--cacao)}
+.envoi-note{display:flex;gap:9px;align-items:center;margin-top:12px;background:var(--clair);border:1px dashed var(--nuit);border-radius:8px;padding:10px 12px;font-size:13px;font-weight:500;color:var(--nuit)}
+.tiroir .btn{width:100%;margin-top:16px}
+.barcode{color:var(--nuit);opacity:.8}
+
+/* ── Écran démonstration ── */
+.demo-fond{position:fixed;inset:0;z-index:85;background:rgba(19,31,53,.72);display:flex;align-items:center;justify-content:center;padding:18px;padding-bottom:calc(var(--legal-h) + 18px)}
+.demo-carte{background:var(--creme);border-radius:14px;max-width:430px;width:100%;max-height:calc(100dvh - var(--legal-h) - 40px);overflow:auto;box-shadow:0 24px 60px rgba(0,0,0,.4)}
+.demo-corps{padding:24px 22px}
+.demo-corps .kicker{margin-bottom:8px}
+.demo-corps h2{font-size:26px}
+.demo-corps .recap-demo{margin:14px 0;background:var(--clair);border:1px dashed var(--cacao);border-radius:8px;padding:13px 15px;font-size:14px}
+.demo-corps p.expl{font-size:14px;color:var(--mut)}
+.demo-corps .btn{width:100%;margin-top:18px}
+.demo-corps .lien-vider{display:inline-flex;align-items:center;min-height:44px;margin-top:8px;background:none;border:0;font:500 13.5px var(--sans);color:var(--mut);text-decoration:underline;cursor:pointer;width:100%;justify-content:center}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="marque" href="#contenu">
+      <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="6" width="26" height="18" rx="2" fill="none" stroke="#F4EDE2" stroke-width="2"/><path d="M3.5 8l11.5 8L26.5 8" fill="none" stroke="#F4EDE2" stroke-width="2" stroke-linecap="round"/></svg>
+      <span>Chocolats Carl<small>Chocolatier · Saint-Dié-des-Vosges</small></span>
+    </a>
+    <nav class="ancres" aria-label="Sections de la page">
+      <a href="#boutique">Boutique</a>
+      <a href="#coffrets">Coffrets</a>
+      <a href="#creations">Créations</a>
+      <a href="#adresse">La boutique</a>
+      <a href="#avis">Avis</a>
+    </nav>
+    <a class="tel-top" href="tel:+33329561561">
+      <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.7 1.5c.5-.4 1.2-.3 1.6.2l1.5 2c.4.5.3 1.2-.1 1.6l-.9.8c.5 1.2 2 2.7 3.2 3.2l.8-.9c.4-.4 1.1-.5 1.6-.1l2 1.5c.5.4.6 1.1.2 1.6l-1 1.2c-.5.5-1.2.7-1.9.5C7.6 12 4 8.4 2.9 5.3c-.2-.7 0-1.4.5-1.9z" fill="currentColor"/></svg>
+      03 29 56 15 61
+    </a>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <!-- ════ HERO ════ -->
+  <section class="hero" aria-labelledby="titre-hero">
+    <div class="hero-in">
+      <div>
+        <p class="kicker">Chocolatier-pâtissier · 6 rue Thiers, Saint-Dié-des-Vosges</p>
+        <h1 id="titre-hero">Vos chocolats, <em>partout en France.</em></h1>
+        <p class="pitch">Ganaches, pralinés et créations façonnés dans notre boutique du centre de Saint-Dié. À retirer rue Thiers — ou glissés dans un colis soigné, expédiés chez ceux que vous aimez.</p>
+        <div class="hero-cta">
+          <a class="btn btn-nuit" href="#boutique">
+            <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 6.5v11L12 22l9-4.5v-11zM5 8.4l7 3.5 7-3.5M12 11.9V21" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Commander &amp; expédier
+          </a>
+          <a class="btn btn-ghost" href="#coffrets">Composer un coffret</a>
+        </div>
+        <p class="note-hero">
+          <span class="etoiles" aria-hidden="true">
+            <svg width="92" height="17" viewBox="0 0 100 18"><defs><linearGradient id="g44"><stop offset="40%" stop-color="#4A3225"/><stop offset="40%" stop-color="#D8CCBA"/></linearGradient></defs><g><path id="et" d="M9 .8l2.5 5.2 5.7.8-4.1 4 1 5.6L9 13.7l-5.1 2.7 1-5.6-4.1-4 5.7-.8z" fill="#4A3225"/><use href="#et" x="20"/><use href="#et" x="40"/><use href="#et" x="60"/><path d="M89 .8l2.5 5.2 5.7.8-4.1 4 1 5.6-5.1-2.7-5.1 2.7 1-5.6-4.1-4 5.7-.8z" fill="url(#g44)"/></g></svg>
+          </span>
+          <strong>4,4 / 5</strong> · 126 avis Google
+        </p>
+      </div>
+      <figure class="fig-hero">
+        <div class="timbre">
+          <img src="img/hero-coeurs.webp" alt="Chocolats au lait en forme de cœur empilés sur une table claire" width="1100" height="1300" fetchpriority="high">
+          <p class="valeur" aria-hidden="true"><strong>88</strong>Saint-Dié</p>
+        </div>
+        <svg class="cachet" viewBox="0 0 150 72" aria-hidden="true">
+          <g fill="none" stroke="#1C2A44" stroke-width="2.2" opacity=".82">
+            <circle cx="36" cy="36" r="32"/><circle cx="36" cy="36" r="25"/>
+            <path d="M76 22c7 5 14-5 21 0s14-5 21 0s14-5 21 0"/>
+            <path d="M76 36c7 5 14-5 21 0s14-5 21 0s14-5 21 0"/>
+            <path d="M76 50c7 5 14-5 21 0s14-5 21 0s14-5 21 0"/>
+          </g>
+          <text x="36" y="33" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1C2A44" font-family="sans-serif" letter-spacing="1">SAINT-DIÉ</text>
+          <text x="36" y="45" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1C2A44" font-family="sans-serif" letter-spacing="2">88100</text>
+        </svg>
+        <figcaption class="sr-only">Photo d'illustration libre de droits</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="liseret" aria-hidden="true"></div>
+
+  <!-- ════ WOW : BOUTIQUE D'EXPÉDITION ════ -->
+  <section id="boutique" aria-labelledby="titre-boutique">
+    <div class="bloc">
+      <p class="kicker">La boutique d'expédition</p>
+      <h2 id="titre-boutique">Choisissez, on emballe, la France déguste</h2>
+      <p class="intro">Ajoutez vos douceurs au colis : au moment de valider, choisissez le <strong>retrait rue Thiers</strong> ou l'<strong>expédition partout en France</strong>, avec un port calculé au poids exact de votre colis.</p>
+      <p class="bandeau-envoi">
+        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 6.5v11L12 22l9-4.5v-11zM5 8.4l7 3.5 7-3.5M12 11.9V21" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        Expédié sous 48 h — partout en France
+      </p>
+
+      <!-- [À REMPLACER] Produits et prix d'exemple : reprendre la gamme réelle de la maison (noms, poids, tarifs). -->
+      <div class="grille">
+        <article class="prod">
+          <h3>Ballotin ganaches &amp; pralinés</h3>
+          <p class="desc">L'assortiment signature de la maison, 24 chocolats environ.</p>
+          <p class="ligne-prix"><span class="prix">18,50&nbsp;€</span><span class="poids">250&nbsp;g</span></p>
+          <button class="btn btn-nuit" type="button" data-add="b250">Ajouter au colis</button>
+        </article>
+        <article class="prod">
+          <h3>Grand ballotin de la maison</h3>
+          <p class="desc">Le même assortiment, en format généreux pour les grandes tablées.</p>
+          <p class="ligne-prix"><span class="prix">34,00&nbsp;€</span><span class="poids">500&nbsp;g</span></p>
+          <button class="btn btn-nuit" type="button" data-add="b500">Ajouter au colis</button>
+        </article>
+        <article class="prod">
+          <h3>Tablette noir 72&nbsp;%</h3>
+          <p class="desc">Grand cru intense, longue finale cacaotée.</p>
+          <p class="ligne-prix"><span class="prix">6,90&nbsp;€</span><span class="poids">100&nbsp;g</span></p>
+          <button class="btn btn-nuit" type="button" data-add="tn">Ajouter au colis</button>
+        </article>
+        <article class="prod">
+          <h3>Tablette lait &amp; éclats de fèves</h3>
+          <p class="desc">Lait onctueux, croquant de grué torréfié.</p>
+          <p class="ligne-prix"><span class="prix">6,50&nbsp;€</span><span class="poids">100&nbsp;g</span></p>
+          <button class="btn btn-nuit" type="button" data-add="tl">Ajouter au colis</button>
+        </article>
+        <figure class="tuile-photo">
+          <img src="img/tablettes.webp" alt="Tablettes de chocolat au lait entourées de fèves de cacao sur fond clair" width="800" height="1000" loading="lazy">
+          <figcaption>Fèves torréfiées, chocolat travaillé puis emballé rue Thiers — photo d'illustration.</figcaption>
+        </figure>
+        <article class="prod">
+          <h3>Cœurs pralinés</h3>
+          <p class="desc">Sachet de cœurs au praliné noisette, l'attention parfaite à glisser dans un colis.</p>
+          <p class="ligne-prix"><span class="prix">12,00&nbsp;€</span><span class="poids">150&nbsp;g</span></p>
+          <button class="btn btn-nuit" type="button" data-add="coeurs">Ajouter au colis</button>
+        </article>
+        <article class="prod">
+          <h3>Truffes à l'ancienne</h3>
+          <p class="desc">Ganache noire roulée au cacao amer.</p>
+          <p class="ligne-prix"><span class="prix">15,50&nbsp;€</span><span class="poids">200&nbsp;g</span></p>
+          <button class="btn btn-nuit" type="button" data-add="truffes">Ajouter au colis</button>
+        </article>
+        <article class="prod">
+          <h3>Pâtes de fruits des Vosges</h3>
+          <p class="desc">Fruits de nos montagnes, taillées au couteau.</p>
+          <p class="ligne-prix"><span class="prix">11,00&nbsp;€</span><span class="poids">200&nbsp;g</span></p>
+          <button class="btn btn-nuit" type="button" data-add="pdf">Ajouter au colis</button>
+        </article>
+        <article class="prod">
+          <h3>Orangettes enrobées noir</h3>
+          <p class="desc">Écorces confites, enrobage noir 72&nbsp;%.</p>
+          <p class="ligne-prix"><span class="prix">12,50&nbsp;€</span><span class="poids">180&nbsp;g</span></p>
+          <button class="btn btn-nuit" type="button" data-add="ora">Ajouter au colis</button>
+        </article>
+      </div>
+
+      <!-- [À REMPLACER] Tarifs d'expédition factices (tranches de poids, franco) : aligner sur les tarifs réels d'envoi. -->
+      <div class="etiquette" role="group" aria-labelledby="tarifs-titre">
+        <p class="etiquette-tete" id="tarifs-titre">
+          <span>Affranchissement — France métropolitaine</span>
+          <svg class="barcode" width="64" height="18" viewBox="0 0 64 18" aria-hidden="true" preserveAspectRatio="none"><g fill="currentColor"><rect width="3" height="18"/><rect x="5" width="1.5" height="18"/><rect x="9" width="4" height="18"/><rect x="15" width="1.5" height="18"/><rect x="19" width="2.5" height="18"/><rect x="24" width="5" height="18"/><rect x="31" width="1.5" height="18"/><rect x="35" width="3" height="18"/><rect x="40" width="1.5" height="18"/><rect x="44" width="4" height="18"/><rect x="50" width="2" height="18"/><rect x="54" width="1.5" height="18"/><rect x="58" width="3.5" height="18"/></g></svg>
+        </p>
+        <table>
+          <tbody>
+            <tr><td>Colis jusqu'à 500&nbsp;g</td><td>6,90&nbsp;€</td></tr>
+            <tr><td>De 500&nbsp;g à 1&nbsp;kg</td><td>8,90&nbsp;€</td></tr>
+            <tr><td>De 1&nbsp;kg à 2&nbsp;kg</td><td>10,90&nbsp;€</td></tr>
+            <tr><td>Au-delà de 2&nbsp;kg</td><td>13,90&nbsp;€</td></tr>
+            <tr class="franco"><td>Dès 80&nbsp;€ d'achat</td><td>Port offert</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ COFFRETS À COMPOSER ════ -->
+  <section id="coffrets" class="sombre" aria-labelledby="titre-coffrets">
+    <div class="liseret" aria-hidden="true"></div>
+    <div class="bloc">
+      <p class="kicker">Coffrets à composer</p>
+      <h2 id="titre-coffrets">Votre coffret, chocolat par chocolat</h2>
+      <p class="intro">Choisissez la taille du coffret, puis remplissez-le à votre goût parmi nos ganaches et pralinés. Il rejoint ensuite votre colis comme n'importe quelle douceur.</p>
+
+      <!-- [À REMPLACER] Tailles, nombre de chocolats et prix des coffrets : à aligner sur l'offre réelle. -->
+      <div class="taille-choix" role="radiogroup" aria-label="Taille du coffret">
+        <label><input type="radio" name="taille" value="250" checked>
+          <span class="taille-carte"><strong>Coffret 250&nbsp;g</strong><span>16 chocolats · 19,90&nbsp;€</span></span>
+        </label>
+        <label><input type="radio" name="taille" value="500">
+          <span class="taille-carte"><strong>Coffret 500&nbsp;g</strong><span>32 chocolats · 37,90&nbsp;€</span></span>
+        </label>
+      </div>
+
+      <!-- [À REMPLACER] Saveurs d'exemple : reprendre les ganaches et pralinés réels de la maison. -->
+      <ul class="saveurs" id="saveurs">
+        <li class="saveur"><div class="s-tx"><strong>Ganache noire 72&nbsp;%</strong><span>Pure origine, longue en bouche</span></div><div class="stepper"><button type="button" data-i="0" data-s="-1" aria-label="Retirer un chocolat ganache noire 72 %">−</button><output id="s-0">0</output><button type="button" data-i="0" data-s="1" aria-label="Ajouter un chocolat ganache noire 72 %">+</button></div></li>
+        <li class="saveur"><div class="s-tx"><strong>Ganache lait-passion</strong><span>Douceur lactée, pointe acidulée</span></div><div class="stepper"><button type="button" data-i="1" data-s="-1" aria-label="Retirer un chocolat ganache lait-passion">−</button><output id="s-1">0</output><button type="button" data-i="1" data-s="1" aria-label="Ajouter un chocolat ganache lait-passion">+</button></div></li>
+        <li class="saveur"><div class="s-tx"><strong>Ganache miel de sapin</strong><span>Miel des Vosges, chocolat noir</span></div><div class="stepper"><button type="button" data-i="2" data-s="-1" aria-label="Retirer un chocolat ganache miel de sapin">−</button><output id="s-2">0</output><button type="button" data-i="2" data-s="1" aria-label="Ajouter un chocolat ganache miel de sapin">+</button></div></li>
+        <li class="saveur"><div class="s-tx"><strong>Praliné noisette</strong><span>À l'ancienne, légèrement caramélisé</span></div><div class="stepper"><button type="button" data-i="3" data-s="-1" aria-label="Retirer un chocolat praliné noisette">−</button><output id="s-3">0</output><button type="button" data-i="3" data-s="1" aria-label="Ajouter un chocolat praliné noisette">+</button></div></li>
+        <li class="saveur"><div class="s-tx"><strong>Praliné amande &amp; fleur de sel</strong><span>Équilibre sucré-salé</span></div><div class="stepper"><button type="button" data-i="4" data-s="-1" aria-label="Retirer un chocolat praliné amande et fleur de sel">−</button><output id="s-4">0</output><button type="button" data-i="4" data-s="1" aria-label="Ajouter un chocolat praliné amande et fleur de sel">+</button></div></li>
+        <li class="saveur"><div class="s-tx"><strong>Praliné feuilleté</strong><span>Croustillant de crêpe dentelle</span></div><div class="stepper"><button type="button" data-i="5" data-s="-1" aria-label="Retirer un chocolat praliné feuilleté">−</button><output id="s-5">0</output><button type="button" data-i="5" data-s="1" aria-label="Ajouter un chocolat praliné feuilleté">+</button></div></li>
+        <li class="saveur"><div class="s-tx"><strong>Caramel beurre salé</strong><span>Cœur coulant, enrobage noir</span></div><div class="stepper"><button type="button" data-i="6" data-s="-1" aria-label="Retirer un chocolat caramel beurre salé">−</button><output id="s-6">0</output><button type="button" data-i="6" data-s="1" aria-label="Ajouter un chocolat caramel beurre salé">+</button></div></li>
+        <li class="saveur"><div class="s-tx"><strong>Gianduja</strong><span>Noisette du Piémont, fondant</span></div><div class="stepper"><button type="button" data-i="7" data-s="-1" aria-label="Retirer un chocolat gianduja">−</button><output id="s-7">0</output><button type="button" data-i="7" data-s="1" aria-label="Ajouter un chocolat gianduja">+</button></div></li>
+      </ul>
+
+      <div class="coffret-pied">
+        <div class="compteur" aria-live="polite" id="compteur">
+          <span id="compteur-tx">0 / 16 chocolats choisis</span>
+          <span class="jauge" aria-hidden="true"><i id="jauge"></i></span>
+        </div>
+        <button class="btn btn-ghost" type="button" id="btn-hasard" style="color:#fff;border-color:rgba(244,237,226,.55)">Surprenez-moi</button>
+        <button class="btn btn-cacao" type="button" id="btn-coffret" disabled>Ajouter le coffret — 19,90&nbsp;€</button>
+      </div>
+    </div>
+    <div class="liseret" aria-hidden="true"></div>
+  </section>
+
+  <!-- ════ CRÉATIONS & BÛCHES ════ -->
+  <section id="creations" aria-labelledby="titre-creations">
+    <div class="bloc">
+      <p class="kicker">Sur commande</p>
+      <h2 id="titre-creations">Créations &amp; bûches pour vos grandes occasions</h2>
+      <p class="intro">Anniversaires, mariages, fêtes de fin d'année : l'atelier façonne des pièces uniques en chocolat et des bûches de saison. Dites-nous l'occasion, on s'occupe du reste.</p>
+      <div class="crea-grid">
+        <figure class="carte-photo">
+          <img src="img/creation.webp" alt="Gâteau au chocolat blanc décoré d'une clémentine et de cierges magiques" width="800" height="1000" loading="lazy">
+        </figure>
+        <!-- [À REMPLACER] Occasions, délais et textes d'exemple : à valider avec la maison. -->
+        <form id="form-crea" novalidate>
+          <div class="champ">
+            <label class="lbl" for="crea-occasion">L'occasion</label>
+            <select id="crea-occasion" required>
+              <option value="">Choisir…</option>
+              <option>Anniversaire</option>
+              <option>Mariage</option>
+              <option>Baptême / communion</option>
+              <option>Bûche de fêtes</option>
+              <option>Autre événement</option>
+            </select>
+          </div>
+          <div class="champ">
+            <label class="lbl" for="crea-date">Date souhaitée</label>
+            <input type="date" id="crea-date" required>
+          </div>
+          <div class="champ">
+            <label class="lbl" for="crea-parts">Nombre de parts</label>
+            <input type="number" id="crea-parts" min="4" max="80" step="1" value="8" required>
+          </div>
+          <div class="champ">
+            <label class="lbl" for="crea-msg">Vos envies (parfums, décor…) — facultatif</label>
+            <textarea id="crea-msg" rows="3" placeholder="Ex. : chocolat blanc et clémentine, décor sobre…"></textarea>
+          </div>
+          <button class="btn btn-nuit" type="submit">Envoyer ma demande à l'atelier</button>
+          <div class="recap" id="crea-recap" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="liseret" aria-hidden="true"></div>
+
+  <!-- ════ LA BOUTIQUE ════ -->
+  <section id="adresse" aria-labelledby="titre-adresse">
+    <div class="bloc">
+      <p class="kicker">La boutique</p>
+      <h2 id="titre-adresse">Rue Thiers, au cœur de Saint-Dié</h2>
+      <div class="adresse-grid">
+        <div class="fiche-adresse">
+          <p class="etiquette-tete">
+            <span>Point de retrait de vos colis</span>
+            <svg class="barcode" width="64" height="18" viewBox="0 0 64 18" aria-hidden="true" preserveAspectRatio="none"><g fill="currentColor"><rect width="2" height="18"/><rect x="4" width="4" height="18"/><rect x="10" width="1.5" height="18"/><rect x="14" width="3" height="18"/><rect x="19" width="1.5" height="18"/><rect x="23" width="5" height="18"/><rect x="30" width="2" height="18"/><rect x="34" width="1.5" height="18"/><rect x="38" width="4" height="18"/><rect x="44" width="1.5" height="18"/><rect x="48" width="3" height="18"/><rect x="53" width="2" height="18"/><rect x="57" width="4" height="18"/></g></svg>
+          </p>
+          <div class="corps">
+            <p class="destinataire">Destinataire — vous</p>
+            <address>Chocolats Carl<br>6 rue Thiers<br>88100 Saint-Dié-des-Vosges</address>
+            <div class="cta-ligne">
+              <a class="btn btn-nuit" href="tel:+33329561561">
+                <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.7 1.5c.5-.4 1.2-.3 1.6.2l1.5 2c.4.5.3 1.2-.1 1.6l-.9.8c.5 1.2 2 2.7 3.2 3.2l.8-.9c.4-.4 1.1-.5 1.6-.1l2 1.5c.5.4.6 1.1.2 1.6l-1 1.2c-.5.5-1.2.7-1.9.5C7.6 12 4 8.4 2.9 5.3c-.2-.7 0-1.4.5-1.9z" fill="currentColor"/></svg>
+                03 29 56 15 61
+              </a>
+              <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Chocolats+Carl+6+rue+Thiers+88100+Saint-Di%C3%A9-des-Vosges" target="_blank" rel="noopener">Itinéraire Google Maps</a>
+            </div>
+          </div>
+        </div>
+        <table class="horaires">
+          <caption>Horaires d'ouverture</caption>
+          <tbody>
+            <tr><th scope="row">Lundi</th><td>14&nbsp;h&nbsp;–&nbsp;19&nbsp;h</td></tr>
+            <tr><th scope="row">Mardi&nbsp;–&nbsp;Samedi</th><td>9&nbsp;h&nbsp;–&nbsp;12&nbsp;h&nbsp;·&nbsp;14&nbsp;h&nbsp;–&nbsp;19&nbsp;h</td></tr>
+            <tr><th scope="row">Dimanche</th><td>9&nbsp;h&nbsp;30&nbsp;–&nbsp;12&nbsp;h</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ AVIS ════ -->
+  <section id="avis" aria-labelledby="titre-avis">
+    <div class="bloc" style="padding-top:10px">
+      <p class="kicker">Ils en parlent</p>
+      <h2 id="titre-avis">La douceur déodatienne, notée 4,4 sur 5</h2>
+      <div class="avis-tete">
+        <span class="avis-note">4,4</span>
+        <span class="etoiles" aria-hidden="true">
+          <svg width="108" height="20" viewBox="0 0 100 18"><g><use href="#et"/><use href="#et" x="20"/><use href="#et" x="40"/><use href="#et" x="60"/><path d="M89 .8l2.5 5.2 5.7.8-4.1 4 1 5.6-5.1-2.7-5.1 2.7 1-5.6-4.1-4 5.7-.8z" fill="url(#g44)"/></g></svg>
+        </span>
+        <span style="color:var(--mut);font-size:14.5px">126 avis sur Google</span>
+      </div>
+      <!-- [À REMPLACER] Extraits illustratifs (≤ 15 mots) : remplacer par de vrais extraits d'avis Google de l'établissement. -->
+      <div class="avis-grid">
+        <article class="avis-carte"><blockquote>« Des ganaches d'une finesse rare et un accueil toujours souriant. »</blockquote><footer>Avis Google — extrait illustratif</footer></article>
+        <article class="avis-carte"><blockquote>« Mes chocolats sont arrivés impeccables, l'emballage est très soigné. »</blockquote><footer>Avis Google — extrait illustratif</footer></article>
+        <article class="avis-carte"><blockquote>« La bûche commandée pour les fêtes a fait l'unanimité à table. »</blockquote><footer>Avis Google — extrait illustratif</footer></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pied">
+  <div class="liseret" aria-hidden="true"></div>
+  <div class="pied-in">
+    <div>
+      <strong>Chocolats Carl</strong>
+      <p>6 rue Thiers, 88100 Saint-Dié-des-Vosges<br><a href="tel:+33329561561">03 29 56 15 61</a></p>
+    </div>
+    <ul>
+      <li><a href="#boutique">Boutique d'expédition</a></li>
+      <li><a href="#coffrets">Coffrets à composer</a></li>
+      <li><a href="#creations">Créations &amp; bûches</a></li>
+      <li><a href="#avis">Avis</a></li>
+    </ul>
+    <p class="mini">Maquette de démonstration — L'Atelier Web des Vosges. Photos d'illustration libres de droits (Unsplash/Pexels). Aucune commande réelle, aucun paiement, aucune donnée collectée.</p>
+  </div>
+</footer>
+
+<!-- ── Panier flottant ── -->
+<button class="panier-flot" id="panier-btn" type="button" aria-haspopup="dialog" aria-controls="tiroir">
+  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 6.5v11L12 22l9-4.5v-11zM5 8.4l7 3.5 7-3.5M12 11.9V21" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+  Mon colis <span class="bulle" id="panier-n">0</span>
+</button>
+
+<!-- ── Tiroir « colis » ── -->
+<div class="voile" id="voile" hidden></div>
+<aside class="tiroir" id="tiroir" role="dialog" aria-modal="true" aria-labelledby="tiroir-titre" hidden>
+  <div class="liseret" aria-hidden="true"></div>
+  <header class="tiroir-tete">
+    <div>
+      <p>Étiquette d'expédition — démo</p>
+      <h2 id="tiroir-titre">Votre colis</h2>
+    </div>
+    <button class="fermer" id="fermer-tiroir" type="button" aria-label="Fermer le panier">✕</button>
+  </header>
+  <div class="tiroir-corps">
+    <ul class="p-liste" id="p-liste"></ul>
+    <fieldset class="mode">
+      <legend>Livraison du colis</legend>
+      <label>
+        <input type="radio" name="mode" value="retrait" checked>
+        <span><strong>Retrait boutique — gratuit</strong><small>6 rue Thiers, Saint-Dié · prêt sous 24&nbsp;h ouvrées</small></span>
+      </label>
+      <label>
+        <input type="radio" name="mode" value="envoi">
+        <span><strong>Expédition France</strong><small>Port au poids réel du colis · offert dès 80&nbsp;€</small></span>
+      </label>
+    </fieldset>
+    <dl class="totaux">
+      <div><dt>Sous-total</dt><dd id="t-sous">0,00&nbsp;€</dd></div>
+      <div><dt>Poids du colis</dt><dd id="t-poids">0&nbsp;g</dd></div>
+      <div><dt>Affranchissement</dt><dd id="t-port">—</dd></div>
+      <div class="grand"><dt>Total</dt><dd id="t-total">0,00&nbsp;€</dd></div>
+    </dl>
+    <p class="envoi-note" id="envoi-note" hidden>
+      <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><path d="M12 2 3 6.5v11L12 22l9-4.5v-11zM5 8.4l7 3.5 7-3.5M12 11.9V21" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Départ estimé sous 48&nbsp;h ouvrées, suivi du colis par e-mail — simulation.
+    </p>
+    <button class="btn btn-cacao" id="btn-valider" type="button" disabled>Valider la commande</button>
+  </div>
+</aside>
+
+<!-- ── Écran « démonstration » ── -->
+<div class="demo-fond" id="demo-fond" role="dialog" aria-modal="true" aria-labelledby="demo-titre" hidden>
+  <div class="demo-carte">
+    <div class="liseret" aria-hidden="true"></div>
+    <div class="demo-corps">
+      <p class="kicker">Fin du parcours de commande</p>
+      <h2 id="demo-titre">Ceci est une démonstration</h2>
+      <div class="recap-demo" id="demo-recap"></div>
+      <p class="expl">Aucune commande n'a été transmise et rien n'a été débité. En production : paiement CB sécurisé ou paiement au retrait, e-mail de confirmation et numéro de suivi du colis.</p>
+      <button class="btn btn-nuit" id="demo-fermer" type="button">Revenir à la boutique</button>
+      <button class="lien-vider" id="demo-vider" type="button">Vider le panier de démonstration</button>
+    </div>
+  </div>
+</div>
+
+<p class="sr-only" aria-live="polite" id="live"></p>
+
+<!-- Bandeau légal obligatoire -->
+<p class="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</p>
+
+<script>
+(function(){
+"use strict";
+var $=function(s,c){return (c||document).querySelector(s)};
+var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+
+/* Hauteur réelle du bandeau légal -> variable CSS */
+var legal=$(".legal");
+function majLegal(){document.documentElement.style.setProperty("--legal-h",legal.offsetHeight+"px")}
+window.addEventListener("resize",majLegal);majLegal();
+
+/* ── Catalogue (prix factices, voir commentaires [À REMPLACER]) ── */
+var CAT={
+  b250:{n:"Ballotin ganaches & pralinés 250 g",p:18.5,g:250},
+  b500:{n:"Grand ballotin de la maison 500 g",p:34,g:500},
+  tn:{n:"Tablette noir 72 %",p:6.9,g:100},
+  tl:{n:"Tablette lait & éclats de fèves",p:6.5,g:100},
+  coeurs:{n:"Cœurs pralinés 150 g",p:12,g:150},
+  truffes:{n:"Truffes à l'ancienne 200 g",p:15.5,g:200},
+  pdf:{n:"Pâtes de fruits des Vosges 200 g",p:11,g:200},
+  ora:{n:"Orangettes enrobées noir 180 g",p:12.5,g:180}
+};
+/* Tranches de port factices [À REMPLACER] */
+function portPoids(g){return g<=500?6.9:g<=1000?8.9:g<=2000?10.9:13.9}
+
+/* ── État (localStorage : simulation, aucune donnée personnelle) ── */
+var panier=[];try{panier=JSON.parse(localStorage.getItem("carlPanier"))||[]}catch(e){panier=[]}
+var mode=localStorage.getItem("carlMode")==="envoi"?"envoi":"retrait";
+
+var live=$("#live");
+function dire(t){live.textContent="";window.setTimeout(function(){live.textContent=t},60)}
+function eur(x){return x.toFixed(2).replace(".",",")+" €"}
+function poidsTxt(g){return g>=1000?String(Math.round(g/100)/10).replace(".",",")+" kg":g+" g"}
+function save(){try{localStorage.setItem("carlPanier",JSON.stringify(panier));localStorage.setItem("carlMode",mode)}catch(e){}}
+function totaux(){var s=0,g=0,n=0;panier.forEach(function(i){s+=i.p*i.q;g+=i.g*i.q;n+=i.q});return{s:s,g:g,n:n}}
+function port(t){if(mode==="retrait"||!t.g)return 0;if(t.s>=80)return 0;return portPoids(t.g)}
+
+function render(){
+  var t=totaux(),p=port(t);
+  $("#panier-n").textContent=t.n;
+  var ul=$("#p-liste");
+  if(!panier.length){
+    ul.innerHTML='<li class="vide">Votre colis est vide — ajoutez des douceurs depuis la boutique.</li>';
+  }else{
+    ul.innerHTML=panier.map(function(i,ix){
+      return '<li class="p-item"><div class="p-tx"><strong>'+i.n+'</strong><span>'+eur(i.p)+' · '+poidsTxt(i.g)+' l’unité</span></div>'+
+      '<div class="stepper"><button type="button" data-act="-" data-i="'+ix+'" aria-label="Réduire la quantité de '+i.n+'">−</button><output>'+i.q+'</output><button type="button" data-act="+" data-i="'+ix+'" aria-label="Augmenter la quantité de '+i.n+'">+</button></div>'+
+      '<button class="suppr" type="button" data-act="x" data-i="'+ix+'" aria-label="Retirer '+i.n+' du colis">✕</button></li>';
+    }).join("");
+  }
+  $("#t-sous").textContent=eur(t.s);
+  $("#t-poids").textContent=poidsTxt(t.g);
+  $("#t-port").textContent=!t.n?"—":(mode==="retrait"?"Gratuit (retrait)":(p===0?"Offert (dès 80 €)":eur(p)));
+  $("#t-total").textContent=eur(t.s+p);
+  $("#envoi-note").hidden=(mode!=="envoi"||!t.n);
+  $("#btn-valider").disabled=!t.n;
+  $$('input[name="mode"]').forEach(function(r){r.checked=(r.value===mode)});
+  save();
+}
+function pulse(){var b=$("#panier-btn");b.classList.remove("pulse");void b.offsetWidth;b.classList.add("pulse")}
+function ajouter(item){
+  var ex=null;
+  panier.forEach(function(i){if(i.id===item.id)ex=i});
+  if(ex){ex.q+=1}else{panier.push(item)}
+  render();pulse();
+  dire(item.n+" ajouté au colis. "+totaux().n+" article(s) au total.");
+}
+
+/* Boutique : boutons « Ajouter au colis » */
+$$("[data-add]").forEach(function(b){
+  b.addEventListener("click",function(){
+    var k=b.getAttribute("data-add"),c=CAT[k];
+    ajouter({id:k,n:c.n,p:c.p,g:c.g,q:1});
+  });
+});
+
+/* Quantités dans le tiroir (délégation) */
+$("#p-liste").addEventListener("click",function(e){
+  var b=e.target.closest("button");if(!b)return;
+  var ix=+b.getAttribute("data-i"),act=b.getAttribute("data-act"),it=panier[ix];
+  if(!it)return;
+  if(act==="+"){it.q+=1}
+  else if(act==="-"){it.q-=1;if(it.q<1)panier.splice(ix,1)}
+  else if(act==="x"){panier.splice(ix,1);dire(it.n+" retiré du colis.")}
+  render();
+});
+
+/* Mode retrait / expédition */
+$$('input[name="mode"]').forEach(function(r){
+  r.addEventListener("change",function(){
+    mode=r.value;render();
+    dire(mode==="envoi"?"Expédition France sélectionnée, port calculé au poids.":"Retrait en boutique sélectionné, port gratuit.");
+  });
+});
+
+/* ── Tiroir + écran démo : ouverture/fermeture accessibles ── */
+var tiroir=$("#tiroir"),voile=$("#voile"),demo=$("#demo-fond"),dernierFocus=null;
+function ouvrirTiroir(){dernierFocus=document.activeElement;render();tiroir.hidden=false;voile.hidden=false;$("#fermer-tiroir").focus()}
+function fermerTiroir(){tiroir.hidden=true;voile.hidden=true;if(dernierFocus)dernierFocus.focus()}
+$("#panier-btn").addEventListener("click",ouvrirTiroir);
+$("#fermer-tiroir").addEventListener("click",fermerTiroir);
+voile.addEventListener("click",fermerTiroir);
+function fermerDemo(){demo.hidden=true;if(dernierFocus)dernierFocus.focus()}
+document.addEventListener("keydown",function(e){
+  if(e.key!=="Escape")return;
+  if(!demo.hidden){fermerDemo()}else if(!tiroir.hidden){fermerTiroir()}
+});
+demo.addEventListener("click",function(e){if(e.target===demo)fermerDemo()});
+$("#demo-fermer").addEventListener("click",fermerDemo);
+$("#demo-vider").addEventListener("click",function(){panier=[];render();fermerDemo();dire("Panier de démonstration vidé.")});
+
+/* Validation -> écran démonstration */
+$("#btn-valider").addEventListener("click",function(){
+  var t=totaux(),p=port(t);
+  var r="<strong>"+t.n+" article(s)</strong> · "+poidsTxt(t.g)+" · total "+eur(t.s+p)+"<br>";
+  r+=(mode==="envoi")
+    ?"Expédition France — affranchissement "+(p===0?"offert":eur(p))+", départ simulé sous 48 h ouvrées avec suivi."
+    :"Retrait boutique — 6 rue Thiers à Saint-Dié, colis prêt sous 24 h ouvrées (simulation).";
+  $("#demo-recap").innerHTML=r;
+  fermerTiroir();
+  dernierFocus=$("#panier-btn");
+  demo.hidden=false;$("#demo-fermer").focus();
+});
+
+/* ── Coffrets à composer ── */
+var TAILLES={250:{n:16,p:19.9},500:{n:32,p:37.9}};
+var taille=250,sel=[0,0,0,0,0,0,0,0];
+function totalSel(){return sel.reduce(function(a,b){return a+b},0)}
+function majCoffret(){
+  var max=TAILLES[taille].n,tot=totalSel(),plein=(tot>=max);
+  sel.forEach(function(v,i){$("#s-"+i).textContent=v});
+  $$("#saveurs button").forEach(function(b){
+    if(b.getAttribute("data-s")==="1"){b.disabled=plein}
+    else{b.disabled=(sel[+b.getAttribute("data-i")]===0)}
+  });
+  $("#compteur-tx").textContent=tot+" / "+max+" chocolats choisis"+(plein?" — coffret complet !":"");
+  $("#jauge").style.width=Math.min(100,Math.round(tot/max*100))+"%";
+  var bc=$("#btn-coffret");
+  bc.disabled=!plein;
+  bc.textContent="Ajouter le coffret — "+eur(TAILLES[taille].p);
+}
+$$('input[name="taille"]').forEach(function(r){
+  r.addEventListener("change",function(){
+    taille=+r.value;
+    if(totalSel()>TAILLES[taille].n){sel=[0,0,0,0,0,0,0,0];dire("Taille réduite : la sélection a été remise à zéro.")}
+    majCoffret();
+  });
+});
+$("#saveurs").addEventListener("click",function(e){
+  var b=e.target.closest("button");if(!b||b.disabled)return;
+  var i=+b.getAttribute("data-i"),s=+b.getAttribute("data-s");
+  sel[i]=Math.max(0,sel[i]+s);
+  majCoffret();
+});
+$("#btn-hasard").addEventListener("click",function(){
+  var max=TAILLES[taille].n;
+  while(totalSel()<max){sel[Math.floor(Math.random()*sel.length)]+=1}
+  majCoffret();
+  dire("Coffret rempli au hasard : "+max+" chocolats choisis.");
+});
+$("#btn-coffret").addEventListener("click",function(){
+  var tinfo=TAILLES[taille];
+  ajouter({id:"cof"+Date.now(),n:"Coffret composé "+taille+" g ("+tinfo.n+" chocolats)",p:tinfo.p,g:taille,q:1});
+  sel=[0,0,0,0,0,0,0,0];majCoffret();
+});
+majCoffret();
+
+/* ── Créations & bûches : récapitulatif simulé ── */
+var fc=$("#form-crea"),dateIn=$("#crea-date");
+dateIn.min=new Date().toISOString().slice(0,10);
+fc.addEventListener("submit",function(e){
+  e.preventDefault();
+  var o=$("#crea-occasion"),d=dateIn.value,pa=$("#crea-parts");
+  if(!o.value){o.focus();dire("Choisissez une occasion.");return}
+  if(!d){dateIn.focus();dire("Choisissez une date.");return}
+  if(!pa.checkValidity()){pa.focus();dire("Indiquez un nombre de parts entre 4 et 80.");return}
+  var dd=new Date(d+"T12:00:00").toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+  var m=$("#crea-msg").value.trim();
+  var rec=$("#crea-recap");
+  rec.innerHTML="<h3>Demande envoyée à l’atelier — simulation</h3>"+
+    "<p><strong>"+o.value+"</strong> · "+dd+" · "+pa.value+" parts"+(m?"<br>« "+m+" »":"")+"</p>"+
+    "<p>En production, la maison vous rappellerait sous 24 h pour affiner parfums et décor.</p>"+
+    "<span class=\"demo-tag\">Ceci est une démonstration</span>";
+  rec.hidden=false;
+  rec.scrollIntoView({block:"nearest",behavior:"smooth"});
+  dire("Demande de création simulée : récapitulatif affiché sous le formulaire.");
+});
+
+render();
+})();
+</script>
+</body>
+</html>

@@ -48,3 +48,4 @@ Racine du site : page de présentation (placeholders contact/SIRET à compléter
 | chez-dom | https://lumenbot.github.io/demos-tpe-88/chez-dom/ | v1 · DoD ✓ |
 | dolce-vita | https://lumenbot.github.io/demos-tpe-88/dolce-vita/ | v1 · DoD ✓ |
 | bella-vita | https://lumenbot.github.io/demos-tpe-88/bella-vita/ | v1 · DoD ✓ |
+| chocolats-carl | https://lumenbot.github.io/demos-tpe-88/chocolats-carl/ | v1 · DoD ✓ |
