@@ -28,16 +28,6 @@ Racine du site : page de présentation (placeholders contact/SIRET à compléter
 | lamielle | https://lumenbot.github.io/demos-tpe-88/lamielle/ | v1 · DoD ✓ |
 | les-bulles | https://lumenbot.github.io/demos-tpe-88/les-bulles/ | v1 · DoD ✓ |
 
-## Développement
-
-- Règles complètes : voir `CLAUDE.md` (source de vérité locale non versionnée : `docs/`).
-- Servir en local : `python3 -m http.server` à la racine, vérifier en 390 px puis 1440 px.
-- DoD par maquette : rendu 390/1440 px sans scroll horizontal, NAP réels exacts (`tel:`, lien Maps,
-  horaires, JSON-LD), module phare simulé fonctionnel, bandeau légal + `noindex`, poids < 1,5 Mo,
-  aucune ressource bloquante.
-- Git : `git add` explicite uniquement (jamais `-A` ni `.`), `docs/` jamais versionné,
-  contrôle `git log --all --stat` avant tout push.
-
 ## Lot 3 — Saint-Dié / Raon
 
 | Maquette | URL | Statut |
@@ -49,3 +39,14 @@ Racine du site : page de présentation (placeholders contact/SIRET à compléter
 | dolce-vita | https://lumenbot.github.io/demos-tpe-88/dolce-vita/ | v1 · DoD ✓ |
 | bella-vita | https://lumenbot.github.io/demos-tpe-88/bella-vita/ | v1 · DoD ✓ |
 | chocolats-carl | https://lumenbot.github.io/demos-tpe-88/chocolats-carl/ | v1 · DoD ✓ |
+| renovon | https://lumenbot.github.io/demos-tpe-88/renovon/ | v1 · DoD ✓ |
+
+## Développement
+
+- Règles complètes : voir `CLAUDE.md` (source de vérité locale non versionnée : `docs/`).
+- Servir en local : `python3 -m http.server` à la racine, vérifier en 390 px puis 1440 px.
+- DoD par maquette : rendu 390/1440 px sans scroll horizontal, NAP réels exacts (`tel:`, lien Maps,
+  horaires, JSON-LD), module phare simulé fonctionnel, bandeau légal + `noindex`, poids < 1,5 Mo,
+  aucune ressource bloquante.
+- Git : `git add` explicite uniquement (jamais `-A` ni `.`), `docs/` jamais versionné,
+  contrôle `git log --all --stat` avant tout push.
