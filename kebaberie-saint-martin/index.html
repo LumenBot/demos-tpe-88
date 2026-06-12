@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#A93B2A">
+<title>Kebaberie Saint Martin — Kebab à Saint-Dié-des-Vosges | Agneau à la broche, 7 j/7</title>
+<meta name="description" content="Kebaberie Saint Martin, kebab place Saint-Martin à Saint-Dié-des-Vosges (88100) : agneau à la broche maison, poulet mariné, assiettes et menus. 4,4/5 sur Google (246 avis). Ouvert 7 j/7, jusqu'à minuit le samedi. ☎ 03 29 56 22 27.">
+
+<!-- Google Fonts : 2 familles (Oswald + Source Sans 3), chargement non bloquant -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap"></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Kebaberie Saint Martin",
+  "servesCuisine": ["Kebab", "Turc", "Restauration rapide"],
+  "telephone": "+33329562227",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "6 place Saint-Martin",
+    "postalCode": "88100",
+    "addressLocality": "Saint-Dié-des-Vosges",
+    "addressCountry": "FR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 48.284472, "longitude": 6.9485835 },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4",
+    "reviewCount": "246",
+    "bestRating": "5"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "11:30", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:30", "closes": "13:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "14:30", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:30", "closes": "23:59" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "11:30", "closes": "22:30" }
+  ],
+  "priceRange": "€"
+}
+</script>
+
+<style>
+:root{
+  --creme:#F5E9D7;      /* crème grillée */
+  --paille:#EBDCC2;
+  --brique:#A93B2A;     /* rouge brique */
+  --brique-fonce:#86281A;
+  --noir:#171310;
+  --blanc:#FFFDF8;
+  --display:'Oswald','Arial Narrow',Impact,sans-serif;
+  --texte:'Source Sans 3',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.6rem;overflow-x:clip}
+body{
+  font-family:var(--texte);
+  background:var(--creme);
+  color:var(--noir);
+  font-size:17px;
+  line-height:1.6;
+  overflow-x:clip;
+  padding-bottom:7.5rem; /* le bandeau légal fixe ne masque jamais le footer */
+}
+img{max-width:100%;height:auto;display:block}
+[hidden]{display:none!important}
+a{color:var(--brique-fonce)}
+:focus-visible{outline:3px solid var(--noir);outline-offset:3px;border-radius:2px}
+.s-noir :focus-visible,header :focus-visible,footer :focus-visible{outline-color:var(--creme)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-200vw;top:0;background:var(--noir);color:var(--creme);padding:.9rem 1.2rem;z-index:60;font-weight:700}
+.skip:focus{left:0}
+
+h1,h2,h3,h4,.btn,.prix,.usp-band,.ruban,.stamp,.h-badge{font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;line-height:1.12;font-weight:600}
+
+/* ===== Header ===== */
+header{
+  position:sticky;top:0;z-index:50;
+  background:var(--noir);color:var(--creme);
+  border-bottom:4px solid var(--brique);
+  display:flex;align-items:center;gap:.7rem;justify-content:space-between;
+  padding:.5rem .9rem;
+}
+.marque{font-family:var(--display);text-transform:uppercase;font-size:1.16rem;line-height:1.05;letter-spacing:.05em;color:var(--creme);text-decoration:none;display:flex;align-items:center;min-height:44px}
+.marque b{color:#E89B57;font-weight:600}
+.h-actions{display:flex;align-items:center;gap:.55rem;flex:none}
+@media(max-width:480px){.marque{font-size:.84rem}.h-actions{gap:.3rem}.h-actions .btn-petit{font-size:.74rem;padding:.45rem .55rem}.h-tel{padding:0 .15rem}}
+.h-tel{display:inline-flex;align-items:center;gap:.45rem;color:var(--creme);text-decoration:none;font-weight:700;min-height:44px;padding:0 .35rem}
+.h-tel span{display:none}
+@media(min-width:760px){.h-tel span{display:inline}}
+
+/* ===== Boutons ===== */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  min-height:48px;padding:.55rem 1.35rem;
+  font-size:1.06rem;text-decoration:none;cursor:pointer;
+  background:var(--brique);color:#fff;
+  border:2.5px solid var(--noir);box-shadow:4px 4px 0 var(--noir);
+  transition:transform .12s ease,box-shadow .12s ease;
+}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--noir)}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--noir)}
+.btn-ghost{background:var(--creme);color:var(--noir)}
+.btn-noir{background:var(--noir);color:var(--creme);box-shadow:4px 4px 0 var(--brique)}
+.btn-petit{min-height:44px;font-size:.98rem;padding:.4rem 1rem;box-shadow:3px 3px 0 var(--noir)}
+
+/* ===== Hero ===== */
+.hero{max-width:1120px;margin:0 auto;padding:1.6rem 1.1rem 2.6rem;display:grid;gap:1.6rem;align-items:center}
+@media(min-width:900px){.hero{grid-template-columns:1.05fr .95fr;gap:2.6rem;padding-top:3rem}}
+.usp-band{
+  display:inline-block;background:var(--brique);color:#fff;
+  padding:.5rem 1rem .45rem;font-size:1.02rem;letter-spacing:.14em;
+  border:2.5px solid var(--noir);box-shadow:4px 4px 0 var(--noir);
+  transform:rotate(-1.2deg);margin-bottom:1.15rem;
+}
+.hero h1{font-size:clamp(2.7rem,9.5vw,4.6rem);font-weight:700;letter-spacing:.02em}
+.hero h1 .ligne2{display:block;color:var(--brique);-webkit-text-stroke:1px var(--brique)}
+.lede{margin:.9rem 0 1.1rem;font-size:1.09rem;max-width:34rem}
+.note-g{display:inline-flex;align-items:center;gap:.5rem;background:var(--noir);color:var(--creme);padding:.45rem .9rem;font-weight:700;margin-bottom:1.3rem}
+.note-g svg{flex:none}
+.cta-rang{display:flex;flex-wrap:wrap;gap:.9rem}
+.hero-fig{position:relative}
+.hero-fig img{border:3px solid var(--noir);box-shadow:9px 9px 0 var(--brique);width:100%}
+.hero-fig figcaption{
+  position:absolute;left:-.5rem;bottom:1rem;background:var(--creme);border:2.5px solid var(--noir);
+  font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:.92rem;
+  padding:.3rem .8rem;box-shadow:3px 3px 0 var(--noir);transform:rotate(-1.5deg);
+}
+
+/* ===== Ruban signature ===== */
+.ruban{
+  background:var(--brique);color:var(--creme);border-block:3px solid var(--noir);
+  padding:.6rem 0;white-space:nowrap;overflow:hidden;
+  font-size:1.05rem;letter-spacing:.18em;
+  transform:rotate(-1.4deg);width:102%;margin:1.4rem 0 1.4rem -1%;
+}
+.ruban.droit{transform:none;margin:0;background:var(--noir);border-block:3px solid var(--brique)}
+.ruban span{padding:0 .55em}
+
+/* ===== Sections ===== */
+section{max-width:1120px;margin:0 auto;padding:3.2rem 1.1rem}
+.titre{font-size:clamp(1.9rem,6vw,2.7rem);font-weight:700;margin-bottom:.4rem}
+.titre::after{content:"";display:block;width:4.2rem;height:.42rem;background:var(--brique);margin-top:.5rem}
+.sous{max-width:42rem;margin:.8rem 0 1.8rem}
+
+/* ===== Carte / commande ===== */
+.groupe{margin-bottom:2.4rem}
+.groupe h3{
+  font-size:1.45rem;background:var(--noir);color:var(--creme);display:inline-block;
+  padding:.32rem 1rem .28rem;letter-spacing:.1em;margin-bottom:1.1rem;transform:rotate(-.6deg);
+}
+.duo-fig{display:grid;gap:1.1rem;margin:0 0 1.4rem}
+@media(min-width:700px){.duo-fig{grid-template-columns:1fr 1fr}}
+.duo-fig figure{position:relative}
+.duo-fig img{border:3px solid var(--noir);box-shadow:6px 6px 0 var(--brique);width:100%}
+.duo-fig figcaption{font-family:var(--display);text-transform:uppercase;letter-spacing:.07em;font-size:.9rem;margin-top:.8rem}
+.plats{display:grid;gap:1.3rem}
+@media(min-width:700px){.plats{grid-template-columns:1fr 1fr}}
+@media(min-width:1020px){.plats{grid-template-columns:1fr 1fr 1fr}}
+.plat{background:var(--blanc);border:2.5px solid var(--noir);box-shadow:5px 5px 0 var(--noir);padding:1.1rem 1.1rem 1.25rem;display:flex;flex-direction:column}
+.plat-tete{display:flex;justify-content:space-between;align-items:baseline;gap:.8rem}
+.plat h4{font-size:1.32rem;font-weight:600}
+.prix{flex:none;background:var(--brique);color:#fff;padding:.14rem .6rem .1rem;font-size:1.05rem;border:2px solid var(--noir)}
+.desc{font-size:.97rem;margin:.45rem 0 .8rem;color:#3D352D}
+fieldset{border:none;margin:0 0 .8rem}
+legend{font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:.09em;color:var(--brique-fonce);margin-bottom:.4rem}
+.opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.opt{
+  display:flex;align-items:center;gap:.5rem;min-height:44px;padding:.2rem .75rem;
+  border:2px solid var(--noir);background:var(--creme);cursor:pointer;
+  font-size:.95rem;font-weight:600;
+}
+.opt input{width:1.15rem;height:1.15rem;accent-color:var(--brique);flex:none;cursor:pointer}
+.opt:has(input:checked){background:var(--noir);color:var(--creme)}
+.opt .mini-tag{background:var(--brique);color:#fff;font-family:var(--display);text-transform:uppercase;font-size:.7rem;letter-spacing:.08em;padding:.05rem .4rem}
+.plat .add{margin-top:auto}
+
+/* ===== Panier ===== */
+#panier .cadre{background:var(--noir);color:var(--creme);border:3px solid var(--noir);box-shadow:8px 8px 0 var(--brique);padding:1.5rem 1.2rem;max-width:46rem}
+#panier .titre{color:var(--creme)}
+.p-liste{list-style:none;margin:0 0 1rem}
+.p-liste li{display:flex;justify-content:space-between;align-items:center;gap:.8rem;border-bottom:1.5px dashed #57493B;padding:.55rem 0}
+.p-liste .det{font-size:.92rem;color:#D8C8AE;display:block}
+.p-vide{color:#D8C8AE;font-style:italic;margin-bottom:1rem}
+.retirer{background:none;border:2px solid var(--creme);color:var(--creme);min-width:44px;min-height:44px;cursor:pointer;font-size:1.15rem;line-height:1;flex:none}
+.retirer:hover{background:var(--brique)}
+.p-total{display:flex;justify-content:space-between;font-family:var(--display);text-transform:uppercase;font-size:1.4rem;border-top:3px solid var(--brique);padding-top:.8rem;margin-bottom:1.2rem}
+#panier legend{color:#E89B57}
+.opt-noir{background:#241D17;border-color:var(--creme);color:var(--creme)}
+.opt-noir:has(input:checked){background:var(--brique);color:#fff;border-color:var(--noir)}
+.opt-off{opacity:.55;cursor:not-allowed}
+.opt-off input{cursor:not-allowed}
+.badge-off{background:var(--creme);color:var(--noir);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:.1rem .45rem}
+.p-note{font-size:.88rem;color:#D8C8AE;margin-top:.9rem}
+
+/* ===== Sur place / à emporter ===== */
+.duo-cartes{display:grid;gap:1.3rem;margin-bottom:1.6rem}
+@media(min-width:760px){.duo-cartes{grid-template-columns:1fr 1fr}}
+.carte-info{background:var(--blanc);border:2.5px solid var(--noir);box-shadow:5px 5px 0 var(--brique);padding:1.3rem}
+.carte-info h3{font-size:1.3rem;margin-bottom:.5rem;display:flex;align-items:center;gap:.55rem}
+.adresse{display:flex;flex-wrap:wrap;align-items:center;gap:1rem}
+
+/* ===== Avis ===== */
+#avis .gros{display:flex;align-items:center;gap:1rem;margin-bottom:1.6rem;flex-wrap:wrap}
+.note-bloc{background:var(--brique);color:#fff;border:3px solid var(--noir);box-shadow:5px 5px 0 var(--noir);font-family:var(--display);font-size:2.6rem;font-weight:700;padding:.4rem 1rem;line-height:1}
+.avis-grille{display:grid;gap:1.2rem}
+@media(min-width:760px){.avis-grille{grid-template-columns:1fr 1fr 1fr}}
+blockquote{background:var(--blanc);border:2.5px solid var(--noir);box-shadow:4px 4px 0 var(--noir);padding:1.1rem;font-size:1.02rem}
+blockquote footer{margin-top:.6rem;font-size:.85rem;color:#5C5045;font-style:normal}
+.etoiles{color:var(--brique);letter-spacing:.1em}
+
+/* ===== Horaires ===== */
+.h-badge{
+  display:inline-block;background:var(--noir);color:var(--creme);border:3px solid var(--brique);
+  box-shadow:6px 6px 0 var(--brique);padding:.7rem 1.2rem .6rem;font-size:clamp(1.2rem,4.5vw,1.7rem);
+  letter-spacing:.08em;transform:rotate(-1.2deg);margin:.4rem 0 1.8rem;
+}
+table{border-collapse:collapse;width:100%;max-width:36rem;background:var(--blanc);border:2.5px solid var(--noir);box-shadow:5px 5px 0 var(--noir)}
+caption{text-align:left;font-family:var(--display);text-transform:uppercase;font-size:1.1rem;letter-spacing:.08em;margin-bottom:.6rem}
+th,td{padding:.6rem .9rem;text-align:left;border-bottom:1.5px solid var(--paille);font-size:.99rem}
+th{font-weight:700;white-space:nowrap;vertical-align:top}
+tr:last-child th,tr:last-child td{border-bottom:none}
+tr.auj{background:var(--creme);box-shadow:inset 4px 0 0 var(--brique)}
+.auj-tag{background:var(--brique);color:#fff;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:.08rem .4rem;margin-left:.5rem;white-space:nowrap}
+.note-coupure{font-size:.92rem;color:#5C5045;margin-top:.8rem;max-width:36rem}
+
+/* ===== Footer ===== */
+footer.pied{background:var(--noir);color:var(--creme);padding:2.6rem 1.1rem 3rem;margin-top:2rem;border-top:4px solid var(--brique)}
+.pied-int{max-width:1120px;margin:0 auto;display:grid;gap:1.6rem}
+@media(min-width:760px){.pied-int{grid-template-columns:1fr 1fr}}
+.pied a{color:#E89B57}
+.pied .marque-pied{font-family:var(--display);text-transform:uppercase;font-size:1.5rem;letter-spacing:.06em}
+
+/* ===== Bandeau légal fixe ===== */
+.legal{
+  position:fixed;left:0;right:0;bottom:0;z-index:55;
+  background:var(--noir);color:var(--creme);
+  font-size:.72rem;line-height:1.45;text-align:center;
+  padding:.45rem .9rem;border-top:2px solid var(--brique);
+}
+
+/* ===== Écran démo ===== */
+.voile{position:fixed;inset:0;z-index:70;background:rgba(23,19,16,.78);display:flex;align-items:center;justify-content:center;padding:1.2rem}
+.demo-box{background:var(--creme);border:3px solid var(--noir);box-shadow:9px 9px 0 var(--brique);max-width:30rem;padding:1.8rem 1.5rem;text-align:center}
+.demo-box h2{font-size:1.8rem;margin-bottom:.8rem}
+.demo-box p{margin-bottom:1rem;font-size:.99rem}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#carte">Aller à la carte et à la commande</a>
+
+<header>
+  <a class="marque" href="#haut">Kebaberie <b>&nbsp;Saint&nbsp;Martin</b></a>
+  <div class="h-actions">
+    <a class="h-tel" href="tel:+33329562227" aria-label="Appeler la Kebaberie Saint Martin au 03 29 56 22 27">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+      <span>03 29 56 22 27</span>
+    </a>
+    <a class="btn btn-petit" href="#carte">Commander <span id="ccount" aria-hidden="true"></span></a>
+  </div>
+</header>
+
+<main id="haut">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-label="Présentation">
+    <div>
+      <p class="usp-band">✶ Agneau à la broche — maison ✶</p>
+      <h1>Kebaberie <span class="ligne2">Saint Martin</span></h1>
+      <!-- [À REMPLACER] accroche d'exemple, à valider avec l'établissement -->
+      <p class="lede">Le kebab de la place Saint-Martin, à Saint-Dié-des-Vosges. Agneau découpé à la broche, poulet mariné, assiettes généreuses — sur place ou à emporter, 7 j/7.</p>
+      <p class="note-g">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#E89B57" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+        4,4 / 5 · 246 avis Google
+      </p>
+      <div class="cta-rang">
+        <a class="btn" href="#carte">Je commande</a>
+        <a class="btn btn-ghost" href="tel:+33329562227">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+          03 29 56 22 27
+        </a>
+      </div>
+    </div>
+    <figure class="hero-fig">
+      <img src="img/hero-broche.webp" alt="Deux kebabs pita garnis de viande grillée à la broche, servis avec frites, sauce blanche et tomates" width="1300" height="870" fetchpriority="high" decoding="async">
+      <figcaption>Découpé minute, devant vous</figcaption>
+    </figure>
+  </section>
+
+  <div class="ruban" aria-hidden="true"><span>Agneau à la broche — maison ✶</span><span>Agneau à la broche — maison ✶</span><span>Agneau à la broche — maison ✶</span><span>Agneau à la broche — maison ✶</span><span>Agneau à la broche — maison ✶</span><span>Agneau à la broche — maison ✶</span></div>
+
+  <!-- ===== CARTE + COMMANDE (wow-feature) ===== -->
+  <section id="carte" aria-labelledby="t-carte">
+    <h2 class="titre" id="t-carte">La carte</h2>
+    <p class="sous"><strong>Choisissez votre viande sur chaque article</strong> : agneau découpé à la broche — notre spécialité maison — ou poulet mariné. Cochez vos suppléments, ajoutez au panier, payez au retrait.</p>
+    <!-- [À REMPLACER] toute la carte ci-dessous (articles, compositions, prix) est un exemple crédible à remplacer par la carte réelle de l'établissement -->
+
+    <div class="groupe">
+      <h3>Kebabs</h3>
+      <div class="plats">
+        <article class="plat" data-nom="Kebab pita" data-prix="8.50">
+          <div class="plat-tete"><h4>Kebab pita</h4><p class="prix">8,50&nbsp;€</p></div>
+          <p class="desc">Pain pita moelleux, crudités fraîches, sauce au choix.</p>
+          <fieldset>
+            <legend>Votre viande</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="v1" value="agneau à la broche" checked> Agneau à la broche <span class="mini-tag">maison</span></label>
+              <label class="opt"><input type="radio" name="v1" value="poulet mariné"> Poulet mariné</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Suppléments</legend>
+            <div class="opts">
+              <label class="opt"><input type="checkbox" value="fromage" data-p="1"> Fromage +1,00&nbsp;€</label>
+              <label class="opt"><input type="checkbox" value="double viande" data-p="2.5"> Double viande +2,50&nbsp;€</label>
+              <label class="opt"><input type="checkbox" value="sauce en plus" data-p="0.5"> Sauce en plus +0,50&nbsp;€</label>
+            </div>
+          </fieldset>
+          <button type="button" class="btn btn-petit add">Ajouter — 8,50&nbsp;€</button>
+        </article>
+
+        <article class="plat" data-nom="Dürüm galette" data-prix="9.00">
+          <div class="plat-tete"><h4>Dürüm galette</h4><p class="prix">9,00&nbsp;€</p></div>
+          <p class="desc">Galette roulée bien garnie, crudités, sauce au choix.</p>
+          <fieldset>
+            <legend>Votre viande</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="v2" value="agneau à la broche" checked> Agneau à la broche <span class="mini-tag">maison</span></label>
+              <label class="opt"><input type="radio" name="v2" value="poulet mariné"> Poulet mariné</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Suppléments</legend>
+            <div class="opts">
+              <label class="opt"><input type="checkbox" value="fromage" data-p="1"> Fromage +1,00&nbsp;€</label>
+              <label class="opt"><input type="checkbox" value="double viande" data-p="2.5"> Double viande +2,50&nbsp;€</label>
+              <label class="opt"><input type="checkbox" value="sauce en plus" data-p="0.5"> Sauce en plus +0,50&nbsp;€</label>
+            </div>
+          </fieldset>
+          <button type="button" class="btn btn-petit add">Ajouter — 9,00&nbsp;€</button>
+        </article>
+
+        <article class="plat" data-nom="Kebab XL" data-prix="11.00">
+          <div class="plat-tete"><h4>Kebab XL</h4><p class="prix">11,00&nbsp;€</p></div>
+          <p class="desc">Pain large, portion de viande renforcée, pour les grandes faims.</p>
+          <fieldset>
+            <legend>Votre viande</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="v3" value="agneau à la broche" checked> Agneau à la broche <span class="mini-tag">maison</span></label>
+              <label class="opt"><input type="radio" name="v3" value="poulet mariné"> Poulet mariné</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Suppléments</legend>
+            <div class="opts">
+              <label class="opt"><input type="checkbox" value="fromage" data-p="1"> Fromage +1,00&nbsp;€</label>
+              <label class="opt"><input type="checkbox" value="sauce en plus" data-p="0.5"> Sauce en plus +0,50&nbsp;€</label>
+            </div>
+          </fieldset>
+          <button type="button" class="btn btn-petit add">Ajouter — 11,00&nbsp;€</button>
+        </article>
+      </div>
+    </div>
+
+    <div class="groupe">
+      <h3>Assiettes &amp; broche</h3>
+      <div class="duo-fig">
+        <figure>
+          <img src="img/grillades.webp" alt="Viande grillée à la broche servie sur planche en bois avec frites et tomates" width="800" height="600" loading="lazy" decoding="async">
+          <figcaption>L'assiette : viande, frites, salade, pain</figcaption>
+        </figure>
+        <figure>
+          <img src="img/poulet.webp" alt="Poulet entier rôti à la broche, servi en cocotte avec pommes de terre et romarin" width="800" height="600" loading="lazy" decoding="async">
+          <figcaption>La broche de poulet, dorée doucement</figcaption>
+        </figure>
+      </div>
+      <div class="plats">
+        <article class="plat" data-nom="Assiette kebab" data-prix="11.50">
+          <div class="plat-tete"><h4>Assiette kebab</h4><p class="prix">11,50&nbsp;€</p></div>
+          <p class="desc">Viande au choix, frites, salade composée et pain.</p>
+          <fieldset>
+            <legend>Votre viande</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="v4" value="agneau à la broche" checked> Agneau à la broche <span class="mini-tag">maison</span></label>
+              <label class="opt"><input type="radio" name="v4" value="poulet mariné"> Poulet mariné</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Suppléments</legend>
+            <div class="opts">
+              <label class="opt"><input type="checkbox" value="fromage" data-p="1"> Fromage +1,00&nbsp;€</label>
+              <label class="opt"><input type="checkbox" value="double viande" data-p="2.5"> Double viande +2,50&nbsp;€</label>
+            </div>
+          </fieldset>
+          <button type="button" class="btn btn-petit add">Ajouter — 11,50&nbsp;€</button>
+        </article>
+
+        <article class="plat" data-nom="Assiette mixte agneau-poulet" data-prix="13.50">
+          <div class="plat-tete"><h4>Assiette mixte</h4><p class="prix">13,50&nbsp;€</p></div>
+          <p class="desc">Le meilleur des deux broches : agneau <em>et</em> poulet, frites, salade, pain.</p>
+          <fieldset>
+            <legend>Suppléments</legend>
+            <div class="opts">
+              <label class="opt"><input type="checkbox" value="fromage" data-p="1"> Fromage +1,00&nbsp;€</label>
+              <label class="opt"><input type="checkbox" value="sauce en plus" data-p="0.5"> Sauce en plus +0,50&nbsp;€</label>
+            </div>
+          </fieldset>
+          <button type="button" class="btn btn-petit add">Ajouter — 13,50&nbsp;€</button>
+        </article>
+
+        <article class="plat" data-nom="Demi-poulet rôti" data-prix="10.50">
+          <div class="plat-tete"><h4>Demi-poulet rôti</h4><p class="prix">10,50&nbsp;€</p></div>
+          <p class="desc">Rôti à la broche, servi avec frites et sauce au choix.</p>
+          <fieldset>
+            <legend>Suppléments</legend>
+            <div class="opts">
+              <label class="opt"><input type="checkbox" value="sauce en plus" data-p="0.5"> Sauce en plus +0,50&nbsp;€</label>
+            </div>
+          </fieldset>
+          <button type="button" class="btn btn-petit add">Ajouter — 10,50&nbsp;€</button>
+        </article>
+      </div>
+    </div>
+
+    <div class="groupe">
+      <h3>Menus</h3>
+      <div class="plats">
+        <article class="plat" data-nom="Menu kebab" data-prix="11.00">
+          <div class="plat-tete"><h4>Menu kebab</h4><p class="prix">11,00&nbsp;€</p></div>
+          <p class="desc">Kebab pita + frites + boisson 33&nbsp;cl.</p>
+          <fieldset>
+            <legend>Votre viande</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="v5" value="agneau à la broche" checked> Agneau à la broche <span class="mini-tag">maison</span></label>
+              <label class="opt"><input type="radio" name="v5" value="poulet mariné"> Poulet mariné</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Suppléments</legend>
+            <div class="opts">
+              <label class="opt"><input type="checkbox" value="fromage" data-p="1"> Fromage +1,00&nbsp;€</label>
+              <label class="opt"><input type="checkbox" value="double viande" data-p="2.5"> Double viande +2,50&nbsp;€</label>
+            </div>
+          </fieldset>
+          <button type="button" class="btn btn-petit add">Ajouter — 11,00&nbsp;€</button>
+        </article>
+
+        <article class="plat" data-nom="Menu dürüm" data-prix="11.50">
+          <div class="plat-tete"><h4>Menu dürüm</h4><p class="prix">11,50&nbsp;€</p></div>
+          <p class="desc">Dürüm galette + frites + boisson 33&nbsp;cl.</p>
+          <fieldset>
+            <legend>Votre viande</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="v6" value="agneau à la broche" checked> Agneau à la broche <span class="mini-tag">maison</span></label>
+              <label class="opt"><input type="radio" name="v6" value="poulet mariné"> Poulet mariné</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Suppléments</legend>
+            <div class="opts">
+              <label class="opt"><input type="checkbox" value="fromage" data-p="1"> Fromage +1,00&nbsp;€</label>
+              <label class="opt"><input type="checkbox" value="sauce en plus" data-p="0.5"> Sauce en plus +0,50&nbsp;€</label>
+            </div>
+          </fieldset>
+          <button type="button" class="btn btn-petit add">Ajouter — 11,50&nbsp;€</button>
+        </article>
+
+        <article class="plat" data-nom="Menu enfant" data-prix="7.50">
+          <div class="plat-tete"><h4>Menu enfant</h4><p class="prix">7,50&nbsp;€</p></div>
+          <p class="desc">Petit kebab au poulet + frites + jus de fruits.</p>
+          <fieldset>
+            <legend>Suppléments</legend>
+            <div class="opts">
+              <label class="opt"><input type="checkbox" value="fromage" data-p="1"> Fromage +1,00&nbsp;€</label>
+            </div>
+          </fieldset>
+          <button type="button" class="btn btn-petit add">Ajouter — 7,50&nbsp;€</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PANIER / RÉCAP ===== -->
+  <section id="panier" aria-labelledby="t-panier">
+    <div class="cadre">
+      <h2 class="titre" id="t-panier">Votre commande</h2>
+      <p class="sr-only" aria-live="polite" id="live"></p>
+      <p class="p-vide" id="p-vide">Votre panier est vide — choisissez un article dans la carte ci-dessus.</p>
+      <ul class="p-liste" id="p-liste"></ul>
+      <p class="p-total"><span>Total</span><span id="p-total">0,00&nbsp;€</span></p>
+
+      <fieldset>
+        <legend>Où mangez-vous&nbsp;?</legend>
+        <div class="opts">
+          <label class="opt opt-noir"><input type="radio" name="mode" value="À emporter" checked> À emporter</label>
+          <label class="opt opt-noir"><input type="radio" name="mode" value="Sur place"> Sur place</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Paiement</legend>
+        <div class="opts">
+          <label class="opt opt-noir"><input type="radio" name="paiement" value="Au retrait" checked> Au retrait — espèces ou CB au comptoir</label>
+          <label class="opt opt-noir opt-off"><input type="radio" name="paiement" value="CB en ligne" disabled> CB en ligne <span class="badge-off">disponible en production</span></label>
+        </div>
+      </fieldset>
+
+      <button type="button" class="btn" id="valider">Valider ma commande</button>
+      <p class="p-note">Démonstration : rien n'est envoyé, aucune donnée n'est collectée. Le panier est mémorisé uniquement sur votre téléphone.</p>
+    </div>
+  </section>
+
+  <!-- ===== SUR PLACE / À EMPORTER ===== -->
+  <section id="acces" aria-labelledby="t-acces">
+    <h2 class="titre" id="t-acces">Sur place ou à emporter</h2>
+    <p class="sous">Au cœur de Saint-Dié, sur la place Saint-Martin — à deux pas de tout.</p>
+    <div class="duo-cartes">
+      <div class="carte-info">
+        <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="var(--brique)" aria-hidden="true"><path d="M4 4h16v2H4zm1 4h14l-1 12H6L5 8zm5 3v6h2v-6h-2z"/></svg> Sur place</h3>
+        <!-- [À REMPLACER] description de la salle (nombre de places, ambiance) à valider avec l'établissement -->
+        <p>Installez-vous, on vous apporte votre assiette bien chaude. Midi et soir, 7&nbsp;j/7 — et jusqu'à minuit le samedi.</p>
+      </div>
+      <div class="carte-info">
+        <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="var(--brique)" aria-hidden="true"><path d="M5 7h10l1 3h3l2 4v4h-2a3 3 0 1 1-6 0h-4a3 3 0 1 1-6 0H2V9a2 2 0 0 1 2-2h1zm11 5h3.5l-1-2H16v2z"/></svg> À emporter</h3>
+        <p>Commandez en ligne ou appelez le <a href="tel:+33329562227">03&nbsp;29&nbsp;56&nbsp;22&nbsp;27</a> : votre commande vous attend au comptoir, payez au retrait.</p>
+      </div>
+    </div>
+    <div class="adresse">
+      <p><strong>6 place Saint-Martin, 88100 Saint-Dié-des-Vosges</strong></p>
+      <a class="btn btn-noir btn-petit" href="https://www.google.com/maps/search/?api=1&amp;query=Kebaberie+Saint+Martin+6+place+Saint-Martin+88100+Saint-Di%C3%A9-des-Vosges" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 1 7 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 0 1 7-7zm0 9.5A2.5 2.5 0 1 0 12 6.5a2.5 2.5 0 0 0 0 5z"/></svg>
+        Itinéraire (Google Maps)
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== AVIS ===== -->
+  <section id="avis" aria-labelledby="t-avis">
+    <h2 class="titre" id="t-avis">Ils en parlent</h2>
+    <div class="gros">
+      <p class="note-bloc">4,4&nbsp;/&nbsp;5</p>
+      <p><strong>246 avis Google</strong><br>pour la Kebaberie Saint Martin</p>
+    </div>
+    <!-- [À REMPLACER] extraits d'illustration ci-dessous — à remplacer par de vrais extraits d'avis Google (≤ 15 mots) après accord de l'établissement -->
+    <div class="avis-grille">
+      <blockquote>
+        <p class="etoiles" aria-label="5 étoiles sur 5">★★★★★</p>
+        <p>« Le seul agneau à la broche du secteur, et ça change tout. »</p>
+        <footer>Extrait d'illustration — format avis Google</footer>
+      </blockquote>
+      <blockquote>
+        <p class="etoiles" aria-label="5 étoiles sur 5">★★★★★</p>
+        <p>« Viande généreuse, pain frais, équipe souriante : on revient. »</p>
+        <footer>Extrait d'illustration — format avis Google</footer>
+      </blockquote>
+      <blockquote>
+        <p class="etoiles" aria-label="4 étoiles sur 5">★★★★☆</p>
+        <p>« Ouvert tard le samedi soir, parfait après le match. »</p>
+        <footer>Extrait d'illustration — format avis Google</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <div class="ruban droit" aria-hidden="true"><span>Ouvert 7 j/7 ✶ Jusqu'à minuit le samedi ✶</span><span>Ouvert 7 j/7 ✶ Jusqu'à minuit le samedi ✶</span><span>Ouvert 7 j/7 ✶ Jusqu'à minuit le samedi ✶</span><span>Ouvert 7 j/7 ✶ Jusqu'à minuit le samedi ✶</span></div>
+
+  <!-- ===== HORAIRES ===== -->
+  <section id="horaires" aria-labelledby="t-horaires">
+    <h2 class="titre" id="t-horaires">Horaires</h2>
+    <p class="h-badge">✶ Jusqu'à minuit le samedi ✶</p>
+    <table>
+      <caption>Ouvert 7 j/7, midi et soir en continu</caption>
+      <tbody>
+        <tr data-j="1"><th scope="row">Lundi</th><td>11 h 30 – 22 h</td></tr>
+        <tr data-j="2"><th scope="row">Mardi</th><td>11 h 30 – 22 h</td></tr>
+        <tr data-j="3"><th scope="row">Mercredi</th><td>11 h 30 – 22 h</td></tr>
+        <tr data-j="4"><th scope="row">Jeudi</th><td>11 h 30 – 22 h</td></tr>
+        <tr data-j="5"><th scope="row">Vendredi</th><td>11 h 30 – 13 h 30 · 14 h 30 – 22 h</td></tr>
+        <tr data-j="6"><th scope="row">Samedi</th><td><strong>11 h 30 – minuit</strong></td></tr>
+        <tr data-j="0"><th scope="row">Dimanche</th><td>11 h 30 – 22 h 30</td></tr>
+      </tbody>
+    </table>
+    <p class="note-coupure">Le vendredi, courte pause de 13 h 30 à 14 h 30 — le reste de la semaine, service en continu de 11 h 30 jusqu'au soir.</p>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="pied">
+  <div class="pied-int">
+    <div>
+      <p class="marque-pied">Kebaberie Saint Martin</p>
+      <p>6 place Saint-Martin<br>88100 Saint-Dié-des-Vosges</p>
+      <p><a href="tel:+33329562227">03 29 56 22 27</a></p>
+    </div>
+    <div>
+      <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Kebaberie+Saint+Martin+6+place+Saint-Martin+88100+Saint-Di%C3%A9-des-Vosges" target="_blank" rel="noopener">Itinéraire Google Maps</a></p>
+      <p><a href="#carte">La carte</a> · <a href="#panier">Commander</a> · <a href="#horaires">Horaires</a></p>
+      <p>Ouvert 7 j/7 · 11 h 30 – 22 h · samedi jusqu'à minuit · dimanche 22 h 30</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bandeau légal obligatoire -->
+<div class="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</div>
+
+<!-- ===== ÉCRAN DÉMO ===== -->
+<div class="voile" id="voile" role="dialog" aria-modal="true" aria-labelledby="t-demo" hidden>
+  <div class="demo-box">
+    <h2 id="t-demo">Ceci est une démonstration</h2>
+    <p>Aucune commande n'a été envoyée et aucune donnée n'a été transmise.</p>
+    <p>En production : votre commande part directement en cuisine, vous recevez une confirmation, et vous payez au retrait — ou par CB en ligne.</p>
+    <button type="button" class="btn" id="fermer-demo">J'ai compris</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var KEY="ksm-demo-panier";
+  var panier=[];
+  try{panier=JSON.parse(localStorage.getItem(KEY))||[];}catch(e){panier=[];}
+  if(!Array.isArray(panier))panier=[];
+
+  var liste=document.getElementById("p-liste"),
+      vide=document.getElementById("p-vide"),
+      totalEl=document.getElementById("p-total"),
+      live=document.getElementById("live"),
+      ccount=document.getElementById("ccount"),
+      voile=document.getElementById("voile"),
+      btnValider=document.getElementById("valider"),
+      btnFermer=document.getElementById("fermer-demo");
+
+  function fmt(n){return n.toFixed(2).replace(".",",")+" €";}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(panier));}catch(e){}}
+
+  function prixPlat(plat){
+    var p=parseFloat(plat.dataset.prix);
+    plat.querySelectorAll('input[type="checkbox"]:checked').forEach(function(c){p+=parseFloat(c.dataset.p);});
+    return p;
+  }
+
+  function majBouton(plat){
+    plat.querySelector(".add").textContent="Ajouter — "+fmt(prixPlat(plat));
+  }
+
+  function render(){
+    liste.innerHTML="";
+    var total=0;
+    panier.forEach(function(l,i){
+      total+=l.p;
+      var li=document.createElement("li"),det=l.v?l.v:"";
+      if(l.s.length)det+=(det?" · ":"")+"suppl. : "+l.s.join(", ");
+      var div=document.createElement("div");
+      div.innerHTML="<strong>"+l.n+"</strong> — "+fmt(l.p)+(det?'<span class="det">'+det+"</span>":"");
+      var btn=document.createElement("button");
+      btn.type="button";btn.className="retirer";btn.textContent="✕";
+      btn.setAttribute("aria-label","Retirer "+l.n+" du panier");
+      btn.addEventListener("click",function(){
+        panier.splice(i,1);save();render();
+        live.textContent=l.n+" retiré du panier.";
+      });
+      li.appendChild(div);li.appendChild(btn);liste.appendChild(li);
+    });
+    totalEl.textContent=fmt(total);
+    vide.hidden=panier.length>0;
+    ccount.textContent=panier.length?"("+panier.length+")":"";
+  }
+
+  document.querySelectorAll(".plat").forEach(function(plat){
+    plat.addEventListener("change",function(){majBouton(plat);});
+    plat.querySelector(".add").addEventListener("click",function(){
+      var v=plat.querySelector('input[type="radio"]:checked'),
+          s=[];
+      plat.querySelectorAll('input[type="checkbox"]:checked').forEach(function(c){s.push(c.value);});
+      panier.push({n:plat.dataset.nom,v:v?v.value:null,s:s,p:prixPlat(plat)});
+      save();render();
+      live.textContent=plat.dataset.nom+(v?" ("+v.value+")":"")+" ajouté au panier — total "+totalEl.textContent+".";
+    });
+  });
+
+  btnValider.addEventListener("click",function(){
+    if(!panier.length){
+      live.textContent="Votre panier est vide. Ajoutez d'abord un article depuis la carte.";
+      vide.hidden=false;
+      vide.textContent="Votre panier est vide — choisissez un article dans la carte ci-dessus.";
+      return;
+    }
+    voile.hidden=false;
+    btnFermer.focus();
+  });
+
+  function fermerDemo(){
+    voile.hidden=true;
+    panier=[];save();render();
+    live.textContent="Fin de la démonstration : le panier a été vidé.";
+    btnValider.focus();
+  }
+  btnFermer.addEventListener("click",fermerDemo);
+  document.addEventListener("keydown",function(e){
+    if(e.key==="Escape"&&!voile.hidden)fermerDemo();
+  });
+
+  /* Surligner le jour courant dans les horaires */
+  var r=document.querySelector('#horaires tr[data-j="'+(new Date().getDay())+'"]');
+  if(r){
+    r.classList.add("auj");
+    var tag=document.createElement("span");
+    tag.className="auj-tag";tag.textContent="aujourd'hui";
+    r.querySelector("th").appendChild(tag);
+  }
+
+  render();
+})();
+</script>
+</body>
+</html>
