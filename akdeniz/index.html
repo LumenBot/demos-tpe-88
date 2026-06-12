@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1B4965">
+<title>Snack Akdeniz — Kebab à Épinal | Ouvert 7 j/7 de 11 h à 22 h</title>
+<meta name="description" content="Snack Akdeniz, le kebab préféré d'Épinal (88000) : kebabs, dürüms, assiettes et menus. 4,5/5 sur Google (479 avis). Ouvert 7 j/7 de 11 h à 22 h en continu. ☎ 03 29 33 30 14.">
+
+<!-- Google Fonts : 2 familles (Baloo 2 + Figtree), chargement non bloquant -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Figtree:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Figtree:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Figtree:wght@400;600;700&display=swap"></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Snack Akdeniz",
+  "servesCuisine": ["Kebab", "Turc", "Méditerranéen", "Restauration rapide"],
+  "telephone": "+33329333014",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7 rue François Blaudez",
+    "postalCode": "88000",
+    "addressLocality": "Épinal",
+    "addressCountry": "FR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "479",
+    "bestRating": "5"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "11:00",
+    "closes": "22:00"
+  }],
+  "priceRange": "€"
+}
+</script>
+
+<style>
+:root{
+  --bleu:#1B4965;
+  --bleu-nuit:#123247;
+  --bleu-abysse:#0B2533;
+  --chaux:#F8F5EF;
+  --blanc:#FFFFFF;
+  --pale:#E9F1F5;
+  --safran:#E9A13B;
+  --safran-encre:#102A3C;
+  --encre:#243B4F;
+  --encre-doux:#51677A;
+  --ciel-doux:#BCD4E2;
+  --trait:#D8DFE2;
+  --vert:#3E7C4F;
+  --display:'Baloo 2','Trebuchet MS',Verdana,sans-serif;
+  --texte:'Figtree',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:7.5rem}
+@media(min-width:760px){html{scroll-padding-top:5rem}}
+body{
+  font-family:var(--texte);
+  background:var(--chaux);
+  color:var(--encre);
+  line-height:1.6;
+  font-size:16.5px;
+  overflow-x:clip;
+  padding-bottom:7.5rem; /* place pour le bandeau légal fixe */
+}
+img{max-width:100%;height:auto;display:block}
+[hidden]{display:none!important}
+a{color:var(--bleu)}
+:focus-visible{outline:3px solid var(--safran);outline-offset:2px;border-radius:6px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-200vw;top:0;background:var(--safran);color:var(--safran-encre);font-weight:700;padding:.8rem 1.2rem;z-index:90}
+.skip:focus{left:0}
+.conteneur{max-width:70rem;margin:0 auto;padding:0 1.25rem}
+
+h1,h2,h3{font-family:var(--display);line-height:1.15;color:var(--bleu)}
+h2{font-size:clamp(1.7rem,5.5vw,2.4rem)}
+h3{font-size:1.2rem}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  min-height:48px;padding:.65rem 1.45rem;border-radius:999px;border:0;cursor:pointer;
+  font-family:var(--texte);font-weight:700;font-size:1.02rem;text-decoration:none;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-safran{background:var(--safran);color:var(--safran-encre);box-shadow:0 4px 14px rgba(233,161,59,.35)}
+.btn-bleu{background:var(--bleu);color:#fff}
+.btn-contour{background:transparent;border:2px solid var(--bleu);color:var(--bleu)}
+
+/* ---------- Séparateur vague (signature) ---------- */
+.sep{display:block;margin:0 auto;color:var(--safran)}
+.sep-titre{margin:.45rem 0 1rem;color:var(--safran)}
+.vague{display:block;width:100%;height:36px;color:var(--chaux)}
+.vague.bas{transform:scaleY(-1)}
+@media(min-width:900px){.vague{height:52px}}
+
+/* ---------- Barre haute ---------- */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(248,245,239,.96);
+  border-bottom:1px solid var(--trait);
+  backdrop-filter:blur(6px);
+}
+.topbar-int{display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap;padding:.5rem 1.1rem;max-width:70rem;margin:0 auto}
+.marque{font-family:var(--display);font-weight:700;font-size:1.35rem;color:var(--bleu);text-decoration:none;line-height:1.1;display:inline-flex;align-items:center;min-height:44px}
+.marque b{color:var(--safran);font-weight:700}
+.haut-actions{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.etat{
+  display:inline-flex;align-items:center;gap:.4rem;min-height:32px;
+  border:1.5px solid var(--trait);border-radius:999px;background:#fff;
+  padding:.15rem .7rem;font-size:.78rem;font-weight:600;color:var(--encre-doux);
+}
+.etat .pt{width:.55rem;height:.55rem;border-radius:50%;background:var(--encre-doux);flex:none}
+.etat.ouvert{color:var(--vert);border-color:#BFD8C6}
+.etat.ouvert .pt{background:var(--vert)}
+.lien-panier{
+  display:inline-flex;align-items:center;gap:.45rem;min-height:44px;padding:.3rem .9rem;
+  border-radius:999px;background:var(--bleu);color:#fff;text-decoration:none;font-weight:700;font-size:.9rem;
+}
+.lien-panier svg{width:17px;height:17px}
+.compte{background:var(--safran);color:var(--safran-encre);border-radius:999px;min-width:1.45em;text-align:center;font-size:.82rem;padding:0 .3em}
+
+/* ---------- Navigation ancres ---------- */
+.nav-ancres{display:flex;flex-wrap:wrap;gap:.15rem;justify-content:center;padding:.35rem .6rem;max-width:70rem;margin:0 auto;border-top:1px dashed var(--trait)}
+.nav-ancres a{display:inline-flex;align-items:center;min-height:44px;padding:.3rem .8rem;border-radius:999px;text-decoration:none;font-weight:600;font-size:.92rem;color:var(--bleu)}
+.nav-ancres a:hover{background:var(--pale)}
+
+/* ---------- Hero ---------- */
+.hero{padding:2.4rem 0 2.6rem}
+.hero-grille{display:grid;gap:2rem;align-items:center}
+@media(min-width:900px){.hero-grille{grid-template-columns:1.15fr .85fr;gap:3rem}.hero{padding:3.5rem 0 3.2rem}}
+.badge-7j{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:var(--bleu);color:#fff;border-radius:999px;
+  padding:.5rem 1.05rem;font-weight:700;font-size:.92rem;margin-bottom:1.1rem;
+}
+.badge-7j svg{width:17px;height:17px;flex:none;color:var(--safran)}
+.hero h1{font-size:clamp(2.15rem,8vw,3.6rem);margin-bottom:.55rem}
+.hero h1 em{font-style:normal;color:var(--safran);text-shadow:0 1px 0 rgba(27,73,101,.15)}
+.note-ligne{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;margin:.6rem 0 1.1rem;font-weight:600;color:var(--encre-doux)}
+.etoiles{display:inline-flex;gap:2px}
+.etoiles svg{width:21px;height:21px}
+.hero-texte p.accroche{font-size:1.08rem;max-width:34rem;color:var(--encre)}
+.cta-rangee{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.4rem}
+.hero-visuel{position:relative;display:grid;place-items:center}
+.hero-visuel img{
+  width:min(78vw,360px);height:auto;aspect-ratio:1;border-radius:50%;object-fit:cover;
+  border:7px solid #fff;box-shadow:0 0 0 3px var(--safran),0 18px 40px rgba(27,73,101,.25);
+}
+.soleil{position:absolute;z-index:-1;width:min(86vw,420px);height:auto;color:var(--pale)}
+
+/* ---------- Carte ---------- */
+.section{padding:2.8rem 0}
+.intro-sec{text-align:center;max-width:38rem;margin:0 auto 1.8rem}
+.intro-sec p{color:var(--encre-doux)}
+.grille-carte{display:grid;gap:1.4rem}
+@media(min-width:760px){.grille-carte{grid-template-columns:1fr 1fr}}
+.cat{
+  background:#fff;border-radius:26px;overflow:hidden;
+  box-shadow:0 8px 26px rgba(27,73,101,.10);
+  display:flex;flex-direction:column;
+}
+.cat img{width:100%;height:185px;object-fit:cover}
+.cat-tete{padding:1.1rem 1.3rem .2rem;display:flex;align-items:center;gap:.6rem}
+.cat-tete svg{width:22px;height:22px;color:var(--safran);flex:none}
+.plats{list-style:none;padding:.4rem 1.3rem 1.3rem}
+.plat{display:flex;align-items:flex-start;justify-content:space-between;gap:.8rem;padding:.75rem 0;border-bottom:1px dashed var(--trait)}
+.plat:last-child{border-bottom:0;padding-bottom:0}
+.plat h4{font-family:var(--texte);font-weight:700;font-size:1rem;color:var(--encre)}
+.plat p{font-size:.86rem;color:var(--encre-doux);line-height:1.45}
+.plat-droite{display:flex;flex-direction:column;align-items:flex-end;gap:.35rem;flex:none}
+.prix{font-family:var(--display);font-weight:700;color:var(--bleu);font-size:1.05rem;background:var(--pale);border-radius:999px;padding:.05rem .65rem;white-space:nowrap}
+.ajout{
+  display:inline-flex;align-items:center;justify-content:center;gap:.3rem;
+  min-height:44px;min-width:44px;padding:.3rem .85rem;border-radius:999px;cursor:pointer;
+  border:2px solid var(--safran);background:#fff;color:var(--safran-encre);
+  font-family:var(--texte);font-weight:700;font-size:.85rem;
+  transition:background .15s ease;
+}
+.ajout:hover{background:var(--safran)}
+.ajout.ok{background:var(--safran);border-color:var(--safran)}
+
+/* ---------- Commande coupe-file ---------- */
+.bande-bleue{background:var(--bleu);color:#fff}
+.bande-bleue .conteneur{padding-top:1.2rem;padding-bottom:2.6rem}
+.bande-bleue h2{color:#fff}
+.bande-bleue h2 b{color:var(--safran);font-weight:700}
+.bande-bleue .intro-sec p{color:var(--ciel-doux)}
+.arg-rangee{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;margin:-.4rem 0 1.6rem}
+.arg{display:inline-flex;align-items:center;gap:.45rem;background:rgba(255,255,255,.12);border-radius:999px;padding:.4rem .9rem;font-size:.86rem;font-weight:600;color:#fff}
+.arg svg{width:16px;height:16px;color:var(--safran);flex:none}
+.commande-grille{display:grid;gap:1.3rem}
+@media(min-width:880px){.commande-grille{grid-template-columns:1fr 1.15fr;align-items:start}}
+.carte-blanche{background:#fff;color:var(--encre);border-radius:26px;padding:1.4rem 1.3rem;box-shadow:0 10px 30px rgba(11,37,51,.25)}
+.carte-blanche h3{display:flex;align-items:center;gap:.55rem;margin-bottom:.9rem}
+.carte-blanche h3 svg{width:21px;height:21px;color:var(--safran);flex:none}
+.panier-vide{color:var(--encre-doux);font-size:.95rem;background:var(--pale);border-radius:14px;padding:.9rem 1rem}
+.panier-vide a{font-weight:700}
+.ligne-panier{display:flex;align-items:center;justify-content:space-between;gap:.7rem;padding:.55rem 0;border-bottom:1px dashed var(--trait)}
+.ligne-panier .nom{font-weight:600;font-size:.95rem}
+.ligne-panier .souligne{font-size:.84rem;color:var(--encre-doux)}
+.qte{display:inline-flex;align-items:center;gap:.15rem}
+.qte button{
+  width:44px;height:44px;border-radius:50%;border:1.5px solid var(--trait);background:#fff;
+  font-size:1.25rem;font-weight:700;color:var(--bleu);cursor:pointer;line-height:1;
+}
+.qte button:hover{background:var(--pale)}
+.qte .n{min-width:1.6em;text-align:center;font-weight:700}
+.total{display:flex;justify-content:space-between;align-items:baseline;margin-top:.9rem;font-weight:700;font-size:1.1rem}
+.total .somme{font-family:var(--display);font-size:1.5rem;color:var(--bleu)}
+fieldset{border:0;margin:1.1rem 0 0}
+legend{font-weight:700;padding:0;margin-bottom:.5rem;font-size:.98rem}
+.creneaux{display:flex;flex-wrap:wrap;gap:.5rem}
+.creneau{position:relative}
+.creneau input{position:absolute;opacity:0;inset:0}
+.creneau span{
+  display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:74px;
+  padding:.3rem .8rem;border-radius:999px;border:2px solid var(--trait);
+  font-weight:700;font-size:.95rem;cursor:pointer;background:#fff;color:var(--encre);
+}
+.creneau input:checked+span{background:var(--bleu);border-color:var(--bleu);color:#fff}
+.creneau input:focus-visible+span{outline:3px solid var(--safran);outline-offset:2px}
+.msg-pret{
+  margin-top:.85rem;background:#FDF3E2;border:1.5px solid var(--safran);
+  border-radius:14px;padding:.7rem .9rem;font-weight:600;font-size:.95rem;color:var(--safran-encre);
+}
+.radio{display:flex;align-items:center;gap:.65rem;min-height:48px;padding:.45rem .8rem;border:1.5px solid var(--trait);border-radius:14px;margin-bottom:.5rem;cursor:pointer;font-size:.95rem}
+.radio input{width:1.2rem;height:1.2rem;accent-color:var(--bleu);flex:none}
+.radio .reco{margin-left:auto;background:var(--pale);color:var(--bleu);font-size:.74rem;font-weight:700;border-radius:999px;padding:.1rem .55rem;white-space:nowrap}
+.radio.grise{opacity:.55;cursor:not-allowed;background:#F2F2F0}
+.radio.grise .reco{background:#E4E4E1;color:var(--encre-doux)}
+.champ{margin-top:1rem}
+.champ label{display:block;font-weight:700;font-size:.95rem;margin-bottom:.3rem}
+.champ input{
+  width:100%;min-height:48px;padding:.6rem .85rem;border:1.5px solid #B9C9D4;border-radius:14px;
+  font-family:var(--texte);font-size:1rem;color:var(--encre);background:#fff;
+}
+.erreur{margin-top:.8rem;font-weight:700;color:#9C2B12;font-size:.95rem}
+.btn-valider{width:100%;margin-top:1.2rem}
+.ecran-demo{text-align:center;padding:2.2rem 1.4rem}
+.ecran-demo .rond{width:64px;height:64px;border-radius:50%;background:var(--safran);display:grid;place-items:center;margin:0 auto 1rem}
+.ecran-demo .rond svg{width:32px;height:32px;color:var(--safran-encre)}
+.ecran-demo h3{font-size:1.5rem;margin-bottom:.6rem}
+.ecran-demo p{color:var(--encre-doux);max-width:30rem;margin:0 auto .6rem}
+.ecran-demo p.recap{color:var(--encre);font-weight:600}
+
+/* ---------- Sur place ---------- */
+.surplace-grille{display:grid;gap:1.6rem;align-items:center}
+@media(min-width:880px){.surplace-grille{grid-template-columns:1fr 1fr;gap:3rem}}
+.surplace-grille img{border-radius:26px;width:100%;height:auto;box-shadow:0 12px 30px rgba(27,73,101,.16)}
+.atouts{list-style:none;display:grid;gap:.8rem;margin-top:1.2rem}
+.atouts li{display:flex;gap:.8rem;align-items:flex-start;background:#fff;border-radius:18px;padding:.85rem 1rem;box-shadow:0 4px 14px rgba(27,73,101,.08)}
+.atouts svg{width:24px;height:24px;color:var(--safran);flex:none;margin-top:.1rem}
+.atouts b{display:block;color:var(--bleu)}
+.atouts span{font-size:.9rem;color:var(--encre-doux)}
+
+/* ---------- Avis ---------- */
+.sec-avis{background:var(--pale)}
+.note-globale{display:flex;align-items:center;justify-content:center;gap:.8rem;flex-wrap:wrap;margin-bottom:1.6rem}
+.note-globale .chiffre{font-family:var(--display);font-weight:700;font-size:3rem;color:var(--bleu);line-height:1}
+.note-globale .det{font-weight:600;color:var(--encre-doux);font-size:.95rem}
+.grille-avis{display:grid;gap:1rem}
+@media(min-width:760px){.grille-avis{grid-template-columns:repeat(3,1fr)}}
+.avis{background:#fff;border-radius:22px;padding:1.2rem 1.2rem 1rem;box-shadow:0 6px 18px rgba(27,73,101,.08)}
+.avis .etoiles svg{width:16px;height:16px}
+.avis blockquote{margin:.5rem 0 .4rem;font-size:.97rem}
+.avis cite{font-style:normal;font-size:.8rem;color:var(--encre-doux);font-weight:600}
+
+/* ---------- Horaires / accès ---------- */
+.grille-infos{display:grid;gap:1.3rem}
+@media(min-width:880px){.grille-infos{grid-template-columns:1fr 1fr}}
+.carte-info{background:#fff;border-radius:26px;padding:1.4rem 1.3rem;box-shadow:0 8px 26px rgba(27,73,101,.10)}
+.carte-info h3{display:flex;align-items:center;gap:.55rem;margin-bottom:.8rem}
+.carte-info h3 svg{width:21px;height:21px;color:var(--safran);flex:none}
+.horaires-table{width:100%;border-collapse:collapse;font-size:.95rem}
+.horaires-table td{padding:.42rem 0;border-bottom:1px dashed var(--trait)}
+.horaires-table tr:last-child td{border-bottom:0}
+.horaires-table td:last-child{text-align:right;font-weight:700;color:var(--bleu);white-space:nowrap}
+.encart-continu{margin-top:.9rem;background:var(--bleu);color:#fff;border-radius:14px;padding:.7rem .95rem;font-weight:600;font-size:.92rem;display:flex;gap:.55rem;align-items:center}
+.encart-continu svg{width:18px;height:18px;color:var(--safran);flex:none}
+.acces p{margin-bottom:.7rem}
+.acces .btn{margin:.25rem .4rem .25rem 0}
+
+/* ---------- Footer ---------- */
+footer{background:var(--bleu-nuit);color:var(--ciel-doux);padding:2.4rem 0 1.6rem;font-size:.92rem}
+footer h2{color:#fff;font-size:1.45rem;margin-bottom:.8rem}
+.foot-grille{display:grid;gap:1.4rem}
+@media(min-width:760px){.foot-grille{grid-template-columns:1.2fr 1fr 1fr}}
+footer a{color:#fff}
+footer ul{list-style:none;display:grid;gap:.45rem}
+footer li{display:flex;gap:.5rem;align-items:flex-start}
+footer li svg{width:17px;height:17px;color:var(--safran);flex:none;margin-top:.25rem}
+.foot-bas{margin-top:1.8rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.15);font-size:.82rem;display:flex;justify-content:space-between;gap:.6rem;flex-wrap:wrap}
+
+/* ---------- Bandeau légal fixe ---------- */
+.bandeau-legal{
+  position:fixed;left:0;right:0;bottom:0;z-index:80;
+  background:var(--bleu-abysse);color:#fff;
+  font-size:.72rem;line-height:1.45;text-align:center;
+  padding:.55rem .9rem;border-top:2px solid var(--safran);
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .btn:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<!-- Symboles SVG réutilisés -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="ic-vaguelette" viewBox="0 0 140 14">
+      <path d="M2 7c8.6-7.4 14.4 7.4 23 0s14.4 7.4 23 0 14.4 7.4 23 0 14.4 7.4 23 0 14.4 7.4 23 0 14.4 7.4 21 1.4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ic-vague-bord" viewBox="0 0 1440 48" preserveAspectRatio="none">
+      <path fill="currentColor" d="M0 0h1440v16c-120 18-240-12-360-2s-240 26-360 14S480 0 360 10 120 38 0 24Z"/>
+    </symbol>
+    <symbol id="ic-etoile" viewBox="0 0 24 24">
+      <path d="M12 2l2.9 6.2 6.8.8-5 4.7 1.3 6.7L12 17.1 6 20.4l1.3-6.7-5-4.7 6.8-.8Z"/>
+    </symbol>
+    <symbol id="ic-tel" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M6.6 2.8c.6-.2 1.3.1 1.6.7l1.7 3.4c.3.5.2 1.2-.3 1.6l-1.4 1.3a13.7 13.7 0 0 0 6 6l1.3-1.4c.4-.5 1.1-.6 1.6-.3l3.4 1.7c.6.3.9 1 .7 1.6l-.8 2.4c-.2.6-.8 1-1.4 1A17.4 17.4 0 0 1 2.6 5l-.2-.6c0-.6.4-1.2 1-1.4Z"/>
+    </symbol>
+    <symbol id="ic-horloge" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-13v4l3 2.5"/>
+    </symbol>
+    <symbol id="ic-pin" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2a7.5 7.5 0 0 0-7.5 7.5C4.5 14.6 12 22 12 22s7.5-7.4 7.5-12.5A7.5 7.5 0 0 0 12 2Zm0 10.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/>
+    </symbol>
+    <symbol id="ic-panier" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 6h2l2.4 11.2A2 2 0 0 0 9.4 19h7.9a2 2 0 0 0 2-1.6L21 9H6.2M10 22.2a.4.4 0 1 0 0-.8.4.4 0 0 0 0 .8Zm8 0a.4.4 0 1 0 0-.8.4.4 0 0 0 0 .8Z"/>
+    </symbol>
+    <symbol id="ic-eclair" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2Z"/>
+    </symbol>
+    <symbol id="ic-coche" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.5 5 5L19.5 6.5"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="topbar">
+  <div class="topbar-int">
+    <a class="marque" href="#contenu">Snack <b>Akdeniz</b></a>
+    <div class="haut-actions">
+      <span class="etat" id="etat"><span class="pt"></span><span id="etat-txt">7 j/7 · 11 h – 22 h</span></span>
+      <a class="lien-panier" href="#commander" id="lien-panier">
+        <svg aria-hidden="true"><use href="#ic-panier"/></svg>
+        Panier <span class="compte" id="compte-panier" aria-label="articles dans le panier">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+<nav class="nav-ancres" aria-label="Navigation principale">
+  <a href="#carte">La carte</a>
+  <a href="#commander">Commander</a>
+  <a href="#sur-place">Sur place</a>
+  <a href="#avis">Avis</a>
+  <a href="#horaires">Horaires &amp; accès</a>
+</nav>
+
+<main id="contenu">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="conteneur hero-grille">
+      <div class="hero-texte">
+        <p class="badge-7j"><svg aria-hidden="true"><use href="#ic-horloge"/></svg> Ouvert 7 j/7 — 11 h à 22 h en continu</p>
+        <h1>Le kebab préféré <em>d'Épinal</em></h1>
+        <p class="note-ligne">
+          <span class="etoiles" role="img" aria-label="Note 4,5 sur 5">
+            <svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="url(#demi)"/></svg>
+            <svg width="0" height="0"><defs><linearGradient id="demi"><stop offset="50%" stop-color="#E9A13B"/><stop offset="50%" stop-color="#CBD8E0"/></linearGradient></defs></svg>
+          </span>
+          4,5/5 · 479 avis Google
+        </p>
+        <p class="accroche">Akdeniz, c'est la Méditerranée en turc : viande dorée à la broche, pain frais, légumes croquants et générosité — midi et soir, sans interruption, au cœur d'Épinal.</p>
+        <div class="cta-rangee">
+          <a class="btn btn-safran" href="#commander"><svg aria-hidden="true"><use href="#ic-eclair"/></svg>Commander sans la queue</a>
+          <a class="btn btn-contour" href="tel:+33329333014"><svg aria-hidden="true"><use href="#ic-tel"/></svg>03 29 33 30 14</a>
+        </div>
+      </div>
+      <div class="hero-visuel">
+        <svg class="soleil" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><circle cx="100" cy="100" r="96" fill="currentColor"/></svg>
+        <img src="img/hero-doner.webp" alt="Broche de döner kebab dorée dans son grill vertical" width="1100" height="1100" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CARTE ================= -->
+  <section class="section" id="carte">
+    <div class="conteneur">
+      <div class="intro-sec">
+        <h2>La carte</h2>
+        <svg class="sep sep-titre" width="140" height="14" aria-hidden="true" focusable="false"><use href="#ic-vaguelette"/></svg>
+        <p>Tout est préparé à la commande. Ajoutez vos plats au panier, puis choisissez votre créneau de retrait juste en dessous.</p>
+      </div>
+      <div class="grille-carte">
+
+        <article class="cat">
+          <div class="cat-tete"><svg aria-hidden="true"><use href="#ic-eclair"/></svg><h3>Kebabs &amp; dürüms</h3></div>
+          <ul class="plats">
+            <li class="plat">
+              <div><h4>Döner kebab</h4><p>Pain doré, viande de la broche, crudités, sauce maison au choix.</p></div>
+              <div class="plat-droite"><span class="prix">7,00&nbsp;€</span><!-- [À REMPLACER] prix d'exemple --><button class="ajout" type="button" data-nom="Döner kebab" data-prix="7" aria-label="Ajouter Döner kebab au panier">+ Ajouter</button></div>
+            </li>
+            <li class="plat">
+              <div><h4>Kebab galette</h4><p>Galette souple, viande généreuse, salade, tomate, oignon.</p></div>
+              <div class="plat-droite"><span class="prix">7,50&nbsp;€</span><!-- [À REMPLACER] prix d'exemple --><button class="ajout" type="button" data-nom="Kebab galette" data-prix="7.5" aria-label="Ajouter Kebab galette au panier">+ Ajouter</button></div>
+            </li>
+            <li class="plat">
+              <div><h4>Dürüm XL</h4><p>Galette roulée, double viande, fromage fondu en option.</p></div>
+              <div class="plat-droite"><span class="prix">8,50&nbsp;€</span><!-- [À REMPLACER] prix d'exemple --><button class="ajout" type="button" data-nom="Dürüm XL" data-prix="8.5" aria-label="Ajouter Dürüm XL au panier">+ Ajouter</button></div>
+            </li>
+            <li class="plat">
+              <div><h4>Tacos 2 viandes</h4><p>Sauce fromagère maison, frites croustillantes incluses.</p></div>
+              <div class="plat-droite"><span class="prix">8,00&nbsp;€</span><!-- [À REMPLACER] prix d'exemple --><button class="ajout" type="button" data-nom="Tacos 2 viandes" data-prix="8" aria-label="Ajouter Tacos 2 viandes au panier">+ Ajouter</button></div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="cat">
+          <img src="img/grillades.webp" alt="Brochettes marinées en train de griller, légère fumée" width="800" height="600" loading="lazy" decoding="async">
+          <div class="cat-tete"><svg aria-hidden="true"><use href="#ic-eclair"/></svg><h3>Assiettes &amp; grillades</h3></div>
+          <ul class="plats">
+            <li class="plat">
+              <div><h4>Assiette kebab</h4><p>Viande de la broche, frites, salade composée, pain.</p></div>
+              <div class="plat-droite"><span class="prix">9,50&nbsp;€</span><!-- [À REMPLACER] prix d'exemple --><button class="ajout" type="button" data-nom="Assiette kebab" data-prix="9.5" aria-label="Ajouter Assiette kebab au panier">+ Ajouter</button></div>
+            </li>
+            <li class="plat">
+              <div><h4>Assiette grillades</h4><p>Brochettes marinées au grill, riz ou frites, crudités.</p></div>
+              <div class="plat-droite"><span class="prix">10,00&nbsp;€</span><!-- [À REMPLACER] prix d'exemple --><button class="ajout" type="button" data-nom="Assiette grillades" data-prix="10" aria-label="Ajouter Assiette grillades au panier">+ Ajouter</button></div>
+            </li>
+            <li class="plat">
+              <div><h4>Assiette méditerranéenne</h4><p>Semoule, légumes rôtis, poisson grillé, citron.</p></div>
+              <div class="plat-droite"><span class="prix">10,00&nbsp;€</span><!-- [À REMPLACER] prix d'exemple --><button class="ajout" type="button" data-nom="Assiette méditerranéenne" data-prix="10" aria-label="Ajouter Assiette méditerranéenne au panier">+ Ajouter</button></div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="cat">
+          <img src="img/falafels.webp" alt="Assiette de falafels dorés servis avec galette" width="760" height="760" loading="lazy" decoding="async">
+          <div class="cat-tete"><svg aria-hidden="true"><use href="#ic-eclair"/></svg><h3>Végétarien &amp; falafels</h3></div>
+          <ul class="plats">
+            <li class="plat">
+              <div><h4>Falafels maison (6 pièces)</h4><p>Pois chiches, herbes fraîches, sauce blanche.</p></div>
+              <div class="plat-droite"><span class="prix">6,50&nbsp;€</span><!-- [À REMPLACER] prix d'exemple --><button class="ajout" type="button" data-nom="Falafels maison" data-prix="6.5" aria-label="Ajouter Falafels maison au panier">+ Ajouter</button></div>
+            </li>
+            <li class="plat">
+              <div><h4>Wrap falafel</h4><p>Galette, houmous, falafels croustillants, crudités.</p></div>
+              <div class="plat-droite"><span class="prix">7,50&nbsp;€</span><!-- [À REMPLACER] prix d'exemple --><button class="ajout" type="button" data-nom="Wrap falafel" data-prix="7.5" aria-label="Ajouter Wrap falafel au panier">+ Ajouter</button></div>
+            </li>
+            <li class="plat">
+              <div><h4>Assiette falafels</h4><p>Falafels, semoule, salade, sauce au yaourt.</p></div>
+              <div class="plat-droite"><span class="prix">9,00&nbsp;€</span><!-- [À REMPLACER] prix d'exemple --><button class="ajout" type="button" data-nom="Assiette falafels" data-prix="9" aria-label="Ajouter Assiette falafels au panier">+ Ajouter</button></div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="cat">
+          <div class="cat-tete"><svg aria-hidden="true"><use href="#ic-eclair"/></svg><h3>Menus complets</h3></div>
+          <ul class="plats">
+            <li class="plat">
+              <div><h4>Menu kebab</h4><p>Kebab au choix + frites + boisson 33 cl.</p></div>
+              <div class="plat-droite"><span class="prix">9,50&nbsp;€</span><!-- [À REMPLACER] prix d'exemple --><button class="ajout" type="button" data-nom="Menu kebab" data-prix="9.5" aria-label="Ajouter Menu kebab au panier">+ Ajouter</button></div>
+            </li>
+            <li class="plat">
+              <div><h4>Menu dürüm</h4><p>Dürüm + frites + boisson 33 cl.</p></div>
+              <div class="plat-droite"><span class="prix">10,00&nbsp;€</span><!-- [À REMPLACER] prix d'exemple --><button class="ajout" type="button" data-nom="Menu dürüm" data-prix="10" aria-label="Ajouter Menu dürüm au panier">+ Ajouter</button></div>
+            </li>
+            <li class="plat">
+              <div><h4>Menu enfant</h4><p>Petit kebab ou nuggets, frites, jus de fruits.</p></div>
+              <div class="plat-droite"><span class="prix">7,00&nbsp;€</span><!-- [À REMPLACER] prix d'exemple --><button class="ajout" type="button" data-nom="Menu enfant" data-prix="7" aria-label="Ajouter Menu enfant au panier">+ Ajouter</button></div>
+            </li>
+            <li class="plat">
+              <div><h4>Boisson 33 cl</h4><p>Sodas, eaux, ayran.</p></div>
+              <div class="plat-droite"><span class="prix">1,50&nbsp;€</span><!-- [À REMPLACER] prix d'exemple --><button class="ajout" type="button" data-nom="Boisson 33 cl" data-prix="1.5" aria-label="Ajouter Boisson 33 cl au panier">+ Ajouter</button></div>
+            </li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMMANDE COUPE-FILE ================= -->
+  <section class="bande-bleue" id="commander">
+    <svg class="vague" aria-hidden="true" focusable="false"><use href="#ic-vague-bord"/></svg>
+    <div class="conteneur">
+      <div class="intro-sec">
+        <h2>Commande <b>coupe-file</b></h2>
+        <svg class="sep sep-titre" width="140" height="14" aria-hidden="true" focusable="false"><use href="#ic-vaguelette"/></svg>
+        <p>Commandez depuis votre téléphone, choisissez votre créneau : votre commande vous attend, déjà prête. Vous passez devant la file.</p>
+      </div>
+      <div class="arg-rangee">
+        <span class="arg"><svg aria-hidden="true"><use href="#ic-eclair"/></svg>Prête à l'heure choisie</span>
+        <span class="arg"><svg aria-hidden="true"><use href="#ic-coche"/></svg>Paiement au retrait</span>
+        <span class="arg"><svg aria-hidden="true"><use href="#ic-horloge"/></svg>Créneaux toutes les 15 min</span>
+      </div>
+
+      <div class="commande-grille" id="zone-commande">
+        <div class="carte-blanche">
+          <h3><svg aria-hidden="true"><use href="#ic-panier"/></svg>Votre panier</h3>
+          <div id="panier-zone" aria-live="polite"></div>
+        </div>
+
+        <form class="carte-blanche" id="form-commande" novalidate>
+          <h3><svg aria-hidden="true"><use href="#ic-horloge"/></svg>Retrait &amp; paiement</h3>
+          <fieldset>
+            <legend>Votre créneau de retrait</legend>
+            <div class="creneaux" id="liste-creneaux"></div>
+          </fieldset>
+          <p class="msg-pret" id="msg-creneau" aria-live="polite"></p>
+          <fieldset>
+            <legend>Paiement</legend>
+            <label class="radio"><input type="radio" name="paiement" value="retrait" checked>Au retrait — espèces ou CB sur place<span class="reco">recommandé</span></label>
+            <label class="radio grise"><input type="radio" name="paiement" value="cb" disabled aria-disabled="true">CB en ligne<span class="reco">disponible en production</span></label>
+          </fieldset>
+          <div class="champ">
+            <label for="ch-nom">Votre prénom</label>
+            <input id="ch-nom" name="nom" type="text" autocomplete="given-name" required>
+          </div>
+          <div class="champ">
+            <label for="ch-tel">Téléphone (pour vous prévenir si besoin)</label>
+            <input id="ch-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel">
+          </div>
+          <p class="erreur" id="erreur-commande" aria-live="assertive"></p>
+          <button class="btn btn-safran btn-valider" type="submit"><svg aria-hidden="true"><use href="#ic-eclair"/></svg>Valider ma commande coupe-file</button>
+        </form>
+      </div>
+
+      <div class="carte-blanche ecran-demo" id="ecran-demo" hidden>
+        <div class="rond"><svg aria-hidden="true"><use href="#ic-coche"/></svg></div>
+        <h3>Ceci est une démonstration</h3>
+        <p class="recap" id="recap-demo"></p>
+        <p>En production, votre commande partirait directement en cuisine — sans backend ni paiement réellement branchés ici. Aucune donnée n'est envoyée.</p>
+        <button class="btn btn-bleu" type="button" id="btn-rejouer">Refaire une démonstration</button>
+      </div>
+    </div>
+    <svg class="vague bas" aria-hidden="true" focusable="false"><use href="#ic-vague-bord"/></svg>
+  </section>
+
+  <!-- ================= SUR PLACE ================= -->
+  <section class="section" id="sur-place">
+    <div class="conteneur surplace-grille">
+      <div>
+        <h2>Sur place, comme au bord de l'eau</h2>
+        <svg class="sep sep-titre" style="margin:0" width="140" height="14" aria-hidden="true" focusable="false"><use href="#ic-vaguelette"/></svg>
+        <ul class="atouts">
+          <li><svg aria-hidden="true"><use href="#ic-coche"/></svg><div><b>Salle à l'étage</b><span>Installez-vous tranquillement, en famille ou entre collègues.</span></div></li>
+          <li><svg aria-hidden="true"><use href="#ic-coche"/></svg><div><b>Terrasse</b><span>Aux beaux jours, on mange dehors, à la spinalienne.</span></div></li>
+          <li><svg aria-hidden="true"><use href="#ic-horloge"/></svg><div><b>Service en continu, 11 h – 22 h</b><span>Déjeuner tardif ou dîner tôt : il y a toujours une broche qui tourne.</span></div></li>
+        </ul>
+      </div>
+      <img src="img/assiette-med.webp" alt="Bol méditerranéen coloré : poisson, haricots verts et semoule" width="800" height="600" loading="lazy" decoding="async">
+    </div>
+  </section>
+
+  <!-- ================= AVIS ================= -->
+  <section class="section sec-avis" id="avis">
+    <div class="conteneur">
+      <div class="intro-sec">
+        <h2>Ils en parlent mieux que nous</h2>
+        <svg class="sep sep-titre" width="140" height="14" aria-hidden="true" focusable="false"><use href="#ic-vaguelette"/></svg>
+      </div>
+      <p class="note-globale"><span class="chiffre">4,5<span aria-hidden="true">/5</span></span><span class="det">479 avis Google<br>Snack Akdeniz, Épinal</span></p>
+      <div class="grille-avis">
+        <!-- [À REMPLACER] extraits illustratifs — à remplacer par de vrais extraits d'avis Google (≤ 15 mots) -->
+        <article class="avis">
+          <span class="etoiles" role="img" aria-label="5 étoiles"><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg></span>
+          <blockquote>« Le meilleur kebab d'Épinal, viande généreuse et pain bien frais. »</blockquote>
+          <cite>Avis Google — extrait d'illustration</cite>
+        </article>
+        <article class="avis">
+          <span class="etoiles" role="img" aria-label="5 étoiles"><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg></span>
+          <blockquote>« Service rapide et souriant, même au coup de feu de midi. »</blockquote>
+          <cite>Avis Google — extrait d'illustration</cite>
+        </article>
+        <article class="avis">
+          <span class="etoiles" role="img" aria-label="4 étoiles"><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#E9A13B"/></svg><svg aria-hidden="true"><use href="#ic-etoile" fill="#CBD8E0"/></svg></span>
+          <blockquote>« La salle à l'étage est parfaite pour manger tranquille en famille. »</blockquote>
+          <cite>Avis Google — extrait d'illustration</cite>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HORAIRES / ACCÈS ================= -->
+  <section class="section" id="horaires">
+    <div class="conteneur">
+      <div class="intro-sec">
+        <h2>Horaires &amp; accès</h2>
+        <svg class="sep sep-titre" width="140" height="14" aria-hidden="true" focusable="false"><use href="#ic-vaguelette"/></svg>
+      </div>
+      <div class="grille-infos">
+        <div class="carte-info">
+          <h3><svg aria-hidden="true"><use href="#ic-horloge"/></svg>Horaires</h3>
+          <table class="horaires-table">
+            <tr><td>Lundi</td><td>11 h – 22 h</td></tr>
+            <tr><td>Mardi</td><td>11 h – 22 h</td></tr>
+            <tr><td>Mercredi</td><td>11 h – 22 h</td></tr>
+            <tr><td>Jeudi</td><td>11 h – 22 h</td></tr>
+            <tr><td>Vendredi</td><td>11 h – 22 h</td></tr>
+            <tr><td>Samedi</td><td>11 h – 22 h</td></tr>
+            <tr><td>Dimanche</td><td>11 h – 22 h</td></tr>
+          </table>
+          <p class="encart-continu"><svg aria-hidden="true"><use href="#ic-eclair"/></svg>Service en continu, sans coupure de l'après-midi.</p>
+        </div>
+        <div class="carte-info acces">
+          <h3><svg aria-hidden="true"><use href="#ic-pin"/></svg>Nous trouver</h3>
+          <p><strong>Snack Akdeniz</strong><br>7 rue François Blaudez<br>88000 Épinal</p>
+          <p>
+            <a class="btn btn-bleu" href="https://www.google.com/maps/search/?api=1&amp;query=Snack+Akdeniz+7+rue+Fran%C3%A7ois+Blaudez+88000+%C3%89pinal" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-pin"/></svg>Itinéraire Google Maps</a>
+            <a class="btn btn-contour" href="tel:+33329333014"><svg aria-hidden="true"><use href="#ic-tel"/></svg>03 29 33 30 14</a>
+          </p>
+          <p style="color:var(--encre-doux);font-size:.92rem">Sur place, à emporter, ou commande coupe-file depuis cette page.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="conteneur foot-grille">
+    <div>
+      <h2>Snack Akdeniz</h2>
+      <p>Kebabs, assiettes et menus méditerranéens à Épinal. Akdeniz signifie « Méditerranée » en turc : c'est notre promesse de fraîcheur et de générosité.</p>
+    </div>
+    <div>
+      <h2>Infos pratiques</h2>
+      <ul>
+        <li><svg aria-hidden="true"><use href="#ic-pin"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Snack+Akdeniz+7+rue+Fran%C3%A7ois+Blaudez+88000+%C3%89pinal" target="_blank" rel="noopener">7 rue François Blaudez, 88000 Épinal</a></li>
+        <li><svg aria-hidden="true"><use href="#ic-tel"/></svg><a href="tel:+33329333014">03 29 33 30 14</a></li>
+        <li><svg aria-hidden="true"><use href="#ic-horloge"/></svg>7 j/7 — 11 h à 22 h en continu</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Bon à savoir</h2>
+      <ul>
+        <li><svg aria-hidden="true"><use href="#ic-coche"/></svg>Viande halal</li>
+        <li><svg aria-hidden="true"><use href="#ic-coche"/></svg>Salle à l'étage &amp; terrasse</li>
+        <li><svg aria-hidden="true"><use href="#ic-coche"/></svg>Sur place ou à emporter</li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur foot-bas">
+    <span>Snack Akdeniz — Épinal (88000)</span>
+    <span>Photos d'illustration libres de droits</span>
+  </div>
+</footer>
+
+<!-- Bandeau légal obligatoire -->
+<div class="bandeau-legal" role="note" aria-label="Mention légale">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</div>
+
+<script>
+(function(){
+  'use strict';
+  var CLE='akdeniz_demo_panier';
+  var panier=[];
+  try{panier=JSON.parse(localStorage.getItem(CLE)||'[]')||[];}catch(e){panier=[];}
+
+  var $=function(s){return document.querySelector(s);};
+  var zone=$('#panier-zone'), compte=$('#compte-panier');
+
+  function euros(n){return n.toFixed(2).replace('.',',')+' €';}
+  function sauver(){try{localStorage.setItem(CLE,JSON.stringify(panier));}catch(e){}}
+
+  function rendrePanier(){
+    var total=0, qte=0, html='';
+    if(!panier.length){
+      html='<p class="panier-vide">Votre panier est vide pour l\'instant — <a href="#carte">choisissez vos plats dans la carte</a> juste au-dessus.</p>';
+    }else{
+      panier.forEach(function(l,i){
+        total+=l.p*l.q; qte+=l.q;
+        html+='<div class="ligne-panier"><div><span class="nom">'+l.n+'</span><br><span class="souligne">'+euros(l.p)+' l\'unité</span></div>'+
+          '<span class="qte"><button type="button" data-act="moins" data-i="'+i+'" aria-label="Retirer un '+l.n+'">−</button>'+
+          '<span class="n">'+l.q+'</span>'+
+          '<button type="button" data-act="plus" data-i="'+i+'" aria-label="Ajouter un '+l.n+'">+</button></span></div>';
+      });
+      html+='<p class="total"><span>Total</span><span class="somme">'+euros(total)+'</span></p>';
+    }
+    zone.innerHTML=html;
+    compte.textContent=qte;
+  }
+
+  zone.addEventListener('click',function(e){
+    var b=e.target.closest('button[data-act]');
+    if(!b)return;
+    var i=+b.dataset.i;
+    if(b.dataset.act==='plus'){panier[i].q++;}
+    else{panier[i].q--;if(panier[i].q<1)panier.splice(i,1);}
+    sauver();rendrePanier();
+  });
+
+  document.querySelectorAll('.ajout').forEach(function(b){
+    b.addEventListener('click',function(){
+      var n=b.dataset.nom, p=parseFloat(b.dataset.prix);
+      var ligne=panier.find(function(l){return l.n===n;});
+      if(ligne){ligne.q++;}else{panier.push({n:n,p:p,q:1});}
+      sauver();rendrePanier();
+      var t=b.textContent;b.textContent='Ajouté ✓';b.classList.add('ok');
+      setTimeout(function(){b.textContent=t;b.classList.remove('ok');},1100);
+    });
+  });
+
+  /* ----- Horaires 7 j/7, 11 h – 22 h ----- */
+  var OUVRE=11, FERME=22;
+  function fmt(d){return d.getHours()+' h '+('0'+d.getMinutes()).slice(-2);}
+
+  (function etat(){
+    var h=new Date().getHours();
+    var el=$('#etat'), tx=$('#etat-txt');
+    if(h>=OUVRE&&h<FERME){el.classList.add('ouvert');tx.textContent='Ouvert · jusqu\'à 22 h';}
+    else{tx.textContent='Fermé · réouvre à 11 h';}
+  })();
+
+  /* ----- Créneaux de retrait ----- */
+  var msg=$('#msg-creneau'), listeC=$('#liste-creneaux');
+  function creneaux(){
+    var now=new Date();
+    var base=new Date(now.getTime()+20*60000); /* 20 min de préparation */
+    base.setSeconds(0,0);
+    base.setMinutes(base.getMinutes()+((15-base.getMinutes()%15)%15));
+    var ouvre=new Date(now);ouvre.setHours(OUVRE,0,0,0);
+    var ferme=new Date(now);ferme.setHours(FERME,0,0,0);
+    var demain=false;
+    if(base<ouvre){base=new Date(ouvre);}
+    if(base>ferme){demain=true;base=new Date(ouvre.getTime()+86400000);}
+    var liste=[];
+    for(var i=0;i<6;i++){
+      var t=new Date(base.getTime()+i*15*60000);
+      if(!demain&&t>ferme)break;
+      liste.push({t:t,demain:demain});
+    }
+    return liste;
+  }
+  function majMessage(){
+    var sel=listeC.querySelector('input:checked');
+    if(!sel)return;
+    var pre=sel.dataset.demain==='1'?'demain à ':'à ';
+    msg.textContent='Votre commande sera prête '+pre+sel.value+' — sans faire la queue.';
+  }
+  function rendreCreneaux(){
+    var html='';
+    creneaux().forEach(function(c,i){
+      var v=fmt(c.t);
+      html+='<label class="creneau"><input type="radio" name="creneau" value="'+v+'" data-demain="'+(c.demain?1:0)+'"'+(i===0?' checked':'')+'><span>'+(c.demain?'demain ':'')+v+'</span></label>';
+    });
+    listeC.innerHTML=html;
+    majMessage();
+  }
+  listeC.addEventListener('change',majMessage);
+  rendreCreneaux();
+
+  /* ----- Validation : écran de démonstration ----- */
+  var form=$('#form-commande'), err=$('#erreur-commande'),
+      grille=$('#zone-commande'), ecran=$('#ecran-demo'),
+      args=document.querySelector('.arg-rangee');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    err.textContent='';
+    if(!panier.length){err.textContent='Votre panier est vide : ajoutez d\'abord un plat depuis la carte.';return;}
+    var nom=$('#ch-nom');
+    if(!nom.value.trim()){err.textContent='Indiquez votre prénom pour le retrait.';nom.focus();return;}
+    var sel=listeC.querySelector('input:checked');
+    var pre=sel&&sel.dataset.demain==='1'?'demain à ':'à ';
+    var total=0,qte=0;
+    panier.forEach(function(l){total+=l.p*l.q;qte+=l.q;});
+    $('#recap-demo').textContent='Merci '+nom.value.trim()+' ! En production, votre commande ('+qte+' article'+(qte>1?'s':'')+', '+euros(total)+') serait prête '+pre+sel.value+' — sans faire la queue. Paiement au retrait, espèces ou CB.';
+    grille.hidden=true;args.hidden=true;ecran.hidden=false;
+    panier=[];sauver();rendrePanier();
+    ecran.scrollIntoView({block:'center'});
+  });
+  $('#btn-rejouer').addEventListener('click',function(){
+    ecran.hidden=true;grille.hidden=false;args.hidden=false;
+    form.reset();rendreCreneaux();
+    document.getElementById('carte').scrollIntoView();
+  });
+
+  rendrePanier();
+})();
+</script>
+</body>
+</html>

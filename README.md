@@ -2,6 +2,8 @@
 
 Maquettes de démonstration, non contractuelles.
 
+## Lot 1 — Rambervillers
+
 | Maquette | URL | Statut |
 | --- | --- | --- |
 | (accueil — vitrine) | https://lumenbot.github.io/demos-tpe-88/ | v1 |
@@ -12,3 +14,9 @@ Maquettes de démonstration, non contractuelles.
 | dms | https://lumenbot.github.io/demos-tpe-88/dms/ | v1 |
 | palomino | https://lumenbot.github.io/demos-tpe-88/palomino/ | v1 |
 | pierron | https://lumenbot.github.io/demos-tpe-88/pierron/ | v1 |
+
+## Lot 2 — Épinal
+
+| Maquette | URL | Statut |
+| --- | --- | --- |
+| akdeniz | https://lumenbot.github.io/demos-tpe-88/akdeniz/ | v1 |
