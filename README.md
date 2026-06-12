@@ -26,3 +26,4 @@ Maquettes de démonstration, non contractuelles.
 | lattemann | https://lumenbot.github.io/demos-tpe-88/lattemann/ | v1 |
 | lamielle | https://lumenbot.github.io/demos-tpe-88/lamielle/ | v1 |
 | les-bulles | https://lumenbot.github.io/demos-tpe-88/les-bulles/ | v1 |
+| ws-electricite | https://lumenbot.github.io/demos-tpe-88/ws-electricite/ | v1 |
