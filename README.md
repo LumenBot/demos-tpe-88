@@ -23,3 +23,4 @@ Maquettes de démonstration, non contractuelles.
 | casa-familia | https://lumenbot.github.io/demos-tpe-88/casa-familia/ | v1 |
 | ctoutfaire | https://lumenbot.github.io/demos-tpe-88/ctoutfaire/ | v1 |
 | 1001-jardins | https://lumenbot.github.io/demos-tpe-88/1001-jardins/ | v1 |
+| lattemann | https://lumenbot.github.io/demos-tpe-88/lattemann/ | v1 |
