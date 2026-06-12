@@ -46,3 +46,4 @@ Racine du site : page de présentation (placeholders contact/SIRET à compléter
 | tms-services | https://lumenbot.github.io/demos-tpe-88/tms-services/ | v1 · DoD ✓ |
 | kebaberie-saint-martin | https://lumenbot.github.io/demos-tpe-88/kebaberie-saint-martin/ | v1 · DoD ✓ |
 | chez-dom | https://lumenbot.github.io/demos-tpe-88/chez-dom/ | v1 · DoD ✓ |
+| dolce-vita | https://lumenbot.github.io/demos-tpe-88/dolce-vita/ | v1 · DoD ✓ |
