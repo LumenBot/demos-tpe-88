@@ -24,3 +24,4 @@ Maquettes de démonstration, non contractuelles.
 | ctoutfaire | https://lumenbot.github.io/demos-tpe-88/ctoutfaire/ | v1 |
 | 1001-jardins | https://lumenbot.github.io/demos-tpe-88/1001-jardins/ | v1 |
 | lattemann | https://lumenbot.github.io/demos-tpe-88/lattemann/ | v1 |
+| lamielle | https://lumenbot.github.io/demos-tpe-88/lamielle/ | v1 |
