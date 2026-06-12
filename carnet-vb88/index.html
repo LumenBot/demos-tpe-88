@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Carnet de tournée — outil interne</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+:root{
+  --encre:#16365C; --papier:#F7F5F0; --carte:#FFFFFF; --miel:#E8A13B;
+  --txt:#1F2937; --mut:#6B7280; --ligne:#E5E1D8;
+  --st-afaire:#64748B; --st-int:#16A34A; --st-rel:#D97706; --st-ref:#DC2626; --st-sig:#7C3AED;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--papier);color:var(--txt);font-size:15px}
+h1,.disp,button,.chip,.cnt b{font-family:'Archivo',system-ui,sans-serif}
+button{cursor:pointer;border:none;background:none;font-size:14px}
+:focus-visible{outline:3px solid var(--miel);outline-offset:2px;border-radius:4px}
+
+/* ——— Header + signature : crête de progression ——— */
+header{background:var(--encre);color:#EDF2F8;padding:10px 14px 0;position:sticky;top:0;z-index:1000}
+.h-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+h1{font-size:16px;font-weight:900;letter-spacing:.03em}
+h1 span{color:var(--miel)}
+.h-actions{display:flex;gap:6px}
+.h-actions button{color:#EDF2F8;background:rgba(255,255,255,.12);padding:6px 10px;border-radius:8px;font-weight:700;font-size:12px}
+.cnt{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 6px;font-size:12px;color:#C8D3E0}
+.cnt b{font-size:14px;color:#fff}
+.cnt .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px;vertical-align:1px}
+.ridge-wrap{position:relative;height:26px;margin:0 -14px}
+.ridge-wrap svg{display:block;width:100%;height:26px}
+.ridge-pct{position:absolute;right:14px;top:0;font:700 11px 'Archivo';color:var(--miel)}
+
+/* ——— Contrôles ——— */
+.controls{background:var(--carte);border-bottom:1px solid var(--ligne);padding:8px 12px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;position:sticky;top:88px;z-index:900}
+.chip{padding:6px 12px;border-radius:999px;border:1.5px solid var(--ligne);background:#fff;font-weight:700;font-size:13px;color:var(--mut)}
+.chip[aria-pressed="true"]{background:var(--encre);border-color:var(--encre);color:#fff}
+.chip.geo[aria-pressed="true"]{background:var(--miel);border-color:var(--miel);color:#1F2937}
+.sep{flex:1}
+#mapToggle{font-weight:700;color:var(--encre)}
+
+/* ——— Carte ——— */
+#map{height:46vh;display:none;border-bottom:2px solid var(--encre)}
+#map.on{display:block}
+.leaflet-popup-content{margin:10px 12px;font:14px system-ui}
+.pp b{font-family:'Archivo';font-size:15px}
+.pp .ppa{display:flex;gap:6px;margin-top:8px}
+.pp .ppa a{flex:1;text-align:center;background:var(--encre);color:#fff;text-decoration:none;padding:6px 4px;border-radius:7px;font:700 12px 'Archivo'}
+.pp .ppa a.sec{background:#EEF2F7;color:var(--encre)}
+
+/* ——— Liste ——— */
+#list{padding:10px 12px 90px;display:grid;gap:10px;max-width:760px;margin:0 auto}
+.card{background:var(--carte);border:1px solid var(--ligne);border-left:5px solid var(--st);border-radius:12px;padding:12px 12px 10px}
+.c-head{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.c-head b{font-family:'Archivo';font-size:16px;font-weight:900;color:var(--encre)}
+.badge{font:700 11px 'Archivo';letter-spacing:.04em;background:#EEF2F7;color:var(--encre);padding:3px 8px;border-radius:6px;white-space:nowrap}
+.badge.b1490{background:var(--encre);color:var(--miel)}
+.meta{font-size:12.5px;color:var(--mut);margin:3px 0 6px;display:flex;gap:10px;flex-wrap:wrap}
+.meta .star{color:#B7791F;font-weight:700}
+.meta .dist{font-weight:700;color:var(--encre)}
+.angle{font-size:13.5px;line-height:1.4;margin-bottom:4px}
+.creneau{font-size:12px;color:var(--mut);margin-bottom:8px}
+.creneau::before{content:"🕐 "}
+.acts{display:flex;gap:6px;margin-bottom:8px}
+.acts a{flex:1;text-align:center;text-decoration:none;padding:8px 4px;border-radius:9px;font:700 13px 'Archivo';background:#EEF2F7;color:var(--encre)}
+.acts a.go{background:var(--encre);color:#fff}
+.acts a[aria-disabled="true"]{opacity:.35;pointer-events:none}
+.sts{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-bottom:6px}
+.sts button{padding:7px 2px;border-radius:8px;font:700 11px 'Archivo';border:1.5px solid var(--ligne);background:#fff;color:var(--mut)}
+.sts button[aria-pressed="true"]{color:#fff;border-color:transparent}
+.sts .b-af[aria-pressed="true"]{background:var(--st-afaire)} .sts .b-in[aria-pressed="true"]{background:var(--st-int)}
+.sts .b-re[aria-pressed="true"]{background:var(--st-rel)} .sts .b-rf[aria-pressed="true"]{background:var(--st-ref)}
+.sts .b-si[aria-pressed="true"]{background:var(--st-sig)}
+.note{width:100%;border:1px solid var(--ligne);border-radius:8px;padding:8px;font:14px system-ui;background:#FCFBF8;min-height:34px;resize:vertical}
+.ts{font-size:11px;color:var(--mut);margin-top:4px;text-align:right}
+.empty{text-align:center;color:var(--mut);padding:40px 12px;font-size:14px}
+footer{position:fixed;bottom:0;left:0;right:0;background:rgba(247,245,240,.95);border-top:1px solid var(--ligne);padding:8px 12px;font-size:11px;color:var(--mut);text-align:center;backdrop-filter:blur(4px)}
+@media(min-width:760px){#map.on{height:54vh}.controls{top:84px}}
+@media(prefers-reduced-motion:no-preference){.card{transition:border-color .15s}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="h-top">
+    <h1>CARNET DE TOURNÉE <span>· interne</span></h1>
+    <div class="h-actions">
+      <button id="exp" title="Exporter la sauvegarde">⤓ Export</button>
+      <button id="impBtn" title="Importer une sauvegarde">⤒ Import</button>
+      <input type="file" id="imp" accept=".json" hidden>
+    </div>
+  </div>
+  <div class="cnt" id="counters"></div>
+  <div class="ridge-wrap" aria-hidden="true">
+    <svg viewBox="0 0 600 26" preserveAspectRatio="none">
+      <defs><clipPath id="prog"><rect id="progRect" x="0" y="0" width="0" height="26"/></clipPath></defs>
+      <path d="M0 26 L0 18 L52 9 L108 15 L168 5 L228 13 L300 3 L364 12 L420 7 L488 14 L546 8 L600 17 L600 26 Z" fill="rgba(255,255,255,.18)"/>
+      <path d="M0 26 L0 18 L52 9 L108 15 L168 5 L228 13 L300 3 L364 12 L420 7 L488 14 L546 8 L600 17 L600 26 Z" fill="#E8A13B" clip-path="url(#prog)"/>
+    </svg>
+    <span class="ridge-pct" id="pct"></span>
+  </div>
+</header>
+
+<div class="controls" id="villeChips"></div>
+<div class="controls" style="top:auto;position:static">
+  <button class="chip" data-st="all" aria-pressed="true">Toutes</button>
+  <button class="chip" data-st="afaire" aria-pressed="false">À faire</button>
+  <button class="chip" data-st="suivi" aria-pressed="false">À relancer</button>
+  <button class="chip" data-st="fait" aria-pressed="false">Traitées</button>
+  <span class="sep"></span>
+  <button class="chip geo" id="geo" aria-pressed="false">📍 Près de moi</button>
+  <button id="mapToggle" class="chip">🗺️ Carte</button>
+</div>
+
+<div id="map" role="application" aria-label="Carte des cibles"></div>
+<main id="list"></main>
+<footer>Données publiques (Google/SIRENE) embarquées · vos statuts &amp; notes restent <b>sur cet appareil</b> (localStorage) — pensez à l'export avant de changer de téléphone.</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+/* =====================================================================
+   CIBLES EMBARQUÉES — données 100 % publiques (fiches Google, SIRENE).
+   FORMAT D'EXTENSION (agent Code : ajouter les vagues ici, ne rien
+   modifier d'autre) :
+   {id:"slug-unique", lot:"Ville (vague N)", ville:"Ville", nom:"",
+    seg:"FOOD|BTP|HEB|COM", offre:"COMMANDE|ESSENTIEL|B", prix:1490|790|0,
+    note:4.5, avis:0, adresse:"", tel:"+33..."|null, lat:0, lng:0,
+    pid:"place_id Google"|null, demo:"slug-demo"|null,
+    angle:"1 ligne d'angle commercial", creneau:"créneau conseillé"}
+   ===================================================================== */
+const DEMO_BASE = "https://lumenbot.github.io/demos-tpe-88/";
+const TARGETS = [
+ // ——— Lot 1 · Rambervillers ———
+ {id:"snack-de-la-place",lot:"Rambervillers (v1)",ville:"Rambervillers",nom:"Snack de la Place",seg:"FOOD",offre:"COMMANDE",prix:1490,note:5.0,avis:40,adresse:"9 pl. du Trente Septembre",tel:"+33761800929",lat:48.346219,lng:6.6355975,pid:"ChIJN6YPebGbk0cRhmPmnsooldM",demo:"snack-de-la-place",angle:"5,0★, livraison, soirées à thème → module soirées + commande",creneau:"10 h 45 (mise en place) — éviter 11 h 30-14 h"},
+ {id:"coppia",lot:"Rambervillers (v1)",ville:"Rambervillers",nom:"La Coppia",seg:"FOOD",offre:"COMMANDE",prix:1490,note:4.6,avis:235,adresse:"9 av. du 17e BCP",tel:"+33329656259",lat:48.3384395,lng:6.6355197,pid:"ChIJAQDEMO6ak0cRfhnLj3tmLAo",demo:"coppia",angle:"N°1 local, repreneur 2025, pas de commande en ligne → upgrade",creneau:"mar-sam 14 h 30 (entre services)"},
+ {id:"ali-baba",lot:"Rambervillers (v1)",ville:"Rambervillers",nom:"Snack Ali Baba",seg:"FOOD",offre:"COMMANDE",prix:1490,note:4.5,avis:150,adresse:"70 rue Carnot",tel:"+33671091021",lat:48.3427407,lng:6.6348258,pid:"ChIJ5yRgMu-ak0cRayj5pYwgoC4",demo:"ali-baba",angle:"150 avis, zéro site — paiement au retrait conservé, +panier via suppléments",creneau:"17 h 15 (ouvre à 18 h) — LE créneau"},
+ {id:"schwartz",lot:"Rambervillers (v1)",ville:"Rambervillers",nom:"Pâtisserie Schwartz",seg:"FOOD",offre:"COMMANDE",prix:1490,note:4.7,avis:144,adresse:"pl. du Trente Septembre",tel:"+33329650032",lat:48.3461423,lng:6.6349401,pid:"ChIJWzJGPuiak0cRvUAHJ3anHag",demo:"schwartz",angle:"Maison 1964, expéditions France… aujourd'hui par téléphone",creneau:"mar-ven 9 h 45 (après le rush croissants)"},
+ {id:"dms",lot:"Rambervillers (v1)",ville:"Rambervillers",nom:"DMS Multiservice",seg:"BTP",offre:"ESSENTIEL",prix:790,note:5.0,avis:9,adresse:"32 B fbg de la Chipotte",tel:"+33745572025",lat:48.3439028,lng:6.6404779,pid:"ChIJhw7IarGbk0cRMh7CCR9XaEo",demo:"dms",angle:"Paysagiste 5,0★ — devis en direct avec photos",creneau:"appeler avant (en chantier) ; dépôt en fin de journée"},
+ {id:"palomino",lot:"Rambervillers (v1)",ville:"Rambervillers",nom:"Palomino Pizza",seg:"FOOD",offre:"COMMANDE",prix:1490,note:4.4,avis:8,adresse:"22 rue Carnot",tel:null,lat:48.3441381,lng:6.634904,pid:"ChIJpzNbcz2bk0cRCTplUmu-NJA",demo:"palomino",angle:"Livraison 7 km — démo carte de zone",creneau:"11 h 15 (ouverture)"},
+ {id:"pierron",lot:"Rambervillers (v1)",ville:"Rambervillers",nom:"Pierron (plomberie)",seg:"BTP",offre:"ESSENTIEL",prix:790,note:5.0,avis:6,adresse:"11 rue du Magasin",tel:"+33329654188",lat:48.3454546,lng:6.6312216,pid:"ChIJzcfxq-eak0cR7r8FfPScIiI",demo:"pierron",angle:"Le meilleur plombier du coin (Google) — pitch urgence mobile",creneau:"9 h 00 (artisans : tôt)"},
+ // ——— Lot 2 · Épinal / Golbey ———
+ {id:"akdeniz",lot:"Épinal (v2)",ville:"Épinal",nom:"Snack Akdeniz",seg:"FOOD",offre:"COMMANDE",prix:1490,note:4.5,avis:479,adresse:"7 rue François Blaudez",tel:"+33329333014",lat:48.1735306,lng:6.4499889,pid:"ChIJzUlAqYigk0cRSLmli5LOWTM",demo:"akdeniz",angle:"479 avis — l'ancienne page Google (business.site) a fermé en 2024",creneau:"10 h 45 avant le rush, ou creux de 15 h"},
+ {id:"casa-familia",lot:"Épinal (v2)",ville:"Épinal",nom:"Casa Familia",seg:"FOOD",offre:"COMMANDE",prix:1490,note:4.9,avis:123,adresse:"30 rue de l'Épargne",tel:"+33372739431",lat:48.1721155,lng:6.4410417,pid:"ChIJ54D9PwChk0cR7GTy1o6fy_o",demo:"casa-familia",angle:"4,9★ en 1 an — intégration booq + fidélité solidaire",creneau:"mar-sam 11 h 30 (four en chauffe) ou 17 h 45"},
+ {id:"ws-electricite",lot:"Épinal (v2)",ville:"Épinal",nom:"WS Electricité",seg:"BTP",offre:"ESSENTIEL",prix:790,note:5.0,avis:20,adresse:"16 rue du Boudiou",tel:"+33686566058",lat:48.1745797,lng:6.4462964,pid:"ChIJMVxWY8Ghk0cRXswgv8eTYAU",demo:"ws-electricite",angle:"Site existant (ws-electricite.com) — mode refonte, ton évolution",creneau:"RDV tél. en semaine 18 h"},
+ {id:"ctoutfaire",lot:"Épinal (v2)",ville:"Épinal",nom:"C'Toutfaire",seg:"BTP",offre:"ESSENTIEL",prix:790,note:4.8,avis:66,adresse:"37 rue Dom Pothier",tel:"+33664671209",lat:48.1866252,lng:6.436163,pid:"ChIJ-2IkkHLWBAMRch-pdUSLxG4",demo:"ctoutfaire",angle:"Multiservices 4,8★/66 — sélecteur « quel est votre problème ? »",creneau:"appeler avant ; lun-ven 9-17 h 30"},
+ {id:"1001-jardins",lot:"Épinal (v2)",ville:"Épinal",nom:"L'art des 1001 jardins",seg:"BTP",offre:"ESSENTIEL",prix:790,note:5.0,avis:16,adresse:"50 rue des Epinettes",tel:"+33670407754",lat:48.1841446,lng:6.4490975,pid:"ChIJJ5GRCIuhk0cRxnqi1Fs4LQY",demo:"1001-jardins",angle:"Refonte légère (page web gratuite existante) — devis en direct à montrer",creneau:"16 h (retour de chantier) ou tél. 17 h 30"},
+ {id:"lattemann",lot:"Épinal (v2)",ville:"Golbey",nom:"SARL Lattemann Franck",seg:"BTP",offre:"ESSENTIEL",prix:790,note:4.8,avis:47,adresse:"59 rue de Lorraine, Golbey",tel:"+33685943444",lat:48.2029013,lng:6.4393008,pid:"ChIJ9ViiRqEKk0cR8OU51MLwJoE",demo:"lattemann",angle:"Plombier urgentiste 24/7, chaudières en 36 h — pitch urgence mobile",creneau:"17 h (fin de tournée chantiers)"},
+ {id:"lamielle",lot:"Épinal (v2)",ville:"Épinal",nom:"Lamielle Chocolatier",seg:"FOOD",offre:"COMMANDE",prix:1490,note:4.4,avis:151,adresse:"13 rue Rualménil",tel:"+33329822001",lat:48.1749298,lng:6.4474975,pid:"ChIJq_vPXIagk0cROinuAdIch_E",demo:"lamielle",angle:"Mode upgrade (site vitrine existant) — coffrets + expédition France",creneau:"mar-sam 9 h 30 (avant affluence)"},
+ {id:"les-bulles",lot:"Épinal (v2)",ville:"Épinal",nom:"Les Bulles (chambres d'hôtes)",seg:"HEB",offre:"ESSENTIEL",prix:790,note:4.9,avis:19,adresse:"5 av. de la Loge Blanche",tel:null,lat:48.1654998,lng:6.4505329,pid:"ChIJCX2WBQChk0cRVKe3yHGaagc",demo:"les-bulles",angle:"Ni site ni téléphone sur la fiche ! Pitch résa directe sans commission",creneau:"14 h 30 (entre check-out et check-in)"},
+ // ——— Classe B · pitch sans maquette ———
+ {id:"estaminet",lot:"Rambervillers (v1)",ville:"Saint-Gorgon",nom:"L'Estaminet",seg:"FOOD",offre:"B",prix:0,note:4.9,avis:73,adresse:"16 rue de Rond Pré, Saint-Gorgon",tel:"+33668055790",lat:48.3351358,lng:6.6493618,pid:"ChIJF6DZu9tvEEQRSsKvjwM0ucc",demo:null,angle:"Resto-traiteur ven-dim — approche de proximité",creneau:"ven-dim hors service"},
+ {id:"ferblanterie",lot:"Rambervillers (v1)",ville:"Rambervillers",nom:"La Ferblanterie",seg:"HEB",offre:"B",prix:0,note:5.0,avis:33,adresse:"Rle des Vannes",tel:"+33682026541",lat:48.3458466,lng:6.6325091,pid:"ChIJW2evzwibk0cRrBXX0lQCWSs",demo:null,angle:"B&B équipé (site + Booking) — résa directe sans commission si occasion",creneau:"14 h-16 h"},
+ {id:"julien-lambert",lot:"Épinal (v2)",ville:"Épinal",nom:"Julien Lambert Pâtisserie",seg:"FOOD",offre:"B",prix:0,note:4.6,avis:323,adresse:"2 quai du Musée",tel:"+33329646674",lat:48.1735281,lng:6.4462583,pid:"ChIJpfUel0ehk0cRISwtVxutY3o",demo:null,angle:"Site vitrine existant, commandes par téléphone — candidat upgrade",creneau:"mar-ven 9 h 30"},
+];
+
+/* ——— État (localStorage uniquement) ——— */
+const KEY="carnet-tpe-v1";
+const STATUTS={afaire:"À faire",interesse:"Intéressé",relancer:"À relancer",refus:"Refus",signe:"Signé 🎉"};
+const STCOLOR={afaire:"#64748B",interesse:"#16A34A",relancer:"#D97706",refus:"#DC2626",signe:"#7C3AED"};
+let store=load(), fVille="all", fSt="all", geoPos=null, map=null, markers={};
+function load(){try{return JSON.parse(localStorage.getItem(KEY))||{v:1,items:{}}}catch(e){return{v:1,items:{}}}}
+function save(){localStorage.setItem(KEY,JSON.stringify(store))}
+function st(id){return (store.items[id]&&store.items[id].st)||"afaire"}
+function note(id){return (store.items[id]&&store.items[id].note)||""}
+function setSt(id,v){store.items[id]=store.items[id]||{};store.items[id].st=v;store.items[id].ts=Date.now();save();render()}
+function setNote(id,v){store.items[id]=store.items[id]||{};store.items[id].note=v;store.items[id].ts=Date.now();save();stamp(id)}
+
+/* ——— Utilitaires ——— */
+const $=s=>document.querySelector(s);
+function dist(a){if(!geoPos)return null;const R=6371,dLa=(a.lat-geoPos.lat)*Math.PI/180,dLo=(a.lng-geoPos.lng)*Math.PI/180;const x=Math.sin(dLa/2)**2+Math.cos(geoPos.lat*Math.PI/180)*Math.cos(a.lat*Math.PI/180)*Math.sin(dLo/2)**2;return R*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x))}
+function fmtTel(t){return t?t.replace("+33","0").replace(/(\d{2})(?=\d)/g,"$1 ").trim():""}
+function gmapsDir(t){return `https://www.google.com/maps/dir/?api=1&destination=${t.lat},${t.lng}`}
+function gmapsFiche(t){return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(t.nom+" "+t.ville)}${t.pid?"&query_place_id="+t.pid:""}`}
+function when(ts){if(!ts)return"";const d=new Date(ts);return "maj "+d.toLocaleDateString("fr-FR",{day:"2-digit",month:"2-digit"})+" "+d.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"})}
+
+/* ——— Filtres ——— */
+function visible(){
+  let arr=TARGETS.filter(t=>fVille==="all"||t.ville===fVille||(fVille==="Épinal"&&t.ville==="Golbey"));
+  if(fSt==="afaire")arr=arr.filter(t=>st(t.id)==="afaire");
+  if(fSt==="suivi")arr=arr.filter(t=>st(t.id)==="relancer");
+  if(fSt==="fait")arr=arr.filter(t=>st(t.id)!=="afaire");
+  if(geoPos)arr.sort((a,b)=>dist(a)-dist(b));
+  else arr.sort((a,b)=>(a.ville+a.nom).localeCompare(b.ville+b.nom,"fr"));
+  return arr;
+}
+
+/* ——— Rendu ——— */
+function render(){
+  // compteurs + crête
+  const c={afaire:0,interesse:0,relancer:0,refus:0,signe:0};
+  TARGETS.forEach(t=>c[st(t.id)]++);
+  const done=TARGETS.length-c.afaire, pct=Math.round(100*done/TARGETS.length);
+  $("#counters").innerHTML=Object.entries(STATUTS).map(([k,l])=>`<span><span class="dot" style="background:${STCOLOR[k]}"></span>${l} <b>${c[k]}</b></span>`).join("");
+  $("#progRect").setAttribute("width",6*pct);
+  $("#pct").textContent=`${done}/${TARGETS.length} visitées · ${pct} %`;
+  // chips villes (dérivées des données → les vagues futures apparaissent seules)
+  const villes=["all",...new Set(TARGETS.map(t=>t.ville==="Golbey"?"Épinal":t.ville==="Saint-Gorgon"?"Rambervillers":t.ville))];
+  $("#villeChips").innerHTML=villes.map(v=>`<button class="chip" data-v="${v}" aria-pressed="${fVille===v}">${v==="all"?"Tout le rayon":v}</button>`).join("");
+  document.querySelectorAll("#villeChips .chip").forEach(b=>b.onclick=()=>{fVille=b.dataset.v;render()});
+  // liste
+  const arr=visible();
+  $("#list").innerHTML=arr.length?arr.map(card).join(""):`<div class="empty">Aucune cible avec ces filtres.</div>`;
+  arr.forEach(t=>{
+    document.querySelectorAll(`[data-stbtn="${t.id}"]`).forEach(b=>b.onclick=()=>setSt(t.id,b.dataset.val));
+    const ta=document.getElementById("n-"+t.id);
+    if(ta){let to;ta.oninput=()=>{clearTimeout(to);to=setTimeout(()=>setNote(t.id,ta.value),400)}}
+  });
+  if(map)drawMarkers();
+}
+function card(t){
+  const d=dist(t), s=st(t.id);
+  return `<article class="card" style="--st:${STCOLOR[s]}">
+    <div class="c-head"><b>${t.nom}</b><span class="badge ${t.prix===1490?"b1490":""}">${t.offre==="B"?"PITCH (B)":t.offre+" "+t.prix+" €"}</span></div>
+    <div class="meta"><span class="star">${t.note.toFixed(1)}★ (${t.avis})</span><span>${t.ville} · ${t.adresse}</span>${d!=null?`<span class="dist">${d<10?d.toFixed(1):Math.round(d)} km</span>`:""}</div>
+    <div class="angle">${t.angle}</div>
+    <div class="creneau">${t.creneau}</div>
+    <div class="acts">
+      ${t.tel?`<a href="tel:${t.tel}">📞 ${fmtTel(t.tel)}</a>`:`<a aria-disabled="true">📞 à confirmer</a>`}
+      <a class="go" href="${gmapsDir(t)}" target="_blank" rel="noopener">🗺️ Y aller</a>
+      ${t.demo?`<a href="${DEMO_BASE+t.demo}/" target="_blank" rel="noopener">👁 Démo</a>`:`<a href="${gmapsFiche(t)}" target="_blank" rel="noopener">ℹ️ Fiche</a>`}
+    </div>
+    <div class="sts" role="group" aria-label="Statut">
+      <button class="b-af" data-stbtn="${t.id}" data-val="afaire" aria-pressed="${s==="afaire"}">À faire</button>
+      <button class="b-in" data-stbtn="${t.id}" data-val="interesse" aria-pressed="${s==="interesse"}">Intéressé</button>
+      <button class="b-re" data-stbtn="${t.id}" data-val="relancer" aria-pressed="${s==="relancer"}">Relancer</button>
+      <button class="b-rf" data-stbtn="${t.id}" data-val="refus" aria-pressed="${s==="refus"}">Refus</button>
+      <button class="b-si" data-stbtn="${t.id}" data-val="signe" aria-pressed="${s==="signe"}">Signé</button>
+    </div>
+    <textarea class="note" id="n-${t.id}" placeholder="Notes terrain (interlocuteur, objection, prochaine étape…)">${note(t.id)}</textarea>
+    <div class="ts" id="ts-${t.id}">${when(store.items[t.id]&&store.items[t.id].ts)}</div>
+  </article>`;
+}
+function stamp(id){const e=document.getElementById("ts-"+id);if(e)e.textContent=when(store.items[id].ts)}
+
+/* ——— Carte ——— */
+function initMap(){
+  map=L.map("map",{zoomControl:true}).setView([48.26,6.55],10);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:"© OpenStreetMap"}).addTo(map);
+  drawMarkers(true);
+}
+function drawMarkers(fit){
+  Object.values(markers).forEach(m=>map.removeLayer(m));markers={};
+  const arr=visible(), pts=[];
+  arr.forEach(t=>{
+    const m=L.circleMarker([t.lat,t.lng],{radius:9,color:"#fff",weight:2,fillColor:STCOLOR[st(t.id)],fillOpacity:.95}).addTo(map);
+    m.bindPopup(`<div class="pp"><b>${t.nom}</b><br><span style="color:#6B7280">${t.offre==="B"?"Pitch (B)":t.offre+" "+t.prix+" €"} · ${t.note.toFixed(1)}★ (${t.avis})</span><div class="ppa"><a href="${gmapsDir(t)}" target="_blank" rel="noopener">Y aller</a>${t.demo?`<a class="sec" href="${DEMO_BASE+t.demo}/" target="_blank" rel="noopener">Démo</a>`:""}${t.tel?`<a class="sec" href="tel:${t.tel}">Appeler</a>`:""}</div></div>`);
+    markers[t.id]=m;pts.push([t.lat,t.lng]);
+  });
+  if(geoPos){const me=L.circleMarker([geoPos.lat,geoPos.lng],{radius:7,color:"#16365C",weight:3,fillColor:"#E8A13B",fillOpacity:1}).addTo(map).bindPopup("Ma position");markers.__me=me;pts.push([geoPos.lat,geoPos.lng])}
+  if(fit&&pts.length)map.fitBounds(pts,{padding:[28,28]});
+}
+
+/* ——— Évènements ——— */
+document.querySelectorAll("[data-st]").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll("[data-st]").forEach(x=>x.setAttribute("aria-pressed","false"));
+  b.setAttribute("aria-pressed","true");fSt=b.dataset.st;render();
+});
+$("#mapToggle").onclick=()=>{
+  const m=$("#map");m.classList.toggle("on");
+  if(m.classList.contains("on")){if(!map)initMap();else{map.invalidateSize();drawMarkers(true)}}
+};
+$("#geo").onclick=()=>{
+  if(geoPos){geoPos=null;$("#geo").setAttribute("aria-pressed","false");render();return}
+  navigator.geolocation.getCurrentPosition(p=>{
+    geoPos={lat:p.coords.latitude,lng:p.coords.longitude};
+    $("#geo").setAttribute("aria-pressed","true");render();
+  },()=>alert("Position indisponible — vérifie l'autorisation de localisation."),{enableHighAccuracy:true,timeout:8000});
+};
+$("#exp").onclick=()=>{
+  const blob=new Blob([JSON.stringify({exported:new Date().toISOString(),...store},null,1)],{type:"application/json"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);
+  a.download="carnet-tournee-"+new Date().toISOString().slice(0,10)+".json";a.click();
+};
+$("#impBtn").onclick=()=>$("#imp").click();
+$("#imp").onchange=e=>{
+  const f=e.target.files[0];if(!f)return;
+  const r=new FileReader();
+  r.onload=()=>{try{const d=JSON.parse(r.result);if(d.items){store.items={...store.items,...d.items};save();render();alert("Sauvegarde importée et fusionnée ✔")}else alert("Fichier non reconnu.")}catch(_){alert("Fichier illisible.")}};
+  r.readAsText(f);
+};
+render();
+</script>
+</body>
+</html>
