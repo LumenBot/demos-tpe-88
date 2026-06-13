@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1B3A5B">
+<title>Plombier à Lunéville — KNEUBUHLER · Dépannage, sanitaire, chauffage, rénovation</title>
+<meta name="description" content="Plombier à Lunéville (54300) : dépannage, sanitaire, chauffage, salle de bains. Artisan réputé, noté 4,7 sur Google. Devis depuis une photo. Appelez le 03 83 74 54 07.">
+
+<!-- Google Fonts : Libre Franklin, famille unique (display + texte), graisses 400-800,
+     display=swap, chargement NON bloquant (preload + media print + bascule onload + noscript). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&display=swap"></noscript>
+
+<!-- [À REMPLACER] L'amplitude horaire 8 h–12 h / 14 h–18 h (ici et dans le JSON-LD ci-dessous)
+     reprend les horaires publics Google. À confirmer avec M. Kneubuhler. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "KNEUBUHLER",
+  "image": "https://lumenbot.github.io/demos-tpe-88/kneubuhler/img/salle-de-bains.webp",
+  "telephone": "+33383745407",
+  "url": "https://lumenbot.github.io/demos-tpe-88/kneubuhler/",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "6 rue de la République",
+    "postalCode": "54300",
+    "addressLocality": "Lunéville",
+    "addressCountry": "FR"
+  },
+  "areaServed": "Lunéville et communes alentour",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "12:00"
+  }, {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "14:00",
+    "closes": "18:00"
+  }],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "14",
+    "bestRating": "5"
+  }
+}
+</script>
+
+<style>
+:root{
+  --bleu:#1B3A5B;
+  --bleu-fonce:#122A44;
+  --bleu-clair:#2C5680;
+  --laiton:#B08A4F;
+  --laiton-fonce:#8C6C39;
+  --gris:#E8E4DD;
+  --gris-fonce:#D8D2C7;
+  --encre:#21252B;
+  --texte-doux:#4A5159;
+  --fond:#FBFAF7;
+  --carte:#FFFFFF;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion: no-preference){
+  html{scroll-behavior:smooth}
+}
+body{
+  margin:0;
+  font-family:'Libre Franklin',system-ui,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  font-size:1.0625rem;
+  line-height:1.6;
+  color:var(--encre);
+  background:var(--fond);
+  padding-bottom:calc(3.75rem + env(safe-area-inset-bottom));
+  overflow-wrap:break-word;
+}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{line-height:1.15;margin:0 0 .5em;font-weight:800;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,7vw,3.4rem);font-weight:800}
+h2{font-size:clamp(1.55rem,5vw,2.3rem);color:var(--bleu)}
+h3{font-size:1.2rem;font-weight:700;color:var(--bleu)}
+p{margin:0 0 1em}
+a{color:var(--bleu);text-decoration-thickness:.08em;text-underline-offset:.15em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.15rem}
+section{padding:3.25rem 0}
+:focus-visible{outline:3px solid var(--laiton);outline-offset:3px;border-radius:4px}
+.sombre :focus-visible{outline-color:#E7C892}
+.skip{position:absolute;left:-9999px;top:0;background:var(--bleu);color:#fff;padding:.75rem 1rem;z-index:200}
+.skip:focus{left:.5rem;top:.5rem}
+
+/* Filet laiton — signature visuelle classique */
+.filet{height:3px;width:64px;background:var(--laiton);border:0;margin:0 0 1.25rem;border-radius:2px}
+.eyebrow{font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--laiton-fonce);margin:0 0 .55rem}
+
+/* En-tête */
+header.top{position:sticky;top:0;z-index:100;background:var(--bleu);color:#fff;border-bottom:2px solid var(--laiton)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:60px;padding-top:.4rem;padding-bottom:.4rem}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.04em;font-size:1.15rem;color:#fff;text-decoration:none}
+.brand .crest{flex:0 0 auto;width:34px;height:34px}
+.brand small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.18em;color:#C9D4E0;text-transform:uppercase}
+.tel-head{display:inline-flex;align-items:center;gap:.45rem;background:var(--laiton);color:#1d1404;font-weight:800;padding:.55rem .85rem;border-radius:6px;text-decoration:none;min-height:44px;white-space:nowrap}
+.tel-head svg{width:18px;height:18px}
+.tel-head .num{display:none}
+@media(min-width:560px){.tel-head .num{display:inline}}
+
+/* Hero */
+.hero{background:linear-gradient(180deg,var(--bleu) 0%,var(--bleu-fonce) 100%);color:#fff;padding:3rem 0 3.5rem}
+.hero .eyebrow{color:#E7C892}
+.hero .filet{background:var(--laiton)}
+.hero h1{color:#fff}
+.hero .lede{font-size:1.18rem;color:#D6DEE7;max-width:34ch;margin-bottom:1.5rem}
+.hero .accent{color:#E7C892}
+.note-pill{display:inline-flex;align-items:center;gap:.5rem;background:rgba(176,138,79,.16);border:1px solid rgba(176,138,79,.55);color:#F2E3C7;padding:.4rem .8rem;border-radius:999px;font-size:.92rem;font-weight:600;margin-bottom:1.5rem}
+.note-pill .stars{color:#E7C892;letter-spacing:1px}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-weight:800;font-size:1.05rem;padding:.9rem 1.35rem;border-radius:8px;text-decoration:none;min-height:52px;border:2px solid transparent;cursor:pointer;font-family:inherit;text-align:center}
+.btn svg{width:20px;height:20px;flex:0 0 auto}
+.btn-appel{background:var(--laiton);color:#1d1404;border-color:var(--laiton)}
+.btn-appel:hover{background:#C29A5C}
+.btn-devis{background:transparent;color:#fff;border-color:#fff}
+.btn-devis:hover{background:rgba(255,255,255,.12)}
+.hero-marks{display:flex;flex-wrap:wrap;gap:1.2rem;margin-top:2rem;font-size:.94rem;color:#C9D4E0}
+.hero-marks span{display:inline-flex;align-items:center;gap:.45rem}
+.hero-marks svg{width:18px;height:18px;color:#E7C892}
+
+/* Prestations */
+.grid{display:grid;gap:1rem}
+@media(min-width:620px){.grid-presta{grid-template-columns:1fr 1fr}}
+.carte{background:var(--carte);border:1px solid var(--gris-fonce);border-radius:10px;padding:1.4rem 1.35rem;border-top:3px solid var(--laiton)}
+.carte .ico{width:42px;height:42px;border-radius:8px;background:var(--gris);display:flex;align-items:center;justify-content:center;margin-bottom:.85rem}
+.carte .ico svg{width:24px;height:24px;color:var(--bleu)}
+.carte h3{margin-bottom:.35rem}
+.carte p{margin:0;color:var(--texte-doux);font-size:.98rem}
+
+/* Savoir-faire bandeau image */
+.savoir{background:var(--bleu);color:#fff}
+.savoir .wrap{display:grid;gap:1.6rem}
+@media(min-width:760px){.savoir .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+.savoir h2{color:#fff}
+.savoir .eyebrow{color:#E7C892}
+.savoir .filet{background:var(--laiton)}
+.savoir p{color:#D6DEE7}
+.savoir figure{margin:0}
+.savoir img{border-radius:10px;border:1px solid rgba(231,200,146,.3)}
+.savoir figcaption{font-size:.82rem;color:#9FB0C2;margin-top:.5rem}
+
+/* Devis photo (WOW) */
+.devis{background:var(--gris)}
+.devis-card{background:var(--carte);border:1px solid var(--gris-fonce);border-radius:14px;padding:1.6rem 1.35rem;max-width:680px;box-shadow:0 14px 40px -28px rgba(27,58,91,.5)}
+.devis .lead-row{display:grid;gap:1.4rem;align-items:start}
+@media(min-width:820px){.devis .lead-row{grid-template-columns:.85fr 1.15fr}}
+.devis-intro img{border-radius:10px;border:1px solid var(--gris-fonce)}
+.devis-intro figcaption{font-size:.82rem;color:var(--texte-doux);margin-top:.5rem}
+label{display:block;font-weight:700;font-size:.95rem;margin-bottom:.35rem;color:var(--bleu)}
+input,select,textarea{width:100%;font-family:inherit;font-size:1rem;padding:.75rem .85rem;border:1.5px solid #BDC4CC;border-radius:8px;background:#fff;color:var(--encre);min-height:48px}
+textarea{min-height:96px;resize:vertical}
+.field{margin-bottom:1rem}
+.two{display:grid;gap:1rem}
+@media(min-width:520px){.two{grid-template-columns:1fr 1fr}}
+.dropzone{border:2px dashed var(--laiton);border-radius:10px;background:rgba(176,138,79,.07);padding:1.4rem 1rem;text-align:center;cursor:pointer;display:block;color:var(--texte-doux)}
+.dropzone:hover{background:rgba(176,138,79,.12)}
+.dropzone svg{width:30px;height:30px;color:var(--laiton-fonce);margin-bottom:.4rem}
+.dropzone strong{color:var(--bleu);display:block;font-size:1rem}
+.dropzone span{font-size:.85rem}
+#liste-photos{list-style:none;margin:.8rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+#liste-photos li{background:var(--gris);border:1px solid var(--gris-fonce);border-radius:6px;padding:.35rem .65rem;font-size:.85rem;display:inline-flex;align-items:center;gap:.4rem;max-width:100%}
+#liste-photos .nom{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:11rem}
+.btn-full{width:100%;background:var(--bleu);color:#fff;border-color:var(--bleu);margin-top:.5rem}
+.btn-full:hover{background:var(--bleu-clair)}
+.hint{font-size:.85rem;color:var(--texte-doux);margin:.4rem 0 0}
+.note-urgence{font-size:.96rem;background:#fff;border-left:3px solid var(--laiton);padding:.6rem .9rem;border-radius:0 8px 8px 0;margin:0 0 1.3rem}
+
+/* Confirmation démo */
+.confirm{display:none;text-align:center;padding:1.5rem .5rem}
+.confirm.actif{display:block}
+.confirm .seal{width:64px;height:64px;border-radius:50%;background:var(--laiton);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem}
+.confirm .seal svg{width:34px;height:34px;color:#fff}
+.confirm h3{font-size:1.5rem}
+.badge-demo{display:inline-block;background:var(--bleu);color:#fff;font-size:.8rem;font-weight:700;letter-spacing:.05em;padding:.3rem .7rem;border-radius:999px;margin-top:.6rem}
+
+/* Pourquoi nous */
+.pourquoi .grid{gap:1rem}
+@media(min-width:680px){.pourquoi .grid{grid-template-columns:repeat(3,1fr)}}
+.atout{background:var(--carte);border:1px solid var(--gris-fonce);border-radius:10px;padding:1.4rem 1.25rem}
+.atout .num{font-weight:800;color:var(--laiton);font-size:.9rem;letter-spacing:.08em}
+.atout h3{margin:.3rem 0 .4rem}
+.atout p{margin:0;color:var(--texte-doux);font-size:.96rem}
+
+/* Zone */
+.zone{background:var(--bleu-fonce);color:#fff}
+.zone h2{color:#fff}
+.zone .eyebrow{color:#E7C892}
+.zone .filet{background:var(--laiton)}
+.zone p{color:#D6DEE7}
+.communes{display:flex;flex-wrap:wrap;gap:.55rem;margin:1.2rem 0 0;padding:0;list-style:none}
+.communes li{background:rgba(255,255,255,.08);border:1px solid rgba(231,200,146,.35);color:#F2E3C7;border-radius:999px;padding:.4rem .85rem;font-size:.92rem;font-weight:500}
+
+/* Avis */
+.avis .head-avis{display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem 1rem;margin-bottom:1.5rem}
+.score{font-size:2.4rem;font-weight:800;color:var(--bleu);line-height:1}
+.score-meta .stars{color:var(--laiton);font-size:1.15rem;letter-spacing:2px}
+.score-meta small{display:block;color:var(--texte-doux);font-size:.9rem}
+.avis-grid{display:grid;gap:1rem}
+@media(min-width:620px){.avis-grid{grid-template-columns:1fr 1fr}}
+.avis-card{background:var(--carte);border:1px solid var(--gris-fonce);border-radius:10px;padding:1.25rem 1.2rem;border-left:3px solid var(--laiton)}
+.avis-card .q{color:var(--laiton);font-weight:800;font-size:1.6rem;line-height:.6;display:block}
+.avis-card blockquote{margin:.3rem 0 .7rem;font-size:1rem;color:var(--encre)}
+.avis-card cite{font-style:normal;font-size:.85rem;color:var(--texte-doux);font-weight:600}
+.src{font-size:.78rem;color:var(--texte-doux);margin-top:1.1rem}
+
+/* Footer NAP */
+footer.pied{background:var(--bleu);color:#D6DEE7;padding:3rem 0 2.2rem}
+footer.pied h2{color:#fff;font-size:1.5rem}
+footer.pied .filet{background:var(--laiton)}
+.nap{display:grid;gap:1.6rem}
+@media(min-width:680px){.nap{grid-template-columns:1fr 1fr}}
+.nap a{color:#fff}
+.nap .ligne{display:flex;gap:.65rem;align-items:flex-start;margin-bottom:.85rem}
+.nap .ligne svg{width:20px;height:20px;color:#E7C892;flex:0 0 auto;margin-top:.15rem}
+.tel-pied{font-weight:800;font-size:1.15rem;color:#fff;text-decoration:none}
+.horaires-list{list-style:none;margin:0;padding:0}
+.horaires-list li{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid rgba(255,255,255,.12);padding:.4rem 0;font-size:.95rem;max-width:22rem}
+.horaires-list .ferme{color:#A9B6C4}
+.pied-bas{border-top:1px solid rgba(255,255,255,.14);margin-top:2rem;padding-top:1.3rem;font-size:.85rem;color:#A9B6C4}
+
+/* Bandeau légal fixe */
+.legal{position:fixed;left:0;right:0;bottom:0;z-index:150;background:var(--encre);color:#D7DBE0;font-size:.72rem;line-height:1.35;padding:.5rem .85rem calc(.5rem + env(safe-area-inset-bottom));text-align:center;border-top:1px solid var(--laiton)}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#prestations">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="KNEUBUHLER, plombier à Lunéville — accueil">
+      <svg class="crest" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="30" height="30" rx="5" fill="#B08A4F"/>
+        <path d="M11 9.5c0-1.4 1.1-2.5 2.5-2.5S16 8.1 16 9.5v3.2l5.8 5.8a3 3 0 0 1-4.2 4.2l-6.6-6.6V9.5z" fill="#1B3A5B"/>
+        <circle cx="13.5" cy="9.5" r="1.4" fill="#fff"/>
+      </svg>
+      <span>KNEUBUHLER<small>Plomberie · Lunéville</small></span>
+    </a>
+    <a class="tel-head" href="tel:+33383745407">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="num">03&nbsp;83&nbsp;74&nbsp;54&nbsp;07</span><span class="sr-only" aria-hidden="true"> Appeler</span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO : bloc texte + CTA, pas de photo (LCP texte) -->
+<section class="hero" aria-labelledby="hero-titre">
+  <div class="wrap">
+    <p class="eyebrow">Artisan plombier à Lunéville · 54300</p>
+    <hr class="filet">
+    <h1 id="hero-titre">Plombier de confiance à Lunéville — <span class="accent">une réputation qui se transmet</span></h1>
+    <p class="note-pill"><span class="stars" aria-hidden="true">★★★★★</span> 4,7 / 5 · 14 avis Google</p>
+    <p class="lede">Dépannage, sanitaire, chauffage, rénovation : le sérieux d'un artisan installé, des conseils clairs et des prix justes.</p>
+    <div class="cta-row">
+      <a class="btn btn-appel" href="tel:+33383745407">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Appeler maintenant
+      </a>
+      <a class="btn btn-devis" href="#devis">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg>
+        Demander un devis
+      </a>
+    </div>
+    <div class="hero-marks">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Artisan installé à Lunéville</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Devis depuis une photo</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Conseils clairs, prix justes</span>
+    </div>
+  </div>
+</section>
+
+<!-- PRESTATIONS -->
+<!-- [À REMPLACER] Liste et descriptions des prestations à valider avec l'artisan. -->
+<section id="prestations" aria-labelledby="presta-titre">
+  <div class="wrap">
+    <p class="eyebrow">Nos interventions</p>
+    <hr class="filet">
+    <h2 id="presta-titre">Un seul interlocuteur pour toute la plomberie</h2>
+    <div class="grid grid-presta" style="margin-top:1.6rem">
+      <article class="carte">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s-8-4.5-8-11a8 8 0 0 1 16 0c0 6.5-8 11-8 11z"/><circle cx="12" cy="11" r="2.5"/></svg></span>
+        <h3>Dépannage &amp; fuites</h3>
+        <p>Fuite, robinet qui goutte, canalisation bouchée, WC bloqué : intervention soignée et diagnostic honnête.</p>
+      </article>
+      <article class="carte">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a3 3 0 0 0 3 3h0a3 3 0 0 0 3-3V3"/><path d="M12 12v9"/><path d="M9 21h6"/><path d="M18 3v18"/></svg></span>
+        <h3>Sanitaire</h3>
+        <p>Pose et remplacement de robinetterie, lavabos, WC, chauffe-eau : du matériel fiable, posé dans les règles.</p>
+      </article>
+      <article class="carte">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18s-1-4-1-7a4 4 0 0 1 8 0c0 3-1 7-1 7"/><path d="M12 3v2"/><path d="M9 21h6"/><path d="M10 11h0M14 11h0"/></svg></span>
+        <h3>Chauffage</h3>
+        <p>Entretien et remplacement de chaudière, radiateurs, plancher chauffant : un confort maîtrisé toute l'année.</p>
+      </article>
+      <article class="carte">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><rect x="9" y="12" width="6" height="9"/></svg></span>
+        <h3>Rénovation salle de bains</h3>
+        <p>Salle de bains clé en main : douche à l'italienne, baignoire, faïence et finitions. Un chantier, un artisan.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SAVOIR-FAIRE (image outils) -->
+<section class="savoir" aria-labelledby="savoir-titre">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Le savoir-faire</p>
+      <hr class="filet">
+      <h2 id="savoir-titre">Le métier fait dans les règles de l'art</h2>
+      <!-- [À REMPLACER] Texte « savoir-faire » à personnaliser avec le parcours réel de l'artisan. -->
+      <p>Outillage entretenu, matériaux de qualité, chantier laissé propre : un travail d'artisan qui dure et que l'on recommande. C'est ce qui se transmet de voisin en voisin à Lunéville.</p>
+      <p style="margin-bottom:0;color:#E7C892;font-weight:600">Le bon geste, du premier diagnostic à la dernière finition.</p>
+    </div>
+    <figure>
+      <img src="img/outils.webp" width="800" height="600" loading="lazy" decoding="async" alt="Embouts de tournevis et outillage de plombier soigneusement rangés">
+      <figcaption>Photo d'illustration — vos visuels la remplaceront.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- WOW : DEVIS PHOTO -->
+<section class="devis" id="devis" aria-labelledby="devis-titre">
+  <div class="wrap">
+    <p class="eyebrow">Le plus simple</p>
+    <hr class="filet">
+    <h2 id="devis-titre">Un devis à partir d'une photo</h2>
+    <p style="max-width:46ch;color:var(--texte-doux)">Une fuite, un robinet à changer, une salle de bains à refaire&nbsp;? Envoyez une photo et quelques mots : vous recevez une estimation, sans déplacement inutile.</p>
+
+    <div class="lead-row" style="margin-top:1.6rem">
+      <figure class="devis-intro" style="margin:0">
+        <img src="img/robinetterie.webp" width="800" height="600" loading="lazy" decoding="async" alt="Robinetterie chromée d'une baignoire ancienne avec douchette">
+        <figcaption>Photo d'illustration — vos visuels la remplaceront.</figcaption>
+      </figure>
+
+      <div class="devis-card">
+        <p class="note-urgence">Urgence en cours&nbsp;? N'attendez pas le formulaire : appelez le <a href="tel:+33383745407">03&nbsp;83&nbsp;74&nbsp;54&nbsp;07</a>.</p>
+        <form id="form-devis" novalidate>
+          <div class="field">
+            <label for="besoin">Votre besoin</label>
+            <select id="besoin" name="besoin" required>
+              <option value="">Choisissez…</option>
+              <option>Dépannage / fuite</option>
+              <option>Sanitaire (robinet, WC, chauffe-eau)</option>
+              <option>Chauffage</option>
+              <option>Rénovation salle de bains</option>
+              <option>Autre / je ne sais pas</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="photos">Photo du problème <span style="font-weight:500;color:var(--texte-doux)">(facultatif)</span></label>
+            <label class="dropzone" for="photos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>
+              <strong>Ajouter une photo</strong>
+              <span>Montrez-nous la fuite ou la pièce concernée</span>
+            </label>
+            <input id="photos" name="photos" type="file" accept="image/*" multiple hidden>
+            <ul id="liste-photos" aria-live="polite"></ul>
+          </div>
+          <div class="field two">
+            <div>
+              <label for="prenom">Nom</label>
+              <input id="prenom" name="prenom" type="text" autocomplete="name" required>
+            </div>
+            <div>
+              <label for="tel">Téléphone</label>
+              <input id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Décrivez en deux mots</label>
+            <textarea id="message" name="message" placeholder="Ex. : robinet de cuisine qui fuit depuis hier"></textarea>
+          </div>
+          <button class="btn btn-full" type="submit">Envoyer ma demande</button>
+          <p class="hint">Réponse personnalisée — démonstration : aucune donnée n'est envoyée ni conservée.</p>
+        </form>
+
+        <div class="confirm" id="confirm-devis" role="status" aria-live="polite">
+          <div class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h3 tabindex="-1" id="confirm-titre">Ceci est une démonstration</h3>
+          <p style="color:var(--texte-doux);max-width:34ch;margin:0 auto">Votre demande aurait été transmise à l'artisan, qui vous aurait rappelé pour une estimation.</p>
+          <span class="badge-demo">En production : demande reçue par l'artisan</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POURQUOI NOUS -->
+<!-- [À REMPLACER] Arguments inspirés des thèmes publics des avis (réputation, prix justes,
+     réactivité) ; formulations d'exemple à valider avec l'artisan. -->
+<section class="pourquoi" aria-labelledby="pourquoi-titre">
+  <div class="wrap">
+    <p class="eyebrow">Pourquoi nous</p>
+    <hr class="filet">
+    <h2 id="pourquoi-titre">Ce qui fait la différence</h2>
+    <div class="grid" style="margin-top:1.6rem">
+      <article class="atout">
+        <span class="num">01</span>
+        <h3>Une réputation locale</h3>
+        <p>Un artisan que les Lunévillois se recommandent : la confiance se construit chantier après chantier.</p>
+      </article>
+      <article class="atout">
+        <span class="num">02</span>
+        <h3>Des prix justes</h3>
+        <p>Une estimation claire avant l'intervention, sans mauvaise surprise. On vous explique ce qui est utile — et ce qui ne l'est pas.</p>
+      </article>
+      <article class="atout">
+        <span class="num">03</span>
+        <h3>De la réactivité</h3>
+        <p>Une demande comprise vite, une réponse rapide, une intervention organisée sans vous faire patienter des semaines.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ZONE D'INTERVENTION -->
+<!-- [À REMPLACER] Liste des communes desservies à confirmer avec l'artisan. -->
+<section class="zone" aria-labelledby="zone-titre">
+  <div class="wrap">
+    <p class="eyebrow">Zone d'intervention</p>
+    <hr class="filet">
+    <h2 id="zone-titre">Lunéville et ses alentours</h2>
+    <p style="max-width:48ch">Basé 6 rue de la République, en plein cœur de Lunéville, l'atelier intervient en ville et dans les communes voisines.</p>
+    <ul class="communes">
+      <li>Lunéville</li>
+      <li>Jolivet</li>
+      <li>Chanteheux</li>
+      <li>Moncel-lès-Lunéville</li>
+      <li>Croismare</li>
+      <li>Hériménil</li>
+      <li>Bénaménil</li>
+      <li>Rehainviller</li>
+      <li>…et alentours</li>
+    </ul>
+  </div>
+</section>
+
+<!-- AVIS -->
+<!-- [À REMPLACER] Extraits d'avis illustratifs (≤ 15 mots) inspirés des thèmes publics ;
+     à remplacer par de vrais extraits Google validés avant mise en production. -->
+<section class="avis" aria-labelledby="avis-titre">
+  <div class="wrap">
+    <p class="eyebrow">Avis clients</p>
+    <hr class="filet">
+    <h2 id="avis-titre">Ce qu'en disent les Lunévillois</h2>
+    <div class="head-avis">
+      <span class="score">4,7</span>
+      <span class="score-meta">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <small>Note moyenne sur 14 avis Google</small>
+      </span>
+    </div>
+    <div class="avis-grid">
+      <article class="avis-card">
+        <span class="q" aria-hidden="true">“</span>
+        <blockquote>Plombier réputé dans le secteur, et on comprend pourquoi.</blockquote>
+        <cite>Avis Google</cite>
+      </article>
+      <article class="avis-card">
+        <span class="q" aria-hidden="true">“</span>
+        <blockquote>Réactif et efficace, intervention rapide chez nous.</blockquote>
+        <cite>Avis Google</cite>
+      </article>
+      <article class="avis-card">
+        <span class="q" aria-hidden="true">“</span>
+        <blockquote>Des prix justes et un travail bien fait, je recommande.</blockquote>
+        <cite>Avis Google</cite>
+      </article>
+      <article class="avis-card">
+        <span class="q" aria-hidden="true">“</span>
+        <blockquote>Conseils clairs, artisan sérieux. À garder précieusement.</blockquote>
+        <cite>Avis Google</cite>
+      </article>
+    </div>
+    <p class="src">Note et nombre d'avis issus de la fiche Google publique (juin 2026).</p>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER NAP -->
+<footer class="pied" aria-labelledby="pied-titre">
+  <div class="wrap">
+    <h2 id="pied-titre">KNEUBUHLER — Plomberie à Lunéville</h2>
+    <hr class="filet">
+    <div class="nap">
+      <div>
+        <div class="ligne">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span><a href="https://www.google.com/maps/search/?api=1&amp;query=KNEUBUHLER+6+rue+de+la+R%C3%A9publique+54300+Lun%C3%A9ville" target="_blank" rel="noopener">6 rue de la République<br>54300 Lunéville</a></span>
+        </div>
+        <div class="ligne">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span><a class="tel-pied" href="tel:+33383745407">03&nbsp;83&nbsp;74&nbsp;54&nbsp;07</a></span>
+        </div>
+      </div>
+      <div>
+        <div class="ligne">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span style="width:100%">
+            <strong style="color:#fff;display:block;margin-bottom:.4rem">Horaires</strong>
+            <ul class="horaires-list">
+              <li><span>Lundi – Vendredi</span><span>8 h–12 h · 14 h–18 h</span></li>
+              <li><span>Samedi</span><span class="ferme">Fermé</span></li>
+              <li><span>Dimanche</span><span class="ferme">Fermé</span></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="pied-bas">
+      <figure style="margin:0 0 1rem">
+        <img src="img/salle-de-bains.webp" width="800" height="600" loading="lazy" decoding="async" alt="Salle de bains blanche moderne avec baignoire et vasque" style="border-radius:10px;max-width:340px">
+      </figure>
+      KNEUBUHLER · Plombier à Lunéville (54300) · Dépannage, sanitaire, chauffage, rénovation.
+    </div>
+  </div>
+</footer>
+
+<div class="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</div>
+
+<script>
+(function(){
+  "use strict";
+  var form = document.getElementById('form-devis');
+  if(!form) return;
+  var input = document.getElementById('photos');
+  var liste = document.getElementById('liste-photos');
+  var confirm = document.getElementById('confirm-devis');
+  var titre = document.getElementById('confirm-titre');
+
+  input.addEventListener('change', function(){
+    liste.innerHTML = '';
+    var files = input.files ? Array.prototype.slice.call(input.files) : [];
+    files.forEach(function(f){
+      var li = document.createElement('li');
+      var nom = document.createElement('span');
+      nom.className = 'nom';
+      nom.textContent = f.name;
+      li.appendChild(nom);
+      liste.appendChild(li);
+    });
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(typeof form.reportValidity === 'function' && !form.reportValidity()) return;
+    form.style.display = 'none';
+    confirm.classList.add('actif');
+    if(titre && typeof titre.focus === 'function') titre.focus();
+  });
+})();
+</script>
+</body>
+</html>
