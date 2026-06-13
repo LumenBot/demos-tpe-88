@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#5A3A22">
+<title>Boulangerie Durand — pâtés lorrains & pains maison à Baccarat</title>
+<meta name="description" content="Boulangerie Durand à Baccarat (54120) : pâtés lorrains réputés, pains maison, viennoiseries et traiteur. Commande événementielle et click & collect. Artisan boulanger, 4,6 étoiles sur 151 avis.">
+
+<!-- Polices : Yeseva One (display) + Karla (texte) — chargement NON bloquant (display=swap) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Karla:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Karla:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Karla:wght@400;500;700&display=swap"></noscript>
+
+<!-- [À REMPLACER] Les prix, le contenu de la carte click & collect, les formules traiteur et les
+     extraits d'avis ci-dessous sont des exemples crédibles, à confirmer avec la maison. Les NAP
+     (nom, adresse, téléphone), les horaires, la note 4,6/151 avis et la spécialité « pâtés lorrains »
+     sont des données réelles publiques. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Boulangerie Durand",
+  "image": "img/hero-pains.webp",
+  "url": "./",
+  "telephone": "+33383753008",
+  "priceRange": "€",
+  "servesCuisine": "Boulangerie, pâtisserie, traiteur",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "33 rue de Ménil",
+    "addressLocality": "Baccarat",
+    "postalCode": "54120",
+    "addressCountry": "FR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "151"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday"], "opens": "06:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "06:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "06:00", "closes": "13:00" }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --ble:#D8A24A;          /* blé doré — accents pleins */
+  --ble-fonce:#B07E2C;    /* doré assombri, AA texte sur crème */
+  --brun:#5A3A22;         /* brun pain — texte principal & aplats */
+  --brun-noir:#3C2615;    /* brun four — fonds sombres */
+  --creme:#FBF3E2;        /* crème — fond clair */
+  --creme-2:#F5E8CE;      /* crème ombrée — cartes */
+  --blanc:#FFFCF5;
+  --display:"Yeseva One",Georgia,"Times New Roman",serif;
+  --sans:"Karla","Segoe UI",Helvetica,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--creme);color:var(--brun);
+  font:400 16px/1.65 var(--sans);
+  overflow-x:hidden;
+  /* réserve pour le bandeau légal fixe (ajustée en JS) */
+  padding-bottom:6.5rem;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.12;margin:0}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+:focus-visible{outline:3px solid var(--ble-fonce);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-200vw;top:0;background:var(--brun);color:var(--creme);padding:12px 20px;z-index:200;font-family:var(--sans);font-size:14px;font-weight:700;text-decoration:none}
+.skip:focus{left:8px;top:8px}
+.wrap{max-width:1080px;margin-inline:auto;padding-inline:clamp(18px,5vw,44px)}
+section{padding-block:clamp(52px,9vw,96px)}
+.kicker{font:700 12px/1.4 var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--ble-fonce);margin:0 0 12px}
+.titre2{font-size:clamp(28px,6vw,42px);color:var(--brun)}
+.intro{max-width:620px;margin:14px auto 0;color:#6c5236}
+.centre{text-align:center}
+.epi-sep{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--ble);margin:16px auto 0;max-width:300px}
+.epi-sep::before,.epi-sep::after{content:"";height:2px;flex:1;background:linear-gradient(90deg,transparent,var(--ble))}
+.epi-sep::after{background:linear-gradient(90deg,var(--ble),transparent)}
+
+/* ── boutons ───────────────────────────── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:48px;padding:11px 26px;border:2px solid var(--brun);border-radius:40px;background:transparent;
+  font:700 14px/1.2 var(--sans);letter-spacing:.03em;
+  color:var(--brun);text-decoration:none;cursor:pointer;transition:background .2s,color .2s,transform .12s}
+.btn:hover{background:var(--brun);color:var(--creme)}
+.btn:active{transform:translateY(1px)}
+.btn-plein{background:var(--brun);color:var(--creme);border-color:var(--brun)}
+.btn-plein:hover{background:var(--brun-noir)}
+.btn-or{background:var(--ble);color:var(--brun-noir);border-color:var(--ble)}
+.btn-or:hover{background:var(--ble-fonce);color:var(--blanc)}
+.btn-fin{min-height:44px;padding:8px 18px;font-size:13px;border-width:1.5px;border-color:var(--ble-fonce);color:var(--ble-fonce)}
+.btn-fin:hover{background:var(--ble-fonce);color:var(--blanc)}
+
+/* ── header ────────────────────────────── */
+header.haut{position:sticky;top:0;z-index:50;background:rgba(251,243,226,.96);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(176,126,44,.35)}
+.haut-ligne{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-block:9px}
+.marque{font-family:var(--display);font-size:21px;letter-spacing:.01em;text-decoration:none;display:flex;align-items:center;gap:9px;min-height:44px;color:var(--brun)}
+.marque svg{flex:0 0 auto}
+.marque small{font:700 9px/1 var(--sans);letter-spacing:.24em;color:var(--ble-fonce);text-transform:uppercase}
+.haut-actions{display:flex;align-items:center;gap:8px}
+.btn-panier{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:7px 15px;border:1.5px solid var(--brun);border-radius:30px;background:var(--blanc);color:var(--brun);font:700 13px/1 var(--sans);cursor:pointer;text-decoration:none}
+.btn-panier:hover{background:var(--brun);color:var(--creme)}
+nav.ancres{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;border-top:1px solid rgba(176,126,44,.2)}
+nav.ancres::-webkit-scrollbar{display:none}
+nav.ancres ul{display:flex;gap:4px;list-style:none;margin:0;padding:5px 4px;white-space:nowrap}
+nav.ancres a{display:inline-flex;align-items:center;min-height:40px;padding:4px 13px;border-radius:20px;font:500 13px/1 var(--sans);color:#6c5236;text-decoration:none}
+nav.ancres a:hover{background:var(--creme-2);color:var(--brun)}
+
+/* ── hero ──────────────────────────────── */
+.hero{position:relative;background:var(--brun-noir);color:var(--creme);overflow:hidden}
+.hero-img-wrap{position:relative}
+.hero-img-wrap img{width:100%;height:clamp(240px,46vw,420px);object-fit:cover;opacity:.62}
+.hero-img-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(60,38,21,.45) 0%,rgba(60,38,21,.2) 40%,rgba(60,38,21,.94) 100%)}
+.hero-txt{position:relative;margin-top:-90px;padding-bottom:clamp(40px,7vw,64px);z-index:2}
+.hero-note{display:inline-flex;align-items:center;gap:8px;background:rgba(216,162,74,.18);border:1px solid rgba(216,162,74,.5);color:var(--ble);border-radius:30px;padding:6px 15px;font:700 13px/1 var(--sans);letter-spacing:.02em}
+.hero h1{font-size:clamp(34px,8.5vw,62px);color:var(--creme);margin:18px 0 0;max-width:14ch}
+.hero p.accroche{font-size:clamp(16px,3.6vw,20px);color:#ecdcbf;margin:16px 0 0;max-width:46ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .btn{border-color:var(--creme);color:var(--creme)}
+.hero .btn:hover{background:var(--creme);color:var(--brun)}
+.hero .btn-or{border-color:var(--ble);background:var(--ble);color:var(--brun-noir)}
+.hero .btn-or:hover{background:var(--blanc);border-color:var(--blanc);color:var(--brun-noir)}
+
+/* ── bloc commande événementielle (WOW) ── */
+.evt{background:var(--brun);color:var(--creme)}
+.evt .titre2,.evt h3{color:var(--creme)}
+.evt .kicker{color:var(--ble)}
+.evt .intro{color:#e6d3b3}
+.evt-carte{background:var(--brun-noir);border:1px solid rgba(216,162,74,.3);border-radius:18px;padding:clamp(22px,4vw,38px);margin-top:32px;max-width:760px;margin-inline:auto}
+.evt-exemples{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+.chip-ex{background:rgba(216,162,74,.14);border:1px dashed rgba(216,162,74,.55);color:var(--ble);border-radius:30px;padding:7px 15px;font:500 13px/1.2 var(--sans)}
+.champ{margin-bottom:18px}
+.champ label{display:block;font:700 13px/1.4 var(--sans);letter-spacing:.04em;margin-bottom:7px;color:var(--creme)}
+.champ .req{color:var(--ble)}
+.champ input,.champ select,.champ textarea{
+  width:100%;min-height:48px;padding:11px 14px;border-radius:10px;border:1.5px solid rgba(216,162,74,.4);
+  background:#2c1c10;color:var(--creme);font:400 16px/1.4 var(--sans)}
+.champ textarea{min-height:88px;resize:vertical}
+.champ input::placeholder,.champ textarea::placeholder{color:#9d8460}
+.champ input:focus,.champ select:focus,.champ textarea:focus{border-color:var(--ble);outline:none;box-shadow:0 0 0 3px rgba(216,162,74,.3)}
+.grille2{display:grid;gap:18px}
+@media(min-width:620px){.grille2{grid-template-columns:1fr 1fr}.grille2 .full{grid-column:1/-1}}
+.aide{font:400 13px/1.4 var(--sans);color:#bfa882;margin:6px 0 0}
+
+/* ── click & collect ───────────────────── */
+.cc-visuel{position:relative;border-radius:18px;overflow:hidden;margin-bottom:30px;background:var(--brun-noir)}
+.cc-visuel img{width:100%;height:clamp(150px,28vw,240px);object-fit:cover}
+.cc-bandeau{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:center;background:var(--creme-2);border-radius:14px;padding:16px 18px;margin-top:8px;font:500 14px/1.4 var(--sans)}
+.cc-bandeau svg{vertical-align:-3px;margin-right:6px}
+.cartes{display:grid;gap:16px;margin-top:30px;grid-template-columns:1fr}
+@media(min-width:560px){.cartes{grid-template-columns:1fr 1fr}}
+@media(min-width:880px){.cartes{grid-template-columns:1fr 1fr 1fr}}
+.produit{background:var(--blanc);border:1px solid rgba(176,126,44,.22);border-radius:16px;padding:18px;display:flex;flex-direction:column;box-shadow:0 2px 10px rgba(60,38,21,.05)}
+.produit h3{font-family:var(--sans);font-weight:700;font-size:18px;color:var(--brun)}
+.produit .desc{font-size:14px;color:#6c5236;margin:6px 0 14px;flex:1}
+.produit .bas{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.prix{font:700 19px/1 var(--sans);color:var(--ble-fonce)}
+.prix small{font-weight:400;font-size:12px;color:#8a7152}
+.cat-titre{font-family:var(--display);font-size:22px;color:var(--brun);margin:34px 0 0;grid-column:1/-1;display:flex;align-items:center;gap:10px}
+.cat-titre svg{color:var(--ble)}
+
+/* ── tiroir panier ─────────────────────── */
+.tiroir{position:fixed;inset:0;z-index:120;display:none}
+.tiroir.ouvert{display:block}
+.tiroir-fond{position:absolute;inset:0;background:rgba(60,38,21,.55)}
+.tiroir-panneau{position:absolute;top:0;right:0;bottom:0;width:min(420px,90vw);background:var(--creme);box-shadow:-8px 0 30px rgba(60,38,21,.3);display:flex;flex-direction:column}
+.tiroir-haut{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid rgba(176,126,44,.3)}
+.tiroir-haut h3{font-size:24px;color:var(--brun)}
+.x-fermer{min-width:44px;min-height:44px;border:none;background:transparent;color:var(--brun);font-size:26px;cursor:pointer;line-height:1;border-radius:50%}
+.x-fermer:hover{background:var(--creme-2)}
+.tiroir-corps{flex:1;overflow-y:auto;padding:14px 20px}
+.panier-vide{color:#6c5236;text-align:center;padding:40px 10px}
+#panier-lignes{list-style:none;margin:0;padding:0}
+#panier-lignes li{display:grid;grid-template-columns:1fr auto auto;gap:8px 12px;align-items:center;padding:13px 0;border-bottom:1px solid rgba(176,126,44,.2)}
+.l-nom{font-weight:700;font-size:15px}
+.l-nom small{display:block;font-weight:400;font-size:12px;color:#8a7152}
+.l-qte{display:inline-flex;align-items:center;gap:4px}
+.l-qte button{width:32px;height:32px;border:1.5px solid var(--brun);background:var(--blanc);color:var(--brun);border-radius:8px;font-size:18px;line-height:1;cursor:pointer}
+.l-qte button:hover{background:var(--brun);color:var(--creme)}
+.l-qte span{min-width:22px;text-align:center;font-weight:700}
+.l-total{font-weight:700;color:var(--ble-fonce);white-space:nowrap}
+.l-suppr{grid-column:3;justify-self:end;border:none;background:transparent;color:#a0805c;font-size:13px;cursor:pointer;text-decoration:underline;padding:2px 4px}
+.tiroir-bas{padding:16px 20px;border-top:1px solid rgba(176,126,44,.3);background:var(--creme-2)}
+.creneau-bloc{margin-bottom:14px}
+.creneau-bloc label{font:700 13px/1.4 var(--sans);display:block;margin-bottom:6px}
+.creneau-bloc select{width:100%;min-height:46px;padding:10px 12px;border-radius:10px;border:1.5px solid rgba(176,126,44,.5);background:var(--blanc);color:var(--brun);font:400 15px/1.3 var(--sans)}
+.totaux{display:flex;justify-content:space-between;font-weight:700;font-size:19px;color:var(--brun);margin-bottom:14px}
+.tiroir-bas .btn{width:100%}
+
+/* ── traiteur ──────────────────────────── */
+.traiteur{background:var(--creme-2)}
+.traiteur-grille{display:grid;gap:22px;margin-top:30px;align-items:center}
+@media(min-width:760px){.traiteur-grille{grid-template-columns:1.05fr .95fr}}
+.traiteur-grille img{border-radius:18px;box-shadow:0 6px 20px rgba(60,38,21,.15)}
+.formules{list-style:none;margin:18px 0 0;padding:0}
+.formules li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid rgba(176,126,44,.25)}
+.formules li:last-child{border-bottom:none}
+.formules .f-nom{font-weight:700;color:var(--brun)}
+.formules .f-prix{margin-left:auto;font-weight:700;color:var(--ble-fonce);white-space:nowrap}
+.formules small{display:block;font-weight:400;color:#6c5236;font-size:13px}
+
+/* ── avis ──────────────────────────────── */
+.avis-grille{display:grid;gap:16px;margin-top:30px;grid-template-columns:1fr}
+@media(min-width:680px){.avis-grille{grid-template-columns:1fr 1fr}}
+.avis{background:var(--blanc);border:1px solid rgba(176,126,44,.22);border-radius:16px;padding:20px}
+.etoiles{color:var(--ble);letter-spacing:2px;font-size:16px}
+.avis p{margin:10px 0 12px;font-size:16px;color:var(--brun)}
+.avis .qui{font:700 13px/1.3 var(--sans);color:#6c5236}
+.avis .qui small{display:block;font-weight:400;color:#9d8460}
+
+/* ── horaires ──────────────────────────── */
+.horaires{max-width:520px;margin:30px auto 0;background:var(--blanc);border:1px solid rgba(176,126,44,.22);border-radius:16px;overflow:hidden}
+.horaires dl{margin:0;display:grid;grid-template-columns:1fr auto}
+.horaires dt,.horaires dd{margin:0;padding:13px 20px;border-bottom:1px solid rgba(176,126,44,.18)}
+.horaires dt{font-weight:500}
+.horaires dd{text-align:right;font-weight:700;color:var(--brun)}
+.horaires .ferme{background:#fbeede}
+.horaires .ferme dt,.horaires .ferme dd{color:#a3361c;font-weight:700}
+.horaires .auj dt,.horaires .auj dd{background:var(--creme-2)}
+.badge-auj{display:inline-block;margin-left:8px;background:var(--ble);color:var(--brun-noir);font:700 10px/1 var(--sans);letter-spacing:.08em;padding:4px 8px;border-radius:20px;vertical-align:1px;text-transform:uppercase}
+
+/* ── footer ────────────────────────────── */
+footer.pied{background:var(--brun-noir);color:#e6d3b3;padding-block:clamp(44px,7vw,68px)}
+footer.pied a{color:var(--ble)}
+.pied-grille{display:grid;gap:26px}
+@media(min-width:680px){.pied-grille{grid-template-columns:1.2fr 1fr 1fr}}
+.pied h3{font-family:var(--display);color:var(--creme);font-size:22px;margin-bottom:10px}
+.pied p{margin:0 0 6px;font-size:15px}
+.pied .tel-gros{font-family:var(--display);font-size:26px;color:var(--ble);text-decoration:none;display:inline-block;margin:4px 0}
+.pied ul{list-style:none;margin:0;padding:0}
+.pied li{margin-bottom:6px}
+.pied-bas{margin-top:34px;padding-top:18px;border-top:1px solid rgba(216,162,74,.25);font-size:13px;color:#bfa882}
+
+/* ── modale démonstration ──────────────── */
+#demo-overlay{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(60,38,21,.7)}
+#demo-overlay[hidden]{display:none}
+.demo-carte{background:var(--creme);border-radius:20px;max-width:480px;width:100%;padding:clamp(26px,5vw,40px);text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.4);max-height:88vh;overflow-y:auto}
+.demo-carte .epi{color:var(--ble);margin-bottom:10px}
+.demo-carte h3{font-size:30px;color:var(--brun)}
+.demo-recap{background:var(--blanc);border:1px solid rgba(176,126,44,.3);border-radius:12px;padding:16px;margin:18px 0;text-align:left;font-size:15px;color:var(--brun)}
+.demo-recap strong{color:var(--ble-fonce)}
+.demo-carte p{color:#6c5236;font-size:15px}
+
+/* ── bandeau légal fixe ────────────────── */
+#legal{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--brun-noir);color:#e6d3b3;
+  margin:0;padding:9px clamp(12px,4vw,28px);font:400 12px/1.45 var(--sans);text-align:center;
+  border-top:2px solid var(--ble)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important;animation:none !important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="haut">
+  <div class="wrap haut-ligne">
+    <a class="marque" href="#contenu" aria-label="Boulangerie Durand, accueil">
+      <!-- icône épi de blé -->
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 22V8"/><path d="M12 8c0-2 1.6-3.5 3.6-3.6C15.5 6.4 14 8 12 8Zm0 0c0-2-1.6-3.5-3.6-3.6C8.5 6.4 10 8 12 8Z"/>
+        <path d="M12 12c0-2 1.6-3.4 3.6-3.5C15.5 10.4 14 12 12 12Zm0 0c0-2-1.6-3.4-3.6-3.5C8.5 10.4 10 12 12 12Z"/>
+        <path d="M12 16c0-2 1.6-3.4 3.6-3.5C15.5 14.4 14 16 12 16Zm0 0c0-2-1.6-3.4-3.6-3.5C8.5 14.4 10 16 12 16Z"/>
+      </svg>
+      <span>Boulangerie Durand<br><small>Baccarat · artisan</small></span>
+    </a>
+    <div class="haut-actions">
+      <a class="btn-panier" href="#commande" id="lien-panier" aria-label="Voir le panier — 0 article">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 9.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        Panier <span id="panier-compte">(0)</span>
+      </a>
+    </div>
+  </div>
+  <nav class="ancres" aria-label="Sections de la page">
+    <div class="wrap">
+      <ul>
+        <li><a href="#evenement">Commande événements</a></li>
+        <li><a href="#commande">Click &amp; collect</a></li>
+        <li><a href="#traiteur">Traiteur</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#horaires">Horaires</a></li>
+        <li><a href="#acces">Accès</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="contenu">
+
+<!-- ════════ HERO ════════ -->
+<section class="hero" aria-labelledby="hero-titre" style="padding:0">
+  <div class="hero-img-wrap">
+    <img src="img/hero-pains.webp" width="1000" height="670" fetchpriority="high"
+         alt="Pains de campagne rustiques et épi de blé posés sur un plan de travail sombre fariné">
+  </div>
+  <div class="wrap hero-txt">
+    <span class="hero-note">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.6 6.1 20.6l1.3-6.6L2.5 8.9l6.6-.7L12 2Z"/></svg>
+      4,6 ★ · 151 avis Google
+    </span>
+    <h1 id="hero-titre">Artisan boulanger à Baccarat</h1>
+    <p class="accroche">Pâtés lorrains réputés, pains maison et viennoiseries dorées — pétris chaque jour au fournil par Patrick &amp; Alexandra Durand.</p>
+    <div class="hero-cta">
+      <a class="btn btn-or" href="#evenement">Commander pour un événement</a>
+      <a class="btn" href="tel:+33383753008">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5 9 4l1 4-2 1.5a12 12 0 0 0 6 6L15.5 13l4 1 .5 2.5a2 2 0 0 1-2 2.3A15.5 15.5 0 0 1 4.2 7a2 2 0 0 1 2.3-3.5Z"/></svg>
+        03 83 75 30 08
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ WOW : COMMANDE ÉVÉNEMENTIELLE ════════ -->
+<section class="evt" id="evenement" aria-labelledby="evt-titre">
+  <div class="wrap centre">
+    <p class="kicker">La spécialité de la maison</p>
+    <h2 class="titre2" id="evt-titre">Commande pour vos événements</h2>
+    <div class="epi-sep" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9c0-1.6 1.3-2.8 2.9-2.9C14.8 7.7 13.6 9 12 9Zm0 0c0-1.6-1.3-2.8-2.9-2.9C9.2 7.7 10.4 9 12 9Z"/><path d="M12 13c0-1.6 1.3-2.7 2.9-2.8C14.8 11.7 13.6 13 12 13Zm0 0c0-1.6-1.3-2.7-2.9-2.8C9.2 11.7 10.4 13 12 13Z"/></svg>
+    </div>
+    <p class="intro">Pâtés lorrains par dizaines, pains pour un buffet, plateaux traiteur pour un mariage ou un repas d'entreprise : décrivez votre besoin, le fournil vous rappelle pour confirmer.</p>
+    <div class="evt-exemples" aria-hidden="true">
+      <span class="chip-ex">Ex. 20 pâtés lorrains</span>
+      <span class="chip-ex">Ex. buffet 78 personnes</span>
+      <span class="chip-ex">Ex. 60 pains pour un repas</span>
+    </div>
+  </div>
+
+  <form class="evt-carte" id="form-evt" novalidate>
+    <div class="grille2">
+      <div class="champ">
+        <label for="evt-produit">Type de produit <span class="req" aria-hidden="true">*</span></label>
+        <select id="evt-produit" name="produit" required>
+          <option value="">Choisir…</option>
+          <option>Pâtés lorrains</option>
+          <option>Pains (gros volume)</option>
+          <option>Viennoiseries</option>
+          <option>Buffet traiteur</option>
+          <option>Pièce / gâteau d'événement</option>
+          <option>Autre (à préciser)</option>
+        </select>
+      </div>
+      <div class="champ">
+        <label for="evt-qte">Quantité estimée <span class="req" aria-hidden="true">*</span></label>
+        <input id="evt-qte" name="quantite" type="text" inputmode="numeric" placeholder="ex. 20 pâtés, 78 parts…" required>
+      </div>
+      <div class="champ">
+        <label for="evt-date">Date de retrait <span class="req" aria-hidden="true">*</span></label>
+        <input id="evt-date" name="date" type="date" required>
+      </div>
+      <div class="champ">
+        <label for="evt-heure">Heure de retrait <span class="req" aria-hidden="true">*</span></label>
+        <input id="evt-heure" name="heure" type="time" required>
+      </div>
+      <div class="champ">
+        <label for="evt-nom">Votre nom <span class="req" aria-hidden="true">*</span></label>
+        <input id="evt-nom" name="nom" type="text" autocomplete="name" placeholder="Nom et prénom" required>
+      </div>
+      <div class="champ">
+        <label for="evt-tel">Téléphone <span class="req" aria-hidden="true">*</span></label>
+        <input id="evt-tel" name="tel" type="tel" autocomplete="tel" placeholder="06 12 34 56 78" required>
+      </div>
+      <div class="champ full">
+        <label for="evt-msg">Précisions</label>
+        <textarea id="evt-msg" name="message" placeholder="Occasion, allergies, livraison souhaitée…"></textarea>
+        <p class="aide">Champs marqués <span aria-hidden="true">*</span> obligatoires. Démonstration : aucune donnée n'est envoyée.</p>
+      </div>
+    </div>
+    <p class="vh" id="evt-erreur" role="alert" aria-live="assertive"></p>
+    <p style="text-align:center;margin:6px 0 0"><button class="btn btn-or" type="submit">Envoyer la demande au fournil</button></p>
+  </form>
+</section>
+
+<!-- ════════ CLICK & COLLECT ════════ -->
+<section id="commande" aria-labelledby="cc-titre">
+  <div class="wrap">
+    <div class="centre">
+      <p class="kicker">Le quotidien</p>
+      <h2 class="titre2" id="cc-titre">Click &amp; collect</h2>
+      <p class="intro">Réservez vos pains et viennoiseries en quelques secondes et choisissez votre créneau de retrait — vous évitez la file aux heures de pointe.</p>
+    </div>
+    <div class="cc-visuel">
+      <img src="img/croissants.webp" width="800" height="600" loading="lazy"
+           alt="Croissants dorés saupoudrés de sucre dans une ambiance gourmande">
+    </div>
+    <div class="cc-bandeau">
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ble-fonce)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Retrait dès le lendemain matin, 6 h</span>
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ble-fonce)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 9.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Paiement au retrait en boutique</span>
+    </div>
+
+    <!-- [À REMPLACER] carte, produits et prix factices crédibles — à valider avec la maison -->
+    <div class="cartes" id="catalogue">
+      <h3 class="cat-titre"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 13c2-5 16-5 18 0-2 4-16 4-18 0Z"/><path d="M6 11.5 7 9M10 11 11 8.5M14 11l1-2.5M18 11.5 19 9"/></svg>Pains</h3>
+      <!-- cartes injectées par JS -->
+      <h3 class="cat-titre" id="cat-vienn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15c1-4 5-6 8-6s7 2 8 6c-2 2-6 3-8 3s-6-1-8-3Z"/><path d="M8 13l2-2M12 12.5l2-2.5M15.5 13l2-2"/></svg>Viennoiseries</h3>
+    </div>
+    <p class="vh" id="panier-status" role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+<!-- ════════ TRAITEUR ════════ -->
+<section class="traiteur" id="traiteur" aria-labelledby="tr-titre">
+  <div class="wrap">
+    <div class="centre">
+      <p class="kicker">Réceptions &amp; buffets</p>
+      <h2 class="titre2" id="tr-titre">Traiteur &amp; buffets</h2>
+    </div>
+    <div class="traiteur-grille">
+      <img src="img/viennoiseries.webp" width="800" height="600" loading="lazy"
+           alt="Vitrine de boulangerie garnie de viennoiseries et pains dorés">
+      <div>
+        <p>Du petit-déjeuner d'entreprise au buffet de mariage, la maison Durand compose des plateaux salés et sucrés à la carte. On part de vos envies, de votre budget et du nombre de convives.</p>
+        <!-- [À REMPLACER] formules & prix traiteur factices, à confirmer avec la maison -->
+        <ul class="formules">
+          <li><span><span class="f-nom">Plateau petit-déjeuner</span><small>Viennoiseries, mini-pains, jus — par personne</small></span><span class="f-prix">4,50 €</span></li>
+          <li><span><span class="f-nom">Buffet salé « lorrain »</span><small>Pâtés lorrains, quiches, feuilletés — par personne</small></span><span class="f-prix">9,90 €</span></li>
+          <li><span><span class="f-nom">Buffet sucré</span><small>Tartes, mignardises, gâteaux — par personne</small></span><span class="f-prix">6,50 €</span></li>
+          <li><span><span class="f-nom">Formule réception complète</span><small>Salé + sucré + pains, sur devis</small></span><span class="f-prix">sur devis</span></li>
+        </ul>
+        <p style="margin-top:20px"><a class="btn btn-plein" href="#evenement">Demander un devis traiteur</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ AVIS ════════ -->
+<section id="avis" aria-labelledby="av-titre">
+  <div class="wrap">
+    <div class="centre">
+      <p class="kicker">Ils en parlent</p>
+      <h2 class="titre2" id="av-titre">4,6 ★ sur 151 avis Google</h2>
+      <p class="intro">Une note construite au fil des fournées. Voici quelques retours de la clientèle.</p>
+    </div>
+    <!-- [À REMPLACER] extraits d'avis illustratifs (≤ 15 mots) — remplacer par de vrais avis Google -->
+    <div class="avis-grille">
+      <div class="avis">
+        <div class="etoiles" aria-hidden="true">★★★★★</div>
+        <p>« Les meilleurs pâtés lorrains du secteur, on en redemande. »</p>
+        <p class="qui">Cliente fidèle<small>Avis Google · illustratif</small></p>
+      </div>
+      <div class="avis">
+        <div class="etoiles" aria-hidden="true">★★★★★</div>
+        <p>« Pain toujours croustillant, accueil chaleureux au comptoir. »</p>
+        <p class="qui">Habitant de Baccarat<small>Avis Google · illustratif</small></p>
+      </div>
+      <div class="avis">
+        <div class="etoiles" aria-hidden="true">★★★★★</div>
+        <p>« Buffet impeccable pour notre mariage, tout le monde a adoré. »</p>
+        <p class="qui">Couple de mariés<small>Avis Google · illustratif</small></p>
+      </div>
+      <div class="avis">
+        <div class="etoiles" aria-hidden="true">★★★★☆</div>
+        <p>« Viennoiseries dorées et fondantes, un vrai régal le dimanche. »</p>
+        <p class="qui">Client du dimanche<small>Avis Google · illustratif</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ HORAIRES ════════ -->
+<section class="traiteur" id="horaires" aria-labelledby="ho-titre">
+  <div class="wrap">
+    <div class="centre">
+      <p class="kicker">Le fournil est ouvert</p>
+      <h2 class="titre2" id="ho-titre">Horaires d'ouverture</h2>
+    </div>
+    <div class="horaires" id="bloc-horaires">
+      <dl>
+        <div style="display:contents" data-jour="1"><dt>Lundi</dt><dd>6 h – 19 h</dd></div>
+        <div style="display:contents" data-jour="2"><dt>Mardi</dt><dd>6 h – 19 h</dd></div>
+        <div style="display:contents" data-jour="3"><dt>Mercredi</dt><dd>6 h – 19 h</dd></div>
+        <div style="display:contents" class="ferme" data-jour="4"><dt>Jeudi</dt><dd>Fermé</dd></div>
+        <div style="display:contents" data-jour="5"><dt>Vendredi</dt><dd>6 h – 19 h</dd></div>
+        <div style="display:contents" data-jour="6"><dt>Samedi</dt><dd>6 h – 19 h</dd></div>
+        <div style="display:contents" data-jour="0"><dt>Dimanche</dt><dd>6 h – 13 h</dd></div>
+      </dl>
+    </div>
+    <p class="centre" style="margin-top:18px;color:#6c5236;font-weight:500">Fermé le jeudi toute la journée.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ════════ FOOTER / NAP ════════ -->
+<footer class="pied" id="acces" aria-labelledby="pied-titre">
+  <div class="wrap">
+    <h2 class="vh" id="pied-titre">Coordonnées et accès</h2>
+    <div class="pied-grille">
+      <div>
+        <h3>Boulangerie Durand</h3>
+        <p>Patrick &amp; Alexandra Durand, artisans boulangers à Baccarat. Pâtés lorrains, pains maison, viennoiseries &amp; traiteur.</p>
+        <a class="tel-gros" href="tel:+33383753008">03 83 75 30 08</a>
+      </div>
+      <div>
+        <h3>Nous trouver</h3>
+        <p>33 rue de Ménil<br>54120 Baccarat</p>
+        <p style="margin-top:12px"><a class="btn btn-fin" href="https://www.google.com/maps/search/?api=1&amp;query=Boulangerie+Durand+33+rue+de+M%C3%A9nil+54120+Baccarat" target="_blank" rel="noopener">Itinéraire Google Maps</a></p>
+      </div>
+      <div>
+        <h3>Horaires</h3>
+        <ul>
+          <li>Lun – Mer : 6 h – 19 h</li>
+          <li style="color:#e7a78f">Jeudi : fermé</li>
+          <li>Ven – Sam : 6 h – 19 h</li>
+          <li>Dimanche : 6 h – 13 h</li>
+        </ul>
+      </div>
+    </div>
+    <p class="pied-bas">Boulangerie Durand · 33 rue de Ménil, 54120 Baccarat · <a href="tel:+33383753008">03 83 75 30 08</a> — Maquette de démonstration.</p>
+  </div>
+</footer>
+
+<!-- ════════ TIROIR PANIER ════════ -->
+<div class="tiroir" id="tiroir" role="dialog" aria-modal="true" aria-labelledby="tiroir-titre" aria-hidden="true">
+  <div class="tiroir-fond" data-fermer></div>
+  <div class="tiroir-panneau">
+    <div class="tiroir-haut">
+      <h3 id="tiroir-titre">Votre panier</h3>
+      <button class="x-fermer" type="button" data-fermer aria-label="Fermer le panier">×</button>
+    </div>
+    <div class="tiroir-corps">
+      <p class="panier-vide" id="panier-vide">Votre panier est vide.<br>Ajoutez pains et viennoiseries depuis la carte.</p>
+      <ul id="panier-lignes"></ul>
+    </div>
+    <div class="tiroir-bas" id="panier-suite" hidden>
+      <div class="creneau-bloc">
+        <label for="creneau">Créneau de retrait</label>
+        <select id="creneau"></select>
+      </div>
+      <div class="totaux"><span>Total</span><span id="panier-total">0,00 €</span></div>
+      <button class="btn btn-or" type="button" id="valider-panier">Valider ma commande</button>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ MODALE DÉMONSTRATION ════════ -->
+<div id="demo-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="demo-titre">
+  <div class="demo-carte">
+    <svg class="epi" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V8"/><path d="M12 8c0-2 1.6-3.5 3.6-3.6C15.5 6.4 14 8 12 8Zm0 0c0-2-1.6-3.5-3.6-3.6C8.5 6.4 10 8 12 8Z"/><path d="M12 13c0-2 1.6-3.4 3.6-3.5C15.5 11.4 14 13 12 13Zm0 0c0-2-1.6-3.4-3.6-3.5C8.5 11.4 10 13 12 13Z"/></svg>
+    <h3 id="demo-titre">Ceci est une démonstration</h3>
+    <div class="demo-recap" id="demo-recap"></div>
+    <p>Aucune donnée n'a été transmise. En production : confirmation par le fournil, paiement en boutique au retrait ou par carte en ligne.</p>
+    <p style="margin-top:22px"><button class="btn btn-plein" type="button" id="demo-fermer">Fermer</button></p>
+  </div>
+</div>
+
+<!-- ════════ BANDEAU LÉGAL (texte exact, permanent) ════════ -->
+<p id="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</p>
+
+<script>
+(function(){
+"use strict";
+var $ = function(s,r){ return (r||document).querySelector(s); };
+
+/* ── Réserve sous le bandeau légal fixe ── */
+function padLegal(){
+  var l = $("#legal");
+  if (l) document.body.style.paddingBottom = (l.offsetHeight + 8) + "px";
+}
+window.addEventListener("resize", padLegal);
+padLegal();
+
+/* ── Catalogue click & collect (prix factices crédibles) ── */
+var PRODUITS = [
+  { id:"campagne",  nom:"Pain de campagne", desc:"Mie dense, croûte épaisse, sur levain — 500 g.", prix:3.20, cat:"pain" },
+  { id:"tradition", nom:"Baguette tradition", desc:"Farine label Rouge, façonnée main, cuisson du jour.", prix:1.30, cat:"pain" },
+  { id:"cereales",  nom:"Pain aux céréales", desc:"Tournesol, lin, sésame — riche et rustique.", prix:3.60, cat:"pain" },
+  { id:"croissant", nom:"Croissant pur beurre", desc:"Feuilletage doré, beurre de tourage.", prix:1.30, cat:"vienn" },
+  { id:"pain-choc", nom:"Pain au chocolat", desc:"Deux barres de chocolat, feuilletage croustillant.", prix:1.40, cat:"vienn" },
+  { id:"chausson",  nom:"Chausson aux pommes", desc:"Pommes fondantes, feuilletage maison.", prix:1.60, cat:"vienn" }
+];
+
+/* ── Panier : localStorage avec repli mémoire ── */
+var CLE = "durand-panier";
+var memoire = {};
+function lirePanier(){
+  try { return JSON.parse(localStorage.getItem(CLE)) || {}; }
+  catch(e){ return memoire; }
+}
+function ecrirePanier(p){
+  memoire = p;
+  try { localStorage.setItem(CLE, JSON.stringify(p)); } catch(e){}
+}
+function eur(n){ return n.toFixed(2).replace(".", ",") + " €"; }
+function prodById(id){ for (var i=0;i<PRODUITS.length;i++){ if (PRODUITS[i].id===id) return PRODUITS[i]; } return null; }
+function annoncer(msg){ $("#panier-status").textContent = msg; }
+
+/* ── Rendu des cartes produits ── */
+(function rendreCatalogue(){
+  var cat = $("#catalogue");
+  var ancreVienn = $("#cat-vienn");
+  PRODUITS.forEach(function(prod){
+    var c = document.createElement("article");
+    c.className = "produit";
+    var h = document.createElement("h3"); h.textContent = prod.nom;
+    var d = document.createElement("p"); d.className = "desc"; d.textContent = prod.desc;
+    var bas = document.createElement("div"); bas.className = "bas";
+    var px = document.createElement("span"); px.className = "prix"; px.textContent = eur(prod.prix);
+    var btn = document.createElement("button"); btn.type = "button"; btn.className = "btn btn-fin";
+    btn.textContent = "Ajouter";
+    btn.setAttribute("aria-label", "Ajouter " + prod.nom + " au panier");
+    btn.addEventListener("click", function(){ changerQte(prod.id, 1); annoncer(prod.nom + " ajouté au panier."); });
+    bas.appendChild(px); bas.appendChild(btn);
+    c.appendChild(h); c.appendChild(d); c.appendChild(bas);
+    if (prod.cat === "vienn") cat.insertBefore(c, null);
+    else cat.insertBefore(c, ancreVienn);
+  });
+})();
+
+function changerQte(id, delta){
+  var p = lirePanier();
+  var q = (p[id] || 0) + delta;
+  if (delta === -99) q = 0;
+  if (q <= 0) delete p[id]; else p[id] = q;
+  ecrirePanier(p);
+  rendrePanier();
+}
+
+function rendrePanier(){
+  var p = lirePanier(), ul = $("#panier-lignes"), ids = Object.keys(p);
+  ul.textContent = "";
+  var nb = 0, total = 0;
+  ids.forEach(function(id){
+    var prod = prodById(id); if (!prod) return;
+    var q = p[id]; nb += q; total += prod.prix * q;
+    var li = document.createElement("li");
+    var nom = document.createElement("span"); nom.className = "l-nom";
+    nom.textContent = prod.nom;
+    var su = document.createElement("small"); su.textContent = eur(prod.prix) + " l'unité";
+    nom.appendChild(su);
+    var qte = document.createElement("span"); qte.className = "l-qte";
+    var bm = document.createElement("button"); bm.type = "button"; bm.textContent = "−";
+    bm.setAttribute("aria-label", "Retirer un " + prod.nom);
+    bm.addEventListener("click", function(){ changerQte(id, -1); });
+    var nbq = document.createElement("span"); nbq.textContent = q;
+    var bp = document.createElement("button"); bp.type = "button"; bp.textContent = "+";
+    bp.setAttribute("aria-label", "Ajouter un " + prod.nom);
+    bp.addEventListener("click", function(){ changerQte(id, 1); });
+    qte.appendChild(bm); qte.appendChild(nbq); qte.appendChild(bp);
+    var tot = document.createElement("span"); tot.className = "l-total"; tot.textContent = eur(prod.prix * q);
+    var sup = document.createElement("button"); sup.type = "button"; sup.className = "l-suppr"; sup.textContent = "Supprimer";
+    sup.setAttribute("aria-label", "Supprimer " + prod.nom + " du panier");
+    sup.addEventListener("click", function(){ changerQte(id, -99); });
+    li.appendChild(nom); li.appendChild(qte); li.appendChild(tot); li.appendChild(sup);
+    ul.appendChild(li);
+  });
+  $("#panier-compte").textContent = "(" + nb + ")";
+  $("#lien-panier").setAttribute("aria-label", "Voir le panier — " + nb + " article" + (nb > 1 ? "s" : ""));
+  $("#panier-vide").hidden = nb > 0;
+  $("#panier-suite").hidden = nb === 0;
+  $("#panier-total").textContent = eur(total);
+}
+
+/* ── Créneaux de retrait (prochains jours ouvrés, jeudi exclu) ── */
+(function remplirCreneaux(){
+  var sel = $("#creneau");
+  if (!sel) return;
+  var jours = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+  var heures = ["7 h 00","8 h 30","10 h 00","11 h 30","15 h 00","17 h 30"];
+  var d = new Date(); var ajout = 0; var n = 0;
+  while (n < 4 && ajout < 10){
+    ajout++;
+    var jd = new Date(d.getTime() + ajout*86400000);
+    var dow = jd.getDay();
+    if (dow === 4) continue; // jeudi fermé
+    var ferme = (dow === 0) ? heures.slice(0,3) : heures; // dimanche 6 h-13 h
+    var lib = jours[dow] + " " + jd.getDate() + "/" + (jd.getMonth()+1);
+    ferme.forEach(function(h){
+      var o = document.createElement("option");
+      o.textContent = lib + " — " + h;
+      sel.appendChild(o);
+    });
+    n++;
+  }
+})();
+
+/* ── Tiroir panier ── */
+var tiroir = $("#tiroir");
+var dernierFocus = null;
+function ouvrirTiroir(e){
+  if (e) e.preventDefault();
+  dernierFocus = document.activeElement;
+  tiroir.classList.add("ouvert");
+  tiroir.setAttribute("aria-hidden","false");
+  $(".x-fermer", tiroir).focus();
+}
+function fermerTiroir(){
+  tiroir.classList.remove("ouvert");
+  tiroir.setAttribute("aria-hidden","true");
+  if (dernierFocus) dernierFocus.focus();
+}
+$("#lien-panier").addEventListener("click", ouvrirTiroir);
+Array.prototype.forEach.call(tiroir.querySelectorAll("[data-fermer]"), function(el){
+  el.addEventListener("click", fermerTiroir);
+});
+
+/* ── Validation du panier → modale démo ── */
+$("#valider-panier").addEventListener("click", function(){
+  var p = lirePanier(), total = 0, nb = 0, lignes = [];
+  Object.keys(p).forEach(function(id){
+    var prod = prodById(id); if (!prod) return;
+    nb += p[id]; total += prod.prix * p[id];
+    lignes.push(p[id] + " × " + prod.nom);
+  });
+  if (nb === 0) return;
+  var creneau = $("#creneau").value || "à définir";
+  var html = "<strong>Click &amp; collect</strong><br>" + lignes.join("<br>") +
+    "<br><br>Retrait : <strong>" + creneau + "</strong>" +
+    "<br>Total : <strong>" + eur(total) + "</strong> (réglé au retrait)";
+  fermerTiroir();
+  ouvrirDemo(html);
+});
+
+/* ── Formulaire événementiel ── */
+$("#form-evt").addEventListener("submit", function(e){
+  e.preventDefault();
+  var f = e.target;
+  var champs = ["produit","quantite","date","heure","nom","tel"];
+  var manquant = null;
+  for (var i=0;i<champs.length;i++){
+    var el = f.elements[champs[i]];
+    if (!el.value.trim()){ manquant = el; break; }
+  }
+  var err = $("#evt-erreur");
+  if (manquant){
+    err.className = "aide"; err.style.color = "#ffd9a0";
+    err.textContent = "Merci de compléter les champs obligatoires.";
+    manquant.focus();
+    return;
+  }
+  err.textContent = "";
+  var html = "<strong>Demande transmise au fournil</strong><br>" +
+    "Produit : <strong>" + esc(f.elements.produit.value) + "</strong><br>" +
+    "Quantité : <strong>" + esc(f.elements.quantite.value) + "</strong><br>" +
+    "Retrait : <strong>" + esc(formatDate(f.elements.date.value)) + " à " + esc(f.elements.heure.value) + "</strong><br>" +
+    "Contact : " + esc(f.elements.nom.value) + " · " + esc(f.elements.tel.value);
+  ouvrirDemo(html);
+  f.reset();
+});
+function esc(s){ var d=document.createElement("div"); d.textContent=s; return d.innerHTML; }
+function formatDate(v){
+  if (!v) return "";
+  var parts = v.split("-");
+  if (parts.length !== 3) return v;
+  return parts[2] + "/" + parts[1] + "/" + parts[0];
+}
+
+/* ── Modale démonstration ── */
+var overlay = $("#demo-overlay");
+var focusAvantDemo = null;
+function ouvrirDemo(html){
+  $("#demo-recap").innerHTML = html;
+  focusAvantDemo = document.activeElement;
+  overlay.hidden = false;
+  $("#demo-fermer").focus();
+}
+function fermerDemo(){
+  overlay.hidden = true;
+  if (focusAvantDemo) focusAvantDemo.focus();
+}
+$("#demo-fermer").addEventListener("click", fermerDemo);
+overlay.addEventListener("click", function(e){ if (e.target === overlay) fermerDemo(); });
+
+/* ── Échap ferme les couches ── */
+document.addEventListener("keydown", function(e){
+  if (e.key === "Escape"){
+    if (!overlay.hidden) fermerDemo();
+    else if (tiroir.classList.contains("ouvert")) fermerTiroir();
+  }
+});
+
+/* ── Date minimale = demain ── */
+(function(){
+  var d = new Date(Date.now() + 86400000);
+  var iso = d.toISOString().slice(0,10);
+  var de = $("#evt-date"); if (de) de.min = iso;
+})();
+
+/* ── Mise en avant du jour courant dans les horaires ── */
+(function(){
+  var dow = new Date().getDay();
+  var ligne = document.querySelector('#bloc-horaires [data-jour="'+dow+'"]');
+  if (ligne){
+    ligne.classList.add("auj");
+    var dd = ligne.querySelector("dd");
+    var b = document.createElement("span"); b.className = "badge-auj"; b.textContent = "Aujourd'hui";
+    dd.appendChild(document.createTextNode(" ")); dd.appendChild(b);
+  }
+})();
+
+rendrePanier();
+})();
+</script>
+</body>
+</html>
