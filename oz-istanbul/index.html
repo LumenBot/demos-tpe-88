@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Oz Istanbul — Kebab à Lunéville, bœuf maison, ouvert jusqu'à minuit</title>
+<meta name="description" content="Oz Istanbul, le kebab 4,7★ de Lunéville : bœuf maison, sur place ou à emporter, ouvert jusqu'à minuit. Commande en ligne avec créneau et paiement CB. 28 rue Léon Michel Gambetta.">
+<meta name="theme-color" content="#0E1B2C">
+
+<!-- Google Fonts non-bloquantes : preload + bascule, fallback noscript. Unbounded (display nocturne) + Manrope (texte). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Manrope:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Manrope:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Manrope:wght@400;500;700&display=swap"></noscript>
+
+<style>
+:root{
+  --nuit:#0E1B2C; --nuit2:#13243a; --carte:#16273d;
+  --turq:#2BD9C8; --ambre:#F2A93B; --creme:#F5F0E6;
+  --txt:#F5F0E6; --txt-soft:#c7d0dd; --line:rgba(43,217,200,.18);
+  --ok:#2BD9C8; --radius:16px; --maxw:1080px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  background:var(--nuit); color:var(--txt); line-height:1.6;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  padding-bottom:54px; /* place pour le bandeau légal fixe */
+}
+h1,h2,h3,.display{font-family:"Unbounded","Trebuchet MS",system-ui,sans-serif;line-height:1.15;letter-spacing:-.01em}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 18px}
+section{padding:54px 0;position:relative}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--turq);font-weight:700;margin-bottom:10px}
+h2{font-size:clamp(1.5rem,5vw,2.3rem);font-weight:800;margin-bottom:8px}
+.lead{color:var(--txt-soft);max-width:60ch}
+
+/* Accessibilité focus */
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{
+  outline:3px solid var(--turq);outline-offset:2px;border-radius:6px
+}
+.skip{position:absolute;left:-999px;top:0;background:var(--turq);color:#06121f;padding:10px 16px;font-weight:700;z-index:200;border-radius:0 0 10px 0}
+.skip:focus{left:0}
+
+/* Boutons / tap ≥ 44px */
+.btn{display:inline-flex;align-items:center;gap:9px;min-height:48px;padding:12px 22px;border-radius:999px;font-weight:700;font-family:"Manrope",sans-serif;font-size:1rem;cursor:pointer;border:2px solid transparent;transition:transform .15s ease,box-shadow .15s ease;text-align:center;justify-content:center}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+.btn svg{width:20px;height:20px;flex:0 0 auto}
+.btn-neon{background:var(--turq);color:#06121f;box-shadow:0 0 0 rgba(43,217,200,.5),0 8px 22px rgba(43,217,200,.28)}
+.btn-neon:hover{transform:translateY(-2px);box-shadow:0 0 22px rgba(43,217,200,.55),0 10px 26px rgba(43,217,200,.35)}
+.btn-ambre{background:var(--ambre);color:#2a1804;box-shadow:0 8px 22px rgba(242,169,59,.3)}
+.btn-ambre:hover{transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--creme);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--turq);color:var(--turq)}
+
+/* ====== HEADER ====== */
+header.nav{position:sticky;top:0;z-index:120;background:rgba(14,27,44,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Unbounded",sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:.01em}
+.brand .dot{width:11px;height:11px;border-radius:50%;background:var(--turq);box-shadow:0 0 10px var(--turq),0 0 20px var(--turq);animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+@media (prefers-reduced-motion:reduce){.brand .dot{animation:none}}
+.brand b{color:var(--turq)}
+.nav-cta{display:flex;gap:8px;align-items:center}
+.nav-links{display:none}
+.nav-links a{font-weight:600;color:var(--txt-soft);font-size:.95rem;padding:6px 4px}
+.nav-links a:hover{color:var(--turq)}
+@media(min-width:920px){.nav-links{display:flex;gap:22px}}
+.btn-sm{min-height:44px;padding:9px 16px;font-size:.92rem}
+
+/* ====== HERO ====== */
+.hero{padding:0;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero-inner{display:grid;gap:8px;align-items:center;grid-template-columns:1fr}
+@media(min-width:900px){.hero-inner{grid-template-columns:1.05fr .95fr;gap:30px}}
+.hero-txt{padding:46px 18px 40px;position:relative;z-index:2}
+@media(min-width:900px){.hero-txt{padding:70px 0 70px 18px;max-width:600px;margin-left:auto;width:100%}}
+.badge-open{display:inline-flex;align-items:center;gap:8px;background:rgba(43,217,200,.1);border:1px solid var(--line);color:var(--turq);font-weight:700;font-size:.82rem;padding:7px 14px;border-radius:999px;margin-bottom:18px}
+.badge-open .live{width:9px;height:9px;border-radius:50%;background:var(--turq);box-shadow:0 0 8px var(--turq);animation:pulse 1.8s infinite}
+@media (prefers-reduced-motion:reduce){.badge-open .live{animation:none}}
+.hero h1{font-size:clamp(2rem,8vw,3.3rem);font-weight:800;margin-bottom:16px}
+.hero h1 .neon{color:var(--turq);text-shadow:0 0 14px rgba(43,217,200,.5)}
+.hero h1 .neon-a{color:var(--ambre);text-shadow:0 0 14px rgba(242,169,59,.45)}
+.hero p.sub{color:var(--txt-soft);font-size:1.06rem;margin-bottom:26px;max-width:46ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.stars{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-size:.92rem;color:var(--txt-soft)}
+.stars b{color:var(--creme)}
+.stars .s{color:var(--ambre);letter-spacing:1px}
+.hero-media{position:relative;min-height:300px}
+.hero-media img{width:100%;height:100%;object-fit:cover;min-height:300px}
+@media(min-width:900px){.hero-media img{min-height:560px}}
+.hero-media::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(14,27,44,.55) 0%,rgba(14,27,44,0) 30%,rgba(14,27,44,0) 60%,rgba(14,27,44,.4) 100%)}
+@media(min-width:900px){.hero-media::before{background:linear-gradient(90deg,rgba(14,27,44,.95) 0%,rgba(14,27,44,0) 45%)}}
+/* halos néon décoratifs */
+.halo{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;z-index:0;pointer-events:none}
+.halo.t{width:280px;height:280px;background:var(--turq);top:-80px;left:-60px}
+.halo.a{width:240px;height:240px;background:var(--ambre);bottom:-90px;right:-50px;opacity:.32}
+
+/* ====== COMMANDE (WOW) ====== */
+#commande{background:linear-gradient(180deg,#0c1827,#0E1B2C)}
+.order{display:grid;gap:22px;grid-template-columns:1fr;margin-top:26px}
+@media(min-width:880px){.order{grid-template-columns:1.4fr 1fr;align-items:start}}
+.panel{background:var(--carte);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.panel h3{font-size:1.05rem;margin-bottom:4px}
+.field{margin-top:16px}
+.field>label{display:block;font-weight:700;font-size:.86rem;margin-bottom:9px;letter-spacing:.02em}
+.opts{display:flex;flex-wrap:wrap;gap:9px}
+.opt{flex:1 1 auto;min-width:104px}
+.opt input{position:absolute;opacity:0;width:1px;height:1px}
+.opt label{display:flex;align-items:center;justify-content:center;gap:7px;min-height:46px;padding:8px 12px;border:1.5px solid var(--line);border-radius:12px;cursor:pointer;font-weight:600;font-size:.94rem;color:var(--txt-soft);text-align:center;line-height:1.25;background:rgba(255,255,255,.015);transition:border-color .15s,color .15s,background .15s}
+.opt input:checked+label{border-color:var(--turq);color:var(--creme);background:rgba(43,217,200,.1)}
+.opt input:focus-visible+label{outline:3px solid var(--turq);outline-offset:2px}
+select{width:100%;min-height:48px;background:var(--nuit2);color:var(--creme);border:1.5px solid var(--line);border-radius:12px;padding:10px 14px;font:inherit;font-weight:600}
+.late-note{font-size:.8rem;color:var(--ambre);margin-top:8px;display:flex;gap:7px;align-items:flex-start}
+.menu-line{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
+.menu-line:last-child{border-bottom:0}
+.menu-line .ml-info{flex:1}
+.menu-line .ml-name{font-weight:700}
+.menu-line .ml-desc{font-size:.82rem;color:var(--txt-soft)}
+.menu-line .ml-price{font-weight:700;color:var(--ambre);white-space:nowrap;font-family:"Unbounded",sans-serif;font-size:.92rem}
+.add{min-height:40px;min-width:40px;border-radius:10px;border:1.5px solid var(--turq);background:rgba(43,217,200,.08);color:var(--turq);font-size:1.4rem;font-weight:700;cursor:pointer;line-height:1;display:inline-flex;align-items:center;justify-content:center}
+.add:hover{background:var(--turq);color:#06121f}
+/* paiement mis en avant */
+.pay-hi{border:1.5px solid var(--turq);background:rgba(43,217,200,.07);border-radius:14px;padding:14px;margin-top:10px}
+.pay-hi .tag{display:inline-flex;align-items:center;gap:6px;background:var(--turq);color:#06121f;font-weight:800;font-size:.72rem;letter-spacing:.05em;padding:4px 10px;border-radius:999px;text-transform:uppercase}
+.pay-choice{display:grid;gap:9px;margin-top:12px}
+
+/* récap panier sticky */
+.cart{position:sticky;top:74px}
+.cart-items{list-style:none;margin:10px 0;min-height:30px}
+.cart-items li{display:flex;justify-content:space-between;gap:10px;font-size:.92rem;padding:6px 0;border-bottom:1px dashed var(--line)}
+.cart-items .rm{background:none;border:0;color:var(--ambre);cursor:pointer;font-weight:700;padding:0 4px;min-height:auto}
+.cart-empty{color:var(--txt-soft);font-size:.9rem;font-style:italic}
+.cart-total{display:flex;justify-content:space-between;align-items:baseline;margin:14px 0 6px;font-family:"Unbounded",sans-serif}
+.cart-total b{font-size:1.4rem;color:var(--turq)}
+.cart .btn{width:100%;margin-top:8px}
+
+/* ====== CARTE ====== */
+.cards{display:grid;gap:16px;grid-template-columns:1fr;margin-top:26px}
+@media(min-width:620px){.cards{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--carte);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.card h3{font-size:1.02rem;color:var(--turq);margin-bottom:12px;font-family:"Unbounded",sans-serif}
+
+/* ====== USP BŒUF ====== */
+#boeuf{background:#0b1726}
+.usp{display:grid;gap:26px;grid-template-columns:1fr;align-items:center}
+@media(min-width:840px){.usp{grid-template-columns:1fr 1fr}}
+.usp-media{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);position:relative}
+.usp-media img{width:100%;height:100%;object-fit:cover;max-height:380px}
+.usp .tagline{display:inline-block;background:var(--ambre);color:#2a1804;font-weight:800;font-size:.78rem;letter-spacing:.05em;padding:5px 12px;border-radius:999px;margin-bottom:14px;text-transform:uppercase}
+.usp ul{list-style:none;margin-top:16px;display:grid;gap:10px}
+.usp li{display:flex;gap:10px;align-items:flex-start;color:var(--txt-soft)}
+.usp li svg{width:20px;height:20px;color:var(--turq);flex:0 0 auto;margin-top:3px}
+
+/* ====== AVIS ====== */
+.reviews{display:grid;gap:16px;grid-template-columns:1fr;margin-top:24px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.rev{background:var(--carte);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.rev .s{color:var(--ambre);letter-spacing:1px;font-size:.95rem}
+.rev p{margin:10px 0;font-size:.96rem}
+.rev .who{font-size:.8rem;color:var(--txt-soft);font-weight:600}
+.note-big{display:flex;align-items:center;gap:18px;flex-wrap:wrap;background:var(--carte);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;margin-top:4px}
+.note-big .n{font-family:"Unbounded",sans-serif;font-size:2.6rem;font-weight:800;color:var(--turq);line-height:1}
+
+/* ====== HORAIRES ====== */
+#horaires{background:linear-gradient(180deg,#0E1B2C,#0b1726)}
+.hours{max-width:560px;margin-top:22px;background:var(--carte);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.hours .row{display:flex;justify-content:space-between;gap:12px;padding:13px 18px;border-bottom:1px solid var(--line);font-size:.96rem}
+.hours .row:last-child{border-bottom:0}
+.hours .row.today{background:rgba(43,217,200,.09)}
+.hours .row.today .day{color:var(--turq)}
+.hours .day{font-weight:700}
+.hours .closed{color:var(--ambre);font-weight:700}
+.hours .midnight{color:var(--turq);font-weight:700}
+.hours-note{margin-top:14px;font-size:.85rem;color:var(--txt-soft);display:flex;gap:8px;align-items:center}
+
+/* ====== FOOTER ====== */
+footer{background:#0a1422;border-top:1px solid var(--line);padding:46px 0 30px}
+.foot{display:grid;gap:26px;grid-template-columns:1fr}
+@media(min-width:760px){.foot{grid-template-columns:1.3fr 1fr 1fr}}
+.foot h4{font-family:"Unbounded",sans-serif;font-size:1rem;margin-bottom:12px;color:var(--creme)}
+.foot p,.foot a{color:var(--txt-soft);font-size:.95rem;margin-bottom:7px;display:block}
+.foot a:hover{color:var(--turq)}
+.foot-brand{font-family:"Unbounded",sans-serif;font-weight:800;font-size:1.3rem;margin-bottom:8px}
+.foot-brand b{color:var(--turq)}
+.foot-meta{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:.82rem;color:#7d8aa0}
+
+/* ====== MODAL DÉMO ====== */
+.modal{position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(5,11,20,.82);backdrop-filter:blur(4px)}
+.modal.open{display:flex}
+.modal-box{background:var(--carte);border:1px solid var(--turq);border-radius:20px;max-width:440px;width:100%;padding:30px 26px;text-align:center;box-shadow:0 0 40px rgba(43,217,200,.25)}
+.modal-box .ic{width:62px;height:62px;border-radius:50%;background:rgba(43,217,200,.12);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.modal-box .ic svg{width:32px;height:32px;color:var(--turq)}
+.modal-box h3{font-size:1.3rem;margin-bottom:10px}
+.modal-box p{color:var(--txt-soft);margin-bottom:8px}
+.modal-box .recap{background:var(--nuit2);border-radius:12px;padding:12px 14px;margin:14px 0;font-size:.9rem;text-align:left}
+.modal-box .btn{width:100%;margin-top:8px}
+
+/* ====== BANDEAU LÉGAL FIXE ====== */
+.legal{position:fixed;left:0;right:0;bottom:0;z-index:150;background:rgba(8,16,28,.96);border-top:1px solid var(--line);color:#9aa6ba;font-size:.7rem;line-height:1.35;padding:8px 14px;text-align:center}
+@media(min-width:600px){.legal{font-size:.74rem}}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+</style>
+</head>
+<body>
+<a class="skip" href="#commande">Aller à la commande</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Oz Istanbul, accueil">
+      <span class="dot" aria-hidden="true"></span>Oz <b>Istanbul</b>
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#commande">Commander</a>
+      <a href="#carte">La carte</a>
+      <a href="#boeuf">Le bœuf maison</a>
+      <a href="#horaires">Horaires</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-neon btn-sm" href="#commande">Commander</a>
+      <a class="btn btn-ghost btn-sm" href="tel:+33383420655" aria-label="Appeler Oz Istanbul">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+        <span class="sr-only">Appeler</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ====== HERO ====== -->
+<section class="hero" id="top" aria-labelledby="h1">
+  <span class="halo t" aria-hidden="true"></span>
+  <span class="halo a" aria-hidden="true"></span>
+  <div class="hero-inner">
+    <div class="hero-txt">
+      <span class="badge-open"><span class="live" aria-hidden="true"></span>Ouvert jusqu'à minuit</span>
+      <h1 id="h1">Le kebab <span class="neon">4,7★</span> de Lunéville.<br><span class="neon-a">Bœuf maison</span>, ouvert jusqu'à minuit.</h1>
+      <p class="sub">Sur place ou à emporter, rue Léon Michel Gambetta. Commandez en ligne, choisissez votre créneau — même tard — et payez par carte.</p>
+      <div class="hero-cta">
+        <a class="btn btn-neon" href="#commande">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+          Commander en ligne
+        </a>
+        <a class="btn btn-ghost" href="tel:+33383420655">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+          03 83 42 06 55
+        </a>
+      </div>
+      <div class="stars">
+        <span class="s" aria-hidden="true">★★★★★</span>
+        <span><b>4,7 / 5</b> · 505 avis Google</span>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="img/hero-assiette.webp" width="1200" height="800" fetchpriority="high" alt="Assiette kebab généreuse — galette dorée, crudités, sauce et accompagnements, sur une planche de bois sombre">
+    </div>
+  </div>
+</section>
+
+<!-- ====== WOW : COMMANDE EN LIGNE ====== -->
+<section id="commande" aria-labelledby="cmd-h">
+  <div class="wrap">
+    <p class="eyebrow">Commande en ligne</p>
+    <h2 id="cmd-h">Composez, choisissez votre créneau, payez par carte</h2>
+    <p class="lead">Bœuf maison ou poulet, créneau de retrait calé sur nos horaires du jour — avec service tardif jusqu’à minuit. Réglez en ligne par CB ou au retrait.</p>
+
+    <div class="order">
+      <!-- Colonne gauche : configuration + carte rapide -->
+      <div>
+        <div class="panel">
+          <h3>1 · Votre kebab</h3>
+
+          <div class="field">
+            <label id="lbl-viande">Choix de la viande</label>
+            <div class="opts" role="radiogroup" aria-labelledby="lbl-viande">
+              <div class="opt"><input type="radio" id="v-boeuf" name="viande" value="Bœuf maison" checked><label for="v-boeuf">Bœuf maison ★</label></div>
+              <div class="opt"><input type="radio" id="v-poulet" name="viande" value="Poulet"><label for="v-poulet">Poulet</label></div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="creneau" id="lbl-cr">Créneau de retrait <span id="jour-label" style="color:var(--turq);font-weight:600"></span></label>
+            <select id="creneau" aria-describedby="late-note"></select>
+            <p class="late-note" id="late-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:16px;height:16px;flex:0 0 auto"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              Créneaux tardifs disponibles jusqu'à minuit (mer–dim). Mardi : fermé.
+            </p>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-top:18px">
+          <h3>2 · Ajoutez à votre commande</h3>
+          <!-- [À REMPLACER] articles et prix d'exemple — remplacer par la vraie carte d'Oz Istanbul -->
+          <div class="menu-line">
+            <div class="ml-info"><div class="ml-name">Kebab bœuf maison</div><div class="ml-desc">galette, crudités, sauce au choix</div></div>
+            <span class="ml-price">8,50 €</span>
+            <button class="add" data-name="Kebab bœuf maison" data-price="8.50" aria-label="Ajouter Kebab bœuf maison">+</button>
+          </div>
+          <div class="menu-line">
+            <div class="ml-info"><div class="ml-name">Assiette bœuf + frites</div><div class="ml-desc">viande maison, salade, frites maison</div></div>
+            <span class="ml-price">12,90 €</span>
+            <button class="add" data-name="Assiette bœuf + frites" data-price="12.90" aria-label="Ajouter Assiette bœuf et frites">+</button>
+          </div>
+          <div class="menu-line">
+            <div class="ml-info"><div class="ml-name">Tacos viande au choix</div><div class="ml-desc">sauce fromagère, frites incluses</div></div>
+            <span class="ml-price">9,50 €</span>
+            <button class="add" data-name="Tacos viande au choix" data-price="9.50" aria-label="Ajouter Tacos">+</button>
+          </div>
+          <div class="menu-line">
+            <div class="ml-info"><div class="ml-name">Menu (sandwich + frites + boisson)</div><div class="ml-desc">le complet</div></div>
+            <span class="ml-price">11,50 €</span>
+            <button class="add" data-name="Menu sandwich + frites + boisson" data-price="11.50" aria-label="Ajouter le Menu">+</button>
+          </div>
+          <!-- /[À REMPLACER] -->
+        </div>
+      </div>
+
+      <!-- Colonne droite : panier + paiement -->
+      <div>
+        <div class="panel cart" aria-live="polite">
+          <h3>3 · Votre panier</h3>
+          <ul class="cart-items" id="cart-items"><li class="cart-empty" id="cart-empty">Votre panier est vide.</li></ul>
+          <div class="cart-total"><span>Total</span><b id="cart-total">0,00 €</b></div>
+
+          <div class="pay-hi">
+            <span class="tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true" style="width:14px;height:14px"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+              Nouveau · Paiement CB
+            </span>
+            <p style="font-size:.86rem;margin-top:9px;color:var(--txt-soft)">Payez votre commande par carte directement en ligne — pratique quand la carte n'est pas acceptée au comptoir.</p>
+            <div class="pay-choice" role="radiogroup" aria-label="Mode de paiement">
+              <div class="opt" style="min-width:0"><input type="radio" id="pay-cb" name="pay" value="Carte bancaire en ligne" checked><label for="pay-cb" style="justify-content:flex-start;gap:9px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:18px;height:18px"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Carte bancaire en ligne</label></div>
+              <div class="opt" style="min-width:0"><input type="radio" id="pay-retrait" name="pay" value="Paiement au retrait"><label for="pay-retrait" style="justify-content:flex-start;gap:9px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:18px;height:18px"><path d="M3 7h18l-1.5 9.5a2 2 0 0 1-2 1.5H6.5a2 2 0 0 1-2-1.5Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>Paiement au retrait</label></div>
+            </div>
+          </div>
+
+          <button class="btn btn-neon" id="checkout" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            Valider ma commande
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== CARTE ====== -->
+<section id="carte" aria-labelledby="carte-h">
+  <div class="wrap">
+    <p class="eyebrow">La carte</p>
+    <h2 id="carte-h">Kebabs, assiettes & tex-mex</h2>
+    <p class="lead">Une carte généreuse, viande au choix sur chaque sandwich. Prix d'exemple — à ajuster.</p>
+    <div class="cards">
+      <!-- [À REMPLACER] carte complète et prix réels d'Oz Istanbul -->
+      <div class="card">
+        <h3>Les kebabs</h3>
+        <div class="menu-line"><div class="ml-info"><div class="ml-name">Kebab bœuf maison</div></div><span class="ml-price">8,50 €</span></div>
+        <div class="menu-line"><div class="ml-info"><div class="ml-name">Kebab poulet</div></div><span class="ml-price">8,00 €</span></div>
+        <div class="menu-line"><div class="ml-info"><div class="ml-name">Galette XL</div></div><span class="ml-price">10,50 €</span></div>
+      </div>
+      <div class="card">
+        <h3>Les assiettes</h3>
+        <div class="menu-line"><div class="ml-info"><div class="ml-name">Assiette bœuf + frites</div></div><span class="ml-price">12,90 €</span></div>
+        <div class="menu-line"><div class="ml-info"><div class="ml-name">Assiette poulet</div></div><span class="ml-price">11,90 €</span></div>
+        <div class="menu-line"><div class="ml-info"><div class="ml-name">Assiette mixte</div></div><span class="ml-price">13,90 €</span></div>
+      </div>
+      <div class="card">
+        <h3>Tex-mex & extras</h3>
+        <div class="menu-line"><div class="ml-info"><div class="ml-name">Tacos viande au choix</div></div><span class="ml-price">9,50 €</span></div>
+        <div class="menu-line"><div class="ml-info"><div class="ml-name">Tenders maison (x5)</div></div><span class="ml-price">6,50 €</span></div>
+        <div class="menu-line"><div class="ml-info"><div class="ml-name">Frites maison</div></div><span class="ml-price">3,50 €</span></div>
+      </div>
+      <!-- /[À REMPLACER] -->
+    </div>
+  </div>
+</section>
+
+<!-- ====== USP : LE BŒUF MAISON ====== -->
+<section id="boeuf" aria-labelledby="boeuf-h">
+  <div class="wrap">
+    <div class="usp">
+      <div class="usp-media">
+        <img src="img/boeuf.webp" width="800" height="600" loading="lazy" alt="Viande de bœuf grillée et travers dorés sur une planche en bois, frites et garnitures, fond sombre">
+      </div>
+      <div>
+        <span class="tagline">Notre signature</span>
+        <h2 id="boeuf-h">Le bœuf maison</h2>
+        <!-- [À REMPLACER] texte de présentation du bœuf maison à valider avec l'établissement -->
+        <p class="lead">À Lunéville, nous sommes le seul kebab à proposer un véritable bœuf maison. Une viande préparée et grillée chez nous, qui fait la différence dans chaque sandwich.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Bœuf préparé maison — l'unique à Lunéville.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Grillé sur place, servi chaud et généreux.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Aussi en poulet pour les amateurs.</span></li>
+        </ul>
+        <!-- /[À REMPLACER] -->
+        <a class="btn btn-ambre" href="#commande" style="margin-top:22px">Goûter le bœuf maison</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== AVIS ====== -->
+<section id="avis" aria-labelledby="avis-h">
+  <div class="wrap">
+    <p class="eyebrow">Ils en parlent</p>
+    <h2 id="avis-h">4,7★ sur 505 avis Google</h2>
+    <div class="note-big">
+      <span class="n">4,7</span>
+      <div>
+        <div class="s" aria-hidden="true">★★★★★</div>
+        <div style="color:var(--txt-soft);font-size:.92rem">Moyenne sur <b style="color:var(--creme)">505 avis Google</b></div>
+      </div>
+      <img src="img/doner.webp" width="800" height="600" loading="lazy" alt="Sandwich döner garni de viande et de frites, oignons rouges et persil" style="margin-left:auto;border-radius:12px;max-width:160px;border:1px solid var(--line)">
+    </div>
+    <div class="reviews">
+      <!-- [À REMPLACER] extraits d'avis illustratifs — remplacer par de vrais avis Google courts -->
+      <div class="rev"><div class="s" aria-hidden="true">★★★★★</div><p>« Le seul vrai bœuf maison du coin, un régal. »</p><div class="who">Avis Google</div></div>
+      <div class="rev"><div class="s" aria-hidden="true">★★★★★</div><p>« Ouvert tard, parfait après une soirée. »</p><div class="who">Avis Google</div></div>
+      <div class="rev"><div class="s" aria-hidden="true">★★★★★</div><p>« Portions généreuses, accueil au top. »</p><div class="who">Avis Google</div></div>
+      <!-- /[À REMPLACER] -->
+    </div>
+  </div>
+</section>
+
+<!-- ====== HORAIRES ====== -->
+<section id="horaires" aria-labelledby="hr-h">
+  <div class="wrap">
+    <p class="eyebrow">Horaires & accès</p>
+    <h2 id="hr-h">Ouvert jusqu'à minuit</h2>
+    <p class="lead">Service midi et soir. Fermé le mardi. Le soir, mercredi à dimanche, on vous sert jusqu'à minuit.</p>
+    <div class="hours" id="hours">
+      <div class="row" data-day="1"><span class="day">Lundi</span><span>11 h 30–14 h · 17 h–23 h</span></div>
+      <div class="row" data-day="2"><span class="day">Mardi</span><span class="closed">Fermé</span></div>
+      <div class="row" data-day="3"><span class="day">Mercredi</span><span>11 h 30–14 h · 17 h–<span class="midnight">minuit</span></span></div>
+      <div class="row" data-day="4"><span class="day">Jeudi</span><span>11 h 30–14 h · 17 h–<span class="midnight">minuit</span></span></div>
+      <div class="row" data-day="5"><span class="day">Vendredi</span><span>11 h 30–14 h · 17 h–<span class="midnight">minuit</span></span></div>
+      <div class="row" data-day="6"><span class="day">Samedi</span><span>11 h 30–14 h · 17 h–<span class="midnight">minuit</span></span></div>
+      <div class="row" data-day="0"><span class="day">Dimanche</span><span>11 h 30–14 h · 17 h–<span class="midnight">minuit</span></span></div>
+    </div>
+    <p class="hours-note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:18px;height:18px;color:var(--turq)"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      28 rue Léon Michel Gambetta, 54300 Lunéville —
+      <a href="https://www.google.com/maps/search/?api=1&query=Oz+Istanbul+28+rue+L%C3%A9on+Michel+Gambetta+54300+Lun%C3%A9ville" target="_blank" rel="noopener" style="color:var(--turq);font-weight:700">voir sur Google Maps</a>
+    </p>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="foot-brand">Oz <b>Istanbul</b></div>
+        <p>Le kebab 4,7★ de Lunéville. Bœuf maison, sur place et à emporter, ouvert jusqu'à minuit.</p>
+        <p style="margin-top:12px"><a class="btn btn-neon btn-sm" href="#commande">Commander en ligne</a></p>
+      </div>
+      <div>
+        <h4>Nous trouver</h4>
+        <a href="https://www.google.com/maps/search/?api=1&query=Oz+Istanbul+28+rue+L%C3%A9on+Michel+Gambetta+54300+Lun%C3%A9ville" target="_blank" rel="noopener">28 rue Léon Michel Gambetta<br>54300 Lunéville</a>
+        <a href="tel:+33383420655">03 83 42 06 55</a>
+      </div>
+      <div>
+        <h4>Horaires</h4>
+        <p>Lun : 11 h 30–14 h · 17 h–23 h</p>
+        <p>Mar : <span style="color:var(--ambre)">fermé</span></p>
+        <p>Mer–Dim : 11 h 30–14 h · 17 h–<span style="color:var(--turq)">minuit</span></p>
+      </div>
+    </div>
+    <p class="foot-meta">© <span id="year"></span> Oz Istanbul · Lunéville. Maquette de démonstration.</p>
+  </div>
+</footer>
+
+<!-- ====== MODAL DÉMO ====== -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-h" aria-describedby="modal-d">
+  <div class="modal-box">
+    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div>
+    <h3 id="modal-h">Ceci est une démonstration</h3>
+    <p id="modal-d">Votre commande n'a pas été transmise et aucun paiement n'a été effectué.</p>
+    <div class="recap" id="modal-recap"></div>
+    <p style="font-size:.84rem">En production : paiement CB sécurisé en ligne ou paiement au retrait, et envoi de la commande au restaurant.</p>
+    <button class="btn btn-neon" id="modal-close" type="button">Fermer</button>
+  </div>
+</div>
+
+<!-- ====== BANDEAU LÉGAL FIXE ====== -->
+<p class="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</p>
+
+<!-- ====== JSON-LD ====== -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Restaurant",
+  "name":"Oz Istanbul",
+  "servesCuisine":["Kebab","Turque","Tex-Mex"],
+  "image":"https://lumenbot.github.io/demos-tpe-88/oz-istanbul/img/hero-assiette.webp",
+  "address":{"@type":"PostalAddress","streetAddress":"28 rue Léon Michel Gambetta","addressLocality":"Lunéville","postalCode":"54300","addressCountry":"FR"},
+  "telephone":"+33383420655",
+  "url":"https://lumenbot.github.io/demos-tpe-88/oz-istanbul/",
+  "priceRange":"€",
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"505"},
+  "acceptsReservations":"False",
+  "hasMenu":"https://lumenbot.github.io/demos-tpe-88/oz-istanbul/#carte",
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"11:30","closes":"14:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"17:00","closes":"23:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:30","closes":"14:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"17:00","closes":"00:00"}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  "use strict";
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* ---------- Créneaux calés sur les horaires réels du jour ---------- */
+  // jour : 0=dim ... 6=sam. Tableaux [début,fin] en minutes depuis minuit.
+  // Mardi (2) fermé. Lun (1) soir -> 23h. Mer-Dim soir -> minuit (24h).
+  var JOURS = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+  function plagesPour(d){
+    if(d===2) return null; // mardi fermé
+    var soirFin = (d===1) ? 23*60 : 24*60; // lundi 23h, sinon minuit
+    return [[11*60+30, 14*60], [17*60, soirFin]];
+  }
+  function fmt(min){
+    min = min % (24*60);
+    var h = Math.floor(min/60), m = min%60;
+    if(h===0 && m===0) return "minuit";
+    return h + " h" + (m? " " + (m<10?"0"+m:m) : "");
+  }
+  function remplirCreneaux(){
+    var sel = document.getElementById("creneau");
+    var label = document.getElementById("jour-label");
+    var now = new Date();
+    var d = now.getDay();
+    var nowMin = now.getHours()*60 + now.getMinutes();
+    sel.innerHTML = "";
+
+    // Cherche un jour ouvré avec au moins un créneau futur (gère mardi fermé / nuit)
+    for(var add=0; add<8; add++){
+      var jd = (d+add)%7;
+      var plages = plagesPour(jd);
+      if(!plages){ continue; }
+      var slots = [];
+      var minDepart = (add===0)? nowMin + 20 : 0; // 20 min de prépa aujourd'hui
+      plages.forEach(function(p){
+        var t = Math.ceil(Math.max(p[0], (add===0?minDepart:p[0]))/15)*15;
+        for(; t < p[1]; t += 15){ slots.push(t); }
+      });
+      if(slots.length){
+        label.textContent = (add===0? "aujourd'hui" : (add===1? "demain" : JOURS[jd]));
+        slots.forEach(function(t){
+          var o = document.createElement("option");
+          var tardif = (t>=22*60 || t===0 || (t < 6*60));
+          o.value = JOURS[jd]+" "+fmt(t);
+          o.textContent = fmt(t) + (tardif? "  · tardif" : "");
+          sel.appendChild(o);
+        });
+        // séparateur si on a basculé sur un autre jour
+        if(add>0){
+          var first = sel.querySelector("option");
+          first.textContent = first.textContent;
+        }
+        return;
+      }
+    }
+    var o = document.createElement("option");
+    o.textContent = "Aucun créneau — appelez-nous";
+    sel.appendChild(o);
+  }
+  remplirCreneaux();
+
+  // Surligner le jour courant dans le tableau horaires
+  (function(){
+    var d = new Date().getDay();
+    var row = document.querySelector('#hours .row[data-day="'+d+'"]');
+    if(row) row.classList.add("today");
+  })();
+
+  /* ---------- Panier (localStorage) ---------- */
+  var KEY = "oz_cart_v1";
+  var cart = [];
+  try{ cart = JSON.parse(localStorage.getItem(KEY)) || []; }catch(e){ cart = []; }
+
+  var elItems = document.getElementById("cart-items");
+  var elEmpty = document.getElementById("cart-empty");
+  var elTotal = document.getElementById("cart-total");
+
+  function euro(n){ return n.toFixed(2).replace(".", ",") + " €"; }
+  function save(){ try{ localStorage.setItem(KEY, JSON.stringify(cart)); }catch(e){} }
+
+  function render(){
+    elItems.innerHTML = "";
+    if(!cart.length){
+      var li = document.createElement("li");
+      li.className = "cart-empty";
+      li.textContent = "Votre panier est vide.";
+      elItems.appendChild(li);
+    } else {
+      cart.forEach(function(it, i){
+        var li = document.createElement("li");
+        var span = document.createElement("span");
+        span.textContent = it.qty + "× " + it.name;
+        var right = document.createElement("span");
+        right.style.whiteSpace = "nowrap";
+        right.textContent = euro(it.price * it.qty) + " ";
+        var rm = document.createElement("button");
+        rm.className = "rm"; rm.type = "button";
+        rm.textContent = "✕";
+        rm.setAttribute("aria-label", "Retirer " + it.name);
+        rm.addEventListener("click", function(){ removeItem(i); });
+        right.appendChild(rm);
+        li.appendChild(span); li.appendChild(right);
+        elItems.appendChild(li);
+      });
+    }
+    var total = cart.reduce(function(s,it){ return s + it.price*it.qty; }, 0);
+    elTotal.textContent = euro(total);
+  }
+
+  function addItem(name, price){
+    var found = cart.find(function(it){ return it.name===name; });
+    if(found){ found.qty++; } else { cart.push({name:name, price:price, qty:1}); }
+    save(); render();
+  }
+  function removeItem(i){
+    if(cart[i].qty>1){ cart[i].qty--; } else { cart.splice(i,1); }
+    save(); render();
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll(".add"), function(btn){
+    btn.addEventListener("click", function(){
+      addItem(btn.getAttribute("data-name"), parseFloat(btn.getAttribute("data-price")));
+    });
+  });
+  render();
+
+  /* ---------- Checkout (simulé) ---------- */
+  var modal = document.getElementById("modal");
+  var recap = document.getElementById("modal-recap");
+  var lastFocus = null;
+
+  function openModal(){
+    lastFocus = document.activeElement;
+    modal.classList.add("open");
+    document.getElementById("modal-close").focus();
+    document.addEventListener("keydown", onKey);
+  }
+  function closeModal(){
+    modal.classList.remove("open");
+    document.removeEventListener("keydown", onKey);
+    if(lastFocus) lastFocus.focus();
+  }
+  function onKey(e){ if(e.key==="Escape") closeModal(); }
+
+  document.getElementById("checkout").addEventListener("click", function(){
+    var total = cart.reduce(function(s,it){ return s + it.price*it.qty; }, 0);
+    var viande = (document.querySelector('input[name="viande"]:checked')||{}).value || "Bœuf maison";
+    var pay = (document.querySelector('input[name="pay"]:checked')||{}).value || "Carte bancaire en ligne";
+    var creneau = document.getElementById("creneau").value || "—";
+
+    if(!cart.length){
+      recap.innerHTML = "<strong>Panier vide</strong><br>Ajoutez au moins un article avant de valider.";
+    } else {
+      recap.innerHTML =
+        "<strong>Récapitulatif</strong><br>" +
+        "Viande : " + viande + "<br>" +
+        "Retrait : " + creneau + "<br>" +
+        "Paiement : " + pay + "<br>" +
+        "Total : <strong>" + euro(total) + "</strong>";
+    }
+    openModal();
+  });
+
+  document.getElementById("modal-close").addEventListener("click", closeModal);
+  modal.addEventListener("click", function(e){ if(e.target===modal) closeModal(); });
+})();
+</script>
+</body>
+</html>

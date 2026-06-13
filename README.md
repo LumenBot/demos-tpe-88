@@ -54,6 +54,19 @@ Racine du site : page de présentation (placeholders contact/SIRET à compléter
 | maison-ines | https://lumenbot.github.io/demos-tpe-88/maison-ines/ | v1 · DoD ✓ |
 | bj-tech | https://lumenbot.github.io/demos-tpe-88/bj-tech/ | v1 · DoD ✓ |
 
+## Lot 5 — Lunéville
+
+| Maquette | URL | Statut |
+| --- | --- | --- |
+| oz-istanbul | https://lumenbot.github.io/demos-tpe-88/oz-istanbul/ | v1 · DoD ✓ |
+| emilie-stephan | https://lumenbot.github.io/demos-tpe-88/emilie-stephan/ | v1 · DoD ✓ |
+| akan-energie | https://lumenbot.github.io/demos-tpe-88/akan-energie/ | v1 · DoD ✓ |
+| thomas-mathieu | https://lumenbot.github.io/demos-tpe-88/thomas-mathieu/ | v1 · DoD ✓ |
+| ev-celle | https://lumenbot.github.io/demos-tpe-88/ev-celle/ | v1 · DoD ✓ |
+| bouzzine | https://lumenbot.github.io/demos-tpe-88/bouzzine/ | v1 · DoD ✓ |
+| kneubuhler | https://lumenbot.github.io/demos-tpe-88/kneubuhler/ | v1 · DoD ✓ |
+| le-rivolet | https://lumenbot.github.io/demos-tpe-88/le-rivolet/ | v1 · DoD ✓ |
+
 ## Développement
 
 - Règles complètes : voir `CLAUDE.md` (source de vérité locale non versionnée : `docs/`).
