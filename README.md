@@ -41,6 +41,19 @@ Racine du site : page de présentation (placeholders contact/SIRET à compléter
 | chocolats-carl | https://lumenbot.github.io/demos-tpe-88/chocolats-carl/ | v1 · DoD ✓ |
 | renovon | https://lumenbot.github.io/demos-tpe-88/renovon/ | v1 · DoD ✓ |
 
+## Lot 4 — Bruyères / Baccarat
+
+| Maquette | URL | Statut |
+| --- | --- | --- |
+| le-grimoire | https://lumenbot.github.io/demos-tpe-88/le-grimoire/ | v1 · DoD ✓ |
+| passaggio | https://lumenbot.github.io/demos-tpe-88/passaggio/ | v1 · DoD ✓ |
+| chez-baptiste | https://lumenbot.github.io/demos-tpe-88/chez-baptiste/ | v1 · DoD ✓ |
+| o96 | https://lumenbot.github.io/demos-tpe-88/o96/ | v1 · DoD ✓ |
+| okka | https://lumenbot.github.io/demos-tpe-88/okka/ | v1 · DoD ✓ |
+| durand | https://lumenbot.github.io/demos-tpe-88/durand/ | v1 · DoD ✓ |
+| maison-ines | https://lumenbot.github.io/demos-tpe-88/maison-ines/ | v1 · DoD ✓ |
+| bj-tech | https://lumenbot.github.io/demos-tpe-88/bj-tech/ | v1 · DoD ✓ |
+
 ## Développement
 
 - Règles complètes : voir `CLAUDE.md` (source de vérité locale non versionnée : `docs/`).

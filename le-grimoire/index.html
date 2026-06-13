@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#5A1A2B">
+<title>Le Grimoire — Pizzeria & restaurant à Bruyères · cuisine française, décor médiéval</title>
+<meta name="description" content="Le Grimoire, pizzeria et restaurant de cuisine française à Bruyères (88600) — 4,3★ sur Google, 801 avis. Pizzas au feu, plats français et spécialités lorraines, dans un décor de taverne médiévale. À emporter et sur place, jusqu'à 70 couverts. Fermé le mercredi.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap"></noscript>
+
+<!-- [À REMPLACER] Capacité « 3 salles / 70 couverts » : donnée publique à reconfirmer avec l'établissement. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Le Grimoire",
+  "servesCuisine": ["Pizza", "Française", "Lorraine"],
+  "priceRange": "€€",
+  "telephone": "+33329510587",
+  "acceptsReservations": "True",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "8 place du Commandant Flesch",
+    "postalCode": "88600",
+    "addressLocality": "Bruyères",
+    "addressCountry": "FR"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Le+Grimoire+8+place+du+Commandant+Flesch+88600+Bruyeres",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.3",
+    "reviewCount": "801"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Thursday","Sunday"], "opens": "12:00", "closes": "14:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Thursday","Sunday"], "opens": "19:00", "closes": "21:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday"], "opens": "12:00", "closes": "14:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday"], "opens": "19:00", "closes": "21:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "19:00", "closes": "21:30" }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --bordeaux:#5A1A2B;
+  --bordeaux-d:#3F1220;
+  --parch:#EDE4D0;
+  --parch-d:#E1D4B8;
+  --or:#B08D4C;
+  --or-cl:#C9A968;
+  --ink:#2A1C1A;
+  --ink-soft:#5A4A40;
+  --stone:#7A6A5A;
+  --ok:#3C6E47;
+  --shadow:0 8px 30px rgba(42,18,28,.18);
+  --radius:6px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  margin:0;
+  font-family:"Spectral",Georgia,"Times New Roman",serif;
+  color:var(--ink);
+  background-color:var(--parch);
+  /* texture parchemin discrète, en CSS pur */
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(176,141,76,.06) 0, transparent 38%),
+    radial-gradient(circle at 82% 12%, rgba(90,26,43,.05) 0, transparent 42%),
+    radial-gradient(circle at 50% 88%, rgba(176,141,76,.05) 0, transparent 45%);
+  line-height:1.6;
+  font-size:17px;
+  padding-bottom:52px; /* place pour le bandeau légal fixe */
+  -webkit-text-size-adjust:100%;
+}
+h1,h2,h3{font-family:"Cinzel",Georgia,serif;font-weight:600;line-height:1.18;letter-spacing:.02em;margin:0 0 .4em}
+h1{font-size:clamp(1.9rem,6vw,3.3rem);font-weight:700}
+h2{font-size:clamp(1.5rem,4.5vw,2.3rem);color:var(--bordeaux)}
+h3{font-size:1.15rem}
+p{margin:0 0 1em}
+a{color:var(--bordeaux)}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--or);outline-offset:2px;border-radius:3px}
+
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:54px 0}
+.eyebrow{font-family:"Cinzel",serif;text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;color:var(--or);font-weight:600;margin:0 0 .6em}
+
+/* fleuron ornemental réutilisable */
+.flourish{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--or);margin:0 auto 18px;max-width:280px}
+.flourish::before,.flourish::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--or))}
+.flourish::after{background:linear-gradient(90deg,var(--or),transparent)}
+.flourish svg{width:26px;height:26px;flex:none;fill:var(--or)}
+.center{text-align:center}
+
+/* boutons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:48px;padding:12px 24px;border-radius:var(--radius);
+  font-family:"Cinzel",serif;font-weight:600;font-size:.95rem;letter-spacing:.04em;
+  text-decoration:none;cursor:pointer;border:1px solid transparent;
+  transition:transform .12s ease,box-shadow .12s ease,background .12s ease;
+}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.btn-primary{background:var(--or);color:var(--bordeaux-d);border-color:var(--or-cl)}
+.btn-primary:hover{background:var(--or-cl)}
+.btn-ghost{background:transparent;color:var(--parch);border-color:var(--or)}
+.btn-ghost:hover{background:rgba(176,141,76,.18)}
+.btn-dark{background:var(--bordeaux);color:var(--parch);border-color:var(--bordeaux-d)}
+.btn-dark:hover{background:var(--bordeaux-d)}
+.btn:active{transform:translateY(1px)}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+
+/* étoiles */
+.stars{color:var(--or);letter-spacing:1px;font-size:1rem}
+.rating{display:inline-flex;align-items:center;gap:8px;font-family:"Cinzel",serif;font-size:.85rem;letter-spacing:.04em}
+
+/* HERO */
+.hero{position:relative;color:var(--parch);background:var(--bordeaux-d);overflow:hidden}
+.hero-img-wrap{position:absolute;inset:0;z-index:0}
+.hero-img-wrap img{width:100%;height:100%;object-fit:cover;opacity:.42}
+.hero-img-wrap::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(63,18,32,.72) 0%,rgba(63,18,32,.58) 45%,rgba(63,18,32,.9) 100%)}
+.hero-inner{position:relative;z-index:1;padding:64px 0 58px;text-align:center}
+.hero h1{color:var(--parch);text-shadow:0 2px 18px rgba(0,0,0,.4)}
+.hero .lede{font-size:clamp(1.05rem,2.6vw,1.3rem);max-width:36ch;margin:0 auto 1.4em;color:var(--parch-d)}
+.hero .rating{color:var(--or-cl);margin-bottom:1.4em}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.hero-frame{
+  position:relative;z-index:1;margin:0 16px 0;border:1px solid rgba(176,141,76,.5);
+  border-top:none;height:14px;border-radius:0 0 var(--radius) var(--radius)
+}
+
+/* bandeau infos rapides */
+.quickbar{background:var(--bordeaux);color:var(--parch);font-size:.86rem}
+.quickbar .wrap{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:center;padding-top:14px;padding-bottom:14px}
+.quickbar span{display:inline-flex;align-items:center;gap:7px}
+.quickbar svg{width:16px;height:16px;fill:var(--or-cl);flex:none}
+.quickbar a{color:var(--parch);text-decoration:none;border-bottom:1px solid rgba(201,169,104,.5)}
+
+/* cartes génériques */
+.panel{background:rgba(255,255,255,.55);border:1px solid var(--parch-d);border-radius:var(--radius);box-shadow:var(--shadow)}
+
+/* ===== WOW 1 — commande ===== */
+.order{background:linear-gradient(180deg,#F2EAD6,#EDE4D0)}
+.order-grid{display:grid;gap:24px}
+.menu-cat h3{color:var(--bordeaux);border-bottom:1px solid var(--or);padding-bottom:6px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.menu-cat h3 svg{width:18px;height:18px;fill:var(--or)}
+.dish{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:1px dashed rgba(122,106,90,.35)}
+.dish:last-child{border-bottom:none}
+.dish-info{flex:1}
+.dish-name{font-weight:600;font-family:"Cinzel",serif;font-size:.98rem}
+.dish-desc{font-size:.86rem;color:var(--ink-soft);margin:2px 0 0}
+.dish-side{display:flex;flex-direction:column;align-items:flex-end;gap:7px;flex:none}
+.price{font-family:"Cinzel",serif;font-weight:600;color:var(--bordeaux);white-space:nowrap}
+.add{
+  border:1px solid var(--or);background:#fff;color:var(--bordeaux);width:40px;height:40px;
+  border-radius:50%;font-size:1.4rem;line-height:1;cursor:pointer;font-family:"Cinzel",serif;
+  display:flex;align-items:center;justify-content:center;transition:background .12s
+}
+.add:hover{background:var(--or);color:#fff}
+
+/* panier */
+.cart{position:sticky;top:14px;align-self:start;padding:22px}
+.cart h3{display:flex;align-items:center;gap:9px;color:var(--bordeaux)}
+.cart h3 svg{width:20px;height:20px;fill:var(--bordeaux)}
+.cart-empty{color:var(--stone);font-style:italic}
+.cart-line{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 0;border-bottom:1px dashed rgba(122,106,90,.3);font-size:.92rem}
+.cart-line .qty{display:inline-flex;align-items:center;gap:6px}
+.cart-line button{width:30px;height:30px;border:1px solid var(--or);background:#fff;color:var(--bordeaux);border-radius:5px;cursor:pointer;font-size:1.1rem;line-height:1;display:flex;align-items:center;justify-content:center}
+.cart-total{display:flex;justify-content:space-between;font-family:"Cinzel",serif;font-weight:700;font-size:1.1rem;color:var(--bordeaux);margin:14px 0 6px;padding-top:12px;border-top:2px solid var(--or)}
+.field{margin:14px 0}
+.field label{display:block;font-size:.82rem;font-family:"Cinzel",serif;letter-spacing:.05em;margin-bottom:6px;color:var(--ink-soft);text-transform:uppercase}
+select,input,textarea{
+  width:100%;min-height:46px;padding:10px 12px;border:1px solid var(--stone);border-radius:5px;
+  font-family:inherit;font-size:1rem;background:#fff;color:var(--ink)
+}
+textarea{min-height:84px;resize:vertical}
+.slots-note{font-size:.8rem;color:var(--ink-soft);margin-top:6px}
+.closed-note{background:var(--bordeaux);color:var(--parch);padding:12px 14px;border-radius:5px;font-size:.9rem;margin-top:10px}
+
+/* MENU section (carte complète) */
+.menu-cols{display:grid;gap:30px}
+
+/* ===== WOW 2 — réservation ===== */
+.resa{background:var(--bordeaux-d);color:var(--parch)}
+.resa h2{color:var(--or-cl)}
+.resa .eyebrow{color:var(--or-cl)}
+.resa-grid{display:grid;gap:28px;align-items:start}
+.resa-form{background:rgba(237,228,208,.06);border:1px solid rgba(176,141,76,.4);border-radius:var(--radius);padding:24px}
+.resa-form .field label{color:var(--parch-d)}
+.salles{display:grid;gap:14px}
+.salle{display:flex;gap:13px;align-items:flex-start;background:rgba(176,141,76,.1);border:1px solid rgba(176,141,76,.3);border-radius:var(--radius);padding:15px}
+.salle svg{width:30px;height:30px;fill:var(--or-cl);flex:none;margin-top:2px}
+.salle strong{font-family:"Cinzel",serif;color:var(--or-cl);display:block;margin-bottom:3px}
+.salle p{margin:0;font-size:.9rem;color:var(--parch-d)}
+.capacity-badge{display:inline-flex;align-items:center;gap:8px;background:var(--or);color:var(--bordeaux-d);font-family:"Cinzel",serif;font-weight:600;padding:8px 16px;border-radius:30px;font-size:.85rem;margin-bottom:18px}
+.capacity-badge svg{width:18px;height:18px;fill:currentColor}
+
+/* galerie décor */
+.gallery{display:grid;gap:18px}
+.gcard{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--parch-d)}
+.gcard img{width:100%;height:260px;object-fit:cover}
+.gcard figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(63,18,32,.86));color:var(--parch);padding:30px 16px 14px;font-size:.9rem}
+.gcard figcaption strong{font-family:"Cinzel",serif;display:block;color:var(--or-cl);letter-spacing:.04em}
+
+/* avis */
+.reviews{background:linear-gradient(180deg,#EDE4D0,#E6DAC1)}
+.review-head{display:flex;flex-direction:column;align-items:center;gap:6px;margin-bottom:26px}
+.big-rate{font-family:"Cinzel",serif;font-size:2.6rem;font-weight:700;color:var(--bordeaux);line-height:1}
+.review-grid{display:grid;gap:18px}
+.review{background:#fff;border:1px solid var(--parch-d);border-left:4px solid var(--or);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.review .stars{font-size:.9rem}
+.review p{font-style:italic;margin:8px 0 10px;color:var(--ink)}
+.review cite{font-style:normal;font-size:.8rem;color:var(--stone);font-family:"Cinzel",serif;letter-spacing:.04em}
+
+/* accès / horaires */
+.access-grid{display:grid;gap:26px}
+.hours{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--parch-d);border-radius:var(--radius);overflow:hidden}
+.hours th,.hours td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--parch-d);font-size:.94rem}
+.hours th{font-family:"Cinzel",serif;font-weight:600;color:var(--bordeaux);width:42%}
+.hours tr:last-child td,.hours tr:last-child th{border-bottom:none}
+.hours .today{background:rgba(176,141,76,.14)}
+.hours .closed{color:#9A3A2A;font-weight:600}
+.hours .closed td{font-style:italic}
+.access-card{padding:22px}
+.access-card h3{color:var(--bordeaux)}
+.access-card p{margin:0 0 .6em}
+.access-card a{font-weight:600}
+
+/* footer */
+footer{background:var(--bordeaux-d);color:var(--parch-d);text-align:center;padding:44px 0}
+footer h2{color:var(--or-cl)}
+footer .nap{font-size:.95rem;line-height:1.9}
+footer a{color:var(--parch)}
+footer .foot-flourish{fill:var(--or)}
+
+/* modale démo */
+.modal{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(42,18,26,.7)}
+.modal.open{display:flex}
+.modal-box{background:var(--parch);border:1px solid var(--or);border-radius:var(--radius);max-width:440px;width:100%;padding:30px 26px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.modal-box .seal{width:60px;height:60px;margin:0 auto 14px;fill:var(--or)}
+.modal-box h3{color:var(--bordeaux);font-size:1.4rem}
+.modal-box p{color:var(--ink-soft)}
+.modal-box .recap{background:rgba(255,255,255,.6);border:1px dashed var(--or);border-radius:5px;padding:12px;font-size:.9rem;text-align:left;margin:14px 0}
+
+/* bandeau légal fixe */
+.legal{
+  position:fixed;left:0;right:0;bottom:0;z-index:40;
+  background:var(--bordeaux-d);color:var(--parch-d);
+  font-size:.7rem;line-height:1.4;text-align:center;
+  padding:8px 14px;border-top:1px solid var(--or)
+}
+
+/* a11y helper */
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* ===== >= 720px ===== */
+@media(min-width:720px){
+  .order-grid{grid-template-columns:1.6fr 1fr}
+  .menu-cols{grid-template-columns:1fr 1fr}
+  .resa-grid{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+  .review-grid{grid-template-columns:1fr 1fr 1fr}
+  .access-grid{grid-template-columns:1.1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="hero-img-wrap">
+    <img src="img/hero-pizza.webp" width="1200" height="800" alt="Pizza rustique dorée sur une planche en bois sombre, dans une ambiance feutrée" fetchpriority="high">
+  </div>
+  <div class="hero-inner wrap">
+    <p class="eyebrow">Bruyères · Vosges</p>
+    <h1>Le Grimoire</h1>
+    <p class="lede">Pizzeria &amp; cuisine française à Bruyères, dans un décor médiéval.</p>
+    <p class="rating">
+      <span class="stars" aria-hidden="true">★★★★½</span>
+      <span>4,3 / 5 — 801 avis Google</span>
+    </p>
+    <div class="hero-ctas">
+      <a href="#commander" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a2 2 0 100 4 2 2 0 000-4zm10 0a2 2 0 100 4 2 2 0 000-4zM5.2 4l.9 2H21l-3 7H8.5l-.5 1.2c0 .2.1.3.3.3H19v2H8.2A2 2 0 016.5 13l.7-1.6L4 4H1V2h4.2z"/></svg>
+        Commander à emporter
+      </a>
+      <a href="#reserver" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 00-2 2v13a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2h-2V2h-2v2H9V2H7zm12 8v9H5v-9h14z"/></svg>
+        Réserver une table
+      </a>
+    </div>
+  </div>
+  <div class="hero-frame" aria-hidden="true"></div>
+</header>
+
+<!-- ===================== QUICK BAR ===================== -->
+<div class="quickbar">
+  <div class="wrap">
+    <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.9 15.9 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.57 3.6 1 1 0 01-.24 1l-2.2 2.2z"/></svg><a href="tel:+33329510587">03 29 51 05 87</a></span>
+    <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg><a href="https://www.google.com/maps/search/?api=1&query=Le+Grimoire+8+place+du+Commandant+Flesch+88600+Bruyeres" target="_blank" rel="noopener">8 place du Commandant Flesch</a></span>
+    <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a11 11 0 100 22 11 11 0 000-22zm1 11l4 2.3-.75 1.3L11 13V6h2z"/></svg>À emporter &amp; sur place · <strong style="color:#fff">mercredi fermé</strong></span>
+  </div>
+</div>
+
+<!-- ===================== WOW 1 — COMMANDE ===================== -->
+<section id="commander" class="order">
+  <div class="wrap">
+    <div class="flourish" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 5 5.6.6-4.2 3.8 1.2 5.6L12 19.8 6.9 17l1.2-5.6L4 7.6 9.6 7z"/></svg></div>
+    <p class="eyebrow center">Le comptoir</p>
+    <h2 class="center">Commander à emporter</h2>
+    <p class="center" style="max-width:54ch;margin:0 auto 30px;color:var(--ink-soft)">Composez votre commande, choisissez un créneau de retrait et passez la chercher. Préparation calée sur le service du jour.</p>
+
+    <div class="order-grid">
+      <!-- carte cliquable -->
+      <div>
+        <div class="menu-cat">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 4a6 6 0 016 6H6a6 6 0 016-6zm-3 5a1 1 0 100-2 1 1 0 000 2zm6 0a1 1 0 100-2 1 1 0 000 2zm-3 1a1 1 0 100-2 1 1 0 000 2z"/></svg>Pizzas au feu</h3>
+          <div id="cat-pizzas"></div>
+        </div>
+        <div class="menu-cat">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 2v9a2 2 0 11-2 0V2H7v9a4 4 0 003 3.9V22h2v-7.1A4 4 0 0015 11V2h-2v9a2 2 0 11-2 0V2zM18 2c-1.7 0-3 2.2-3 5 0 2.4 1 4.3 2 4.8V22h2V2z"/></svg>Côté cuisine française</h3>
+          <div id="cat-plats"></div>
+        </div>
+      </div>
+
+      <!-- panier -->
+      <aside class="cart panel" aria-labelledby="cart-title">
+        <h3 id="cart-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a2 2 0 100 4 2 2 0 000-4zm10 0a2 2 0 100 4 2 2 0 000-4zM5.2 4l.9 2H21l-3 7H8.5l-.5 1.2c0 .2.1.3.3.3H19v2H8.2A2 2 0 016.5 13l.7-1.6L4 4H1V2h4.2z"/></svg>Votre commande</h3>
+        <div id="cart-lines" aria-live="polite"><p class="cart-empty">Votre panier est vide. Ajoutez un plat depuis la carte.</p></div>
+        <div class="cart-total"><span>Total</span><span id="cart-total">0,00 €</span></div>
+
+        <div class="field">
+          <label for="day">Jour de retrait</label>
+          <select id="day"></select>
+        </div>
+        <div class="field">
+          <label for="slot">Créneau (15 min)</label>
+          <select id="slot"></select>
+          <p class="slots-note">Créneaux calés sur les horaires réels — mercredi fermé.</p>
+        </div>
+        <button class="btn btn-dark" id="checkout" style="width:100%" disabled>Valider la commande</button>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CARTE COMPLÈTE ===================== -->
+<section id="carte">
+  <div class="wrap">
+    <div class="flourish" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 4h18v2l-2 14H5L3 6zm2.4 2l1.4 12h10.4l1.4-12z"/></svg></div>
+    <p class="eyebrow center">Le parchemin</p>
+    <h2 class="center">La carte du Grimoire</h2>
+    <p class="center" style="max-width:54ch;margin:0 auto 30px;color:var(--ink-soft)">Pizzas au feu, grands classiques français et clins d'œil à la Lorraine.</p>
+    <!-- [À REMPLACER] Carte et prix factices crédibles — à remplacer par la carte réelle de l'établissement. -->
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Pizzas</h3>
+        <div class="dish"><div class="dish-info"><span class="dish-name">La Reine</span><p class="dish-desc">Tomate, mozzarella, jambon, champignons frais</p></div><div class="dish-side"><span class="price">11,50 €</span></div></div>
+        <div class="dish"><div class="dish-info"><span class="dish-name">La Forestière</span><p class="dish-desc">Crème, mozzarella, lardons, champignons, persillade</p></div><div class="dish-side"><span class="price">12,90 €</span></div></div>
+        <div class="dish"><div class="dish-info"><span class="dish-name">La Grimoire</span><p class="dish-desc">Tomate, mozzarella, magret fumé, miel, noix</p></div><div class="dish-side"><span class="price">14,50 €</span></div></div>
+        <div class="dish"><div class="dish-info"><span class="dish-name">La Vosgienne</span><p class="dish-desc">Crème, munster, lardons, pommes de terre, cumin</p></div><div class="dish-side"><span class="price">13,90 €</span></div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Cuisine française &amp; Lorraine</h3>
+        <div class="dish"><div class="dish-info"><span class="dish-name">Entrecôte, sauce au poivre</span><p class="dish-desc">Frites maison et salade verte</p></div><div class="dish-side"><span class="price">18,90 €</span></div></div>
+        <div class="dish"><div class="dish-info"><span class="dish-name">Quiche lorraine maison</span><p class="dish-desc">Pâte brisée, lardons, crème — salade</p></div><div class="dish-side"><span class="price">10,90 €</span></div></div>
+        <div class="dish"><div class="dish-info"><span class="dish-name">Pâté lorrain &amp; salade</span><p class="dish-desc">Spécialité régionale, pâte feuilletée</p></div><div class="dish-side"><span class="price">9,90 €</span></div></div>
+        <div class="dish"><div class="dish-info"><span class="dish-name">Tarte aux myrtilles des Vosges</span><p class="dish-desc">Dessert de saison, crème fraîche</p></div><div class="dish-side"><span class="price">6,50 €</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WOW 2 — RÉSERVATION ===================== -->
+<section id="reserver" class="resa">
+  <div class="wrap">
+    <div class="flourish" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 5 5.6.6-4.2 3.8 1.2 5.6L12 19.8 6.9 17l1.2-5.6L4 7.6 9.6 7z"/></svg></div>
+    <p class="eyebrow center">Le grand livre des réservations</p>
+    <h2 class="center">Réserver une table ou un groupe</h2>
+    <p class="center" style="max-width:56ch;margin:0 auto 24px;color:var(--parch-d)">Trois salles voûtées, jusqu'à 70 couverts : repas de famille, anniversaires, comités d'entreprise — le Grimoire reçoit aussi les grandes tablées.</p>
+    <p class="center"><span class="capacity-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11a4 4 0 10-4-4 4 4 0 004 4zm-8 0a4 4 0 10-4-4 4 4 0 004 4zm0 2c-2.7 0-8 1.3-8 4v3h9v-3c0-1 .4-1.9 1-2.6A12 12 0 008 13zm8 0c-.6 0-1.3 0-2 .1 1.3 1 2 2.2 2 3.9v3h8v-3c0-2.7-5.3-4-8-4z"/></svg>3 salles · jusqu'à 70 couverts</span></p>
+
+    <div class="resa-grid">
+      <div class="salles">
+        <div class="salle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13h-6v-6h-4v6H4z"/></svg><div><strong>La salle voûtée</strong><p>L'ambiance pierre &amp; bougies pour un dîner à deux ou en petit comité.</p></div></div>
+        <div class="salle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h18v8H3zm2-2V5a2 2 0 012-2h10a2 2 0 012 2v6H5z"/></svg><div><strong>La grande table</strong><p>Pensée pour les repas de famille et tablées d'amis.</p></div></div>
+        <div class="salle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l9 4v6c0 5-3.8 8.6-9 10-5.2-1.4-9-5-9-10V6z"/></svg><div><strong>La salle des groupes</strong><p>Anniversaires, comités d'entreprise, banquets jusqu'à 70 couverts.</p></div></div>
+      </div>
+
+      <form class="resa-form" id="resa-form" novalidate>
+        <div class="field"><label for="r-name">Votre nom</label><input id="r-name" name="name" type="text" autocomplete="name" placeholder="Ex. Famille Aubry" required></div>
+        <div class="field"><label for="r-date">Date</label><input id="r-date" name="date" type="date" required></div>
+        <div class="field"><label for="r-time">Heure</label><input id="r-time" name="time" type="time" value="19:30" required></div>
+        <div class="field"><label for="r-guests">Nombre de convives</label>
+          <select id="r-guests" name="guests" required>
+            <option value="2">2 convives</option><option value="4">4 convives</option>
+            <option value="6">6 convives</option><option value="10">10 convives</option>
+            <option value="20">20 convives (groupe)</option><option value="40">40 convives (groupe)</option>
+            <option value="70">70 convives (salle entière)</option>
+          </select>
+        </div>
+        <div class="field"><label for="r-note">Occasion / précisions (optionnel)</label><textarea id="r-note" name="note" placeholder="Anniversaire, allergies, salle souhaitée…"></textarea></div>
+        <button class="btn btn-primary" type="submit" style="width:100%">Envoyer la demande</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LE DÉCOR ===================== -->
+<section id="decor">
+  <div class="wrap">
+    <div class="flourish" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 5 5.6.6-4.2 3.8 1.2 5.6L12 19.8 6.9 17l1.2-5.6L4 7.6 9.6 7z"/></svg></div>
+    <p class="eyebrow center">L'atmosphère</p>
+    <h2 class="center">Le décor</h2>
+    <!-- [À REMPLACER] Textes du décor illustratifs ; photos d'illustration libres de droits — remplacer par les vraies photos de l'établissement après accord. -->
+    <p class="center" style="max-width:56ch;margin:0 auto 30px;color:var(--ink-soft)">Pierre, voûtes et lumières chaleureuses : on s'attable comme dans une taverne d'autrefois, autour d'une cuisine bien d'aujourd'hui.</p>
+    <div class="gallery">
+      <figure class="gcard">
+        <img src="img/ambiance.webp" width="800" height="600" loading="lazy" alt="Salle chaleureuse éclairée d'ampoules à filament, ambiance de taverne (illustration)">
+        <figcaption><strong>Une ambiance feutrée</strong>Lumières tamisées et atmosphère conviviale, à toute heure du service.</figcaption>
+      </figure>
+      <figure class="gcard">
+        <img src="img/plat-francais.webp" width="800" height="600" loading="lazy" alt="Assiette de cuisine française dressée sur une table de restaurant, bougies en arrière-plan">
+        <figcaption><strong>La table dressée</strong>Des assiettes soignées, à partager dans le calme des salles voûtées.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AVIS ===================== -->
+<section class="reviews">
+  <div class="wrap">
+    <div class="review-head">
+      <p class="eyebrow">Ils ont poussé la porte</p>
+      <span class="big-rate">4,3 / 5</span>
+      <span class="stars" aria-hidden="true">★★★★½</span>
+      <span style="font-family:'Cinzel',serif;font-size:.85rem;letter-spacing:.04em">801 avis Google</span>
+    </div>
+    <!-- [À REMPLACER] Extraits d'avis illustratifs (≤ 15 mots) — remplacer par de vrais extraits Google après accord. -->
+    <div class="review-grid">
+      <blockquote class="review"><span class="stars" aria-hidden="true">★★★★★</span><p>« Cadre médiéval superbe, pizzas généreuses, on reviendra en famille. »</p><cite>Avis Google</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-hidden="true">★★★★★</span><p>« Accueil chaleureux et belle carte, parfait pour un grand groupe. »</p><cite>Avis Google</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-hidden="true">★★★★☆</span><p>« Décor unique dans le secteur, cuisine française vraiment soignée. »</p><cite>Avis Google</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ACCÈS / HORAIRES ===================== -->
+<section id="acces">
+  <div class="wrap">
+    <div class="flourish" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 1a11 11 0 100 22 11 11 0 000-22zm1 11l4 2.3-.75 1.3L11 13V6h2z"/></svg></div>
+    <p class="eyebrow center">Nous trouver</p>
+    <h2 class="center">Accès &amp; horaires</h2>
+    <div class="access-grid">
+      <table class="hours" id="hours-table">
+        <caption class="visually-hidden">Horaires d'ouverture du Grimoire</caption>
+        <tbody>
+          <tr data-day="1"><th>Lundi</th><td>12 h–14 h · 19 h–21 h</td></tr>
+          <tr data-day="2"><th>Mardi</th><td>12 h–14 h · 19 h–21 h</td></tr>
+          <tr data-day="3" class="closed"><th>Mercredi</th><td>Fermé</td></tr>
+          <tr data-day="4"><th>Jeudi</th><td>12 h–14 h · 19 h–21 h</td></tr>
+          <tr data-day="5"><th>Vendredi</th><td>12 h–14 h · 19 h–21 h 30</td></tr>
+          <tr data-day="6"><th>Samedi</th><td>19 h–21 h 30</td></tr>
+          <tr data-day="0"><th>Dimanche</th><td>12 h–14 h · 19 h–21 h</td></tr>
+        </tbody>
+      </table>
+      <div class="access-card panel">
+        <h3>Le Grimoire</h3>
+        <p>8 place du Commandant Flesch<br>88600 Bruyères</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Le+Grimoire+8+place+du+Commandant+Flesch+88600+Bruyeres" target="_blank" rel="noopener">Ouvrir dans Google Maps →</a></p>
+        <p><a href="tel:+33329510587">📞 03 29 51 05 87</a></p>
+        <p style="margin-top:14px"><strong style="color:var(--bordeaux);font-family:'Cinzel',serif">Mercredi fermé.</strong> Pizzas et cuisine française, à emporter ou sur place.</p>
+        <p><a href="#commander" class="btn btn-dark" style="margin-top:6px">Commander à emporter</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <svg class="foot-flourish" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" style="margin:0 auto 10px"><path d="M12 2l2.4 5 5.6.6-4.2 3.8 1.2 5.6L12 19.8 6.9 17l1.2-5.6L4 7.6 9.6 7z"/></svg>
+    <h2>Le Grimoire</h2>
+    <p class="nap">
+      Pizzeria &amp; restaurant — Bruyères<br>
+      8 place du Commandant Flesch, 88600 Bruyères<br>
+      <a href="tel:+33329510587">03 29 51 05 87</a> · 4,3★ (801 avis Google)<br>
+      <a href="https://www.google.com/maps/search/?api=1&query=Le+Grimoire+8+place+du+Commandant+Flesch+88600+Bruyeres" target="_blank" rel="noopener">Itinéraire Google Maps</a>
+    </p>
+  </div>
+</footer>
+
+<!-- ===================== MODALE DÉMO ===================== -->
+<div class="modal" id="demo-modal" role="dialog" aria-modal="true" aria-labelledby="demo-title" aria-describedby="demo-desc">
+  <div class="modal-box">
+    <svg class="seal" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a4 4 0 014 4v1h1a2 2 0 012 2v3a7 7 0 01-14 0V8a2 2 0 012-2h1V5a4 4 0 014-4zm-2 5h4V5a2 2 0 00-4 0v1zm2 14a3 3 0 003 3H9a3 3 0 003-3z"/></svg>
+    <h3 id="demo-title">Ceci est une démonstration</h3>
+    <p id="demo-desc">Aucune commande ni réservation n'a réellement été envoyée. Sur le site en production, cette étape déclenche la prise en charge par l'établissement (paiement CB ou au retrait, confirmation par e-mail).</p>
+    <div class="recap" id="demo-recap" hidden></div>
+    <button class="btn btn-primary" id="demo-close" style="width:100%">J'ai compris</button>
+  </div>
+</div>
+
+<!-- ===================== BANDEAU LÉGAL FIXE ===================== -->
+<p class="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</p>
+
+<script>
+(function(){
+  "use strict";
+  var euro=function(n){return n.toFixed(2).replace('.',',')+' €';};
+
+  /* ---- Carte ordonnable (WOW 1) ---- */
+  /* [À REMPLACER] articles/prix factices crédibles */
+  var MENU={
+    pizzas:[
+      {id:'p1',n:'La Reine',d:'Tomate, mozzarella, jambon, champignons',pr:11.5},
+      {id:'p2',n:'La Forestière',d:'Crème, lardons, champignons, persillade',pr:12.9},
+      {id:'p3',n:'La Grimoire',d:'Magret fumé, miel, noix',pr:14.5},
+      {id:'p4',n:'La Vosgienne',d:'Munster, lardons, pommes de terre, cumin',pr:13.9}
+    ],
+    plats:[
+      {id:'c1',n:'Entrecôte, sauce au poivre',d:'Frites maison, salade',pr:18.9},
+      {id:'c2',n:'Quiche lorraine maison',d:'Salade verte',pr:10.9},
+      {id:'c3',n:'Pâté lorrain & salade',d:'Spécialité régionale',pr:9.9},
+      {id:'c4',n:'Tarte aux myrtilles',d:'Dessert de saison',pr:6.5}
+    ]
+  };
+  var byId={};
+  ['pizzas','plats'].forEach(function(cat){
+    var box=document.getElementById('cat-'+cat);
+    MENU[cat].forEach(function(it){
+      byId[it.id]=it;
+      var row=document.createElement('div');
+      row.className='dish';
+      row.innerHTML='<div class="dish-info"><span class="dish-name"></span><p class="dish-desc"></p></div>'+
+        '<div class="dish-side"><span class="price">'+euro(it.pr)+'</span>'+
+        '<button class="add" aria-label="Ajouter '+it.n+' au panier" data-add="'+it.id+'">+</button></div>';
+      row.querySelector('.dish-name').textContent=it.n;
+      row.querySelector('.dish-desc').textContent=it.d;
+      box.appendChild(row);
+    });
+  });
+
+  /* ---- Panier (localStorage) ---- */
+  var KEY='grimoire_cart_v1';
+  var cart={};
+  try{cart=JSON.parse(localStorage.getItem(KEY))||{};}catch(e){cart={};}
+
+  var linesEl=document.getElementById('cart-lines');
+  var totalEl=document.getElementById('cart-total');
+  var checkoutBtn=document.getElementById('checkout');
+
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(cart));}catch(e){}}
+  function renderCart(){
+    var ids=Object.keys(cart).filter(function(k){return cart[k]>0;});
+    linesEl.innerHTML='';
+    var total=0;
+    if(!ids.length){
+      linesEl.innerHTML='<p class="cart-empty">Votre panier est vide. Ajoutez un plat depuis la carte.</p>';
+      checkoutBtn.disabled=true;
+    }else{
+      ids.forEach(function(id){
+        var it=byId[id],q=cart[id];total+=it.pr*q;
+        var line=document.createElement('div');
+        line.className='cart-line';
+        line.innerHTML='<span>'+q+'× '+it.n+'</span>'+
+          '<span class="qty"><button data-dec="'+id+'" aria-label="Retirer un '+it.n+'">−</button>'+
+          '<button data-inc="'+id+'" aria-label="Ajouter un '+it.n+'">+</button>'+
+          '<span class="price">'+euro(it.pr*q)+'</span></span>';
+        linesEl.appendChild(line);
+      });
+      checkoutBtn.disabled=false;
+    }
+    totalEl.textContent=euro(total);
+    save();
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('[data-add],[data-inc],[data-dec]');
+    if(!t)return;
+    var add=t.getAttribute('data-add'),inc=t.getAttribute('data-inc'),dec=t.getAttribute('data-dec');
+    if(add){cart[add]=(cart[add]||0)+1;}
+    if(inc){cart[inc]=(cart[inc]||0)+1;}
+    if(dec){cart[dec]=(cart[dec]||0)-1;if(cart[dec]<=0)delete cart[dec];}
+    renderCart();
+  });
+
+  /* ---- Créneaux de retrait calés sur les horaires réels ---- */
+  /* clé jour JS (0=dim) -> plages d'ouverture, mercredi (3) fermé */
+  var HOURS={
+    0:[['12:00','14:00'],['19:00','21:00']],
+    1:[['12:00','14:00'],['19:00','21:00']],
+    2:[['12:00','14:00'],['19:00','21:00']],
+    3:[], /* mercredi fermé */
+    4:[['12:00','14:00'],['19:00','21:00']],
+    5:[['12:00','14:00'],['19:00','21:30']],
+    6:[['19:00','21:30']]
+  };
+  var DAYNAMES=['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+  var daySel=document.getElementById('day');
+  var slotSel=document.getElementById('slot');
+
+  function toMin(s){var p=s.split(':');return (+p[0])*60+(+p[1]);}
+  function fromMin(m){var h=Math.floor(m/60),mm=m%60;return (h<10?'0':'')+h+' h'+(mm?(' '+(mm<10?'0':'')+mm):'');}
+
+  function buildDays(){
+    var now=new Date();
+    for(var i=0;i<7;i++){
+      var d=new Date(now.getFullYear(),now.getMonth(),now.getDate()+i);
+      var dow=d.getDay();
+      var opt=document.createElement('option');
+      var label=(i===0?'Aujourd’hui — ':(i===1?'Demain — ':''))+DAYNAMES[dow]+' '+d.getDate()+'/'+(d.getMonth()+1);
+      if(!HOURS[dow].length){label+=' (fermé)';}
+      opt.value=dow;opt.textContent=label;opt.dataset.idx=i;
+      daySel.appendChild(opt);
+    }
+  }
+  function buildSlots(){
+    var dow=+daySel.value;
+    var ranges=HOURS[dow];
+    slotSel.innerHTML='';
+    var existingNote=slotSel.parentNode.querySelector('.closed-note');
+    if(existingNote)existingNote.remove();
+    if(!ranges.length){
+      var o=document.createElement('option');o.textContent='Fermé ce jour-là';o.disabled=true;o.selected=true;
+      slotSel.appendChild(o);slotSel.disabled=true;
+      checkoutDisableForClosed(true);
+      var note=document.createElement('p');note.className='closed-note';
+      note.textContent='Le Grimoire est fermé le mercredi. Choisissez un autre jour pour votre retrait.';
+      slotSel.parentNode.appendChild(note);
+      return;
+    }
+    slotSel.disabled=false;
+    checkoutDisableForClosed(false);
+    /* dernier créneau 15 min avant fermeture */
+    ranges.forEach(function(r){
+      var start=toMin(r[0]),end=toMin(r[1])-15;
+      for(var m=start;m<=end;m+=15){
+        var o=document.createElement('option');
+        o.value=fromMin(m);o.textContent=fromMin(m);
+        slotSel.appendChild(o);
+      }
+    });
+  }
+  function checkoutDisableForClosed(closed){
+    if(closed){checkoutBtn.disabled=true;}
+    else{renderCart();}
+  }
+  daySel.addEventListener('change',buildSlots);
+
+  /* ---- Modale démo ---- */
+  var modal=document.getElementById('demo-modal');
+  var recap=document.getElementById('demo-recap');
+  var lastFocus=null;
+  function openModal(html){
+    lastFocus=document.activeElement;
+    if(html){recap.hidden=false;recap.innerHTML=html;}else{recap.hidden=true;recap.innerHTML='';}
+    modal.classList.add('open');
+    document.getElementById('demo-close').focus();
+  }
+  function closeModal(){
+    modal.classList.remove('open');
+    if(lastFocus&&lastFocus.focus)lastFocus.focus();
+  }
+  document.getElementById('demo-close').addEventListener('click',closeModal);
+  modal.addEventListener('click',function(e){if(e.target===modal)closeModal();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal.classList.contains('open'))closeModal();});
+
+  /* ---- Checkout simulé ---- */
+  checkoutBtn.addEventListener('click',function(){
+    var ids=Object.keys(cart).filter(function(k){return cart[k]>0;});
+    if(!ids.length)return;
+    var total=0,list='';
+    ids.forEach(function(id){var it=byId[id];total+=it.pr*cart[id];list+='<div>'+cart[id]+'× '+it.n+'</div>';});
+    var dayTxt=daySel.options[daySel.selectedIndex].textContent.replace(' (fermé)','');
+    var slotTxt=slotSel.disabled?'—':slotSel.value;
+    openModal('<strong>Récapitulatif (simulé)</strong>'+list+
+      '<div style="margin-top:8px"><strong>Retrait :</strong> '+dayTxt+' à '+slotTxt+'</div>'+
+      '<div><strong>Total :</strong> '+euro(total)+'</div>');
+    /* on vide le panier après "commande" simulée */
+    cart={};renderCart();
+  });
+
+  /* ---- Réservation simulée (WOW 2) ---- */
+  document.getElementById('resa-form').addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=e.target;
+    if(!f.checkValidity()){f.reportValidity();return;}
+    var name=f.name.value||'—';
+    var date=f.date.value||'—';
+    var time=f.time.value||'—';
+    var guests=f.guests.options[f.guests.selectedIndex].textContent;
+    openModal('<strong>Demande de réservation (simulée)</strong>'+
+      '<div style="margin-top:8px"><strong>Nom :</strong> '+name+'</div>'+
+      '<div><strong>Date :</strong> '+date+' à '+time+'</div>'+
+      '<div><strong>Convives :</strong> '+guests+'</div>');
+    f.reset();f.time.value='19:30';
+  });
+
+  /* ---- Surligner le jour courant dans le tableau d'horaires ---- */
+  var today=new Date().getDay();
+  var row=document.querySelector('#hours-table tr[data-day="'+today+'"]');
+  if(row){row.classList.add('today');var th=row.querySelector('th');if(th)th.insertAdjacentHTML('beforeend',' <span style="font-size:.7rem;color:var(--or);font-weight:700">· aujourd’hui</span>');}
+
+  /* init */
+  buildDays();buildSlots();renderCart();
+})();
+</script>
+</body>
+</html>
