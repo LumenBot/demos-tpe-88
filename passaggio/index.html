@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#C5552D">
+<title>Passaggio — Pizzeria four à bois à Baccarat · Pizzas à emporter & sur place</title>
+<meta name="description" content="Passaggio, pizzeria n°1 de Baccarat — four à bois au centre de la salle, 30+ pizzas, 2 terrasses. 4,6★ sur Google (864 avis). Commande à emporter et réservation de table. À deux pas du musée du Cristal.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Albert+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Albert+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Albert+Sans:wght@400;500;600;700&display=swap"></noscript>
+
+<!-- [À REMPLACER] Horaires de référence : mer-sam 12h-14h / 18h30-22h, dim 12h-14h, lun-mar fermé. À confirmer avec l'établissement. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Passaggio",
+  "servesCuisine": ["Pizza", "Italien"],
+  "priceRange": "€€",
+  "telephone": "+33383755996",
+  "acceptsReservations": "True",
+  "image": "https://www.google.com/maps/search/?api=1&query=Passaggio+Baccarat",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "23 rue de la Division Leclerc",
+    "postalCode": "54120",
+    "addressLocality": "Baccarat",
+    "addressCountry": "FR"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Passaggio+23+rue+de+la+Division+Leclerc+54120+Baccarat",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "864"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "12:00",
+      "closes": "14:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "18:30",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Sunday"],
+      "opens": "12:00",
+      "closes": "14:00"
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --terra:#C5552D;
+  --terra-deep:#A8431F;
+  --terra-ink:#8E3717;
+  --olive:#6E7344;
+  --olive-deep:#565A35;
+  --cream:#FBF4E9;
+  --cream-2:#F4E8D5;
+  --cream-3:#EFDFC6;
+  --ink:#3A2A1E;
+  --muted:#6E5C4C;
+  --line:#E3D2B6;
+  --hairline:#D8C4A2;
+  --sun:#E89A3C;
+  --ok:#4C7A3F;
+  --legal-h:118px;
+  --font-display:'Fraunces',Georgia,'Times New Roman',serif;
+  --font-body:'Albert Sans',system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;font-family:var(--font-body);color:var(--ink);background:var(--cream);
+  line-height:1.6;font-size:17px;
+  padding-bottom:var(--legal-h);
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.12;margin:0 0 .4em;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,5.5vw,2.6rem);color:var(--terra-ink)}
+h3{font-size:1.18rem;color:var(--ink)}
+p{margin:0 0 1em}
+a{color:var(--terra-deep)}
+img{max-width:100%;display:block}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+:focus-visible{outline:3px solid var(--terra-ink);outline-offset:2px;border-radius:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:10px 16px;z-index:200;border-radius:0 0 8px 0}
+.skip:focus-visible{left:0;top:0}
+
+/* ---- boutons ---- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  min-height:48px;padding:12px 22px;border-radius:999px;border:2px solid transparent;
+  font-family:var(--font-body);font-weight:700;font-size:1rem;text-decoration:none;cursor:pointer;
+  transition:transform .12s ease,background .12s ease,box-shadow .12s ease;
+}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+.btn:active{transform:translateY(1px)}
+.btn-pri{background:var(--terra);color:#fff;box-shadow:0 6px 18px rgba(168,67,31,.28)}
+.btn-pri:hover{background:var(--terra-deep)}
+.btn-sec{background:#fff;color:var(--olive-deep);border-color:var(--olive)}
+.btn-sec:hover{background:var(--cream-2)}
+.btn-olive{background:var(--olive);color:#fff}
+.btn-olive:hover{background:var(--olive-deep)}
+.btn-ghost{background:transparent;border-color:var(--hairline);color:var(--ink)}
+.btn-block{width:100%}
+
+/* ---- header ---- */
+header.bar{
+  position:sticky;top:0;z-index:90;background:rgba(251,244,233,.94);
+  backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--line);
+}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--terra-ink)}
+.brand .logo{width:34px;height:34px;flex:none}
+.brand b{font-family:var(--font-display);font-weight:900;font-size:1.42rem;letter-spacing:-.02em}
+.nav{display:none;gap:22px;align-items:center}
+.nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.98rem}
+.nav a:hover{color:var(--terra-deep)}
+.bar .cart-link{position:relative}
+.cart-count{position:absolute;top:-8px;right:-8px;background:var(--olive);color:#fff;border-radius:999px;min-width:20px;height:20px;font-size:.72rem;font-weight:700;display:flex;align-items:center;justify-content:center;padding:0 5px}
+@media(min-width:880px){.nav{display:flex}}
+
+/* ---- hero ---- */
+.hero{position:relative;overflow:hidden;background:var(--cream)}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(120% 80% at 85% 0%,rgba(232,154,60,.20),transparent 55%),
+  radial-gradient(90% 70% at 0% 100%,rgba(110,115,68,.14),transparent 60%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;gap:26px;padding-top:34px;padding-bottom:40px}
+.hero-copy .eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--cream-2);border:1px solid var(--hairline);color:var(--olive-deep);font-weight:700;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px}
+.hero h1{font-size:clamp(2.2rem,8.6vw,4rem);color:var(--terra-ink);font-weight:900;margin-bottom:.3em}
+.hero h1 em{font-style:italic;color:var(--olive-deep);font-weight:600}
+.hero .lead{font-size:1.12rem;color:var(--muted);max-width:42ch;margin-bottom:1.4em}
+.rating{display:inline-flex;align-items:center;gap:9px;font-weight:600;color:var(--ink);margin-bottom:22px}
+.stars{color:var(--sun);letter-spacing:2px;font-size:1.05rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-fig{position:relative}
+.hero-fig img{width:100%;height:auto;border-radius:20px;box-shadow:0 24px 50px rgba(142,55,23,.22);aspect-ratio:1000/670;object-fit:cover}
+.hero-fig .tag{position:absolute;left:16px;bottom:16px;background:rgba(58,42,30,.86);color:var(--cream);font-weight:600;font-size:.86rem;padding:9px 14px;border-radius:12px;display:flex;align-items:center;gap:8px;backdrop-filter:blur(2px)}
+@media(min-width:820px){
+  .hero .wrap{grid-template-columns:1.05fr 1fr;align-items:center;padding-top:48px;padding-bottom:60px}
+  .hero-fig{order:2}
+}
+
+/* ---- sections ---- */
+section{padding:46px 0}
+.section-head{text-align:center;max-width:62ch;margin:0 auto 30px}
+.section-head .kicker{color:var(--olive);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem;display:block;margin-bottom:8px}
+.section-head p{color:var(--muted)}
+.alt{background:var(--cream-2)}
+.olive-band{background:var(--olive-deep);color:var(--cream)}
+.olive-band h2{color:#fff}
+.olive-band .section-head p{color:#E9E7D3}
+
+/* ---- carte / commande ---- */
+.cat-tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:26px}
+.cat-tab{border:2px solid var(--hairline);background:#fff;color:var(--ink);border-radius:999px;padding:9px 18px;font-weight:600;font-family:var(--font-body);font-size:.95rem;cursor:pointer;min-height:44px}
+.cat-tab[aria-selected="true"]{background:var(--terra);color:#fff;border-color:var(--terra)}
+.cat-tab:hover{border-color:var(--terra)}
+.menu-grid{display:grid;gap:14px}
+@media(min-width:720px){.menu-grid{grid-template-columns:1fr 1fr}}
+.dish{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 16px 16px 18px;display:flex;justify-content:space-between;gap:14px;align-items:flex-start;box-shadow:0 2px 10px rgba(142,55,23,.04)}
+.dish-info h3{margin:0 0 4px;font-family:var(--font-display);font-size:1.08rem}
+.dish-info p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.45}
+.dish-right{text-align:right;flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.price{font-family:var(--font-display);font-weight:600;font-size:1.18rem;color:var(--terra-ink);white-space:nowrap}
+.add{appearance:none;border:2px solid var(--olive);background:#fff;color:var(--olive-deep);width:44px;height:44px;border-radius:50%;font-size:1.5rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;font-weight:700}
+.add:hover{background:var(--olive);color:#fff}
+.veg{display:inline-block;font-size:.72rem;font-weight:700;color:var(--ok);background:#EAF1E4;border-radius:6px;padding:2px 7px;margin-top:6px}
+
+/* ---- panier ---- */
+.cart-panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:30px;box-shadow:0 10px 30px rgba(142,55,23,.07)}
+.cart-panel h3{display:flex;align-items:center;gap:9px;margin-bottom:14px;color:var(--terra-ink)}
+.cart-empty{color:var(--muted);font-style:italic;padding:8px 0}
+.cart-line{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--cream-3)}
+.cart-line .nm{flex:1;font-weight:600;font-size:.96rem}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--hairline);border-radius:999px;overflow:hidden}
+.qty button{width:38px;height:38px;border:0;background:var(--cream-2);font-size:1.2rem;cursor:pointer;color:var(--ink);font-weight:700}
+.qty button:hover{background:var(--cream-3)}
+.qty span{min-width:30px;text-align:center;font-weight:700}
+.cart-line .lp{width:64px;text-align:right;font-weight:700;color:var(--terra-ink);font-size:.95rem}
+.cart-tot{display:flex;justify-content:space-between;align-items:baseline;margin:14px 0;font-size:1.1rem}
+.cart-tot b{font-family:var(--font-display);font-size:1.5rem;color:var(--terra-ink)}
+.slot-row{margin:14px 0}
+.slot-row label{display:block;font-weight:600;margin-bottom:7px}
+select,input[type=text],input[type=tel],input[type=date],input[type=time],input[type=email],input[type=number],textarea{
+  width:100%;font-family:var(--font-body);font-size:1rem;padding:12px 14px;border:1.5px solid var(--hairline);border-radius:12px;background:#fff;color:var(--ink);min-height:48px
+}
+textarea{min-height:90px;resize:vertical}
+.closed-note{background:var(--cream-3);border:1px dashed var(--terra);color:var(--terra-ink);border-radius:12px;padding:12px 14px;font-weight:600;font-size:.94rem;display:flex;gap:10px;align-items:flex-start}
+
+/* ---- four signature ---- */
+.signature .wrap{display:grid;gap:26px;align-items:center}
+.signature img{width:100%;height:auto;border-radius:20px;box-shadow:0 18px 40px rgba(0,0,0,.2);aspect-ratio:800/600;object-fit:cover}
+.feat-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:14px}
+.feat-list li{display:flex;gap:12px;align-items:flex-start}
+.feat-list svg{flex:none;margin-top:2px}
+.feat-list b{display:block;color:#fff}
+.feat-list span{color:#E9E7D3;font-size:.95rem}
+@media(min-width:820px){.signature .wrap{grid-template-columns:1fr 1fr}.signature .fig{order:2}}
+
+/* ---- résa ---- */
+.resa-grid{display:grid;gap:22px}
+@media(min-width:820px){.resa-grid{grid-template-columns:1.1fr 1fr;align-items:start}}
+.terrasse{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 6px 20px rgba(142,55,23,.06)}
+.terr-badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.terr-badges .b{display:inline-flex;align-items:center;gap:7px;background:var(--cream-2);border:1px solid var(--hairline);border-radius:999px;padding:7px 13px;font-weight:600;font-size:.88rem;color:var(--olive-deep)}
+.form-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 6px 20px rgba(142,55,23,.06)}
+.field{margin-bottom:14px}
+.field label{display:block;font-weight:600;margin-bottom:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.two>*{min-width:0}
+.msg{margin-top:12px;border-radius:12px;padding:12px 14px;font-weight:600;display:none}
+.msg.show{display:block}
+.msg.ok{background:#EAF1E4;color:var(--olive-deep);border:1px solid #B9CBA4}
+
+/* ---- avis ---- */
+.reviews-grid{display:grid;gap:16px}
+@media(min-width:720px){.reviews-grid{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 2px 10px rgba(142,55,23,.04)}
+.review .stars{font-size:.95rem;display:block;margin-bottom:8px}
+.review p{font-style:italic;color:var(--ink);margin:0 0 10px}
+.review .who{font-size:.85rem;color:var(--muted);font-weight:600}
+.rate-summary{text-align:center;margin-bottom:26px}
+.rate-summary .big{font-family:var(--font-display);font-size:3rem;color:var(--terra-ink);font-weight:900;line-height:1}
+.rate-summary .src{color:var(--muted);font-size:.9rem}
+
+/* ---- accès ---- */
+.access-grid{display:grid;gap:20px}
+@media(min-width:820px){.access-grid{grid-template-columns:1fr 1fr}}
+.info-list{list-style:none;padding:0;margin:0;display:grid;gap:16px}
+.info-list li{display:flex;gap:13px;align-items:flex-start}
+.info-list svg{flex:none;margin-top:3px;color:var(--terra)}
+.info-list a{font-weight:600}
+.hours-tbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.hours-tbl td{padding:11px 14px;border-bottom:1px solid var(--cream-3);font-size:.95rem}
+.hours-tbl tr:last-child td{border-bottom:0}
+.hours-tbl td:last-child{text-align:right;font-weight:600}
+.hours-tbl tr.today{background:var(--cream-2)}
+.hours-tbl .cl{color:var(--terra-deep)}
+.tourist{background:var(--cream-2);border:1px solid var(--hairline);border-radius:16px;padding:18px;margin-top:18px;display:flex;gap:13px;align-items:flex-start}
+.tourist svg{flex:none;color:var(--olive)}
+
+/* ---- footer ---- */
+footer.ft{background:var(--ink);color:var(--cream-2);padding:40px 0 30px;margin-top:10px}
+footer.ft a{color:var(--cream-2)}
+.ft-grid{display:grid;gap:24px}
+@media(min-width:720px){.ft-grid{grid-template-columns:1.3fr 1fr 1fr}}
+.ft h3{color:#fff;font-size:1.05rem;margin-bottom:12px}
+.ft .brand b{color:#fff}
+.ft p,.ft li{color:#D8C9B6;font-size:.93rem}
+.ft ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.ft .nap-tel{font-family:var(--font-display);font-size:1.3rem;color:#fff;text-decoration:none;font-weight:600}
+
+/* ---- legal ---- */
+.legal{
+  position:fixed;left:0;right:0;bottom:0;z-index:120;
+  background:var(--ink);color:#E9DCCB;border-top:2px solid var(--terra);
+  font-size:.74rem;line-height:1.4;text-align:center;padding:9px 14px;
+}
+
+/* ---- modal démo ---- */
+.modal{position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(58,42,30,.6)}
+.modal.show{display:flex}
+.modal-card{background:var(--cream);border-radius:20px;max-width:440px;width:100%;padding:28px 24px;text-align:center;box-shadow:0 30px 70px rgba(0,0,0,.3);border:1px solid var(--line)}
+.modal-card .ico{width:64px;height:64px;margin:0 auto 14px;background:var(--cream-2);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.modal-card h3{color:var(--terra-ink);font-size:1.5rem}
+.modal-card p{color:var(--muted)}
+.modal-card .recap{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-align:left;font-size:.92rem;margin:14px 0}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Passaggio — accueil">
+      <svg class="logo" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="#C5552D"/>
+        <circle cx="20" cy="20" r="13.5" fill="none" stroke="#FBF4E9" stroke-width="1.6" stroke-dasharray="2.5 3.2"/>
+        <circle cx="16" cy="15" r="2.1" fill="#FBF4E9"/>
+        <circle cx="25" cy="17" r="2.1" fill="#6E7344"/>
+        <circle cx="18" cy="25" r="2.1" fill="#6E7344"/>
+        <circle cx="26" cy="25" r="2.1" fill="#FBF4E9"/>
+      </svg>
+      <b>Passaggio</b>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#commander">Commander</a>
+      <a href="#reserver">Réserver</a>
+      <a href="#four">Le four</a>
+      <a href="#avis">Avis</a>
+      <a href="#acces">Accès</a>
+    </nav>
+    <a class="btn btn-pri cart-link" href="#commander" aria-label="Voir mon panier">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.2L21 7H6"/></svg>
+      <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="hero-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">🔥 Pizzeria au feu de bois · Baccarat</span>
+      <h1 id="hero-title">La pizzeria <em>n°1</em> de Baccarat</h1>
+      <p class="lead">Four à bois au cœur de la salle, plus de 30 pizzas et deux terrasses ensoleillées. La vraie Italie, à deux pas du musée du Cristal.</p>
+      <div class="rating" aria-label="Note 4,6 sur 5 sur Google pour 864 avis">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span>4,6/5 · <strong>864 avis Google</strong></span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-pri" href="#commander">Commander à emporter</a>
+        <a class="btn btn-sec" href="#reserver">Réserver une table</a>
+        <a class="btn btn-ghost" href="tel:+33383755996" aria-label="Appeler le 03 83 75 59 96">Appeler</a>
+      </div>
+    </div>
+    <figure class="hero-fig">
+      <img src="img/hero-margherita.webp" width="1000" height="670" fetchpriority="high" decoding="async"
+        alt="Pizza margherita dorée garnie de basilic frais et de tomates, posée sur un plan de travail fariné sombre">
+      <figcaption class="tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v3M5 6l1.5 1.5M19 6l-1.5 1.5M12 22c4-3 6-6 6-9a6 6 0 0 0-12 0c0 3 2 6 6 9Z"/></svg> Cuite au feu de bois</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ COMMANDER (WOW : tunnel emporter) ============ -->
+<section id="commander" aria-labelledby="cmd-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Commande à emporter</span>
+      <h2 id="cmd-title">Notre carte de pizzas</h2>
+      <p>Plus de 30 pizzas cuites au feu de bois. Composez votre commande, choisissez votre créneau de retrait — c'est prêt à votre arrivée.</p>
+    </div>
+
+    <div class="cat-tabs" role="tablist" aria-label="Catégories de pizzas">
+      <button class="cat-tab" role="tab" aria-selected="true" data-cat="classiques" id="tab-classiques">Classiques</button>
+      <button class="cat-tab" role="tab" aria-selected="false" data-cat="specialites" id="tab-specialites">Spécialités</button>
+      <button class="cat-tab" role="tab" aria-selected="false" data-cat="blanches" id="tab-blanches">Blanches</button>
+    </div>
+
+    <!-- [À REMPLACER] Carte, descriptions et prix factices — à remplacer par la carte réelle de Passaggio. -->
+    <div class="menu-grid" id="menu" aria-live="polite"></div>
+
+    <!-- ===== panier ===== -->
+    <div class="cart-panel" id="cart">
+      <h3>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.2L21 7H6"/></svg>
+        Votre panier
+      </h3>
+      <div id="cart-lines"></div>
+      <div class="cart-tot"><span>Total</span><b id="cart-total">0,00 €</b></div>
+
+      <div class="slot-row">
+        <label for="slot">Créneau de retrait</label>
+        <select id="slot" aria-describedby="slot-hint"></select>
+        <p id="slot-hint" style="font-size:.85rem;color:var(--muted);margin:.5em 0 0">Préparation maîtrisée au feu de bois — créneaux toutes les 15 minutes.</p>
+      </div>
+
+      <button class="btn btn-pri btn-block" id="checkout" type="button">Valider ma commande</button>
+      <p style="font-size:.82rem;color:var(--muted);text-align:center;margin:.8em 0 0">Paiement CB ou au retrait — simulation de démonstration.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RÉSERVER (2 terrasses) ============ -->
+<section id="reserver" class="alt" aria-labelledby="resa-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Sur place</span>
+      <h2 id="resa-title">Réservez votre table</h2>
+      <p>Au coin du four ou en terrasse au soleil — dites-nous ce que vous préférez.</p>
+    </div>
+    <div class="resa-grid">
+      <div class="terrasse">
+        <h3 style="color:var(--terra-ink)">Deux terrasses ensoleillées ☀️</h3>
+        <p style="color:var(--muted)">Aux beaux jours, profitez de nos <strong>deux terrasses</strong> pour déjeuner ou dîner au grand air. À l'intérieur, les tables près du four à bois offrent l'ambiance et la chaleur d'une vraie pizzeria italienne.</p>
+        <div class="terr-badges">
+          <span class="b"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg> 2 terrasses</span>
+          <span class="b"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg> Tables au four</span>
+          <span class="b"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Z"/><circle cx="12" cy="9" r="2.5"/></svg> Centre de Baccarat</span>
+        </div>
+      </div>
+
+      <form class="form-card" id="resa-form" novalidate>
+        <h3 style="color:var(--terra-ink);margin-bottom:14px">Demande de réservation</h3>
+        <div class="two">
+          <div class="field">
+            <label for="r-date">Date</label>
+            <input type="date" id="r-date" required>
+          </div>
+          <div class="field">
+            <label for="r-time">Heure</label>
+            <input type="time" id="r-time" value="19:30" required>
+          </div>
+        </div>
+        <div class="two">
+          <div class="field">
+            <label for="r-people">Convives</label>
+            <select id="r-people" required>
+              <option value="2">2 personnes</option>
+              <option value="3">3 personnes</option>
+              <option value="4">4 personnes</option>
+              <option value="5">5 personnes</option>
+              <option value="6">6 personnes</option>
+              <option value="8">7 et plus</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="r-place">Préférence</label>
+            <select id="r-place">
+              <option>Terrasse</option>
+              <option>Près du four</option>
+              <option>Indifférent</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="r-name">Votre nom</label>
+          <input type="text" id="r-name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="r-tel">Téléphone</label>
+          <input type="tel" id="r-tel" autocomplete="tel" required>
+        </div>
+        <button class="btn btn-olive btn-block" type="submit">Envoyer ma demande</button>
+        <div class="msg ok" id="resa-msg" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LE FOUR CENTRAL (signature) ============ -->
+<section id="four" class="signature olive-band" aria-labelledby="four-title">
+  <div class="wrap">
+    <figure class="fig" style="margin:0">
+      <img src="img/four.webp" width="800" height="600" loading="lazy" decoding="async"
+        alt="Pizzaïolo enfournant une pizza à la pelle dans un four à briques">
+    </figure>
+    <div>
+      <span class="kicker" style="color:var(--cream-2);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem">La signature Passaggio</span>
+      <h2 id="four-title">Un four à bois au cœur de la salle</h2>
+      <!-- [À REMPLACER] Texte d'illustration sur le four et la cuisson — à remplacer par l'histoire réelle de la maison. -->
+      <p style="color:#EFEAD8">Chez Passaggio, le four à bois n'est pas caché en cuisine : il trône au centre de la salle. On y voit la flamme danser, la pâte gonfler et les pizzas dorer en moins de 90 secondes. C'est tout le spectacle d'une vraie pizzeria italienne, sous vos yeux.</p>
+      <ul class="feat-list">
+        <li>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E89A3C" stroke-width="2" aria-hidden="true"><path d="M12 2c3 3 4 6 4 9a4 4 0 0 1-8 0c0-1 .5-2 1-3"/><path d="M12 22a6 6 0 0 0 6-6c0-2-1-4-2-5"/></svg>
+          <div><b>Cuisson au feu de bois</b><span>La saveur authentique d'une braise vive, jamais d'électrique.</span></div>
+        </li>
+        <li>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E89A3C" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><b>Pâte fermentée longuement</b><span>Légère, digeste, croustillante sur les bords.</span></div>
+        </li>
+        <li>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E89A3C" stroke-width="2" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <div><b>Produits choisis</b><span>Tomates, mozzarella et basilic frais à chaque service.</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVIS ============ -->
+<section id="avis" aria-labelledby="avis-title">
+  <div class="wrap">
+    <div class="rate-summary">
+      <span class="kicker" style="color:var(--olive);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem">Ils ont goûté</span>
+      <div class="big">4,6<span style="font-size:1.4rem;color:var(--sun)"> ★</span></div>
+      <div class="src">sur 864 avis Google</div>
+    </div>
+    <h2 id="avis-title" class="sr-only">Avis de nos clients</h2>
+    <!-- [À REMPLACER] Extraits d'avis illustratifs (≤ 15 mots) — à remplacer par de vrais avis Google avec accord. -->
+    <div class="reviews-grid">
+      <div class="review">
+        <span class="stars" aria-label="5 sur 5">★★★★★</span>
+        <p>« La meilleure pizza du secteur, cuite au feu de bois. »</p>
+        <span class="who">Avis Google</span>
+      </div>
+      <div class="review">
+        <span class="stars" aria-label="5 sur 5">★★★★★</span>
+        <p>« Terrasse agréable, accueil souriant, on revient. »</p>
+        <span class="who">Avis Google</span>
+      </div>
+      <div class="review">
+        <span class="stars" aria-label="4 sur 5">★★★★☆</span>
+        <p>« Pâte légère et bien garnie, rapport qualité-prix top. »</p>
+        <span class="who">Avis Google</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACCÈS ============ -->
+<section id="acces" class="alt" aria-labelledby="acces-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Nous trouver</span>
+      <h2 id="acces-title">Accès & horaires</h2>
+    </div>
+    <div class="access-grid">
+      <div>
+        <ul class="info-list">
+          <li>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <span>23 rue de la Division Leclerc, 54120 Baccarat<br>
+              <a href="https://www.google.com/maps/search/?api=1&query=Passaggio+23+rue+de+la+Division+Leclerc+54120+Baccarat" target="_blank" rel="noopener">Itinéraire Google Maps</a></span>
+          </li>
+          <li>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+            <span><a href="tel:+33383755996">03 83 75 59 96</a></span>
+          </li>
+          <li>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            <span>Sur place &amp; à emporter</span>
+          </li>
+        </ul>
+
+        <div class="tourist">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <div><strong>À deux pas du musée du Cristal de Baccarat.</strong><br><span style="color:var(--muted)">L'étape gourmande idéale après votre visite — accueil des groupes et touristes.</span></div>
+        </div>
+      </div>
+
+      <div>
+        <table class="hours-tbl" id="hours" aria-label="Horaires d'ouverture">
+          <tbody>
+            <tr data-d="1"><td>Lundi</td><td class="cl">Fermé</td></tr>
+            <tr data-d="2"><td>Mardi</td><td class="cl">Fermé</td></tr>
+            <tr data-d="3"><td>Mercredi</td><td>12h–14h · 18h30–22h</td></tr>
+            <tr data-d="4"><td>Jeudi</td><td>12h–14h · 18h30–22h</td></tr>
+            <tr data-d="5"><td>Vendredi</td><td>12h–14h · 18h30–22h</td></tr>
+            <tr data-d="6"><td>Samedi</td><td>12h–14h · 18h30–22h</td></tr>
+            <tr data-d="0"><td>Dimanche</td><td>12h–14h</td></tr>
+          </tbody>
+        </table>
+        <figure style="margin:18px 0 0">
+          <img src="img/pizza-board.webp" width="800" height="600" loading="lazy" decoding="async"
+            alt="Pizza partagée sur une planche en bois avec petites sauces, vue de dessus"
+            style="border-radius:16px;aspect-ratio:800/600;object-fit:cover">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap ft-grid">
+    <div>
+      <a class="brand" href="#top" style="margin-bottom:12px"><b style="font-family:var(--font-display);font-size:1.5rem;font-weight:900">Passaggio</b></a>
+      <p>Pizzeria au feu de bois au centre de Baccarat. Sur place et à emporter, deux terrasses ensoleillées.</p>
+      <a class="nap-tel" href="tel:+33383755996">03 83 75 59 96</a>
+    </div>
+    <div class="ft">
+      <h3>Adresse</h3>
+      <ul>
+        <li>23 rue de la Division Leclerc</li>
+        <li>54120 Baccarat</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Passaggio+23+rue+de+la+Division+Leclerc+54120+Baccarat" target="_blank" rel="noopener">Voir sur Google Maps</a></li>
+      </ul>
+    </div>
+    <div class="ft">
+      <h3>Horaires</h3>
+      <ul>
+        <li>Mer–Sam : 12h–14h / 18h30–22h</li>
+        <li>Dimanche : 12h–14h</li>
+        <li>Lundi &amp; mardi : fermé</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<aside class="legal" id="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</aside>
+
+<!-- ===== modal démo ===== -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-body">
+  <div class="modal-card">
+    <div class="ico">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C5552D" stroke-width="2" aria-hidden="true"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+    </div>
+    <h3 id="modal-title">Ceci est une démonstration</h3>
+    <div id="modal-body">
+      <p>En production, cette commande serait transmise à la pizzeria avec paiement CB en ligne ou au retrait.</p>
+      <div class="recap" id="modal-recap"></div>
+    </div>
+    <button class="btn btn-pri btn-block" type="button" id="modal-close">J'ai compris</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  /* ---------- carte (factice) ---------- */
+  /* [À REMPLACER] Données carte/prix factices — remplacer par la carte réelle. */
+  var MENU={
+    classiques:[
+      {id:"margherita",n:"Margherita",d:"Sauce tomate, mozzarella, basilic frais",p:9.50,v:true},
+      {id:"reine",n:"Reine",d:"Tomate, mozzarella, jambon, champignons",p:11.50},
+      {id:"napolitaine",n:"Napolitaine",d:"Tomate, mozzarella, anchois, câpres, olives",p:11.90},
+      {id:"calzone",n:"Calzone",d:"Chausson tomate, mozzarella, jambon, œuf",p:12.50},
+      {id:"diavola",n:"Diavola",d:"Tomate, mozzarella, chorizo piquant, oignons",p:12.90},
+      {id:"vegetariana",n:"Vegetariana",d:"Tomate, mozzarella, légumes grillés du marché",p:12.50,v:true}
+    ],
+    specialites:[
+      {id:"passaggio",n:"La Passaggio",d:"Crème, mozzarella, speck, roquette, parmesan",p:14.50},
+      {id:"capricciosa",n:"Capricciosa",d:"Tomate, mozzarella, jambon, artichauts, champignons, olives",p:13.90},
+      {id:"campagnarde",n:"Campagnarde",d:"Tomate, mozzarella, lardons, pommes de terre, reblochon",p:14.20},
+      {id:"calabrese",n:"Calabrese",d:"Tomate, mozzarella, 'nduja, burrata, miel",p:14.90},
+      {id:"toscana",n:"Toscana",d:"Tomate, mozzarella, saucisse italienne, friarielli",p:13.90}
+    ],
+    blanches:[
+      {id:"bianca",n:"Bianca",d:"Crème, mozzarella, parmesan, origan",p:10.90,v:true},
+      {id:"quattro",n:"Quattro Formaggi",d:"Crème, mozzarella, gorgonzola, chèvre, parmesan",p:13.50,v:true},
+      {id:"savoyarde",n:"Savoyarde",d:"Crème, mozzarella, lardons, oignons, raclette",p:13.90},
+      {id:"truffe",n:"Tartufo",d:"Crème, mozzarella, champignons, crème de truffe",p:15.50,v:true}
+    ]
+  };
+  var KEY="passaggio_cart_v1";
+  var cart=load();
+
+  function load(){try{return JSON.parse(localStorage.getItem(KEY))||{};}catch(e){return {};}}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(cart));}catch(e){}}
+  function findDish(id){for(var c in MENU){for(var i=0;i<MENU[c].length;i++){if(MENU[c][i].id===id)return MENU[c][i];}}return null;}
+  function euro(n){return n.toFixed(2).replace(".",",")+" €";}
+
+  /* ---------- rendu carte ---------- */
+  var menuEl=document.getElementById("menu");
+  function renderMenu(cat){
+    var list=MENU[cat]||[],html="";
+    for(var i=0;i<list.length;i++){var d=list[i];
+      html+='<article class="dish"><div class="dish-info"><h3>'+d.n+'</h3><p>'+d.d+'</p>'+(d.v?'<span class="veg">Végétarienne</span>':'')+'</div>'+
+        '<div class="dish-right"><span class="price">'+euro(d.p)+'</span>'+
+        '<button class="add" type="button" data-add="'+d.id+'" aria-label="Ajouter '+d.n+' au panier">+</button></div></article>';
+    }
+    menuEl.innerHTML=html;
+  }
+  var tabs=document.querySelectorAll(".cat-tab");
+  for(var t=0;t<tabs.length;t++){
+    tabs[t].addEventListener("click",function(){
+      for(var k=0;k<tabs.length;k++)tabs[k].setAttribute("aria-selected","false");
+      this.setAttribute("aria-selected","true");
+      renderMenu(this.getAttribute("data-cat"));
+    });
+  }
+  renderMenu("classiques");
+
+  /* ---------- panier ---------- */
+  var linesEl=document.getElementById("cart-lines"),
+      totalEl=document.getElementById("cart-total"),
+      countEl=document.getElementById("cart-count");
+  function totals(){var n=0,s=0;for(var id in cart){n+=cart[id];var d=findDish(id);if(d)s+=d.p*cart[id];}return {n:n,s:s};}
+  function renderCart(){
+    var html="",ids=Object.keys(cart);
+    if(!ids.length){html='<p class="cart-empty">Votre panier est vide — ajoutez vos pizzas préférées.</p>';}
+    else{for(var i=0;i<ids.length;i++){var id=ids[i],d=findDish(id);if(!d)continue;
+      html+='<div class="cart-line"><span class="nm">'+d.n+'</span>'+
+        '<span class="qty"><button type="button" data-dec="'+id+'" aria-label="Retirer un '+d.n+'">−</button>'+
+        '<span aria-label="quantité">'+cart[id]+'</span>'+
+        '<button type="button" data-inc="'+id+'" aria-label="Ajouter un '+d.n+'">+</button></span>'+
+        '<span class="lp">'+euro(d.p*cart[id])+'</span></div>';
+    }}
+    linesEl.innerHTML=html;
+    var tt=totals();totalEl.textContent=euro(tt.s);countEl.textContent=tt.n;
+  }
+  document.addEventListener("click",function(e){
+    var b=e.target.closest&&e.target.closest("[data-add],[data-inc],[data-dec]");if(!b)return;
+    var id=b.getAttribute("data-add")||b.getAttribute("data-inc")||b.getAttribute("data-dec");
+    if(b.hasAttribute("data-dec")){cart[id]=(cart[id]||0)-1;if(cart[id]<=0)delete cart[id];}
+    else{cart[id]=(cart[id]||0)+1;}
+    save();renderCart();
+  });
+  renderCart();
+
+  /* ---------- créneaux (horaires réels du jour) ---------- */
+  /* mer-sam 12-14 / 18h30-22 ; dim 12-14 ; lun-mar fermé */
+  var slotEl=document.getElementById("slot");
+  function ranges(day){
+    if(day===1||day===2)return [];               // lun, mar fermé
+    if(day===0)return [[12,0,14,0]];             // dim midi
+    return [[12,0,14,0],[18,30,22,0]];           // mer-sam
+  }
+  function buildSlots(){
+    var now=new Date(),day=now.getDay(),rs=ranges(day),html="",any=false;
+    var nowMin=now.getHours()*60+now.getMinutes()+20; // +20 min de préparation
+    for(var r=0;r<rs.length;r++){
+      var start=rs[r][0]*60+rs[r][1],end=rs[r][2]*60+rs[r][3];
+      for(var m=start;m<=end-15;m+=15){
+        if(m<nowMin)continue;
+        any=true;
+        var hh=Math.floor(m/60),mm=m%60;
+        var lab=("0"+hh).slice(-2)+"h"+("0"+mm).slice(-2);
+        html+='<option value="'+lab+'">Aujourd\'hui à '+lab+'</option>';
+      }
+    }
+    if(!any){
+      // jour fermé ou service terminé : proposer le prochain créneau "indicatif"
+      slotEl.innerHTML='<option value="prochain">Prochain service disponible</option>';
+      var note=document.createElement("div");note.className="closed-note";
+      note.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Aucun créneau aujourd\'hui (fermé lundi-mardi, ou service terminé). Votre commande sera proposée au prochain service.</span>';
+      slotEl.parentNode.insertBefore(note,slotEl.nextSibling);
+    }else{
+      slotEl.innerHTML=html;
+    }
+  }
+  buildSlots();
+
+  /* ---------- modal ---------- */
+  var modal=document.getElementById("modal"),
+      modalRecap=document.getElementById("modal-recap"),
+      modalClose=document.getElementById("modal-close"),
+      lastFocus=null;
+  function openModal(recapHtml){
+    modalRecap.innerHTML=recapHtml;
+    lastFocus=document.activeElement;
+    modal.classList.add("show");
+    modalClose.focus();
+    document.addEventListener("keydown",escClose);
+  }
+  function closeModal(){
+    modal.classList.remove("show");
+    document.removeEventListener("keydown",escClose);
+    if(lastFocus)lastFocus.focus();
+  }
+  function escClose(e){if(e.key==="Escape")closeModal();}
+  modalClose.addEventListener("click",closeModal);
+  modal.addEventListener("click",function(e){if(e.target===modal)closeModal();});
+
+  /* ---------- checkout ---------- */
+  document.getElementById("checkout").addEventListener("click",function(){
+    var tt=totals();
+    if(!tt.n){
+      openModal('<strong>Votre panier est vide.</strong><br>Ajoutez au moins une pizza pour passer commande.');
+      return;
+    }
+    var slot=slotEl.options[slotEl.selectedIndex].text;
+    var recap='<strong>Récapitulatif</strong><br>'+tt.n+' pizza(s) · Retrait : '+slot+'<br>Total : <strong>'+euro(tt.s)+'</strong>';
+    openModal(recap);
+  });
+
+  /* ---------- réservation ---------- */
+  var rform=document.getElementById("resa-form"),rmsg=document.getElementById("resa-msg");
+  // date min = aujourd'hui
+  var rdate=document.getElementById("r-date");
+  var td=new Date();rdate.min=td.toISOString().slice(0,10);rdate.value=td.toISOString().slice(0,10);
+  rform.addEventListener("submit",function(e){
+    e.preventDefault();
+    if(!rform.checkValidity()){
+      rmsg.className="msg ok show";
+      rmsg.textContent="Merci de compléter la date, l'heure, votre nom et votre téléphone.";
+      return;
+    }
+    var nm=document.getElementById("r-name").value,
+        pe=document.getElementById("r-people").value,
+        dt=rdate.value,hr=document.getElementById("r-time").value;
+    rmsg.className="msg ok show";
+    rmsg.textContent="Demande enregistrée pour "+pe+" personne(s) le "+dt+" à "+hr+", au nom de "+nm+". Ceci est une démonstration : aucune réservation réelle n'est transmise.";
+    rform.reset();rdate.value=td.toISOString().slice(0,10);document.getElementById("r-time").value="19:30";
+  });
+
+  /* ---------- horaires : surligner aujourd'hui ---------- */
+  var rows=document.querySelectorAll("#hours tr[data-d]"),today=new Date().getDay();
+  for(var i=0;i<rows.length;i++){if(parseInt(rows[i].getAttribute("data-d"),10)===today)rows[i].classList.add("today");}
+})();
+</script>
+</body>
+</html>
