@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>La Maison d'Inès — Maison d'hôtes de charme à Baccarat · Piscine, jardin, 4,8★</title>
+<meta name="description" content="Maison d'hôtes de charme à Baccarat (54120) : chambres raffinées, piscine, jardin et petit-déjeuner maison. À deux pas du musée du Cristal. Réservez en direct, sans commission.">
+<meta name="theme-color" content="#F1EBDF">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Mulish:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Mulish:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Mulish:wght@300;400;500;600;700&display=swap"></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BedAndBreakfast",
+  "name": "La Maison d'Inès",
+  "description": "Maison d'hôtes de charme à Baccarat : chambres raffinées, piscine, jardin et petit-déjeuner maison. À deux pas du musée du Cristal de Baccarat, idéale pour le festival baroque et la clientèle internationale.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "47 rue de Sainte-Catherine",
+    "postalCode": "54120",
+    "addressLocality": "Baccarat",
+    "addressCountry": "FR"
+  },
+  "telephone": "+33617081069",
+  "image": "img/hero-piscine.webp",
+  "priceRange": "€€",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "74",
+    "bestRating": "5"
+  },
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Piscine", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Jardin", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Petit-déjeuner maison", "value": true}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --lin:#F1EBDF;        /* lin / écru */
+  --lin-fonce:#E7DECC;  /* séparations, fonds doux */
+  --blanc:#FBF8F1;      /* cartes */
+  --paon:#2C5A66;       /* bleu paon doux */
+  --paon-fonce:#214650; /* texte titres, hover */
+  --paon-clair:#3E6F7B;
+  --or:#C2A14D;         /* doré */
+  --or-fonce:#8A6F2A;   /* doré lisible sur clair (AA) */
+  --encre:#33403F;      /* texte courant */
+  --rad:14px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{
+  margin:0;background:var(--lin);color:var(--encre);
+  font-family:'Mulish',system-ui,sans-serif;font-weight:400;
+  font-size:1.05rem;line-height:1.65;
+  padding-bottom:86px; /* place pour le bandeau légal fixe */
+  overflow-x:clip;
+}
+h1,h2,h3{font-family:'Gilda Display',Georgia,'Times New Roman',serif;font-weight:400;color:var(--paon-fonce);line-height:1.2;margin:0 0 .5em;letter-spacing:.005em}
+h1{font-size:clamp(2rem,7vw,3.3rem)}
+h2{font-size:clamp(1.65rem,5vw,2.3rem)}
+h3{font-size:1.3rem}
+p{margin:0 0 1em}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--paon)}
+:focus-visible{outline:3px solid var(--or-fonce);outline-offset:3px;border-radius:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-999px;top:0;background:var(--paon-fonce);color:#fff;padding:.8rem 1.2rem;z-index:60}
+.skip:focus{left:0}
+
+/* ——— Filet doré (séparateur signature « demeure de caractère ») ——— */
+.rule{display:flex;align-items:center;justify-content:center;gap:.9rem;padding:.4rem 0}
+.rule::before,.rule::after{content:"";height:1px;width:min(110px,16vw);background:linear-gradient(90deg,transparent,var(--or))}
+.rule::after{background:linear-gradient(90deg,var(--or),transparent)}
+.rule svg{flex:none}
+.eyebrow{font-family:'Mulish',sans-serif;font-size:.76rem;letter-spacing:.26em;text-transform:uppercase;color:var(--or-fonce);font-weight:600;margin:0 0 .5rem}
+
+/* ——— Boutons ——— */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  min-height:48px;padding:.65rem 1.7rem;border-radius:2px;
+  background:var(--paon);color:#fff;text-decoration:none;border:0;cursor:pointer;
+  font-family:'Mulish',sans-serif;font-size:1rem;font-weight:600;letter-spacing:.04em;
+  transition:background .2s,transform .2s;
+}
+.btn:hover{background:var(--paon-fonce);transform:translateY(-1px)}
+.btn-or{background:var(--or-fonce)}
+.btn-or:hover{background:#705823}
+.btn-ghost{background:transparent;color:var(--paon-fonce);border:1.5px solid var(--paon)}
+.btn-ghost:hover{background:var(--paon);color:#fff}
+
+/* ——— En-tête ——— */
+header.site{padding:1.1rem 0 .5rem}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;min-height:44px}
+.brand .mono{flex:none;width:42px;height:42px;border:1.5px solid var(--or);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Gilda Display',serif;font-size:1.3rem;color:var(--paon-fonce)}
+.brand b{font-family:'Gilda Display',serif;font-weight:400;font-size:1.5rem;color:var(--paon-fonce);letter-spacing:.01em;line-height:1.05}
+.brand small{display:block;font-family:'Mulish',sans-serif;font-weight:600;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--or-fonce)}
+nav.menu{display:none;gap:.15rem}
+nav.menu a{display:inline-flex;align-items:center;min-height:44px;padding:0 .8rem;text-decoration:none;font-weight:500;font-size:.96rem;color:var(--encre);border-radius:4px}
+nav.menu a:hover{color:var(--paon-fonce);background:var(--lin-fonce)}
+@media (min-width:880px){nav.menu{display:flex}}
+
+/* ——— Héro ——— */
+.hero{position:relative;padding:1.4rem 0 2.8rem}
+.hero-grid{display:grid;gap:1.6rem}
+.hero-txt{max-width:36rem}
+.kicker{font-family:'Mulish',sans-serif;font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;color:var(--or-fonce);font-weight:600;margin-bottom:.9rem}
+.hero-txt .lede{font-size:1.12rem;max-width:31rem;font-weight:300}
+.stars{display:inline-flex;align-items:center;gap:.5rem;font-weight:500;color:var(--encre);margin:0 0 .2rem}
+.stars svg{flex:none}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.4rem}
+.hero-img{position:relative}
+.hero-img img{width:100%;border-radius:var(--rad);box-shadow:0 26px 54px -30px rgba(33,70,80,.55);border:1px solid rgba(194,161,77,.35)}
+.hero-img figcaption{position:absolute;left:14px;bottom:14px;background:rgba(33,64,63,.82);color:#F1EBDF;font-size:.78rem;letter-spacing:.04em;padding:.3rem .8rem;border-radius:2px;backdrop-filter:blur(2px)}
+@media (min-width:880px){
+  .hero-grid{grid-template-columns:5fr 6fr;align-items:center;gap:2.4rem}
+}
+
+/* ——— Sections ——— */
+section{padding:3rem 0;position:relative}
+.section-head{max-width:40rem}
+
+/* ——— Chambres ——— */
+.rooms{display:grid;gap:1.5rem;margin-top:1.8rem}
+.room{background:var(--blanc);border-radius:var(--rad);overflow:hidden;box-shadow:0 16px 36px -28px rgba(33,70,80,.5);border:1px solid var(--lin-fonce);display:flex;flex-direction:column}
+.room-vis{position:relative}
+.room img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.room .corner{position:absolute;top:10px;right:10px;background:var(--blanc);color:var(--or-fonce);font-weight:700;font-size:.82rem;letter-spacing:.04em;padding:.25rem .7rem;border-radius:2px;box-shadow:0 6px 14px -8px rgba(33,70,80,.5)}
+.room .in{padding:1.2rem 1.4rem 1.4rem;flex:1;display:flex;flex-direction:column}
+.room h3{margin-bottom:.15rem}
+.room .cap{color:var(--paon);font-weight:500;font-size:.94rem;margin-bottom:.7rem}
+.room .prix{font-family:'Gilda Display',serif;font-size:1.5rem;color:var(--paon-fonce);margin-top:auto}
+.room .prix small{font-family:'Mulish',sans-serif;font-size:.82rem;color:var(--encre);font-weight:400}
+@media (min-width:820px){.rooms{grid-template-columns:repeat(3,1fr)}}
+
+/* ——— Disponibilités + réservation (wow) ——— */
+#disponibilites{background:linear-gradient(180deg,var(--lin),#EBE3D2 35%,var(--lin))}
+.badge-direct{
+  display:inline-flex;align-items:center;gap:.55rem;background:var(--paon-fonce);color:#F1EBDF;
+  border:1px solid var(--or);border-radius:2px;padding:.55rem 1.3rem;font-weight:700;font-size:.96rem;letter-spacing:.05em;
+  box-shadow:0 12px 26px -16px rgba(33,70,80,.7);margin-bottom:1.2rem;
+}
+.badge-direct svg{flex:none}
+.resa-grid{display:grid;gap:1.8rem;margin-top:1.6rem}
+.resa-grid>*{min-width:0}
+@media (min-width:920px){.resa-grid{grid-template-columns:7fr 6fr;align-items:start}}
+
+.panel{background:var(--blanc);border-radius:var(--rad);box-shadow:0 16px 36px -28px rgba(33,70,80,.5);border:1px solid var(--lin-fonce)}
+.cal{padding:1.1rem 1.1rem 1.3rem}
+.cal-head{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.7rem}
+.cal-head h3{margin:0;font-size:1.25rem}
+.cal-nav{display:flex;gap:.4rem}
+.cal-nav button{
+  width:44px;height:44px;border-radius:50%;border:1.5px solid var(--paon);background:var(--blanc);
+  color:var(--paon-fonce);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;
+}
+.cal-nav button:hover:not(:disabled){background:var(--paon);color:#fff}
+.cal-nav button:disabled{opacity:.35;cursor:not-allowed}
+.cal-dows,.cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.cal-dows span{text-align:center;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--or-fonce);padding:.3rem 0;font-weight:700}
+.cal-grid button,.cal-grid .vide{
+  min-height:44px;aspect-ratio:1;border-radius:6px;border:0;display:flex;align-items:center;justify-content:center;
+  font-family:'Mulish',sans-serif;font-size:.96rem;background:transparent;
+}
+.cal-grid button{cursor:pointer;background:#E6EDEC;color:var(--encre);font-weight:500;transition:background .15s}
+.cal-grid button:hover:not(:disabled){background:var(--paon);color:#fff}
+.cal-grid button:disabled{cursor:not-allowed}
+.cal-grid button.complet{background:transparent;color:#A79C84;text-decoration:line-through}
+.cal-grid button.passe{background:transparent;color:#C8BFA9}
+.cal-grid button.sel{background:var(--paon-fonce);color:#fff;font-weight:700}
+.cal-grid button.entre{background:#BBCFCF}
+.cal-legende{display:flex;flex-wrap:wrap;gap:1rem;margin-top:.9rem;font-size:.85rem;color:var(--encre)}
+.cal-legende i{display:inline-block;width:14px;height:14px;border-radius:4px;margin-right:.35rem;vertical-align:-2px;font-style:normal}
+.cal-statut{margin:.7rem 0 0;font-size:.95rem;color:var(--paon-fonce);font-weight:600;min-height:1.4em}
+
+/* ——— Formulaire ——— */
+.fiche{padding:1.4rem 1.4rem 1.6rem}
+.fiche h3{margin-bottom:.9rem}
+.champ{margin-bottom:1rem}
+.champ label{display:block;font-weight:600;font-size:.9rem;margin-bottom:.3rem;color:var(--paon-fonce)}
+.champ input,.champ select,.champ textarea{
+  width:100%;min-height:48px;padding:.6rem .9rem;border:1.5px solid #D5C9AE;border-radius:6px;
+  background:#FFFFFF;color:var(--encre);font-family:'Mulish',sans-serif;font-size:1rem;font-weight:400;
+}
+.champ textarea{min-height:92px;resize:vertical}
+.champ input:focus,.champ select:focus,.champ textarea:focus{border-color:var(--paon);outline:none;box-shadow:0 0 0 3px rgba(44,90,102,.22)}
+.deux{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.fiche .btn{width:100%;margin-top:.3rem}
+.note-form{font-size:.85rem;color:var(--paon);margin:.8rem 0 0}
+.erreur{color:#9A3324;font-size:.92rem;font-weight:600;margin:.5rem 0 0;min-height:1.3em}
+
+/* ——— Confirmation ——— */
+.confirm{background:var(--paon-fonce);color:#F1EBDF;border-radius:var(--rad);padding:1.8rem 1.5rem;text-align:center;border:1px solid var(--or)}
+.confirm h3{color:#fff;font-size:1.55rem}
+.confirm .demo{display:inline-block;border:1px solid var(--or);color:#E6D6A8;border-radius:2px;padding:.35rem 1.1rem;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1rem;font-weight:600}
+.confirm p{color:#E4DDCF}
+.confirm .btn{background:#F1EBDF;color:var(--paon-fonce);margin-top:.6rem}
+.confirm .btn:hover{background:#fff}
+
+/* ——— Le cadre ——— */
+.cadre-grid{display:grid;gap:1.5rem;margin-top:1.8rem}
+@media (min-width:760px){.cadre-grid{grid-template-columns:1fr 1fr}}
+.cadre{background:var(--blanc);border-radius:var(--rad);overflow:hidden;box-shadow:0 16px 36px -28px rgba(33,70,80,.5);border:1px solid var(--lin-fonce)}
+.cadre img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.cadre .in{padding:1.2rem 1.4rem 1.4rem}
+.cadre h3{margin-bottom:.3rem;display:flex;align-items:center;gap:.55rem}
+.cadre h3 svg{flex:none}
+.cadre p{margin:0;font-size:.98rem}
+.cadre.large{grid-column:1/-1;display:grid;gap:0}
+@media (min-width:760px){.cadre.large{grid-template-columns:1fr 1fr;align-items:stretch}.cadre.large img{height:100%;aspect-ratio:auto}.cadre.large .in{align-self:center}}
+
+/* ——— À proximité ——— */
+#proximite{background:var(--paon-fonce);color:#E9E2D3}
+#proximite h2,#proximite h3{color:#fff}
+#proximite .eyebrow{color:var(--or)}
+#proximite .rule::before,#proximite .rule::after{background:linear-gradient(90deg,transparent,var(--or))}
+#proximite .rule::after{background:linear-gradient(90deg,var(--or),transparent)}
+.prox-grid{display:grid;gap:1.3rem;margin-top:1.8rem}
+@media (min-width:760px){.prox-grid{grid-template-columns:1fr 1fr}}
+.prox{background:rgba(241,235,223,.06);border:1px solid rgba(194,161,77,.4);border-radius:var(--rad);padding:1.3rem 1.4rem;display:flex;gap:1rem;align-items:flex-start}
+.prox svg{flex:none;margin-top:.15rem}
+.prox h3{font-size:1.2rem;margin-bottom:.25rem}
+.prox p{margin:0;font-size:.96rem;color:#DCD4C4}
+.prox .dist{display:inline-block;color:var(--or);font-weight:700;font-size:.85rem;letter-spacing:.04em;margin-top:.4rem}
+
+/* ——— Avis ——— */
+.avis-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.9rem}
+.avis-note{font-family:'Gilda Display',serif;font-size:2.6rem;color:var(--paon-fonce);line-height:1}
+.avis-grid{display:grid;gap:1.2rem;margin-top:1.6rem}
+@media (min-width:820px){.avis-grid{grid-template-columns:repeat(3,1fr)}}
+.avis-grid blockquote{
+  margin:0;background:var(--blanc);border-radius:var(--rad);padding:1.3rem 1.4rem;position:relative;
+  box-shadow:0 12px 30px -24px rgba(33,70,80,.45);border:1px solid var(--lin-fonce);
+}
+.avis-grid blockquote::before{content:"\201C";position:absolute;top:.1rem;left:.7rem;font-family:'Gilda Display',serif;font-size:3rem;color:var(--or);opacity:.45;line-height:1}
+.avis-grid blockquote p{font-family:'Gilda Display',serif;font-size:1.12rem;color:var(--paon-fonce);margin-bottom:.6rem;position:relative}
+.avis-grid .etoiles{margin-bottom:.5rem}
+.avis-grid cite{font-style:normal;font-size:.82rem;color:var(--or-fonce);font-weight:600}
+
+/* ——— Pied de page ——— */
+footer.site{background:var(--lin-fonce);color:var(--encre);padding:2.6rem 0 2.2rem;margin-top:1rem;border-top:2px solid var(--or)}
+footer.site h2{font-size:1.55rem;margin-bottom:.3rem}
+footer.site a{color:var(--paon-fonce)}
+footer.site p{margin:.2rem 0;font-size:.95rem}
+.foot-grid{display:grid;gap:1.4rem}
+@media (min-width:720px){.foot-grid{grid-template-columns:1fr 1fr;align-items:start}}
+.foot-demo{font-size:.82rem;color:#6E6552;border-top:1px solid rgba(33,70,80,.18);margin-top:1.6rem;padding-top:1rem}
+
+/* ——— Bandeau légal fixe ——— */
+.legal{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;
+  background:var(--paon-fonce);color:#EFEAE0;text-align:center;
+  font-size:.74rem;line-height:1.35;padding:.5rem .9rem;
+  box-shadow:0 -4px 14px rgba(0,0,0,.18);border-top:1px solid var(--or);
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .btn:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="site">
+  <div class="wrap topbar">
+    <a class="brand" href="#main" aria-label="La Maison d'Inès, maison d'hôtes à Baccarat — haut de page">
+      <span class="mono" aria-hidden="true">I</span>
+      <span><b>La Maison d'Inès</b><small>Maison d'hôtes · Baccarat</small></span>
+    </a>
+    <nav class="menu" aria-label="Navigation principale">
+      <a href="#chambres">Les chambres</a>
+      <a href="#disponibilites">Disponibilités</a>
+      <a href="#cadre">Le cadre</a>
+      <a href="#proximite">À proximité</a>
+      <a href="#avis">Avis</a>
+    </nav>
+    <a class="btn" href="#disponibilites">Réserver</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===== HÉRO ===== -->
+<section class="hero" aria-labelledby="titre-hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-txt">
+        <p class="kicker">Demeure de caractère · 54120 Baccarat</p>
+        <h1 id="titre-hero">Maison d'hôtes de charme à&nbsp;Baccarat</h1>
+        <p class="stars">
+          <svg width="108" height="20" viewBox="0 0 108 20" aria-hidden="true"><defs><path id="et" d="M10 1.6l2.5 5.2 5.7.8-4.1 4 1 5.6L10 14.5l-5.1 2.7 1-5.6-4.1-4 5.7-.8z"/></defs><use href="#et" fill="#C2A14D"/><use href="#et" x="22" fill="#C2A14D"/><use href="#et" x="44" fill="#C2A14D"/><use href="#et" x="66" fill="#C2A14D"/><use href="#et" x="88" fill="#C2A14D"/></svg>
+          <strong>4,8/5</strong>&nbsp;· 74 avis Google
+        </p>
+        <!-- [À REMPLACER] : texte d'accueil d'exemple, à réécrire avec les mots des hôtes -->
+        <p class="lede">Une demeure élégante au cœur de Baccarat, sa piscine et son jardin paisible. Chambres raffinées, petit-déjeuner maison, et l'art de prendre son temps — à deux pas du musée du Cristal.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#disponibilites">Voir les disponibilités</a>
+          <a class="btn btn-ghost" href="#chambres">Découvrir les chambres</a>
+        </div>
+      </div>
+      <figure class="hero-img" style="margin:0">
+        <img src="img/hero-piscine.webp" alt="Belle demeure en bois éclairée au crépuscule, sa piscine et ses transats garnis de coussins" width="1200" height="800" fetchpriority="high">
+        <figcaption>Piscine &amp; terrasse au crépuscule</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="rule" aria-hidden="true">
+  <svg width="10" height="10" viewBox="0 0 10 10"><path d="M5 0l1.4 3.6L10 5 6.4 6.4 5 10 3.6 6.4 0 5l3.6-1.4z" fill="#C2A14D"/></svg>
+</div>
+
+<!-- ===== LES CHAMBRES ===== -->
+<section id="chambres" aria-labelledby="titre-chambres">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Dormir</p>
+      <h2 id="titre-chambres">Trois chambres de caractère</h2>
+      <p>Chacune a son atmosphère, toutes le même soin du détail : linge soigné, lumière douce et le calme de la maison. Petit-déjeuner maison inclus.</p>
+    </div>
+    <!-- [À REMPLACER] : noms des chambres, capacités, équipements et prix par nuit (exemples crédibles à valider avec les hôtes) -->
+    <div class="rooms">
+      <article class="room">
+        <div class="room-vis">
+          <img src="img/chambre.webp" alt="Chambre élégante au lit capitonné crème, coussins raffinés et lampes de chevet" width="800" height="600" loading="lazy" decoding="async">
+          <span class="corner">2 pers.</span>
+        </div>
+        <div class="in">
+          <h3>Chambre Cristal</h3>
+          <p class="cap">2 personnes · lit 160 · salle de bains privée</p>
+          <p class="prix">119&nbsp;€ <small>/ nuit, petit-déjeuner inclus</small></p>
+        </div>
+      </article>
+      <article class="room">
+        <div class="room-vis">
+          <img src="img/chambre.webp" alt="Chambre raffinée aux tons crème, tête de lit capitonnée et fenêtres lumineuses" width="800" height="600" loading="lazy" decoding="async">
+          <span class="corner">2 pers.</span>
+        </div>
+        <div class="in">
+          <h3>Chambre Jardin</h3>
+          <p class="cap">2 personnes · vue jardin · salle d'eau privée</p>
+          <p class="prix">129&nbsp;€ <small>/ nuit, petit-déjeuner inclus</small></p>
+        </div>
+      </article>
+      <article class="room">
+        <div class="room-vis">
+          <img src="img/chambre.webp" alt="Suite spacieuse au lit capitonné crème et coin salon élégant" width="800" height="600" loading="lazy" decoding="async">
+          <span class="corner">2 à 3 pers.</span>
+        </div>
+        <div class="in">
+          <h3>Suite Inès</h3>
+          <p class="cap">2 à 3 personnes · coin salon · grand espace</p>
+          <p class="prix">159&nbsp;€ <small>/ nuit, petit-déjeuner inclus</small></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DISPONIBILITÉS + RÉSERVATION DIRECTE (wow-feature) ===== -->
+<section id="disponibilites" aria-labelledby="titre-dispo">
+  <div class="wrap">
+    <p class="badge-direct">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8" fill="none" stroke="#C2A14D" stroke-width="1.6"/><path d="M5.2 9.3l2.4 2.4 5-5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Réservez en direct, sans commission
+    </p>
+    <div class="section-head">
+      <h2 id="titre-dispo">Disponibilités &amp; réservation</h2>
+      <p>Choisissez vos nuits sur le calendrier, puis envoyez votre demande : les hôtes vous répondent en direct, sans intermédiaire ni commission.</p>
+    </div>
+
+    <div class="resa-grid">
+      <!-- Calendrier simulé -->
+      <div class="panel cal">
+        <div class="cal-head">
+          <h3 id="cal-mois" aria-live="polite">&nbsp;</h3>
+          <div class="cal-nav">
+            <button type="button" id="cal-prec" aria-label="Mois précédent"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M11.5 3.5L6 9l5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button type="button" id="cal-suiv" aria-label="Mois suivant"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M6.5 3.5L12 9l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </div>
+        <div class="cal-dows" aria-hidden="true">
+          <span>lun</span><span>mar</span><span>mer</span><span>jeu</span><span>ven</span><span>sam</span><span>dim</span>
+        </div>
+        <div class="cal-grid" id="cal-grid" aria-label="Calendrier des disponibilités — choisissez une date d'arrivée puis une date de départ. Flèches du clavier pour naviguer entre les jours."></div>
+        <p class="cal-legende">
+          <span><i style="background:#E6EDEC"></i>Libre</span>
+          <span><i style="background:transparent;border:1px solid #C8BFA9;text-decoration:line-through;color:#A79C84;width:auto;padding:0 4px;line-height:14px;font-size:.7rem">15</i>Complet</span>
+          <span><i style="background:#214650"></i>Vos dates</span>
+        </p>
+        <p class="cal-statut" id="cal-statut" role="status" aria-live="polite"></p>
+      </div>
+
+      <!-- Demande de réservation -->
+      <div>
+        <form class="panel fiche" id="form-resa" novalidate>
+          <h3>Demande de réservation directe</h3>
+          <div class="deux">
+            <p class="champ" style="margin-bottom:0">
+              <label for="arrivee">Arrivée</label>
+              <input type="date" id="arrivee" name="arrivee" required>
+            </p>
+            <p class="champ" style="margin-bottom:0">
+              <label for="depart">Départ</label>
+              <input type="date" id="depart" name="depart" required>
+            </p>
+          </div>
+          <p class="champ" style="margin-top:1rem">
+            <label for="personnes">Voyageurs</label>
+            <select id="personnes" name="personnes">
+              <option>1 personne</option>
+              <option selected>2 personnes</option>
+              <option>3 personnes</option>
+              <option>4 personnes</option>
+            </select>
+          </p>
+          <p class="champ">
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" name="nom" autocomplete="name" required>
+          </p>
+          <p class="champ">
+            <label for="email">Votre e-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </p>
+          <p class="champ">
+            <label for="message">Message (facultatif)</label>
+            <textarea id="message" name="message" placeholder="Une question, une chambre préférée, une arrivée tardive…"></textarea>
+          </p>
+          <p class="erreur" id="form-erreur" role="alert" aria-live="assertive"></p>
+          <button class="btn btn-or" type="submit">Envoyer ma demande</button>
+          <p class="note-form">Réponse directe des hôtes — aucune plateforme, aucune commission entre nous.</p>
+        </form>
+
+        <div aria-live="polite">
+          <div class="confirm" id="confirm" hidden>
+            <p class="demo">Ceci est une démonstration</p>
+            <h3 tabindex="-1" id="confirm-titre">Merci, votre demande est prête&nbsp;!</h3>
+            <p id="confirm-recap"></p>
+            <p>En production, elle partirait directement aux hôtes — réservation en direct, sans commission. Aucune donnée n'a été enregistrée ni transmise.</p>
+            <button class="btn" type="button" id="confirm-retour">Faire une autre demande</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="rule" aria-hidden="true">
+  <svg width="10" height="10" viewBox="0 0 10 10"><path d="M5 0l1.4 3.6L10 5 6.4 6.4 5 10 3.6 6.4 0 5l3.6-1.4z" fill="#C2A14D"/></svg>
+</div>
+
+<!-- ===== LE CADRE ===== -->
+<section id="cadre" aria-labelledby="titre-cadre">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Vivre la maison</p>
+      <h2 id="titre-cadre">Le cadre</h2>
+      <p>Une piscine pour les belles journées, un jardin où respirer, et un petit-déjeuner maison pour bien commencer.</p>
+    </div>
+    <!-- [À REMPLACER] : descriptions d'exemple du cadre (piscine, jardin, petit-déjeuner) à affiner avec les hôtes -->
+    <div class="cadre-grid">
+      <article class="cadre large">
+        <img src="img/jardin.webp" alt="Maison contemporaine en bois éclairée au crépuscule, entourée d'une pelouse et d'un jardin arboré" width="800" height="600" loading="lazy" decoding="async">
+        <div class="in">
+          <h3>
+            <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 2C7 6 6 9 6 12a5 5 0 0010 0c0-3-1-6-5-10z" fill="none" stroke="#2C5A66" stroke-width="1.7" stroke-linejoin="round"/><path d="M11 13v7" stroke="#2C5A66" stroke-width="1.7" stroke-linecap="round"/></svg>
+            Piscine &amp; jardin
+          </h3>
+          <p>La piscine et le jardin prolongent la maison : transats au soleil, coin d'ombre sous les arbres et le calme d'une demeure à l'écart de l'agitation. De quoi faire de la nuit une vraie parenthèse.</p>
+        </div>
+      </article>
+      <article class="cadre">
+        <img src="img/petit-dejeuner.webp" alt="Petit-déjeuner soigné sur table en bois : café en cafetière à piston, œufs et pain" width="800" height="600" loading="lazy" decoding="async">
+        <div class="in">
+          <h3>
+            <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M4 8h11v4a5 5 0 01-5 5H9a5 5 0 01-5-5z" fill="none" stroke="#2C5A66" stroke-width="1.7" stroke-linejoin="round"/><path d="M15 9h2.5a2 2 0 010 4H15" fill="none" stroke="#2C5A66" stroke-width="1.7"/><path d="M7 3.5c-.6.8-.6 1.7 0 2.5M11 3.5c-.6.8-.6 1.7 0 2.5" stroke="#C2A14D" stroke-width="1.6" stroke-linecap="round"/></svg>
+            Petit-déjeuner maison
+          </h3>
+          <p>Chaque matin, un petit-déjeuner soigné et fait maison : café fraîchement préparé, pains, œufs et produits du moment, servis dans la lumière du jardin.</p>
+        </div>
+      </article>
+      <article class="cadre">
+        <img src="img/chambre.webp" alt="Chambre raffinée au lit capitonné crème, ambiance douce et soignée" width="800" height="600" loading="lazy" decoding="async">
+        <div class="in">
+          <h3>
+            <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M3 14v4M3 14h16v4M3 14v-3a2 2 0 012-2h3a2 2 0 012 2v3M19 14v-3a2 2 0 00-2-2h-3" fill="none" stroke="#2C5A66" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Confort &amp; sérénité
+          </h3>
+          <p>Des chambres pensées pour le repos : literie soignée, décoration raffinée et une attention discrète des hôtes, dans l'esprit d'une vraie demeure de charme.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== À PROXIMITÉ ===== -->
+<section id="proximite" aria-labelledby="titre-prox">
+  <div class="wrap">
+    <p class="eyebrow">Aux alentours</p>
+    <h2 id="titre-prox">À proximité de la maison</h2>
+    <p style="max-width:40rem">Baccarat, capitale du cristal, et sa région : des raisons de poser ses valises, le temps d'un week-end ou d'un festival.</p>
+    <div class="rule" aria-hidden="true" style="justify-content:flex-start;margin:.6rem 0 0">
+      <svg width="10" height="10" viewBox="0 0 10 10"><path d="M5 0l1.4 3.6L10 5 6.4 6.4 5 10 3.6 6.4 0 5l3.6-1.4z" fill="#C2A14D"/></svg>
+    </div>
+    <!-- [À REMPLACER] : distances et formulations à préciser ; arguments touristiques publics -->
+    <div class="prox-grid">
+      <div class="prox">
+        <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M6 24V11l9-5 9 5v13" fill="none" stroke="#C2A14D" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 24h24" stroke="#C2A14D" stroke-width="1.8" stroke-linecap="round"/><path d="M15 6l4 5-4 5-4-5z" fill="none" stroke="#C2A14D" stroke-width="1.6" stroke-linejoin="round"/><path d="M11 24v-6h8v6" fill="none" stroke="#C2A14D" stroke-width="1.6"/></svg>
+        <div>
+          <h3>Musée du Cristal de Baccarat</h3>
+          <p>L'incontournable de la ville : la manufacture et son musée racontent deux siècles de cristal d'exception, à quelques minutes de la maison.</p>
+          <span class="dist">À quelques minutes</span>
+        </div>
+      </div>
+      <div class="prox">
+        <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M8 23V8l5-3 5 3v15" fill="none" stroke="#C2A14D" stroke-width="1.8" stroke-linejoin="round"/><path d="M18 12h4v11M22 23H6" fill="none" stroke="#C2A14D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 11v2M11 16v2M15 11v2M15 16v2" stroke="#C2A14D" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <div>
+          <h3>Festival baroque &amp; saison musicale</h3>
+          <p>La région accueille chaque année une riche programmation de musique baroque — un public d'amateurs venus de toute l'Europe.</p>
+          <span class="dist">Idéal pour le séjour festival</span>
+        </div>
+      </div>
+      <div class="prox">
+        <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M5 22c4-1 6-4 6-8 0-3-2-5-2-5s5 1 7 5c1 2 1 5 0 8" fill="none" stroke="#C2A14D" stroke-width="1.7" stroke-linejoin="round"/><path d="M5 22h20" stroke="#C2A14D" stroke-width="1.8" stroke-linecap="round"/><path d="M19 13c2 0 4 2 4 5" fill="none" stroke="#C2A14D" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <div>
+          <h3>Nature &amp; massif des Vosges</h3>
+          <p>Forêts, sentiers et villages : la maison est un point de départ paisible pour découvrir la Lorraine du Sud et les Vosges.</p>
+          <span class="dist">Au cœur de la Lorraine du Sud</span>
+        </div>
+      </div>
+      <div class="prox">
+        <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="13" r="4" fill="none" stroke="#C2A14D" stroke-width="1.8"/><path d="M15 26c-5-6-8-9-8-13a8 8 0 0116 0c0 4-3 7-8 13z" fill="none" stroke="#C2A14D" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <div>
+          <h3>Cœur de Baccarat</h3>
+          <p>Commerces, restaurants et bords de la Meurthe à pied : tout le charme d'une petite ville à taille humaine.</p>
+          <span class="dist">À pied depuis la maison</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AVIS ===== -->
+<section id="avis" aria-labelledby="titre-avis">
+  <div class="wrap">
+    <p class="eyebrow">Ils ont séjourné ici</p>
+    <div class="avis-head">
+      <h2 id="titre-avis" style="margin-bottom:0">Les avis</h2>
+      <p class="avis-note" aria-hidden="true">4,8<span style="font-size:1.2rem">/5</span></p>
+      <p style="margin:0">note moyenne sur <strong>74 avis Google</strong></p>
+    </div>
+    <!-- [À REMPLACER] : extraits illustratifs — à remplacer par de vrais extraits d'avis Google (≤ 15 mots) -->
+    <div class="avis-grid">
+      <blockquote>
+        <p class="etoiles" aria-hidden="true"><svg width="92" height="18" viewBox="0 0 92 18"><use href="#et" fill="#C2A14D"/><use href="#et" x="18" fill="#C2A14D"/><use href="#et" x="36" fill="#C2A14D"/><use href="#et" x="54" fill="#C2A14D"/><use href="#et" x="72" fill="#C2A14D"/></svg></p>
+        <p>Accueil parfait, chambres ravissantes et un petit-déjeuner délicieux.</p>
+        <cite>Avis Google — extrait d'illustration</cite>
+      </blockquote>
+      <blockquote>
+        <p class="etoiles" aria-hidden="true"><svg width="92" height="18" viewBox="0 0 92 18"><use href="#et" fill="#C2A14D"/><use href="#et" x="18" fill="#C2A14D"/><use href="#et" x="36" fill="#C2A14D"/><use href="#et" x="54" fill="#C2A14D"/><use href="#et" x="72" fill="#C2A14D"/></svg></p>
+        <p>La piscine et le jardin sont un vrai bonheur. On reviendra.</p>
+        <cite>Avis Google — extrait d'illustration</cite>
+      </blockquote>
+      <blockquote>
+        <p class="etoiles" aria-hidden="true"><svg width="92" height="18" viewBox="0 0 92 18"><use href="#et" fill="#C2A14D"/><use href="#et" x="18" fill="#C2A14D"/><use href="#et" x="36" fill="#C2A14D"/><use href="#et" x="54" fill="#C2A14D"/><use href="#et" x="72" fill="#C2A14D"/></svg></p>
+        <p>Une étape idéale pour visiter le musée du Cristal. Charmant.</p>
+        <cite>Avis Google — extrait d'illustration</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== PIED DE PAGE ===== -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2>La Maison d'Inès</h2>
+        <p>Maison d'hôtes de charme · Baccarat</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&amp;query=La+Maison+d%27In%C3%A8s+47+rue+de+Sainte-Catherine+54120+Baccarat" target="_blank" rel="noopener">47 rue de Sainte-Catherine, 54120 Baccarat</a><br>Ouvrir dans Google Maps</p>
+        <p>Téléphone : <a href="tel:+33617081069">06&nbsp;17&nbsp;08&nbsp;10&nbsp;69</a></p>
+      </div>
+      <div>
+        <p><strong style="color:var(--paon-fonce)">4,8/5</strong> — 74 avis Google</p>
+        <p><a href="#disponibilites">Voir les disponibilités</a> · <a href="#chambres">Les chambres</a> · <a href="#cadre">Le cadre</a></p>
+        <p>Réservation en direct, sans commission.</p>
+      </div>
+    </div>
+    <p class="foot-demo">Maquette de démonstration — photos d'illustration libres de droits (Unsplash/Pexels). Prix et contenus donnés à titre d'exemple.</p>
+  </div>
+</footer>
+
+<!-- Bandeau légal fixe -->
+<div class="legal" role="contentinfo">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</div>
+
+<script>
+(function(){
+  'use strict';
+  /* ===== Calendrier de disponibilités (simulation déterministe, rien n'est transmis) ===== */
+  var MOIS=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+  var JOURS=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+  var auj=new Date(); auj.setHours(0,0,0,0);
+  var offset=0, MAXM=4;                       // mois courant + 4 mois
+  var arr=null, dep=null;                     // sélection (Date)
+  var grid=document.getElementById('cal-grid');
+  var titre=document.getElementById('cal-mois');
+  var statut=document.getElementById('cal-statut');
+  var bPrec=document.getElementById('cal-prec'), bSuiv=document.getElementById('cal-suiv');
+  var inArr=document.getElementById('arrivee'), inDep=document.getElementById('depart');
+
+  function libre(d){                          // disponibilité factice mais déterministe
+    var n=d.getDate(), m=d.getMonth()+1, wd=d.getDay();
+    if((n*13+m*7)%7<2) return false;
+    if((wd===5||wd===6)&&n%3===0) return false;
+    return true;
+  }
+  function iso(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+  function lisible(d){return JOURS[d.getDay()]+' '+d.getDate()+' '+MOIS[d.getMonth()]+' '+d.getFullYear();}
+
+  function render(){
+    var base=new Date(auj.getFullYear(),auj.getMonth()+offset,1);
+    titre.textContent=MOIS[base.getMonth()].charAt(0).toUpperCase()+MOIS[base.getMonth()].slice(1)+' '+base.getFullYear();
+    bPrec.disabled=(offset===0); bSuiv.disabled=(offset===MAXM);
+    grid.innerHTML='';
+    var premier=(base.getDay()+6)%7;          // semaine commençant lundi
+    var nbj=new Date(base.getFullYear(),base.getMonth()+1,0).getDate();
+    for(var v=0;v<premier;v++){var s=document.createElement('span');s.className='vide';grid.appendChild(s);}
+    for(var j=1;j<=nbj;j++){
+      var d=new Date(base.getFullYear(),base.getMonth(),j);
+      var b=document.createElement('button');
+      b.type='button'; b.textContent=j; b.dataset.date=iso(d);
+      if(d<auj){ b.className='passe'; b.disabled=true; b.setAttribute('aria-label',lisible(d)+' — date passée'); }
+      else if(!libre(d)){ b.className='complet'; b.disabled=true; b.setAttribute('aria-label',lisible(d)+' — complet'); }
+      else{ b.setAttribute('aria-label',lisible(d)+' — libre'); b.addEventListener('click',choisir); }
+      grid.appendChild(b);
+    }
+    marquer();
+  }
+  function choisir(e){
+    var d=new Date(e.currentTarget.dataset.date+'T00:00:00');
+    if(!arr||(arr&&dep)||d<=arr){ arr=d; dep=null; inArr.value=iso(d); inDep.value='';
+      statut.textContent='Arrivée : '+lisible(d)+'. Choisissez votre date de départ.';
+    }else{ dep=d; inDep.value=iso(d);
+      var nuits=Math.round((dep-arr)/864e5);
+      statut.textContent='Du '+lisible(arr)+' au '+lisible(dep)+' — '+nuits+' nuit'+(nuits>1?'s':'')+'.';
+    }
+    marquer();
+  }
+  function marquer(){
+    var bs=grid.querySelectorAll('button');
+    for(var i=0;i<bs.length;i++){
+      var b=bs[i]; b.classList.remove('sel','entre');
+      if(!arr) continue;
+      var d=new Date(b.dataset.date+'T00:00:00');
+      if(+d===+arr||(dep&&+d===+dep)) b.classList.add('sel');
+      else if(dep&&d>arr&&d<dep&&!b.disabled) b.classList.add('entre');
+    }
+  }
+  bPrec.addEventListener('click',function(){ if(offset>0){offset--;render();} });
+  bSuiv.addEventListener('click',function(){ if(offset<MAXM){offset++;render();} });
+  grid.addEventListener('keydown',function(e){     // navigation au clavier dans la grille
+    var pas={ArrowLeft:-1,ArrowRight:1,ArrowUp:-7,ArrowDown:7}[e.key];
+    if(!pas) return;
+    var bs=Array.prototype.slice.call(grid.querySelectorAll('button:not(:disabled)'));
+    var i=bs.indexOf(document.activeElement);
+    if(i<0) return;
+    e.preventDefault();
+    var cible=bs[Math.max(0,Math.min(bs.length-1,i+(pas===1||pas===-1?pas:0)))];
+    if(pas===7||pas===-7){                          // saut d'une semaine : approche par date
+      var dActu=new Date(document.activeElement.dataset.date+'T00:00:00');
+      dActu.setDate(dActu.getDate()+(pas>0?7:-7));
+      var visee=grid.querySelector('button[data-date="'+iso(dActu)+'"]:not(:disabled)');
+      if(visee) cible=visee;
+    }
+    if(cible) cible.focus();
+  });
+  render();
+
+  /* ===== Demande de réservation directe (simulation, rien n'est transmis) ===== */
+  var form=document.getElementById('form-resa');
+  var conf=document.getElementById('confirm');
+  var recap=document.getElementById('confirm-recap');
+  var err=document.getElementById('form-erreur');
+  form.addEventListener('submit',function(e){
+    e.preventDefault(); err.textContent='';
+    if(!form.checkValidity()){ form.reportValidity(); return; }
+    var dA=new Date(inArr.value+'T00:00:00'), dD=new Date(inDep.value+'T00:00:00');
+    if(!(dD>dA)){ err.textContent='La date de départ doit suivre la date d\'arrivée.'; return; }
+    var nuits=Math.round((dD-dA)/864e5);
+    recap.textContent=document.getElementById('nom').value.trim()+' — du '+lisible(dA)+' au '+lisible(dD)+' ('+nuits+' nuit'+(nuits>1?'s':'')+', '+document.getElementById('personnes').value+').';
+    form.hidden=true; conf.hidden=false;
+    document.getElementById('confirm-titre').focus();
+  });
+  document.getElementById('confirm-retour').addEventListener('click',function(){
+    conf.hidden=true; form.hidden=false; form.reset(); arr=null; dep=null; statut.textContent=''; marquer();
+    inArr.focus();
+  });
+})();
+</script>
+</body>
+</html>
