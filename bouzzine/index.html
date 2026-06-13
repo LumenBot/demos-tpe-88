@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Bouzzine — le gros tacos à Lunéville (54300) | Commande en ligne</title>
+<meta name="description" content="Bouzzine, tacos généreux rue des Templiers à Lunéville. Composez votre tacos en ligne, viandes, sauces et suppléments au choix, retrait sur créneau. 4,4★ sur 135 avis. 09 87 14 98 18.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap"></noscript>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Restaurant",
+ "name":"Bouzzine",
+ "servesCuisine":["Tacos","Tex-Mex","Fast food"],
+ "telephone":"+33987149818",
+ "priceRange":"€",
+ "url":"https://lumenbot.github.io/demos-tpe-88/bouzzine/",
+ "address":{"@type":"PostalAddress","streetAddress":"rue des Templiers","postalCode":"54300","addressLocality":"Lunéville","addressCountry":"FR"},
+ "geo":{"@type":"GeoCoordinates","latitude":48.5917561,"longitude":6.4906973},
+ "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.4","reviewCount":"135"},
+ "openingHoursSpecification":[
+  {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"11:00","closes":"14:00"},
+  {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"17:30","closes":"22:00"},
+  {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"17:30","closes":"22:00"}
+ ],
+ "potentialAction":{"@type":"OrderAction","deliveryMethod":"http://purl.org/goodrelations/v1#DeliveryModePickUp"}
+}
+</script>
+<style>
+:root{
+ --ink:#1E1E22; --ink-2:#16161A; --fire:#F0521E; --fire-d:#C53D11;
+ --cream:#F4EFE6; --cream-2:#EAE2D3; --paper:#FBF8F2; --mut:#6E6A63; --line:#D8CFBE;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;padding-bottom:3.4rem;-webkit-text-size-adjust:100%}
+h1,h2,h3,.disp{font-family:'Archivo Black','Arial Black',Impact,system-ui,sans-serif;line-height:1.02;text-transform:uppercase;letter-spacing:.005em;font-weight:400}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+:focus-visible{outline:3px solid var(--fire);outline-offset:2px;border-radius:3px}
+.on-dark :focus-visible{outline-color:#fff}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:0;background:var(--fire);color:#fff;padding:.8rem 1.2rem;z-index:80;font-weight:700}
+.skip:focus{left:.5rem;top:.5rem}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.05rem}
+.disp-xl{font-size:clamp(2.05rem,9vw,4rem)}
+.fire{color:var(--fire)}
+
+/* ---------- Header ---------- */
+header.top{position:sticky;top:0;z-index:50;background:var(--ink);color:var(--cream);box-shadow:0 2px 0 var(--fire)}
+.top-in{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.5rem 0}
+.logo{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;min-height:44px}
+.logo .mark{width:34px;height:34px;flex:none;background:var(--fire);border-radius:9px;display:grid;place-items:center;transform:rotate(-6deg)}
+.logo .mark svg{width:22px;height:22px}
+.logo b{font-family:'Archivo Black',sans-serif;font-size:1.32rem;letter-spacing:.02em;text-transform:uppercase}
+nav.main{display:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:46px;padding:.62rem 1.15rem;border-radius:11px;font-family:'Archivo Black',sans-serif;font-weight:400;font-size:.96rem;text-transform:uppercase;text-decoration:none;letter-spacing:.02em;transition:transform .12s ease,background .15s ease}
+.btn:active{transform:translateY(1px)}
+.btn-fire{background:var(--fire);color:#fff}
+.btn-fire:hover{background:var(--fire-d)}
+.btn-dark{background:var(--ink);color:var(--cream)}
+.btn-dark:hover{background:var(--ink-2)}
+.btn-ghost{background:transparent;color:var(--cream);border:2px solid rgba(244,239,230,.45)}
+.btn-ghost:hover{border-color:var(--fire);color:#fff}
+.btn-line{background:#fff;color:var(--ink);border:2px solid var(--ink)}
+.btn-line:hover{background:var(--cream)}
+.top .btn{min-height:44px;padding:.5rem 1rem;font-size:.9rem}
+@media(min-width:760px){
+ nav.main{display:block}
+ nav.main ul{display:flex;list-style:none;gap:.15rem}
+ nav.main a{text-decoration:none;font-weight:600;font-size:.94rem;padding:.6rem .7rem;display:inline-flex;align-items:center;min-height:44px;border-radius:7px}
+ nav.main a:hover{color:var(--fire)}
+}
+
+/* ---------- Hero ---------- */
+.hero{background:var(--ink);color:var(--cream);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 80% at 80% 0,rgba(240,82,30,.28),transparent 60%);pointer-events:none}
+.hero-in{position:relative;display:grid;gap:1.35rem;padding:1.9rem 0 2.2rem}
+.eyebrow{display:inline-flex;align-items:center;gap:.45rem;align-self:start;background:var(--fire);color:#fff;font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:.74rem;letter-spacing:.14em;padding:.36rem .8rem;border-radius:999px}
+.hero h1{font-size:clamp(2.15rem,9.5vw,4.1rem)}
+.hero h1 span{display:block}
+.hero p.sub{font-size:1.06rem;max-width:33rem;color:#E7E0D3}
+.stars{display:inline-flex;align-items:center;gap:.5rem;flex-wrap:wrap;font-weight:700}
+.stars .s{color:#FFC83D;letter-spacing:.06em;font-size:1.05rem}
+.stars small{color:#C9C2B5;font-weight:500}
+.cta-row{display:flex;flex-wrap:wrap;gap:.7rem}
+.hero-fig{position:relative;border-radius:16px;overflow:hidden;border:5px solid var(--fire);box-shadow:0 20px 44px rgba(0,0,0,.45);transform:rotate(-1.2deg)}
+.hero-fig img{width:100%;aspect-ratio:1100/730;object-fit:cover}
+.hero-tag{position:absolute;left:.8rem;bottom:.8rem;background:var(--ink);color:#fff;font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:.82rem;padding:.4rem .7rem;border-radius:8px;transform:rotate(1.2deg);border:2px solid var(--fire)}
+@media(min-width:860px){
+ .hero-in{grid-template-columns:1.05fr .95fr;align-items:center;gap:2rem;padding:3rem 0 3.4rem}
+}
+
+/* marquee strip */
+.strip{background:var(--fire);color:#fff;overflow:hidden;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.strip ul{display:flex;gap:0;list-style:none;white-space:nowrap;font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:.9rem;letter-spacing:.06em;animation:slide 22s linear infinite;will-change:transform}
+.strip li{padding:.55rem 0}
+.strip li::after{content:"•";padding:0 1.1rem;color:rgba(255,255,255,.6)}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- Generic section ---------- */
+.sec{padding:2.5rem 0}
+.kick{display:inline-block;background:var(--ink);color:var(--fire);font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:.72rem;letter-spacing:.13em;padding:.32rem .7rem;border-radius:6px;margin-bottom:.7rem}
+.sec h2{font-size:clamp(1.6rem,6vw,2.5rem)}
+.sec .lead{color:var(--mut);margin:.5rem 0 0;max-width:38rem}
+
+/* ---------- WOW : composer ---------- */
+.build{background:var(--ink);color:var(--cream)}
+.build .kick{background:var(--fire);color:#fff}
+.build h2{color:#fff}
+.build .lead{color:#CFC8BB}
+.build-grid{display:grid;gap:1.1rem;margin-top:1.4rem}
+@media(min-width:880px){.build-grid{grid-template-columns:1.35fr 1fr;align-items:start}}
+.panel{background:#26262C;border:1px solid #34343C;border-radius:15px;padding:1.05rem 1.05rem 1.15rem}
+.panel + .panel{margin-top:1rem}
+.panel > legend,.panel > h3{font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:.98rem;color:#fff;letter-spacing:.02em;margin-bottom:.2rem;display:flex;align-items:center;gap:.5rem;padding:0}
+.panel .hint{font-size:.82rem;color:#A9A399;margin-bottom:.7rem}
+.opts{display:grid;gap:.5rem}
+@media(min-width:520px){.opts{grid-template-columns:1fr 1fr}}
+.opt{display:flex;align-items:center;gap:.7rem;background:var(--ink);border:2px solid #3A3A42;border-radius:11px;padding:.6rem .75rem;min-height:48px;cursor:pointer;transition:border-color .12s,background .12s}
+.opt:hover{border-color:#55555f}
+.opt input{position:absolute;opacity:0;width:0;height:0}
+.opt .box{width:24px;height:24px;flex:none;border:2px solid #5a5a64;border-radius:7px;display:grid;place-items:center;color:transparent;transition:.12s}
+.opt input[type=radio]+.box{border-radius:50%}
+.opt .box svg{width:15px;height:15px}
+.opt .txt{flex:1;font-weight:600;font-size:.95rem}
+.opt .px{font-size:.82rem;color:#9b958c;font-weight:600}
+.opt input:checked + .box{background:var(--fire);border-color:var(--fire);color:#fff}
+.opt:has(input:checked){border-color:var(--fire);background:#2c2218}
+.opt input:focus-visible + .box{outline:3px solid #fff;outline-offset:2px}
+.size-row{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.2rem}
+.size-row .opt{flex:1;min-width:120px}
+
+/* recap card */
+.recap{background:var(--cream);color:var(--ink);border-radius:15px;padding:1.05rem;position:sticky;top:4.2rem}
+.recap h3{font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:1.05rem;display:flex;align-items:center;justify-content:space-between;gap:.5rem;border-bottom:3px solid var(--fire);padding-bottom:.55rem}
+.recap .lines{list-style:none;margin:.7rem 0;display:grid;gap:.35rem;min-height:1.4em;font-size:.9rem}
+.recap .lines li{display:flex;justify-content:space-between;gap:.6rem}
+.recap .lines li span:first-child{color:var(--mut)}
+.recap .lines .empty{color:var(--mut);font-style:italic}
+.recap .tot{display:flex;justify-content:space-between;align-items:baseline;border-top:2px dashed var(--line);padding-top:.6rem;margin-top:.4rem}
+.recap .tot b{font-family:'Archivo Black',sans-serif;font-size:1.5rem}
+.field{margin:.75rem 0 0}
+.field label{display:block;font-weight:600;font-size:.86rem;margin-bottom:.3rem}
+.field select{width:100%;min-height:48px;border:2px solid var(--ink);border-radius:11px;padding:.55rem .7rem;font:inherit;background:#fff;color:var(--ink)}
+.pay-note{display:flex;gap:.55rem;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:11px;padding:.6rem .7rem;margin-top:.75rem;font-size:.85rem}
+.pay-note svg{flex:none;color:var(--fire);margin-top:1px}
+.recap .btn{width:100%;margin-top:.8rem}
+.recap .btn[disabled]{opacity:.5;cursor:not-allowed}
+
+/* ---------- Carte ---------- */
+.fam{margin-top:1.6rem}
+.fam h3{display:flex;align-items:center;gap:.55rem;font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:1.18rem;border-bottom:3px solid var(--fire);padding-bottom:.4rem;margin-bottom:.85rem}
+.fam h3 svg{color:var(--fire)}
+.menu{list-style:none;display:grid;gap:.6rem}
+@media(min-width:680px){.menu{grid-template-columns:1fr 1fr}}
+.dish{display:flex;justify-content:space-between;gap:.9rem;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:.8rem .9rem}
+.dish h4{font-weight:700;font-size:1rem}
+.dish p{font-size:.84rem;color:var(--mut);margin-top:.15rem}
+.dish .px{font-family:'Archivo Black',sans-serif;color:var(--fire);font-size:1.02rem;white-space:nowrap}
+.carte-imgs{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:1.5rem}
+.carte-imgs figure{border-radius:13px;overflow:hidden;border:3px solid var(--ink)}
+.carte-imgs img{width:100%;aspect-ratio:4/3;object-fit:cover}
+
+/* ---------- Avis ---------- */
+.avis{background:var(--cream-2)}
+.avis-head{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:1.3rem}
+.score{background:var(--ink);color:#fff;border-radius:14px;padding:.7rem 1rem;text-align:center;flex:none}
+.score b{font-family:'Archivo Black',sans-serif;font-size:2rem;display:block;line-height:1}
+.score .s{color:#FFC83D;font-size:.95rem;letter-spacing:.05em}
+.score small{color:#C9C2B5;font-size:.78rem}
+.reviews{display:grid;gap:.8rem}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.rev{background:#fff;border:1px solid var(--line);border-radius:13px;padding:1rem;border-left:5px solid var(--fire)}
+.rev .s{color:#FFC83D;font-size:.9rem;letter-spacing:.05em}
+.rev p{margin:.4rem 0 .55rem;font-weight:500}
+.rev .who{font-size:.8rem;color:var(--mut);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+
+/* ---------- Horaires / contact ---------- */
+.info{background:var(--ink);color:var(--cream)}
+.info h2{color:#fff}
+.info .kick{background:var(--fire);color:#fff}
+.info-grid{display:grid;gap:1.1rem;margin-top:1.3rem}
+@media(min-width:780px){.info-grid{grid-template-columns:1fr 1fr}}
+.card-d{background:#26262C;border:1px solid #34343C;border-radius:14px;padding:1.1rem}
+.card-d h3{font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:1.05rem;color:#fff;margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem}
+.card-d h3 svg{color:var(--fire)}
+.hours{list-style:none;display:grid;gap:.15rem;font-size:.94rem}
+.hours li{display:flex;justify-content:space-between;gap:.8rem;padding:.4rem 0;border-bottom:1px solid #34343C}
+.hours li:last-child{border-bottom:0}
+.hours .d{font-weight:600}
+.hours .h{color:#CFC8BB;text-align:right}
+.hours li.today{background:rgba(240,82,30,.16);border-radius:8px;padding:.4rem .55rem;border-bottom:0}
+.hours li.today .d{color:#fff}
+.hours li.today .h{color:#fff;font-weight:600}
+.soir-note{margin-top:.8rem;display:flex;gap:.5rem;align-items:flex-start;font-size:.86rem;background:rgba(240,82,30,.14);border:1px solid var(--fire);border-radius:10px;padding:.6rem .7rem}
+.soir-note svg{flex:none;color:var(--fire);margin-top:1px}
+.contact-list{list-style:none;display:grid;gap:.75rem}
+.contact-list a,.contact-list span{display:flex;align-items:center;gap:.65rem;text-decoration:none;min-height:44px;font-weight:600}
+.contact-list svg{flex:none;color:var(--fire)}
+.contact-list a:hover{color:var(--fire)}
+
+/* ---------- Footer ---------- */
+footer.foot{background:var(--ink-2);color:#B7B1A6;padding:1.8rem 0 1.4rem;text-align:center;border-top:3px solid var(--fire)}
+footer.foot .fl{font-family:'Archivo Black',sans-serif;color:#fff;text-transform:uppercase;font-size:1.4rem;letter-spacing:.02em}
+footer.foot p{font-size:.86rem;margin-top:.45rem}
+footer.foot a{color:#E7E0D3}
+
+/* ---------- Modal ---------- */
+.modal{position:fixed;inset:0;z-index:90;display:none;align-items:center;justify-content:center;padding:1.1rem;background:rgba(20,20,24,.72)}
+.modal.open{display:flex}
+.modal-box{background:var(--paper);color:var(--ink);max-width:30rem;width:100%;border-radius:16px;padding:1.5rem 1.3rem;text-align:center;border-top:8px solid var(--fire);box-shadow:0 24px 60px rgba(0,0,0,.4)}
+.modal-box .ico{width:62px;height:62px;margin:0 auto .8rem;background:var(--fire);border-radius:50%;display:grid;place-items:center;color:#fff}
+.modal-box h3{font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:1.4rem}
+.modal-box p{margin:.7rem 0;font-size:.95rem}
+.modal-box .demo-detail{background:var(--cream);border-radius:10px;padding:.75rem .8rem;font-size:.85rem;text-align:left;margin:.8rem 0}
+.modal-box .demo-detail strong{display:block;margin-bottom:.2rem}
+
+/* ---------- Legal banner ---------- */
+.legal{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(22,22,26,.96);color:#CFC8BB;font-size:.7rem;line-height:1.32;padding:.42rem .8rem;text-align:center;border-top:2px solid var(--fire);backdrop-filter:saturate(140%) blur(2px)}
+.legal b{color:#fff;font-weight:600}
+
+@media(prefers-reduced-motion:reduce){
+ *{animation:none!important;scroll-behavior:auto!important;transition:none!important}
+ .hero-fig{transform:none}.hero-tag{transform:none}.logo .mark{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="top">
+ <div class="wrap top-in">
+  <a class="logo" href="#top" aria-label="Bouzzine — accueil">
+   <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13a9 9 0 0 1 18 0"/><path d="M2 13h20"/><path d="M6 16l1.5 3M12 16l0 3M18 16l-1.5 3"/></svg></span>
+   <b>Bouzzine</b>
+  </a>
+  <nav class="main" aria-label="Navigation principale">
+   <ul>
+    <li><a href="#composer">Composer</a></li>
+    <li><a href="#carte">Carte</a></li>
+    <li><a href="#avis">Avis</a></li>
+    <li><a href="#infos">Horaires</a></li>
+   </ul>
+  </nav>
+  <a class="btn btn-fire" href="#composer">Commander</a>
+ </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+ <div class="wrap hero-in">
+  <div>
+   <span class="eyebrow">Street food · Lunéville</span>
+   <h1><span>Le gros tacos</span> <span class="fire">de Lunéville</span></h1>
+   <p class="sub">Galette pliée, viande généreuse, sauces qui claquent. Le tacos qui cale, préparé minute rue des Templiers.</p>
+   <p class="stars"><span class="s" aria-hidden="true">★★★★☆</span> 4,4<small> / 5 · 135 avis Google</small></p>
+   <div class="cta-row">
+    <a class="btn btn-fire" href="#composer">Composer mon tacos</a>
+    <a class="btn btn-ghost" href="tel:+33987149818">Appeler</a>
+   </div>
+  </div>
+  <figure class="hero-fig">
+   <img src="img/hero-tacos.webp" width="1100" height="730" fetchpriority="high" alt="Tacos de rue garnis de viande, coriandre et oignon, vue de dessus">
+   <figcaption class="hero-tag">Préparé minute</figcaption>
+  </figure>
+ </div>
+</section>
+
+<div class="strip" aria-hidden="true">
+ <ul>
+  <li>Composez votre tacos</li><li>Viandes au choix</li><li>Sauces maison</li><li>Suppléments gourmands</li><li>Retrait sur créneau</li><li>Menus enfants</li>
+  <li>Composez votre tacos</li><li>Viandes au choix</li><li>Sauces maison</li><li>Suppléments gourmands</li><li>Retrait sur créneau</li><li>Menus enfants</li>
+ </ul>
+</div>
+
+<!-- ====== WOW : COMPOSEUR DE TACOS ====== -->
+<section class="sec build on-dark" id="composer">
+ <div class="wrap">
+  <span class="kick">Commande en ligne</span>
+  <h2>Composez votre tacos</h2>
+  <p class="lead">Choisissez la taille, la ou les viandes, vos sauces et vos suppléments. Le récap se met à jour en direct — retrait sur place, paiement au retrait.</p>
+
+  <form class="build-grid" id="builder" novalidate>
+   <div>
+    <fieldset class="panel">
+     <legend>1 · La taille</legend>
+     <p class="hint">Plus c'est grand, plus ça cale.</p>
+     <div class="opts size-row" role="radiogroup" aria-label="Taille du tacos">
+      <label class="opt"><input type="radio" name="size" value="M|1 viande|7.50" data-price="7.50" checked><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">M · 1 viande</span><span class="px">7,50&nbsp;€</span></label>
+      <label class="opt"><input type="radio" name="size" value="L|2 viandes|9.50" data-price="9.50"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">L · 2 viandes</span><span class="px">9,50&nbsp;€</span></label>
+      <label class="opt"><input type="radio" name="size" value="XL|3 viandes|11.50" data-price="11.50"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">XL · 3 viandes</span><span class="px">11,50&nbsp;€</span></label>
+     </div>
+    </fieldset>
+
+    <fieldset class="panel">
+     <legend>2 · Les viandes</legend>
+     <p class="hint">Sélectionnez selon votre taille (compris dans le prix).</p>
+     <div class="opts" id="meats">
+      <label class="opt"><input type="checkbox" name="meat" value="Cordon bleu"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Cordon bleu</span></label>
+      <label class="opt"><input type="checkbox" name="meat" value="Steak haché"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Steak haché</span></label>
+      <label class="opt"><input type="checkbox" name="meat" value="Escalope de poulet"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Escalope poulet</span></label>
+      <label class="opt"><input type="checkbox" name="meat" value="Kebab"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Kebab</span></label>
+      <label class="opt"><input type="checkbox" name="meat" value="Merguez"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Merguez</span></label>
+      <label class="opt"><input type="checkbox" name="meat" value="Nuggets"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Nuggets</span></label>
+     </div>
+    </fieldset>
+
+    <fieldset class="panel">
+     <legend>3 · Les sauces</legend>
+     <p class="hint">2 sauces offertes, les suivantes à 0,50 €.</p>
+     <div class="opts" id="sauces">
+      <label class="opt"><input type="checkbox" name="sauce" value="Algérienne"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Algérienne</span></label>
+      <label class="opt"><input type="checkbox" name="sauce" value="Blanche"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Blanche</span></label>
+      <label class="opt"><input type="checkbox" name="sauce" value="Samouraï"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Samouraï</span></label>
+      <label class="opt"><input type="checkbox" name="sauce" value="Barbecue"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Barbecue</span></label>
+      <label class="opt"><input type="checkbox" name="sauce" value="Andalouse"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Andalouse</span></label>
+      <label class="opt"><input type="checkbox" name="sauce" value="Harissa"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Harissa</span></label>
+     </div>
+    </fieldset>
+
+    <fieldset class="panel">
+     <legend>4 · Les suppléments</legend>
+     <p class="hint">Pour ceux qui n'ont vraiment pas peur.</p>
+     <div class="opts" id="extras">
+      <label class="opt"><input type="checkbox" name="extra" value="Frites dedans|1.00" data-price="1.00"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Frites dedans</span><span class="px">+1,00&nbsp;€</span></label>
+      <label class="opt"><input type="checkbox" name="extra" value="Cheddar|1.00" data-price="1.00"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Cheddar fondu</span><span class="px">+1,00&nbsp;€</span></label>
+      <label class="opt"><input type="checkbox" name="extra" value="Galette extra|1.50" data-price="1.50"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Galette extra</span><span class="px">+1,50&nbsp;€</span></label>
+      <label class="opt"><input type="checkbox" name="extra" value="Boisson 33cl|1.50" data-price="1.50"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="txt">Boisson 33 cl</span><span class="px">+1,50&nbsp;€</span></label>
+     </div>
+    </fieldset>
+   </div>
+
+   <aside class="recap" aria-label="Récapitulatif de la commande">
+    <h3>Mon tacos <span class="fire" id="tacoCount" aria-hidden="true"></span></h3>
+    <ul class="lines" id="recapLines" aria-live="polite">
+     <li class="empty">Commencez à composer ci-contre.</li>
+    </ul>
+    <div class="tot"><span>Total</span><b id="total">7,50&nbsp;€</b></div>
+
+    <div class="field">
+     <label for="slot">Créneau de retrait</label>
+     <select id="slot" name="slot"></select>
+    </div>
+
+    <div class="pay-note">
+     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+     <span><b>Paiement au retrait</b> — espèces ou carte sur place. Rien à régler en ligne.</span>
+    </div>
+
+    <button type="submit" class="btn btn-fire" id="orderBtn">Valider ma commande</button>
+   </aside>
+  </form>
+ </div>
+</section>
+
+<!-- ====== CARTE ====== -->
+<section class="sec" id="carte">
+ <div class="wrap">
+  <span class="kick">La carte</span>
+  <h2>Tacos, menus &amp; à&nbsp;côté</h2>
+  <p class="lead">Tout est préparé minute. Les prix ci-dessous sont donnés à titre indicatif.</p>
+  <!-- [À REMPLACER] — tarifs et intitulés réels Bouzzine à confirmer avec le gérant -->
+
+  <div class="fam">
+   <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13a9 9 0 0 1 18 0"/><path d="M2 13h20"/></svg> Les tacos</h3>
+   <ul class="menu">
+    <li class="dish"><div><h4>Tacos M · 1 viande</h4><p>Galette, viande, sauces, frites, à composer</p></div><span class="px">7,50&nbsp;€</span></li>
+    <li class="dish"><div><h4>Tacos L · 2 viandes</h4><p>Le classique généreux qui cale</p></div><span class="px">9,50&nbsp;€</span></li>
+    <li class="dish"><div><h4>Tacos XL · 3 viandes</h4><p>Pour les grosses faims</p></div><span class="px">11,50&nbsp;€</span></li>
+    <li class="dish"><div><h4>Tacos Géant · 4 viandes</h4><p>Le défi maison à partager (ou pas)</p></div><span class="px">14,50&nbsp;€</span></li>
+   </ul>
+  </div>
+
+  <div class="fam">
+   <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V6a3 3 0 0 1 6 0v5"/><path d="M5 11h14l-1 9H6z"/></svg> Menus enfants</h3>
+   <ul class="menu">
+    <li class="dish"><div><h4>Menu P'tit Bouzz</h4><p>Tacos junior 1 viande + frites + compote</p></div><span class="px">6,90&nbsp;€</span></li>
+    <li class="dish"><div><h4>Menu Nuggets</h4><p>4 nuggets + frites + boisson + surprise</p></div><span class="px">6,90&nbsp;€</span></li>
+   </ul>
+  </div>
+
+  <div class="fam">
+   <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v8a4 4 0 0 0 8 0V3"/><path d="M10 11v10"/></svg> Accompagnements &amp; boissons</h3>
+   <ul class="menu">
+    <li class="dish"><div><h4>Frites maison</h4><p>Portion généreuse, fraîches</p></div><span class="px">3,00&nbsp;€</span></li>
+    <li class="dish"><div><h4>Potatoes</h4><p>Pommes de terre épicées</p></div><span class="px">3,50&nbsp;€</span></li>
+    <li class="dish"><div><h4>Mozzarella sticks (x6)</h4><p>Panés, cœur fondant</p></div><span class="px">4,50&nbsp;€</span></li>
+    <li class="dish"><div><h4>Boisson 33 cl</h4><p>Sodas &amp; eaux au choix</p></div><span class="px">1,50&nbsp;€</span></li>
+   </ul>
+  </div>
+
+  <div class="carte-imgs">
+   <figure><img src="img/tacos-citron.webp" width="800" height="600" loading="lazy" alt="Tacos garnis avec quartiers de citron vert sur un fond de carrelage coloré"></figure>
+   <figure><img src="img/tacos-assiette.webp" width="800" height="600" loading="lazy" alt="Assiette de trois tacos posée sur une table bleue"></figure>
+  </div>
+ </div>
+</section>
+
+<!-- ====== AVIS ====== -->
+<section class="sec avis" id="avis">
+ <div class="wrap">
+  <span class="kick">Ils ont goûté</span>
+  <h2>Avis des clients</h2>
+  <div class="avis-head" style="margin-top:1.1rem">
+   <div class="score">
+    <b>4,4</b>
+    <span class="s" aria-hidden="true">★★★★☆</span>
+    <small>135 avis Google</small>
+   </div>
+   <p class="lead" style="margin:0">Une note solide bâtie sur la générosité des portions et la propreté des lieux.</p>
+  </div>
+  <!-- [À REMPLACER] — extraits d'avis illustratifs (≤ 15 mots). Remplacer par de vrais avis Google avec accord. -->
+  <div class="reviews">
+   <article class="rev"><span class="s" aria-hidden="true">★★★★★</span><p>« Tacos vraiment généreux, on ressort calé. »</p><span class="who">Avis Google</span></article>
+   <article class="rev"><span class="s" aria-hidden="true">★★★★☆</span><p>« Bon rapport qualité-prix et endroit propre. »</p><span class="who">Avis Google</span></article>
+   <article class="rev"><span class="s" aria-hidden="true">★★★★★</span><p>« Sauces au top, viande bien cuite, service rapide. »</p><span class="who">Avis Google</span></article>
+  </div>
+ </div>
+</section>
+
+<!-- ====== HORAIRES / CONTACT ====== -->
+<section class="sec info" id="infos">
+ <div class="wrap">
+  <span class="kick">Infos pratiques</span>
+  <h2>Horaires &amp; accès</h2>
+  <div class="info-grid">
+   <div class="card-d">
+    <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Horaires d'ouverture</h3>
+    <ul class="hours" id="hoursList">
+     <li data-day="1"><span class="d">Lundi</span><span class="h">11 h–14 h · 17 h 30–22 h</span></li>
+     <li data-day="2"><span class="d">Mardi</span><span class="h">11 h–14 h · 17 h 30–22 h</span></li>
+     <li data-day="3"><span class="d">Mercredi</span><span class="h">11 h–14 h · 17 h 30–22 h</span></li>
+     <li data-day="4"><span class="d">Jeudi</span><span class="h">11 h–14 h · 17 h 30–22 h</span></li>
+     <li data-day="5"><span class="d">Vendredi</span><span class="h">11 h–14 h · 17 h 30–22 h</span></li>
+     <li data-day="6"><span class="d">Samedi</span><span class="h">17 h 30–22 h <em>(soir)</em></span></li>
+     <li data-day="0"><span class="d">Dimanche</span><span class="h">17 h 30–22 h <em>(soir)</em></span></li>
+    </ul>
+    <p class="soir-note">
+     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+     <span><b>Week-end : le soir uniquement.</b> Samedi et dimanche, ouvert seulement de 17 h 30 à 22 h — pas de service le midi.</span>
+    </p>
+   </div>
+   <div class="card-d">
+    <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Nous trouver</h3>
+    <ul class="contact-list">
+     <li><a href="https://www.google.com/maps/search/?api=1&query=Bouzzine+rue+des+Templiers+54300+Lun%C3%A9ville" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      rue des Templiers, 54300 Lunéville</a></li>
+     <li><a href="tel:+33987149818">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      09 87 14 98 18</a></li>
+     <li><span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      Service midi en semaine · soir 7 j/7</span></li>
+    </ul>
+    <div style="margin-top:1rem"><a class="btn btn-fire" href="#composer">Composer mon tacos</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="foot">
+ <div class="wrap">
+  <div class="fl">Bouzzine</div>
+  <p>rue des Templiers, 54300 Lunéville · <a href="tel:+33987149818">09 87 14 98 18</a></p>
+  <p>Tacos · Menus enfants · Sur place &amp; à emporter — 4,4★ sur 135 avis Google</p>
+ </div>
+</footer>
+
+<!-- Modal démo -->
+<div class="modal" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="demoTitle" aria-describedby="demoDesc">
+ <div class="modal-box">
+  <div class="ico" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+  <h3 id="demoTitle">Ceci est une démonstration</h3>
+  <p id="demoDesc">Votre commande n'a pas été transmise : ce site est une maquette de présentation.</p>
+  <div class="demo-detail" id="demoRecap"></div>
+  <p style="font-size:.84rem;color:var(--mut)">En production : commande envoyée à la boutique, créneau confirmé par SMS, paiement au retrait (espèces ou carte).</p>
+  <button class="btn btn-dark" id="closeModal" style="width:100%">J'ai compris</button>
+ </div>
+</div>
+
+<div class="legal" role="contentinfo">
+ Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.
+</div>
+
+<script>
+(function(){
+ "use strict";
+ var KEY="bouzzine_taco_v1";
+ var form=document.getElementById("builder");
+ if(!form) return;
+ var euro=function(n){return n.toFixed(2).replace(".",",")+" €";};
+
+ function readState(){
+  var size=form.querySelector('input[name=size]:checked');
+  var meats=[].map.call(form.querySelectorAll('input[name=meat]:checked'),function(i){return i.value;});
+  var sauces=[].map.call(form.querySelectorAll('input[name=sauce]:checked'),function(i){return i.value;});
+  var extras=[].map.call(form.querySelectorAll('input[name=extra]:checked'),function(i){return {label:i.value.split("|")[0],price:parseFloat(i.dataset.price)};});
+  return {size:size,meats:meats,sauces:sauces,extras:extras};
+ }
+
+ function compute(s){
+  var base=s.size?parseFloat(s.size.dataset.price):0;
+  var t=base;
+  // sauces : 2 offertes puis 0,50 €
+  var extraSauces=Math.max(0,s.sauces.length-2);
+  t+=extraSauces*0.5;
+  s.extras.forEach(function(e){t+=e.price;});
+  return t;
+ }
+
+ function render(){
+  var s=readState();
+  var lines=document.getElementById("recapLines");
+  var html="";
+  if(s.size){
+   var parts=s.size.value.split("|");
+   html+="<li><span>Tacos "+parts[0]+"</span><span>"+euro(parseFloat(s.size.dataset.price))+"</span></li>";
+  }
+  if(s.meats.length) html+="<li><span>Viandes</span><span>"+s.meats.join(", ")+"</span></li>";
+  if(s.sauces.length){
+   var supp=Math.max(0,s.sauces.length-2);
+   html+="<li><span>Sauces</span><span>"+s.sauces.join(", ")+(supp?" (+"+euro(supp*0.5)+")":"")+"</span></li>";
+  }
+  s.extras.forEach(function(e){html+="<li><span>"+e.label+"</span><span>+"+euro(e.price)+"</span></li>";});
+  if(!html) html='<li class="empty">Commencez à composer ci-contre.</li>';
+  lines.innerHTML=html;
+  document.getElementById("total").innerHTML=euro(compute(s));
+  // compteur viandes vs taille
+  var cap=s.size?{ "M":1,"L":2,"XL":3 }[s.size.value.split("|")[0]]:1;
+  var c=document.getElementById("tacoCount");
+  c.textContent=s.meats.length+"/"+cap;
+  // persist
+  try{localStorage.setItem(KEY,JSON.stringify({
+   size:s.size?s.size.value:null,
+   meats:s.meats,sauces:s.sauces,
+   extras:s.extras.map(function(e){return e.label;}),
+   slot:document.getElementById("slot").value
+  }));}catch(e){}
+ }
+
+ form.addEventListener("change",render);
+
+ /* ----- Créneaux selon l'horaire réel du jour ----- */
+ function buildSlots(){
+  var sel=document.getElementById("slot");
+  var now=new Date();
+  var day=now.getDay(); // 0=dim
+  // segments du jour : [startMin,endMin]
+  var segs=[];
+  if(day>=1&&day<=5){ segs.push([11*60,14*60]); segs.push([17*60+30,22*60]); }
+  else { segs.push([17*60+30,22*60]); } // week-end : soir uniquement
+  var lead=20; // préparation 20 min
+  var nowMin=now.getHours()*60+now.getMinutes();
+  var slots=[];
+  segs.forEach(function(seg){
+   var start=seg[0];
+   // si on est dans le segment, partir de maintenant + lead arrondi 15 min
+   if(nowMin+lead>start && nowMin<seg[1]){
+    start=Math.ceil((nowMin+lead)/15)*15;
+   }
+   for(var m=start;m<=seg[1]-10;m+=15){
+    if(m>seg[1]) break;
+    slots.push(m);
+   }
+  });
+  sel.innerHTML="";
+  if(!slots.length){
+   var dayLabel=(day>=1&&day<=5)?"demain":"samedi/dimanche soir";
+   var o=document.createElement("option");
+   o.textContent="Fermé — prochain créneau "+dayLabel;
+   o.value="";
+   sel.appendChild(o);
+   sel.disabled=true;
+  } else {
+   sel.disabled=false;
+   slots.forEach(function(m,i){
+    var h=Math.floor(m/60),mn=m%60;
+    var o=document.createElement("option");
+    o.value=h+":"+(mn<10?"0":"")+mn;
+    o.textContent="Dès "+h+" h"+(mn?" "+(mn<10?"0":"")+mn:"")+(i===0?" (au plus tôt)":"");
+    sel.appendChild(o);
+   });
+  }
+ }
+ buildSlots();
+ document.getElementById("slot").addEventListener("change",render);
+
+ /* ----- Restaurer l'état précédent ----- */
+ try{
+  var saved=JSON.parse(localStorage.getItem(KEY)||"null");
+  if(saved){
+   if(saved.size){var sz=form.querySelector('input[name=size][value="'+saved.size+'"]');if(sz)sz.checked=true;}
+   (saved.meats||[]).forEach(function(v){var el=form.querySelector('input[name=meat][value="'+v+'"]');if(el)el.checked=true;});
+   (saved.sauces||[]).forEach(function(v){var el=form.querySelector('input[name=sauce][value="'+v+'"]');if(el)el.checked=true;});
+   (saved.extras||[]).forEach(function(v){
+    var el=[].filter.call(form.querySelectorAll('input[name=extra]'),function(i){return i.value.split("|")[0]===v;})[0];
+    if(el)el.checked=true;
+   });
+  }
+ }catch(e){}
+ render();
+
+ /* ----- Mise en avant du jour dans les horaires ----- */
+ (function(){
+  var today=new Date().getDay();
+  var li=document.querySelector('#hoursList li[data-day="'+today+'"]');
+  if(li){li.classList.add("today");li.querySelector(".d").insertAdjacentHTML("beforeend"," · aujourd'hui");}
+ })();
+
+ /* ----- Soumission → modal démo ----- */
+ var modal=document.getElementById("demoModal");
+ var lastFocus=null;
+ function openModal(){
+  var s=readState();
+  var detail="<strong>Votre tacos</strong>";
+  detail+=s.size?(" "+s.size.value.split("|")[0]):"";
+  detail+="<br>"+(s.meats.length?s.meats.join(", "):"viande à choisir");
+  if(s.sauces.length) detail+="<br>Sauces : "+s.sauces.join(", ");
+  if(s.extras.length) detail+="<br>Suppléments : "+s.extras.map(function(e){return e.label;}).join(", ");
+  var slot=document.getElementById("slot");
+  if(slot.value) detail+="<br>Retrait : "+slot.options[slot.selectedIndex].textContent;
+  detail+="<br><strong style='margin-top:.4rem'>Total "+euro(compute(s))+" — paiement au retrait</strong>";
+  document.getElementById("demoRecap").innerHTML=detail;
+  lastFocus=document.activeElement;
+  modal.classList.add("open");
+  document.getElementById("closeModal").focus();
+ }
+ function closeModal(){
+  modal.classList.remove("open");
+  if(lastFocus)lastFocus.focus();
+ }
+ form.addEventListener("submit",function(e){e.preventDefault();openModal();});
+ document.getElementById("closeModal").addEventListener("click",closeModal);
+ modal.addEventListener("click",function(e){if(e.target===modal)closeModal();});
+ document.addEventListener("keydown",function(e){if(e.key==="Escape"&&modal.classList.contains("open"))closeModal();});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#2B2733">
+<title>Emilie and Stephan — boulangerie pâtisserie primée à Lunéville</title>
+<meta name="description" content="Emilie and Stephan, boulangerie pâtisserie primée à Lunéville (54300) : macarons, quiches, pains et gâteaux d'événement. Commande en ligne et click & collect. 4,5 étoiles sur 504 avis Google.">
+
+<!-- Polices : Bodoni Moda (display chic) + Figtree (texte) — chargement NON bloquant (display=swap) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=Figtree:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=Figtree:wght@400;500;600;700&display=swap"></noscript>
+
+<!-- [À REMPLACER] Les prix, le contenu du click & collect, les exemples de gâteaux d'événement,
+     les distinctions (intitulés de coupes/concours) et les extraits d'avis ci-dessous sont des
+     exemples crédibles à confirmer avec la maison. Les NAP (nom, adresse, téléphone), les horaires
+     (mar-sam 6 h-19 h, dim 6 h-18 h, lundi fermé), la note 4,5/504 avis et la spécialité
+     « boulangerie-pâtisserie primée » sont des données réelles publiques. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Emilie and Stephan",
+  "image": "img/hero-macarons.webp",
+  "url": "./",
+  "telephone": "+33383734112",
+  "priceRange": "€€",
+  "servesCuisine": "Boulangerie, pâtisserie, macarons",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "102 rue Sainte-Anne",
+    "addressLocality": "Lunéville",
+    "postalCode": "54300",
+    "addressCountry": "FR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "504"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "06:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "06:00", "closes": "18:00" }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --blush:#EBD3D0;          /* blush poudré — fond clair signature */
+  --blush-clair:#F7EBEA;    /* blush adouci — cartes & sections */
+  --blush-fonce:#D9B3AF;    /* blush ombré — séparateurs */
+  --anthra:#2B2733;         /* anthracite — texte & aplats sombres */
+  --anthra-2:#3A3545;       /* anthracite éclairci — fonds de cartes sombres */
+  --or:#C2A14D;             /* or médaille — accents */
+  --or-fonce:#9A7E33;       /* or assombri — AA texte sur blush */
+  --blanc:#FFFDFC;
+  --gris-txt:#5B5564;       /* texte secondaire sur clair (AA sur blush-clair) */
+  --display:"Bodoni Moda","Didot",Georgia,"Times New Roman",serif;
+  --sans:"Figtree","Segoe UI",Helvetica,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--blush-clair);color:var(--anthra);
+  font:400 16px/1.65 var(--sans);
+  overflow-x:hidden;
+  /* réserve pour le bandeau légal fixe (ajustée en JS) */
+  padding-bottom:6.5rem;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.14;margin:0}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+:focus-visible{outline:3px solid var(--or-fonce);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-200vw;top:0;background:var(--anthra);color:var(--blush);padding:12px 20px;z-index:200;font-family:var(--sans);font-size:14px;font-weight:700;text-decoration:none}
+.skip:focus{left:8px;top:8px}
+.wrap{max-width:1080px;margin-inline:auto;padding-inline:clamp(18px,5vw,44px)}
+section{padding-block:clamp(52px,9vw,96px)}
+.kicker{font:700 12px/1.4 var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--or-fonce);margin:0 0 12px}
+.titre2{font-size:clamp(28px,6vw,42px);color:var(--anthra)}
+.intro{max-width:620px;margin:14px auto 0;color:var(--gris-txt)}
+.centre{text-align:center}
+.medaille-sep{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--or);margin:16px auto 0;max-width:300px}
+.medaille-sep::before,.medaille-sep::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--or))}
+.medaille-sep::after{background:linear-gradient(90deg,var(--or),transparent)}
+
+/* ── boutons ───────────────────────────── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:48px;padding:11px 26px;border:2px solid var(--anthra);border-radius:40px;background:transparent;
+  font:700 14px/1.2 var(--sans);letter-spacing:.03em;
+  color:var(--anthra);text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .12s}
+.btn:hover{background:var(--anthra);color:var(--blush)}
+.btn:active{transform:translateY(1px)}
+.btn-plein{background:var(--anthra);color:var(--blush);border-color:var(--anthra)}
+.btn-plein:hover{background:var(--anthra-2)}
+.btn-or{background:var(--or);color:var(--anthra);border-color:var(--or)}
+.btn-or:hover{background:var(--or-fonce);color:var(--blanc);border-color:var(--or-fonce)}
+.btn-fin{min-height:44px;padding:8px 18px;font-size:13px;border-width:1.5px;border-color:var(--or-fonce);color:var(--or-fonce)}
+.btn-fin:hover{background:var(--or-fonce);color:var(--blanc)}
+
+/* ── header ────────────────────────────── */
+header.haut{position:sticky;top:0;z-index:50;background:rgba(247,235,234,.96);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(194,161,77,.4)}
+.haut-ligne{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-block:9px}
+.marque{font-family:var(--display);font-size:21px;letter-spacing:.01em;text-decoration:none;display:flex;align-items:center;gap:9px;min-height:44px;color:var(--anthra)}
+.marque svg{flex:0 0 auto}
+.marque small{font:700 9px/1 var(--sans);letter-spacing:.22em;color:var(--or-fonce);text-transform:uppercase}
+.haut-actions{display:flex;align-items:center;gap:8px}
+.btn-panier{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:7px 15px;border:1.5px solid var(--anthra);border-radius:30px;background:var(--blanc);color:var(--anthra);font:700 13px/1 var(--sans);cursor:pointer;text-decoration:none}
+.btn-panier:hover{background:var(--anthra);color:var(--blush)}
+nav.ancres{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;border-top:1px solid rgba(194,161,77,.22)}
+nav.ancres::-webkit-scrollbar{display:none}
+nav.ancres ul{display:flex;gap:4px;list-style:none;margin:0;padding:5px 4px;white-space:nowrap}
+nav.ancres a{display:inline-flex;align-items:center;min-height:40px;padding:4px 13px;border-radius:20px;font:500 13px/1 var(--sans);color:var(--gris-txt);text-decoration:none}
+nav.ancres a:hover{background:var(--blush);color:var(--anthra)}
+
+/* ── hero ──────────────────────────────── */
+.hero{position:relative;background:var(--anthra);color:var(--blush);overflow:hidden}
+.hero-img-wrap{position:relative}
+.hero-img-wrap img{width:100%;height:clamp(250px,48vw,440px);object-fit:cover}
+.hero-img-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,39,51,.18) 0%,rgba(43,39,51,.35) 42%,rgba(43,39,51,.95) 100%)}
+.hero-txt{position:relative;margin-top:-96px;padding-bottom:clamp(40px,7vw,64px);z-index:2}
+.hero-note{display:inline-flex;align-items:center;gap:8px;background:rgba(194,161,77,.18);border:1px solid rgba(194,161,77,.55);color:var(--or);border-radius:30px;padding:6px 15px;font:700 13px/1 var(--sans);letter-spacing:.02em}
+.hero h1{font-size:clamp(33px,8vw,60px);color:var(--blush-clair);margin:18px 0 0;max-width:15ch}
+.hero p.accroche{font-size:clamp(16px,3.6vw,20px);color:#e3cecb;margin:16px 0 0;max-width:46ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .btn{border-color:var(--blush);color:var(--blush)}
+.hero .btn:hover{background:var(--blush);color:var(--anthra)}
+.hero .btn-or{border-color:var(--or);background:var(--or);color:var(--anthra)}
+.hero .btn-or:hover{background:var(--blanc);border-color:var(--blanc);color:var(--anthra)}
+
+/* ── bandeau distinctions sous le hero ── */
+.primee-bandeau{background:var(--anthra-2);color:var(--blush);border-top:2px solid var(--or)}
+.primee-bandeau .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;justify-content:center;padding-block:16px;font:600 14px/1.4 var(--sans);text-align:center}
+.primee-bandeau svg{vertical-align:-4px;margin-right:7px;color:var(--or)}
+
+/* ── bloc commande événementielle (WOW) ── */
+.evt{background:var(--anthra);color:var(--blush)}
+.evt .titre2,.evt h3{color:var(--blush-clair)}
+.evt .kicker{color:var(--or)}
+.evt .intro{color:#e3cecb}
+.evt-carte{background:var(--anthra-2);border:1px solid rgba(194,161,77,.35);border-radius:18px;padding:clamp(22px,4vw,38px);margin-top:32px;max-width:760px;margin-inline:auto}
+.evt-exemples{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+.chip-ex{background:rgba(194,161,77,.14);border:1px dashed rgba(194,161,77,.6);color:var(--or);border-radius:30px;padding:7px 15px;font:500 13px/1.2 var(--sans)}
+.champ{margin-bottom:18px}
+.champ label{display:block;font:700 13px/1.4 var(--sans);letter-spacing:.04em;margin-bottom:7px;color:var(--blush-clair)}
+.champ .req{color:var(--or)}
+.champ input,.champ select,.champ textarea{
+  width:100%;min-height:48px;padding:11px 14px;border-radius:10px;border:1.5px solid rgba(194,161,77,.45);
+  background:#242029;color:var(--blush-clair);font:400 16px/1.4 var(--sans)}
+.champ textarea{min-height:88px;resize:vertical}
+.champ input::placeholder,.champ textarea::placeholder{color:#9b94a3}
+.champ input:focus,.champ select:focus,.champ textarea:focus{border-color:var(--or);outline:none;box-shadow:0 0 0 3px rgba(194,161,77,.3)}
+.grille2{display:grid;gap:18px}
+@media(min-width:620px){.grille2{grid-template-columns:1fr 1fr}.grille2 .full{grid-column:1/-1}}
+.aide{font:400 13px/1.4 var(--sans);color:#bdb6c4;margin:6px 0 0}
+.evt-illu{display:grid;gap:18px;margin-top:30px;align-items:center}
+@media(min-width:680px){.evt-illu{grid-template-columns:.9fr 1.1fr}}
+.evt-illu img{border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+
+/* ── click & collect ───────────────────── */
+.cc-bandeau{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:center;background:var(--blush);border-radius:14px;padding:16px 18px;margin-top:24px;font:500 14px/1.4 var(--sans);color:var(--anthra)}
+.cc-bandeau svg{vertical-align:-3px;margin-right:6px}
+.cartes{display:grid;gap:16px;margin-top:30px;grid-template-columns:1fr}
+@media(min-width:560px){.cartes{grid-template-columns:1fr 1fr}}
+@media(min-width:880px){.cartes{grid-template-columns:1fr 1fr 1fr}}
+.produit{background:var(--blanc);border:1px solid rgba(194,161,77,.28);border-radius:16px;padding:18px;display:flex;flex-direction:column;box-shadow:0 2px 12px rgba(43,39,51,.06)}
+.produit h3{font-family:var(--sans);font-weight:700;font-size:18px;color:var(--anthra)}
+.produit .desc{font-size:14px;color:var(--gris-txt);margin:6px 0 14px;flex:1}
+.produit .bas{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.prix{font:700 19px/1 var(--sans);color:var(--or-fonce)}
+.prix small{font-weight:400;font-size:12px;color:#8a7d6b}
+.cat-titre{font-family:var(--display);font-weight:600;font-size:23px;color:var(--anthra);margin:34px 0 0;grid-column:1/-1;display:flex;align-items:center;gap:10px}
+.cat-titre svg{color:var(--or)}
+.cat-titre:first-child{margin-top:0}
+
+/* ── tiroir panier ─────────────────────── */
+.tiroir{position:fixed;inset:0;z-index:120;display:none}
+.tiroir.ouvert{display:block}
+.tiroir-fond{position:absolute;inset:0;background:rgba(43,39,51,.55)}
+.tiroir-panneau{position:absolute;top:0;right:0;bottom:0;width:min(420px,90vw);background:var(--blush-clair);box-shadow:-8px 0 30px rgba(43,39,51,.3);display:flex;flex-direction:column}
+.tiroir-haut{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid rgba(194,161,77,.32)}
+.tiroir-haut h3{font-size:25px;color:var(--anthra)}
+.x-fermer{min-width:44px;min-height:44px;border:none;background:transparent;color:var(--anthra);font-size:26px;cursor:pointer;line-height:1;border-radius:50%}
+.x-fermer:hover{background:var(--blush)}
+.tiroir-corps{flex:1;overflow-y:auto;padding:14px 20px}
+.panier-vide{color:var(--gris-txt);text-align:center;padding:40px 10px}
+#panier-lignes{list-style:none;margin:0;padding:0}
+#panier-lignes li{display:grid;grid-template-columns:1fr auto auto;gap:8px 12px;align-items:center;padding:13px 0;border-bottom:1px solid rgba(194,161,77,.22)}
+.l-nom{font-weight:700;font-size:15px}
+.l-nom small{display:block;font-weight:400;font-size:12px;color:#8a7d6b}
+.l-qte{display:inline-flex;align-items:center;gap:4px}
+.l-qte button{width:32px;height:32px;border:1.5px solid var(--anthra);background:var(--blanc);color:var(--anthra);border-radius:8px;font-size:18px;line-height:1;cursor:pointer}
+.l-qte button:hover{background:var(--anthra);color:var(--blush)}
+.l-qte span{min-width:22px;text-align:center;font-weight:700}
+.l-total{font-weight:700;color:var(--or-fonce);white-space:nowrap}
+.l-suppr{grid-column:3;justify-self:end;border:none;background:transparent;color:#9c8f7c;font-size:13px;cursor:pointer;text-decoration:underline;padding:2px 4px}
+.tiroir-bas{padding:16px 20px;border-top:1px solid rgba(194,161,77,.32);background:var(--blush)}
+.creneau-bloc{margin-bottom:14px}
+.creneau-bloc label{font:700 13px/1.4 var(--sans);display:block;margin-bottom:6px}
+.creneau-bloc select{width:100%;min-height:46px;padding:10px 12px;border-radius:10px;border:1.5px solid rgba(194,161,77,.55);background:var(--blanc);color:var(--anthra);font:400 15px/1.3 var(--sans)}
+.totaux{display:flex;justify-content:space-between;font-weight:700;font-size:19px;color:var(--anthra);margin-bottom:14px}
+.tiroir-bas .btn{width:100%}
+
+/* ── distinctions (détail) ─────────────── */
+.disti{background:var(--blush)}
+.disti-grille{display:grid;gap:16px;margin-top:30px;grid-template-columns:1fr}
+@media(min-width:680px){.disti-grille{grid-template-columns:1fr 1fr 1fr}}
+.disti-carte{background:var(--blanc);border:1px solid rgba(194,161,77,.32);border-radius:16px;padding:24px 20px;text-align:center}
+.disti-carte .ic{display:inline-flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;background:rgba(194,161,77,.16);color:var(--or-fonce);margin-bottom:12px}
+.disti-carte h3{font-family:var(--sans);font-weight:700;font-size:17px;color:var(--anthra)}
+.disti-carte p{font-size:14px;color:var(--gris-txt);margin:8px 0 0}
+
+/* ── salon / boutique ──────────────────── */
+.salon{background:var(--blush-clair)}
+.salon-grille{display:grid;gap:24px;margin-top:30px;align-items:center}
+@media(min-width:760px){.salon-grille{grid-template-columns:1.05fr .95fr}}
+.salon-grille img{border-radius:18px;box-shadow:0 6px 22px rgba(43,39,51,.14)}
+.salon-grille h3{font-size:clamp(22px,4vw,30px);color:var(--anthra);margin-bottom:10px}
+.salon-grille p{color:var(--gris-txt);margin:0 0 12px}
+
+/* ── avis ──────────────────────────────── */
+.avis-grille{display:grid;gap:16px;margin-top:30px;grid-template-columns:1fr}
+@media(min-width:680px){.avis-grille{grid-template-columns:1fr 1fr}}
+.avis{background:var(--blanc);border:1px solid rgba(194,161,77,.28);border-radius:16px;padding:20px}
+.etoiles{color:var(--or);letter-spacing:2px;font-size:16px}
+.avis p{margin:10px 0 12px;font-size:16px;color:var(--anthra)}
+.avis .qui{font:700 13px/1.3 var(--sans);color:var(--gris-txt)}
+.avis .qui small{display:block;font-weight:400;color:#9c8f7c}
+
+/* ── horaires ──────────────────────────── */
+.horaires{max-width:520px;margin:30px auto 0;background:var(--blanc);border:1px solid rgba(194,161,77,.28);border-radius:16px;overflow:hidden}
+.horaires dl{margin:0;display:grid;grid-template-columns:1fr auto}
+.horaires dt,.horaires dd{margin:0;padding:13px 20px;border-bottom:1px solid rgba(194,161,77,.18)}
+.horaires dt{font-weight:500}
+.horaires dd{text-align:right;font-weight:700;color:var(--anthra)}
+.horaires .ferme{background:#f3e4e6}
+.horaires .ferme dt,.horaires .ferme dd{color:#a3361c;font-weight:700}
+.horaires .auj dt,.horaires .auj dd{background:var(--blush)}
+.badge-auj{display:inline-block;margin-left:8px;background:var(--or);color:var(--anthra);font:700 10px/1 var(--sans);letter-spacing:.08em;padding:4px 8px;border-radius:20px;vertical-align:1px;text-transform:uppercase}
+
+/* ── footer ────────────────────────────── */
+footer.pied{background:var(--anthra);color:#d4c4c2;padding-block:clamp(44px,7vw,68px)}
+footer.pied a{color:var(--or)}
+.pied-grille{display:grid;gap:26px}
+@media(min-width:680px){.pied-grille{grid-template-columns:1.2fr 1fr 1fr}}
+.pied h3{font-family:var(--display);font-weight:600;color:var(--blush-clair);font-size:23px;margin-bottom:10px}
+.pied p{margin:0 0 6px;font-size:15px}
+.pied .tel-gros{font-family:var(--display);font-weight:600;font-size:26px;color:var(--or);text-decoration:none;display:inline-block;margin:4px 0}
+.pied ul{list-style:none;margin:0;padding:0}
+.pied li{margin-bottom:6px}
+.pied-bas{margin-top:34px;padding-top:18px;border-top:1px solid rgba(194,161,77,.25);font-size:13px;color:#b3a3a1}
+
+/* ── modale démonstration ──────────────── */
+#demo-overlay{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(43,39,51,.7)}
+#demo-overlay[hidden]{display:none}
+.demo-carte{background:var(--blush-clair);border-radius:20px;max-width:480px;width:100%;padding:clamp(26px,5vw,40px);text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.4);max-height:88vh;overflow-y:auto}
+.demo-carte .ic-medaille{color:var(--or);margin-bottom:10px}
+.demo-carte h3{font-size:30px;color:var(--anthra)}
+.demo-recap{background:var(--blanc);border:1px solid rgba(194,161,77,.35);border-radius:12px;padding:16px;margin:18px 0;text-align:left;font-size:15px;color:var(--anthra)}
+.demo-recap strong{color:var(--or-fonce)}
+.demo-carte p{color:var(--gris-txt);font-size:15px}
+
+/* ── bandeau légal fixe ────────────────── */
+#legal{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--anthra);color:#d4c4c2;
+  margin:0;padding:9px clamp(12px,4vw,28px);font:400 12px/1.45 var(--sans);text-align:center;
+  border-top:2px solid var(--or)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important;animation:none !important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="haut">
+  <div class="wrap haut-ligne">
+    <a class="marque" href="#contenu" aria-label="Emilie and Stephan, accueil">
+      <!-- icône macaron stylisé -->
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <ellipse cx="12" cy="7.5" rx="7.5" ry="3.4"/>
+        <ellipse cx="12" cy="16.5" rx="7.5" ry="3.4"/>
+        <path d="M4.5 7.5v9M19.5 7.5v9"/>
+        <path d="M5 12h14"/>
+      </svg>
+      <span>Emilie and Stephan<br><small>Lunéville · maison primée</small></span>
+    </a>
+    <div class="haut-actions">
+      <a class="btn-panier" href="#commande" id="lien-panier" aria-label="Voir le panier — 0 article">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 9.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        Panier <span id="panier-compte">(0)</span>
+      </a>
+    </div>
+  </div>
+  <nav class="ancres" aria-label="Sections de la page">
+    <div class="wrap">
+      <ul>
+        <li><a href="#evenement">Gâteaux d'événement</a></li>
+        <li><a href="#commande">Click &amp; collect</a></li>
+        <li><a href="#distinctions">Distinctions</a></li>
+        <li><a href="#salon">La boutique</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#horaires">Horaires</a></li>
+        <li><a href="#acces">Accès</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="contenu">
+
+<!-- ════════ HERO ════════ -->
+<section class="hero" aria-labelledby="hero-titre" style="padding:0">
+  <div class="hero-img-wrap">
+    <img src="img/hero-macarons.webp" width="1100" height="730" fetchpriority="high"
+         alt="Pile de macarons pastel rose, violet, vert et jaune sur un fond blush poudré">
+  </div>
+  <div class="wrap hero-txt">
+    <span class="hero-note">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.6 6.1 20.6l1.3-6.6L2.5 8.9l6.6-.7L12 2Z"/></svg>
+      4,5 ★ · 504 avis Google
+    </span>
+    <h1 id="hero-titre">Boulangerie-pâtisserie primée à Lunéville</h1>
+    <p class="accroche">Macarons, quiches, pains du jour et gâteaux d'événement — une maison récompensée, au cœur de la rue Sainte-Anne.</p>
+    <div class="hero-cta">
+      <a class="btn btn-or" href="#evenement">Commander un gâteau d'événement</a>
+      <a class="btn" href="tel:+33383734112">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5 9 4l1 4-2 1.5a12 12 0 0 0 6 6L15.5 13l4 1 .5 2.5a2 2 0 0 1-2 2.3A15.5 15.5 0 0 1 4.2 7a2 2 0 0 1 2.3-3.5Z"/></svg>
+        03 83 73 41 12
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ BANDEAU MAISON PRIMÉE ════════ -->
+<aside class="primee-bandeau" aria-label="Une maison primée">
+  <div class="wrap">
+    <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M9 14.5 7.5 22l4.5-2.6L16.5 22 15 14.5"/></svg>Maison primée — distinctions en pâtisserie</span>
+    <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 13c2-5 16-5 18 0-2 4-16 4-18 0Z"/><path d="M7 11.5 8 9M11 11l1-2.5M15 11l1-2.5"/></svg>Pains &amp; viennoiseries cuits sur place</span>
+    <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-9-9a4.5 4.5 0 0 1 9-2 4.5 4.5 0 0 1 9 2c-2 4.6-9 9-9 9Z"/></svg>504 avis · 4,5 ★ sur Google</span>
+  </div>
+</aside>
+
+<!-- ════════ WOW : COMMANDE DE GÂTEAUX & PIÈCES D'ÉVÉNEMENT ════════ -->
+<section class="evt" id="evenement" aria-labelledby="evt-titre">
+  <div class="wrap centre">
+    <p class="kicker">La signature de la maison</p>
+    <h2 class="titre2" id="evt-titre">Gâteaux &amp; pièces d'événement</h2>
+    <div class="medaille-sep" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 14.5 7.5 22l4.5-2.6L16.5 22 15 14.5"/></svg>
+    </div>
+    <p class="intro">Anniversaire, baptême, mariage ou réception : décrivez votre projet, le laboratoire vous rappelle pour affiner parfums, décor et nombre de parts.</p>
+    <div class="evt-exemples" aria-hidden="true">
+      <span class="chip-ex">Ex. gâteau d'anniversaire 12 parts</span>
+      <span class="chip-ex">Ex. pièce de baptême 30 parts</span>
+      <span class="chip-ex">Ex. wedding cake 80 parts</span>
+    </div>
+  </div>
+
+  <form class="evt-carte" id="form-evt" novalidate>
+    <div class="grille2">
+      <div class="champ">
+        <label for="evt-type">Type d'événement <span class="req" aria-hidden="true">*</span></label>
+        <select id="evt-type" name="type" required>
+          <option value="">Choisir…</option>
+          <option>Anniversaire</option>
+          <option>Baptême</option>
+          <option>Communion</option>
+          <option>Mariage</option>
+          <option>Réception / entreprise</option>
+          <option>Autre occasion</option>
+        </select>
+      </div>
+      <div class="champ">
+        <label for="evt-parts">Nombre de parts <span class="req" aria-hidden="true">*</span></label>
+        <input id="evt-parts" name="parts" type="number" inputmode="numeric" min="1" placeholder="ex. 12 parts" required>
+      </div>
+      <div class="champ">
+        <label for="evt-date">Date de retrait <span class="req" aria-hidden="true">*</span></label>
+        <input id="evt-date" name="date" type="date" required>
+      </div>
+      <div class="champ">
+        <label for="evt-heure">Heure de retrait <span class="req" aria-hidden="true">*</span></label>
+        <input id="evt-heure" name="heure" type="time" required>
+      </div>
+      <div class="champ">
+        <label for="evt-nom">Votre nom <span class="req" aria-hidden="true">*</span></label>
+        <input id="evt-nom" name="nom" type="text" autocomplete="name" placeholder="Nom et prénom" required>
+      </div>
+      <div class="champ">
+        <label for="evt-tel">Téléphone <span class="req" aria-hidden="true">*</span></label>
+        <input id="evt-tel" name="tel" type="tel" autocomplete="tel" placeholder="06 12 34 56 78" required>
+      </div>
+      <div class="champ full">
+        <label for="evt-msg">Votre message (parfums, décor, allergies…)</label>
+        <textarea id="evt-msg" name="message" placeholder="Décrivez votre gâteau idéal : parfums souhaités, thème, couleurs, allergies…"></textarea>
+        <p class="aide">Champs marqués <span aria-hidden="true">*</span> obligatoires. Démonstration : aucune donnée n'est envoyée.</p>
+      </div>
+    </div>
+    <p class="vh" id="evt-erreur" role="alert" aria-live="assertive"></p>
+    <p style="text-align:center;margin:6px 0 0"><button class="btn btn-or" type="submit">Transmettre ma demande au laboratoire</button></p>
+  </form>
+
+  <div class="wrap">
+    <div class="evt-illu">
+      <img src="img/gateau.webp" width="800" height="600" loading="lazy"
+           alt="Gâteau façon forêt-noire à étages, glaçage chocolat et cerises rouges, dressé avec soin">
+      <div>
+        <h3>Une pièce pensée pour votre table</h3>
+        <p style="color:#e3cecb">Du gâteau d'anniversaire à la pièce de mariage, chaque commande est façonnée à la demande. On part de votre occasion, du nombre de convives et de vos envies de parfums.</p>
+        <p style="color:#e3cecb">Pour les grandes pièces, prévoyez idéalement quelques jours d'avance — le laboratoire confirme la faisabilité au rappel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CLICK & COLLECT ════════ -->
+<section id="commande" aria-labelledby="cc-titre">
+  <div class="wrap">
+    <div class="centre">
+      <p class="kicker">Le quotidien</p>
+      <h2 class="titre2" id="cc-titre">Click &amp; collect du jour</h2>
+      <p class="intro">Réservez pains, viennoiseries et macarons en quelques secondes, choisissez votre créneau de retrait — et évitez la file aux heures de pointe.</p>
+    </div>
+    <div class="cc-bandeau">
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--or-fonce)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Retrait en boutique, rue Sainte-Anne</span>
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--or-fonce)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 9.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Paiement au retrait, en boutique</span>
+    </div>
+
+    <!-- [À REMPLACER] carte, produits et prix factices crédibles — à valider avec la maison -->
+    <div class="cartes" id="catalogue">
+      <h3 class="cat-titre"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="8" rx="7" ry="3"/><ellipse cx="12" cy="16" rx="7" ry="3"/><path d="M5 8v8M19 8v8M5 12h14"/></svg>Macarons &amp; douceurs</h3>
+      <!-- cartes injectées par JS -->
+      <h3 class="cat-titre" id="cat-vienn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15c1-4 5-6 8-6s7 2 8 6c-2 2-6 3-8 3s-6-1-8-3Z"/><path d="M8 13l2-2M12 12.5l2-2.5M15.5 13l2-2"/></svg>Pains &amp; viennoiseries</h3>
+    </div>
+    <p class="vh" id="panier-status" role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+<!-- ════════ DISTINCTIONS ════════ -->
+<section class="disti" id="distinctions" aria-labelledby="di-titre">
+  <div class="wrap">
+    <div class="centre">
+      <p class="kicker">Une maison reconnue</p>
+      <h2 class="titre2" id="di-titre">Les distinctions</h2>
+      <p class="intro">Le savoir-faire de la maison a été salué lors de concours et coupes professionnels. Le détail des récompenses sera précisé avec l'établissement.</p>
+    </div>
+    <!-- [À REMPLACER] intitulés et années des distinctions (coupes / concours) à confirmer avec la maison.
+         Formulation volontairement factuelle et prudente, sans affirmation invérifiable. -->
+    <div class="disti-grille">
+      <div class="disti-carte">
+        <span class="ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 14.5 7.5 22l4.5-2.6L16.5 22 15 14.5"/></svg></span>
+        <h3>Coupes &amp; concours</h3>
+        <p>Participations et distinctions en pâtisserie et boulangerie — intitulés à préciser.</p>
+      </div>
+      <div class="disti-carte">
+        <span class="ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 3 9.5 5.5M12 3l2.5 2.5"/><rect x="6" y="6" width="12" height="14" rx="2"/><path d="M9 11h6M9 14.5h6"/></svg></span>
+        <h3>Le geste maison</h3>
+        <p>Macarons, quiches et entremets travaillés sur place, à l'ancienne.</p>
+      </div>
+      <div class="disti-carte">
+        <span class="ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.6 6.1 20.6l1.3-6.6L2.5 8.9l6.6-.7L12 2Z"/></svg></span>
+        <h3>L'avis des clients</h3>
+        <p>4,5 ★ pour 504 avis Google : une fidélité construite au fil des fournées.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ SALON / BOUTIQUE ════════ -->
+<section class="salon" id="salon" aria-labelledby="sa-titre">
+  <div class="wrap">
+    <div class="centre">
+      <p class="kicker">Rue Sainte-Anne</p>
+      <h2 class="titre2" id="sa-titre">La boutique</h2>
+    </div>
+    <div class="salon-grille">
+      <img src="img/tarte.webp" width="800" height="600" loading="lazy"
+           alt="Tarte au citron meringuée dorée, dressée avec soin et entamée d'une part">
+      <div>
+        <h3>Une vitrine au 102 rue Sainte-Anne</h3>
+        <p>Poussez la porte pour découvrir la vitrine du jour : pains croustillants, viennoiseries dorées, quiches, et la fameuse ronde de macarons aux teintes pastel.</p>
+        <p>Une commande à retirer ? Un gâteau à imaginer ? L'équipe vous accueille du mardi au dimanche matin, en plein centre de Lunéville.</p>
+        <p style="margin-top:18px">
+          <a class="btn btn-fin" href="https://www.google.com/maps/search/?api=1&amp;query=Emilie+and+Stephan+102+rue+Sainte-Anne+54300+Lun%C3%A9ville" target="_blank" rel="noopener">Itinéraire Google Maps</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ AVIS ════════ -->
+<section id="avis" aria-labelledby="av-titre">
+  <div class="wrap">
+    <div class="centre">
+      <p class="kicker">Ils en parlent</p>
+      <h2 class="titre2" id="av-titre">4,5 ★ sur 504 avis Google</h2>
+      <p class="intro">Une note construite fournée après fournée. Voici quelques retours de la clientèle.</p>
+    </div>
+    <!-- [À REMPLACER] extraits d'avis illustratifs (≤ 15 mots) — remplacer par de vrais avis Google -->
+    <div class="avis-grille">
+      <div class="avis">
+        <div class="etoiles" aria-hidden="true">★★★★★</div>
+        <p>« Des macarons divins et des pains toujours parfaits. »</p>
+        <p class="qui">Cliente fidèle<small>Avis Google · illustratif</small></p>
+      </div>
+      <div class="avis">
+        <div class="etoiles" aria-hidden="true">★★★★★</div>
+        <p>« Gâteau d'anniversaire magnifique, tout le monde a adoré. »</p>
+        <p class="qui">Habitant de Lunéville<small>Avis Google · illustratif</small></p>
+      </div>
+      <div class="avis">
+        <div class="etoiles" aria-hidden="true">★★★★★</div>
+        <p>« Quiches savoureuses et accueil vraiment chaleureux. »</p>
+        <p class="qui">Client du midi<small>Avis Google · illustratif</small></p>
+      </div>
+      <div class="avis">
+        <div class="etoiles" aria-hidden="true">★★★★☆</div>
+        <p>« Viennoiseries fondantes, un vrai plaisir le dimanche. »</p>
+        <p class="qui">Cliente du dimanche<small>Avis Google · illustratif</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ HORAIRES ════════ -->
+<section class="salon" id="horaires" aria-labelledby="ho-titre">
+  <div class="wrap">
+    <div class="centre">
+      <p class="kicker">La boutique est ouverte</p>
+      <h2 class="titre2" id="ho-titre">Horaires d'ouverture</h2>
+    </div>
+    <div class="horaires" id="bloc-horaires">
+      <dl>
+        <div style="display:contents" class="ferme" data-jour="1"><dt>Lundi</dt><dd>Fermé</dd></div>
+        <div style="display:contents" data-jour="2"><dt>Mardi</dt><dd>6 h – 19 h</dd></div>
+        <div style="display:contents" data-jour="3"><dt>Mercredi</dt><dd>6 h – 19 h</dd></div>
+        <div style="display:contents" data-jour="4"><dt>Jeudi</dt><dd>6 h – 19 h</dd></div>
+        <div style="display:contents" data-jour="5"><dt>Vendredi</dt><dd>6 h – 19 h</dd></div>
+        <div style="display:contents" data-jour="6"><dt>Samedi</dt><dd>6 h – 19 h</dd></div>
+        <div style="display:contents" data-jour="0"><dt>Dimanche</dt><dd>6 h – 18 h</dd></div>
+      </dl>
+    </div>
+    <p class="centre" style="margin-top:18px;color:var(--gris-txt);font-weight:500">Fermé le lundi toute la journée.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ════════ FOOTER / NAP ════════ -->
+<footer class="pied" id="acces" aria-labelledby="pied-titre">
+  <div class="wrap">
+    <h2 class="vh" id="pied-titre">Coordonnées et accès</h2>
+    <div class="pied-grille">
+      <div>
+        <h3>Emilie and Stephan</h3>
+        <p>Boulangerie-pâtisserie primée à Lunéville. Macarons, quiches, pains, viennoiseries &amp; gâteaux d'événement.</p>
+        <a class="tel-gros" href="tel:+33383734112">03 83 73 41 12</a>
+      </div>
+      <div>
+        <h3>Nous trouver</h3>
+        <p>102 rue Sainte-Anne<br>54300 Lunéville</p>
+        <p style="margin-top:12px"><a class="btn btn-fin" href="https://www.google.com/maps/search/?api=1&amp;query=Emilie+and+Stephan+102+rue+Sainte-Anne+54300+Lun%C3%A9ville" target="_blank" rel="noopener">Itinéraire Google Maps</a></p>
+      </div>
+      <div>
+        <h3>Horaires</h3>
+        <ul>
+          <li style="color:#e3a9a9">Lundi : fermé</li>
+          <li>Mar – Sam : 6 h – 19 h</li>
+          <li>Dimanche : 6 h – 18 h</li>
+        </ul>
+      </div>
+    </div>
+    <p class="pied-bas">Emilie and Stephan · 102 rue Sainte-Anne, 54300 Lunéville · <a href="tel:+33383734112">03 83 73 41 12</a> — Maquette de démonstration.</p>
+  </div>
+</footer>
+
+<!-- ════════ TIROIR PANIER ════════ -->
+<div class="tiroir" id="tiroir" role="dialog" aria-modal="true" aria-labelledby="tiroir-titre" aria-hidden="true">
+  <div class="tiroir-fond" data-fermer></div>
+  <div class="tiroir-panneau">
+    <div class="tiroir-haut">
+      <h3 id="tiroir-titre">Votre panier</h3>
+      <button class="x-fermer" type="button" data-fermer aria-label="Fermer le panier">×</button>
+    </div>
+    <div class="tiroir-corps">
+      <p class="panier-vide" id="panier-vide">Votre panier est vide.<br>Ajoutez macarons, pains et viennoiseries depuis la carte.</p>
+      <ul id="panier-lignes"></ul>
+    </div>
+    <div class="tiroir-bas" id="panier-suite" hidden>
+      <div class="creneau-bloc">
+        <label for="creneau">Créneau de retrait</label>
+        <select id="creneau"></select>
+      </div>
+      <div class="totaux"><span>Total</span><span id="panier-total">0,00 €</span></div>
+      <button class="btn btn-or" type="button" id="valider-panier">Valider ma commande</button>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ MODALE DÉMONSTRATION ════════ -->
+<div id="demo-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="demo-titre">
+  <div class="demo-carte">
+    <svg class="ic-medaille" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M9 14.5 7.5 22l4.5-2.6L16.5 22 15 14.5"/></svg>
+    <h3 id="demo-titre">Ceci est une démonstration</h3>
+    <div class="demo-recap" id="demo-recap"></div>
+    <p>Aucune donnée n'a été transmise. En production : confirmation par le laboratoire, paiement en boutique au retrait ou par carte en ligne.</p>
+    <p style="margin-top:22px"><button class="btn btn-plein" type="button" id="demo-fermer">Fermer</button></p>
+  </div>
+</div>
+
+<!-- ════════ BANDEAU LÉGAL (texte exact, permanent) ════════ -->
+<p id="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</p>
+
+<script>
+(function(){
+"use strict";
+var $ = function(s,r){ return (r||document).querySelector(s); };
+
+/* ── Réserve sous le bandeau légal fixe ── */
+function padLegal(){
+  var l = $("#legal");
+  if (l) document.body.style.paddingBottom = (l.offsetHeight + 8) + "px";
+}
+window.addEventListener("resize", padLegal);
+padLegal();
+
+/* ── Catalogue click & collect (prix factices crédibles) ── */
+var PRODUITS = [
+  { id:"macaron",    nom:"Macaron à l'unité", desc:"Coque lisse, ganache du jour — parfums au choix.", prix:1.10, cat:"douceur" },
+  { id:"coffret12",  nom:"Coffret 12 macarons", desc:"Assortiment de parfums dans un écrin cadeau.", prix:13.50, cat:"douceur" },
+  { id:"quiche",     nom:"Quiche lorraine (part)", desc:"Pâte croustillante, appareil crémeux maison.", prix:3.80, cat:"douceur" },
+  { id:"tradition",  nom:"Baguette tradition", desc:"Façonnée à la main, cuisson du jour.", prix:1.30, cat:"pain" },
+  { id:"campagne",   nom:"Pain de campagne", desc:"Mie dense sur levain, croûte épaisse — 500 g.", prix:3.20, cat:"pain" },
+  { id:"croissant",  nom:"Croissant pur beurre", desc:"Feuilletage doré, beurre de tourage.", prix:1.30, cat:"pain" }
+];
+
+/* ── Panier : localStorage avec repli mémoire ── */
+var CLE = "emilie-stephan-panier";
+var memoire = {};
+function lirePanier(){
+  try { return JSON.parse(localStorage.getItem(CLE)) || {}; }
+  catch(e){ return memoire; }
+}
+function ecrirePanier(p){
+  memoire = p;
+  try { localStorage.setItem(CLE, JSON.stringify(p)); } catch(e){}
+}
+function eur(n){ return n.toFixed(2).replace(".", ",") + " €"; }
+function prodById(id){ for (var i=0;i<PRODUITS.length;i++){ if (PRODUITS[i].id===id) return PRODUITS[i]; } return null; }
+function annoncer(msg){ $("#panier-status").textContent = msg; }
+
+/* ── Rendu des cartes produits ── */
+(function rendreCatalogue(){
+  var cat = $("#catalogue");
+  var ancreVienn = $("#cat-vienn");
+  PRODUITS.forEach(function(prod){
+    var c = document.createElement("article");
+    c.className = "produit";
+    var h = document.createElement("h3"); h.textContent = prod.nom;
+    var d = document.createElement("p"); d.className = "desc"; d.textContent = prod.desc;
+    var bas = document.createElement("div"); bas.className = "bas";
+    var px = document.createElement("span"); px.className = "prix"; px.textContent = eur(prod.prix);
+    var btn = document.createElement("button"); btn.type = "button"; btn.className = "btn btn-fin";
+    btn.textContent = "Ajouter";
+    btn.setAttribute("aria-label", "Ajouter " + prod.nom + " au panier");
+    btn.addEventListener("click", function(){ changerQte(prod.id, 1); annoncer(prod.nom + " ajouté au panier."); });
+    bas.appendChild(px); bas.appendChild(btn);
+    c.appendChild(h); c.appendChild(d); c.appendChild(bas);
+    if (prod.cat === "pain") cat.insertBefore(c, null);
+    else cat.insertBefore(c, ancreVienn);
+  });
+})();
+
+function changerQte(id, delta){
+  var p = lirePanier();
+  var q = (p[id] || 0) + delta;
+  if (delta === -99) q = 0;
+  if (q <= 0) delete p[id]; else p[id] = q;
+  ecrirePanier(p);
+  rendrePanier();
+}
+
+function rendrePanier(){
+  var p = lirePanier(), ul = $("#panier-lignes"), ids = Object.keys(p);
+  ul.textContent = "";
+  var nb = 0, total = 0;
+  ids.forEach(function(id){
+    var prod = prodById(id); if (!prod) return;
+    var q = p[id]; nb += q; total += prod.prix * q;
+    var li = document.createElement("li");
+    var nom = document.createElement("span"); nom.className = "l-nom";
+    nom.textContent = prod.nom;
+    var su = document.createElement("small"); su.textContent = eur(prod.prix) + " l'unité";
+    nom.appendChild(su);
+    var qte = document.createElement("span"); qte.className = "l-qte";
+    var bm = document.createElement("button"); bm.type = "button"; bm.textContent = "−";
+    bm.setAttribute("aria-label", "Retirer un " + prod.nom);
+    bm.addEventListener("click", function(){ changerQte(id, -1); });
+    var nbq = document.createElement("span"); nbq.textContent = q;
+    var bp = document.createElement("button"); bp.type = "button"; bp.textContent = "+";
+    bp.setAttribute("aria-label", "Ajouter un " + prod.nom);
+    bp.addEventListener("click", function(){ changerQte(id, 1); });
+    qte.appendChild(bm); qte.appendChild(nbq); qte.appendChild(bp);
+    var tot = document.createElement("span"); tot.className = "l-total"; tot.textContent = eur(prod.prix * q);
+    var sup = document.createElement("button"); sup.type = "button"; sup.className = "l-suppr"; sup.textContent = "Supprimer";
+    sup.setAttribute("aria-label", "Supprimer " + prod.nom + " du panier");
+    sup.addEventListener("click", function(){ changerQte(id, -99); });
+    li.appendChild(nom); li.appendChild(qte); li.appendChild(tot); li.appendChild(sup);
+    ul.appendChild(li);
+  });
+  $("#panier-compte").textContent = "(" + nb + ")";
+  $("#lien-panier").setAttribute("aria-label", "Voir le panier — " + nb + " article" + (nb > 1 ? "s" : ""));
+  $("#panier-vide").hidden = nb > 0;
+  $("#panier-suite").hidden = nb === 0;
+  $("#panier-total").textContent = eur(total);
+}
+
+/* ── Créneaux de retrait (prochains jours ouvrés, lundi exclu) ── */
+(function remplirCreneaux(){
+  var sel = $("#creneau");
+  if (!sel) return;
+  var jours = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+  var heures = ["7 h 00","8 h 30","10 h 00","11 h 30","15 h 00","17 h 30"];
+  var d = new Date(); var ajout = 0; var n = 0;
+  while (n < 4 && ajout < 10){
+    ajout++;
+    var jd = new Date(d.getTime() + ajout*86400000);
+    var dow = jd.getDay();
+    if (dow === 1) continue; // lundi fermé
+    var plage = (dow === 0) ? heures.slice(0,5) : heures; // dimanche 6 h-18 h
+    var lib = jours[dow] + " " + jd.getDate() + "/" + (jd.getMonth()+1);
+    plage.forEach(function(h){
+      var o = document.createElement("option");
+      o.textContent = lib + " — " + h;
+      sel.appendChild(o);
+    });
+    n++;
+  }
+})();
+
+/* ── Tiroir panier ── */
+var tiroir = $("#tiroir");
+var dernierFocus = null;
+function ouvrirTiroir(e){
+  if (e) e.preventDefault();
+  dernierFocus = document.activeElement;
+  tiroir.classList.add("ouvert");
+  tiroir.setAttribute("aria-hidden","false");
+  $(".x-fermer", tiroir).focus();
+}
+function fermerTiroir(){
+  tiroir.classList.remove("ouvert");
+  tiroir.setAttribute("aria-hidden","true");
+  if (dernierFocus) dernierFocus.focus();
+}
+$("#lien-panier").addEventListener("click", ouvrirTiroir);
+Array.prototype.forEach.call(tiroir.querySelectorAll("[data-fermer]"), function(el){
+  el.addEventListener("click", fermerTiroir);
+});
+
+/* ── Validation du panier → modale démo ── */
+$("#valider-panier").addEventListener("click", function(){
+  var p = lirePanier(), total = 0, nb = 0, lignes = [];
+  Object.keys(p).forEach(function(id){
+    var prod = prodById(id); if (!prod) return;
+    nb += p[id]; total += prod.prix * p[id];
+    lignes.push(p[id] + " × " + prod.nom);
+  });
+  if (nb === 0) return;
+  var creneau = $("#creneau").value || "à définir";
+  var html = "<strong>Click &amp; collect</strong><br>" + lignes.join("<br>") +
+    "<br><br>Retrait : <strong>" + esc(creneau) + "</strong>" +
+    "<br>Total : <strong>" + eur(total) + "</strong> (réglé au retrait)";
+  fermerTiroir();
+  ouvrirDemo(html);
+});
+
+/* ── Formulaire gâteaux d'événement ── */
+$("#form-evt").addEventListener("submit", function(e){
+  e.preventDefault();
+  var f = e.target;
+  var champs = ["type","parts","date","heure","nom","tel"];
+  var manquant = null;
+  for (var i=0;i<champs.length;i++){
+    var el = f.elements[champs[i]];
+    if (!el.value.trim()){ manquant = el; break; }
+  }
+  var err = $("#evt-erreur");
+  if (manquant){
+    err.className = "aide"; err.style.color = "#f0d59a";
+    err.textContent = "Merci de compléter les champs obligatoires.";
+    manquant.focus();
+    return;
+  }
+  err.textContent = "";
+  var msg = f.elements.message.value.trim();
+  var html = "<strong>Demande transmise au laboratoire</strong><br>" +
+    "Événement : <strong>" + esc(f.elements.type.value) + "</strong><br>" +
+    "Nombre de parts : <strong>" + esc(f.elements.parts.value) + "</strong><br>" +
+    "Retrait : <strong>" + esc(formatDate(f.elements.date.value)) + " à " + esc(f.elements.heure.value) + "</strong><br>" +
+    "Contact : " + esc(f.elements.nom.value) + " · " + esc(f.elements.tel.value) +
+    (msg ? "<br>Message : " + esc(msg) : "");
+  ouvrirDemo(html);
+  f.reset();
+});
+function esc(s){ var d=document.createElement("div"); d.textContent=s; return d.innerHTML; }
+function formatDate(v){
+  if (!v) return "";
+  var parts = v.split("-");
+  if (parts.length !== 3) return v;
+  return parts[2] + "/" + parts[1] + "/" + parts[0];
+}
+
+/* ── Modale démonstration ── */
+var overlay = $("#demo-overlay");
+var focusAvantDemo = null;
+function ouvrirDemo(html){
+  $("#demo-recap").innerHTML = html;
+  focusAvantDemo = document.activeElement;
+  overlay.hidden = false;
+  $("#demo-fermer").focus();
+}
+function fermerDemo(){
+  overlay.hidden = true;
+  if (focusAvantDemo) focusAvantDemo.focus();
+}
+$("#demo-fermer").addEventListener("click", fermerDemo);
+overlay.addEventListener("click", function(e){ if (e.target === overlay) fermerDemo(); });
+
+/* ── Échap ferme les couches ── */
+document.addEventListener("keydown", function(e){
+  if (e.key === "Escape"){
+    if (!overlay.hidden) fermerDemo();
+    else if (tiroir.classList.contains("ouvert")) fermerTiroir();
+  }
+});
+
+/* ── Date minimale = demain ── */
+(function(){
+  var d = new Date(Date.now() + 86400000);
+  var iso = d.toISOString().slice(0,10);
+  var de = $("#evt-date"); if (de) de.min = iso;
+})();
+
+/* ── Mise en avant du jour courant dans les horaires ── */
+(function(){
+  var dow = new Date().getDay();
+  var ligne = document.querySelector('#bloc-horaires [data-jour="'+dow+'"]');
+  if (ligne){
+    ligne.classList.add("auj");
+    var dd = ligne.querySelector("dd");
+    var b = document.createElement("span"); b.className = "badge-auj"; b.textContent = "Aujourd'hui";
+    dd.appendChild(document.createTextNode(" ")); dd.appendChild(b);
+  }
+})();
+
+rendrePanier();
+})();
+</script>
+</body>
+</html>

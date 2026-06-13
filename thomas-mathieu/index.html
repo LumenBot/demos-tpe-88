@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#3A2233">
+<title>Thomas Mathieu — Chocolatier pâtissier à Lunéville | Le mille-feuille signature</title>
+<meta name="description" content="Thomas Mathieu, chocolatier pâtissier à Lunéville (54300). Le mille-feuille qu'on vient chercher de Nancy, chocolats artisanaux, salon de thé. Commande en ligne, retrait daté, expédition de chocolats partout en France. 4,8★ sur Google.">
+
+<!-- Polices : chargement non bloquant (display=swap), Italiana (display d'art) + Jost (texte) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500&display=swap"></noscript>
+
+<!-- [À REMPLACER] Les horaires ci-dessous (JSON-LD et section Accès) sont les horaires réels
+     publiés. Les NAP (nom, adresse, téléphone), la note 4,8/106 avis sont les données réelles
+     publiques. Prix, descriptions et tarifs d'expédition sont des exemples crédibles. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Thomas Mathieu — Chocolatier Pâtissier",
+  "image": "img/hero-patisserie.webp",
+  "url": "./",
+  "telephone": "+33983300660",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "20 rue Banaudon",
+    "addressLocality": "Lunéville",
+    "postalCode": "54300",
+    "addressCountry": "FR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 48.591528, "longitude": 6.4929161 },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "106"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:30", "closes": "12:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "14:30", "closes": "18:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:30", "closes": "12:30" }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --prune:#3A2233;        /* prune profond, fond signature */
+  --prune-d:#2A1726;      /* prune le plus sombre */
+  --prune-cl:#4E3146;     /* prune éclairci */
+  --ivoire:#F4EDE2;       /* ivoire chaud */
+  --ivoire-cl:#FBF6EE;    /* ivoire le plus clair */
+  --or:#C2A14D;           /* filets or — décoratif uniquement */
+  --or-cl:#D8BE7E;        /* or clair pour texte sur prune */
+  --or-txt:#8A6E2C;       /* or assombri, AA sur ivoire */
+  --txt-mut:#6E5764;      /* prune désaturé, texte secondaire sur ivoire */
+  --disp:"Italiana",Georgia,"Times New Roman",serif;
+  --sans:"Jost","Segoe UI",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ivoire);color:var(--prune);
+  font:300 16px/1.7 var(--sans);
+  padding-bottom:7rem; /* réserve bandeau légal fixe (ajustée en JS) */
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--disp);font-weight:400;line-height:1.12;margin:0;letter-spacing:.01em}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+:focus-visible{outline:2px solid var(--or-txt);outline-offset:3px}
+.skip{position:absolute;left:-200vw;top:0;background:var(--prune);color:var(--ivoire);padding:12px 20px;z-index:200;font-family:var(--sans);font-size:13px}
+.skip:focus{left:8px;top:8px}
+.wrap{max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,5vw,48px)}
+section{padding-block:clamp(58px,11vw,108px)}
+
+/* ── ornements / filets or ─────────────── */
+.orne{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--or);margin-block:18px}
+.orne::before,.orne::after{content:"";height:1px;flex:1;max-width:130px}
+.orne::before{background:linear-gradient(90deg,transparent,var(--or))}
+.orne::after{background:linear-gradient(90deg,var(--or),transparent)}
+.hairline{border:0;border-top:1px solid var(--or);opacity:.4;max-width:680px;margin:0 auto}
+.kicker{font:500 11px/1.5 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--or-txt);margin:0 0 14px}
+.titre2{font-size:clamp(32px,7vw,50px)}
+.sous{font:300 clamp(16px,3.2vw,19px)/1.6 var(--sans);color:var(--txt-mut);margin:16px auto 0;max-width:580px}
+.centre{text-align:center}
+
+/* ── boutons ───────────────────────────── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:48px;padding:11px 30px;border:1px solid var(--prune);background:transparent;
+  font:500 12px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;
+  color:var(--prune);text-decoration:none;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.btn:hover{background:var(--prune);color:var(--ivoire)}
+.btn-plein{background:var(--prune);color:var(--ivoire)}
+.btn-plein:hover{background:var(--prune-d)}
+.btn-fin{min-height:44px;padding:9px 18px;letter-spacing:.16em;font-size:11px;border-color:var(--or-txt);color:var(--or-txt)}
+.btn-fin:hover{background:var(--or-txt);color:var(--ivoire-cl)}
+
+/* ── header ────────────────────────────── */
+header.haut{position:sticky;top:0;z-index:50;background:rgba(244,237,226,.96);border-bottom:1px solid rgba(194,161,77,.4);backdrop-filter:saturate(1.1) blur(2px)}
+.haut-ligne{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:9px}
+.marque{font-family:var(--disp);font-size:23px;letter-spacing:.02em;text-decoration:none;display:flex;flex-direction:column;justify-content:center;min-height:44px;line-height:1}
+.marque small{font:500 9px/1.4 var(--sans);letter-spacing:.34em;color:var(--or-txt);text-transform:uppercase;margin-top:3px}
+.btn-panier{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:6px 14px;border:1px solid var(--or-txt);background:transparent;color:var(--prune);font:500 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;text-decoration:none}
+.btn-panier:hover{background:var(--or-txt);color:var(--ivoire-cl)}
+nav.ancres{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+nav.ancres::-webkit-scrollbar{display:none}
+nav.ancres ul{display:flex;gap:2px;list-style:none;margin:0;padding:0 0 2px;justify-content:flex-start}
+nav.ancres a{display:inline-flex;align-items:center;min-height:44px;padding:4px 13px;font:500 11px/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--txt-mut);white-space:nowrap}
+nav.ancres a:hover{color:var(--prune);text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--or)}
+@media(min-width:920px){nav.ancres ul{justify-content:center}}
+
+/* ── hero (atelier sombre) ─────────────── */
+.hero{background:var(--prune);color:var(--ivoire);position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:2}
+.hero-grid{display:grid;gap:clamp(30px,5vw,56px);align-items:center;padding-block:clamp(48px,9vw,88px)}
+@media(min-width:880px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+.hero .kicker{color:var(--or-cl)}
+.hero h1{font-size:clamp(42px,9vw,72px);font-weight:400;letter-spacing:.01em}
+.hero h1 em{font-style:normal;display:block;color:var(--or-cl)}
+.hero .sous{color:rgba(244,237,226,.82);margin-left:0;margin-right:0;max-width:480px}
+@media(max-width:879px){.hero .sous{margin-inline:auto}}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+@media(max-width:879px){.hero-ctas{justify-content:center}}
+.hero .btn{border-color:var(--or-cl);color:var(--ivoire)}
+.hero .btn:hover{background:var(--or-cl);color:var(--prune-d)}
+.hero .btn-plein{background:var(--or-cl);color:var(--prune-d);border-color:var(--or-cl)}
+.hero .btn-plein:hover{background:#E6D2A0}
+.hero-note{font:400 13px/1.6 var(--sans);color:rgba(244,237,226,.78);margin-top:24px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+@media(max-width:879px){.hero-note{justify-content:center}}
+.etoiles{color:var(--or-cl);letter-spacing:.12em}
+.hero-photo{position:relative}
+.hero-photo .cadre{border:1px solid var(--or);padding:clamp(7px,1.3vw,12px)}
+.hero-photo img{aspect-ratio:1000/750;object-fit:cover;width:100%}
+.hero-photo figcaption{position:absolute;bottom:clamp(16px,2.5vw,26px);left:clamp(16px,2.5vw,26px);right:clamp(16px,2.5vw,26px);background:rgba(42,23,38,.82);color:var(--ivoire);border-left:2px solid var(--or-cl);padding:10px 14px;font:400 italic 14px/1.4 var(--disp)}
+
+/* bande signature mille-feuille */
+.signature{background:var(--prune-d);color:var(--ivoire);text-align:center;padding:18px 16px;font:400 italic clamp(16px,3.4vw,21px)/1.5 var(--disp);letter-spacing:.01em}
+.signature span{color:var(--or-cl)}
+
+/* ── boutique / produits ───────────────── */
+.lead-deux{display:grid;gap:clamp(18px,3vw,28px);margin-top:clamp(34px,5vw,48px)}
+@media(min-width:760px){.lead-deux{grid-template-columns:1fr 1fr}}
+.brique{border:1px solid rgba(194,161,77,.5);padding:clamp(20px,3.6vw,30px);background:var(--ivoire-cl);text-align:left}
+.brique h3{font-size:clamp(22px,4vw,27px);display:flex;align-items:center;gap:12px}
+.brique p{font:300 14px/1.65 var(--sans);color:var(--txt-mut);margin:12px 0 0}
+.brique .ic{color:var(--or-txt);flex:none}
+
+.grille-produits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,3vw,28px);margin-top:clamp(34px,5vw,52px)}
+@media(min-width:920px){.grille-produits{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.produit{display:flex;flex-direction:column;text-align:center}
+.produit figure{margin:0;border:1px solid rgba(194,161,77,.5);padding:6px;background:var(--ivoire-cl)}
+.produit figure>*{aspect-ratio:4/3;object-fit:cover;width:100%}
+.produit h3{font-size:clamp(18px,2.7vw,21px);margin-top:14px}
+.produit .desc{font:300 12.5px/1.55 var(--sans);color:var(--txt-mut);margin:5px 0 0;flex-grow:1}
+.produit .tag{font:500 9px/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--or-txt);margin:7px 0 0}
+.produit .prix{font:400 14px/1.4 var(--sans);letter-spacing:.06em;color:var(--prune);margin:9px 0 12px}
+.svg-prod{display:grid;place-items:center;background:var(--prune)}
+
+/* ── panier ────────────────────────────── */
+.panier-carte{border:1px solid var(--or);background:var(--ivoire-cl);padding:clamp(22px,4.5vw,40px);margin-top:clamp(40px,7vw,64px)}
+.panier-carte h3{font-size:clamp(25px,5vw,32px);text-align:center}
+#panier-lignes{list-style:none;margin:24px 0 0;padding:0}
+#panier-lignes li{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:14px 0;border-bottom:1px solid rgba(194,161,77,.32)}
+.l-nom{flex:1 1 160px;font-family:var(--disp);font-size:19px;line-height:1.25}
+.l-qte{display:inline-flex;align-items:center;border:1px solid rgba(138,110,44,.55)}
+.l-qte button{width:44px;height:44px;border:0;background:transparent;color:var(--prune);font:300 19px/1 var(--sans);cursor:pointer}
+.l-qte button:hover{background:rgba(194,161,77,.16)}
+.l-qte span{min-width:30px;text-align:center;font:400 14px/1 var(--sans)}
+.l-total{font:400 14px/1.4 var(--sans);min-width:74px;text-align:right}
+.l-suppr{width:44px;height:44px;border:0;background:transparent;color:var(--or-txt);font-size:21px;cursor:pointer}
+.l-suppr:hover{color:var(--prune)}
+fieldset.modes{border:1px solid rgba(194,161,77,.45);margin:28px 0 0;padding:18px 18px 8px}
+fieldset.modes legend{font:500 11px/1.4 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--or-txt);padding:0 10px}
+.mode{display:flex;align-items:flex-start;gap:12px;padding:10px 4px;min-height:44px;cursor:pointer}
+.mode input{width:20px;height:20px;margin-top:3px;accent-color:var(--prune);flex:none}
+.mode .m-titre{font:400 14.5px/1.45 var(--sans)}
+.mode .m-detail{font:300 12.5px/1.5 var(--sans);color:var(--txt-mut);display:block}
+.champ-retrait{margin:16px 0 0;padding:14px 16px;background:rgba(194,161,77,.1)}
+.champ-retrait[hidden]{display:none}
+.champ-retrait label{display:block;font:500 11px/1.5 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--or-txt);margin-bottom:7px}
+.champ-retrait input{width:100%;min-height:46px;padding:9px 13px;border:1px solid rgba(138,110,44,.5);background:var(--ivoire-cl);color:var(--prune);font:300 15px/1.5 var(--sans)}
+#bloc-port{margin:14px 0 0;padding:14px 16px;background:rgba(194,161,77,.1);font:300 13px/1.6 var(--sans)}
+#bloc-port[hidden]{display:none}
+#bloc-port table{border-collapse:collapse;margin-top:6px}
+#bloc-port td{padding:1px 14px 1px 0;font-size:12.5px;color:var(--txt-mut)}
+.totaux{margin-top:22px;font:400 14px/1.8 var(--sans)}
+.totaux .ligne{display:flex;justify-content:space-between;gap:12px}
+.totaux .grand{font-family:var(--disp);font-size:24px;border-top:1px solid var(--or);padding-top:10px;margin-top:8px}
+.note-demo{font:300 12px/1.6 var(--sans);color:var(--txt-mut);text-align:center;margin:16px 0 0}
+#panier-actions{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.alerte{font:400 13px/1.55 var(--sans);color:#9A3B4E;margin:12px 0 0}
+.alerte[hidden]{display:none}
+
+/* ── salon de thé (fond prune) ─────────── */
+.fond-prune{background:var(--prune);color:var(--ivoire)}
+.fond-prune .kicker{color:var(--or-cl)}
+.fond-prune .sous{color:rgba(244,237,226,.82)}
+.salon-grid{display:grid;gap:clamp(26px,4vw,44px);align-items:center;margin-top:clamp(34px,5vw,52px)}
+@media(min-width:820px){.salon-grid{grid-template-columns:1fr 1fr}}
+.salon-grid .cadre{border:1px solid var(--or);padding:clamp(7px,1.3vw,12px)}
+.salon-grid img{aspect-ratio:800/1000;object-fit:cover;width:100%}
+.salon-txt{text-align:left}
+@media(max-width:819px){.salon-txt{text-align:center}}
+.salon-txt h2{font-size:clamp(30px,6vw,44px)}
+.salon-liste{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px}
+.salon-liste li{display:flex;align-items:flex-start;gap:12px;font:300 14.5px/1.55 var(--sans);color:rgba(244,237,226,.88)}
+@media(max-width:819px){.salon-liste li{justify-content:center;text-align:left}}
+.salon-liste svg{color:var(--or-cl);flex:none;margin-top:2px}
+
+/* ── créations (chocolat/douceur visuel) ─ */
+.creations-deux{display:grid;gap:clamp(18px,3vw,30px);margin-top:clamp(34px,5vw,52px)}
+@media(min-width:760px){.creations-deux{grid-template-columns:1fr 1fr}}
+.crea{border:1px solid rgba(194,161,77,.5);background:var(--ivoire-cl);overflow:hidden;display:flex;flex-direction:column}
+.crea img{width:100%;object-fit:cover}
+.crea .crea-choc{aspect-ratio:8/6}
+.crea .crea-douc{aspect-ratio:800/600}
+.crea-corps{padding:clamp(18px,3vw,26px);text-align:center}
+.crea-corps h3{font-size:clamp(22px,4vw,27px)}
+.crea-corps p{font:300 14px/1.6 var(--sans);color:var(--txt-mut);margin:10px 0 0}
+.crea-corps .prix{font:400 13.5px/1.4 var(--sans);letter-spacing:.06em;color:var(--or-txt);margin:12px 0 0;display:block}
+
+/* ── avis ──────────────────────────────── */
+.avis-note{font:400 clamp(46px,9vw,64px)/1 var(--disp)}
+.avis-grille{display:grid;gap:26px;margin-top:clamp(32px,6vw,48px)}
+@media(min-width:820px){.avis-grille{grid-template-columns:repeat(3,1fr)}}
+.avis-grille blockquote{margin:0;text-align:center;padding:0 8px}
+.avis-grille blockquote p{font:400 italic clamp(18px,3vw,20px)/1.5 var(--disp);margin:0}
+.avis-grille blockquote p::before{content:"« "}
+.avis-grille blockquote p::after{content:" »"}
+.avis-grille cite{display:block;font:500 10px/1.4 var(--sans);font-style:normal;letter-spacing:.22em;text-transform:uppercase;color:var(--or-txt);margin-top:14px}
+
+/* ── horaires / accès ──────────────────── */
+.acces-grid{display:grid;gap:clamp(20px,4vw,36px);margin-top:clamp(34px,5vw,52px)}
+@media(min-width:760px){.acces-grid{grid-template-columns:1fr 1fr}}
+.bloc-acces{border:1px solid rgba(194,161,77,.5);background:var(--ivoire-cl);padding:clamp(22px,4vw,34px)}
+.bloc-acces h3{font-size:clamp(22px,4vw,27px)}
+.horaires{list-style:none;margin:18px 0 0;padding:0;font:300 14.5px/1.4 var(--sans)}
+.horaires li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid rgba(194,161,77,.28)}
+.horaires li:last-child{border-bottom:0}
+.horaires .jour{color:var(--prune)}
+.horaires .h{color:var(--txt-mut);text-align:right}
+.horaires .ferme{color:#9A3B4E}
+.bloc-acces address{font:300 14.5px/1.7 var(--sans);font-style:normal;margin:8px 0 0}
+.bloc-acces .tel{display:inline-flex;align-items:center;gap:10px;min-height:48px;font:400 19px/1.2 var(--disp);color:var(--prune);text-decoration:none;margin-top:6px}
+.bloc-acces .tel:hover{color:var(--or-txt)}
+.bloc-acces .btn-fin{margin-top:14px}
+
+/* ── footer ────────────────────────────── */
+footer.pied{background:var(--prune-d);color:rgba(244,237,226,.9);text-align:center;padding:clamp(44px,8vw,70px) 20px clamp(36px,6vw,56px)}
+footer.pied .marque{color:var(--ivoire);align-items:center;font-size:28px}
+footer.pied .marque small{color:var(--or-cl)}
+footer.pied p{font:300 13px/1.7 var(--sans);max-width:560px;margin:16px auto 0}
+footer.pied a{color:var(--or-cl)}
+
+/* ── modale démo ───────────────────────── */
+#demo-overlay{position:fixed;inset:0;z-index:100;background:rgba(42,23,38,.7);display:grid;place-items:center;padding:20px}
+#demo-overlay[hidden]{display:none}
+.demo-carte{background:var(--ivoire);border:1px solid var(--or);max-width:440px;width:100%;padding:clamp(28px,6vw,42px);text-align:center}
+.demo-carte h3{font-size:clamp(26px,5.5vw,32px)}
+.demo-carte p{font:300 14px/1.7 var(--sans);margin:14px 0 0}
+.demo-carte .recap{font:400 italic 18px/1.5 var(--disp);color:var(--or-txt)}
+
+/* ── bandeau légal fixe ────────────────── */
+#legal{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--prune-d);color:#EFE6D6;
+  font:400 11.5px/1.5 var(--sans);text-align:center;padding:9px 14px}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="haut">
+  <div class="wrap">
+    <div class="haut-ligne">
+      <a class="marque" href="#contenu">Thomas Mathieu <small>Chocolatier · Pâtissier</small></a>
+      <a class="btn-panier" href="#commande" id="lien-panier" aria-label="Voir le panier">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.3 11.2a2 2 0 0 1-2 1.8H8.3a2 2 0 0 1-2-1.8L5 8Z"/><path d="M8.5 8V6.5a3.5 3.5 0 0 1 7 0V8"/></svg>
+        Panier <span id="panier-compte" aria-hidden="true">(0)</span>
+      </a>
+    </div>
+    <nav class="ancres" aria-label="Navigation principale">
+      <ul>
+        <li><a href="#commande">Commander</a></li>
+        <li><a href="#expedition">Expédition</a></li>
+        <li><a href="#salon">Salon de thé</a></li>
+        <li><a href="#creations">Les créations</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#acces">Horaires &amp; accès</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+<!-- ════════ HERO ════════ -->
+<section class="hero" aria-labelledby="titre-hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="kicker">Chocolatier · Pâtissier · Lunéville</p>
+        <h1 id="titre-hero">Le mille-feuille<em>qu'on vient chercher de Nancy</em></h1>
+        <div class="orne" style="justify-content:flex-start" aria-hidden="true">
+          <span style="height:1px;width:80px;background:linear-gradient(90deg,var(--or),transparent)"></span>
+        </div>
+        <p class="sous">Atelier de chocolaterie-pâtisserie au cœur de Lunéville. Des créations signées, un salon de thé, et des chocolats expédiés partout en France.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-plein" href="#commande">Commander en ligne</a>
+          <a class="btn" href="tel:+33983300660">Appeler l'atelier</a>
+        </div>
+        <p class="hero-note"><span class="etoiles" aria-hidden="true">★★★★★</span> 4,8&nbsp;/&nbsp;5 — 106 avis Google</p>
+      </div>
+      <figure class="hero-photo" style="margin:0">
+        <div class="cadre">
+          <img src="img/hero-patisserie.webp" width="1000" height="750" alt="Part de gâteau pâtissier aux framboises fraîches sur une assiette noire, fond sombre" fetchpriority="high">
+        </div>
+        <figcaption>La signature de la maison</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<p class="signature">La pâtisserie <span>signée Thomas Mathieu</span> — le mille-feuille préféré des Lunévillois et des gourmands venus de Nancy.</p>
+
+<!-- ════════ WOW : COMMANDE EN LIGNE ════════ -->
+<section id="commande" class="wrap centre" aria-labelledby="titre-commande">
+  <p class="kicker">Commande en ligne — retrait daté</p>
+  <h2 class="titre2" id="titre-commande">Commandez vos pâtisseries</h2>
+  <p class="sous">Réservez le mille-feuille, les pâtisseries signature et les chocolats de l'atelier. Choisissez votre jour de retrait, nous préparons tout pour vous.</p>
+
+  <!-- [À REMPLACER] Tous les prix, formats et descriptions ci-dessous sont des exemples
+       crédibles. Le mille-feuille signature est la véritable spécialité publique de la maison
+       (« meilleur mille-feuille », clientèle de Nancy). -->
+  <div class="grille-produits">
+
+    <article class="produit">
+      <figure>
+        <img src="img/hero-patisserie.webp" width="1000" height="750" alt="Pâtisserie individuelle aux fruits rouges, signature de la maison" loading="lazy" decoding="async">
+      </figure>
+      <h3>Mille-feuille signature</h3>
+      <p class="desc">Feuilletage caramélisé, crème vanille de Madagascar. À la part.</p>
+      <p class="tag">La signature</p>
+      <p class="prix">4,80&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="millefeuille">Ajouter</button>
+    </article>
+
+    <article class="produit">
+      <!-- TODO : remplacer par une photographie du véritable entremets framboise (photo de la maison, après signature) -->
+      <figure><svg class="svg-prod" viewBox="0 0 400 300" role="img" aria-label="Entremets framboise-pistache — photographie à venir"><rect width="400" height="300" fill="#3A2233"/><rect x="14" y="14" width="372" height="272" fill="none" stroke="#C2A14D" stroke-width="1"/><rect x="22" y="22" width="356" height="256" fill="none" stroke="#C2A14D" stroke-width=".5"/><text x="200" y="160" text-anchor="middle" fill="#D8BE7E" font-family="Georgia,serif" font-style="italic" font-size="58">TM</text><text x="200" y="214" text-anchor="middle" fill="#C2A14D" font-family="Arial,sans-serif" font-size="12" letter-spacing="4">L'ATELIER</text></svg></figure>
+      <h3>Entremets framboise-pistache</h3>
+      <p class="desc">Biscuit pistache, insert framboise, mousse légère. 4&nbsp;parts.</p>
+      <p class="prix">18,00&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="entremets">Ajouter</button>
+    </article>
+
+    <article class="produit">
+      <!-- TODO : remplacer par une photographie des véritables éclairs (photo de la maison, après signature) -->
+      <figure><svg class="svg-prod" viewBox="0 0 400 300" role="img" aria-label="Éclair au chocolat grand cru — photographie à venir"><rect width="400" height="300" fill="#3A2233"/><rect x="14" y="14" width="372" height="272" fill="none" stroke="#C2A14D" stroke-width="1"/><rect x="22" y="22" width="356" height="256" fill="none" stroke="#C2A14D" stroke-width=".5"/><text x="200" y="160" text-anchor="middle" fill="#D8BE7E" font-family="Georgia,serif" font-style="italic" font-size="58">TM</text><text x="200" y="214" text-anchor="middle" fill="#C2A14D" font-family="Arial,sans-serif" font-size="12" letter-spacing="4">L'ATELIER</text></svg></figure>
+      <h3>Éclair chocolat grand cru</h3>
+      <p class="desc">Pâte à choux, crème au chocolat noir de couverture. À la pièce.</p>
+      <p class="prix">3,90&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="eclair">Ajouter</button>
+    </article>
+
+    <article class="produit">
+      <figure>
+        <img src="img/chocolat.webp" width="800" height="1000" alt="Empilement de brownies au chocolat nappés d'une coulée de chocolat, fond sombre" loading="lazy" decoding="async">
+      </figure>
+      <h3>Le brownie de l'atelier</h3>
+      <p class="desc">Chocolat noir intense, cœur fondant, éclats de noix. À la part.</p>
+      <p class="prix">3,50&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="brownie">Ajouter</button>
+    </article>
+
+    <article class="produit">
+      <figure>
+        <img src="img/douceur.webp" width="800" height="600" alt="Verrines de panna cotta surmontées de fraises fraîches" loading="lazy" decoding="async">
+      </figure>
+      <h3>Panna cotta aux fraises</h3>
+      <p class="desc">Crème vanillée, fraises de saison. Verrine individuelle.</p>
+      <p class="tag">De saison</p>
+      <p class="prix">4,20&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="pannacotta">Ajouter</button>
+    </article>
+
+    <article class="produit">
+      <!-- TODO : remplacer par une photographie du véritable ballotin de chocolats (photo de la maison) -->
+      <figure><svg class="svg-prod" viewBox="0 0 400 300" role="img" aria-label="Ballotin de chocolats maison — photographie à venir"><rect width="400" height="300" fill="#3A2233"/><rect x="14" y="14" width="372" height="272" fill="none" stroke="#C2A14D" stroke-width="1"/><rect x="22" y="22" width="356" height="256" fill="none" stroke="#C2A14D" stroke-width=".5"/><text x="200" y="160" text-anchor="middle" fill="#D8BE7E" font-family="Georgia,serif" font-style="italic" font-size="48">250 g</text><text x="200" y="214" text-anchor="middle" fill="#C2A14D" font-family="Arial,sans-serif" font-size="12" letter-spacing="4">CHOCOLATS</text></svg></figure>
+      <h3>Ballotin de chocolats</h3>
+      <p class="desc">Assortiment de bonbons de chocolat de l'atelier. 250&nbsp;g.</p>
+      <p class="tag">Expédiable</p>
+      <p class="prix">16,50&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="ballotin">Ajouter</button>
+    </article>
+
+    <article class="produit">
+      <!-- TODO : remplacer par une photographie des véritables tablettes (photo de la maison) -->
+      <figure><svg class="svg-prod" viewBox="0 0 400 300" role="img" aria-label="Tablette de chocolat noir 70 % — photographie à venir"><rect width="400" height="300" fill="#3A2233"/><rect x="14" y="14" width="372" height="272" fill="none" stroke="#C2A14D" stroke-width="1"/><rect x="22" y="22" width="356" height="256" fill="none" stroke="#C2A14D" stroke-width=".5"/><text x="200" y="160" text-anchor="middle" fill="#D8BE7E" font-family="Georgia,serif" font-style="italic" font-size="54">70</text><text x="200" y="214" text-anchor="middle" fill="#C2A14D" font-family="Arial,sans-serif" font-size="12" letter-spacing="4">GRAND CRU</text></svg></figure>
+      <h3>Tablette grand cru 70&nbsp;%</h3>
+      <p class="desc">Chocolat noir de caractère, torréfaction maison. 100&nbsp;g.</p>
+      <p class="tag">Expédiable</p>
+      <p class="prix">5,90&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="tablette">Ajouter</button>
+    </article>
+
+    <article class="produit">
+      <!-- TODO : remplacer par une photographie d'une véritable pâtisserie d'événement (photo de la maison) -->
+      <figure><svg class="svg-prod" viewBox="0 0 400 300" role="img" aria-label="Gâteau d'événement sur commande — photographie à venir"><rect width="400" height="300" fill="#3A2233"/><rect x="14" y="14" width="372" height="272" fill="none" stroke="#C2A14D" stroke-width="1"/><rect x="22" y="22" width="356" height="256" fill="none" stroke="#C2A14D" stroke-width=".5"/><text x="200" y="160" text-anchor="middle" fill="#D8BE7E" font-family="Georgia,serif" font-style="italic" font-size="48">Fête</text><text x="200" y="214" text-anchor="middle" fill="#C2A14D" font-family="Arial,sans-serif" font-size="12" letter-spacing="4">SUR COMMANDE</text></svg></figure>
+      <h3>Gâteau d'événement</h3>
+      <p class="desc">Anniversaire, baptême, fête : 8&nbsp;parts au choix. Retrait daté.</p>
+      <p class="tag">Commande d'événement</p>
+      <p class="prix">28,00&nbsp;€</p>
+      <button class="btn btn-fin" type="button" data-ajout="evenement">Ajouter</button>
+    </article>
+  </div>
+
+  <!-- ── Panier ── -->
+  <div class="panier-carte" id="panier" aria-labelledby="titre-panier">
+    <h3 id="titre-panier">Votre panier</h3>
+    <p class="vh" id="panier-status" role="status" aria-live="polite"></p>
+    <p id="panier-vide" class="note-demo">Votre panier est vide — choisissez une douceur ci-dessus.</p>
+    <ul id="panier-lignes"></ul>
+
+    <div id="panier-suite" hidden>
+      <fieldset class="modes">
+        <legend>Retrait en boutique ou expédition</legend>
+        <label class="mode"><input type="radio" name="mode" value="retrait" checked>
+          <span><span class="m-titre">Retrait à l'atelier — 20 rue Banaudon</span>
+          <span class="m-detail">Au cœur de Lunéville. Gratuit, le jour de votre choix.</span></span></label>
+        <label class="mode"><input type="radio" name="mode" value="envoi" id="radio-envoi">
+          <span><span class="m-titre">Expédition de chocolats — France entière</span>
+          <span class="m-detail">Colis suivi, port calculé selon le poids. Chocolats uniquement.</span></span></label>
+      </fieldset>
+
+      <!-- jour de retrait daté -->
+      <div class="champ-retrait" id="champ-retrait">
+        <label for="retrait-date">Jour de retrait souhaité</label>
+        <input type="date" id="retrait-date" name="retrait-date">
+      </div>
+
+      <p class="alerte" id="alerte-frais" hidden>Les pâtisseries fraîches se retirent à l'atelier et ne peuvent pas être expédiées. Seuls les chocolats (ballotin, tablette) voyagent. Retirez les pâtisseries du panier pour choisir l'expédition.</p>
+
+      <!-- [À REMPLACER] Tarifs d'expédition factices, par tranches de poids (colis suivi). -->
+      <div id="bloc-port" hidden>
+        <strong>Frais de port — colis suivi (estimation)</strong>
+        <table>
+          <tr><td>Jusqu'à 500&nbsp;g</td><td>6,50&nbsp;€</td></tr>
+          <tr><td>500&nbsp;g à 1&nbsp;kg</td><td>8,50&nbsp;€</td></tr>
+          <tr><td>1&nbsp;kg à 2&nbsp;kg</td><td>11,50&nbsp;€</td></tr>
+          <tr><td>Au-delà de 2&nbsp;kg</td><td>14,50&nbsp;€</td></tr>
+        </table>
+      </div>
+
+      <div class="totaux" aria-live="polite">
+        <p class="ligne"><span>Sous-total</span> <span id="t-sous">0,00&nbsp;€</span></p>
+        <p class="ligne" id="t-poids-ligne"><span>Poids estimé</span> <span id="t-poids">0&nbsp;g</span></p>
+        <p class="ligne" id="t-port-ligne" hidden><span>Port (colis suivi)</span> <span id="t-port">—</span></p>
+        <p class="ligne grand"><span>Total</span> <span id="t-total">0,00&nbsp;€</span></p>
+      </div>
+
+      <div id="panier-actions">
+        <button class="btn btn-plein" type="button" id="btn-confirmer">Confirmer la commande</button>
+        <button class="btn btn-fin" type="button" id="btn-vider">Vider le panier</button>
+      </div>
+      <p class="note-demo">Démonstration : aucun paiement réel, aucune donnée transmise.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="hairline">
+
+<!-- ════════ BRIQUE EXPÉDITION ════════ -->
+<section id="expedition" class="wrap centre" aria-labelledby="titre-exp">
+  <p class="kicker">Nos chocolats, partout en France</p>
+  <h2 class="titre2" id="titre-exp">L'atelier vous suit jusqu'à la maison</h2>
+  <p class="sous">Offrez ou faites-vous plaisir : nos ballotins et tablettes voyagent en colis suivi. Sélectionnez les chocolats dans la commande ci-dessus, choisissez « Expédition » au panier, le port se calcule tout seul.</p>
+
+  <div class="lead-deux">
+    <div class="brique">
+      <h3><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4-9-4Z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg> Emballé pour le voyage</h3>
+      <p>Chaque ballotin part dans un calage isotherme et un colis suivi. Vous recevez l'estimation de port avant de valider — aucune surprise.</p>
+    </div>
+    <div class="brique">
+      <!-- [À REMPLACER] Délais d'expédition indicatifs, à confirmer avec la maison. -->
+      <h3><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Préparé sous 48 h</h3>
+      <p>Commande préparée puis expédiée sous 48&nbsp;h ouvrées. Pour les fêtes (Pâques, Noël, Saint-Valentin), pensez à commander en avance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ SALON DE THÉ ════════ -->
+<section id="salon" class="fond-prune" aria-labelledby="titre-salon">
+  <div class="wrap">
+    <div class="salon-grid">
+      <figure class="cadre" style="margin:0">
+        <img src="img/chocolat.webp" width="800" height="1000" alt="Pâtisseries chocolatées dressées, ambiance feutrée du salon de thé" loading="lazy" decoding="async">
+      </figure>
+      <div class="salon-txt">
+        <p class="kicker">Une pause au cœur de Lunéville</p>
+        <h2 id="titre-salon">Le salon de thé</h2>
+        <!-- [À REMPLACER] Présentation du salon de thé : description d'ambiance illustrative,
+             à affiner avec la maison. Le salon de thé est une donnée réelle publique. -->
+        <p class="sous" style="margin-left:0">Installez-vous à deux pas de la place du château. On y déguste la pâtisserie du jour, un chocolat chaud à l'ancienne, ou simplement le mille-feuille fraîchement monté.</p>
+        <ul class="salon-liste">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h12a3 3 0 0 1 0 6H8a4 4 0 0 1-4-4v-2Z"/><path d="M16 12h2a2 2 0 0 1 0 4h-1"/><path d="M7 5c0 1 .8 1 .8 2S7 8 7 9"/><path d="M11 5c0 1 .8 1 .8 2S11 8 11 9"/></svg> Pâtisserie du jour &amp; chocolat chaud maison</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 21h14"/><path d="M7 21V10h10v11"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></svg> Salon feutré, idéal pour une pause</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Du mardi au samedi, matin et après-midi</li>
+        </ul>
+        <p style="margin-top:26px"><a class="btn" href="#acces" style="border-color:var(--or-cl);color:var(--ivoire)">Voir les horaires</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ LES CRÉATIONS ════════ -->
+<section id="creations" class="wrap centre" aria-labelledby="titre-crea">
+  <p class="kicker">Chocolats &amp; pâtisseries</p>
+  <h2 class="titre2" id="titre-crea">Les créations de l'atelier</h2>
+  <p class="sous">Du chocolat travaillé en couverture aux douceurs de saison : la même exigence, du grain de cacao à l'assiette.</p>
+
+  <!-- [À REMPLACER] Descriptions et prix d'exemple, à confirmer avec la maison. -->
+  <div class="creations-deux">
+    <article class="crea">
+      <img class="crea-choc" src="img/chocolat.webp" width="800" height="1000" alt="Empilement de brownies au chocolat nappés d'une coulée de chocolat fondu" loading="lazy" decoding="async">
+      <div class="crea-corps">
+        <h3>Le chocolat</h3>
+        <p>Bonbons de chocolat, tablettes grand cru, ganaches et pralinés — travaillés à l'atelier, à déguster sur place ou à emporter.</p>
+        <span class="prix">Ballotin 250&nbsp;g — 16,50&nbsp;€</span>
+      </div>
+    </article>
+    <article class="crea">
+      <img class="crea-douc" src="img/douceur.webp" width="800" height="600" alt="Verrines de panna cotta vanille surmontées de fraises fraîches, lumineuses" loading="lazy" decoding="async">
+      <div class="crea-corps">
+        <h3>Les douceurs de saison</h3>
+        <p>Verrines, entremets et tartes au rythme des fruits : fraises au printemps, framboises en été. Le mille-feuille, lui, ne quitte jamais la vitrine.</p>
+        <span class="prix">Verrine individuelle — 4,20&nbsp;€</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<hr class="hairline">
+
+<!-- ════════ AVIS ════════ -->
+<section id="avis" class="wrap centre" aria-labelledby="titre-avis">
+  <p class="kicker">Ils en parlent</p>
+  <h2 class="titre2" id="titre-avis">4,8 sur 106 avis</h2>
+  <p class="avis-note" style="margin-top:16px">4,8<span style="font-size:.42em">&nbsp;/&nbsp;5</span></p>
+  <p class="hero-note" style="color:var(--txt-mut);justify-content:center"><span class="etoiles" style="color:var(--or-txt)" aria-hidden="true">★★★★★</span> 106 avis Google</p>
+  <!-- [À REMPLACER] Extraits d'avis illustratifs (≤ 15 mots), à remplacer par de
+       véritables extraits d'avis Google de la maison. -->
+  <div class="avis-grille">
+    <blockquote><p>Le meilleur mille-feuille, on vient exprès de Nancy.</p><cite>Avis Google</cite></blockquote>
+    <blockquote><p>Chocolats fins et accueil chaleureux, un vrai artisan.</p><cite>Avis Google</cite></blockquote>
+    <blockquote><p>Salon de thé charmant, pâtisseries d'une grande finesse.</p><cite>Avis Google</cite></blockquote>
+  </div>
+</section>
+
+<hr class="hairline">
+
+<!-- ════════ HORAIRES / ACCÈS ════════ -->
+<section id="acces" class="wrap centre" aria-labelledby="titre-acces">
+  <p class="kicker">Nous trouver</p>
+  <h2 class="titre2" id="titre-acces">Horaires &amp; accès</h2>
+  <div class="acces-grid" style="text-align:left">
+    <div class="bloc-acces">
+      <h3>Horaires</h3>
+      <ul class="horaires">
+        <li><span class="jour">Lundi</span> <span class="h ferme">Fermé</span></li>
+        <li><span class="jour">Mardi – samedi</span> <span class="h">8 h 30 – 12 h 30 · 14 h 30 – 18 h 30</span></li>
+        <li><span class="jour">Dimanche</span> <span class="h">8 h 30 – 12 h 30</span></li>
+      </ul>
+    </div>
+    <div class="bloc-acces">
+      <h3>L'atelier</h3>
+      <address>20 rue Banaudon<br>54300 Lunéville</address>
+      <a class="tel" href="tel:+33983300660">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+        09 83 30 06 60</a>
+      <br>
+      <a class="btn btn-fin" href="https://www.google.com/maps/search/?api=1&amp;query=Thomas+Mathieu+chocolatier+20+rue+Banaudon+54300+Lun%C3%A9ville" target="_blank" rel="noopener">Itinéraire Google Maps</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <span class="marque" style="display:inline-flex;flex-direction:column;border:0">Thomas Mathieu <small>Chocolatier · Pâtissier</small></span>
+  <p>Chocolatier-pâtissier à Lunéville — salon de thé<br>
+  20 rue Banaudon, 54300 Lunéville · <a href="tel:+33983300660">09 83 30 06 60</a><br>
+  4,8★ sur 106 avis Google · Fermé le lundi</p>
+  <p>Maquette de démonstration proposée par L'Atelier Web des Vosges.</p>
+</footer>
+
+<!-- ════════ Modale démonstration ════════ -->
+<div id="demo-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="demo-titre">
+  <div class="demo-carte">
+    <p class="kicker">Thomas Mathieu</p>
+    <h3 id="demo-titre">Ceci est une démonstration</h3>
+    <p class="recap" id="demo-recap"></p>
+    <p>En production : paiement sécurisé par carte bancaire en ligne, ou règlement au retrait à l'atelier. Aucune donnée n'a été transmise.</p>
+    <p style="margin-top:24px"><button class="btn btn-plein" type="button" id="demo-fermer">Fermer</button></p>
+  </div>
+</div>
+
+<!-- ════════ Bandeau légal (texte exact, permanent) ════════ -->
+<p id="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</p>
+
+<script>
+(function(){
+"use strict";
+var $ = function(s){ return document.querySelector(s); };
+
+/* ── Réserve sous le bandeau légal fixe ── */
+function padLegal(){
+  var l = $("#legal");
+  if (l) document.body.style.paddingBottom = (l.offsetHeight + 10) + "px";
+}
+window.addEventListener("resize", padLegal);
+padLegal();
+
+/* ── Catalogue (prix/poids d'exemple ; expediable = peut voyager) ── */
+var PRODUITS = {
+  "millefeuille": { nom:"Mille-feuille signature",      prix:4.80,  poids:140, frais:true },
+  "entremets":    { nom:"Entremets framboise-pistache", prix:18.00, poids:560, frais:true },
+  "eclair":       { nom:"Éclair chocolat grand cru",    prix:3.90,  poids:110, frais:true },
+  "brownie":      { nom:"Le brownie de l'atelier",      prix:3.50,  poids:120, frais:true },
+  "pannacotta":   { nom:"Panna cotta aux fraises",      prix:4.20,  poids:160, frais:true },
+  "ballotin":     { nom:"Ballotin de chocolats",        prix:16.50, poids:280, expediable:true },
+  "tablette":     { nom:"Tablette grand cru 70 %",      prix:5.90,  poids:120, expediable:true },
+  "evenement":    { nom:"Gâteau d'événement",           prix:28.00, poids:1100, frais:true }
+};
+
+/* ── Panier : localStorage avec repli mémoire ── */
+var CLE = "thomas-mathieu-panier";
+var memoire = {};
+function lirePanier(){
+  try { return JSON.parse(localStorage.getItem(CLE)) || {}; }
+  catch(e){ return memoire; }
+}
+function ecrirePanier(p){
+  memoire = p;
+  try { localStorage.setItem(CLE, JSON.stringify(p)); } catch(e){}
+}
+function eur(n){ return n.toFixed(2).replace(".", ",") + " €"; }
+function port(g){
+  if (g <= 500)  return 6.50;
+  if (g <= 1000) return 8.50;
+  if (g <= 2000) return 11.50;
+  return 14.50;
+}
+function annoncer(msg){ $("#panier-status").textContent = msg; }
+
+function rendrePanier(){
+  var p = lirePanier(), ul = $("#panier-lignes"), ids = Object.keys(p);
+  ul.textContent = "";
+  var nb = 0, sous = 0, poids = 0, aFrais = false;
+  ids.forEach(function(id){
+    var prod = PRODUITS[id]; if (!prod) return;
+    var q = p[id];
+    nb += q; sous += prod.prix * q; poids += prod.poids * q;
+    if (prod.frais) aFrais = true;
+    var li = document.createElement("li");
+    var nom = document.createElement("span"); nom.className = "l-nom"; nom.textContent = prod.nom;
+    var qte = document.createElement("span"); qte.className = "l-qte";
+    var bm = document.createElement("button"); bm.type = "button"; bm.textContent = "−";
+    bm.setAttribute("aria-label", "Retirer un " + prod.nom);
+    bm.addEventListener("click", function(){ changerQte(id, -1); });
+    var nbq = document.createElement("span"); nbq.textContent = q;
+    var bp = document.createElement("button"); bp.type = "button"; bp.textContent = "+";
+    bp.setAttribute("aria-label", "Ajouter un " + prod.nom);
+    bp.addEventListener("click", function(){ changerQte(id, 1); });
+    qte.appendChild(bm); qte.appendChild(nbq); qte.appendChild(bp);
+    var tot = document.createElement("span"); tot.className = "l-total"; tot.textContent = eur(prod.prix * q);
+    var sup = document.createElement("button"); sup.type = "button"; sup.className = "l-suppr"; sup.textContent = "×";
+    sup.setAttribute("aria-label", "Supprimer " + prod.nom + " du panier");
+    sup.addEventListener("click", function(){ changerQte(id, -99); });
+    li.appendChild(nom); li.appendChild(qte); li.appendChild(tot); li.appendChild(sup);
+    ul.appendChild(li);
+  });
+  $("#panier-compte").textContent = "(" + nb + ")";
+  $("#lien-panier").setAttribute("aria-label", "Voir le panier — " + nb + " article" + (nb > 1 ? "s" : ""));
+  $("#panier-vide").hidden = nb > 0;
+  $("#panier-suite").hidden = nb === 0;
+  if (nb === 0) return;
+
+  var radioEnvoi = $("#radio-envoi");
+  radioEnvoi.disabled = aFrais;
+  $("#alerte-frais").hidden = !aFrais;
+  if (aFrais && radioEnvoi.checked) {
+    document.querySelector('input[name="mode"][value="retrait"]').checked = true;
+  }
+  var envoi = radioEnvoi.checked && !aFrais;
+  var fraisPort = envoi ? port(poids) : 0;
+  $("#bloc-port").hidden = !envoi;
+  $("#t-port-ligne").hidden = !envoi;
+  /* jour de retrait visible uniquement pour le retrait à l'atelier */
+  $("#champ-retrait").hidden = envoi;
+  $("#t-sous").textContent = eur(sous);
+  $("#t-poids").textContent = poids >= 1000 ? (poids/1000).toFixed(1).replace(".", ",") + " kg" : poids + " g";
+  if (envoi) $("#t-port").textContent = eur(fraisPort);
+  $("#t-total").textContent = eur(sous + fraisPort);
+}
+
+function changerQte(id, delta){
+  var p = lirePanier();
+  var q = (p[id] || 0) + delta;
+  if (q <= 0) { delete p[id]; annoncer(PRODUITS[id].nom + " retiré du panier."); }
+  else { p[id] = Math.min(q, 30); }
+  ecrirePanier(p);
+  rendrePanier();
+}
+
+document.querySelectorAll("[data-ajout]").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    var id = btn.getAttribute("data-ajout");
+    changerQte(id, 1);
+    annoncer(PRODUITS[id].nom + " ajouté au panier.");
+  });
+});
+document.querySelectorAll('input[name="mode"]').forEach(function(r){
+  r.addEventListener("change", rendrePanier);
+});
+$("#btn-vider").addEventListener("click", function(){
+  ecrirePanier({});
+  annoncer("Panier vidé.");
+  rendrePanier();
+});
+
+/* ── Jour de retrait : minimum à demain ── */
+var dateRetrait = $("#retrait-date");
+if (dateRetrait) {
+  var demain = new Date(Date.now() + 86400000);
+  dateRetrait.min = demain.toISOString().slice(0, 10);
+}
+
+/* ── Modale démonstration ── */
+var overlay = $("#demo-overlay"), declencheur = null;
+function ouvrirDemo(recap, origine){
+  declencheur = origine || null;
+  $("#demo-recap").textContent = recap;
+  overlay.hidden = false;
+  $("#demo-fermer").focus();
+}
+function fermerDemo(){
+  overlay.hidden = true;
+  if (declencheur) declencheur.focus();
+}
+$("#demo-fermer").addEventListener("click", fermerDemo);
+overlay.addEventListener("click", function(e){ if (e.target === overlay) fermerDemo(); });
+document.addEventListener("keydown", function(e){
+  if (e.key === "Escape" && !overlay.hidden) fermerDemo();
+});
+
+$("#btn-confirmer").addEventListener("click", function(){
+  var p = lirePanier(), nb = 0, sous = 0, poids = 0;
+  Object.keys(p).forEach(function(id){
+    if (!PRODUITS[id]) return;
+    nb += p[id]; sous += PRODUITS[id].prix * p[id]; poids += PRODUITS[id].poids * p[id];
+  });
+  if (nb === 0) return;
+  var mode = document.querySelector('input[name="mode"]:checked').value;
+  var libelle, total = sous;
+  if (mode === "envoi") {
+    total += port(poids);
+    libelle = "expédition de chocolats, France entière (colis suivi)";
+  } else {
+    libelle = "retrait à l'atelier, 20 rue Banaudon";
+    var d = dateRetrait && dateRetrait.value;
+    if (d) {
+      var jour = new Date(d + "T12:00:00")
+        .toLocaleDateString("fr-FR", { weekday:"long", day:"numeric", month:"long" });
+      libelle += " — le " + jour;
+    }
+  }
+  ouvrirDemo(nb + " article" + (nb > 1 ? "s" : "") + " · " + eur(total) + " — " + libelle + ".", this);
+});
+
+rendrePanier();
+})();
+</script>
+</body>
+</html>
