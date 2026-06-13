@@ -28,6 +28,19 @@ Racine du site : page de présentation (placeholders contact/SIRET à compléter
 | lamielle | https://lumenbot.github.io/demos-tpe-88/lamielle/ | v1 · DoD ✓ |
 | les-bulles | https://lumenbot.github.io/demos-tpe-88/les-bulles/ | v1 · DoD ✓ |
 
+## Lot 3 — Saint-Dié / Raon
+
+| Maquette | URL | Statut |
+| --- | --- | --- |
+| il-forno | https://lumenbot.github.io/demos-tpe-88/il-forno/ | v1 · DoD ✓ |
+| tms-services | https://lumenbot.github.io/demos-tpe-88/tms-services/ | v1 · DoD ✓ |
+| kebaberie-saint-martin | https://lumenbot.github.io/demos-tpe-88/kebaberie-saint-martin/ | v1 · DoD ✓ |
+| chez-dom | https://lumenbot.github.io/demos-tpe-88/chez-dom/ | v1 · DoD ✓ |
+| dolce-vita | https://lumenbot.github.io/demos-tpe-88/dolce-vita/ | v1 · DoD ✓ |
+| bella-vita | https://lumenbot.github.io/demos-tpe-88/bella-vita/ | v1 · DoD ✓ |
+| chocolats-carl | https://lumenbot.github.io/demos-tpe-88/chocolats-carl/ | v1 · DoD ✓ |
+| renovon | https://lumenbot.github.io/demos-tpe-88/renovon/ | v1 · DoD ✓ |
+
 ## Développement
 
 - Règles complètes : voir `CLAUDE.md` (source de vérité locale non versionnée : `docs/`).
