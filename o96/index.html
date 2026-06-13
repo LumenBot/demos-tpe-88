@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>O'96 Döner Kebab — kebab à Bruyères (88600) | Commande & retrait</title>
+<meta name="description" content="O'96 Döner Kebab, le kebab familial de Bruyères : cuisine ouverte, portions généreuses, 4,5★ sur 135 avis. Commandez en ligne et retirez sans faire la queue. 4 rue Général de Gaulle.">
+<meta name="theme-color" content="#C8362B">
+
+<!-- Google Fonts : 2 familles (Paytone One + Mukta), chargement non bloquant -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Mukta:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Mukta:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Mukta:wght@400;500;600;700&display=swap"></noscript>
+
+<!-- JSON-LD : données factuelles publiques (NAP réels) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Restaurant",
+  "name":"O'96 Döner Kebab",
+  "servesCuisine":["Kebab","Döner","Turc","Burger"],
+  "image":"https://lumenbot.github.io/demos-tpe-88/o96/img/hero-grill.webp",
+  "address":{"@type":"PostalAddress","streetAddress":"4 rue Général de Gaulle","addressLocality":"Bruyères","postalCode":"88600","addressCountry":"FR"},
+  "telephone":"+33769621769",
+  "url":"https://lumenbot.github.io/demos-tpe-88/o96/",
+  "priceRange":"€",
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"135"},
+  "geo":{"@type":"GeoCoordinates","latitude":48.2109508,"longitude":6.7197543},
+  "hasMap":"https://www.google.com/maps/search/?api=1&query=O%2796+D%C3%B6ner+Kebab+4+rue+G%C3%A9n%C3%A9ral+de+Gaulle+88600+Bruy%C3%A8res",
+  "acceptsReservations":"False",
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Thursday","Friday"],"opens":"11:30","closes":"14:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Thursday","Friday"],"opens":"18:00","closes":"22:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"18:00","closes":"22:00"}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --rouge:#C8362B;          /* rouge chaud */
+  --rouge-fonce:#A22A21;
+  --creme:#FBF1E4;          /* crème */
+  --creme-2:#F4E3CC;
+  --noir:#1A1614;           /* noir chaud */
+  --or:#E8A33D;             /* accent doré chaleureux */
+  --vert:#3F7D4E;           /* statut "ouvert" */
+  --carte:#FFFFFF;
+  --ligne:#EBD9C0;
+  --display:"Paytone One","Trebuchet MS",Verdana,sans-serif;
+  --texte:"Mukta","Segoe UI",system-ui,-apple-system,sans-serif;
+  --ombre:0 8px 26px rgba(26,22,20,.12);
+  --rad:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+body{
+  margin:0;font-family:var(--texte);color:var(--noir);background:var(--creme);
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  padding-bottom:64px; /* bandeau légal fixe */
+}
+h1,h2,h3,.font-d{font-family:var(--display);font-weight:400;line-height:1.12;letter-spacing:.2px}
+h2{font-size:1.7rem;margin:0 0 .2em;color:var(--noir)}
+.section{padding:46px 18px;max-width:1080px;margin:0 auto}
+.eyebrow{font-family:var(--display);color:var(--rouge);font-size:.82rem;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 .4em}
+p{margin:.4em 0}
+a{color:var(--rouge-fonce)}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--or);outline-offset:3px;border-radius:6px}
+
+/* boutons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;
+  padding:.7rem 1.3rem;border-radius:999px;font-family:var(--display);font-size:1.02rem;
+  text-decoration:none;border:none;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--rouge);color:#fff;box-shadow:var(--ombre)}
+.btn-primary:hover{background:var(--rouge-fonce)}
+.btn-ghost{background:#fff;color:var(--rouge-fonce);border:2px solid var(--rouge)}
+.btn-or{background:var(--or);color:var(--noir)}
+.btn-block{width:100%}
+
+/* en-tête */
+header.bar{position:sticky;top:0;z-index:40;background:rgba(251,241,228,.94);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--ligne)}
+.bar-in{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:8px 16px;gap:10px}
+.logo{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--noir);min-height:44px}
+.logo .mark{width:42px;height:42px;border-radius:50%;background:var(--rouge);color:#fff;display:grid;place-items:center;
+  font-family:var(--display);font-size:.95rem;box-shadow:0 3px 8px rgba(200,54,43,.4)}
+.logo b{font-family:var(--display);font-size:1.2rem;letter-spacing:.3px}
+.nav-call{display:inline-flex;align-items:center;gap:.4rem;min-height:44px;padding:.4rem .9rem;border-radius:999px;
+  background:var(--rouge);color:#fff;font-family:var(--display);font-size:.92rem;text-decoration:none}
+
+/* HERO */
+.hero{position:relative;color:#fff;min-height:78vh;display:flex;align-items:flex-end;
+  background:linear-gradient(180deg,rgba(26,22,20,.15) 0%,rgba(26,22,20,.55) 55%,rgba(26,22,20,.86) 100%),
+  #1A1614}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1}
+.hero-in{max-width:1080px;margin:0 auto;padding:30px 18px 40px;width:100%}
+.badge-note{display:inline-flex;align-items:center;gap:.45rem;background:var(--or);color:var(--noir);
+  font-family:var(--display);font-size:.92rem;padding:.35rem .85rem;border-radius:999px;margin-bottom:14px}
+.hero h1{font-size:2.35rem;margin:.1em 0 .25em;text-shadow:0 2px 12px rgba(0,0,0,.4);max-width:14ch}
+.hero p.lead{font-size:1.12rem;max-width:34ch;margin-bottom:1.3em;color:#FBF1E4}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);
+  padding:.3rem .75rem;border-radius:999px;font-size:.84rem;color:#fff}
+
+/* bandeau valeurs */
+.values{background:var(--rouge);color:#fff}
+.values .row{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:16px 18px;text-align:center}
+.values .v{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:.86rem;line-height:1.25}
+.values .v b{font-family:var(--display);font-size:.95rem;font-weight:400}
+.values svg{width:26px;height:26px}
+
+/* CARTE */
+.cat-title{display:flex;align-items:center;gap:.6rem;margin:30px 0 14px}
+.cat-title:first-of-type{margin-top:6px}
+.cat-title h3{font-size:1.25rem;margin:0;color:var(--rouge-fonce)}
+.cat-title .line{flex:1;height:2px;background:var(--ligne);border-radius:2px}
+.menu{display:grid;gap:12px;grid-template-columns:1fr}
+.plat{background:var(--carte);border:1px solid var(--ligne);border-radius:var(--rad);padding:14px 15px;
+  display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.plat h4{margin:0 0 .15em;font-family:var(--texte);font-weight:700;font-size:1.04rem}
+.plat p{margin:0;font-size:.9rem;color:#6a5e54}
+.plat .right{display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex-shrink:0}
+.prix{font-family:var(--display);color:var(--rouge-fonce);font-size:1.05rem;background:var(--creme-2);
+  border-radius:999px;padding:.1rem .7rem;white-space:nowrap}
+.add{min-height:40px;min-width:40px;border-radius:50%;border:2px solid var(--rouge);background:#fff;color:var(--rouge);
+  font-size:1.5rem;line-height:1;cursor:pointer;font-family:var(--display);transition:background .15s,color .15s}
+.add:hover{background:var(--rouge);color:#fff}
+.tag-vege{font-size:.7rem;background:#E5F0E2;color:var(--vert);padding:.05rem .5rem;border-radius:999px;font-weight:700;vertical-align:middle}
+.hero-dish{margin:18px 0 6px;position:relative;border-radius:var(--rad);overflow:hidden;box-shadow:var(--ombre)}
+.hero-dish img{width:100%;height:auto;display:block}
+.hero-dish figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 16px 14px;color:#fff;font-size:.95rem;
+  background:linear-gradient(180deg,rgba(26,22,20,0),rgba(26,22,20,.82))}
+.hero-dish figcaption b{font-family:var(--display);font-weight:400}
+
+/* COMMANDE / wow */
+#commander{background:var(--noir);color:var(--creme)}
+#commander h2{color:#fff}
+.order-grid{display:grid;gap:20px;grid-template-columns:1fr}
+.order-promise{background:linear-gradient(135deg,var(--rouge),var(--rouge-fonce));border-radius:var(--rad);
+  padding:20px;box-shadow:var(--ombre)}
+.order-promise .big{font-family:var(--display);font-size:1.3rem;line-height:1.25;margin:.2em 0}
+.order-promise ul{list-style:none;padding:0;margin:.8em 0 0}
+.order-promise li{display:flex;gap:.6rem;align-items:flex-start;margin:.5em 0;font-size:.95rem}
+.order-promise li svg{flex-shrink:0;width:22px;height:22px;margin-top:1px}
+.panel{background:var(--carte);color:var(--noir);border-radius:var(--rad);padding:18px;box-shadow:var(--ombre)}
+.panel h3{font-size:1.15rem;margin:0 0 .6em;color:var(--noir)}
+.cart-empty{color:#8a7d72;font-size:.92rem;padding:8px 0}
+.cart-line{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 0;border-bottom:1px dashed var(--ligne);font-size:.94rem}
+.cart-line:last-of-type{border-bottom:none}
+.qty{display:inline-flex;align-items:center;gap:8px}
+.qty button{width:32px;height:32px;border-radius:8px;border:1px solid var(--ligne);background:var(--creme);font-size:1.1rem;cursor:pointer;line-height:1}
+.cart-total{display:flex;justify-content:space-between;font-family:var(--display);font-size:1.15rem;margin:12px 0;padding-top:10px;border-top:2px solid var(--ligne)}
+.field{margin:12px 0}
+.field label{display:block;font-weight:600;font-size:.9rem;margin-bottom:5px}
+.field select,.field input{width:100%;min-height:48px;padding:.6rem .7rem;border:1px solid var(--ligne);border-radius:12px;
+  font-family:var(--texte);font-size:1rem;background:#fff;color:var(--noir)}
+.pay-note{font-size:.85rem;color:#6a5e54;background:var(--creme);border-radius:12px;padding:10px 12px;margin:10px 0;
+  display:flex;gap:.5rem;align-items:flex-start}
+.pay-note svg{flex-shrink:0;width:20px;height:20px;margin-top:1px}
+.slot-info{font-size:.88rem;color:var(--rouge-fonce);font-weight:600;margin-top:6px}
+
+/* CUISINE OUVERTE */
+.split{display:grid;gap:22px;grid-template-columns:1fr;align-items:center}
+.split img{border-radius:var(--rad);box-shadow:var(--ombre);width:100%;height:auto}
+.trust-list{list-style:none;padding:0;margin:1em 0 0}
+.trust-list li{display:flex;gap:.7rem;align-items:flex-start;margin:.7em 0}
+.trust-list svg{flex-shrink:0;width:24px;height:24px;color:var(--rouge)}
+
+/* AVIS */
+#avis{background:var(--creme-2)}
+.avis-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:6px}
+.score{font-family:var(--display);font-size:2.4rem;color:var(--rouge-fonce);line-height:1}
+.stars{color:var(--or);font-size:1.2rem;letter-spacing:2px}
+.avis-grid{display:grid;gap:14px;grid-template-columns:1fr;margin-top:18px}
+.avis{background:#fff;border-radius:var(--rad);padding:16px;box-shadow:var(--ombre);border:1px solid var(--ligne)}
+.avis .stars{font-size:1rem;margin-bottom:6px}
+.avis p{font-size:.95rem;margin:.2em 0 .6em}
+.avis .who{font-size:.82rem;color:#8a7d72}
+.gsource{font-size:.78rem;color:#8a7d72;margin-top:14px}
+
+/* HORAIRES */
+.hours{max-width:560px;margin:14px auto 0;background:#fff;border-radius:var(--rad);box-shadow:var(--ombre);overflow:hidden;border:1px solid var(--ligne)}
+.hours .h{display:flex;justify-content:space-between;padding:11px 16px;font-size:.95rem;border-bottom:1px solid var(--ligne)}
+.hours .h:last-child{border-bottom:none}
+.hours .h.today{background:var(--creme);font-weight:700}
+.hours .h.closed span:last-child{color:var(--rouge);font-weight:600}
+.hours .day{font-weight:600}
+.status{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--display);font-size:.9rem;
+  padding:.3rem .8rem;border-radius:999px;margin-bottom:6px}
+.status.open{background:#E5F0E2;color:var(--vert)}
+.status.shut{background:#FBE3E1;color:var(--rouge-fonce)}
+.dot{width:9px;height:9px;border-radius:50%;background:currentColor;display:inline-block}
+
+/* FOOTER */
+footer{background:var(--noir);color:var(--creme);padding:40px 18px 30px}
+.foot-in{max-width:1080px;margin:0 auto;display:grid;gap:24px;grid-template-columns:1fr}
+footer h3{color:#fff;font-size:1.1rem;margin:0 0 .5em}
+footer a{color:var(--or)}
+.foot-nap p{margin:.25em 0;font-size:.95rem}
+.foot-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+
+/* bandeau légal fixe */
+.legal{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--noir);color:#E9DDCE;
+  font-size:.72rem;line-height:1.35;padding:8px 14px;text-align:center;border-top:2px solid var(--rouge)}
+
+/* écran démo (modale) */
+.modal{position:fixed;inset:0;z-index:60;background:rgba(26,22,20,.7);display:none;align-items:center;justify-content:center;padding:18px}
+.modal.on{display:flex}
+.modal-box{background:#fff;border-radius:var(--rad);max-width:430px;width:100%;padding:26px 22px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.modal-box .ic{width:64px;height:64px;border-radius:50%;background:var(--rouge);color:#fff;display:grid;place-items:center;margin:0 auto 14px}
+.modal-box h3{font-size:1.4rem;margin:.1em 0 .3em;color:var(--noir)}
+.modal-box p{font-size:.95rem;color:#5a4f46}
+.modal-box .recap{background:var(--creme);border-radius:12px;padding:12px;margin:14px 0;text-align:left;font-size:.9rem}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* ===== Desktop 1440 ===== */
+@media(min-width:760px){
+  .hero h1{font-size:3.4rem}
+  .menu{grid-template-columns:1fr 1fr}
+  .order-grid{grid-template-columns:1fr 1fr;align-items:start}
+  .split{grid-template-columns:1.05fr 1fr}
+  .split.rev img{order:2}
+  .avis-grid{grid-template-columns:repeat(3,1fr)}
+  .foot-in{grid-template-columns:1.3fr 1fr}
+  h2{font-size:2.1rem}
+}
+</style>
+</head>
+<body>
+
+<!-- en-tête -->
+<header class="bar">
+  <div class="bar-in">
+    <a class="logo" href="#top" aria-label="O'96 Döner Kebab, accueil">
+      <span class="mark">O'96</span>
+      <b>O'96 Döner</b>
+    </a>
+    <a class="nav-call" href="tel:+33769621769" aria-label="Appeler le 07 69 62 17 69">
+      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      Appeler
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <img class="bg" src="img/hero-grill.webp" width="1200" height="800" fetchpriority="high" alt="Brochettes de viande marinée grillées sur le grill, fumée au-dessus des braises">
+  <div class="hero-in">
+    <span class="badge-note">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+      4,5★ · 135 avis Google
+    </span>
+    <h1>Le kebab familial de Bruyères</h1>
+    <p class="lead">Cuisine ouverte, portions généreuses, faites maison. Commandez en ligne et venez le récupérer chaud — sans faire la queue.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#commander">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+        Commander
+      </a>
+      <a class="btn btn-ghost" href="#carte">Voir la carte</a>
+    </div>
+    <div class="hero-meta">
+      <span class="chip">🔥 Cuisine ouverte</span>
+      <span class="chip">👨‍👩‍👧 Esprit familial</span>
+      <span class="chip">💳 Paiement au retrait</span>
+    </div>
+  </div>
+</section>
+
+<!-- valeurs -->
+<div class="values">
+  <div class="row">
+    <div class="v">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 2c0 2-1.5 3-1.5 5a1.5 1.5 0 0 0 3 0c0-2-1.5-3-1.5-5z"/><path d="M15.5 2c0 2-1.5 3-1.5 5a1.5 1.5 0 0 0 3 0c0-2-1.5-3-1.5-5z"/><path d="M4 13h16v2a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6z"/></svg>
+      <b>Fait minute</b><span>devant vous</span>
+    </div>
+    <div class="v">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-9A5 5 0 0 1 12 6a5 5 0 0 1 9.3 6c-2.3 4.6-9.3 9-9.3 9z"/></svg>
+      <b>Portions</b><span>généreuses</span>
+    </div>
+    <div class="v">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <b>Sans</b><span>la queue</span>
+    </div>
+  </div>
+</div>
+
+<!-- CARTE -->
+<section class="section" id="carte">
+  <p class="eyebrow">Notre carte</p>
+  <h2>Généreux, fait maison, à partager</h2>
+  <p style="max-width:50ch">Viandes marinées, sauces maison et frites fraîches. Une carte pensée pour toute la famille.</p>
+  <!-- [À REMPLACER] : intitulés, descriptions et prix d'exemple — à caler sur la carte réelle d'O'96 -->
+
+  <figure class="hero-dish">
+    <img src="img/burger.webp" width="800" height="600" loading="lazy" alt="Burger généreux dressé : steak, fromage fondant et garniture débordante">
+    <figcaption><b>Le burger O'96</b> — généreux, dressé minute, à dévorer sur place ou à emporter.</figcaption>
+  </figure>
+
+  <div class="cat-title"><h3>Les kebabs</h3><span class="line"></span></div>
+  <div class="menu" id="menu-kebabs"></div>
+
+  <div class="cat-title"><h3>Les assiettes & burgers</h3><span class="line"></span></div>
+  <div class="menu" id="menu-assiettes"></div>
+
+  <div class="cat-title"><h3>Menus enfants</h3><span class="line"></span></div>
+  <div class="menu" id="menu-enfants"></div>
+
+  <p style="font-size:.82rem;color:#8a7d72;margin-top:18px">Prix et intitulés donnés à titre d'exemple. Allergènes communiqués sur place.</p>
+</section>
+
+<!-- WOW : COMMANDE AVEC CRÉNEAU DE RETRAIT -->
+<section class="section" id="commander">
+  <p class="eyebrow" style="color:var(--or)">Commande en ligne · démonstration</p>
+  <h2>Votre kebab prêt à l'heure, sans faire la queue</h2>
+  <div class="order-grid">
+    <div class="order-promise">
+      <div class="big">« Votre commande prête à 19 h 30. »</div>
+      <p style="font-size:.95rem;margin:.4em 0 0;color:#FBE9E5">Vous choisissez votre créneau de retrait, on prépare au bon moment. Plus d'attente debout devant le comptoir.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Créneau calé sur les horaires du jour</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Paiement au retrait, en espèces ou carte</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Récap clair, zéro mauvaise surprise</li>
+      </ul>
+    </div>
+
+    <div class="panel" aria-labelledby="panier-titre">
+      <h3 id="panier-titre">Votre panier</h3>
+      <div id="cart-lines" aria-live="polite">
+        <p class="cart-empty">Votre panier est vide. Ajoutez des plats depuis la carte avec le bouton <b>+</b>.</p>
+      </div>
+      <div class="cart-total" id="cart-total" hidden><span>Total</span><span id="total-val">0,00 €</span></div>
+
+      <div class="field">
+        <label for="jour">Jour de retrait</label>
+        <select id="jour" aria-describedby="slot-info"></select>
+      </div>
+      <div class="field">
+        <label for="creneau">Créneau de retrait</label>
+        <select id="creneau"></select>
+        <p class="slot-info" id="slot-info"></p>
+      </div>
+
+      <div class="pay-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--rouge)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        <span><b>Paiement au retrait</b> — espèces ou carte. Aucun paiement en ligne.</span>
+      </div>
+
+      <button class="btn btn-primary btn-block" id="valider" type="button">Valider ma commande</button>
+    </div>
+  </div>
+</section>
+
+<!-- CUISINE OUVERTE / confiance -->
+<section class="section" id="cuisine">
+  <div class="split rev">
+    <img src="img/assiette.webp" width="800" height="600" loading="lazy" alt="Vue de dessus d'une table conviviale : burgers, frites et assiettes partagés entre plusieurs convives">
+    <div>
+      <p class="eyebrow">Notre cuisine ouverte</p>
+      <h2>On cuisine sous vos yeux</h2>
+      <!-- [À REMPLACER] : texte d'illustration sur la cuisine ouverte, l'équipe et l'esprit maison d'O'96 -->
+      <p>Chez O'96, rien ne se cache. La viande est tranchée minute, les frites tombent fraîches dans le bain et les sauces sont préparées maison. Vous voyez tout, de la marinade à l'assiette.</p>
+      <ul class="trust-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Préparation visible, du grill à l'assiette</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Produits frais, sauces maison</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Un accueil familial, pour petits et grands</li>
+      </ul>
+      <a class="btn btn-or" href="#commander" style="margin-top:14px">Je commande</a>
+    </div>
+  </div>
+</section>
+
+<!-- AVIS -->
+<section class="section" id="avis">
+  <p class="eyebrow">Ils en parlent</p>
+  <div class="avis-head">
+    <span class="score">4,5</span>
+    <div>
+      <div class="stars" aria-hidden="true">★★★★★</div>
+      <div style="font-size:.9rem;color:#6a5e54">Note moyenne sur <b>135 avis Google</b></div>
+    </div>
+  </div>
+  <!-- [À REMPLACER] : extraits d'avis illustratifs (≤ 15 mots) — à remplacer par de vrais avis Google publiés -->
+  <div class="avis-grid">
+    <div class="avis">
+      <div class="stars" aria-hidden="true">★★★★★</div>
+      <p>« Portions généreuses et viande savoureuse, on se régale en famille. »</p>
+      <div class="who">Avis Google · illustratif</div>
+    </div>
+    <div class="avis">
+      <div class="stars" aria-hidden="true">★★★★★</div>
+      <p>« Cuisine ouverte, c'est propre et fait minute. À recommander. »</p>
+      <div class="who">Avis Google · illustratif</div>
+    </div>
+    <div class="avis">
+      <div class="stars" aria-hidden="true">★★★★☆</div>
+      <p>« Accueil chaleureux et frites maison délicieuses. On reviendra ! »</p>
+      <div class="who">Avis Google · illustratif</div>
+    </div>
+  </div>
+  <p class="gsource">Note et nombre d'avis publics Google. Extraits ci-dessus reconstitués pour la démonstration.</p>
+</section>
+
+<!-- HORAIRES -->
+<section class="section" id="horaires">
+  <p class="eyebrow">Horaires & accès</p>
+  <h2>Quand venir nous voir</h2>
+  <div id="status-wrap"></div>
+  <div class="hours" id="hours"></div>
+  <div style="text-align:center;margin-top:18px">
+    <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=O%2796+D%C3%B6ner+Kebab+4+rue+G%C3%A9n%C3%A9ral+de+Gaulle+88600+Bruy%C3%A8res">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Itinéraire — 4 rue Général de Gaulle
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-in">
+    <div class="foot-nap">
+      <h3>O'96 Döner Kebab</h3>
+      <p>4 rue Général de Gaulle, 88600 Bruyères</p>
+      <p>Tél. <a href="tel:+33769621769">07 69 62 17 69</a></p>
+      <p>Kebab familial · cuisine ouverte · à emporter</p>
+      <div class="foot-actions">
+        <a class="btn btn-primary" href="tel:+33769621769">Appeler</a>
+        <a class="btn btn-ghost" style="color:var(--or);border-color:var(--or)" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=O%2796+D%C3%B6ner+Kebab+4+rue+G%C3%A9n%C3%A9ral+de+Gaulle+88600+Bruy%C3%A8res">Voir le plan</a>
+      </div>
+    </div>
+    <div>
+      <h3>Horaires</h3>
+      <p style="font-size:.92rem;line-height:1.7;margin:0">
+        Lun · Mar : 11 h 30-14 h / 18 h-22 h<br>
+        <b style="color:var(--rouge)">Mer : fermé</b><br>
+        Jeu · Ven : 11 h 30-14 h / 18 h-22 h<br>
+        Sam · Dim : 18 h-22 h
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- bandeau légal fixe -->
+<div class="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</div>
+
+<!-- modale démo -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titre">
+  <div class="modal-box">
+    <div class="ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></div>
+    <h3 id="modal-titre">Ceci est une démonstration</h3>
+    <div class="recap" id="modal-recap"></div>
+    <p>En production, votre commande partirait en cuisine et vous régleriez <b>au retrait</b> (espèces ou carte). Aucun paiement ni donnée n'est transmis ici.</p>
+    <button class="btn btn-primary btn-block" id="modal-close" type="button" style="margin-top:14px">J'ai compris</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var euro=function(n){return n.toFixed(2).replace('.',',')+' €';};
+
+  /* ---- Carte (données d'exemple) ---- */
+  var CARTE={
+    kebabs:[
+      {id:'k1',n:'Döner kebab classique',d:'Pain, viande à la broche, crudités, sauce au choix',p:7.50},
+      {id:'k2',n:'Kebab galette',d:'Galette roulée, viande, crudités, sauce',p:8.00},
+      {id:'k3',n:'Tacos O\'96',d:'Viande, frites, sauce fromagère, sauce au choix',p:8.50},
+      {id:'k4',n:'Menu kebab',d:'Kebab + frites + boisson 33 cl',p:10.50}
+    ],
+    assiettes:[
+      {id:'a1',n:'Assiette döner généreuse',d:'Viande, frites, crudités, sauce — à partager ou pour les grandes faims',p:12.00},
+      {id:'a2',n:'Cheeseburger maison',d:'Steak haché, cheddar, oignons, sauce maison',p:8.50},
+      {id:'a3',n:'Burger O\'96 + frites',d:'Double steak, cheddar, bacon, frites fraîches',p:11.50},
+      {id:'a4',n:'Assiette poulet mariné',d:'Émincé de poulet, frites, salade, sauce',p:11.00,v:true}
+    ],
+    enfants:[
+      {id:'e1',n:'Menu enfant nuggets',d:'Nuggets + frites + compote + petite boisson',p:6.50},
+      {id:'e2',n:'Menu enfant cheeseburger',d:'Mini cheeseburger + frites + boisson',p:7.00}
+    ]
+  };
+
+  function render(catKey,elId){
+    var box=document.getElementById(elId), html='';
+    CARTE[catKey].forEach(function(it){
+      html+='<div class="plat"><div><h4>'+it.n+(it.v?' <span class="tag-vege">poulet</span>':'')+'</h4><p>'+it.d+'</p></div>'+
+        '<div class="right"><span class="prix">'+euro(it.p)+'</span>'+
+        '<button class="add" type="button" data-id="'+it.id+'" data-cat="'+catKey+'" aria-label="Ajouter '+it.n+' au panier">+</button></div></div>';
+    });
+    box.innerHTML=html;
+  }
+  render('kebabs','menu-kebabs');
+  render('assiettes','menu-assiettes');
+  render('enfants','menu-enfants');
+
+  function findItem(id){
+    var all=CARTE.kebabs.concat(CARTE.assiettes,CARTE.enfants);
+    for(var i=0;i<all.length;i++){if(all[i].id===id)return all[i];}
+    return null;
+  }
+
+  /* ---- Panier (localStorage) ---- */
+  var KEY='o96_panier_v1', cart={};
+  try{cart=JSON.parse(localStorage.getItem(KEY))||{};}catch(e){cart={};}
+
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(cart));}catch(e){}}
+  function count(){var c=0;for(var k in cart){c+=cart[k];}return c;}
+  function total(){var t=0;for(var k in cart){var it=findItem(k);if(it)t+=it.p*cart[k];}return t;}
+
+  function drawCart(){
+    var box=document.getElementById('cart-lines'), totLine=document.getElementById('cart-total');
+    var keys=Object.keys(cart).filter(function(k){return cart[k]>0;});
+    if(!keys.length){
+      box.innerHTML='<p class="cart-empty">Votre panier est vide. Ajoutez des plats depuis la carte avec le bouton <b>+</b>.</p>';
+      totLine.hidden=true; return;
+    }
+    var html='';
+    keys.forEach(function(k){
+      var it=findItem(k); if(!it)return;
+      html+='<div class="cart-line"><span>'+it.n+'</span>'+
+        '<span class="qty"><button type="button" data-act="moins" data-id="'+k+'" aria-label="Retirer un '+it.n+'">−</button>'+
+        '<b>'+cart[k]+'</b>'+
+        '<button type="button" data-act="plus" data-id="'+k+'" aria-label="Ajouter un '+it.n+'">+</button>'+
+        '<span style="min-width:62px;text-align:right">'+euro(it.p*cart[k])+'</span></span></div>';
+    });
+    box.innerHTML=html;
+    document.getElementById('total-val').textContent=euro(total());
+    totLine.hidden=false;
+  }
+
+  document.addEventListener('click',function(e){
+    var add=e.target.closest('.add');
+    if(add){var id=add.getAttribute('data-id');cart[id]=(cart[id]||0)+1;save();drawCart();
+      var p=document.getElementById('panier-titre'); if(p){p.textContent='Votre panier · '+count()+' article'+(count()>1?'s':'');}
+      return;}
+    var q=e.target.closest('.qty button');
+    if(q){var qid=q.getAttribute('data-id');
+      if(q.getAttribute('data-act')==='plus')cart[qid]=(cart[qid]||0)+1;
+      else{cart[qid]=(cart[qid]||0)-1;if(cart[qid]<=0)delete cart[qid];}
+      save();drawCart();
+      var pt=document.getElementById('panier-titre'); if(pt){pt.textContent=count()?('Votre panier · '+count()+' article'+(count()>1?'s':'')):'Votre panier';}
+    }
+  });
+
+  /* ---- Créneaux calés sur les horaires réels du jour ---- */
+  var JOURS=['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+  // horaires par index jour (0=dim) : tableau de plages [début,fin] en minutes
+  var HOR={
+    1:[[690,840],[1080,1320]], // lundi 11h30-14h / 18h-22h
+    2:[[690,840],[1080,1320]], // mardi
+    3:[],                       // mercredi fermé
+    4:[[690,840],[1080,1320]], // jeudi
+    5:[[690,840],[1080,1320]], // vendredi
+    6:[[1080,1320]],           // samedi 18h-22h
+    0:[[1080,1320]]            // dimanche 18h-22h
+  };
+  function hhmm(m){var h=Math.floor(m/60),mn=m%60;return h+' h'+(mn?(' '+(mn<10?'0':'')+mn):'');}
+
+  // construit la liste des prochains jours d'ouverture (7 jours glissants)
+  var jourSel=document.getElementById('jour'), creneauSel=document.getElementById('creneau'), slotInfo=document.getElementById('slot-info');
+  var now=new Date(), nowMin=now.getHours()*60+now.getMinutes();
+  var options=[];
+  for(var d=0; d<7; d++){
+    var date=new Date(now.getFullYear(),now.getMonth(),now.getDate()+d);
+    var idx=date.getDay();
+    if(!HOR[idx].length) continue; // fermé (ex. mercredi)
+    options.push({offset:d,idx:idx,label:(d===0?'Aujourd\'hui':d===1?'Demain':JOURS[idx])});
+  }
+  options.forEach(function(o){
+    var op=document.createElement('option');op.value=o.offset;op.textContent=o.label;jourSel.appendChild(op);
+  });
+
+  function buildCreneaux(){
+    creneauSel.innerHTML='';
+    var sel=options[jourSel.selectedIndex]; if(!sel){return;}
+    var plages=HOR[sel.idx], added=0;
+    var minStart=(sel.offset===0)? nowMin+20 : 0; // aujourd'hui : 20 min de prépa mini
+    plages.forEach(function(pl){
+      var start=pl[0]; // crénage 15 min, dernier créneau 15 min avant fermeture
+      for(var t=start; t<=pl[1]-15; t+=15){
+        if(t<minStart) continue;
+        var op=document.createElement('option');op.value=t;op.textContent=hhmm(t);creneauSel.appendChild(op);added++;
+      }
+    });
+    if(!added){
+      var op=document.createElement('option');op.value='';op.textContent='Service terminé — choisissez un autre jour';creneauSel.appendChild(op);
+      slotInfo.textContent='';
+    }else{
+      updateSlotInfo();
+    }
+  }
+  function updateSlotInfo(){
+    var sel=options[jourSel.selectedIndex];
+    if(!sel||!creneauSel.value){slotInfo.textContent='';return;}
+    var label=sel.offset===0?'aujourd\'hui':sel.offset===1?'demain':sel.label.toLowerCase();
+    slotInfo.textContent='Votre commande prête '+label+' à '+hhmm(parseInt(creneauSel.value,10))+', sans faire la queue.';
+  }
+  jourSel.addEventListener('change',buildCreneaux);
+  creneauSel.addEventListener('change',updateSlotInfo);
+  buildCreneaux();
+
+  /* ---- Validation → écran démo ---- */
+  var modal=document.getElementById('modal'), lastFocus=null;
+  function openModal(){
+    var keys=Object.keys(cart).filter(function(k){return cart[k]>0;});
+    var recap=document.getElementById('modal-recap');
+    if(!keys.length){
+      recap.innerHTML='<b>Panier vide.</b> Ajoutez au moins un plat depuis la carte pour tester la commande.';
+    }else{
+      var sel=options[jourSel.selectedIndex], cr=creneauSel.value;
+      var quand=(sel? (sel.label+(cr?' à '+hhmm(parseInt(cr,10)):'')) : '—');
+      var lignes='';
+      keys.forEach(function(k){var it=findItem(k);if(it)lignes+='<div style="display:flex;justify-content:space-between"><span>'+cart[k]+'× '+it.n+'</span><span>'+euro(it.p*cart[k])+'</span></div>';});
+      recap.innerHTML=lignes+'<div style="display:flex;justify-content:space-between;border-top:1px solid #EBD9C0;margin-top:8px;padding-top:8px;font-weight:700"><span>Total</span><span>'+euro(total())+'</span></div>'+
+        '<div style="margin-top:8px;color:#A22A21;font-weight:600">Retrait : '+quand+' · paiement au retrait</div>';
+    }
+    lastFocus=document.activeElement;
+    modal.classList.add('on');
+    document.getElementById('modal-close').focus();
+  }
+  function closeModal(){modal.classList.remove('on');if(lastFocus)lastFocus.focus();}
+  document.getElementById('valider').addEventListener('click',openModal);
+  document.getElementById('modal-close').addEventListener('click',closeModal);
+  modal.addEventListener('click',function(e){if(e.target===modal)closeModal();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal.classList.contains('on'))closeModal();});
+
+  /* ---- Horaires + statut ouvert/fermé ---- */
+  var LIB={
+    1:'11 h 30-14 h · 18 h-22 h',2:'11 h 30-14 h · 18 h-22 h',3:'Fermé',
+    4:'11 h 30-14 h · 18 h-22 h',5:'11 h 30-14 h · 18 h-22 h',6:'18 h-22 h',0:'18 h-22 h'
+  };
+  var ordre=[1,2,3,4,5,6,0], todayIdx=now.getDay();
+  var hbox=document.getElementById('hours'),hh='';
+  ordre.forEach(function(i){
+    var cls='h'+(i===todayIdx?' today':'')+(!HOR[i].length?' closed':'');
+    hh+='<div class="'+cls+'"><span class="day">'+JOURS[i]+'</span><span>'+LIB[i]+'</span></div>';
+  });
+  hbox.innerHTML=hh;
+
+  var open=false;
+  HOR[todayIdx].forEach(function(pl){if(nowMin>=pl[0]&&nowMin<pl[1])open=true;});
+  var sw=document.getElementById('status-wrap');
+  sw.innerHTML=open
+    ? '<span class="status open"><span class="dot"></span>Ouvert maintenant</span>'
+    : '<span class="status shut"><span class="dot"></span>Fermé actuellement</span>';
+
+  /* init affichage panier */
+  drawCart();
+  var pinit=document.getElementById('panier-titre');
+  if(count()&&pinit){pinit.textContent='Votre panier · '+count()+' article'+(count()>1?'s':'');}
+})();
+</script>
+</body>
+</html>
