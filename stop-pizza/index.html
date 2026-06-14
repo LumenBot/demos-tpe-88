@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#E11E26">
+<title>Stop Pizza — pizza à emporter à Remiremont | Commandez en ligne</title>
+<meta name="description" content="Stop Pizza, pizza à emporter à Remiremont (88200). Commandez en ligne et passez la chercher : prête à l'heure choisie. 4,5★ sur 168 avis. Mar-dim 17 h-21 h 30, fermé lundi.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@400;500;600;700&display=swap"></noscript>
+
+<!-- [À REMPLACER] Horaires : donnée publique = mar-dim 17 h-21 h 30 (21 h certains soirs), fermé lundi. À confirmer avec l'établissement. -->
+<!-- [À REMPLACER] Prix, noms de pizzas, ingrédients et extraits d'avis : exemples crédibles à valider. -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Stop Pizza",
+  "servesCuisine": "Pizza",
+  "image": "https://lumenbot.github.io/demos-tpe-88/stop-pizza/img/hero-emporter.webp",
+  "url": "https://lumenbot.github.io/demos-tpe-88/stop-pizza/",
+  "telephone": "+33329620505",
+  "priceRange": "€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "22 Boulevard Thiers",
+    "addressLocality": "Remiremont",
+    "postalCode": "88200",
+    "addressCountry": "FR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 48.0180033, "longitude": 6.5908078 },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Stop+Pizza+22+Bd+Thiers+88200+Remiremont",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.5", "reviewCount": "168" },
+  "acceptsReservations": "False",
+  "menu": "https://lumenbot.github.io/demos-tpe-88/stop-pizza/#carte",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "17:00", "closes": "21:30" }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --rouge:#E11E26;
+    --rouge-fonce:#B7141B;
+    --noir:#141414;
+    --blanc:#FFFFFF;
+    --gris:#5a5a5a;
+    --gris-bord:#e6e6e6;
+    --gris-bg:#f5f5f5;
+    --jaune:#F7C948;
+    --bandeau-h:60px;
+    --shadow:0 6px 22px rgba(20,20,20,.12);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+  body{
+    margin:0;
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    color:var(--noir);
+    background:var(--blanc);
+    line-height:1.55;
+    padding-bottom:calc(var(--bandeau-h) + env(safe-area-inset-bottom));
+    -webkit-text-size-adjust:100%;
+  }
+  h1,h2,h3,.display{font-family:"Fjalla One",Impact,"Haettenschweiler","Arial Narrow Bold",sans-serif;font-weight:400;line-height:1.04;letter-spacing:.01em;text-transform:uppercase}
+  h2{font-size:clamp(1.7rem,6vw,2.7rem);margin:0 0 .5em}
+  h3{font-size:1.15rem;margin:0 0 .35em;text-transform:none}
+  p{margin:0 0 1em}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 18px}
+  section{padding:54px 0}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+  :focus-visible{outline:3px solid var(--noir);outline-offset:2px;border-radius:4px}
+  .skip{position:absolute;left:8px;top:-48px;background:var(--noir);color:#fff;padding:10px 14px;border-radius:8px;z-index:200;transition:top .15s}
+  .skip:focus{top:8px}
+
+  /* ---- STOP octagon motif ---- */
+  .stop{position:relative;display:inline-flex;align-items:center;justify-content:center;width:74px;height:74px;flex:0 0 auto}
+  .stop svg{width:100%;height:100%;display:block}
+  .stop span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:"Fjalla One",Impact,sans-serif;color:#fff;font-size:1.05rem;letter-spacing:.06em}
+
+  /* ---- header ---- */
+  header.top{position:sticky;top:0;z-index:100;background:var(--noir);color:#fff;border-bottom:4px solid var(--rouge)}
+  .topbar{display:flex;align-items:center;gap:12px;min-height:60px;padding:8px 18px;max-width:1080px;margin:0 auto}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
+  .brand .stop{width:42px;height:42px}
+  .brand .stop span{font-size:.62rem}
+  .brand b{font-family:"Fjalla One",Impact,sans-serif;font-size:1.35rem;letter-spacing:.04em;text-transform:uppercase}
+  .top-cta{margin-left:auto;display:flex;gap:8px;align-items:center}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:11px 18px;border-radius:10px;font-weight:700;font-family:Inter,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:.98rem;line-height:1.1;transition:transform .12s,background .15s}
+  .btn:active{transform:translateY(1px)}
+  .btn-red{background:var(--rouge);color:#fff}
+  .btn-red:hover{background:var(--rouge-fonce)}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+  .btn-ghost:hover{border-color:#fff}
+  .btn-dark{background:var(--noir);color:#fff}
+  .btn-dark:hover{background:#000}
+  .btn-line{background:#fff;color:var(--noir);border-color:var(--noir)}
+  .btn-block{width:100%}
+  .top-cta .btn{padding:9px 14px;font-size:.9rem}
+  .top-cta .btn-ghost{display:none}
+  @media(min-width:720px){.top-cta .btn-ghost{display:inline-flex}}
+
+  /* ---- hero ---- */
+  .hero{position:relative;background:var(--noir);color:#fff;overflow:hidden}
+  .hero-grid{display:grid;gap:0}
+  @media(min-width:860px){.hero-grid{grid-template-columns:1.05fr 1fr;align-items:stretch}}
+  .hero-txt{padding:44px 18px 50px;max-width:1080px;margin:0 auto;width:100%}
+  @media(min-width:860px){.hero-txt{padding:64px 24px 64px;margin:0;max-width:560px;margin-left:auto}}
+  .stripe{display:inline-flex;align-items:center;gap:8px;background:var(--rouge);color:#fff;font-family:"Fjalla One",Impact,sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:.82rem;padding:6px 12px;border-radius:6px;margin-bottom:16px}
+  .hero h1{font-size:clamp(2.1rem,8.5vw,4rem);margin:0 0 14px}
+  .hero h1 em{font-style:normal;color:var(--rouge);background:#fff;padding:0 .12em;display:inline-block;transform:skew(-4deg)}
+  @media(min-width:860px){.hero h1 em{background:none;color:var(--jaune);transform:none;padding:0}}
+  .hero .lead{font-size:1.06rem;color:#e9e9e9;max-width:46ch;margin-bottom:24px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.92rem;color:#cfcfcf;align-items:center}
+  .stars{color:var(--jaune);letter-spacing:1px}
+  .hero-img{position:relative;min-height:280px}
+  .hero-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  @media(max-width:859px){.hero-img{aspect-ratio:4/3;min-height:0}.hero-img img{position:static;aspect-ratio:4/3}}
+  .badge-fast{position:absolute;right:14px;bottom:14px;z-index:3;background:var(--blanc);color:var(--noir);border:3px solid var(--rouge);border-radius:12px;padding:8px 12px;font-weight:700;font-size:.84rem;box-shadow:var(--shadow);display:flex;align-items:center;gap:8px}
+  .badge-fast .stop{width:32px;height:32px}
+  .badge-fast .stop span{font-size:.5rem}
+
+  /* ---- bandeau de rappel emporter ---- */
+  .emporter-band{background:var(--jaune);color:var(--noir);text-align:center;font-weight:600;font-size:.95rem;padding:12px 18px;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center;align-items:center}
+  .emporter-band strong{font-family:"Fjalla One",Impact,sans-serif;text-transform:uppercase;letter-spacing:.03em;font-weight:400}
+
+  /* ---- section heads ---- */
+  .head{margin-bottom:26px}
+  .kicker{display:inline-flex;align-items:center;gap:8px;color:var(--rouge);font-family:"Fjalla One",Impact,sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:.85rem;margin-bottom:8px}
+  .kicker::before{content:"";width:26px;height:4px;background:var(--rouge);border-radius:2px}
+  .sub{color:var(--gris);max-width:60ch}
+
+  /* ---- COMMANDE (wow) ---- */
+  #commander{background:var(--noir);color:#fff}
+  #commander .kicker{color:var(--jaune)}
+  #commander .kicker::before{background:var(--jaune)}
+  #commander .sub{color:#cfcfcf}
+  .order{display:grid;gap:22px}
+  @media(min-width:900px){.order{grid-template-columns:1.4fr .9fr;align-items:start}}
+  .panel{background:#fff;color:var(--noir);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+  .panel h3{color:var(--noir)}
+  .step-tag{display:inline-block;background:var(--rouge);color:#fff;font-family:"Fjalla One",Impact,sans-serif;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;padding:4px 10px;border-radius:20px;margin-bottom:10px}
+  .sizes{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 16px}
+  .size-btn{flex:1 1 0;min-width:96px;min-height:64px;border:2px solid var(--gris-bord);background:#fff;border-radius:12px;cursor:pointer;font-family:Inter,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:8px;transition:border-color .15s,background .15s}
+  .size-btn b{font-size:1rem}
+  .size-btn small{color:var(--gris);font-size:.78rem}
+  .size-btn[aria-pressed="true"]{border-color:var(--rouge);background:#fff5f5}
+  .size-btn[aria-pressed="true"] b{color:var(--rouge-fonce)}
+  .menu-pick{display:grid;gap:10px}
+  .pick{display:flex;align-items:center;gap:12px;border:1px solid var(--gris-bord);border-radius:12px;padding:10px 12px;background:#fff}
+  .pick .info{flex:1;min-width:0}
+  .pick .info b{display:block}
+  .pick .info small{color:var(--gris)}
+  .pick .price{font-family:"Fjalla One",Impact,sans-serif;color:var(--rouge);white-space:nowrap}
+  .add-btn{min-width:44px;min-height:44px;border-radius:10px;border:2px solid var(--rouge);background:var(--rouge);color:#fff;font-size:1.5rem;font-weight:700;cursor:pointer;line-height:1;display:flex;align-items:center;justify-content:center}
+  .add-btn:hover{background:var(--rouge-fonce)}
+
+  .field{margin:14px 0}
+  .field label{display:block;font-weight:600;margin-bottom:6px;font-size:.95rem}
+  select,input[type=text]{width:100%;min-height:48px;border:2px solid var(--gris-bord);border-radius:10px;padding:10px 12px;font:inherit;background:#fff;color:var(--noir)}
+  select:focus,input:focus{border-color:var(--rouge);outline:none}
+  .slot-note{font-size:.86rem;color:var(--gris);margin-top:6px;display:flex;gap:6px;align-items:flex-start}
+  .slot-note svg{flex:0 0 auto;margin-top:2px}
+
+  /* cart aside */
+  .cart{position:sticky;top:78px}
+  .cart h3{display:flex;align-items:center;gap:8px}
+  .cart-items{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:8px;max-height:230px;overflow:auto}
+  .cart-empty{color:var(--gris);font-size:.92rem;padding:10px 0}
+  .ci{display:flex;align-items:center;gap:8px;font-size:.92rem;border-bottom:1px dashed var(--gris-bord);padding-bottom:8px}
+  .ci .nm{flex:1;min-width:0}
+  .ci .nm b{display:block;font-weight:600}
+  .ci .nm small{color:var(--gris)}
+  .ci .pr{font-weight:700;white-space:nowrap}
+  .ci button{min-width:44px;min-height:44px;border:1px solid var(--gris-bord);background:#fff;border-radius:8px;cursor:pointer;font-size:1.15rem;line-height:1}
+  .ci .qty{min-width:1.4em;text-align:center;font-weight:700}
+  .cart-total{display:flex;justify-content:space-between;align-items:baseline;font-size:1.15rem;margin:8px 0 6px;font-weight:700}
+  .cart-total b{font-family:"Fjalla One",Impact,sans-serif;font-size:1.5rem;color:var(--rouge)}
+  .pay-note{font-size:.82rem;color:var(--gris);margin:0 0 12px}
+  .hint{font-size:.8rem;color:var(--gris);margin:10px 0 0}
+
+  /* ---- carte ---- */
+  .carte-grid{display:grid;gap:14px;grid-template-columns:1fr}
+  @media(min-width:640px){.carte-grid{grid-template-columns:1fr 1fr}}
+  @media(min-width:980px){.carte-grid{grid-template-columns:1fr 1fr 1fr}}
+  .pz{border:1px solid var(--gris-bord);border-radius:14px;padding:16px;background:#fff;display:flex;flex-direction:column;gap:4px}
+  .pz .row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+  .pz b{font-size:1.08rem}
+  .pz .ing{color:var(--gris);font-size:.92rem;flex:1}
+  .pz .prices{font-family:"Fjalla One",Impact,sans-serif;color:var(--rouge);white-space:nowrap;text-align:right;font-size:1rem}
+  .pz .prices small{display:block;color:var(--gris);font-family:Inter,sans-serif;font-weight:500;font-size:.7rem}
+  .carte-foot{margin-top:18px;text-align:center;color:var(--gris);font-size:.9rem}
+
+  /* ---- infos ---- */
+  #infos{background:var(--gris-bg)}
+  .infos-grid{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:760px){.infos-grid{grid-template-columns:1fr 1fr}}
+  .info-card{background:#fff;border:1px solid var(--gris-bord);border-radius:14px;padding:20px;display:flex;gap:14px;align-items:flex-start}
+  .info-card .ic{flex:0 0 46px;width:46px;height:46px;border-radius:12px;background:#fff5f5;border:2px solid var(--rouge);display:flex;align-items:center;justify-content:center;color:var(--rouge)}
+  .info-card h3{margin-bottom:.25em}
+  .info-card p{margin:0;color:var(--gris)}
+
+  /* ---- avis ---- */
+  .avis-head{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;margin-bottom:24px}
+  .score{display:flex;align-items:center;gap:12px;background:var(--noir);color:#fff;border-radius:14px;padding:12px 18px}
+  .score .num{font-family:"Fjalla One",Impact,sans-serif;font-size:2.4rem;line-height:1;color:var(--jaune)}
+  .score .meta small{display:block;color:#cfcfcf;font-size:.82rem}
+  .avis-grid{display:grid;gap:14px;grid-template-columns:1fr}
+  @media(min-width:760px){.avis-grid{grid-template-columns:1fr 1fr 1fr}}
+  .avis{border:1px solid var(--gris-bord);border-radius:14px;padding:18px;background:#fff}
+  .avis .stars{font-size:1rem;margin-bottom:8px}
+  .avis p{font-size:.98rem;margin:0 0 10px}
+  .avis .who{font-size:.85rem;color:var(--gris);display:flex;justify-content:space-between;align-items:center}
+  .gsrc{display:inline-flex;align-items:center;gap:5px;font-size:.78rem;color:var(--gris)}
+
+  /* ---- horaires ---- */
+  #horaires{background:var(--noir);color:#fff}
+  #horaires .kicker{color:var(--jaune)}#horaires .kicker::before{background:var(--jaune)}
+  .hours{max-width:520px;background:#fff;color:var(--noir);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+  .hours li{display:flex;justify-content:space-between;padding:13px 18px;border-bottom:1px solid var(--gris-bord);list-style:none}
+  .hours ul{margin:0;padding:0}
+  .hours li:last-child{border-bottom:0}
+  .hours li.closed{color:#9a2c2c;background:#fff5f5}
+  .hours li .d{font-weight:600}
+  .hours li .h{font-variant-numeric:tabular-nums}
+  .now-tag{display:inline-flex;align-items:center;gap:8px;margin-top:18px;background:var(--rouge);color:#fff;border-radius:30px;padding:8px 16px;font-weight:700;font-size:.92rem}
+  .now-tag .dot{width:10px;height:10px;border-radius:50%;background:var(--jaune);box-shadow:0 0 0 0 rgba(247,201,72,.7);animation:pulse 1.8s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(247,201,72,.6)}70%{box-shadow:0 0 0 8px rgba(247,201,72,0)}100%{box-shadow:0 0 0 0 rgba(247,201,72,0)}}
+  @media(prefers-reduced-motion:reduce){.now-tag .dot{animation:none}}
+
+  /* ---- footer ---- */
+  footer.site{background:#0d0d0d;color:#fff;padding:46px 0 30px}
+  .foot-grid{display:grid;gap:24px;grid-template-columns:1fr}
+  @media(min-width:760px){.foot-grid{grid-template-columns:1.2fr 1fr 1fr}}
+  footer.site a{color:#fff;text-decoration:none}
+  footer.site a:hover{text-decoration:underline}
+  .foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+  .foot-brand .stop{width:40px;height:40px}.foot-brand .stop span{font-size:.58rem}
+  .foot-brand b{font-family:"Fjalla One",Impact,sans-serif;font-size:1.3rem;letter-spacing:.04em;text-transform:uppercase}
+  footer.site h4{font-family:"Fjalla One",Impact,sans-serif;text-transform:uppercase;letter-spacing:.04em;font-weight:400;font-size:1rem;margin:0 0 10px;color:var(--jaune)}
+  footer.site p{color:#cfcfcf;margin:0 0 6px;font-size:.95rem}
+  .foot-bot{margin-top:30px;border-top:1px solid #2a2a2a;padding-top:16px;color:#8f8f8f;font-size:.82rem}
+
+  /* ---- modal démo ---- */
+  .modal{position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(10,10,10,.72)}
+  .modal.open{display:flex}
+  .modal-box{background:#fff;border-radius:18px;max-width:440px;width:100%;padding:26px 22px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.4);border-top:6px solid var(--rouge)}
+  .modal-box .stop{width:64px;height:64px;margin:0 auto 12px}
+  .modal-box h3{font-family:"Fjalla One",Impact,sans-serif;text-transform:uppercase;font-size:1.5rem;margin:0 0 8px}
+  .modal-box p{color:var(--gris)}
+  .modal-box .recap{background:var(--gris-bg);border-radius:12px;padding:12px 14px;text-align:left;margin:14px 0;font-size:.92rem}
+  .modal-box .recap b{color:var(--noir)}
+
+  /* ---- bandeau légal fixe ---- */
+  .legal{position:fixed;left:0;right:0;bottom:0;z-index:250;background:#0d0d0d;color:#d8d8d8;font-size:.72rem;line-height:1.35;padding:8px 14px calc(8px + env(safe-area-inset-bottom));border-top:3px solid var(--rouge);text-align:center;min-height:var(--bandeau-h);display:flex;align-items:center;justify-content:center}
+  .legal span{max-width:1080px}
+</style>
+</head>
+<body>
+<a class="skip" href="#commander">Aller à la commande</a>
+
+<header class="top">
+  <div class="topbar">
+    <a class="brand" href="#top" aria-label="Stop Pizza, accueil">
+      <span class="stop" aria-hidden="true">
+        <svg viewBox="0 0 100 100" role="img"><polygon points="29,3 71,3 97,29 97,71 71,97 29,97 3,71 3,29" fill="#E11E26" stroke="#fff" stroke-width="6"/></svg>
+        <span>STOP</span>
+      </span>
+      <b>Stop&nbsp;Pizza</b>
+    </a>
+    <nav class="top-cta" aria-label="Actions rapides">
+      <a class="btn btn-ghost" href="tel:+33329620505">Appeler</a>
+      <a class="btn btn-red" href="#commander">Commander</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" aria-labelledby="h-hero" style="padding:0">
+    <div class="hero-grid">
+      <div class="hero-txt">
+        <span class="stripe" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 100 100"><polygon points="29,3 71,3 97,29 97,71 71,97 29,97 3,71 3,29" fill="#fff"/></svg>
+          100&nbsp;% à emporter · Remiremont
+        </span>
+        <h1 id="h-hero">Vos pizzas à emporter à&nbsp;Remiremont — <em>commandez en ligne</em></h1>
+        <p class="lead">Choisissez vos pizzas, votre créneau de retrait, et passez les chercher. Prêtes à l'heure choisie, payées au comptoir.</p>
+        <div class="hero-cta">
+          <a class="btn btn-red" href="#commander">Commander en ligne</a>
+          <a class="btn btn-ghost" href="tel:+33329620505" aria-label="Appeler Stop Pizza au 03 29 62 05 05">📞 03 29 62 05 05</a>
+        </div>
+        <p class="hero-meta">
+          <span><span class="stars" aria-hidden="true">★★★★★</span> <strong>4,5</strong>/5 · 168 avis Google</span>
+          <span>Mar-dim 17 h-21 h 30</span>
+        </p>
+      </div>
+      <div class="hero-img">
+        <img src="img/hero-emporter.webp" alt="Main saisissant une part de pizza pepperoni dans son carton, en terrasse" width="1000" height="750" fetchpriority="high" decoding="async">
+        <div class="badge-fast" aria-hidden="true">
+          <span class="stop"><svg viewBox="0 0 100 100"><polygon points="29,3 71,3 97,29 97,71 71,97 29,97 3,71 3,29" fill="#E11E26" stroke="#fff" stroke-width="6"/></svg><span>★</span></span>
+          Prête à l'heure choisie
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="emporter-band">
+    <span><strong>Stop, on emporte&nbsp;!</strong></span>
+    <span>🚗 Parking devant la pizzeria</span>
+    <span>⏱️ Commande en ligne en 2 min</span>
+    <span>💶 Paiement au retrait</span>
+  </div>
+
+  <!-- ========== COMMANDE (WOW) ========== -->
+  <section id="commander" aria-labelledby="h-cmd">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Commande en ligne</span>
+        <h2 id="h-cmd">Composez, choisissez l'heure, c'est prêt</h2>
+        <p class="sub">Ajoutez vos pizzas au panier, sélectionnez une taille et un créneau de retrait. Vous payez sur place en récupérant — votre commande vous attend, chaude.</p>
+      </div>
+
+      <div class="order">
+        <!-- left: builder -->
+        <div class="panel">
+          <span class="step-tag">Étape 1 · La taille</span>
+          <h3>Quelle taille ?</h3>
+          <div class="sizes" role="group" aria-label="Choix de la taille">
+            <button class="size-btn" type="button" data-size="Junior" data-coef="0.8" aria-pressed="false"><b>Junior</b><small>26 cm</small></button>
+            <button class="size-btn" type="button" data-size="Senior" data-coef="1" aria-pressed="true"><b>Senior</b><small>33 cm</small></button>
+            <button class="size-btn" type="button" data-size="Méga" data-coef="1.35" aria-pressed="false"><b>Méga</b><small>40 cm</small></button>
+          </div>
+
+          <span class="step-tag">Étape 2 · Les pizzas</span>
+          <h3>Ajoutez au panier</h3>
+          <!-- [À REMPLACER] Pizzas, descriptions et prix de référence (taille Senior) — exemples à valider. -->
+          <div class="menu-pick" id="menu-pick"></div>
+
+          <div class="field">
+            <span class="step-tag">Étape 3 · Le créneau</span>
+            <label for="slot">Heure de retrait</label>
+            <select id="slot" aria-describedby="slot-help"></select>
+            <p class="slot-note" id="slot-help">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E11E26" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <span>Créneaux de 15 min, calés sur nos horaires (mar-dim 17 h-21 h 30). Votre commande est <strong>prête à l'heure choisie</strong>.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- right: cart -->
+        <aside class="panel cart" aria-label="Votre panier">
+          <h3>
+            <span class="stop" aria-hidden="true" style="width:30px;height:30px"><svg viewBox="0 0 100 100"><polygon points="29,3 71,3 97,29 97,71 71,97 29,97 3,71 3,29" fill="#E11E26" stroke="#fff" stroke-width="6"/></svg></span>
+            Votre panier
+          </h3>
+          <ul class="cart-items" id="cart-items"><li class="cart-empty" id="cart-empty">Votre panier est vide. Ajoutez une pizza pour démarrer.</li></ul>
+          <div class="cart-total"><span>Total</span> <b id="cart-total">0,00 €</b></div>
+          <p class="pay-note" id="pay-note">Retrait : <strong>choisissez un créneau ci-contre</strong> · Paiement au comptoir.</p>
+          <button class="btn btn-red btn-block" type="button" id="checkout">Valider ma commande</button>
+          <p class="hint">Module de commande simulé — rien n'est envoyé, rien n'est facturé. Démonstration.</p>
+          <noscript><p class="hint">La commande en ligne nécessite JavaScript. Appelez-nous au <a href="tel:+33329620505" style="color:var(--rouge)">03 29 62 05 05</a>.</p></noscript>
+        </aside>
+      </div>
+      <p class="sr-only" aria-live="polite" id="live"></p>
+    </div>
+  </section>
+
+  <!-- ========== CARTE ========== -->
+  <section id="carte" aria-labelledby="h-carte">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">La carte</span>
+        <h2 id="h-carte">Nos pizzas</h2>
+        <p class="sub">Pâte préparée maison, garnies à la commande. Trois tailles : Junior 26 cm, Senior 33 cm, Méga 40 cm.</p>
+      </div>
+      <!-- [À REMPLACER] Noms, ingrédients et prix des pizzas — exemples crédibles à valider avec l'établissement. -->
+      <div class="carte-grid" id="carte-grid"></div>
+      <p class="carte-foot">Suppléments, base crème, sans gluten… on en parle au <a href="tel:+33329620505" style="color:var(--rouge);font-weight:700">03 29 62 05 05</a>. <!-- [À REMPLACER] Options réelles à confirmer. --></p>
+    </div>
+  </section>
+
+  <!-- ========== INFOS ========== -->
+  <section id="infos" aria-labelledby="h-infos">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Bon à savoir</span>
+        <h2 id="h-infos">100 % à emporter</h2>
+        <p class="sub">Pas de salle, pas d'attente : vous commandez, vous passez, vous repartez avec vos pizzas chaudes.</p>
+      </div>
+      <div class="infos-grid">
+        <div class="info-card">
+          <span class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M5 12l4-4M5 12l4 4"/><rect x="2" y="4" width="3" height="16" rx="1"/></svg></span>
+          <div><h3>Uniquement à emporter</h3><p>Toutes nos pizzas sont préparées pour être emportées. Commandez en ligne ou par téléphone, et venez les chercher à l'heure choisie.</p></div>
+        </div>
+        <div class="info-card">
+          <span class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13l2-5a2 2 0 0 1 1.9-1.3h10.2A2 2 0 0 1 19 8l2 5"/><path d="M3 13v4h18v-4"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg></span>
+          <div><h3>Parking devant</h3><p>Stationnement juste devant la pizzeria, boulevard Thiers. Vous vous garez, vous récupérez, vous repartez en quelques minutes.</p></div>
+        </div>
+        <div class="info-card">
+          <span class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><h3>En plein centre</h3><p>22 Boulevard Thiers, 88200 Remiremont. <a href="https://www.google.com/maps/search/?api=1&query=Stop+Pizza+22+Bd+Thiers+88200+Remiremont" target="_blank" rel="noopener" style="color:var(--rouge);font-weight:600">Voir sur Google&nbsp;Maps</a>.</p></div>
+        </div>
+        <div class="info-card">
+          <span class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <div><h3>Prêt à l'heure choisie</h3><p>Notre force : la régularité. La commande en ligne réserve votre créneau pour que tout soit prêt quand vous arrivez — sans poireauter au comptoir.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AVIS ========== -->
+  <section id="avis" aria-labelledby="h-avis">
+    <div class="wrap">
+      <div class="head"><span class="kicker">Vos avis</span><h2 id="h-avis">Ils nous ont fait confiance</h2></div>
+      <div class="avis-head">
+        <div class="score">
+          <span class="num">4,5</span>
+          <span class="meta"><span class="stars" aria-hidden="true">★★★★★</span><small>168 avis sur Google</small></span>
+        </div>
+        <p class="sub" style="margin:0">Une note construite avis après avis, soir après soir.</p>
+      </div>
+      <!-- [À REMPLACER] Extraits d'avis illustratifs (≤ 15 mots). À remplacer par de vrais avis Google avec accord. -->
+      <div class="avis-grid">
+        <div class="avis"><div class="stars" aria-hidden="true">★★★★★</div><p>« Pizza prête pile à l'heure, encore chaude. Pâte délicieuse. »</p><div class="who"><span>Karim B.</span><span class="gsrc"><svg width="13" height="13" viewBox="0 0 24 24"><path fill="#4285F4" d="M23 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.2a5.3 5.3 0 0 1-2.3 3.5v2.9h3.7c2.2-2 3.4-5 3.4-8.6z"/><path fill="#34A853" d="M12 24c3.1 0 5.7-1 7.6-2.8l-3.7-2.9c-1 .7-2.3 1.1-3.9 1.1-3 0-5.5-2-6.4-4.7H1.8v3C3.7 21.4 7.5 24 12 24z"/><path fill="#FBBC05" d="M5.6 14.7a7.2 7.2 0 0 1 0-4.6v-3H1.8a12 12 0 0 0 0 10.6z"/><path fill="#EA4335" d="M12 4.8c1.7 0 3.2.6 4.4 1.7l3.3-3.3C17.7 1.2 15.1 0 12 0 7.5 0 3.7 2.6 1.8 6.4l3.8 3c.9-2.7 3.4-4.6 6.4-4.6z"/></svg>Avis Google</span></div></div>
+        <div class="avis"><div class="stars" aria-hidden="true">★★★★★</div><p>« Commande en ligne hyper pratique, zéro attente au retrait. »</p><div class="who"><span>Élodie M.</span><span class="gsrc"><svg width="13" height="13" viewBox="0 0 24 24"><path fill="#4285F4" d="M23 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.2a5.3 5.3 0 0 1-2.3 3.5v2.9h3.7c2.2-2 3.4-5 3.4-8.6z"/><path fill="#34A853" d="M12 24c3.1 0 5.7-1 7.6-2.8l-3.7-2.9c-1 .7-2.3 1.1-3.9 1.1-3 0-5.5-2-6.4-4.7H1.8v3C3.7 21.4 7.5 24 12 24z"/><path fill="#FBBC05" d="M5.6 14.7a7.2 7.2 0 0 1 0-4.6v-3H1.8a12 12 0 0 0 0 10.6z"/><path fill="#EA4335" d="M12 4.8c1.7 0 3.2.6 4.4 1.7l3.3-3.3C17.7 1.2 15.1 0 12 0 7.5 0 3.7 2.6 1.8 6.4l3.8 3c.9-2.7 3.4-4.6 6.4-4.6z"/></svg>Avis Google</span></div></div>
+        <div class="avis"><div class="stars" aria-hidden="true">★★★★☆</div><p>« Très bonnes pizzas, généreuses et parking facile devant. »</p><div class="who"><span>Thomas R.</span><span class="gsrc"><svg width="13" height="13" viewBox="0 0 24 24"><path fill="#4285F4" d="M23 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.2a5.3 5.3 0 0 1-2.3 3.5v2.9h3.7c2.2-2 3.4-5 3.4-8.6z"/><path fill="#34A853" d="M12 24c3.1 0 5.7-1 7.6-2.8l-3.7-2.9c-1 .7-2.3 1.1-3.9 1.1-3 0-5.5-2-6.4-4.7H1.8v3C3.7 21.4 7.5 24 12 24z"/><path fill="#FBBC05" d="M5.6 14.7a7.2 7.2 0 0 1 0-4.6v-3H1.8a12 12 0 0 0 0 10.6z"/><path fill="#EA4335" d="M12 4.8c1.7 0 3.2.6 4.4 1.7l3.3-3.3C17.7 1.2 15.1 0 12 0 7.5 0 3.7 2.6 1.8 6.4l3.8 3c.9-2.7 3.4-4.6 6.4-4.6z"/></svg>Avis Google</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HORAIRES ========== -->
+  <section id="horaires" aria-labelledby="h-hor">
+    <div class="wrap">
+      <div class="head"><span class="kicker">Horaires &amp; accès</span><h2 id="h-hor">Quand passer ?</h2>
+      <p class="sub">Service du soir uniquement, du mardi au dimanche. Fermé le lundi.</p></div>
+      <div style="display:grid;gap:22px;align-items:start">
+        <div class="hours">
+          <ul>
+            <li class="closed"><span class="d">Lundi</span><span class="h">Fermé</span></li>
+            <li><span class="d">Mardi</span><span class="h">17 h 00 – 21 h 30</span></li>
+            <li><span class="d">Mercredi</span><span class="h">17 h 00 – 21 h 30</span></li>
+            <li><span class="d">Jeudi</span><span class="h">17 h 00 – 21 h 30</span></li>
+            <li><span class="d">Vendredi</span><span class="h">17 h 00 – 21 h 30</span></li>
+            <li><span class="d">Samedi</span><span class="h">17 h 00 – 21 h 30</span></li>
+            <li><span class="d">Dimanche</span><span class="h">17 h 00 – 21 h 30</span></li>
+          </ul>
+        </div>
+        <div>
+          <p id="open-now" class="now-tag" hidden><span class="dot" aria-hidden="true"></span><span></span></p>
+          <p style="color:#cfcfcf;margin-top:14px;max-width:46ch">Une envie de dernière minute ? Un coup de fil et c'est lancé : <a href="tel:+33329620505" style="color:var(--jaune);font-weight:700">03 29 62 05 05</a>.</p>
+          <img src="img/four.webp" alt="Pizza fumante sortie du four, fromage filant" width="800" height="600" loading="lazy" decoding="async" style="border-radius:14px;margin-top:8px;box-shadow:var(--shadow)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site" aria-labelledby="h-foot">
+  <div class="wrap">
+    <h2 id="h-foot" class="sr-only">Coordonnées</h2>
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <span class="stop" aria-hidden="true"><svg viewBox="0 0 100 100"><polygon points="29,3 71,3 97,29 97,71 71,97 29,97 3,71 3,29" fill="#E11E26" stroke="#fff" stroke-width="6"/></svg><span>STOP</span></span>
+          <b>Stop&nbsp;Pizza</b>
+        </div>
+        <p>Pizzas à emporter, en plein cœur de Remiremont. <span class="stars" aria-hidden="true">★★★★★</span> 4,5/5 · 168 avis.</p>
+        <img src="img/box.webp" alt="Pizza pepperoni dans son carton de livraison" width="800" height="600" loading="lazy" decoding="async" style="border-radius:12px;margin-top:10px">
+      </div>
+      <div>
+        <h4>Nous trouver</h4>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Stop+Pizza+22+Bd+Thiers+88200+Remiremont" target="_blank" rel="noopener">22 Boulevard Thiers<br>88200 Remiremont</a></p>
+        <p><a href="tel:+33329620505">📞 03 29 62 05 05</a></p>
+      </div>
+      <div>
+        <h4>Horaires</h4>
+        <p>Lundi : fermé</p>
+        <p>Mar – Dim : 17 h – 21 h 30</p>
+        <p style="margin-top:10px"><a class="btn btn-red" href="#commander">Commander en ligne</a></p>
+      </div>
+    </div>
+    <p class="foot-bot">© <span id="yr"></span> Stop Pizza — Remiremont. Maquette de démonstration. Mentions légales, allergènes et conditions affichés en boutique. <!-- [À REMPLACER] Mentions légales / SIRET / allergènes réels. --></p>
+  </div>
+</footer>
+
+<!-- modal démo -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal-box">
+    <span class="stop" aria-hidden="true"><svg viewBox="0 0 100 100"><polygon points="29,3 71,3 97,29 97,71 71,97 29,97 3,71 3,29" fill="#E11E26" stroke="#fff" stroke-width="6"/></svg><span>OK</span></span>
+    <h3 id="modal-title">Ceci est une démonstration</h3>
+    <p>Votre commande n'a pas été envoyée et rien n'a été facturé.</p>
+    <div class="recap" id="modal-recap"></div>
+    <p style="font-size:.88rem">En production : votre commande partirait directement en cuisine, prête au créneau choisi — <b>paiement au comptoir au retrait</b>.</p>
+    <button class="btn btn-dark btn-block" type="button" id="modal-close">J'ai compris</button>
+  </div>
+</div>
+
+<!-- bandeau légal fixe -->
+<div class="legal" role="contentinfo"><span>Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</span></div>
+
+<script>
+(function(){
+  "use strict";
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // ---- Menu data [À REMPLACER] (prix Senior de référence, en €) ----
+  var PIZZAS = [
+    {n:"Margherita", d:"Tomate, mozzarella, basilic", p:9.0},
+    {n:"Reine", d:"Tomate, mozzarella, jambon, champignons", p:11.0},
+    {n:"Pepperoni", d:"Tomate, mozzarella, pepperoni piquant", p:11.5},
+    {n:"4 Fromages", d:"Crème, mozzarella, chèvre, bleu, emmental", p:12.0},
+    {n:"Végétarienne", d:"Tomate, légumes grillés, mozzarella", p:11.0},
+    {n:"Calzone", d:"Chausson : jambon, œuf, champignons", p:11.5},
+    {n:"Vosgienne", d:"Crème, lardons, munster, pommes de terre", p:12.5},
+    {n:"Stop Royale", d:"Tomate, viande hachée, merguez, poivrons, oignons", p:13.0}
+  ];
+  var SIZES = {"Junior":0.8,"Senior":1,"Méga":1.35};
+  var euro = function(v){ return v.toFixed(2).replace('.',',') + ' €'; };
+  var currentSize = "Senior";
+  var cart = {}; // key -> {name,size,unit,qty}
+
+  // ---- persistence ----
+  var KEY = "stop-pizza-cart-v1";
+  function save(){ try{ localStorage.setItem(KEY, JSON.stringify({size:currentSize,cart:cart})); }catch(e){} }
+  function load(){
+    try{
+      var raw = localStorage.getItem(KEY); if(!raw) return;
+      var o = JSON.parse(raw);
+      if(o && o.cart) cart = o.cart;
+      if(o && o.size && SIZES[o.size]) currentSize = o.size;
+    }catch(e){}
+  }
+  load();
+
+  var live = document.getElementById('live');
+  function announce(msg){ if(live){ live.textContent=''; setTimeout(function(){ live.textContent = msg; },30); } }
+
+  // ---- price for a pizza at current size ----
+  function priceAt(base, size){ return Math.round(base * SIZES[size] * 2) / 2; } // arrondi 0,50 €
+
+  // ---- render the menu picker ----
+  var pickWrap = document.getElementById('menu-pick');
+  function renderMenuPick(){
+    pickWrap.innerHTML = '';
+    PIZZAS.forEach(function(pz, i){
+      var unit = priceAt(pz.p, currentSize);
+      var row = document.createElement('div');
+      row.className = 'pick';
+      row.innerHTML = '<div class="info"><b>'+pz.n+'</b><small>'+pz.d+'</small></div>'+
+        '<span class="price">'+euro(unit)+'</span>'+
+        '<button class="add-btn" type="button" aria-label="Ajouter '+pz.n+' '+currentSize+' au panier">+</button>';
+      row.querySelector('.add-btn').addEventListener('click', function(){ addToCart(i); });
+      pickWrap.appendChild(row);
+    });
+  }
+
+  // ---- size buttons ----
+  var sizeBtns = Array.prototype.slice.call(document.querySelectorAll('.size-btn'));
+  function syncSizeButtons(){
+    sizeBtns.forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.size === currentSize ? 'true':'false'); });
+  }
+  sizeBtns.forEach(function(b){
+    b.addEventListener('click', function(){
+      currentSize = b.dataset.size;
+      syncSizeButtons(); renderMenuPick(); save();
+      announce('Taille ' + currentSize + ' sélectionnée.');
+    });
+  });
+
+  // ---- cart ops ----
+  function addToCart(i){
+    var pz = PIZZAS[i];
+    var unit = priceAt(pz.p, currentSize);
+    var k = pz.n + '|' + currentSize;
+    if(cart[k]) cart[k].qty++;
+    else cart[k] = {name:pz.n, size:currentSize, unit:unit, qty:1};
+    renderCart(); save();
+    announce(pz.n + ' ' + currentSize + ' ajoutée au panier.');
+  }
+  function changeQty(k, delta){
+    if(!cart[k]) return;
+    cart[k].qty += delta;
+    if(cart[k].qty <= 0) delete cart[k];
+    renderCart(); save();
+  }
+
+  var itemsEl = document.getElementById('cart-items');
+  var emptyEl = document.getElementById('cart-empty');
+  var totalEl = document.getElementById('cart-total');
+  function cartTotal(){ var t=0; for(var k in cart) t += cart[k].unit * cart[k].qty; return t; }
+  function cartCount(){ var n=0; for(var k in cart) n += cart[k].qty; return n; }
+
+  function renderCart(){
+    var keys = Object.keys(cart);
+    itemsEl.innerHTML = '';
+    if(keys.length === 0){
+      itemsEl.appendChild(emptyEl); emptyEl.hidden = false;
+    } else {
+      keys.forEach(function(k){
+        var it = cart[k];
+        var li = document.createElement('li');
+        li.className = 'ci';
+        li.innerHTML = '<span class="nm"><b>'+it.name+'</b><small>'+it.size+' · '+euro(it.unit)+'</small></span>'+
+          '<button type="button" aria-label="Retirer un '+it.name+'">−</button>'+
+          '<span class="qty">'+it.qty+'</span>'+
+          '<button type="button" aria-label="Ajouter un '+it.name+'">+</button>'+
+          '<span class="pr">'+euro(it.unit*it.qty)+'</span>';
+        var btns = li.querySelectorAll('button');
+        btns[0].addEventListener('click', function(){ changeQty(k,-1); });
+        btns[1].addEventListener('click', function(){ changeQty(k,1); });
+        itemsEl.appendChild(li);
+      });
+    }
+    totalEl.textContent = euro(cartTotal());
+  }
+
+  // ---- carte (read-only section) ----
+  var carteGrid = document.getElementById('carte-grid');
+  PIZZAS.forEach(function(pz){
+    var jr = priceAt(pz.p,"Junior"), sr = priceAt(pz.p,"Senior"), mg = priceAt(pz.p,"Méga");
+    var card = document.createElement('div');
+    card.className = 'pz';
+    card.innerHTML = '<div class="row"><b>'+pz.n+'</b></div>'+
+      '<div class="row"><span class="ing">'+pz.d+'</span>'+
+      '<span class="prices">'+euro(sr)+'<small>Jr '+euro(jr)+' · Méga '+euro(mg)+'</small></span></div>';
+    carteGrid.appendChild(card);
+  });
+
+  // ---- pickup slots from real hours (Tue-Sun 17:00-21:30, closed Monday) ----
+  var slotSel = document.getElementById('slot');
+  function buildSlots(){
+    slotSel.innerHTML = '';
+    var now = new Date();
+    var open = 17*60, close = 21*60+30; // minutes
+    var prepBuffer = 20; // commande prête mini 20 min après commande
+    var day = now.getDay(); // 0=dim..1=lun
+    var nowMin = now.getHours()*60 + now.getMinutes();
+    var todayOpen = (day !== 1); // fermé lundi
+    var firstSlot = open;
+    if(todayOpen && nowMin > open - 60){
+      // si on est dans/proche de la plage, démarrer après le buffer
+      firstSlot = Math.max(open, Math.ceil((nowMin + prepBuffer)/15)*15);
+    }
+    var addedToday = 0;
+    var labelDay = todayOpen ? "Aujourd'hui" : "Demain (mardi)";
+    if(todayOpen){
+      for(var m = firstSlot; m <= close; m += 15){
+        addOpt(labelDay, m);
+        addedToday++;
+      }
+    }
+    if(addedToday === 0){
+      // service terminé ou jour fermé → proposer le prochain jour ouvré
+      var nextLabel = (day === 1) ? "Demain (mardi)" : "Prochain service";
+      for(var m2 = open; m2 <= close; m2 += 15){ addOpt(nextLabel, m2); }
+    }
+  }
+  function addOpt(prefix, minutes){
+    var h = Math.floor(minutes/60), mm = minutes%60;
+    var label = prefix + ' · ' + h + ' h ' + (mm<10?('0'+mm):mm);
+    var o = document.createElement('option');
+    o.value = label; o.textContent = label;
+    slotSel.appendChild(o);
+  }
+  buildSlots();
+
+  var payNote = document.getElementById('pay-note');
+  function syncPayNote(){
+    var n = cartCount();
+    if(n === 0){ payNote.innerHTML = 'Retrait : <strong>choisissez un créneau ci-contre</strong> · Paiement au comptoir.'; }
+    else { payNote.innerHTML = n + ' article'+(n>1?'s':'')+' · Retrait <strong>'+ (slotSel.value||'à choisir') +'</strong> · Paiement au comptoir.'; }
+  }
+  slotSel.addEventListener('change', syncPayNote);
+
+  // wrap renderCart to also refresh payNote
+  var _renderCart = renderCart;
+  renderCart = function(){ _renderCart(); syncPayNote(); };
+
+  // ---- checkout / modal ----
+  var modal = document.getElementById('modal');
+  var recap = document.getElementById('modal-recap');
+  var lastFocus = null;
+  function openModal(){
+    lastFocus = document.activeElement;
+    modal.hidden = false; modal.classList.add('open');
+    document.getElementById('modal-close').focus();
+    document.addEventListener('keydown', onKey);
+  }
+  function closeModal(){
+    modal.classList.remove('open'); modal.hidden = true;
+    document.removeEventListener('keydown', onKey);
+    if(lastFocus) lastFocus.focus();
+  }
+  function onKey(e){ if(e.key === 'Escape') closeModal(); }
+  document.getElementById('modal-close').addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+
+  document.getElementById('checkout').addEventListener('click', function(){
+    if(cartCount() === 0){
+      announce('Votre panier est vide. Ajoutez une pizza avant de valider.');
+      pickWrap.scrollIntoView({behavior:'smooth', block:'center'});
+      return;
+    }
+    var lines = '';
+    for(var k in cart){ lines += '<div>'+cart[k].qty+' × '+cart[k].name+' <small>('+cart[k].size+')</small> — '+euro(cart[k].unit*cart[k].qty)+'</div>'; }
+    recap.innerHTML = lines +
+      '<div style="margin-top:8px;border-top:1px solid #ddd;padding-top:8px"><b>Retrait :</b> '+ (slotSel.value||'créneau à choisir') +'</div>'+
+      '<div><b>Total :</b> '+euro(cartTotal())+' — à régler au comptoir</div>';
+    openModal();
+    announce('Commande simulée enregistrée. Ceci est une démonstration.');
+  });
+
+  // ---- open-now tag in horaires ----
+  (function(){
+    var tag = document.getElementById('open-now');
+    if(!tag) return;
+    var now = new Date(); var day = now.getDay(); var m = now.getHours()*60+now.getMinutes();
+    var openNow = (day !== 1) && (m >= 17*60) && (m <= 21*60+30);
+    var span = tag.querySelector('span:last-child');
+    if(openNow){ span.textContent = 'Ouvert maintenant — commandez en ligne !'; tag.hidden = false; }
+    else {
+      tag.style.background = '#333'; tag.querySelector('.dot').style.background = '#bbb'; tag.querySelector('.dot').style.animation='none';
+      span.textContent = (day===1) ? 'Fermé le lundi — à demain dès 17 h' : 'Fermé pour le moment — service dès 17 h';
+      tag.hidden = false;
+    }
+  })();
+
+  // ---- init render ----
+  renderMenuPick();
+  syncSizeButtons();
+  renderCart();
+})();
+</script>
+</body>
+</html>

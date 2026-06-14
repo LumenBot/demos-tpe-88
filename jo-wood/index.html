@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#232020">
+<title>Jo Wood — Menuiserie sur-mesure à Remiremont (88) · escaliers, dressings, tables</title>
+<meta name="description" content="Jo Wood, menuisier-ébéniste à Remiremont (Saint-Étienne-lès-Remiremont, 88200) : escaliers en chêne brossé, dressings, tables et portes sur-mesure. Réalisations bois massif, finitions soignées. Noté 4,7★ sur 26 avis Google.">
+
+<!-- Google Fonts non-bloquant : Fraunces (display, opsz) + Inter (texte) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"></noscript>
+
+<style>
+:root{
+  --chene:#B5854B;      /* chêne */
+  --chene-d:#9A6E38;
+  --noyer:#5A3A22;      /* noyer */
+  --noyer-d:#42291661;
+  --anthra:#232020;     /* anthracite */
+  --anthra-2:#2E2A28;
+  --creme:#F6EFE4;      /* crème */
+  --creme-2:#EFE5D5;
+  --blanc:#FFFDFA;
+  --texte:#2A2421;
+  --texte-2:#6B5E53;
+  --line:#E3D7C4;
+  --line-d:rgba(246,239,228,.14);
+  --r:14px;
+  --maxw:1140px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--texte);background:var(--creme);line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:56px; /* place bandeau légal fixe */
+}
+h1,h2,h3,.dsp{font-family:"Fraunces","Georgia",serif;line-height:1.08;letter-spacing:-.012em;font-weight:600}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.eyebrow{font-family:Inter,sans-serif;text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;font-weight:600;color:var(--chene-d)}
+section{padding:62px 0}
+:focus-visible{outline:3px solid var(--chene);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:var(--anthra);color:#fff;padding:10px 16px;z-index:200;border-radius:0 0 10px 0}
+.skip:focus{left:0}
+
+/* boutons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:0 26px;border-radius:11px;font-family:Inter,sans-serif;font-weight:600;font-size:1.02rem;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:transform .12s ease,background .15s ease,box-shadow .15s ease;white-space:nowrap}
+.btn:active{transform:translateY(1px)}
+.btn-chene{background:var(--chene);color:#2a1c0c}
+.btn-chene:hover{background:#c6975c;box-shadow:0 10px 26px rgba(154,110,56,.4)}
+.btn-ghost{background:transparent;color:var(--creme);border-color:rgba(246,239,228,.4)}
+.btn-ghost:hover{border-color:var(--chene);color:var(--chene)}
+.btn-dark{background:var(--anthra);color:var(--creme)}
+.btn-dark:hover{background:var(--anthra-2)}
+.btn-block{width:100%}
+
+/* header */
+header.nav{position:sticky;top:0;z-index:80;background:rgba(35,32,32,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line-d)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--creme)}
+.brand .mark{width:38px;height:38px;border-radius:9px;background:linear-gradient(150deg,var(--chene),var(--noyer));display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.brand .nm{font-family:"Fraunces",serif;font-weight:600;font-size:1.22rem;letter-spacing:.01em;line-height:1}
+.brand .nm small{display:block;font-family:Inter,sans-serif;font-weight:500;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--chene);margin-top:3px}
+.nav-cta{display:none}
+.nav-cta a{color:var(--creme);text-decoration:none;font-weight:600;font-size:.92rem;display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 6px}
+@media(min-width:760px){.nav-cta{display:flex;align-items:center;gap:22px}}
+
+/* hero */
+.hero{background:var(--anthra);color:var(--creme);position:relative;overflow:hidden}
+.hero .wrap{display:grid;gap:30px;padding-top:46px;padding-bottom:52px}
+@media(min-width:880px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center;padding-top:66px;padding-bottom:70px;gap:46px}}
+.hero h1{font-size:2.15rem;font-weight:600;margin:14px 0 0}
+@media(min-width:560px){.hero h1{font-size:2.7rem}}
+@media(min-width:880px){.hero h1{font-size:3.1rem}}
+.hero h1 em{font-style:italic;color:var(--chene)}
+.hero p.lead{color:#D9CDBC;font-size:1.08rem;margin-top:18px;max-width:46ch}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.rating{display:inline-flex;align-items:center;gap:9px;margin-top:24px;font-size:.94rem;color:#E7DDCD}
+.stars{color:var(--chene);letter-spacing:1px}
+.hero-fig{position:relative}
+.hero-fig img{border-radius:18px;width:100%;aspect-ratio:4/3;object-fit:cover;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.hero-fig .tag{position:absolute;left:14px;bottom:14px;background:rgba(35,32,32,.82);backdrop-filter:blur(4px);color:var(--creme);font-size:.78rem;font-weight:600;padding:8px 13px;border-radius:9px;border:1px solid var(--line-d)}
+.trust{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;list-style:none;font-size:.9rem;color:#CDBFAD}
+.trust li{display:flex;align-items:center;gap:8px}
+.trust svg{flex:0 0 auto;color:var(--chene)}
+
+/* section titres */
+.sec-head{max-width:60ch}
+.sec-head h2{font-size:1.85rem;margin-top:10px}
+@media(min-width:560px){.sec-head h2{font-size:2.25rem}}
+.sec-head p{color:var(--texte-2);margin-top:12px;font-size:1.04rem}
+
+/* galerie */
+#galerie{background:var(--blanc)}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
+@media(min-width:760px){.gallery{grid-template-columns:repeat(3,1fr);gap:18px}}
+.gcard{position:relative;border-radius:14px;overflow:hidden;background:var(--creme-2);box-shadow:0 6px 20px rgba(90,58,34,.1)}
+.gcard.tall{grid-row:span 2}
+.gcard img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1;transition:transform .4s ease}
+.gcard.tall img{aspect-ratio:auto;min-height:100%}
+.gcard:hover img{transform:scale(1.04)}
+.gcard figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 12px;background:linear-gradient(transparent,rgba(35,32,32,.88));color:var(--creme)}
+.gcard figcaption b{font-family:"Fraunces",serif;font-weight:600;font-size:1rem;display:block}
+.gcard figcaption span{font-size:.78rem;color:#D9CDBC}
+@media(min-width:760px){.gcard:nth-child(1){grid-column:span 2}}
+
+/* projet (formulaire) */
+.project{margin-top:36px;background:var(--anthra);color:var(--creme);border-radius:20px;padding:26px 22px;display:grid;gap:22px}
+@media(min-width:820px){.project{grid-template-columns:.85fr 1.15fr;padding:38px 36px;gap:40px;align-items:start}}
+.project h3{font-size:1.5rem;color:var(--creme)}
+.project .ptxt p{color:#CFC2B1;margin-top:12px;font-size:.98rem}
+.project .pchecks{list-style:none;margin-top:18px;display:grid;gap:10px;font-size:.92rem;color:#E2D7C7}
+.project .pchecks li{display:flex;gap:10px;align-items:flex-start}
+.project .pchecks svg{flex:0 0 auto;color:var(--chene);margin-top:2px}
+.field{display:grid;gap:7px;margin-bottom:14px}
+.field label{font-size:.86rem;font-weight:600;color:#E7DDCD}
+.field input,.field select,.field textarea{font-family:inherit;font-size:1rem;padding:12px 14px;border-radius:10px;border:1.5px solid rgba(246,239,228,.22);background:rgba(246,239,228,.06);color:var(--creme);min-height:48px;width:100%}
+.field textarea{min-height:96px;resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:#9c9087}
+.field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23B5854B' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--chene);background:rgba(246,239,228,.1)}
+.frow{display:grid;gap:0}
+@media(min-width:520px){.frow{grid-template-columns:1fr 1fr;gap:14px}}
+.filebtn{display:inline-flex;align-items:center;gap:10px;cursor:pointer;border:1.5px dashed rgba(246,239,228,.3);border-radius:10px;padding:13px 16px;font-size:.92rem;color:#E7DDCD;min-height:48px;width:100%}
+.filebtn:hover{border-color:var(--chene)}
+.filebtn input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.filelist{list-style:none;margin:8px 0 0;font-size:.84rem;color:#CFC2B1;display:grid;gap:4px}
+.filelist li{display:flex;align-items:center;gap:8px}
+.hint{font-size:.78rem;color:#9c9087;margin-top:4px}
+.demo-screen{display:none;text-align:center;padding:22px 16px;background:rgba(181,133,75,.14);border:1px solid rgba(181,133,75,.4);border-radius:14px}
+.demo-screen.show{display:block}
+.demo-screen .ic{width:54px;height:54px;border-radius:50%;background:var(--chene);color:#2a1c0c;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+.demo-screen h4{font-family:"Fraunces",serif;font-size:1.3rem;color:var(--creme)}
+.demo-screen p{color:#CFC2B1;font-size:.92rem;margin-top:7px;max-width:42ch;margin-left:auto;margin-right:auto}
+.demo-screen .reset{margin-top:16px;background:transparent;border:1.5px solid rgba(246,239,228,.32);color:var(--creme);border-radius:10px;padding:11px 18px;font-family:inherit;font-weight:600;cursor:pointer;min-height:46px}
+
+/* savoir-faire */
+#savoir{background:var(--creme)}
+.skills{display:grid;gap:16px;margin-top:32px}
+@media(min-width:680px){.skills{grid-template-columns:repeat(3,1fr)}}
+.skill{background:var(--blanc);border:1px solid var(--line);border-radius:var(--r);padding:24px 22px}
+.skill .ic{width:46px;height:46px;border-radius:11px;background:var(--creme-2);color:var(--noyer);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.skill h3{font-size:1.22rem}
+.skill p{color:var(--texte-2);font-size:.95rem;margin-top:8px}
+.essences{margin-top:34px;background:var(--anthra);color:var(--creme);border-radius:18px;padding:26px 22px}
+@media(min-width:680px){.essences{padding:32px}}
+.essences h3{font-size:1.35rem;color:var(--creme)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.chip{background:rgba(246,239,228,.08);border:1px solid var(--line-d);border-radius:999px;padding:9px 16px;font-size:.9rem;font-weight:500;color:#E7DDCD}
+.chip b{color:var(--chene);font-weight:600}
+
+/* avis */
+#avis{background:var(--blanc)}
+.avis-top{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-top:18px}
+.score{display:flex;align-items:center;gap:14px}
+.score .n{font-family:"Fraunces",serif;font-size:3rem;line-height:1;color:var(--noyer)}
+.score .meta .stars{font-size:1.1rem}
+.score .meta small{display:block;color:var(--texte-2);font-size:.86rem;margin-top:3px}
+.gbadge{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;color:var(--texte-2);background:var(--creme);border:1px solid var(--line);border-radius:999px;padding:7px 13px}
+.reviews{display:grid;gap:16px;margin-top:28px}
+@media(min-width:680px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:var(--creme);border:1px solid var(--line);border-radius:var(--r);padding:22px 20px}
+.review .stars{color:var(--chene);font-size:.95rem}
+.review p{font-style:italic;margin:10px 0 14px;font-size:.98rem;color:var(--texte)}
+.review .who{font-size:.84rem;color:var(--texte-2);font-weight:600}
+
+/* contact */
+#contact{background:var(--anthra);color:var(--creme)}
+#contact .sec-head h2{color:var(--creme)}
+#contact .sec-head p{color:#CFC2B1}
+.contact-grid{display:grid;gap:22px;margin-top:30px}
+@media(min-width:760px){.contact-grid{grid-template-columns:1fr 1fr;gap:34px}}
+.cinfo{display:grid;gap:14px}
+.cinfo a,.cinfo .row{display:flex;align-items:flex-start;gap:13px;text-decoration:none;color:var(--creme);font-size:1rem;min-height:44px;padding:6px 0}
+.cinfo .ic{width:42px;height:42px;border-radius:11px;background:rgba(246,239,228,.07);border:1px solid var(--line-d);color:var(--chene);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.cinfo b{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:#A99B8B;font-weight:600;margin-bottom:2px}
+.cinfo span{color:#E7DDCD}
+.maplink{display:inline-flex;align-items:center;gap:8px;color:var(--chene);text-decoration:none;font-weight:600;font-size:.92rem;margin-top:2px}
+.hours{background:rgba(246,239,228,.05);border:1px solid var(--line-d);border-radius:16px;padding:22px}
+.hours h3{font-size:1.2rem;color:var(--creme)}
+.hours table{width:100%;border-collapse:collapse;margin-top:12px;font-size:.94rem}
+.hours td{padding:7px 0;border-bottom:1px solid var(--line-d);color:#E2D7C7}
+.hours td:last-child{text-align:right;color:#CFC2B1}
+.hours tr:last-child td{border-bottom:0}
+.hours .note{font-size:.82rem;color:#A99B8B;margin-top:12px}
+
+/* footer */
+footer.ft{background:#1A1817;color:#BBAD9D;padding:40px 0 30px;font-size:.9rem}
+footer.ft .wrap{display:grid;gap:20px}
+@media(min-width:680px){footer.ft .wrap{grid-template-columns:1.3fr 1fr 1fr}}
+footer.ft .nm{font-family:"Fraunces",serif;color:var(--creme);font-size:1.2rem;font-weight:600}
+footer.ft a{color:#BBAD9D;text-decoration:none}
+footer.ft a:hover{color:var(--chene)}
+footer.ft h4{color:#E7DDCD;font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:10px}
+footer.ft ul{list-style:none;display:grid;gap:7px}
+.ft-bottom{border-top:1px solid #322e2b;margin-top:8px;padding-top:16px;font-size:.8rem;color:#897c6e}
+
+/* bandeau légal */
+.legal{position:fixed;left:0;right:0;bottom:0;z-index:120;background:rgba(26,24,23,.97);color:#C9BBA9;border-top:1px solid rgba(181,133,75,.3);font-size:.72rem;line-height:1.35;padding:9px 14px;text-align:center;backdrop-filter:blur(6px)}
+@media(min-width:560px){.legal{font-size:.76rem}}
+</style>
+</head>
+<body>
+<a class="skip" href="#galerie">Aller au contenu</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Jo Wood, accueil">
+      <span class="mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F6EFE4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/><path d="M9 21v-6h6v6"/></svg>
+      </span>
+      <span class="nm">Jo Wood<small>Menuiserie sur-mesure</small></span>
+    </a>
+    <nav class="nav-cta" aria-label="Liens rapides">
+      <a href="#galerie">Réalisations</a>
+      <a href="#savoir">Savoir-faire</a>
+      <a href="tel:+33676103005">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        06 76 10 30 05
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Menuisier-ébéniste · Remiremont (88)</span>
+      <h1>Menuiserie <em>sur-mesure</em> à Remiremont — escaliers, dressings, tables</h1>
+      <p class="lead">Atelier de menuiserie au cœur des Vosges. Chaque pièce est dessinée, fabriquée et posée à la main, dans le respect du bois massif et de votre intérieur.</p>
+      <div class="acts">
+        <a class="btn btn-chene" href="#projet">Mon projet
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#galerie">Voir les réalisations</a>
+      </div>
+      <div class="rating">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span><strong>4,7/5</strong> · 26 avis Google</span>
+      </div>
+      <ul class="trust">
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Bois massif local</li>
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Conception &amp; pose</li>
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Devis sur plan</li>
+      </ul>
+    </div>
+    <figure class="hero-fig">
+      <!-- [À REMPLACER] : photo d'une réalisation réelle Jo Wood (atelier / chantier livré) -->
+      <img src="img/hero-bois.webp" width="1000" height="750" fetchpriority="high" alt="Étagère, bureau et chaise en bois de chêne clair dans un intérieur épuré, réalisation de menuiserie sur-mesure">
+      <figcaption class="tag">Bureau &amp; étagères chêne huilé — réalisation sur-mesure</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== WOW : GALERIE + FORMULAIRE PROJET ===== -->
+<main id="galerie">
+  <section style="padding-bottom:18px">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Le portfolio</span>
+        <h2>Des réalisations qui parlent du bois</h2>
+        <p>Escaliers en chêne brossé, tables monoxyles, dressings et portes : chaque projet est unique. Voici un aperçu de l'atelier.</p>
+      </div>
+
+      <div class="gallery">
+        <!-- [À REMPLACER] : photos réelles des réalisations + légendes exactes (essence, lieu, année) -->
+        <figure class="gcard">
+          <img src="img/escalier.webp" width="800" height="600" loading="lazy" alt="Intérieur en bois clair avec escalier visible, menuiserie sur-mesure">
+          <figcaption><b>Escalier chêne brossé</b><span>Limon central, marches massives</span></figcaption>
+        </figure>
+        <figure class="gcard">
+          <img src="img/agencement.webp" width="800" height="600" loading="lazy" alt="Agencement de cuisine en bois avec vitrine vitrée élégante">
+          <figcaption><b>Dressing &amp; vitrine noyer</b><span>Agencement sur-mesure</span></figcaption>
+        </figure>
+        <figure class="gcard">
+          <img src="img/hero-bois.webp" width="1000" height="750" loading="lazy" alt="Bureau et étagères en chêne clair fixés au mur, lignes épurées">
+          <figcaption><b>Bureau &amp; étagères chêne</b><span>Bois massif huilé</span></figcaption>
+        </figure>
+        <figure class="gcard">
+          <img src="img/agencement.webp" width="800" height="600" loading="lazy" alt="Détail d'un meuble en bois avec porte vitrée et plan de travail">
+          <figcaption><b>Meuble vitré sur-mesure</b><span>Façades &amp; quincaillerie laiton</span></figcaption>
+        </figure>
+        <figure class="gcard">
+          <img src="img/escalier.webp" width="800" height="600" loading="lazy" alt="Pièce de vie en bois clair avec mobilier intégré et escalier">
+          <figcaption><b>Aménagement intérieur</b><span>Mobilier intégré chêne clair</span></figcaption>
+        </figure>
+        <figure class="gcard">
+          <img src="img/hero-bois.webp" width="1000" height="750" loading="lazy" alt="Étagère murale en chêne aux finitions soignées">
+          <figcaption><b>Table &amp; rangements</b><span>Plateau bois massif, finition huile</span></figcaption>
+        </figure>
+      </div>
+
+      <!-- FORMULAIRE DE PROJET (simulé) -->
+      <form class="project" id="projet" novalidate>
+        <div class="ptxt">
+          <span class="eyebrow" style="color:var(--chene)">Parlons de votre idée</span>
+          <h3>Décrivez votre projet sur-mesure</h3>
+          <p>Un escalier, un dressing, une table de salle à manger ? Dites-nous l'essentiel : Joseph vous rappelle pour affiner et chiffrer sur plan.</p>
+          <ul class="pchecks">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Étude et conseil gratuits</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Devis détaillé sur plan</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Une photo de l'espace aide beaucoup</li>
+          </ul>
+        </div>
+        <div>
+          <div class="frow">
+            <div class="field">
+              <label for="pnom">Votre nom</label>
+              <input type="text" id="pnom" name="pnom" placeholder="Prénom et nom" autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="ptel">Téléphone</label>
+              <input type="tel" id="ptel" name="ptel" placeholder="06 00 00 00 00" autocomplete="tel">
+            </div>
+          </div>
+          <div class="field">
+            <label for="ptype">Type de réalisation</label>
+            <select id="ptype" name="ptype">
+              <option value="">Choisir…</option>
+              <option>Escalier sur-mesure</option>
+              <option>Dressing / rangement</option>
+              <option>Table / plan en bois massif</option>
+              <option>Portes intérieures</option>
+              <option>Agencement / meuble vitré</option>
+              <option>Autre projet bois</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="pdesc">Votre projet en quelques mots</label>
+            <textarea id="pdesc" name="pdesc" placeholder="Dimensions approximatives, essence souhaitée, style, échéance…"></textarea>
+          </div>
+          <div class="field">
+            <label for="pphoto">Photo de l'espace (facultatif)</label>
+            <label class="filebtn" for="pphoto">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+              Ajouter une ou plusieurs photos
+              <input type="file" id="pphoto" name="pphoto" accept="image/*" multiple>
+            </label>
+            <ul class="filelist" id="fileList" aria-live="polite"></ul>
+            <p class="hint">Démonstration : aucune image n'est téléversée ni envoyée.</p>
+          </div>
+          <button type="submit" class="btn btn-chene btn-block">Envoyer ma demande</button>
+
+          <div class="demo-screen" id="demoScreen" role="status" aria-live="polite">
+            <div class="ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+            <h4>Ceci est une démonstration</h4>
+            <p>En production, votre demande arriverait directement à l'atelier (e-mail ou SMS), avec vos photos. Aucune donnée n'a été envoyée ici.</p>
+            <button type="button" class="reset" id="resetDemo">Refaire un essai</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ===== SAVOIR-FAIRE ===== -->
+<section id="savoir">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">L'atelier</span>
+      <h2>Un savoir-faire, trois exigences</h2>
+      <!-- [À REMPLACER] : texte de présentation réel de l'atelier (parcours, philosophie) -->
+      <p>Le sur-mesure, c'est partir de votre lieu et non d'un catalogue. Du choix de l'essence à la pose finale, tout se décide ensemble.</p>
+    </div>
+
+    <div class="skills">
+      <article class="skill">
+        <div class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>Sur-mesure</h3>
+        <!-- [À REMPLACER] : descriptif réel -->
+        <p>Relevé de cotes sur place, plans 3D, fabrication adaptée au millimètre à vos volumes et à vos usages.</p>
+      </article>
+      <article class="skill">
+        <div class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22l1-1h3l9-9"/><path d="M3 21v-3l9-9"/><path d="m15 6 3-3 3 3-3 3z"/><path d="m12 9 3 3"/></svg></div>
+        <h3>Essences de bois</h3>
+        <!-- [À REMPLACER] : essences réellement travaillées -->
+        <p>Chêne, noyer, frêne, hêtre : un bois choisi pour son veinage, sa teinte et sa tenue dans le temps.</p>
+      </article>
+      <article class="skill">
+        <div class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="19" cy="13" r="2.5"/><circle cx="6" cy="12" r="3"/><path d="M8.5 14.5 6 18"/><path d="M2 21h20"/></svg></div>
+        <h3>Finitions</h3>
+        <!-- [À REMPLACER] : finitions proposées -->
+        <p>Huile naturelle, vernis mat, savon ou cire : une finition qui respire le bois et se patine joliment.</p>
+      </article>
+    </div>
+
+    <div class="essences">
+      <h3>Ce que l'atelier fabrique</h3>
+      <div class="chips">
+        <!-- [À REMPLACER] : liste réelle des spécialités -->
+        <span class="chip"><b>·</b> Escaliers chêne brossé</span>
+        <span class="chip"><b>·</b> Dressings &amp; placards</span>
+        <span class="chip"><b>·</b> Tables &amp; plateaux massifs</span>
+        <span class="chip"><b>·</b> Portes intérieures</span>
+        <span class="chip"><b>·</b> Bibliothèques sur-mesure</span>
+        <span class="chip"><b>·</b> Agencements &amp; meubles vitrés</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AVIS ===== -->
+<section id="avis">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Ils ont confié leur projet</span>
+      <h2>4,7 sur 5, sur 26 avis Google</h2>
+    </div>
+    <div class="avis-top">
+      <div class="score">
+        <div class="n">4,7</div>
+        <div class="meta">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <small>Note Google · 26 avis</small>
+        </div>
+      </div>
+      <span class="gbadge">
+        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 1.45 14.97.5 12 .5A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.29 9.14 5.36 12 4.75z"/></svg>
+        Avis Google vérifiés
+      </span>
+    </div>
+
+    <div class="reviews">
+      <!-- [À REMPLACER] : extraits d'avis Google réels (≤ 15 mots, mention « Avis Google ») -->
+      <article class="review">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <p>« Escalier magnifique, travail soigné et conseils précieux. »</p>
+        <div class="who">Avis Google</div>
+      </article>
+      <article class="review">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <p>« Artisan à l'écoute, finitions impeccables, je recommande. »</p>
+        <div class="who">Avis Google</div>
+      </article>
+      <article class="review">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <p>« Dressing sur-mesure parfait, délais respectés. »</p>
+        <div class="who">Avis Google</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Contact</span>
+      <h2>Parlons de votre projet</h2>
+      <p>Joseph reçoit sur rendez-vous : un appel suffit pour démarrer. L'atelier intervient à Remiremont et dans la vallée de la Moselotte.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="cinfo">
+        <a href="tel:+33676103005">
+          <span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <span><b>Téléphone</b>06 76 10 30 05</span>
+        </a>
+        <div class="row">
+          <span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span>
+            <b>Atelier</b>
+            <span>17 rue de la Moselotte<br>88200 Saint-Étienne-lès-Remiremont</span><br>
+            <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Jo+Wood+17+rue+de+la+Moselotte+88200+Saint-Étienne-lès-Remiremont" target="_blank" rel="noopener">
+              Itinéraire Google Maps
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </span>
+        </div>
+        <div class="row">
+          <span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+          <span><b>Sur rendez-vous</b><span>En atelier la journée — appelez pour convenir d'un créneau</span></span>
+        </div>
+        <a class="btn btn-chene" href="#projet" style="margin-top:6px">Décrire mon projet</a>
+      </div>
+
+      <div class="hours">
+        <h3>Disponibilités</h3>
+        <!-- [À REMPLACER] : horaires d'atelier réels -->
+        <table>
+          <tr><td>Lundi – Vendredi</td><td>Atelier · sur RDV</td></tr>
+          <tr><td>Samedi</td><td>Sur rendez-vous</td></tr>
+          <tr><td>Dimanche</td><td>Fermé</td></tr>
+        </table>
+        <p class="note">Joseph est souvent en atelier ou sur chantier : laissez un message, il vous rappelle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="ft">
+  <div class="wrap">
+    <div>
+      <div class="nm">Jo Wood</div>
+      <p style="margin-top:8px;max-width:34ch">Menuiserie &amp; ébénisterie sur-mesure à Remiremont et dans la vallée de la Moselotte.</p>
+      <p style="margin-top:14px">4,7★ · 26 avis Google</p>
+    </div>
+    <div>
+      <h4>Coordonnées</h4>
+      <ul>
+        <li><a href="tel:+33676103005">06 76 10 30 05</a></li>
+        <li>17 rue de la Moselotte</li>
+        <li>88200 Saint-Étienne-lès-Remiremont</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Jo+Wood+17+rue+de+la+Moselotte+88200+Saint-Étienne-lès-Remiremont" target="_blank" rel="noopener">Voir sur Google Maps</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Le site</h4>
+      <ul>
+        <li><a href="#galerie">Réalisations</a></li>
+        <li><a href="#savoir">Savoir-faire</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#projet">Mon projet</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap"><div class="ft-bottom">© <span id="yr">2026</span> Jo Wood — Saint-Étienne-lès-Remiremont (88200). Maquette de démonstration.</div></div>
+</footer>
+
+<div class="legal" role="contentinfo">
+  Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.
+</div>
+
+<!-- ===== JSON-LD ===== -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"GeneralContractor",
+  "name":"Jo Wood",
+  "description":"Menuiserie et ébénisterie sur-mesure à Remiremont : escaliers en chêne brossé, dressings, tables et portes en bois massif.",
+  "image":"https://lumenbot.github.io/demos-tpe-88/jo-wood/img/hero-bois.webp",
+  "address":{"@type":"PostalAddress","streetAddress":"17 rue de la Moselotte","postalCode":"88200","addressLocality":"Saint-Étienne-lès-Remiremont","addressRegion":"Grand Est","addressCountry":"FR"},
+  "telephone":"+33676103005",
+  "url":"https://lumenbot.github.io/demos-tpe-88/jo-wood/",
+  "areaServed":"Remiremont et vallée de la Moselotte (88)",
+  "priceRange":"€€",
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"26","bestRating":"5"},
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Escalier sur-mesure en bois massif"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Dressing et rangement sur-mesure"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Table et plateau en bois massif"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Portes intérieures sur-mesure"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Agencement intérieur en bois"}}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  "use strict";
+  var yr = document.getElementById("yr");
+  if(yr) yr.textContent = new Date().getFullYear();
+
+  var input   = document.getElementById("pphoto");
+  var list    = document.getElementById("fileList");
+  var form    = document.getElementById("projet");
+  var screen  = document.getElementById("demoScreen");
+  var resetBtn= document.getElementById("resetDemo");
+
+  // Aperçu des NOMS de fichiers uniquement — rien n'est lu, rien n'est envoyé
+  if(input){
+    input.addEventListener("change", function(){
+      list.innerHTML = "";
+      var files = input.files || [];
+      for(var i=0;i<files.length;i++){
+        var li = document.createElement("li");
+        li.textContent = "🪵 " + files[i].name;
+        list.appendChild(li);
+      }
+    });
+  }
+
+  if(form){
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      screen.classList.add("show");
+      screen.scrollIntoView({behavior:"smooth", block:"center"});
+    });
+  }
+
+  if(resetBtn){
+    resetBtn.addEventListener("click", function(){
+      screen.classList.remove("show");
+      form.reset();
+      if(list) list.innerHTML = "";
+      form.scrollIntoView({behavior:"smooth", block:"start"});
+    });
+  }
+})();
+</script>
+</body>
+</html>

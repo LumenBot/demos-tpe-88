@@ -80,6 +80,19 @@ Racine du site : page de présentation (placeholders contact/SIRET à compléter
 | a-la-bien | https://lumenbot.github.io/demos-tpe-88/a-la-bien/ | v1 · DoD ✓ |
 | le-centre | https://lumenbot.github.io/demos-tpe-88/le-centre/ | v1 · DoD ✓ |
 
+## Lot 7 — Remiremont
+
+| Maquette | URL | Statut |
+| --- | --- | --- |
+| o-bosphore | https://lumenbot.github.io/demos-tpe-88/o-bosphore/ | v1 · DoD ✓ |
+| lagarde-freres | https://lumenbot.github.io/demos-tpe-88/lagarde-freres/ | v1 · DoD ✓ |
+| jo-wood | https://lumenbot.github.io/demos-tpe-88/jo-wood/ | v1 · DoD ✓ |
+| stop-pizza | https://lumenbot.github.io/demos-tpe-88/stop-pizza/ | v1 · DoD ✓ |
+| lepicurien | https://lumenbot.github.io/demos-tpe-88/lepicurien/ | v1 · DoD ✓ |
+| mangeol | https://lumenbot.github.io/demos-tpe-88/mangeol/ | v1 · DoD ✓ |
+| le-laboratoire | https://lumenbot.github.io/demos-tpe-88/le-laboratoire/ | v1 · DoD ✓ |
+| le-fournil | https://lumenbot.github.io/demos-tpe-88/le-fournil/ | v1 · DoD ✓ (refonte : site vitrine existant, apport = click & collect) |
+
 ## Développement
 
 - Règles complètes : voir `CLAUDE.md` (source de vérité locale non versionnée : `docs/`).
