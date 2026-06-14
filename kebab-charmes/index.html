@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#C01C2E">
+<title>Kebab Charmes — kebab généreux à Charmes (88130), ouvert jusqu'à minuit le samedi</title>
+<meta name="description" content="Kebab Charmes, le kebab généreux du centre de Charmes (88130) : kebabs, assiettes, tacos, portions copieuses. 4,2★ sur 191 avis Google. Commande en ligne avec créneau, paiement au retrait. Ouvert jusqu'à minuit le samedi. ☎ 03 29 38 07 26.">
+
+<!-- Google Fonts non-bloquantes : preload + bascule media print + fallback noscript. Teko (display condensé) + Public Sans (texte). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Public+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Public+Sans:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Public+Sans:wght@400;500;700&display=swap"></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Kebab Charmes",
+  "servesCuisine": ["Kebab", "Turc", "Restauration rapide"],
+  "telephone": "+33329380726",
+  "priceRange": "€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "15 rue Maurice Barrès",
+    "postalCode": "88130",
+    "addressLocality": "Charmes",
+    "addressCountry": "FR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 48.370939, "longitude": 6.293592 },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.2",
+    "reviewCount": "191",
+    "bestRating": "5"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "11:00", "closes": "14:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "18:00", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:00", "closes": "14:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "18:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:00", "closes": "23:59" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "18:00", "closes": "22:00" }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --rouge:#C01C2E;        /* rouge cramoisi */
+  --rouge-fonce:#9A1322;
+  --creme:#F4EFE6;        /* blanc cassé */
+  --creme2:#EAE2D3;
+  --anthra:#1C1A1A;       /* anthracite */
+  --anthra2:#262323;
+  --blanc:#FFFFFF;
+  --txt:#1C1A1A;
+  --txt-soft:#55504c;
+  --or:#E7B53C;           /* étoiles / accent doré sobre */
+  --line:rgba(28,26,26,.14);
+  --ok:#1f8f4e;
+  --display:"Teko","Arial Narrow",Impact,sans-serif;
+  --texte:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px;overflow-x:clip}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:var(--texte);
+  background:var(--creme);
+  color:var(--txt);
+  font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:clip;
+  padding-bottom:60px; /* place pour le bandeau légal fixe */
+}
+img{max-width:100%;height:auto;display:block}
+[hidden]{display:none!important}
+a{color:var(--rouge-fonce)}
+h1,h2,h3,.display,.btn,.price,.eyebrow,.tag{font-family:var(--display);letter-spacing:.01em;line-height:1.05;font-weight:600;text-transform:uppercase}
+:focus-visible{outline:3px solid var(--anthra);outline-offset:3px;border-radius:3px}
+.on-dark :focus-visible{outline-color:var(--creme)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-200vw;top:0;background:var(--anthra);color:var(--creme);padding:.9rem 1.2rem;z-index:300;font-weight:700;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 18px}
+section{padding:54px 0;position:relative}
+.eyebrow{font-size:1.2rem;letter-spacing:.18em;color:var(--rouge);font-weight:700;margin-bottom:6px;line-height:1}
+h2{font-size:clamp(2.1rem,8vw,3.4rem);font-weight:700;margin-bottom:6px;line-height:.95}
+.lead{font-family:var(--texte);color:var(--txt-soft);max-width:60ch;text-transform:none}
+
+/* ===== Boutons / tap >=44px ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:10px 24px;border-radius:6px;font-size:1.35rem;cursor:pointer;border:2px solid transparent;transition:transform .15s ease,background .15s ease;text-align:center}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+.btn svg{width:21px;height:21px;flex:0 0 auto}
+.btn-rouge{background:var(--rouge);color:var(--blanc)}
+.btn-rouge:hover{background:var(--rouge-fonce);transform:translateY(-2px)}
+.btn-dark{background:var(--anthra);color:var(--creme)}
+.btn-dark:hover{background:var(--anthra2);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--creme);border-color:rgba(244,239,230,.5)}
+.btn-ghost:hover{border-color:var(--creme);transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--anthra);border-color:var(--anthra)}
+.btn-line:hover{background:var(--anthra);color:var(--creme)}
+.btn-sm{min-height:44px;padding:8px 16px;font-size:1.1rem}
+
+/* ===== Header ===== */
+header.nav{position:sticky;top:0;z-index:120;background:var(--anthra);color:var(--creme);border-bottom:3px solid var(--rouge)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:60px;gap:10px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:1.7rem;letter-spacing:.02em;text-transform:uppercase;line-height:1;min-width:0}
+@media(max-width:480px){.brand-txt{display:none}.hide-sm{display:none}}
+.brand .mark{display:inline-grid;place-items:center;width:34px;height:34px;background:var(--rouge);color:#fff;border-radius:6px;font-size:1.5rem;font-weight:700;flex:0 0 auto}
+.brand b{color:var(--rouge)}
+.nav-links{display:none}
+.nav-links a{color:var(--creme);font-family:var(--display);font-size:1.25rem;text-transform:uppercase;letter-spacing:.04em;padding:4px 2px}
+.nav-links a:hover{color:var(--rouge)}
+@media(min-width:880px){.nav-links{display:flex;gap:22px}}
+.nav-cta{display:flex;gap:8px;align-items:center}
+.nav .btn-line{color:var(--creme);border-color:rgba(244,239,230,.55)}
+.nav .btn-line:hover{background:var(--creme);color:var(--anthra)}
+
+/* ===== Hero ===== */
+.hero{background:var(--anthra);color:var(--creme);position:relative;overflow:hidden}
+.hero-inner{display:grid;gap:0;grid-template-columns:1fr;align-items:stretch}
+@media(min-width:900px){.hero-inner{grid-template-columns:1.02fr .98fr}}
+.hero-txt{padding:42px 18px 46px;position:relative;z-index:2;max-width:600px}
+@media(min-width:900px){.hero-txt{padding:64px 26px 64px 0;margin-left:auto;width:100%;align-self:center}}
+.hero .badge{display:inline-flex;align-items:center;gap:8px;background:var(--rouge);color:#fff;font-family:var(--display);font-size:1.15rem;letter-spacing:.06em;padding:6px 14px;border-radius:5px;margin-bottom:18px;text-transform:uppercase}
+.hero .badge .live{width:9px;height:9px;border-radius:50%;background:#fff;animation:pulse 1.8s infinite}
+@media (prefers-reduced-motion:reduce){.hero .badge .live{animation:none}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-size:clamp(2.8rem,12vw,5rem);font-weight:700;line-height:.9;margin-bottom:14px;text-transform:uppercase}
+.hero h1 .r{color:var(--rouge)}
+.hero p.sub{font-size:1.08rem;color:#d8d2c8;margin-bottom:24px;max-width:42ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero .stars{display:flex;align-items:center;gap:9px;margin-top:22px;font-family:var(--texte);font-size:.95rem;color:#d8d2c8}
+.stars-row{display:inline-flex;gap:1px}
+.stars-row svg{width:18px;height:18px}
+.hero-media{position:relative;min-height:280px}
+.hero-media img{width:100%;height:100%;object-fit:cover;min-height:280px}
+@media(min-width:900px){.hero-media img{min-height:520px}}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,26,26,.35),transparent 40%);pointer-events:none}
+@media(min-width:900px){.hero-media::after{background:linear-gradient(90deg,rgba(28,26,26,.55),transparent 45%)}}
+
+/* bande chiffres */
+.usp{background:var(--rouge);color:#fff}
+.usp .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding-top:16px;padding-bottom:16px;text-align:center}
+.usp .n{font-family:var(--display);font-size:2.1rem;font-weight:700;line-height:1}
+.usp .l{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;opacity:.92}
+
+/* ===== Commande (WOW) ===== */
+.order{background:var(--anthra);color:var(--creme)}
+.order h2{color:var(--creme)}
+.order .eyebrow{color:var(--or)}
+.order .lead{color:#cfc9bf}
+.late{display:flex;gap:12px;align-items:flex-start;background:var(--rouge);color:#fff;border-radius:8px;padding:14px 16px;margin:22px 0 8px;border:1px solid rgba(255,255,255,.18)}
+.late svg{width:26px;height:26px;flex:0 0 auto;margin-top:1px}
+.late b{font-family:var(--display);font-size:1.25rem;letter-spacing:.03em;text-transform:uppercase;display:block;line-height:1.05}
+.late span{font-family:var(--texte);font-size:.92rem;display:block;margin-top:2px;color:#ffeceb}
+.order-grid{display:grid;gap:18px;grid-template-columns:1fr;margin-top:26px}
+@media(min-width:860px){.order-grid{grid-template-columns:1.25fr .9fr;align-items:start}}
+.builder{background:var(--anthra2);border:1px solid rgba(244,239,230,.14);border-radius:12px;padding:18px}
+fieldset{border:0;margin:0 0 18px}
+fieldset:last-of-type{margin-bottom:0}
+legend{font-family:var(--display);font-size:1.45rem;text-transform:uppercase;letter-spacing:.03em;color:var(--creme);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+legend .num{display:inline-grid;place-items:center;width:26px;height:26px;background:var(--rouge);color:#fff;border-radius:50%;font-size:1.1rem;line-height:1}
+.opts{display:grid;gap:8px;grid-template-columns:1fr 1fr}
+@media(min-width:560px){.opts{grid-template-columns:repeat(3,1fr)}}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;width:1px;height:1px}
+.opt label{display:flex;align-items:center;gap:8px;min-height:46px;padding:8px 12px;background:rgba(244,239,230,.06);border:2px solid rgba(244,239,230,.18);border-radius:8px;cursor:pointer;font-family:var(--texte);font-size:.95rem;font-weight:500;line-height:1.2;transition:border-color .12s,background .12s;height:100%}
+.opt label .sup{margin-left:auto;color:var(--or);font-weight:700;white-space:nowrap}
+.opt input:checked+label{border-color:var(--rouge);background:rgba(192,28,46,.18)}
+.opt input:focus-visible+label{outline:3px solid var(--or);outline-offset:2px}
+.field-row{display:grid;gap:10px;grid-template-columns:1fr 1fr}
+.field{display:flex;flex-direction:column;gap:5px}
+.field label{font-family:var(--texte);font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#cfc9bf}
+.field select,.field input{font-family:var(--texte);font-size:1rem;min-height:46px;padding:10px 12px;border-radius:8px;border:2px solid rgba(244,239,230,.2);background:var(--anthra);color:var(--creme)}
+.field select:focus-visible,.field input:focus-visible{outline:3px solid var(--or);outline-offset:1px}
+.pay{display:flex;flex-direction:column;gap:8px}
+.pay .opt label{justify-content:flex-start}
+.summary{background:var(--creme);color:var(--anthra);border-radius:12px;padding:18px;position:sticky;top:74px}
+.summary h3{font-size:1.7rem;margin-bottom:4px}
+.summary .muted{font-family:var(--texte);font-size:.85rem;color:var(--txt-soft);text-transform:none;margin-bottom:12px}
+#cartList{list-style:none;display:flex;flex-direction:column;gap:7px;margin:0 0 12px;font-family:var(--texte);font-size:.95rem}
+#cartList li{display:flex;justify-content:space-between;gap:10px;padding-bottom:7px;border-bottom:1px dashed var(--line)}
+#cartList .empty{color:var(--txt-soft);border:0;font-style:italic}
+.tot{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--display);font-size:1.6rem;text-transform:uppercase;border-top:2px solid var(--anthra);padding-top:10px;margin-top:4px}
+.tot .price{color:var(--rouge)}
+.summary .btn{width:100%;margin-top:14px}
+.summary .note{font-family:var(--texte);font-size:.78rem;color:var(--txt-soft);text-align:center;margin-top:8px;text-transform:none}
+
+/* ===== Carte ===== */
+.menu-cat{margin-top:26px}
+.menu-cat h3{font-size:1.9rem;color:var(--rouge);border-bottom:3px solid var(--anthra);padding-bottom:4px;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.menu-cat h3 svg{width:24px;height:24px}
+.items{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:680px){.items{grid-template-columns:1fr 1fr}}
+.item{display:flex;gap:12px;align-items:baseline;background:var(--blanc);border:1px solid var(--line);border-radius:10px;padding:13px 15px}
+.item .info{flex:1 1 auto;min-width:0}
+.item .nm{font-family:var(--display);font-size:1.3rem;text-transform:uppercase;line-height:1.05;letter-spacing:.02em}
+.item .ds{font-family:var(--texte);font-size:.88rem;color:var(--txt-soft);text-transform:none;margin-top:1px}
+.item .price{font-family:var(--display);font-size:1.45rem;color:var(--rouge);white-space:nowrap}
+.menu-pics{display:grid;gap:12px;grid-template-columns:1fr 1fr;margin-top:24px}
+.menu-pics figure{position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+.menu-pics img{width:100%;height:170px;object-fit:cover}
+.menu-pics figcaption{position:absolute;left:0;bottom:0;right:0;background:linear-gradient(transparent,rgba(28,26,26,.82));color:#fff;font-family:var(--display);font-size:1.2rem;text-transform:uppercase;letter-spacing:.03em;padding:18px 12px 9px}
+
+/* ===== Horaires ===== */
+.hours{background:var(--anthra);color:var(--creme)}
+.hours h2{color:var(--creme)}
+.hours .eyebrow{color:var(--or)}
+.hours-grid{display:grid;gap:24px;grid-template-columns:1fr;margin-top:24px}
+@media(min-width:780px){.hours-grid{grid-template-columns:1.1fr .9fr}}
+.htable{list-style:none;display:flex;flex-direction:column}
+.htable li{display:flex;justify-content:space-between;gap:14px;padding:11px 4px;border-bottom:1px solid rgba(244,239,230,.14);font-family:var(--texte)}
+.htable li.today{background:rgba(192,28,46,.16);border-radius:8px;padding-left:12px;padding-right:12px;border-bottom-color:transparent}
+.htable .d{font-family:var(--display);font-size:1.3rem;text-transform:uppercase;letter-spacing:.03em}
+.htable .h{color:#d8d2c8;text-align:right}
+.htable .sat .h{color:var(--or);font-weight:700}
+.htable .badge-today{font-family:var(--texte);font-size:.7rem;background:var(--rouge);color:#fff;padding:2px 7px;border-radius:99px;margin-left:8px;vertical-align:middle;letter-spacing:.03em}
+.contact-card{background:var(--anthra2);border:1px solid rgba(244,239,230,.14);border-radius:12px;padding:20px}
+.contact-card h3{font-size:1.6rem;color:var(--creme);margin-bottom:10px}
+.contact-card p{font-family:var(--texte);color:#d8d2c8;margin-bottom:6px;text-transform:none}
+.contact-card a{color:var(--or)}
+.contact-card .btn{margin-top:12px;width:100%}
+
+/* ===== Avis ===== */
+.reviews .topline{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:18px}
+.bignote{display:flex;align-items:center;gap:14px;background:var(--blanc);border:1px solid var(--line);border-radius:12px;padding:14px 20px}
+.bignote .num{font-family:var(--display);font-size:3.4rem;color:var(--rouge);line-height:.8}
+.bignote .sub{font-family:var(--texte);font-size:.85rem;color:var(--txt-soft);text-transform:none}
+.review-grid{display:grid;gap:14px;grid-template-columns:1fr;margin-top:22px}
+@media(min-width:720px){.review-grid{grid-template-columns:repeat(3,1fr)}}
+.rev{background:var(--blanc);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:9px}
+.rev .stars-row svg{width:16px;height:16px}
+.rev blockquote{font-family:var(--texte);font-size:1.02rem;line-height:1.45;text-transform:none}
+.rev .who{font-family:var(--texte);font-size:.82rem;color:var(--txt-soft);text-transform:none;margin-top:auto}
+.rev .who b{color:var(--anthra)}
+
+/* ===== Footer ===== */
+footer.site{background:var(--anthra);color:var(--creme);padding:46px 0 30px}
+.foot-grid{display:grid;gap:26px;grid-template-columns:1fr}
+@media(min-width:720px){.foot-grid{grid-template-columns:1.3fr 1fr 1fr}}
+footer.site h4{font-family:var(--display);font-size:1.45rem;text-transform:uppercase;letter-spacing:.03em;margin-bottom:10px;color:var(--creme)}
+footer.site p,footer.site a{font-family:var(--texte);color:#cfc9bf;text-transform:none}
+footer.site a{color:#cfc9bf}
+footer.site a:hover{color:var(--or)}
+footer.site .foot-brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-size:1.9rem;text-transform:uppercase;color:var(--creme);margin-bottom:8px}
+.foot-list{list-style:none;display:flex;flex-direction:column;gap:7px}
+.foot-list svg{width:17px;height:17px;flex:0 0 auto;vertical-align:-3px;margin-right:7px;color:var(--rouge)}
+.colophon{border-top:1px solid rgba(244,239,230,.14);margin-top:30px;padding-top:18px;font-size:.82rem;color:#9a948c;text-transform:none}
+
+/* ===== Bandeau légal fixe ===== */
+.legal{position:fixed;left:0;right:0;bottom:0;z-index:200;background:var(--anthra2);color:#cfc9bf;border-top:2px solid var(--rouge);font-family:var(--texte);font-size:.7rem;line-height:1.35;text-transform:none;padding:7px 14px;text-align:center}
+.legal b{color:var(--creme);font-weight:700}
+
+/* ===== Modale démo ===== */
+.modal{position:fixed;inset:0;z-index:400;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(18,16,16,.72)}
+.modal[open],.modal.show{display:flex}
+.modal-box{background:var(--creme);color:var(--anthra);border-radius:14px;max-width:440px;width:100%;padding:26px 22px;text-align:center;border-top:6px solid var(--rouge);box-shadow:0 24px 60px rgba(0,0,0,.4)}
+.modal-box .ic{display:inline-grid;place-items:center;width:62px;height:62px;border-radius:50%;background:var(--rouge);color:#fff;margin:0 auto 14px}
+.modal-box .ic svg{width:32px;height:32px}
+.modal-box h3{font-size:2rem;color:var(--rouge);margin-bottom:8px}
+.modal-box p{font-family:var(--texte);text-transform:none;color:var(--txt-soft);margin-bottom:8px}
+.modal-box .recap{font-family:var(--texte);text-transform:none;background:var(--blanc);border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-align:left;font-size:.92rem;margin:14px 0}
+.modal-box .recap b{color:var(--anthra)}
+.modal-box .btn{width:100%;margin-top:6px}
+</style>
+</head>
+<body>
+<a class="skip" href="#commande">Aller à la commande</a>
+
+<!-- ============ HEADER ============ -->
+<header class="nav on-dark">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Kebab Charmes, accueil"><span class="mark">K</span><span class="brand-txt">Kebab&nbsp;<b>Charmes</b></span></a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#commande">Commander</a>
+      <a href="#carte">La carte</a>
+      <a href="#horaires">Horaires</a>
+      <a href="#avis">Avis</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-line btn-sm hide-sm" href="tel:+33329380726" aria-label="Appeler le 03 29 38 07 26">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Appeler
+      </a>
+      <a class="btn btn-rouge btn-sm" href="#commande">Commander</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<main id="top">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-inner">
+    <div class="hero-txt">
+      <span class="badge"><span class="live" aria-hidden="true"></span>Ouvert jusqu'à minuit le samedi</span>
+      <h1 id="hero-title">Le kebab<br><span class="r">généreux</span><br>de Charmes</h1>
+      <p class="sub">Viande grillée, portions copieuses, sauces maison. Composez votre commande en ligne et passez la récupérer — paiement au retrait.</p>
+      <div class="hero-cta">
+        <a class="btn btn-rouge" href="#commande">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Commander en ligne
+        </a>
+        <a class="btn btn-ghost" href="tel:+33329380726">03 29 38 07 26</a>
+      </div>
+      <p class="stars">
+        <span class="stars-row" role="img" aria-label="Note 4,2 sur 5">
+          <svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E7B53C" stroke-width="2" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </span>
+        <span><b style="color:#fff">4,2/5</b> · 191 avis Google</span>
+      </p>
+    </div>
+    <div class="hero-media">
+      <img src="img/hero-kebab.webp" width="1100" height="730" fetchpriority="high" decoding="async"
+           alt="Assiette kebab généreuse : viande grillée, riz épicé, salade fraîche et sauces.">
+    </div>
+  </div>
+</section>
+
+<!-- bande chiffres -->
+<div class="usp" aria-label="Points forts">
+  <div class="wrap">
+    <div><div class="n">191</div><div class="l">avis Google</div></div>
+    <div><div class="n">4,2★</div><div class="l">note moyenne</div></div>
+    <div><div class="n">Minuit</div><div class="l">le samedi</div></div>
+  </div>
+</div>
+
+<!-- ============ COMMANDE (WOW) ============ -->
+<section id="commande" class="order" aria-labelledby="order-title">
+  <div class="wrap">
+    <p class="eyebrow">Commande en ligne</p>
+    <h2 id="order-title">Composez, choisissez votre créneau, payez au retrait</h2>
+    <p class="lead">Plus besoin d'attendre au téléphone aux heures de rush : montez votre kebab, réservez votre horaire de retrait et venez le chercher prêt.</p>
+
+    <div class="late" role="note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <div><b>Le samedi, on ferme à minuit</b><span>Sortie, ciné, soirée tardive : créneaux de retrait jusqu'à 23 h 45.</span></div>
+    </div>
+
+    <div class="order-grid">
+      <!-- Builder -->
+      <form class="builder" id="orderForm" novalidate>
+        <fieldset>
+          <legend><span class="num">1</span>Votre base</legend>
+          <div class="opts" role="group" aria-label="Choix de la base">
+            <span class="opt"><input type="radio" name="base" id="b1" value="Kebab classic" data-price="7.50" checked><label for="b1">Kebab classic<span class="sup">7,50&nbsp;€</span></label></span>
+            <span class="opt"><input type="radio" name="base" id="b2" value="Assiette kebab" data-price="11.00"><label for="b2">Assiette kebab<span class="sup">11&nbsp;€</span></label></span>
+            <span class="opt"><input type="radio" name="base" id="b3" value="Tacos M" data-price="8.50"><label for="b3">Tacos M<span class="sup">8,50&nbsp;€</span></label></span>
+            <span class="opt"><input type="radio" name="base" id="b4" value="Galette" data-price="8.00"><label for="b4">Galette<span class="sup">8&nbsp;€</span></label></span>
+            <span class="opt"><input type="radio" name="base" id="b5" value="Cheeseburger maison" data-price="9.00"><label for="b5">Cheeseburger<span class="sup">9&nbsp;€</span></label></span>
+            <span class="opt"><input type="radio" name="base" id="b6" value="Box poulet" data-price="9.50"><label for="b6">Box poulet<span class="sup">9,50&nbsp;€</span></label></span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="num">2</span>La viande</legend>
+          <div class="opts" role="group" aria-label="Choix de la viande">
+            <span class="opt"><input type="radio" name="viande" id="v1" value="Veau / dinde" checked><label for="v1">Veau / dinde</label></span>
+            <span class="opt"><input type="radio" name="viande" id="v2" value="Poulet"><label for="v2">Poulet</label></span>
+            <span class="opt"><input type="radio" name="viande" id="v3" value="Mixte"><label for="v3">Mixte</label></span>
+            <span class="opt"><input type="radio" name="viande" id="v4" value="Merguez"><label for="v4">Merguez</label></span>
+            <span class="opt"><input type="radio" name="viande" id="v5" value="Falafel (végé)"><label for="v5">Falafel</label></span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="num">3</span>Vos sauces</legend>
+          <div class="opts" role="group" aria-label="Choix des sauces">
+            <span class="opt"><input type="checkbox" name="sauce" id="s1" value="Blanche" checked><label for="s1">Blanche</label></span>
+            <span class="opt"><input type="checkbox" name="sauce" id="s2" value="Algérienne"><label for="s2">Algérienne</label></span>
+            <span class="opt"><input type="checkbox" name="sauce" id="s3" value="Samouraï"><label for="s3">Samouraï</label></span>
+            <span class="opt"><input type="checkbox" name="sauce" id="s4" value="Harissa"><label for="s4">Harissa</label></span>
+            <span class="opt"><input type="checkbox" name="sauce" id="s5" value="Barbecue"><label for="s5">Barbecue</label></span>
+            <span class="opt"><input type="checkbox" name="sauce" id="s6" value="Ketchup"><label for="s6">Ketchup</label></span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="num">4</span>Suppléments</legend>
+          <div class="opts" role="group" aria-label="Suppléments">
+            <span class="opt"><input type="checkbox" name="sup" id="x1" value="Double viande" data-price="3.00"><label for="x1">Double viande<span class="sup">+3&nbsp;€</span></label></span>
+            <span class="opt"><input type="checkbox" name="sup" id="x2" value="Cheddar" data-price="1.00"><label for="x2">Cheddar<span class="sup">+1&nbsp;€</span></label></span>
+            <span class="opt"><input type="checkbox" name="sup" id="x3" value="Frites maison" data-price="2.50"><label for="x3">Frites<span class="sup">+2,50&nbsp;€</span></label></span>
+            <span class="opt"><input type="checkbox" name="sup" id="x4" value="Boisson 33cl" data-price="1.50"><label for="x4">Boisson<span class="sup">+1,50&nbsp;€</span></label></span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="num">5</span>Retrait &amp; paiement</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="jour">Jour de retrait</label>
+              <select id="jour" name="jour"></select>
+            </div>
+            <div class="field">
+              <label for="creneau">Créneau</label>
+              <select id="creneau" name="creneau"></select>
+            </div>
+          </div>
+          <div class="pay" style="margin-top:12px" role="group" aria-label="Mode de paiement">
+            <span class="opt"><input type="radio" name="pay" id="p1" value="Paiement au retrait" checked><label for="p1">Je paie au retrait (espèces, CB, titres-resto)</label></span>
+            <span class="opt"><input type="radio" name="pay" id="p2" value="Paiement en ligne"><label for="p2">Je paie en ligne maintenant</label></span>
+          </div>
+        </fieldset>
+      </form>
+
+      <!-- Récap -->
+      <aside class="summary" aria-label="Votre commande">
+        <h3>Votre commande</h3>
+        <p class="muted">Mise à jour automatique</p>
+        <ul id="cartList"><li class="empty">Composez votre commande…</li></ul>
+        <div class="tot"><span>Total</span><span class="price" id="cartTotal">0,00&nbsp;€</span></div>
+        <p class="muted" id="pickupLine" style="margin-top:10px"></p>
+        <button class="btn btn-rouge" id="validate" type="button">
+          Valider ma commande
+        </button>
+        <p class="note" aria-live="polite" id="liveNote">Démonstration — aucun paiement réel, aucune donnée transmise.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARTE ============ -->
+<section id="carte" aria-labelledby="carte-title">
+  <div class="wrap">
+    <p class="eyebrow">La carte</p>
+    <h2 id="carte-title">Généreux, sans chichi</h2>
+    <p class="lead">Une sélection courte et efficace, préparée à la commande. Prix d'illustration.</p>
+
+    <!-- [À REMPLACER] Carte et prix d'exemple — à caler sur la carte réelle de l'établissement. -->
+    <div class="menu-cat">
+      <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l8-16 8 16z"/></svg>Kebabs &amp; sandwichs</h3>
+      <div class="items">
+        <div class="item"><div class="info"><div class="nm">Kebab classic</div><div class="ds">Galette, viande grillée, crudités, sauce au choix</div></div><div class="price">7,50&nbsp;€</div></div>
+        <div class="item"><div class="info"><div class="nm">Kebab XL</div><div class="ds">Double pain, double viande, généreux</div></div><div class="price">10,50&nbsp;€</div></div>
+        <div class="item"><div class="info"><div class="nm">Galette poulet</div><div class="ds">Poulet mariné, crudités, sauce</div></div><div class="price">8,00&nbsp;€</div></div>
+        <div class="item"><div class="info"><div class="nm">Cheeseburger maison</div><div class="ds">Steak, cheddar, bacon, sauce burger</div></div><div class="price">9,00&nbsp;€</div></div>
+      </div>
+    </div>
+
+    <div class="menu-cat">
+      <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18M5 11a7 7 0 0 1 14 0M3 15h18a0 0 0 0 1 0 0 3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"/></svg>Assiettes &amp; tacos</h3>
+      <div class="items">
+        <div class="item"><div class="info"><div class="nm">Assiette kebab</div><div class="ds">Viande, frites, salade, sauce, pain</div></div><div class="price">11,00&nbsp;€</div></div>
+        <div class="item"><div class="info"><div class="nm">Tacos M (1 viande)</div><div class="ds">Viande, frites, sauce fromagère, gratiné</div></div><div class="price">8,50&nbsp;€</div></div>
+        <div class="item"><div class="info"><div class="nm">Tacos L (2 viandes)</div><div class="ds">Double viande, frites, sauce fromagère</div></div><div class="price">11,00&nbsp;€</div></div>
+        <div class="item"><div class="info"><div class="nm">Box poulet</div><div class="ds">Tenders, frites, sauce, boisson</div></div><div class="price">9,50&nbsp;€</div></div>
+      </div>
+    </div>
+
+    <div class="menu-cat">
+      <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2v20M18 2v20M2 6h20M2 18h20"/></svg>Entrées &amp; à partager</h3>
+      <div class="items">
+        <div class="item"><div class="info"><div class="nm">Beignets dorés (x6)</div><div class="ds">Croustillants, servis avec sauce</div></div><div class="price">4,50&nbsp;€</div></div>
+        <div class="item"><div class="info"><div class="nm">Frites maison</div><div class="ds">Coupées et frites sur place</div></div><div class="price">3,00&nbsp;€</div></div>
+        <div class="item"><div class="info"><div class="nm">Nuggets (x6)</div><div class="ds">Avec sauce au choix</div></div><div class="price">4,00&nbsp;€</div></div>
+        <div class="item"><div class="info"><div class="nm">Boisson 33 cl</div><div class="ds">Sodas, eau, thé glacé</div></div><div class="price">1,50&nbsp;€</div></div>
+      </div>
+    </div>
+
+    <div class="menu-pics">
+      <figure>
+        <img src="img/burger.webp" width="800" height="600" loading="lazy" decoding="async"
+             alt="Cheeseburger maison généreux avec steak, bacon, œuf et cheddar fondu.">
+        <figcaption>Cheeseburger maison</figcaption>
+      </figure>
+      <figure>
+        <img src="img/entrees.webp" width="800" height="600" loading="lazy" decoding="async"
+             alt="Beignets dorés croustillants servis sur une planche avec sauces.">
+        <figcaption>Beignets dorés</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HORAIRES ============ -->
+<section id="horaires" class="hours" aria-labelledby="hours-title">
+  <div class="wrap">
+    <p class="eyebrow">Horaires &amp; accès</p>
+    <h2 id="hours-title">Ouvert midi et soir</h2>
+    <div class="hours-grid">
+      <ul class="htable" id="hoursTable">
+        <li data-day="1"><span class="d">Lundi</span><span class="h">11 h–14 h · 18 h–22 h</span></li>
+        <li data-day="2"><span class="d">Mardi</span><span class="h">11 h–14 h · 18 h–22 h</span></li>
+        <li data-day="3"><span class="d">Mercredi</span><span class="h">11 h–14 h · 18 h–22 h</span></li>
+        <li data-day="4"><span class="d">Jeudi</span><span class="h">11 h–14 h · 18 h–22 h</span></li>
+        <li data-day="5"><span class="d">Vendredi</span><span class="h">11 h–14 h · 18 h–23 h</span></li>
+        <li class="sat" data-day="6"><span class="d">Samedi</span><span class="h">11 h–00 h&nbsp;(minuit)</span></li>
+        <li data-day="0"><span class="d">Dimanche</span><span class="h">18 h–22 h</span></li>
+      </ul>
+      <!-- [À REMPLACER] Horaires d'exemple : à confirmer avec l'établissement (seule la fermeture à minuit le samedi est une donnée publique). -->
+      <div class="contact-card">
+        <h3>Venez nous voir</h3>
+        <p>15 rue Maurice Barrès<br>88130 Charmes</p>
+        <p>Tél. <a href="tel:+33329380726">03 29 38 07 26</a></p>
+        <a class="btn btn-rouge" href="https://www.google.com/maps/search/?api=1&query=Kebab+Charmes+15+rue+Maurice+Barr%C3%A8s+88130+Charmes" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Itinéraire Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVIS ============ -->
+<section id="avis" class="reviews" aria-labelledby="avis-title">
+  <div class="wrap">
+    <p class="eyebrow">Avis Google</p>
+    <h2 id="avis-title">Ce qu'on dit de nous</h2>
+    <div class="topline">
+      <div class="bignote">
+        <span class="num">4,2</span>
+        <div>
+          <span class="stars-row" role="img" aria-label="4,2 sur 5">
+            <svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#E7B53C" stroke-width="2" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </span>
+          <div class="sub">Note moyenne sur 191 avis Google</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- [À REMPLACER] Extraits d'avis illustratifs (≤ 15 mots) — à remplacer par de vrais avis Google après accord. -->
+    <div class="review-grid">
+      <article class="rev">
+        <span class="stars-row" role="img" aria-label="5 sur 5">
+          <svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </span>
+        <blockquote>« Portions vraiment généreuses, on ressort calé. »</blockquote>
+        <p class="who"><b>Karim B.</b> · Avis Google</p>
+      </article>
+      <article class="rev">
+        <span class="stars-row" role="img" aria-label="4 sur 5">
+          <svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="#E7B53C" stroke-width="2" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </span>
+        <blockquote>« Pratique le samedi soir, ouvert tard. »</blockquote>
+        <p class="who"><b>Laura M.</b> · Avis Google</p>
+      </article>
+      <article class="rev">
+        <span class="stars-row" role="img" aria-label="5 sur 5">
+          <svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="#E7B53C" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </span>
+        <blockquote>« Bon kebab, service rapide, je recommande. »</blockquote>
+        <p class="who"><b>Thomas R.</b> · Avis Google</p>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site on-dark">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><span class="mark" style="display:inline-grid;place-items:center;width:34px;height:34px;background:var(--rouge);color:#fff;border-radius:6px;font-size:1.5rem">K</span>Kebab Charmes</div>
+        <p>Le kebab généreux du centre de Charmes. Sur place, à emporter, et en commande en ligne avec créneau de retrait.</p>
+      </div>
+      <div>
+        <h4>Coordonnées</h4>
+        <ul class="foot-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&query=Kebab+Charmes+15+rue+Maurice+Barr%C3%A8s+88130+Charmes" target="_blank" rel="noopener">15 rue Maurice Barrès, 88130 Charmes</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+33329380726">03 29 38 07 26</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horaires</h4>
+        <ul class="foot-list">
+          <li>Lun–Jeu : 11 h–14 h · 18 h–22 h</li>
+          <li>Vendredi : 11 h–14 h · 18 h–23 h</li>
+          <li style="color:var(--or)">Samedi : 11 h–minuit</li>
+          <li>Dimanche : 18 h–22 h</li>
+        </ul>
+      </div>
+    </div>
+    <p class="colophon">© <span id="year">2026</span> Kebab Charmes — 15 rue Maurice Barrès, 88130 Charmes · 4,2★ sur 191 avis Google. Maquette de démonstration.</p>
+  </div>
+</footer>
+
+<!-- ============ BANDEAU LÉGAL FIXE ============ -->
+<div class="legal" role="contentinfo">
+  Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.
+</div>
+
+<!-- ============ MODALE DÉMO ============ -->
+<div class="modal" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="demoTitle" aria-describedby="demoDesc">
+  <div class="modal-box">
+    <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
+    <h3 id="demoTitle">Ceci est une démonstration</h3>
+    <p id="demoDesc">Votre commande n'a pas été transmise et aucun paiement n'a été effectué. En production, elle partirait en cuisine et vous paieriez au retrait ou en ligne (CB).</p>
+    <div class="recap" id="demoRecap"></div>
+    <button class="btn btn-dark" type="button" id="closeModal">Fermer</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var $=function(s,c){return (c||document).querySelector(s)};
+  var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+  var STORE="kebabCharmes.order.v1";
+
+  /* ---- Année ---- */
+  $("#year").textContent=new Date().getFullYear();
+
+  var form=$("#orderForm");
+  var cartList=$("#cartList"), cartTotal=$("#cartTotal"), pickupLine=$("#pickupLine"), liveNote=$("#liveNote");
+  var jourSel=$("#jour"), creneauSel=$("#creneau");
+
+  function eur(n){return n.toFixed(2).replace(".",",")+" €";}
+
+  /* ---- Horaires de retrait par jour (jour JS 0=dim … 6=sam) ---- */
+  /* dernier créneau samedi : minuit (fermeture 00:00) → dernier retrait 23:45 */
+  var SLOTS={
+    0:{label:"Dimanche",ranges:[[18,22]]},
+    1:{label:"Lundi",ranges:[[11,14],[18,22]]},
+    2:{label:"Mardi",ranges:[[11,14],[18,22]]},
+    3:{label:"Mercredi",ranges:[[11,14],[18,22]]},
+    4:{label:"Jeudi",ranges:[[11,14],[18,22]]},
+    5:{label:"Vendredi",ranges:[[11,14],[18,23]]},
+    6:{label:"Samedi",ranges:[[11,24]]}   /* jusqu'à minuit */
+  };
+  var DAYNAMES=["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
+
+  /* Construit les options de jour : aujourd'hui + 6 jours suivants */
+  function buildDays(){
+    var now=new Date();
+    var todayDow=now.getDay();
+    jourSel.innerHTML="";
+    for(var i=0;i<7;i++){
+      var dow=(todayDow+i)%7;
+      var o=document.createElement("option");
+      o.value=String(dow);
+      var name=i===0?"Aujourd'hui ("+DAYNAMES[dow].toLowerCase()+")":(i===1?"Demain ("+DAYNAMES[dow].toLowerCase()+")":DAYNAMES[dow]);
+      if(dow===6) name+=" — jusqu'à minuit";
+      o.textContent=name;
+      o.dataset.offset=String(i);
+      jourSel.appendChild(o);
+    }
+  }
+
+  /* Génère les créneaux de 15 min pour le jour choisi, en sautant l'heure passée si c'est aujourd'hui */
+  function buildSlots(){
+    var opt=jourSel.options[jourSel.selectedIndex];
+    if(!opt){return;}
+    var dow=parseInt(opt.value,10), offset=parseInt(opt.dataset.offset,10);
+    var conf=SLOTS[dow];
+    creneauSel.innerHTML="";
+    var now=new Date();
+    var nowMins=now.getHours()*60+now.getMinutes();
+    var minMins=offset===0?nowMins+20:0; /* 20 min de prépa mini si aujourd'hui */
+    var added=0, lastSat=null;
+    conf.ranges.forEach(function(r){
+      var start=r[0]*60, end=r[1]*60;
+      for(var m=start;m<end;m+=15){
+        if(m<minMins) continue;
+        var h=Math.floor(m/60), mm=m%60;
+        var disp=(h===24?"00":(h<10?"0"+h:h))+" h "+(mm<10?"0"+mm:mm);
+        var o=document.createElement("option");
+        o.value=disp; o.textContent=disp;
+        creneauSel.appendChild(o);
+        added++;
+        if(dow===6) lastSat=disp;
+      }
+    });
+    if(added===0){
+      var o=document.createElement("option");
+      o.value=""; o.textContent="Aucun créneau aujourd'hui — choisir un autre jour";
+      creneauSel.appendChild(o);
+    } else if(dow===6 && lastSat){
+      /* met en avant le créneau tardif du samedi : sélectionne un créneau de soirée par défaut */
+      $$("#creneau option").forEach(function(op){ if(op.value==="23 h 45"){op.selected=true;} });
+    }
+  }
+
+  /* ---- Calcul du panier ---- */
+  function readState(){
+    var base=$('input[name="base"]:checked');
+    var viande=$('input[name="viande"]:checked');
+    var sauces=$$('input[name="sauce"]:checked').map(function(i){return i.value;});
+    var sups=$$('input[name="sup"]:checked');
+    var pay=$('input[name="pay"]:checked');
+    return {base:base,viande:viande,sauces:sauces,sups:sups,pay:pay};
+  }
+
+  function render(){
+    var s=readState();
+    var lines=[], total=0;
+    if(s.base){
+      var bp=parseFloat(s.base.dataset.price||"0");
+      total+=bp;
+      var nm=s.base.value+(s.viande?" — "+s.viande.value:"");
+      lines.push({n:nm,p:bp});
+    }
+    if(s.sauces.length){ lines.push({n:"Sauces : "+s.sauces.join(", "),p:0}); }
+    s.sups.forEach(function(i){
+      var p=parseFloat(i.dataset.price||"0"); total+=p;
+      lines.push({n:i.value,p:p});
+    });
+
+    cartList.innerHTML="";
+    if(!lines.length){
+      var li=document.createElement("li"); li.className="empty"; li.textContent="Composez votre commande…";
+      cartList.appendChild(li);
+    } else {
+      lines.forEach(function(l){
+        var li=document.createElement("li");
+        var a=document.createElement("span"); a.textContent=l.n;
+        var b=document.createElement("span"); b.textContent=l.p>0?eur(l.p):"inclus";
+        li.appendChild(a); li.appendChild(b); cartList.appendChild(li);
+      });
+    }
+    cartTotal.textContent=eur(total);
+
+    var jourTxt=jourSel.options[jourSel.selectedIndex]?jourSel.options[jourSel.selectedIndex].textContent:"";
+    var crenTxt=creneauSel.value||"";
+    var payTxt=s.pay?s.pay.value:"";
+    pickupLine.textContent=crenTxt?("Retrait : "+jourTxt+", "+crenTxt+" · "+payTxt):("Retrait : "+jourTxt+" · "+payTxt);
+
+    /* sauvegarde localStorage (autorisé) */
+    try{
+      localStorage.setItem(STORE,JSON.stringify({
+        lines:lines,total:total,jour:jourTxt,creneau:crenTxt,pay:payTxt,ts:Date.now()
+      }));
+    }catch(e){}
+    return {lines:lines,total:total,jour:jourTxt,creneau:crenTxt,pay:payTxt};
+  }
+
+  /* ---- Modale ---- */
+  var modal=$("#demoModal"), recap=$("#demoRecap"), lastFocus=null;
+  function openModal(data){
+    var html="<b>Récapitulatif</b><br>";
+    data.lines.forEach(function(l){ html+="• "+l.n+(l.p>0?" — "+eur(l.p):"")+"<br>"; });
+    html+="<br><b>Total : "+eur(data.total)+"</b>";
+    if(data.creneau) html+="<br>Retrait : "+data.jour+", "+data.creneau;
+    html+="<br>"+data.pay;
+    recap.innerHTML=html;
+    lastFocus=document.activeElement;
+    modal.classList.add("show");
+    $("#closeModal").focus();
+    liveNote.textContent="Commande simulée enregistrée — ceci est une démonstration.";
+  }
+  function closeModal(){
+    modal.classList.remove("show");
+    if(lastFocus&&lastFocus.focus) lastFocus.focus();
+  }
+  $("#closeModal").addEventListener("click",closeModal);
+  modal.addEventListener("click",function(e){ if(e.target===modal) closeModal(); });
+  document.addEventListener("keydown",function(e){ if(e.key==="Escape"&&modal.classList.contains("show")) closeModal(); });
+
+  $("#validate").addEventListener("click",function(){
+    var data=render();
+    if(!data.lines.length){ liveNote.textContent="Ajoutez au moins un article avant de valider."; return; }
+    openModal(data);
+  });
+
+  /* ---- Wiring ---- */
+  form.addEventListener("change",function(e){
+    if(e.target===jourSel) buildSlots();
+    render();
+  });
+
+  /* ---- Restauration éventuelle d'un brouillon (montre que ça vit) ---- */
+  buildDays(); buildSlots(); render();
+})();
+</script>
+</body>
+</html>

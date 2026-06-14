@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#20452E">
+<title>Le Centre — Restaurant, grillades & kebab à Charmes (88130) | Commande à emporter</title>
+<meta name="description" content="Le Centre, le resto de la place Henri Breton à Charmes (88130) : grillades, belle viande rouge, kebab et desserts maison. 4,4★ sur Google (107 avis). Ouvert 7 j/7 jusqu'à 23 h. Commande à emporter en ligne. ☎ 06 59 22 26 09.">
+
+<!-- Google Fonts : 2 familles (Bitter slab display + Mukta texte), chargement non bloquant -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700;800&family=Mukta:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700;800&family=Mukta:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700;800&family=Mukta:wght@400;500;600;700&display=swap"></noscript>
+
+<!-- [À REMPLACER] Horaires détaillés à confirmer avec l'établissement. Donnée réelle certaine : ouvert 7 j/7 jusqu'à 23 h. Amplitude midi/soir donnée à titre indicatif. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Le Centre",
+  "servesCuisine": ["Grillades", "Kebab", "Viandes", "Restauration"],
+  "priceRange": "€€",
+  "telephone": "+33659222609",
+  "image": "https://lumenbot.github.io/demos-tpe-88/le-centre/img/hero-grillades.webp",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9 place Henri Breton",
+    "postalCode": "88130",
+    "addressLocality": "Charmes",
+    "addressCountry": "FR"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Le+Centre+9+place+Henri+Breton+88130+Charmes",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4",
+    "reviewCount": "107",
+    "bestRating": "5"
+  },
+  "hasMenu": { "@type": "Menu", "name": "La carte du Centre" },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "11:00",
+      "closes": "23:00"
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --vert:#20452E;        /* vert profond */
+  --vert-d:#163322;      /* vert plus sombre */
+  --vert-l:#2f5d40;
+  --creme:#F4EEDF;       /* crème */
+  --creme-d:#e8dec8;
+  --terre:#C46B43;       /* terracotta douce */
+  --terre-d:#a9532f;
+  --encre:#22251f;       /* texte foncé sur crème */
+  --gris:#5e5a4e;
+  --or:#d8b15a;
+  --ok:#2f7d4f;
+  --rad:14px;
+  --maxw:1120px;
+  --shadow:0 8px 28px rgba(22,51,34,.16);
+  --font-d:"Bitter",Georgia,"Times New Roman",serif;
+  --font-t:"Mukta","Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font-t);
+  color:var(--encre);
+  background:var(--creme);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:64px; /* place du bandeau légal fixe */
+}
+h1,h2,h3{font-family:var(--font-d);line-height:1.15;margin:0 0 .4em;font-weight:700}
+h2{font-size:clamp(1.5rem,4.5vw,2.2rem);color:var(--vert)}
+h3{font-size:1.12rem}
+p{margin:0 0 1em}
+a{color:var(--terre-d)}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 18px}
+section{padding:46px 0}
+.eyebrow{font-family:var(--font-d);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:var(--terre-d);margin:0 0 .5em}
+:focus-visible{outline:3px solid var(--terre);outline-offset:2px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:var(--vert);color:#fff;padding:10px 14px;z-index:200;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+
+/* Boutons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  min-height:48px;padding:12px 22px;border-radius:999px;border:0;cursor:pointer;
+  font-family:var(--font-t);font-weight:700;font-size:1rem;text-decoration:none;
+  transition:transform .12s ease, background .15s ease, box-shadow .15s;
+}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--terre);color:#fff;box-shadow:0 6px 16px rgba(196,107,67,.35)}
+.btn-primary:hover{background:var(--terre-d)}
+.btn-ghost{background:transparent;color:var(--creme);border:2px solid rgba(244,238,223,.55)}
+.btn-ghost:hover{background:rgba(244,238,223,.12)}
+.btn-dark{background:var(--vert);color:var(--creme)}
+.btn-dark:hover{background:var(--vert-d)}
+.btn-block{display:flex;width:100%}
+
+/* Header */
+header.top{
+  position:sticky;top:0;z-index:90;background:var(--vert);color:var(--creme);
+  border-bottom:2px solid rgba(216,177,90,.35);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 18px;max-width:var(--maxw);margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--font-d);font-weight:800;font-size:1.18rem;color:var(--creme);text-decoration:none;letter-spacing:.01em}
+.brand .mark{width:34px;height:34px;flex:0 0 auto}
+.nav-links{display:none;gap:20px;align-items:center}
+.nav-links a{color:var(--creme);text-decoration:none;font-weight:600;font-size:.95rem;opacity:.92}
+.nav-links a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
+.cart-btn{position:relative;background:var(--terre);color:#fff;border:0;min-height:44px;min-width:44px;padding:8px 14px;border-radius:999px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:7px;font-family:var(--font-t)}
+.cart-btn:hover{background:var(--terre-d)}
+.cart-count{background:var(--creme);color:var(--vert-d);border-radius:999px;min-width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:700;padding:0 5px}
+
+/* Hero */
+.hero{position:relative;color:var(--creme);background:var(--vert-d)}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-media img{width:100%;height:100%;object-fit:cover}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,33,22,.62) 0%,rgba(22,51,34,.74) 55%,rgba(22,51,34,.92) 100%)}
+.hero-inner{position:relative;z-index:1;max-width:var(--maxw);margin:0 auto;padding:54px 18px 50px}
+.hero h1{font-size:clamp(2rem,7vw,3.5rem);color:var(--creme);max-width:14ch;margin-bottom:.25em;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+.hero .lede{font-size:clamp(1.02rem,2.7vw,1.22rem);max-width:42ch;color:#f1ead9;margin-bottom:1.4em}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:1.5em}
+.badge{display:inline-flex;align-items:center;gap:7px;background:rgba(244,238,223,.12);border:1px solid rgba(244,238,223,.3);padding:7px 13px;border-radius:999px;font-size:.86rem;font-weight:600;backdrop-filter:saturate(1.2) blur(2px)}
+.badge .star{color:var(--or)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Section utilitaires */
+.lead{font-size:1.08rem;color:var(--gris);max-width:60ch}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+.alt{background:var(--vert);color:var(--creme)}
+.alt h2{color:var(--creme)}
+.alt .eyebrow{color:var(--or)}
+.alt .lead{color:#ddd6c4}
+
+/* WOW : commande */
+.order-grid{display:grid;gap:24px}
+.card{background:#fff;border:1px solid var(--creme-d);border-radius:var(--rad);box-shadow:var(--shadow)}
+.order-panel{padding:18px}
+.order-panel h3{color:var(--vert);margin-bottom:.2em}
+.cat-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
+.cat-tab{background:var(--creme);border:1px solid var(--creme-d);color:var(--encre);padding:9px 15px;border-radius:999px;font-weight:600;font-size:.9rem;cursor:pointer;min-height:44px;font-family:var(--font-t)}
+.cat-tab[aria-selected="true"]{background:var(--vert);color:var(--creme);border-color:var(--vert)}
+.menu-list{list-style:none;margin:8px 0 0;padding:0}
+.menu-item{display:flex;align-items:flex-start;gap:12px;padding:13px 4px;border-bottom:1px dashed var(--creme-d)}
+.menu-item:last-child{border-bottom:0}
+.mi-body{flex:1;min-width:0}
+.mi-name{font-weight:700;color:var(--vert-d)}
+.mi-desc{font-size:.86rem;color:var(--gris);margin:.15em 0 0}
+.mi-price{font-family:var(--font-d);font-weight:700;color:var(--terre-d);white-space:nowrap;align-self:center}
+.add-btn{flex:0 0 auto;align-self:center;background:var(--terre);color:#fff;border:0;width:44px;height:44px;border-radius:12px;font-size:1.5rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.add-btn:hover{background:var(--terre-d)}
+
+/* Récap panier (colonne) */
+.cart-summary{padding:18px;align-self:start}
+.cart-summary h3{color:var(--vert)}
+.cart-lines{list-style:none;margin:0 0 12px;padding:0}
+.cart-empty{color:var(--gris);font-style:italic;padding:14px 0}
+.cl{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--creme-d)}
+.cl-name{flex:1;min-width:0;font-weight:600;font-size:.94rem}
+.cl-name small{display:block;color:var(--gris);font-weight:400;font-size:.82rem}
+.qty{display:flex;align-items:center;gap:2px}
+.qty button{width:32px;height:32px;border-radius:8px;border:1px solid var(--creme-d);background:var(--creme);font-size:1.1rem;cursor:pointer;line-height:1}
+.qty button:hover{background:var(--creme-d)}
+.qty span{min-width:24px;text-align:center;font-weight:700}
+.cl-sub{font-family:var(--font-d);font-weight:700;color:var(--terre-d);min-width:62px;text-align:right}
+.cart-total{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--font-d);font-size:1.25rem;font-weight:700;color:var(--vert);margin:6px 0 14px}
+.slot-row{margin:10px 0}
+.slot-row label{display:block;font-weight:600;margin-bottom:5px;font-size:.92rem}
+.slot-row select{width:100%;min-height:48px;border:1px solid var(--creme-d);border-radius:10px;padding:0 12px;font-family:var(--font-t);font-size:1rem;background:#fff;color:var(--encre)}
+.pay-note{display:flex;gap:9px;align-items:flex-start;background:var(--creme);border-radius:10px;padding:11px 13px;font-size:.88rem;color:var(--gris);margin:12px 0}
+.pay-note svg{flex:0 0 auto;margin-top:2px;color:var(--ok)}
+
+/* Carte (menu visuel) */
+.menu-cards{display:grid;gap:20px;grid-template-columns:1fr}
+.mcard{overflow:hidden}
+.mcard img{width:100%;height:190px;object-fit:cover}
+.mcard .mc-body{padding:16px 18px}
+.mc-body h3{color:var(--vert);display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.mc-body h3 .p{font-size:.95rem;color:var(--terre-d)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tag{font-size:.74rem;background:var(--creme);border:1px solid var(--creme-d);color:var(--vert-d);padding:4px 9px;border-radius:999px;font-weight:600}
+
+/* Avis */
+.reviews{display:grid;gap:16px;grid-template-columns:1fr}
+.review{background:#fff;border:1px solid var(--creme-d);border-radius:var(--rad);padding:18px;box-shadow:var(--shadow)}
+.stars{color:var(--or);font-size:1.05rem;letter-spacing:1px}
+.review p{font-size:1rem;color:var(--encre);margin:.5em 0 .7em}
+.review .who{font-weight:700;color:var(--vert-d);font-size:.92rem}
+.review .src{color:var(--gris);font-size:.8rem}
+.rating-head{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+.rating-big{font-family:var(--font-d);font-size:2.6rem;font-weight:800;color:var(--or);line-height:1}
+
+/* Horaires + accès */
+.info-grid{display:grid;gap:24px;grid-template-columns:1fr}
+.hours{list-style:none;margin:0;padding:0}
+.hours li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid rgba(244,238,223,.2)}
+.hours li:last-child{border-bottom:0}
+.hours .open{color:var(--or);font-weight:700}
+.today{background:rgba(216,177,90,.14);border-radius:8px;padding-left:10px;padding-right:10px;margin:0 -10px}
+.access p{margin:.2em 0 .9em}
+.access a{color:var(--or);font-weight:600}
+.now-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(47,125,79,.22);border:1px solid rgba(216,177,90,.5);color:var(--creme);padding:8px 14px;border-radius:999px;font-weight:600;font-size:.9rem;margin-bottom:14px}
+.now-pill .dot{width:9px;height:9px;border-radius:50%;background:#5fd083;box-shadow:0 0 0 4px rgba(95,208,131,.25)}
+
+/* Footer */
+footer.site{background:var(--vert-d);color:var(--creme);padding:40px 0 30px}
+footer.site a{color:var(--or)}
+.foot-grid{display:grid;gap:24px;grid-template-columns:1fr}
+.foot-grid h3{color:var(--creme)}
+.foot-nap p{margin:.2em 0}
+.foot-mini{margin-top:26px;padding-top:18px;border-top:1px solid rgba(244,238,223,.15);font-size:.82rem;color:#cdc7b6}
+
+/* Bandeau légal fixe */
+.legal{
+  position:fixed;left:0;right:0;bottom:0;z-index:120;
+  background:var(--encre);color:#efe9da;
+  font-size:.74rem;line-height:1.35;padding:9px 14px;text-align:center;
+  border-top:2px solid var(--terre);
+}
+.legal b{color:#fff;font-weight:700}
+
+/* Modale démo */
+.modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(15,33,22,.6)}
+.modal.show{display:flex}
+.modal-box{background:var(--creme);border-radius:18px;max-width:440px;width:100%;padding:26px 22px;box-shadow:0 20px 60px rgba(0,0,0,.4);text-align:center}
+.modal-box .ico{width:64px;height:64px;margin:0 auto 12px;background:var(--vert);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--or)}
+.modal-box h3{color:var(--vert);font-size:1.4rem}
+.modal-box p{color:var(--gris)}
+.modal-box .recap{background:#fff;border:1px solid var(--creme-d);border-radius:12px;padding:12px 14px;text-align:left;font-size:.9rem;margin:14px 0}
+.modal-box .recap b{color:var(--vert-d)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* Toast */
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:78px;z-index:150;background:var(--vert);color:var(--creme);padding:11px 18px;border-radius:999px;font-weight:600;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(-4px)}
+
+/* Desktop */
+@media(min-width:760px){
+  .nav-links{display:flex}
+  .order-grid{grid-template-columns:1.4fr 1fr}
+  .menu-cards{grid-template-columns:repeat(3,1fr)}
+  .reviews{grid-template-columns:repeat(3,1fr)}
+  .info-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1.3fr 1fr 1fr}
+  .hero-inner{padding:80px 18px 76px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#commande">Aller à la commande en ligne</a>
+
+<header class="top">
+  <nav class="nav" aria-label="Navigation principale">
+    <a class="brand" href="#top" aria-label="Le Centre, accueil">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="#d8b15a" stroke-width="2"/>
+        <path d="M13 26V14h3.5l3.5 6 3.5-6H27v12" fill="none" stroke="#F4EEDF" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+      Le Centre
+    </a>
+    <div class="nav-links">
+      <a href="#commande">Commander</a>
+      <a href="#carte">La carte</a>
+      <a href="#avis">Avis</a>
+      <a href="#horaires">Horaires &amp; accès</a>
+    </div>
+    <button class="cart-btn" id="openCart" aria-label="Voir mon panier">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h2.4l2.2 12.2a1.5 1.5 0 0 0 1.5 1.2h8.7a1.5 1.5 0 0 0 1.5-1.2L21 7H6"/></svg>
+      <span>Panier</span>
+      <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+    </button>
+  </nav>
+</header>
+
+<a id="top"></a>
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Présentation">
+  <div class="hero-media">
+    <img src="img/hero-grillades.webp" width="1000" height="750" alt="Assortiment généreux de grillades : brochettes, viandes et pommes de terre dorées" fetchpriority="high">
+  </div>
+  <div class="hero-inner">
+    <p class="eyebrow" style="color:var(--or)">Place Henri Breton · Charmes (88130)</p>
+    <h1>Resto &amp; grillades sur la place</h1>
+    <p class="lede">Le rendez-vous familial de Charmes : belle viande rouge, grillades généreuses, kebab et desserts maison. À table ou à emporter, 7 jours sur 7.</p>
+    <div class="badges">
+      <span class="badge"><span class="star">★</span> 4,4 / 5 · 107 avis Google</span>
+      <span class="badge">🔥 Grillades &amp; viande rouge</span>
+      <span class="badge">🕚 Ouvert 7 j/7 jusqu'à 23 h</span>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#commande">Commander à emporter</a>
+      <a class="btn btn-ghost" href="tel:+33659222609">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2.1z"/></svg>
+        06 59 22 26 09
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WOW : COMMANDE EN LIGNE ============ -->
+<section id="commande" class="alt" aria-labelledby="cmd-title">
+  <div class="wrap">
+    <p class="eyebrow">Commande à emporter en ligne</p>
+    <h2 id="cmd-title">Composez votre commande, choisissez votre créneau</h2>
+    <p class="lead">Grillades, kebab, desserts : ajoutez au panier, réservez une heure de retrait et payez sur place. Prêt quand vous arrivez — sans attendre au téléphone.</p>
+
+    <div class="order-grid" style="margin-top:24px">
+      <!-- Catalogue -->
+      <div class="card order-panel">
+        <h3>Notre carte à emporter</h3>
+        <div class="cat-tabs" role="tablist" aria-label="Catégories de la carte">
+          <button class="cat-tab" role="tab" aria-selected="true" data-cat="grillades">Grillades</button>
+          <button class="cat-tab" role="tab" aria-selected="false" data-cat="kebab">Kebab &amp; snack</button>
+          <button class="cat-tab" role="tab" aria-selected="false" data-cat="desserts">Desserts</button>
+        </div>
+        <ul class="menu-list" id="catalogue" aria-live="polite"></ul>
+      </div>
+
+      <!-- Récap panier -->
+      <div class="card cart-summary" id="cartPanel">
+        <h3>Mon panier</h3>
+        <ul class="cart-lines" id="cartLines"></ul>
+        <p class="cart-empty" id="cartEmpty">Votre panier est vide. Ajoutez un plat depuis la carte.</p>
+        <div class="cart-total"><span>Total</span><span id="cartTotal">0,00 €</span></div>
+
+        <div class="slot-row">
+          <label for="slot">Créneau de retrait (aujourd'hui)</label>
+          <select id="slot" aria-label="Choisir un créneau de retrait"></select>
+        </div>
+
+        <div class="pay-note">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          <span>Paiement <b>au retrait</b> (espèces ou carte). Aucune avance en ligne.</span>
+        </div>
+
+        <button class="btn btn-primary btn-block" id="checkout" disabled>Valider ma commande</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LA CARTE (vitrine) ============ -->
+<section id="carte" aria-labelledby="carte-title">
+  <div class="wrap">
+    <p class="eyebrow">À la carte</p>
+    <h2 id="carte-title">La belle viande rouge, comme à la maison</h2>
+    <p class="lead">Une cuisine franche et généreuse : grillades saisies minute, kebab préparé sur place et desserts gourmands pour finir en beauté.</p>
+
+    <div class="menu-cards" style="margin-top:24px">
+      <article class="card mcard">
+        <img src="img/grillade.webp" width="800" height="600" alt="Travers de porc grillé sur planche avec frites et accompagnements" loading="lazy">
+        <div class="mc-body">
+          <!-- [À REMPLACER] Plats grillades et prix factices crédibles à valider avec l'établissement -->
+          <h3>Les grillades <span class="p">dès 13,90 €</span></h3>
+          <p style="color:var(--gris);margin:.2em 0 0">Entrecôte, bavette, travers, brochettes — belle viande rouge saisie minute, frites maison et salade.</p>
+          <div class="tags"><span class="tag">Viande rouge</span><span class="tag">Frites maison</span><span class="tag">Sur place ou à emporter</span></div>
+        </div>
+      </article>
+
+      <article class="card mcard">
+        <img src="img/snack.webp" width="800" height="600" alt="Burger croustillant généreux servi sur planche en bois" loading="lazy">
+        <div class="mc-body">
+          <!-- [À REMPLACER] Plats kebab/snack et prix factices crédibles à valider -->
+          <h3>Kebab &amp; snack <span class="p">dès 7,50 €</span></h3>
+          <p style="color:var(--gris);margin:.2em 0 0">Kebab galette ou assiette, tacos, burgers et sandwichs — portions généreuses, sauces maison.</p>
+          <div class="tags"><span class="tag">Généreux</span><span class="tag">Tacos</span><span class="tag">Burgers</span></div>
+        </div>
+      </article>
+
+      <article class="card mcard">
+        <img src="img/hero-grillades.webp" width="1000" height="750" alt="Assortiment de viandes et brochettes grillées présenté sur planche" loading="lazy">
+        <div class="mc-body">
+          <!-- [À REMPLACER] Desserts et prix factices crédibles à valider -->
+          <h3>Les desserts <span class="p">dès 4,50 €</span></h3>
+          <p style="color:var(--gris);margin:.2em 0 0">Tiramisu maison, fondant au chocolat, profiteroles — les douceurs qu'on vient chercher.</p>
+          <div class="tags"><span class="tag">Maison</span><span class="tag">Gourmand</span></div>
+        </div>
+      </article>
+    </div>
+    <p class="center" style="margin-top:26px"><a class="btn btn-dark" href="#commande">Composer ma commande</a></p>
+  </div>
+</section>
+
+<!-- ============ AVIS ============ -->
+<section id="avis" class="alt" aria-labelledby="avis-title">
+  <div class="wrap">
+    <p class="eyebrow">Ils sont passés par la place</p>
+    <h2 id="avis-title">4,4 ★ sur Google, 107 avis</h2>
+    <div class="rating-head">
+      <span class="rating-big">4,4</span>
+      <span class="stars" aria-hidden="true">★★★★☆</span>
+      <span style="color:#ddd6c4">sur 107 avis Google</span>
+    </div>
+    <div class="reviews" style="margin-top:18px">
+      <!-- [À REMPLACER] Extraits d'avis illustratifs (≤ 15 mots). Remplacer par de vrais avis Google après accord. -->
+      <article class="review">
+        <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
+        <p>« Belle viande rouge, cuisson parfaite et portions généreuses. »</p>
+        <div class="who">Client·e du Centre</div>
+        <div class="src">Avis Google · illustratif</div>
+      </article>
+      <article class="review">
+        <div class="stars" aria-label="4 étoiles sur 5">★★★★☆</div>
+        <p>« Le resto familial de la place, accueil chaleureux. »</p>
+        <div class="who">Client·e du Centre</div>
+        <div class="src">Avis Google · illustratif</div>
+      </article>
+      <article class="review">
+        <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
+        <p>« Grillades au top et desserts maison délicieux. »</p>
+        <div class="who">Client·e du Centre</div>
+        <div class="src">Avis Google · illustratif</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HORAIRES & ACCÈS ============ -->
+<section id="horaires" class="alt" style="padding-top:0" aria-labelledby="hor-title">
+  <div class="wrap">
+    <div class="info-grid">
+      <div>
+        <p class="eyebrow">Toujours ouvert, ou presque</p>
+        <h2 id="hor-title">Horaires</h2>
+        <div class="now-pill" id="nowPill"><span class="dot"></span><span id="nowTxt">Ouvert aujourd'hui</span></div>
+        <!-- [À REMPLACER] Amplitude horaire midi/soir indicative. Donnée certaine : 7 j/7 jusqu'à 23 h. -->
+        <ul class="hours" id="hoursList"></ul>
+        <p style="color:#ddd6c4;font-size:.86rem;margin-top:12px">Ouvert tous les jours de la semaine, service jusqu'à 23 h.</p>
+      </div>
+      <div class="access">
+        <p class="eyebrow">Nous trouver</p>
+        <h2>Accès</h2>
+        <p><strong>Le Centre</strong><br>9 place Henri Breton<br>88130 Charmes</p>
+        <p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Le+Centre+9+place+Henri+Breton+88130+Charmes" target="_blank" rel="noopener">Ouvrir dans Google Maps ↗</a>
+        </p>
+        <p><a href="tel:+33659222609">☎ 06 59 22 26 09</a></p>
+        <p style="margin-top:18px"><a class="btn btn-primary" href="#commande">Commander à emporter</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site" aria-label="Pied de page">
+  <div class="wrap foot-grid">
+    <div class="foot-nap">
+      <h3>Le Centre</h3>
+      <p>Restaurant · grillades · kebab</p>
+      <p>9 place Henri Breton, 88130 Charmes</p>
+      <p><a href="tel:+33659222609">06 59 22 26 09</a></p>
+      <p>Ouvert 7 j/7 jusqu'à 23 h</p>
+    </div>
+    <div>
+      <h3>La maison</h3>
+      <p><a href="#commande" style="color:var(--or)">Commander à emporter</a></p>
+      <p><a href="#carte" style="color:var(--or)">La carte</a></p>
+      <p><a href="#avis" style="color:var(--or)">Avis Google</a></p>
+      <p><a href="#horaires" style="color:var(--or)">Horaires &amp; accès</a></p>
+    </div>
+    <div>
+      <h3>Y aller</h3>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Le+Centre+9+place+Henri+Breton+88130+Charmes" target="_blank" rel="noopener">Itinéraire Google Maps ↗</a></p>
+      <p style="color:#cdc7b6;font-size:.88rem">Au cœur de la place Henri Breton, à Charmes.</p>
+    </div>
+  </div>
+  <div class="wrap foot-mini">
+    Le Centre — restaurant, grillades &amp; kebab à Charmes (88130). Site de démonstration.
+  </div>
+</footer>
+
+<!-- Bandeau légal fixe (texte exact, apostrophes droites) -->
+<div class="legal" role="contentinfo">
+  Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Modale démonstration -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <div class="ico" aria-hidden="true">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+    </div>
+    <h3 id="modalTitle">Ceci est une démonstration</h3>
+    <p>Votre commande n'a pas été transmise. En production, elle partirait en cuisine et le paiement se ferait au retrait.</p>
+    <div class="recap" id="modalRecap"></div>
+    <button class="btn btn-primary btn-block" id="modalClose">J'ai compris</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Catalogue (prix factices) ---------- */
+  /* [À REMPLACER] Articles, descriptions et prix factices : à remplacer par la vraie carte du Centre. */
+  var MENU = {
+    grillades:[
+      {id:"g1",n:"Entrecôte grillée",d:"Belle pièce de bœuf, frites maison, salade",p:16.90},
+      {id:"g2",n:"Bavette à l'échalote",d:"Viande rouge saisie minute, frites",p:14.90},
+      {id:"g3",n:"Travers de porc",d:"Marinés et grillés, sauce barbecue",p:13.90},
+      {id:"g4",n:"Brochette mixte",d:"Bœuf, poulet, légumes grillés",p:13.50},
+      {id:"g5",n:"Côte d'agneau",d:"Grillée, beurre d'herbes, frites",p:17.50}
+    ],
+    kebab:[
+      {id:"k1",n:"Kebab galette",d:"Viande, crudités, sauce au choix",p:7.50},
+      {id:"k2",n:"Assiette kebab",d:"Viande, frites, salade généreuse",p:11.50},
+      {id:"k3",n:"Tacos 1 viande",d:"Frites, sauce fromagère, viande",p:8.50},
+      {id:"k4",n:"Burger maison",d:"Steak, cheddar, oignons, frites",p:10.90},
+      {id:"k5",n:"Sandwich grillé",d:"Pain frais, viande grillée, crudités",p:7.90}
+    ],
+    desserts:[
+      {id:"d1",n:"Tiramisu maison",d:"Préparé sur place, cacao",p:4.90},
+      {id:"d2",n:"Fondant au chocolat",d:"Cœur coulant, servi tiède",p:5.50},
+      {id:"d3",n:"Profiteroles",d:"Choux, glace vanille, chocolat chaud",p:5.90},
+      {id:"d4",n:"Salade de fruits frais",d:"De saison",p:4.50}
+    ]
+  };
+
+  var STORE_KEY="lecentre_cart_v1";
+  var cart={};       /* id -> qty */
+  var current="grillades";
+
+  /* ---------- Helpers ---------- */
+  function euro(v){return v.toFixed(2).replace(".",",")+" €";}
+  function find(id){
+    for(var c in MENU){for(var i=0;i<MENU[c].length;i++){if(MENU[c][i].id===id)return MENU[c][i];}}
+    return null;
+  }
+  function load(){
+    try{var s=localStorage.getItem(STORE_KEY);if(s)cart=JSON.parse(s)||{};}catch(e){cart={};}
+  }
+  function save(){
+    try{localStorage.setItem(STORE_KEY,JSON.stringify(cart));}catch(e){}
+  }
+  function totals(){
+    var n=0,sum=0;
+    for(var id in cart){var it=find(id);if(it){n+=cart[id];sum+=it.p*cart[id];}}
+    return {n:n,sum:sum};
+  }
+
+  /* ---------- Toast ---------- */
+  var toastEl=document.getElementById("toast"),toastT;
+  function toast(msg){
+    toastEl.textContent=msg;toastEl.classList.add("show");
+    clearTimeout(toastT);toastT=setTimeout(function(){toastEl.classList.remove("show");},1600);
+  }
+
+  /* ---------- Rendu catalogue ---------- */
+  var cat=document.getElementById("catalogue");
+  function renderCat(){
+    var items=MENU[current],html="";
+    for(var i=0;i<items.length;i++){
+      var it=items[i];
+      html+='<li class="menu-item">'+
+        '<div class="mi-body"><div class="mi-name">'+it.n+'</div><div class="mi-desc">'+it.d+'</div></div>'+
+        '<div class="mi-price">'+euro(it.p)+'</div>'+
+        '<button class="add-btn" data-add="'+it.id+'" aria-label="Ajouter '+it.n+' au panier">+</button>'+
+        '</li>';
+    }
+    cat.innerHTML=html;
+  }
+
+  var tabs=document.querySelectorAll(".cat-tab");
+  for(var t=0;t<tabs.length;t++){
+    tabs[t].addEventListener("click",function(){
+      for(var k=0;k<tabs.length;k++)tabs[k].setAttribute("aria-selected","false");
+      this.setAttribute("aria-selected","true");
+      current=this.getAttribute("data-cat");
+      renderCat();
+    });
+  }
+
+  /* ---------- Panier ---------- */
+  var linesEl=document.getElementById("cartLines"),
+      emptyEl=document.getElementById("cartEmpty"),
+      totalEl=document.getElementById("cartTotal"),
+      countEl=document.getElementById("cartCount"),
+      checkoutBtn=document.getElementById("checkout");
+
+  function renderCart(){
+    var tt=totals(),html="";
+    for(var id in cart){
+      var it=find(id);if(!it)continue;
+      html+='<li class="cl">'+
+        '<div class="cl-name">'+it.n+'<small>'+euro(it.p)+'</small></div>'+
+        '<div class="qty">'+
+          '<button data-dec="'+id+'" aria-label="Retirer un '+it.n+'">−</button>'+
+          '<span aria-label="Quantité">'+cart[id]+'</span>'+
+          '<button data-inc="'+id+'" aria-label="Ajouter un '+it.n+'">+</button>'+
+        '</div>'+
+        '<div class="cl-sub">'+euro(it.p*cart[id])+'</div>'+
+      '</li>';
+    }
+    linesEl.innerHTML=html;
+    emptyEl.style.display=tt.n?"none":"block";
+    totalEl.textContent=euro(tt.sum);
+    countEl.textContent=tt.n;
+    checkoutBtn.disabled=tt.n===0;
+  }
+
+  function add(id){cart[id]=(cart[id]||0)+1;save();renderCart();toast("Ajouté au panier");}
+  function inc(id){cart[id]=(cart[id]||0)+1;save();renderCart();}
+  function dec(id){cart[id]=(cart[id]||0)-1;if(cart[id]<=0)delete cart[id];save();renderCart();}
+
+  document.addEventListener("click",function(e){
+    var a=e.target.closest?e.target.closest("[data-add],[data-inc],[data-dec]"):null;
+    if(!a)return;
+    if(a.hasAttribute("data-add"))add(a.getAttribute("data-add"));
+    else if(a.hasAttribute("data-inc"))inc(a.getAttribute("data-inc"));
+    else if(a.hasAttribute("data-dec"))dec(a.getAttribute("data-dec"));
+  });
+
+  /* ---------- Créneaux de retrait (calés sur 7j/7 jusqu'à 23 h) ---------- */
+  var slotSel=document.getElementById("slot");
+  function buildSlots(){
+    var now=new Date();
+    var open=11, close=23; /* service 11 h → 23 h */
+    var h=now.getHours(),m=now.getMinutes();
+    /* prochain créneau : arrondi au quart d'heure + 20 min de préparation */
+    var startMin=h*60+m+20;
+    var firstSlot=Math.ceil(startMin/15)*15;
+    var openMin=open*60, closeMin=close*60;
+    if(firstSlot<openMin)firstSlot=openMin;
+    var html="",added=0;
+    for(var s=firstSlot;s<=closeMin;s+=15){
+      var hh=Math.floor(s/60),mm=s%60;
+      var label=("0"+hh).slice(-2)+" h "+("0"+mm).slice(-2);
+      html+='<option value="'+label+'">Aujourd\'hui · '+label+'</option>';
+      added++;
+      if(added>=24)break; /* limite la liste */
+    }
+    if(!added){
+      html='<option value="Demain · 11 h 15">Demain · 11 h 15 (à l\'ouverture)</option>';
+    }
+    slotSel.innerHTML=html;
+  }
+
+  /* ---------- Modale ---------- */
+  var modal=document.getElementById("modal"),
+      modalRecap=document.getElementById("modalRecap"),
+      modalClose=document.getElementById("modalClose"),
+      lastFocus=null;
+
+  function openModal(){
+    var tt=totals();
+    var lines="";
+    for(var id in cart){var it=find(id);if(it)lines+=cart[id]+" × "+it.n+"<br>";}
+    modalRecap.innerHTML=lines+
+      '<hr style="border:0;border-top:1px solid var(--creme-d);margin:8px 0">'+
+      '<b>Total : '+euro(tt.sum)+'</b><br>Retrait : '+slotSel.value+'<br>Paiement au retrait';
+    lastFocus=document.activeElement;
+    modal.classList.add("show");
+    modalClose.focus();
+  }
+  function closeModal(){
+    modal.classList.remove("show");
+    if(lastFocus)lastFocus.focus();
+  }
+
+  checkoutBtn.addEventListener("click",function(){
+    if(totals().n===0)return;
+    openModal();
+  });
+  modalClose.addEventListener("click",function(){
+    /* fin de démo : on vide le panier */
+    cart={};save();renderCart();closeModal();toast("Démonstration terminée");
+  });
+  modal.addEventListener("click",function(e){if(e.target===modal)closeModal();});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&modal.classList.contains("show"))closeModal();});
+
+  /* ouvrir le panier (scroll) depuis le header */
+  document.getElementById("openCart").addEventListener("click",function(){
+    document.getElementById("cartPanel").scrollIntoView({block:"center"});
+  });
+
+  /* ---------- Horaires + état ouvert/fermé ---------- */
+  var jours=["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"];
+  function renderHours(){
+    var list=document.getElementById("hoursList");
+    var nd=(new Date().getDay()+6)%7; /* 0=lundi */
+    var html="";
+    for(var i=0;i<7;i++){
+      var cls=i===nd?' class="today"':"";
+      html+='<li'+cls+'><span>'+jours[i]+(i===nd?' · aujourd\'hui':'')+'</span><span class="open">11 h – 23 h</span></li>';
+    }
+    list.innerHTML=html;
+    /* pill ouvert/fermé */
+    var now=new Date(),mins=now.getHours()*60+now.getMinutes();
+    var openNow=mins>=11*60&&mins<23*60;
+    var pill=document.getElementById("nowPill"),txt=document.getElementById("nowTxt");
+    if(openNow){txt.textContent="Ouvert maintenant · jusqu'à 23 h";}
+    else{txt.textContent="Fermé · ouvre à 11 h";pill.querySelector(".dot").style.background="#e0a04a";}
+  }
+
+  /* ---------- Init ---------- */
+  load();renderCat();renderCart();buildSlots();renderHours();
+})();
+</script>
+</body>
+</html>

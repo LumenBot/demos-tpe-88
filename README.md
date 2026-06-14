@@ -67,6 +67,19 @@ Racine du site : page de présentation (placeholders contact/SIRET à compléter
 | kneubuhler | https://lumenbot.github.io/demos-tpe-88/kneubuhler/ | v1 · DoD ✓ |
 | le-rivolet | https://lumenbot.github.io/demos-tpe-88/le-rivolet/ | v1 · DoD ✓ |
 
+## Lot 6 — Charmes / Thaon-les-Vosges
+
+| Maquette | URL | Statut |
+| --- | --- | --- |
+| figea-electricite | https://lumenbot.github.io/demos-tpe-88/figea-electricite/ | v1 · DoD ✓ |
+| le-maxevoy | https://lumenbot.github.io/demos-tpe-88/le-maxevoy/ | v1 · DoD ✓ |
+| kebab-charmes | https://lumenbot.github.io/demos-tpe-88/kebab-charmes/ | v1 · DoD ✓ |
+| cunin-mentre | https://lumenbot.github.io/demos-tpe-88/cunin-mentre/ | v1 · DoD ✓ |
+| fleur-de-thym | https://lumenbot.github.io/demos-tpe-88/fleur-de-thym/ | v1 · DoD ✓ |
+| patata | https://lumenbot.github.io/demos-tpe-88/patata/ | v1 · DoD ✓ |
+| a-la-bien | https://lumenbot.github.io/demos-tpe-88/a-la-bien/ | v1 · DoD ✓ |
+| le-centre | https://lumenbot.github.io/demos-tpe-88/le-centre/ | v1 · DoD ✓ |
+
 ## Développement
 
 - Règles complètes : voir `CLAUDE.md` (source de vérité locale non versionnée : `docs/`).
