@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#E8B4B8">
+<title>Pâtisseries & Patata — pâtisserie salon de thé à Thaon-les-Vosges</title>
+<meta name="description" content="Pâtisseries & Patata à Thaon-les-Vosges : pâtisserie, salon de thé cosy et plats maison du midi. Produits locaux, 5,0★ sur 38 avis. Click & collect en ligne.">
+
+<!-- Polices Google : chargement NON bloquant (preload + media print + noscript), fallbacks système -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap"></noscript>
+
+<!-- [À REMPLACER] Horaires (JSON-LD + section Horaires) crédibles d'une pâtisserie/salon de thé,
+     à confirmer avec la maison. Données réelles publiques conservées : NAP (nom, 86 rue d'Alsace
+     88150 Thaon-les-Vosges, +33372739491), note 5,0/38 avis, fermé lundi, jeudi midi seulement
+     jusqu'à 14 h 30. Les prix, descriptifs produits et extraits d'avis sont illustratifs. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Pâtisseries & Patata",
+  "image": "img/hero-cupcakes.webp",
+  "url": "./",
+  "servesCuisine": ["Pâtisserie", "Salon de thé", "Plats du midi"],
+  "telephone": "+33372739491",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "86 rue d'Alsace",
+    "addressLocality": "Thaon-les-Vosges",
+    "postalCode": "88150",
+    "addressCountry": "FR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 48.2489314, "longitude": 6.4223211 },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "38" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Friday","Saturday"], "opens": "08:30", "closes": "18:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "08:30", "closes": "14:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:30", "closes": "13:00" }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --rose:#E8B4B8;          /* rose poudré */
+  --rose-deep:#C77A80;     /* rose appuyé (boutons/accents texte) */
+  --creme:#FBF4EC;         /* crème fond */
+  --creme-card:#FFFDFA;
+  --turq:#2BB3A3;          /* accent vif ludique */
+  --turq-deep:#1E867B;     /* turquoise foncé (texte AA sur clair) */
+  --ink:#3A2E2C;           /* brun-encre lisible */
+  --ink-soft:#6A5A56;
+  --line:#EFE0D6;
+  --sun:#F6C453;           /* petite touche soleil (sprinkles) */
+  --radius:22px;
+  --shadow:0 10px 28px rgba(160,110,110,.16);
+  --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Nunito",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--creme);
+  line-height:1.6;
+  padding-bottom:56px; /* place pour le bandeau légal fixe */
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.brand{font-family:"Quicksand",system-ui,Arial,sans-serif;letter-spacing:.2px}
+h2{font-size:1.7rem;font-weight:700;color:var(--ink);margin:0 0 .2em;line-height:1.2}
+h3{margin:0 0 .25em;font-weight:700}
+p{margin:.4em 0}
+img{max-width:100%;display:block}
+a{color:var(--turq-deep)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 18px}
+section{padding:54px 0 8px}
+.kicker{font-family:"Quicksand",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.78rem;color:var(--rose-deep);margin:0 0 .3em}
+.lead{font-size:1.05rem;color:var(--ink-soft);max-width:60ch}
+
+/* Boutons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  min-height:48px;padding:.7em 1.3em;border-radius:999px;
+  font-family:"Quicksand",sans-serif;font-weight:700;font-size:1rem;
+  border:2px solid transparent;cursor:pointer;text-decoration:none;
+  transition:transform .15s ease, box-shadow .15s ease, background .15s;
+}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--turq);color:#fff}
+.btn-primary:hover{box-shadow:0 8px 20px rgba(43,179,163,.35)}
+.btn-rose{background:var(--rose-deep);color:#fff}
+.btn-rose:hover{box-shadow:0 8px 20px rgba(199,122,128,.35)}
+.btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--rose)}
+:focus-visible{outline:3px solid var(--turq-deep);outline-offset:3px;border-radius:8px}
+
+/* Header */
+header.nav{position:sticky;top:0;z-index:30;background:rgba(251,244,236,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:var(--maxw);margin:0 auto;padding:10px 18px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;font-size:1.18rem;color:var(--ink);text-decoration:none}
+.brand .amp{color:var(--turq-deep)}
+.nav-cta{display:flex;gap:8px;align-items:center}
+.nav-links{display:none}
+.nav-links a{font-family:"Quicksand",sans-serif;font-weight:600;text-decoration:none;color:var(--ink);padding:6px 10px;border-radius:10px}
+.nav-links a:hover{background:#fff}
+.cart-btn{position:relative}
+.cart-count{position:absolute;top:-6px;right:-6px;background:var(--rose-deep);color:#fff;font-size:.72rem;font-weight:700;min-width:20px;height:20px;border-radius:999px;display:grid;place-items:center;padding:0 5px}
+.cart-count[hidden]{display:none}
+
+/* Hero */
+.hero{padding:30px 0 8px}
+.hero-card{background:var(--creme-card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr}
+.hero-img{position:relative;aspect-ratio:1100/730}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-text{padding:26px 22px 30px}
+.badge{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line);color:var(--ink);font-weight:700;font-family:"Quicksand",sans-serif;border-radius:999px;padding:5px 12px;font-size:.85rem;margin-bottom:12px}
+.badge .star{color:var(--sun)}
+.hero h1{font-size:2.05rem;line-height:1.12;margin:.1em 0 .25em;font-weight:700}
+.hero h1 em{font-style:normal;color:var(--rose-deep)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.dots{display:flex;gap:6px;margin-top:16px}
+.dots i{width:11px;height:11px;border-radius:50%;display:block}
+
+/* Cards grids */
+.grid{display:grid;gap:16px;margin-top:22px}
+.card{background:var(--creme-card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:0 4px 14px rgba(160,110,110,.08)}
+
+/* Click & collect */
+.cc{background:linear-gradient(180deg,#fff 0%, #FCEFEF 100%);border-radius:28px;padding:22px 16px 26px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.cc h2{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tabs{display:flex;gap:8px;margin:14px 0 6px;flex-wrap:wrap}
+.tab{flex:1;min-width:130px;min-height:48px;border:2px solid var(--line);background:#fff;border-radius:14px;font-family:"Quicksand",sans-serif;font-weight:700;color:var(--ink-soft);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px}
+.tab[aria-selected="true"]{border-color:var(--turq);color:var(--turq-deep);background:#EAF8F6}
+.menu{display:grid;gap:10px;margin-top:6px}
+.menu[hidden]{display:none}
+.item{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px}
+.item .emoji{font-size:1.7rem;line-height:1;flex:0 0 auto}
+.item .info{flex:1;min-width:0}
+.item .info strong{font-family:"Quicksand",sans-serif;font-size:1.02rem}
+.item .info small{color:var(--ink-soft);display:block;font-size:.86rem}
+.item .price{font-family:"Quicksand",sans-serif;font-weight:700;color:var(--rose-deep);white-space:nowrap}
+.add{min-width:46px;min-height:46px;border-radius:50%;border:none;background:var(--turq);color:#fff;font-size:1.5rem;font-weight:700;cursor:pointer;line-height:1;display:grid;place-items:center}
+.add:hover{background:var(--turq-deep)}
+.slot{margin-top:18px;background:#fff;border:1px dashed var(--rose);border-radius:16px;padding:14px}
+.slot label{font-family:"Quicksand",sans-serif;font-weight:700;display:block;margin-bottom:8px}
+.slot select{width:100%;min-height:48px;border:2px solid var(--line);border-radius:12px;padding:0 12px;font:inherit;background:#fff;color:var(--ink)}
+.note{font-size:.85rem;color:var(--ink-soft);margin-top:8px}
+
+/* Panier récap */
+.basket{margin-top:16px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px}
+.basket h3{font-size:1.05rem;display:flex;align-items:center;gap:8px}
+.basket ul{list-style:none;margin:8px 0;padding:0}
+.basket li{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.basket li:last-child{border-bottom:none}
+.basket li .nm{flex:1}
+.qty{display:inflex;display:inline-flex;align-items:center;gap:8px}
+.qbtn{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:var(--creme);font-weight:700;cursor:pointer;font-size:1.1rem;line-height:1}
+.empty{color:var(--ink-soft);font-style:italic;padding:6px 0}
+.total{display:flex;justify-content:space-between;align-items:center;font-family:"Quicksand",sans-serif;font-weight:700;font-size:1.1rem;margin-top:8px}
+.checkout{width:100%;margin-top:12px}
+
+/* Salon de thé */
+.salon{display:grid;gap:18px}
+.salon .pic{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.salon .pic img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.cozy{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+.chip{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 13px;font-family:"Quicksand",sans-serif;font-weight:600;font-size:.9rem}
+
+/* Douceurs & gratins */
+.cat-grid{grid-template-columns:1fr}
+.prod{display:flex;gap:12px;align-items:flex-start}
+.prod .emoji{font-size:1.6rem}
+.prod strong{font-family:"Quicksand",sans-serif}
+.prod .p{color:var(--rose-deep);font-weight:700;font-family:"Quicksand",sans-serif}
+.feature-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin-top:18px}
+.feature-img img{width:100%;aspect-ratio:4/3;object-fit:cover}
+
+/* Avis */
+.reviews{background:#FCEFEF;border-radius:28px;padding:30px 0 10px;margin-top:10px}
+.rev-grid{grid-template-columns:1fr}
+.rev{background:#fff;border-radius:18px;padding:16px;border:1px solid var(--line)}
+.rev .stars{color:var(--sun);font-size:1rem;letter-spacing:2px}
+.rev p{font-size:.98rem}
+.rev cite{display:block;margin-top:6px;font-style:normal;font-weight:700;font-family:"Quicksand",sans-serif;color:var(--ink-soft);font-size:.9rem}
+.rev .src{font-size:.78rem;color:var(--ink-soft)}
+.rating-big{text-align:center;margin-bottom:8px}
+.rating-big strong{font-family:"Quicksand",sans-serif;font-size:2.6rem;color:var(--rose-deep);display:block;line-height:1}
+.rating-big .s{color:var(--sun);font-size:1.2rem;letter-spacing:3px}
+
+/* Horaires */
+.hours{display:grid;gap:8px;max-width:480px}
+.hrow{display:flex;justify-content:space-between;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 15px}
+.hrow.closed{color:var(--rose-deep);background:#FCEFEF}
+.hrow b{font-family:"Quicksand",sans-serif}
+.hrow .tag{font-size:.8rem;background:var(--sun);color:#5a4500;border-radius:999px;padding:2px 8px;font-weight:700;align-self:center}
+
+/* Footer */
+footer{background:var(--ink);color:#F4E9E4;margin-top:40px;padding:34px 0 28px}
+footer a{color:#FBD9DC}
+.foot-grid{display:grid;gap:22px}
+footer h3{font-family:"Quicksand",sans-serif;color:#fff}
+.nap{font-size:.98rem;line-height:1.8}
+.foot-brand{font-family:"Quicksand",sans-serif;font-size:1.3rem;font-weight:700;color:#fff}
+
+/* Bandeau légal FIXE */
+.legal{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--ink);color:#F0E4DF;font-size:.72rem;line-height:1.3;padding:7px 12px;text-align:center;border-top:2px solid var(--rose-deep)}
+
+/* Modale démo */
+.modal{position:fixed;inset:0;z-index:60;background:rgba(58,46,44,.55);display:none;align-items:center;justify-content:center;padding:18px}
+.modal.open{display:flex}
+.modal-card{background:#fff;border-radius:24px;max-width:420px;width:100%;padding:26px 22px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.modal-card .big{font-size:2.6rem}
+.modal-card h3{font-size:1.4rem;margin:.3em 0}
+.modal-card p{color:var(--ink-soft)}
+.toast{position:fixed;left:50%;bottom:70px;transform:translateX(-50%) translateY(20px);background:var(--turq-deep);color:#fff;padding:11px 18px;border-radius:999px;font-family:"Quicksand",sans-serif;font-weight:700;box-shadow:var(--shadow);opacity:0;transition:opacity .25s, transform .25s;z-index:55;pointer-events:none;font-size:.92rem}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* SVG deco */
+.icn{width:1.1em;height:1.1em;vertical-align:-.15em;flex:0 0 auto}
+
+/* Tablette / desktop */
+@media(min-width:720px){
+  .nav-links{display:flex;gap:4px}
+  h2{font-size:2rem}
+  .hero h1{font-size:2.6rem}
+  .hero-card{grid-template-columns:1.05fr 1fr;align-items:stretch}
+  .hero-img{aspect-ratio:auto;height:100%}
+  .hero-text{padding:40px 34px;align-self:center}
+  .grid{gap:20px}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .rev-grid{grid-template-columns:repeat(3,1fr)}
+  .salon{grid-template-columns:1.1fr 1fr;align-items:center}
+  .foot-grid{grid-template-columns:1.4fr 1fr 1fr}
+  .cc{padding:30px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto !important;transition:none !important}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top" aria-label="Pâtisseries &amp; Patata, accueil">
+      <svg class="icn" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="#2BB3A3" d="M5 21h14a1 1 0 0 0 1-1v-1H4v1a1 1 0 0 0 1 1Z"/><path fill="#E8B4B8" d="M4 17h16c0-4.4-3.6-8-8-8s-8 3.6-8 8Z"/><circle cx="12" cy="5.5" r="1.6" fill="#C77A80"/><path stroke="#C77A80" stroke-width="1.4" d="M12 7.2v1.6" fill="none"/></svg>
+      Pâtisseries <span class="amp">&amp;</span> Patata
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#commande">Commander</a>
+      <a href="#salon">Salon de thé</a>
+      <a href="#carte">La carte</a>
+      <a href="#avis">Avis</a>
+      <a href="#infos">Infos</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost cart-btn" href="#commande" aria-label="Voir mon panier">
+        <svg class="icn" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM6.2 6l1.5 7.4c.1.5.5.8 1 .8h8.1c.5 0 .9-.3 1-.8L20.4 7H7.1l-.3-1.5A1 1 0 0 0 5.8 4H3v2h2Z"/></svg>
+        <span class="cart-count" id="cartCount" hidden>0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- ============ HERO ============ -->
+<section class="hero wrap" aria-labelledby="hero-h">
+  <div class="hero-card">
+    <div class="hero-img">
+      <img src="img/hero-cupcakes.webp" width="1100" height="730" fetchpriority="high"
+        alt="Rangée de cupcakes au glaçage menthe et rose pailleté, sur fond pastel bleu et rose">
+    </div>
+    <div class="hero-text">
+      <span class="badge"><span class="star">★</span> 5,0 sur 38 avis Google</span>
+      <h1 id="hero-h">Pâtisseries, salon de thé <em>&amp; plats maison</em> à Thaon</h1>
+      <p class="lead">La pause gourmande de la rue d'Alsace : douceurs faites maison, gratins du midi et un salon de thé tout cosy. Produits locaux, sourire compris.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#commande">
+          <svg class="icn" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM6.2 6l1.5 7.4c.1.5.5.8 1 .8h8.1c.5 0 .9-.3 1-.8L20.4 7H7.1l-.3-1.5A1 1 0 0 0 5.8 4H3v2h2Z"/></svg>
+          Click &amp; collect
+        </a>
+        <a class="btn btn-ghost" href="tel:+33372739491">
+          <svg class="icn" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.1 2.2Z"/></svg>
+          Appeler
+        </a>
+      </div>
+      <div class="dots" aria-hidden="true">
+        <i style="background:var(--rose)"></i><i style="background:var(--turq)"></i><i style="background:var(--sun)"></i><i style="background:var(--rose-deep)"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WOW : CLICK & COLLECT ============ -->
+<section id="commande" class="wrap" aria-labelledby="cc-h">
+  <div class="cc">
+    <p class="kicker">Click &amp; collect</p>
+    <h2 id="cc-h">
+      <svg class="icn" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="#2BB3A3" d="M3 6h2l1.6 9.4c.1.6.6 1 1.2 1h9.2c.6 0 1.1-.4 1.2-1L20 8H6.4"/><circle cx="9" cy="20" r="1.8" fill="#C77A80"/><circle cx="17" cy="20" r="1.8" fill="#C77A80"/></svg>
+      Je commande, je passe la chercher
+    </h2>
+    <p class="lead">Réservez vos pâtisseries préférées et votre menu du midi, choisissez un créneau de retrait. <strong>Démonstration</strong> : rien n'est encaissé, paiement en boutique au retrait.</p>
+
+    <div class="tabs" role="tablist" aria-label="Choisir une catégorie à commander">
+      <button class="tab" id="tab-douceurs" role="tab" aria-selected="true" aria-controls="menu-douceurs">🧁 Pâtisseries</button>
+      <button class="tab" id="tab-midi" role="tab" aria-selected="false" aria-controls="menu-midi">🥪 Menu du midi</button>
+    </div>
+
+    <!-- [À REMPLACER] Articles et prix click & collect — exemples crédibles, à valider avec la maison. -->
+    <div class="menu" id="menu-douceurs" role="tabpanel" aria-labelledby="tab-douceurs">
+      <div class="item">
+        <span class="emoji" aria-hidden="true">🧁</span>
+        <div class="info"><strong>Cupcake glaçage du jour</strong><small>Menthe, rose ou vanille, billes colorées</small></div>
+        <span class="price">3,20 €</span>
+        <button class="add" data-name="Cupcake du jour" data-price="3.20" aria-label="Ajouter Cupcake du jour au panier">+</button>
+      </div>
+      <div class="item">
+        <span class="emoji" aria-hidden="true">🍪</span>
+        <div class="info"><strong>Cookie maison (×2)</strong><small>Chocolat &amp; éclats de noix de pécan</small></div>
+        <span class="price">4,50 €</span>
+        <button class="add" data-name="Cookies maison (×2)" data-price="4.50" aria-label="Ajouter Cookies maison au panier">+</button>
+      </div>
+      <div class="item">
+        <span class="emoji" aria-hidden="true">🍰</span>
+        <div class="info"><strong>Part de tarte aux fruits</strong><small>Fruits de saison, pâte sablée maison</small></div>
+        <span class="price">4,90 €</span>
+        <button class="add" data-name="Part de tarte aux fruits" data-price="4.90" aria-label="Ajouter Part de tarte aux fruits au panier">+</button>
+      </div>
+      <div class="item">
+        <span class="emoji" aria-hidden="true">🎂</span>
+        <div class="info"><strong>Entremets 4 parts</strong><small>À réserver la veille</small></div>
+        <span class="price">18,00 €</span>
+        <button class="add" data-name="Entremets 4 parts" data-price="18.00" aria-label="Ajouter Entremets 4 parts au panier">+</button>
+      </div>
+    </div>
+
+    <!-- [À REMPLACER] Menu du midi (gratins, tartines) — exemples crédibles, à valider. -->
+    <div class="menu" id="menu-midi" role="tabpanel" aria-labelledby="tab-midi" hidden>
+      <div class="item">
+        <span class="emoji" aria-hidden="true">🧀</span>
+        <div class="info"><strong>Gratin du jour</strong><small>Maison, accompagné d'une petite salade</small></div>
+        <span class="price">9,90 €</span>
+        <button class="add" data-name="Gratin du jour" data-price="9.90" aria-label="Ajouter Gratin du jour au panier">+</button>
+      </div>
+      <div class="item">
+        <span class="emoji" aria-hidden="true">🥪</span>
+        <div class="info"><strong>Assiette de tartines</strong><small>Trio garni, pain de campagne</small></div>
+        <span class="price">8,50 €</span>
+        <button class="add" data-name="Assiette de tartines" data-price="8.50" aria-label="Ajouter Assiette de tartines au panier">+</button>
+      </div>
+      <div class="item">
+        <span class="emoji" aria-hidden="true">🥗</span>
+        <div class="info"><strong>Formule midi</strong><small>Plat du jour + dessert + boisson chaude</small></div>
+        <span class="price">14,50 €</span>
+        <button class="add" data-name="Formule midi" data-price="14.50" aria-label="Ajouter Formule midi au panier">+</button>
+      </div>
+      <div class="item">
+        <span class="emoji" aria-hidden="true">🍵</span>
+        <div class="info"><strong>Pause thé gourmande</strong><small>Théière + mignardise du jour</small></div>
+        <span class="price">7,50 €</span>
+        <button class="add" data-name="Pause thé gourmande" data-price="7.50" aria-label="Ajouter Pause thé gourmande au panier">+</button>
+      </div>
+    </div>
+
+    <div class="slot">
+      <label for="day">Jour de retrait</label>
+      <select id="day" aria-describedby="slotnote">
+        <option value="">Choisir un jour…</option>
+      </select>
+      <label for="time" style="margin-top:12px">Créneau de retrait</label>
+      <select id="time" aria-describedby="slotnote">
+        <option value="">Choisir un créneau…</option>
+      </select>
+      <p class="note" id="slotnote">Fermé le lundi. Le jeudi, retrait le midi seulement (jusqu'à 14 h 30).</p>
+    </div>
+
+    <div class="basket" aria-live="polite">
+      <h3>
+        <svg class="icn" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#C77A80" d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM6.2 6l1.5 7.4c.1.5.5.8 1 .8h8.1c.5 0 .9-.3 1-.8L20.4 7H7.1l-.3-1.5A1 1 0 0 0 5.8 4H3v2h2Z"/></svg>
+        Mon panier
+      </h3>
+      <ul id="basketList"><li class="empty">Votre panier est vide — ajoutez vos gourmandises !</li></ul>
+      <div class="total"><span>Total</span><span id="basketTotal">0,00 €</span></div>
+      <button class="btn btn-rose checkout" id="checkoutBtn" type="button">Réserver mon retrait</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SALON DE THÉ ============ -->
+<section id="salon" class="wrap" aria-labelledby="salon-h">
+  <p class="kicker">Le salon de thé</p>
+  <div class="salon">
+    <div>
+      <h2 id="salon-h">Un petit cocon pour souffler</h2>
+      <!-- [À REMPLACER] Ambiance du salon de thé — texte d'illustration à personnaliser. -->
+      <p class="lead">Poussez la porte : odeur de gâteaux tout juste sortis du four, fauteuils douillets et théières fumantes. L'endroit parfait pour une pause entre amis, lire un peu ou s'offrir un goûter qui répare la journée.</p>
+      <div class="cozy">
+        <span class="chip">🍵 Thés &amp; infusions</span>
+        <span class="chip">☕ Cafés gourmands</span>
+        <span class="chip">🧸 Coin cosy</span>
+        <span class="chip">🌿 Produits locaux</span>
+      </div>
+    </div>
+    <div class="pic">
+      <img src="img/cookies.webp" width="800" height="600" loading="lazy"
+        alt="Cookies maison présentés dans un linge, ambiance chaleureuse du salon de thé">
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOUCEURS & GRATINS ============ -->
+<section id="carte" class="wrap" aria-labelledby="carte-h">
+  <p class="kicker">La carte</p>
+  <h2 id="carte-h">Les douceurs &amp; les gratins</h2>
+  <p class="lead">Tout est fait maison, avec des produits locaux. La carte tourne au fil des saisons.</p>
+
+  <div class="grid cat-grid">
+    <!-- [À REMPLACER] Sélection pâtisseries + prix — exemples crédibles. -->
+    <div class="card">
+      <h3>🧁 Côté sucré</h3>
+      <div class="grid" style="gap:12px;margin-top:12px">
+        <div class="prod"><span class="emoji" aria-hidden="true">🧁</span><div><strong>Cupcakes du jour</strong><br><span class="p">3,20 €</span></div></div>
+        <div class="prod"><span class="emoji" aria-hidden="true">🍪</span><div><strong>Cookies maison</strong><br><span class="p">2,40 € pièce</span></div></div>
+        <div class="prod"><span class="emoji" aria-hidden="true">🍓</span><div><strong>Tartes &amp; tartelettes</strong><br><span class="p">dès 4,50 €</span></div></div>
+        <div class="prod"><span class="emoji" aria-hidden="true">🎂</span><div><strong>Entremets à réserver</strong><br><span class="p">dès 18,00 €</span></div></div>
+      </div>
+    </div>
+
+    <!-- [À REMPLACER] Sélection plats du midi + prix — exemples crédibles. -->
+    <div class="card">
+      <h3>🧀 Côté salé — le midi</h3>
+      <div class="grid" style="gap:12px;margin-top:12px">
+        <div class="prod"><span class="emoji" aria-hidden="true">🧀</span><div><strong>Gratin du jour</strong><br><span class="p">9,90 €</span></div></div>
+        <div class="prod"><span class="emoji" aria-hidden="true">🥪</span><div><strong>Assiette de tartines</strong><br><span class="p">8,50 €</span></div></div>
+        <div class="prod"><span class="emoji" aria-hidden="true">🥗</span><div><strong>Salade fraîcheur</strong><br><span class="p">8,90 €</span></div></div>
+        <div class="prod"><span class="emoji" aria-hidden="true">🍽️</span><div><strong>Formule midi complète</strong><br><span class="p">14,50 €</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feature-img">
+    <img src="img/tartines.webp" width="800" height="600" loading="lazy"
+      alt="Tartines garnies variées et fraîches, vue de dessus sur fond blanc, plats du midi">
+  </div>
+</section>
+
+<!-- ============ AVIS ============ -->
+<section id="avis" aria-labelledby="avis-h">
+  <div class="reviews">
+    <div class="wrap">
+      <p class="kicker" style="text-align:center">Avis Google</p>
+      <h2 id="avis-h" style="text-align:center">On en parle (et avec le sourire)</h2>
+      <div class="rating-big">
+        <strong>5,0</strong>
+        <span class="s" aria-hidden="true">★★★★★</span>
+        <p class="note" style="margin-top:4px">Note Google · 38 avis</p>
+      </div>
+      <!-- [À REMPLACER] Extraits d'avis illustratifs (≤ 15 mots). À remplacer par de vrais avis Google. -->
+      <div class="grid rev-grid">
+        <blockquote class="rev">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p>« Pâtisseries délicieuses et accueil adorable, on revient sans hésiter. »</p>
+          <cite>Cliente du quartier</cite>
+          <span class="src">Avis Google</span>
+        </blockquote>
+        <blockquote class="rev">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p>« Le gratin du midi est un vrai régal, fait maison. »</p>
+          <cite>Habitué du midi</cite>
+          <span class="src">Avis Google</span>
+        </blockquote>
+        <blockquote class="rev">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p>« Salon de thé cosy et cookies à tomber, mon coup de cœur. »</p>
+          <cite>Gourmande de Thaon</cite>
+          <span class="src">Avis Google</span>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HORAIRES & INFOS ============ -->
+<section id="infos" class="wrap" aria-labelledby="infos-h">
+  <p class="kicker">Infos &amp; horaires</p>
+  <h2 id="infos-h">Venez nous voir</h2>
+  <div class="grid" style="grid-template-columns:1fr">
+    <!-- [À REMPLACER] Horaires d'ouverture précis — crédibles, à confirmer avec la maison. -->
+    <div class="hours" aria-label="Horaires d'ouverture">
+      <div class="hrow closed"><b>Lundi</b><span>Fermé</span></div>
+      <div class="hrow"><b>Mardi</b><span>8 h 30 – 18 h 30</span></div>
+      <div class="hrow"><b>Mercredi</b><span>8 h 30 – 18 h 30</span></div>
+      <div class="hrow"><b>Jeudi</b><span>8 h 30 – 14 h 30 <span class="tag">midi seulement</span></span></div>
+      <div class="hrow"><b>Vendredi</b><span>8 h 30 – 18 h 30</span></div>
+      <div class="hrow"><b>Samedi</b><span>8 h 30 – 18 h 30</span></div>
+      <div class="hrow"><b>Dimanche</b><span>8 h 30 – 13 h 00</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER NAP ============ -->
+<footer aria-labelledby="foot-h">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-brand">Pâtisseries &amp; Patata</p>
+      <p class="nap">Pâtisserie · salon de thé · plats maison<br>Produits locaux, faits maison à Thaon-les-Vosges.</p>
+      <p style="margin-top:10px"><a class="btn btn-primary" href="#commande">Click &amp; collect</a></p>
+    </div>
+    <div>
+      <h3 id="foot-h">Nous trouver</h3>
+      <p class="nap">
+        86 rue d'Alsace<br>
+        88150 Thaon-les-Vosges<br>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=P%C3%A2tisseries+%26+Patata+86+rue+d%27Alsace+88150+Thaon-les-Vosges" target="_blank" rel="noopener">Itinéraire Google Maps ↗</a>
+      </p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p class="nap">
+        <a href="tel:+33372739491">03 72 73 94 91</a><br>
+        Fermé le lundi<br>
+        Jeudi : midi seulement
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bandeau légal FIXE (texte exact, apostrophes droites) -->
+<div class="legal" role="contentinfo">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</div>
+
+<!-- Modale démo -->
+<div class="modal" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="demoTitle">
+  <div class="modal-card">
+    <div class="big" aria-hidden="true">🧁</div>
+    <h3 id="demoTitle">Ceci est une démonstration</h3>
+    <p id="demoBody">En production, votre commande serait transmise à la boutique. Le paiement se ferait en boutique au retrait — aucune donnée n'est collectée ici.</p>
+    <p><button class="btn btn-primary" type="button" id="closeModal">J'ai compris</button></p>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+  var KEY="patata_cart_v1";
+  var cart=[];
+  try{ cart=JSON.parse(localStorage.getItem(KEY))||[]; }catch(e){ cart=[]; }
+
+  var $=function(s){return document.querySelector(s);};
+  var basketList=$("#basketList"), basketTotal=$("#basketTotal"),
+      cartCount=$("#cartCount"), toast=$("#toast");
+
+  function save(){ try{ localStorage.setItem(KEY,JSON.stringify(cart)); }catch(e){} }
+  function eur(n){ return n.toFixed(2).replace(".",",")+" €"; }
+
+  function render(){
+    basketList.innerHTML="";
+    if(!cart.length){
+      var li=document.createElement("li");
+      li.className="empty";
+      li.textContent="Votre panier est vide — ajoutez vos gourmandises !";
+      basketList.appendChild(li);
+    } else {
+      cart.forEach(function(it,i){
+        var li=document.createElement("li");
+        var nm=document.createElement("span");
+        nm.className="nm";
+        nm.textContent=it.name+" — "+eur(it.price*it.qty);
+        var ctr=document.createElement("span");
+        ctr.className="qty";
+        var minus=document.createElement("button");
+        minus.className="qbtn"; minus.type="button"; minus.textContent="−";
+        minus.setAttribute("aria-label","Retirer un "+it.name);
+        minus.onclick=function(){ chg(i,-1); };
+        var q=document.createElement("b"); q.textContent=it.qty;
+        var plus=document.createElement("button");
+        plus.className="qbtn"; plus.type="button"; plus.textContent="+";
+        plus.setAttribute("aria-label","Ajouter un "+it.name);
+        plus.onclick=function(){ chg(i,1); };
+        ctr.appendChild(minus); ctr.appendChild(q); ctr.appendChild(plus);
+        li.appendChild(nm); li.appendChild(ctr);
+        basketList.appendChild(li);
+      });
+    }
+    var total=cart.reduce(function(s,it){return s+it.price*it.qty;},0);
+    basketTotal.textContent=eur(total);
+    var n=cart.reduce(function(s,it){return s+it.qty;},0);
+    cartCount.textContent=n;
+    cartCount.hidden = n===0;
+    save();
+  }
+
+  function chg(i,d){
+    cart[i].qty+=d;
+    if(cart[i].qty<=0) cart.splice(i,1);
+    render();
+  }
+
+  function add(name,price){
+    var found=null;
+    cart.forEach(function(it){ if(it.name===name) found=it; });
+    if(found) found.qty++; else cart.push({name:name,price:price,qty:1});
+    render();
+    showToast(name+" ajouté 🎉");
+  }
+
+  var toastT;
+  function showToast(msg){
+    toast.textContent=msg;
+    toast.classList.add("show");
+    clearTimeout(toastT);
+    toastT=setTimeout(function(){ toast.classList.remove("show"); },1800);
+  }
+
+  // Boutons ajouter
+  document.querySelectorAll(".add").forEach(function(b){
+    b.addEventListener("click",function(){
+      add(b.getAttribute("data-name"), parseFloat(b.getAttribute("data-price")));
+    });
+  });
+
+  // Onglets catégories
+  var tabs=document.querySelectorAll(".tab");
+  tabs.forEach(function(t){
+    t.addEventListener("click",function(){
+      tabs.forEach(function(o){
+        var on=o===t;
+        o.setAttribute("aria-selected", on?"true":"false");
+        document.getElementById(o.getAttribute("aria-controls")).hidden=!on;
+      });
+    });
+  });
+
+  // Créneaux de retrait calés sur horaires réels (fermé lundi ; jeudi midi seulement -> 14 h 30)
+  var daySel=$("#day"), timeSel=$("#time");
+  var jours=["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
+  var today=new Date();
+  // propose les 7 prochains jours ouvrés (hors lundi)
+  for(var k=1;k<=8 && daySel.options.length<7;k++){
+    var d=new Date(today.getTime()); d.setDate(today.getDate()+k);
+    var jw=d.getDay(); // 0=dim..6=sam
+    if(jw===1) continue; // lundi fermé
+    var label=jours[jw]+" "+("0"+d.getDate()).slice(-2)+"/"+("0"+(d.getMonth()+1)).slice(-2);
+    var o=document.createElement("option");
+    o.value=jw; o.textContent=label; daySel.appendChild(o);
+  }
+  function fillTimes(){
+    timeSel.innerHTML='<option value="">Choisir un créneau…</option>';
+    var jw=daySel.value;
+    if(jw==="") return;
+    jw=parseInt(jw,10);
+    var slots;
+    if(jw===4){ // jeudi : midi seulement, dernier retrait 14 h 30
+      slots=["9 h 00","10 h 00","11 h 00","12 h 00","13 h 00","14 h 00","14 h 30"];
+    } else if(jw===0){ // dimanche matin
+      slots=["9 h 00","10 h 00","11 h 00","12 h 00"];
+    } else {
+      slots=["9 h 00","10 h 30","12 h 00","14 h 00","15 h 30","17 h 00","18 h 00"];
+    }
+    slots.forEach(function(s){
+      var o=document.createElement("option"); o.value=s; o.textContent=s; timeSel.appendChild(o);
+    });
+  }
+  daySel.addEventListener("change",fillTimes);
+
+  // Checkout -> modale démo
+  var modal=$("#demoModal"), demoBody=$("#demoBody"), lastFocus=null;
+  function openModal(){ lastFocus=document.activeElement; modal.classList.add("open"); $("#closeModal").focus(); }
+  function closeModal(){ modal.classList.remove("open"); if(lastFocus) lastFocus.focus(); }
+  $("#closeModal").addEventListener("click",closeModal);
+  modal.addEventListener("click",function(e){ if(e.target===modal) closeModal(); });
+  document.addEventListener("keydown",function(e){ if(e.key==="Escape" && modal.classList.contains("open")) closeModal(); });
+
+  $("#checkoutBtn").addEventListener("click",function(){
+    if(!cart.length){ showToast("Ajoutez au moins une gourmandise 😊"); return; }
+    var when="";
+    if(daySel.value!==""){
+      when=daySel.options[daySel.selectedIndex].text;
+      if(timeSel.value) when+=" à "+timeSel.value;
+    }
+    demoBody.textContent = "Votre demande de retrait"+(when?(" pour "+when):"")+
+      " serait transmise à la boutique. Paiement en boutique au retrait — aucune donnée n'est collectée ici.";
+    openModal();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
