@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#33383B">
+<title>L'Epicurien — Brasserie restaurant à Remiremont (88200) · 4,3★</title>
+<meta name="description" content="L'Epicurien, brasserie restaurant gourmande à Remiremont (88200) — 4,3★ sur Google (164 avis). Burger vosgien, jarret sauce munster, terroir des Vosges. Réservez votre table ou commandez vos burgers à emporter. Midi et soirs, fermé le lundi. ☎ 03 72 73 98 54.">
+
+<!-- Google Fonts : 2 familles (Abril Fatface display affichiste + Sora texte), chargement non bloquant -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Sora:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Sora:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Sora:wght@400;500;600;700&display=swap"></noscript>
+
+<!-- [À REMPLACER] Horaires détaillés (heures précises des services midi/soir) à confirmer avec l'établissement. Données réelles certaines : service midi + soirs, fermé le lundi. Amplitudes ci-dessous données à titre indicatif. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "L'Epicurien",
+  "servesCuisine": ["Brasserie", "Française", "Terroir vosgien", "Burgers"],
+  "priceRange": "€€",
+  "telephone": "+33372739854",
+  "acceptsReservations": "True",
+  "image": "https://lumenbot.github.io/demos-tpe-88/lepicurien/img/hero-burger.webp",
+  "url": "https://lumenbot.github.io/demos-tpe-88/lepicurien/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "25 Faubourg d'Epinal",
+    "postalCode": "88200",
+    "addressLocality": "Remiremont",
+    "addressCountry": "FR"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=L%27Epicurien+25+Faubourg+d%27Epinal+88200+Remiremont",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.3",
+    "reviewCount": "164",
+    "bestRating": "5"
+  },
+  "hasMenu": { "@type": "Menu", "name": "La carte de L'Epicurien" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "12:00", "closes": "14:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "19:00", "closes": "21:30" }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --brique:#B0492F;      /* terracotta / brique */
+  --brique-d:#8E371F;
+  --brique-l:#C9603F;
+  --bois:#6B4A2E;        /* bois chaud */
+  --bois-d:#4E351F;
+  --ardoise:#33383B;     /* ardoise du jour */
+  --ardoise-d:#262A2C;
+  --ardoise-l:#454B4F;
+  --creme:#F6EFE3;       /* crème chaude */
+  --creme-d:#ECE1CD;
+  --papier:#FBF6EC;
+  --encre:#2B241E;       /* texte foncé */
+  --gris:#6C6055;
+  --craie:#E9E3D6;       /* texte craie sur ardoise */
+  --or:#D9A441;          /* touche dorée discrète (munster/blé) */
+  --ok:#2F7D4F;
+  --ferme:#B14A3A;
+  --rad:14px;
+  --maxw:1120px;
+  --legal-h:104px;
+  --shadow:0 10px 30px rgba(43,36,30,.16);
+  --font-d:"Abril Fatface",Georgia,"Times New Roman",serif;
+  --font-t:"Sora",-apple-system,"Segoe UI",system-ui,Helvetica,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+body{
+  margin:0;
+  font-family:var(--font-t);
+  font-size:1rem;line-height:1.62;
+  color:var(--encre);
+  background:var(--creme);
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:calc(var(--legal-h) + 6px);
+  overflow-x:hidden;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--brique-d)}
+h1,h2,h3,h4,.disp{font-family:var(--font-d);font-weight:400;line-height:1.12;margin:0;letter-spacing:.005em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 1.15rem}
+section{scroll-margin-top:.4rem}
+:focus-visible{outline:3px solid var(--or);outline-offset:2px;border-radius:3px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ardoise);color:#fff;padding:.8rem 1.2rem;z-index:90;border-radius:0 0 6px 0}
+.skip:focus-visible{left:0;top:0}
+.is-hidden{display:none!important}
+.eyebrow{font-family:var(--font-t);font-weight:700;color:var(--brique);font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;margin:0 0 .55rem}
+.sec-head{margin:0 0 1.9rem;max-width:44rem}
+.sec-head h2{font-size:clamp(1.9rem,6vw,2.9rem);color:var(--bois-d)}
+.sec-head .lead{margin:.85rem 0 0;color:var(--gris);font-size:1.04rem}
+
+/* ---------- header ---------- */
+header.site{position:sticky;top:0;z-index:60;background:rgba(51,56,59,.97);color:var(--craie);border-bottom:2px solid var(--brique)}
+@supports (backdrop-filter:blur(6px)){header.site{background:rgba(51,56,59,.88);backdrop-filter:blur(8px)}}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:60px}
+.brand{display:flex;flex-direction:column;text-decoration:none;color:var(--craie);line-height:1}
+.brand .name{font-family:var(--font-d);font-size:1.5rem;letter-spacing:.01em;color:#fff}
+.brand .sub{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--or);margin-top:.32rem;font-weight:600}
+nav.main ul{list-style:none;margin:0;padding:0;display:none;align-items:center;gap:.1rem}
+nav.main a{display:inline-flex;align-items:center;min-height:44px;padding:0 .68rem;font-size:.76rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--craie)}
+nav.main a:hover{color:#fff}
+.hdr-cta{display:inline-flex;align-items:center;gap:.4rem;min-height:44px;padding:.45rem 1rem;background:var(--brique);color:#fff;font-weight:700;font-size:.82rem;letter-spacing:.02em;text-decoration:none;border-radius:999px}
+.hdr-cta:hover{background:var(--brique-l)}
+@media(min-width:880px){nav.main ul{display:flex}}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.7rem 1.4rem;font-family:var(--font-t);font-weight:700;font-size:1rem;letter-spacing:.01em;text-decoration:none;border:none;border-radius:999px;cursor:pointer;transition:transform .12s ease,background .12s ease}
+.btn:active{transform:translateY(1px)}
+.btn-brique{background:var(--brique);color:#fff}
+.btn-brique:hover{background:var(--brique-l)}
+.btn-bois{background:var(--bois);color:var(--creme)}
+.btn-bois:hover{background:#7d5836}
+.btn-ardoise{background:var(--ardoise);color:var(--craie)}
+.btn-ardoise:hover{background:var(--ardoise-l)}
+.btn-ghost{background:transparent;color:var(--craie);border:1.5px solid rgba(233,227,214,.5)}
+.btn-ghost:hover{border-color:var(--or);color:#fff}
+.btn-outline{background:#fff;color:var(--brique-d);border:1.5px solid var(--brique)}
+.btn-outline:hover{background:#fff5f1}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.btn-block{width:100%}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--ardoise-d);color:var(--craie);overflow:hidden}
+.hero-grid{display:grid;gap:0}
+.hero-text{padding:2.6rem 0 2.4rem}
+.hero-rating{display:inline-flex;align-items:center;gap:.5rem;background:rgba(217,164,65,.14);border:1px solid rgba(217,164,65,.5);color:var(--or);padding:.4rem .85rem;border-radius:999px;font-size:.8rem;font-weight:600;letter-spacing:.02em}
+.hero-rating .stars{letter-spacing:1px}
+.hero h1{font-size:clamp(2.4rem,8.4vw,4.1rem);color:#fff;margin:1rem 0 0;line-height:1.04}
+.hero h1 .accent{color:var(--brique-l)}
+.hero .tag{margin:1.05rem 0 0;font-size:1.1rem;color:var(--craie);max-width:34rem;opacity:.94}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.6rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:.4rem 1.3rem;margin-top:1.8rem;padding-top:1.3rem;border-top:1px solid rgba(233,227,214,.18);font-size:.88rem;color:var(--craie)}
+.hero-meta b{color:#fff;font-weight:600}
+.hero-media{position:relative;min-height:240px}
+.hero-media img{width:100%;height:100%;object-fit:cover;min-height:240px}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(38,42,44,.5),rgba(38,42,44,0) 42%)}
+@media(min-width:820px){
+  .hero-grid{grid-template-columns:1.05fr .95fr;align-items:stretch}
+  .hero-text{padding:4rem 2.4rem 4rem 0}
+  .hero-media img{min-height:520px}
+}
+
+/* ---------- generic section ---------- */
+.sec{padding:3.2rem 0}
+.sec.alt{background:var(--papier)}
+.sec.bois{background:var(--bois-d);color:var(--craie)}
+.sec.bois .sec-head h2{color:#fff}
+.sec.bois .sec-head .lead{color:var(--craie)}
+@media(min-width:760px){.sec{padding:4.2rem 0}}
+
+/* ---------- WOW : réservation + emporter ---------- */
+#commander{background:linear-gradient(180deg,var(--ardoise),var(--ardoise-d));color:var(--craie)}
+#commander .sec-head h2{color:#fff}
+#commander .sec-head .lead{color:var(--craie)}
+.tabs{display:flex;gap:.5rem;background:rgba(233,227,214,.08);border:1px solid rgba(233,227,214,.18);padding:.35rem;border-radius:999px;max-width:520px;margin:0 0 1.4rem}
+.tab{flex:1;min-height:46px;border:none;background:transparent;color:var(--craie);font:inherit;font-weight:600;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:.4rem}
+.tab[aria-selected="true"]{background:var(--brique);color:#fff}
+.tab:focus-visible{outline:3px solid var(--or);outline-offset:2px}
+.panel-card{background:var(--papier);color:var(--encre);border-radius:16px;padding:1.5rem 1.2rem;box-shadow:0 18px 50px rgba(20,12,8,.4);border:1px solid var(--creme-d);max-width:660px}
+.panel-card .panel-title{font-family:var(--font-d);font-size:1.5rem;color:var(--bois-d);margin:0 0 1.1rem;display:flex;align-items:center;gap:.55rem}
+.field{margin:0 0 1.05rem}
+.field>label{display:block;font-weight:600;font-size:.9rem;margin:0 0 .4rem;color:var(--encre)}
+.field input,.field select{width:100%;min-height:48px;padding:.6rem .8rem;font:inherit;color:var(--encre);background:#fff;border:1.5px solid var(--creme-d);border-radius:9px}
+.field input:focus,.field select:focus{border-color:var(--brique);outline:none;box-shadow:0 0 0 3px rgba(176,73,47,.2)}
+.field .hint{font-size:.8rem;color:var(--gris);margin:.35rem 0 0}
+.two-col{display:grid;gap:0 1rem}
+@media(min-width:520px){.two-col{grid-template-columns:1fr 1fr}}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chip{flex:0 0 auto}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip label{display:inline-flex;align-items:center;justify-content:center;min-height:46px;min-width:50px;padding:.5rem .85rem;border:1.5px solid var(--creme-d);border-radius:999px;background:#fff;font-weight:600;cursor:pointer;color:var(--encre)}
+.chip input:checked+label{background:var(--brique);border-color:var(--brique);color:#fff}
+.chip input:disabled+label{opacity:.4;cursor:not-allowed;text-decoration:line-through}
+.chip input:focus-visible+label{outline:3px solid var(--or);outline-offset:2px}
+.summary{background:var(--creme);border:1px dashed var(--bois);border-radius:10px;padding:.85rem 1rem;font-size:.92rem;margin:0 0 1.1rem}
+.summary b{color:var(--brique-d)}
+.note{font-size:.8rem;color:var(--gris);margin:.9rem 0 0}
+.confirm{text-align:center;padding:1rem .4rem}
+.confirm .seal{width:64px;height:64px;margin:0 auto .85rem;display:grid;place-items:center;border-radius:50%;background:var(--brique);color:#fff}
+.confirm h3{font-size:1.55rem;color:var(--bois-d);margin:0 0 .5rem}
+.confirm .demo-badge{display:inline-block;margin:.4rem 0 .9rem;background:var(--or);color:var(--ardoise-d);font-weight:700;font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;padding:.3rem .8rem;border-radius:999px}
+.confirm p{color:var(--gris);margin:.4rem 0}
+
+/* panier emporter */
+.shop-item{display:flex;gap:.85rem;align-items:center;padding:.75rem 0;border-bottom:1px dotted var(--creme-d)}
+.shop-item .si-main{flex:1;min-width:0}
+.shop-item .si-name{font-weight:700;color:var(--encre)}
+.shop-item .si-desc{font-size:.82rem;color:var(--gris);margin-top:.1rem}
+.shop-item .si-price{font-weight:700;color:var(--brique-d);white-space:nowrap;margin-left:.2rem}
+.qty{display:inline-flex;align-items:center;gap:0;border:1.5px solid var(--creme-d);border-radius:999px;overflow:hidden;background:#fff}
+.qty button{width:40px;height:40px;border:none;background:#fff;color:var(--brique-d);font-size:1.3rem;line-height:1;cursor:pointer;display:grid;place-items:center}
+.qty button:hover{background:#fff5f1}
+.qty .n{min-width:30px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+.cart-line{display:flex;justify-content:space-between;font-size:.92rem;padding:.25rem 0}
+.cart-tot{display:flex;justify-content:space-between;font-weight:700;font-size:1.1rem;color:var(--bois-d);border-top:1.5px solid var(--creme-d);margin-top:.5rem;padding-top:.6rem}
+.cart-empty{color:var(--gris);font-style:italic;text-align:center;padding:1.2rem 0}
+
+/* ---------- la carte ---------- */
+.signature{display:grid;gap:1.05rem;margin:0 0 2.4rem}
+@media(min-width:760px){.signature{grid-template-columns:1fr 1fr}}
+.sig-card{position:relative;border-radius:14px;overflow:hidden;background:var(--ardoise-d);color:var(--craie);min-height:240px;display:flex}
+.sig-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sig-card .ov{position:relative;z-index:1;margin-top:auto;width:100%;padding:1.4rem 1.15rem 1.1rem;background:linear-gradient(180deg,rgba(30,20,14,0),rgba(30,20,14,.88) 52%)}
+.sig-card .badge{display:inline-block;background:var(--or);color:var(--ardoise-d);font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:.25rem .65rem;border-radius:999px;margin:0 0 .55rem;font-family:var(--font-t)}
+.sig-card h3{font-size:1.65rem;color:#fff;margin:0}
+.sig-card p{margin:.4rem 0 0;color:var(--craie);font-size:.94rem;font-family:var(--font-t)}
+.sig-card .price{margin-top:.6rem;font-weight:700;color:var(--or);font-size:1.05rem}
+.menu-block{margin:0 0 2rem}
+.menu-block h3{font-family:var(--font-d);font-size:1.5rem;color:var(--bois-d);display:flex;align-items:baseline;gap:.7rem;margin:0 0 .9rem}
+.menu-block h3::after{content:"";flex:1;height:1px;background:var(--creme-d);transform:translateY(-4px)}
+.dish{display:flex;gap:1rem;align-items:baseline;padding:.65rem 0;border-bottom:1px dotted var(--creme-d)}
+.dish:last-child{border-bottom:none}
+.dish .d-main{flex:1}
+.dish .d-name{font-weight:700;color:var(--encre)}
+.dish .d-desc{font-size:.88rem;color:var(--gris);margin-top:.1rem}
+.dish .d-price{font-weight:700;color:var(--brique-d);white-space:nowrap}
+.menu-note{font-size:.84rem;color:var(--gris);font-style:italic;margin:1.3rem 0 0}
+
+/* ---------- le cadre ---------- */
+.cadre-grid{display:grid;gap:1.5rem;align-items:center}
+@media(min-width:820px){.cadre-grid{grid-template-columns:1fr 1fr;gap:2.6rem}}
+.cadre-media{border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+.cadre-text p{color:var(--gris);margin:0 0 1rem}
+.cadre-text .signing{font-family:var(--font-d);color:var(--brique-d);font-size:1.3rem;margin-top:1.1rem;line-height:1.2}
+/* ardoise du jour */
+.ardoise-box{background:var(--ardoise);color:var(--craie);border-radius:14px;padding:1.4rem 1.3rem;border:1px solid var(--ardoise-l);box-shadow:var(--shadow);position:relative}
+.ardoise-box::before{content:"";position:absolute;inset:.5rem;border:1px dashed rgba(233,227,214,.28);border-radius:9px;pointer-events:none}
+.ardoise-box h3{font-family:var(--font-d);color:#fff;font-size:1.5rem;margin:0 0 .2rem;position:relative}
+.ardoise-box .sub{font-family:var(--font-t);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--or);position:relative}
+.ardoise-list{list-style:none;margin:1rem 0 0;padding:0;position:relative}
+.ardoise-list li{display:flex;justify-content:space-between;gap:1rem;padding:.5rem 0;border-bottom:1px dotted rgba(233,227,214,.22);font-size:.95rem}
+.ardoise-list li:last-child{border-bottom:none}
+.ardoise-list .a-name{color:#fff}
+.ardoise-list .a-price{color:var(--or);font-weight:700;white-space:nowrap}
+
+/* ---------- avis ---------- */
+.avis-head{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem 1.3rem;margin:0 0 1.7rem}
+.avis-score{display:flex;align-items:center;gap:.7rem}
+.avis-score .big{font-family:var(--font-d);font-size:2.7rem;color:var(--or);line-height:1}
+.avis-score .stars{color:var(--or);font-size:1.1rem;letter-spacing:2px}
+.avis-score .cnt{font-size:.88rem;color:var(--craie)}
+.avis-grid{display:grid;gap:1rem}
+@media(min-width:680px){.avis-grid{grid-template-columns:repeat(3,1fr)}}
+.avis-card{background:rgba(246,239,227,.06);border:1px solid rgba(217,164,65,.26);border-radius:12px;padding:1.1rem 1.05rem}
+.avis-card .stars{color:var(--or);letter-spacing:2px;font-size:.92rem}
+.avis-card p{margin:.55rem 0 .75rem;color:var(--craie);font-style:italic;font-size:.96rem}
+.avis-card .who{font-size:.8rem;color:var(--or);font-weight:600}
+.avis-src{font-size:.76rem;color:var(--craie);opacity:.78;margin-top:1.3rem}
+
+/* ---------- horaires / infos ---------- */
+.hours-grid{display:grid;gap:1.5rem}
+@media(min-width:760px){.hours-grid{grid-template-columns:1fr 1fr;gap:2.4rem}}
+.hours-table{width:100%;border-collapse:collapse}
+.hours-table th,.hours-table td{text-align:left;padding:.58rem .35rem;border-bottom:1px solid var(--creme-d);font-size:.94rem}
+.hours-table th{font-weight:600;color:var(--encre)}
+.hours-table td{color:var(--gris);text-align:right}
+.hours-table tr.today th,.hours-table tr.today td{color:var(--brique-d);font-weight:700}
+.hours-table .closed{color:var(--ferme);font-style:italic}
+.now-pill{display:inline-flex;align-items:center;gap:.45rem;padding:.35rem .8rem;border-radius:999px;font-size:.82rem;font-weight:700;margin:0 0 1rem}
+.now-pill.open{background:#E7F0E4;color:#2F5A2B}
+.now-pill.closed{background:#F6E4E2;color:#8A3A36}
+.now-pill .dot{width:9px;height:9px;border-radius:50%;background:currentColor}
+.info-card{background:var(--papier);border:1px solid var(--creme-d);border-radius:14px;padding:1.3rem 1.2rem}
+.info-card h3{font-family:var(--font-d);font-size:1.4rem;color:var(--bois-d);margin:0 0 .9rem}
+.info-row{display:flex;gap:.7rem;align-items:flex-start;margin:0 0 .85rem;font-size:.95rem}
+.info-row svg{flex:0 0 auto;color:var(--brique);margin-top:3px}
+.info-row a{color:var(--brique-d);font-weight:600;text-decoration:none}
+.info-row a:hover{text-decoration:underline}
+
+/* ---------- footer ---------- */
+footer.site{background:var(--ardoise-d);color:var(--craie);padding:2.5rem 0 1.4rem}
+footer .f-grid{display:grid;gap:1.6rem}
+@media(min-width:680px){footer .f-grid{grid-template-columns:1.3fr 1fr 1fr}}
+footer .name{font-family:var(--font-d);color:#fff;font-size:1.6rem}
+footer .sub{color:var(--or);font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;margin:.3rem 0 0;font-weight:600}
+footer h4{color:#fff;font-family:var(--font-t);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 .8rem}
+footer a{color:var(--craie);text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.5rem;font-size:.94rem}
+footer .copy{margin-top:1.8rem;padding-top:1.2rem;border-top:1px solid rgba(233,227,214,.16);font-size:.79rem;color:var(--craie);opacity:.85}
+
+/* ---------- bandeau légal fixe ---------- */
+.legal{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--ardoise-d);color:var(--craie);border-top:2px solid var(--or);font-size:.73rem;line-height:1.4;text-align:center;padding:.65rem 1rem;box-shadow:0 -6px 20px rgba(20,12,8,.32)}
+.legal p{margin:0;max-width:62rem;margin-inline:auto}
+
+/* live region visually hidden */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="L'Epicurien, accueil">
+      <span class="name">L'Epicurien</span>
+      <span class="sub">Brasserie · Remiremont</span>
+    </a>
+    <nav class="main" aria-label="Navigation principale">
+      <ul>
+        <li><a href="#commander">Réserver · Emporter</a></li>
+        <li><a href="#carte">La carte</a></li>
+        <li><a href="#cadre">Le cadre</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#infos">Horaires</a></li>
+      </ul>
+    </nav>
+    <a class="hdr-cta" href="#commander">Réserver</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" aria-labelledby="hero-h">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <span class="hero-rating"><span class="stars" aria-hidden="true">★★★★☆</span> 4,3 / 5 · 164 avis Google</span>
+        <h1 id="hero-h">Brasserie <span class="accent">gourmande</span> à Remiremont</h1>
+        <p class="tag">Le burger vosgien, le jarret sauce munster et tout le terroir des Vosges, dans un cadre chaleureux. Bienvenue chez les épicuriens.</p>
+        <div class="hero-actions">
+          <a class="btn btn-brique" href="#commander">Réserver une table</a>
+          <a class="btn btn-ghost" href="tel:+33372739854">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            03 72 73 98 54
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span><b>Burger vosgien</b> &amp; jarret au munster</span>
+          <span>Midi &amp; soirs · <b>fermé le lundi</b></span>
+          <span>25 Faubourg d'Epinal</span>
+        </div>
+      </div>
+      <div class="hero-media">
+        <!-- [À REMPLACER] Photo d'illustration libre de droits — à remplacer par une photo réelle du burger vosgien de l'établissement -->
+        <img src="img/hero-burger.webp" width="1000" height="750" fetchpriority="high" decoding="async" alt="Cheeseburger généreux à deux étages servi sur une planche de bois sombre">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WOW : RÉSERVATION + EMPORTER ============ -->
+<section class="sec" id="commander" aria-labelledby="cmd-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Réserver &amp; emporter</p>
+      <h2 id="cmd-h">Votre table, ou vos burgers à emporter</h2>
+      <p class="lead">Réservez votre table en quelques secondes, ou commandez les burgers à emporter pour les récupérer à l'heure de votre choix.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Choisir réservation ou emporter">
+      <button class="tab" id="tab-resa" role="tab" aria-selected="true" aria-controls="pane-resa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Réserver une table
+      </button>
+      <button class="tab" id="tab-shop" role="tab" aria-selected="false" aria-controls="pane-shop" tabindex="-1">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg>
+        Burgers à emporter
+      </button>
+    </div>
+
+    <!-- ----- PANE RÉSERVATION ----- -->
+    <div id="pane-resa" role="tabpanel" aria-labelledby="tab-resa" class="panel-card">
+      <form id="resa-form" novalidate>
+        <h3 class="panel-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Réserver une table
+        </h3>
+        <div class="two-col">
+          <div class="field">
+            <label for="r-date">Date</label>
+            <input type="date" id="r-date" name="date" required>
+            <p class="hint" id="r-date-hint">Fermé le lundi.</p>
+          </div>
+          <div class="field">
+            <label for="r-people">Convives</label>
+            <select id="r-people" name="people" required>
+              <option value="">Choisir…</option>
+              <option>1 personne</option>
+              <option selected>2 personnes</option>
+              <option>3 personnes</option>
+              <option>4 personnes</option>
+              <option>5 personnes</option>
+              <option>6 personnes</option>
+              <option>7 personnes et +</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label id="r-time-label">Créneau souhaité</label>
+          <div class="chips" role="group" aria-labelledby="r-time-label" id="r-times"></div>
+          <p class="hint">Service du midi (12 h–14 h) et du soir (19 h–21 h 30).</p>
+        </div>
+        <div class="two-col">
+          <div class="field">
+            <label for="r-name">Votre nom</label>
+            <input type="text" id="r-name" name="name" autocomplete="name" placeholder="Nom de réservation" required>
+          </div>
+          <div class="field">
+            <label for="r-tel">Téléphone</label>
+            <input type="tel" id="r-tel" name="tel" autocomplete="tel" placeholder="Pour vous confirmer" required>
+          </div>
+        </div>
+        <div class="summary" id="r-summary" aria-live="polite">Sélectionnez une date, le nombre de convives et un créneau.</div>
+        <button type="submit" class="btn btn-brique btn-block">Réserver ma table</button>
+        <p class="note">Démonstration : aucune donnée n'est envoyée ni enregistrée sur un serveur.</p>
+      </form>
+      <div id="resa-confirm" class="confirm is-hidden" tabindex="-1">
+        <div class="seal" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <span class="demo-badge">Ceci est une démonstration</span>
+        <h3>Demande de réservation prête !</h3>
+        <p id="resa-recap"></p>
+        <p>En production : envoi instantané au restaurant et confirmation par SMS. Ici, rien n'est transmis.</p>
+        <button type="button" class="btn btn-outline" id="resa-again">Nouvelle réservation</button>
+      </div>
+    </div>
+
+    <!-- ----- PANE EMPORTER ----- -->
+    <div id="pane-shop" role="tabpanel" aria-labelledby="tab-shop" class="panel-card is-hidden">
+      <form id="shop-form" novalidate>
+        <h3 class="panel-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg>
+          Burgers à emporter
+        </h3>
+        <!-- [À REMPLACER] Burgers et prix d'exemple à remplacer par la carte réelle de l'établissement -->
+        <div id="shop-list" aria-label="Burgers disponibles à emporter"></div>
+        <div class="field" style="margin-top:1.2rem">
+          <label id="s-time-label">Créneau de retrait</label>
+          <div class="chips" role="group" aria-labelledby="s-time-label" id="s-times"></div>
+          <p class="hint">Service du soir, du mardi au samedi. Fermé le lundi.</p>
+        </div>
+        <div class="summary" id="cart-box" aria-live="polite">
+          <div class="cart-empty" id="cart-empty">Votre panier est vide pour l'instant.</div>
+          <div id="cart-lines"></div>
+          <div class="cart-tot is-hidden" id="cart-total-row"><span>Total à régler au retrait</span><span id="cart-total">0,00 €</span></div>
+        </div>
+        <button type="submit" class="btn btn-brique btn-block" id="shop-submit" disabled>Valider ma commande</button>
+        <p class="note">Paiement au retrait. Démonstration : aucune commande n'est réellement transmise.</p>
+      </form>
+      <div id="shop-confirm" class="confirm is-hidden" tabindex="-1">
+        <div class="seal" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <span class="demo-badge">Ceci est une démonstration</span>
+        <h3>Commande enregistrée !</h3>
+        <p id="shop-recap"></p>
+        <p>En production : paiement CB en ligne ou au retrait, et notification à la cuisine. Ici, rien n'est encaissé.</p>
+        <button type="button" class="btn btn-outline" id="shop-again">Nouvelle commande</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LA CARTE ============ -->
+<section class="sec alt" id="carte" aria-labelledby="carte-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">La carte</p>
+      <h2 id="carte-h">Le terroir vosgien, généreux</h2>
+      <p class="lead">Une cuisine de brasserie franche et gourmande, où le munster, le porc fermier et les pommes de terre des Vosges ont la part belle.</p>
+    </div>
+
+    <!-- ----- spécialités signature ----- -->
+    <!-- [À REMPLACER] Photos d'illustration libres de droits — à remplacer par les vraies photos des plats de l'établissement -->
+    <div class="signature">
+      <article class="sig-card">
+        <img src="img/hero-burger.webp" width="1000" height="750" loading="lazy" decoding="async" alt="Le burger vosgien : pain brioché, double steak et fromage fondant">
+        <div class="ov">
+          <span class="badge">Spécialité maison</span>
+          <h3>Le burger vosgien</h3>
+          <p>Pain brioché, double steak haché frais, munster fondu, lard fumé et frites maison.</p>
+          <!-- [À REMPLACER] prix d'exemple -->
+          <div class="price">16,50 €</div>
+        </div>
+      </article>
+      <article class="sig-card">
+        <img src="img/jarret.webp" width="800" height="600" loading="lazy" decoding="async" alt="Viande braisée généreuse servie sur une planche de bois">
+        <div class="ov">
+          <span class="badge">Le classique</span>
+          <h3>Jarret sauce munster</h3>
+          <p>Jarret de porc braisé, sauce crémeuse au munster, pommes de terre grenaille rissolées.</p>
+          <!-- [À REMPLACER] prix d'exemple -->
+          <div class="price">18,90 €</div>
+        </div>
+      </article>
+    </div>
+
+    <!-- ----- carte détaillée ----- -->
+    <!-- [À REMPLACER] Ensemble des entrées, plats et desserts ci-dessous + prix : contenus d'exemple à remplacer par la carte réelle -->
+    <div class="menu-block">
+      <h3>Pour commencer</h3>
+      <div class="dish"><div class="d-main"><div class="d-name">Tartelette fine au munster</div><div class="d-desc">Pâte feuilletée, munster fermier, salade des Vosges, noix</div></div><div class="d-price">8,50 €</div></div>
+      <div class="dish"><div class="d-main"><div class="d-name">Tourte vosgienne</div><div class="d-desc">Porc et veau marinés au riesling, pâte dorée, mesclun</div></div><div class="d-price">9,00 €</div></div>
+      <div class="dish"><div class="d-main"><div class="d-name">Œuf parfait &amp; lard paysan</div><div class="d-desc">Crème de pommes de terre fumée, croûtons à l'ail</div></div><div class="d-price">8,90 €</div></div>
+    </div>
+
+    <div class="menu-block">
+      <h3>Les plats</h3>
+      <div class="dish"><div class="d-main"><div class="d-name">Burger vosgien</div><div class="d-desc">Double steak frais, munster fondu, lard, frites maison</div></div><div class="d-price">16,50 €</div></div>
+      <div class="dish"><div class="d-main"><div class="d-name">Jarret de porc, sauce munster</div><div class="d-desc">Braisé lentement, pommes grenaille rissolées</div></div><div class="d-price">18,90 €</div></div>
+      <div class="dish"><div class="d-main"><div class="d-name">Côte de porc fermière aux pommes</div><div class="d-desc">Grillée, pommes fondantes, brocolis, jus au poivre</div></div><div class="d-price">17,50 €</div></div>
+      <div class="dish"><div class="d-main"><div class="d-name">Travers braisés laqués</div><div class="d-desc">Cuisson longue, sauce barbecue maison, frites &amp; salade</div></div><div class="d-price">17,90 €</div></div>
+      <div class="dish"><div class="d-main"><div class="d-name">Salade épicurienne</div><div class="d-desc">Tomme des Vosges, lardons, gésiers, pommes de terre tièdes</div></div><div class="d-price">14,50 €</div></div>
+    </div>
+
+    <div class="menu-block">
+      <h3>Les desserts</h3>
+      <div class="dish"><div class="d-main"><div class="d-name">Tarte aux myrtilles des Vosges</div><div class="d-desc">Pâte sablée, myrtilles, crème fouettée</div></div><div class="d-price">7,50 €</div></div>
+      <div class="dish"><div class="d-main"><div class="d-name">Coupe vermont</div><div class="d-desc">Glace vanille, mirabelle, chantilly, eau-de-vie en option</div></div><div class="d-price">7,90 €</div></div>
+      <div class="dish"><div class="d-main"><div class="d-name">Fondant au chocolat, cœur coulant</div><div class="d-desc">Glace vanille de Madagascar</div></div><div class="d-price">7,50 €</div></div>
+    </div>
+
+    <p class="menu-note">Carte d'exemple à titre indicatif. Plats, intitulés et prix seront remplacés par votre carte réelle.</p>
+  </div>
+</section>
+
+<!-- ============ LE CADRE ============ -->
+<section class="sec bois" id="cadre" aria-labelledby="cadre-h">
+  <div class="wrap">
+    <div class="cadre-grid">
+      <div class="cadre-text">
+        <p class="eyebrow" style="color:var(--or)">Le cadre</p>
+        <h2 id="cadre-h" style="color:#fff;font-size:clamp(1.9rem,6vw,2.9rem)">Une brasserie où l'on prend son temps</h2>
+        <!-- [À REMPLACER] Texte d'ambiance d'illustration — à remplacer par la présentation réelle de l'établissement -->
+        <p>Bois patiné, lumières chaudes et grandes tablées : L'Epicurien cultive l'esprit brasserie, celui des bons moments partagés autour d'une assiette généreuse. On y vient en famille, entre amis ou entre collègues, le midi comme le soir.</p>
+        <p>Aux beaux jours, la terrasse prolonge la salle pour profiter de Remiremont. Toute l'année, l'ardoise du jour met à l'honneur le marché et les producteurs des Vosges.</p>
+        <p class="signing">« Bien manger, simplement,<br>au cœur des Vosges. »</p>
+      </div>
+      <div>
+        <!-- ----- ardoise du jour ----- -->
+        <!-- [À REMPLACER] Plats et prix de l'ardoise du jour : exemples à remplacer chaque semaine par l'établissement -->
+        <div class="ardoise-box" aria-label="Ardoise du jour">
+          <span class="sub">Ardoise du jour</span>
+          <h3>Cette semaine</h3>
+          <ul class="ardoise-list">
+            <li><span class="a-name">Suggestion du marché</span><span class="a-price">14,90 €</span></li>
+            <li><span class="a-name">Pavé de truite des Vosges, beurre blanc</span><span class="a-price">18,50 €</span></li>
+            <li><span class="a-name">Tartiflette au munster fermier</span><span class="a-price">15,90 €</span></li>
+            <li><span class="a-name">Menu du midi (entrée + plat)</span><span class="a-price">16,90 €</span></li>
+          </ul>
+        </div>
+        <div class="cadre-media" style="margin-top:1.4rem">
+          <!-- [À REMPLACER] Photo d'illustration libre de droits — à remplacer par une photo réelle d'un plat ou de la salle -->
+          <img src="img/plat.webp" width="800" height="600" loading="lazy" decoding="async" alt="Côte de porc grillée aux pommes, brocolis et pommes de terre, dressage soigné">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVIS ============ -->
+<section class="sec" id="avis" aria-labelledby="avis-h" style="background:var(--ardoise);color:var(--craie)">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" style="color:var(--or)">Vos avis</p>
+      <h2 id="avis-h" style="color:#fff">Ils sont passés à table</h2>
+    </div>
+    <div class="avis-head">
+      <div class="avis-score">
+        <span class="big">4,3</span>
+        <div>
+          <div class="stars" aria-hidden="true">★★★★☆</div>
+          <div class="cnt">4,3 / 5 · 164 avis Google</div>
+        </div>
+      </div>
+    </div>
+    <!-- [À REMPLACER] Extraits d'avis illustratifs (≤ 15 mots) — à remplacer par de vrais avis Google avec accord -->
+    <div class="avis-grid">
+      <article class="avis-card">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <p>« Le burger vosgien est une tuerie, portions généreuses. »</p>
+        <div class="who">Avis Google</div>
+      </article>
+      <article class="avis-card">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <p>« Cadre chaleureux et accueil top, on reviendra. »</p>
+        <div class="who">Avis Google</div>
+      </article>
+      <article class="avis-card">
+        <div class="stars" aria-hidden="true">★★★★☆</div>
+        <p>« Jarret au munster excellent, vrai goût du terroir. »</p>
+        <div class="who">Avis Google</div>
+      </article>
+    </div>
+    <p class="avis-src">Note et nombre d'avis issus de Google. Extraits présentés à titre d'illustration.</p>
+  </div>
+</section>
+
+<!-- ============ HORAIRES / INFOS ============ -->
+<section class="sec alt" id="infos" aria-labelledby="infos-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Horaires &amp; accès</p>
+      <h2 id="infos-h">Nous rendre visite</h2>
+    </div>
+    <div class="hours-grid">
+      <div>
+        <div class="now-pill" id="now-pill" aria-live="polite"><span class="dot"></span><span id="now-text">Vérification des horaires…</span></div>
+        <!-- [À REMPLACER] Heures précises des services à confirmer. Donnée certaine : fermé le lundi, service midi + soirs. -->
+        <table class="hours-table" aria-label="Horaires d'ouverture">
+          <tbody>
+            <tr data-day="1"><th scope="row">Lundi</th><td class="closed">Fermé</td></tr>
+            <tr data-day="2"><th scope="row">Mardi</th><td>12 h–14 h · 19 h–21 h 30</td></tr>
+            <tr data-day="3"><th scope="row">Mercredi</th><td>12 h–14 h · 19 h–21 h 30</td></tr>
+            <tr data-day="4"><th scope="row">Jeudi</th><td>12 h–14 h · 19 h–21 h 30</td></tr>
+            <tr data-day="5"><th scope="row">Vendredi</th><td>12 h–14 h · 19 h–21 h 30</td></tr>
+            <tr data-day="6"><th scope="row">Samedi</th><td>12 h–14 h · 19 h–21 h 30</td></tr>
+            <tr data-day="0"><th scope="row">Dimanche</th><td>12 h–14 h</td></tr>
+          </tbody>
+        </table>
+        <p class="menu-note">Horaires donnés à titre indicatif, à confirmer avec l'établissement.</p>
+      </div>
+      <div class="info-card">
+        <h3>Coordonnées</h3>
+        <div class="info-row">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span><a href="https://www.google.com/maps/search/?api=1&query=L%27Epicurien+25+Faubourg+d%27Epinal+88200+Remiremont" target="_blank" rel="noopener">25 Faubourg d'Epinal, 88200 Remiremont</a><br><span style="color:var(--gris);font-size:.85rem">Itinéraire sur Google Maps</span></span>
+        </div>
+        <div class="info-row">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span><a href="tel:+33372739854">03 72 73 98 54</a><br><span style="color:var(--gris);font-size:.85rem">Réservations &amp; commandes à emporter</span></span>
+        </div>
+        <div class="info-row">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span>Service midi &amp; soirs · <b>fermé le lundi</b></span>
+        </div>
+        <a class="btn btn-brique btn-block" href="#commander" style="margin-top:.6rem">Réserver une table</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="wrap f-grid">
+    <div>
+      <div class="name">L'Epicurien</div>
+      <div class="sub">Brasserie · Remiremont</div>
+      <p style="margin:1rem 0 0;color:var(--craie);max-width:24rem;font-size:.95rem">Brasserie gourmande au cœur des Vosges. Burger vosgien, jarret sauce munster et ardoise du jour.</p>
+    </div>
+    <div>
+      <h4>Coordonnées</h4>
+      <ul>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=L%27Epicurien+25+Faubourg+d%27Epinal+88200+Remiremont" target="_blank" rel="noopener">25 Faubourg d'Epinal<br>88200 Remiremont</a></li>
+        <li><a href="tel:+33372739854">03 72 73 98 54</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Le menu</h4>
+      <ul>
+        <li><a href="#commander">Réserver · Emporter</a></li>
+        <li><a href="#carte">La carte</a></li>
+        <li><a href="#cadre">Le cadre</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#infos">Horaires &amp; accès</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap copy">© <span id="year">2026</span> L'Epicurien · Remiremont — Maquette de démonstration.</div>
+</footer>
+
+<aside class="legal" aria-label="Mention légale de démonstration">
+  <p>Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</p>
+</aside>
+
+<div class="sr-only" aria-live="polite" id="live"></div>
+
+<script>
+(function(){
+  "use strict";
+  var $=function(s,c){return (c||document).querySelector(s)};
+  var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+  var euro=function(n){return n.toFixed(2).replace('.',',')+' €'};
+  var live=$('#live');
+  var say=function(m){if(live){live.textContent='';setTimeout(function(){live.textContent=m},30)}};
+
+  /* année */
+  $('#year').textContent=new Date().getFullYear();
+
+  /* ---- onglets ---- */
+  var tabResa=$('#tab-resa'),tabShop=$('#tab-shop'),paneResa=$('#pane-resa'),paneShop=$('#pane-shop');
+  function selectTab(which){
+    var resa=which==='resa';
+    tabResa.setAttribute('aria-selected',resa);tabShop.setAttribute('aria-selected',!resa);
+    tabResa.tabIndex=resa?0:-1;tabShop.tabIndex=resa?-1:0;
+    paneResa.classList.toggle('is-hidden',!resa);paneShop.classList.toggle('is-hidden',resa);
+  }
+  tabResa.addEventListener('click',function(){selectTab('resa')});
+  tabShop.addEventListener('click',function(){selectTab('shop')});
+  [tabResa,tabShop].forEach(function(t){t.addEventListener('keydown',function(e){
+    if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();var to=t===tabResa?'shop':'resa';selectTab(to);(to==='shop'?tabShop:tabResa).focus()}
+  })});
+
+  /* ---- créneaux (calés sur services réels, lundi fermé) ---- */
+  var midi=['12 h 00','12 h 30','13 h 00','13 h 30'];
+  var soir=['19 h 00','19 h 30','20 h 00','20 h 30','21 h 00'];
+  function buildTimes(container,name,opts){
+    container.innerHTML='';
+    opts.forEach(function(o,i){
+      var id=name+'-'+i;
+      var wrap=document.createElement('span');wrap.className='chip';
+      wrap.innerHTML='<input type="radio" name="'+name+'" id="'+id+'" value="'+o.v+'"'+(o.dis?' disabled':'')+'><label for="'+id+'">'+o.v+'</label>';
+      container.appendChild(wrap);
+    });
+  }
+  // réservation : midi (tous sauf lundi) + soir (mar-sam) ; dimanche midi seul
+  var rTimes=$('#r-times');
+  function refreshResaTimes(){
+    var d=$('#r-date').value;var dow=d?new Date(d+'T00:00').getDay():-1; // 0=dim..6=sam
+    var list=[];
+    if(dow===1){ // lundi fermé
+      list=[];
+    } else {
+      midi.forEach(function(v){list.push({v:v})});
+      if(dow!==0){ soir.forEach(function(v){list.push({v:v})}); } // pas de soir le dimanche
+    }
+    if(list.length===0){
+      rTimes.innerHTML='<span style="color:var(--gris);font-size:.9rem">Fermé ce jour-là. Choisissez une autre date.</span>';
+    } else {
+      buildTimes(rTimes,'rtime',list);
+    }
+    updateResaSummary();
+  }
+  // emporter : service du soir mar-sam
+  buildTimes($('#s-times'),'stime',soir.map(function(v){return {v:v}}));
+
+  /* ---- date min = aujourd'hui ---- */
+  var di=$('#r-date');
+  var today=new Date();today.setHours(0,0,0,0);
+  var iso=function(dt){return dt.toISOString().slice(0,10)};
+  di.min=iso(today);di.value=iso(today);
+  di.addEventListener('change',refreshResaTimes);
+
+  /* ---- résumé réservation ---- */
+  function getRadio(name){var el=document.querySelector('input[name="'+name+'"]:checked');return el?el.value:''}
+  function frDate(v){if(!v)return '';var dt=new Date(v+'T00:00');return dt.toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'})}
+  function updateResaSummary(){
+    var d=$('#r-date').value,p=$('#r-people').value,t=getRadio('rtime');
+    var box=$('#r-summary');
+    if(d&&p&&t){box.innerHTML='Table pour <b>'+p+'</b>, le <b>'+frDate(d)+'</b> à <b>'+t+'</b>.';}
+    else{box.textContent='Sélectionnez une date, le nombre de convives et un créneau.';}
+  }
+  $('#r-people').addEventListener('change',updateResaSummary);
+  rTimes.addEventListener('change',updateResaSummary);
+  refreshResaTimes();
+
+  /* ---- soumission réservation ---- */
+  $('#resa-form').addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=$('#r-date').value,p=$('#r-people').value,t=getRadio('rtime'),n=$('#r-name').value.trim(),tel=$('#r-tel').value.trim();
+    if(!d||!p||!t||!n||!tel){say('Merci de compléter date, convives, créneau, nom et téléphone.');alert('Merci de compléter la date, le nombre de convives, le créneau, votre nom et votre téléphone.');return;}
+    $('#resa-recap').innerHTML='<b>'+n+'</b> — table pour <b>'+p+'</b><br>le <b>'+frDate(d)+'</b> à <b>'+t+'</b>';
+    $('#resa-form').classList.add('is-hidden');
+    var c=$('#resa-confirm');c.classList.remove('is-hidden');c.focus();
+    say('Demande de réservation prête. Ceci est une démonstration.');
+    try{localStorage.setItem('epi_resa',JSON.stringify({d:d,p:p,t:t,n:n}))}catch(_){}
+  });
+  $('#resa-again').addEventListener('click',function(){
+    $('#resa-confirm').classList.add('is-hidden');
+    $('#resa-form').classList.remove('is-hidden');
+    $('#r-name').focus();
+  });
+
+  /* ---- boutique emporter (panier localStorage) ---- */
+  // [À REMPLACER] catalogue de burgers d'exemple
+  var CAT=[
+    {id:'vosgien',name:'Burger vosgien',desc:'Double steak, munster fondu, lard, frites',price:16.5},
+    {id:'classic',name:'Cheeseburger maison',desc:'Steak frais, cheddar, oignons confits',price:13.9},
+    {id:'mont',name:'Burger du Mont',desc:'Poulet pané croustillant, raclette, miel',price:15.5},
+    {id:'veggie',name:'Burger jardin',desc:'Galette de légumes, chèvre, roquette',price:13.5}
+  ];
+  var KEY='epi_cart';
+  var cart={};
+  try{cart=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(_){cart={}}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(cart))}catch(_){}}
+
+  var list=$('#shop-list');
+  CAT.forEach(function(it){
+    var row=document.createElement('div');row.className='shop-item';
+    row.innerHTML='<div class="si-main"><div class="si-name">'+it.name+'</div><div class="si-desc">'+it.desc+'</div></div>'+
+      '<div class="si-price">'+euro(it.price)+'</div>'+
+      '<div class="qty" aria-label="Quantité '+it.name+'">'+
+        '<button type="button" data-act="dec" data-id="'+it.id+'" aria-label="Retirer un '+it.name+'">−</button>'+
+        '<span class="n" id="n-'+it.id+'">0</span>'+
+        '<button type="button" data-act="inc" data-id="'+it.id+'" aria-label="Ajouter un '+it.name+'">+</button>'+
+      '</div>';
+    list.appendChild(row);
+  });
+
+  list.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    var id=b.getAttribute('data-id'),act=b.getAttribute('data-act');
+    cart[id]=cart[id]||0;
+    if(act==='inc'){cart[id]++}else{cart[id]=Math.max(0,cart[id]-1)}
+    if(cart[id]===0)delete cart[id];
+    save();renderCart();
+    var it=CAT.filter(function(c){return c.id===id})[0];
+    say((act==='inc'?'Ajouté : ':'Retiré : ')+it.name+'. '+countItems()+' article(s) au panier.');
+  });
+
+  function countItems(){var n=0;for(var k in cart)n+=cart[k];return n}
+  function renderCart(){
+    var lines=$('#cart-lines'),tot=0,html='';
+    CAT.forEach(function(it){
+      var q=cart[it.id]||0;
+      var el=$('#n-'+it.id);if(el)el.textContent=q;
+      if(q>0){tot+=q*it.price;html+='<div class="cart-line"><span>'+q+' × '+it.name+'</span><span>'+euro(q*it.price)+'</span></div>';}
+    });
+    var empty=countItems()===0;
+    $('#cart-empty').classList.toggle('is-hidden',!empty);
+    lines.innerHTML=html;
+    $('#cart-total-row').classList.toggle('is-hidden',empty);
+    $('#cart-total').textContent=euro(tot);
+    $('#shop-submit').disabled=empty;
+  }
+  renderCart();
+
+  /* ---- soumission emporter ---- */
+  $('#shop-form').addEventListener('submit',function(e){
+    e.preventDefault();
+    if(countItems()===0)return;
+    var t=getRadio('stime');
+    if(!t){say('Choisissez un créneau de retrait.');alert('Merci de choisir un créneau de retrait.');return;}
+    var tot=0,items=[];
+    CAT.forEach(function(it){var q=cart[it.id]||0;if(q>0){tot+=q*it.price;items.push(q+' × '+it.name)}});
+    $('#shop-recap').innerHTML=items.join('<br>')+'<br><br>Retrait à <b>'+t+'</b> · Total <b>'+euro(tot)+'</b> (au retrait)';
+    $('#shop-form').classList.add('is-hidden');
+    var c=$('#shop-confirm');c.classList.remove('is-hidden');c.focus();
+    say('Commande enregistrée. Ceci est une démonstration.');
+  });
+  $('#shop-again').addEventListener('click',function(){
+    cart={};save();renderCart();
+    $('#shop-confirm').classList.add('is-hidden');
+    $('#shop-form').classList.remove('is-hidden');
+    $$('input[name="stime"]').forEach(function(r){r.checked=false});
+    $('#tab-shop').focus();
+  });
+
+  /* ---- état ouvert/fermé ---- */
+  (function(){
+    var pill=$('#now-pill'),txt=$('#now-text');
+    var now=new Date(),dow=now.getDay(),h=now.getHours(),m=now.getMinutes(),cur=h*60+m;
+    var open=false,closeStr='';
+    // lundi fermé
+    if(dow!==1){
+      var inMidi=cur>=12*60&&cur<14*60;
+      var inSoir=(dow!==0)&&cur>=19*60&&cur<21*60+30;
+      if(inMidi){open=true;closeStr='14 h 00'}
+      else if(inSoir){open=true;closeStr='21 h 30'}
+    }
+    pill.classList.add(open?'open':'closed');
+    if(open){txt.textContent='Ouvert maintenant · service jusqu’à '+closeStr;}
+    else{
+      if(dow===1)txt.textContent='Fermé aujourd’hui (lundi) — réservez en ligne';
+      else txt.textContent='Fermé actuellement — réservez en ligne ou appelez-nous';
+    }
+    // surligne le jour courant
+    var tr=document.querySelector('tr[data-day="'+dow+'"]');if(tr)tr.classList.add('today');
+  })();
+})();
+</script>
+</body>
+</html>
