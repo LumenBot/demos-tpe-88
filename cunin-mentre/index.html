@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1E3A2F">
+<title>Cunin Mentré — Pâtisserie chocolaterie à Charmes depuis 1932</title>
+<meta name="description" content="Pâtisserie chocolaterie Cunin Mentré à Charmes (88130), maison de famille depuis 1932, trois générations. Macarons primés myrtille et mirabelle, chocolats, gâteaux de mariage. Commande, click & collect et expédition. 4,7★ sur 121 avis.">
+
+<!-- Polices : chargement non bloquant (display=swap), Cardo (display) + Figtree (texte) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Figtree:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Figtree:wght@400;500;600;700&display=swap"></noscript>
+
+<!-- [À REMPLACER] Horaires ci-dessous (JSON-LD + section Horaires) : crédibles pour une
+     pâtisserie, à confirmer avec la maison. Les NAP (nom, 3 rue Maurice Barrès 88130 Charmes,
+     +33329381237), la note 4,7/121 avis, la fermeture du lundi et la fondation en 1932 sont
+     les données réelles publiques. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Cunin Mentré",
+  "description": "Pâtisserie chocolaterie à Charmes depuis 1932, trois générations. Macarons primés, chocolats, gâteaux d'événements.",
+  "image": "img/hero-macarons.webp",
+  "url": "./",
+  "telephone": "+33329381237",
+  "foundingDate": "1932",
+  "priceRange": "€€",
+  "currenciesAccepted": "EUR",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3 rue Maurice Barrès",
+    "addressLocality": "Charmes",
+    "postalCode": "88130",
+    "addressCountry": "FR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 48.3713688, "longitude": 6.2930529 },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "121" },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Cunin+Mentr%C3%A9+3+rue+Maurice+Barr%C3%A8s+88130+Charmes",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:00", "closes": "12:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "14:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "12:30" }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --sapin:#1E3A2F;        /* vert sapin profond */
+  --sapin-2:#163026;      /* sapin plus sombre */
+  --or:#B89243;           /* or antique */
+  --or-clair:#cda85e;
+  --ivoire:#F4EEE2;       /* ivoire */
+  --ivoire-2:#fbf8f1;
+  --encre:#22312a;        /* texte sur ivoire */
+  --gris:#5a6660;
+  --blanc:#ffffff;
+  --rayon:14px;
+  --ombre:0 14px 38px rgba(22,48,38,.16);
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--encre);
+  background:var(--ivoire);
+  line-height:1.6;
+  padding-bottom:62px; /* place pour le bandeau légal fixe */
+  -webkit-text-size-adjust:100%;
+}
+h1,h2,h3,.serif{font-family:"Cardo",Georgia,"Times New Roman",serif;font-weight:700;line-height:1.12;letter-spacing:.01em}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 18px}
+.eyebrow{font-family:"Figtree",sans-serif;text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;font-weight:600;color:var(--or)}
+.sec{padding:54px 0}
+.sec h2{font-size:clamp(1.7rem,5.4vw,2.5rem);margin:.18em 0 .15em;color:var(--sapin)}
+.lead{color:var(--gris);max-width:62ch;margin:0 auto;font-size:1.02rem}
+.center{text-align:center}
+
+/* ornement filet doré SVG inline */
+.filet{display:flex;align-items:center;justify-content:center;gap:14px;margin:14px auto 0;color:var(--or)}
+.filet svg{display:block}
+.filet .bar{height:1px;width:46px;background:linear-gradient(90deg,transparent,var(--or))}
+.filet .bar.r{background:linear-gradient(90deg,var(--or),transparent)}
+
+/* boutons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:48px;padding:12px 24px;border-radius:999px;border:1.5px solid transparent;
+  font-family:"Figtree",sans-serif;font-weight:600;font-size:1rem;cursor:pointer;
+  text-decoration:none;transition:transform .15s ease, background .2s ease, color .2s ease;
+}
+.btn-or{background:var(--or);color:#241a05}
+.btn-or:hover{background:var(--or-clair)}
+.btn-ghost{background:transparent;color:var(--ivoire);border-color:rgba(244,238,226,.55)}
+.btn-ghost:hover{background:rgba(244,238,226,.12)}
+.btn-sapin{background:var(--sapin);color:var(--ivoire)}
+.btn-sapin:hover{background:var(--sapin-2)}
+.btn-outline{background:transparent;color:var(--sapin);border-color:var(--sapin)}
+.btn-outline:hover{background:var(--sapin);color:var(--ivoire)}
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{
+  outline:3px solid var(--or);outline-offset:2px;border-radius:6px
+}
+
+/* ===== Header ===== */
+header.top{
+  position:sticky;top:0;z-index:40;background:var(--sapin);color:var(--ivoire);
+  border-bottom:1px solid rgba(184,146,67,.4)
+}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;min-height:60px;gap:12px}
+.brand{display:flex;flex-direction:column;line-height:1;text-decoration:none;color:var(--ivoire)}
+.brand b{font-family:"Cardo",serif;font-size:1.32rem;letter-spacing:.02em}
+.brand span{font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--or-clair);margin-top:3px}
+.nav{display:none;gap:22px;align-items:center}
+.nav a{text-decoration:none;font-size:.92rem;font-weight:500;color:var(--ivoire);opacity:.9}
+.nav a:hover{opacity:1;color:var(--or-clair)}
+.top .call{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:.9rem;text-decoration:none;color:var(--ivoire);border:1px solid rgba(184,146,67,.55);padding:8px 14px;border-radius:999px;min-height:44px}
+.top .call:hover{background:rgba(184,146,67,.18)}
+@media(min-width:880px){.nav{display:flex}}
+
+/* ===== Hero ===== */
+.hero{position:relative;background:var(--sapin);color:var(--ivoire);overflow:hidden}
+.hero .grid{display:grid;gap:24px;align-items:center;padding:40px 0 48px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(184,146,67,.16);border:1px solid rgba(184,146,67,.5);color:var(--or-clair);padding:6px 14px;border-radius:999px;font-size:.78rem;font-weight:600;letter-spacing:.04em}
+.hero h1{font-size:clamp(2.1rem,8vw,3.5rem);margin:18px 0 0;color:var(--ivoire)}
+.hero h1 em{font-style:italic;color:var(--or-clair)}
+.hero p.tag{color:rgba(244,238,226,.86);font-size:1.08rem;max-width:46ch;margin:16px 0 4px}
+.hero .stars{display:flex;align-items:center;gap:9px;margin:18px 0 4px;font-weight:600;color:var(--ivoire)}
+.hero .stars .s{color:var(--or-clair);letter-spacing:1px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.hero-figure{position:relative;border-radius:18px;overflow:hidden;box-shadow:var(--ombre);border:3px solid rgba(184,146,67,.45)}
+.hero-figure img{width:100%;height:100%;object-fit:cover;aspect-ratio:1100/730}
+.hero-figure .est{position:absolute;left:14px;bottom:14px;background:rgba(22,48,38,.82);color:var(--or-clair);border:1px solid rgba(184,146,67,.5);font-family:"Cardo",serif;font-style:italic;padding:7px 14px;border-radius:999px;font-size:.92rem}
+@media(min-width:880px){.hero .grid{grid-template-columns:1.05fr 1fr;gap:46px;padding:64px 0 72px}}
+
+/* ===== Bandeaux trust ===== */
+.trust{background:var(--sapin-2);color:var(--ivoire);border-top:1px solid rgba(184,146,67,.3)}
+.trust .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:center;padding:16px 18px;font-size:.86rem}
+.trust span{display:inline-flex;align-items:center;gap:8px;color:rgba(244,238,226,.92)}
+.trust svg{color:var(--or-clair);flex:none}
+
+/* ===== Commande : onglets WOW ===== */
+.order{background:var(--ivoire-2)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:22px 0 6px}
+.tab{
+  border:1.5px solid rgba(30,58,47,.25);background:var(--blanc);color:var(--sapin);
+  border-radius:999px;padding:11px 18px;min-height:46px;font-family:"Figtree",sans-serif;font-weight:600;
+  font-size:.94rem;cursor:pointer;display:inline-flex;align-items:center;gap:9px
+}
+.tab[aria-selected="true"]{background:var(--sapin);color:var(--ivoire);border-color:var(--sapin)}
+.tab svg{flex:none}
+.panel{display:none;margin-top:26px}
+.panel.active{display:block;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+.card{background:var(--blanc);border:1px solid rgba(30,58,47,.12);border-radius:var(--rayon);box-shadow:0 8px 24px rgba(22,48,38,.07)}
+.card-pad{padding:22px}
+
+/* formulaire générique */
+.field{margin-bottom:15px}
+.field label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px;color:var(--sapin)}
+.field input,.field select,.field textarea{
+  width:100%;padding:12px 13px;border:1.5px solid rgba(30,58,47,.22);border-radius:10px;
+  font-family:inherit;font-size:1rem;background:var(--blanc);color:var(--encre);min-height:46px
+}
+.field textarea{min-height:84px;resize:vertical}
+.grid2{display:grid;gap:14px}
+@media(min-width:620px){.grid2{grid-template-columns:1fr 1fr}}
+.hint{font-size:.82rem;color:var(--gris);margin-top:6px}
+
+/* layout commande : intro + form */
+.order-split{display:grid;gap:26px}
+@media(min-width:920px){.order-split{grid-template-columns:1fr 1.05fr;align-items:start}}
+.order-fig{border-radius:var(--rayon);overflow:hidden;box-shadow:var(--ombre);border:3px solid rgba(184,146,67,.4);position:relative}
+.order-fig img{width:100%;height:100%;object-fit:cover;aspect-ratio:800/1000}
+.order-fig .cap{position:absolute;left:0;right:0;bottom:0;padding:16px;background:linear-gradient(transparent,rgba(22,48,38,.82));color:var(--ivoire)}
+.order-fig .cap b{font-family:"Cardo",serif;font-size:1.2rem}
+
+/* click & collect : produits */
+.shop{display:grid;gap:16px}
+@media(min-width:560px){.shop{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.shop{grid-template-columns:repeat(3,1fr)}}
+.prod{display:flex;flex-direction:column}
+.prod .body{padding:16px 16px 18px;display:flex;flex-direction:column;flex:1}
+.prod h4{font-family:"Cardo",serif;font-size:1.24rem;margin:0 0 4px;color:var(--sapin)}
+.prod p{font-size:.88rem;color:var(--gris);margin:0 0 12px;flex:1}
+.prod .row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto}
+.prod .price{font-weight:700;color:var(--sapin);font-size:1.05rem}
+.prod .price small{font-weight:500;color:var(--gris);font-size:.78rem}
+.add{background:var(--sapin);color:var(--ivoire);border:none;border-radius:999px;min-height:44px;padding:0 16px;font-family:"Figtree",sans-serif;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.add:hover{background:var(--sapin-2)}
+.icon-chip{width:46px;height:46px;border-radius:50%;background:rgba(184,146,67,.16);display:flex;align-items:center;justify-content:center;color:var(--or);margin:16px 0 0 16px}
+
+/* panier */
+.cart{margin-top:24px}
+.cart h3{font-family:"Cardo",serif;color:var(--sapin);font-size:1.4rem;margin:0 0 12px;display:flex;align-items:center;gap:10px}
+.cart-items{list-style:none;margin:0 0 8px;padding:0}
+.cart-items li{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px dashed rgba(30,58,47,.18)}
+.cart-items .nm{flex:1}
+.cart-items .nm small{display:block;color:var(--gris);font-size:.8rem}
+.qty{display:inline-flex;align-items:center;border:1.5px solid rgba(30,58,47,.22);border-radius:999px;overflow:hidden}
+.qty button{width:38px;height:38px;border:none;background:var(--ivoire);color:var(--sapin);font-size:1.2rem;cursor:pointer;line-height:1}
+.qty button:hover{background:rgba(184,146,67,.2)}
+.qty span{min-width:30px;text-align:center;font-weight:600}
+.cart-empty{color:var(--gris);font-style:italic;padding:8px 0}
+.cart-total{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:1.15rem;color:var(--sapin);margin:14px 0}
+.cart-total .ship{font-size:.82rem;font-weight:500;color:var(--gris)}
+
+/* expédition tranches */
+.ship-table{width:100%;border-collapse:collapse;margin:8px 0 4px;font-size:.92rem}
+.ship-table th,.ship-table td{text-align:left;padding:9px 10px;border-bottom:1px solid rgba(30,58,47,.12)}
+.ship-table th{color:var(--sapin);font-weight:600;background:rgba(184,146,67,.1)}
+.ship-note{background:rgba(184,146,67,.1);border-left:3px solid var(--or);border-radius:8px;padding:12px 14px;font-size:.9rem;color:var(--encre);margin-top:14px}
+
+/* spécialités */
+.specs{display:grid;gap:18px;margin-top:28px}
+@media(min-width:760px){.specs{grid-template-columns:repeat(3,1fr)}}
+.spec{background:var(--blanc);border:1px solid rgba(30,58,47,.1);border-radius:var(--rayon);padding:24px 22px;box-shadow:0 8px 22px rgba(22,48,38,.06)}
+.spec .ico{width:54px;height:54px;border-radius:50%;background:var(--sapin);color:var(--or-clair);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.spec h3{font-size:1.4rem;color:var(--sapin);margin:0 0 6px}
+.spec p{color:var(--gris);font-size:.94rem;margin:0}
+.spec .award{display:inline-block;margin-top:12px;background:rgba(184,146,67,.16);color:#8a6b22;font-size:.76rem;font-weight:600;padding:5px 11px;border-radius:999px}
+
+/* histoire */
+.story{background:var(--sapin);color:var(--ivoire)}
+.story h2{color:var(--ivoire)}
+.story .lead{color:rgba(244,238,226,.85)}
+.timeline{display:grid;gap:14px;margin-top:30px;max-width:760px;margin-left:auto;margin-right:auto}
+.tl{display:flex;gap:16px;align-items:flex-start;background:rgba(244,238,226,.06);border:1px solid rgba(184,146,67,.3);border-radius:var(--rayon);padding:16px 18px}
+.tl .year{font-family:"Cardo",serif;font-size:1.5rem;color:var(--or-clair);min-width:62px;flex:none}
+.tl p{margin:0;color:rgba(244,238,226,.9);font-size:.95rem}
+.tl p b{color:var(--ivoire)}
+
+/* avis */
+.reviews{background:var(--ivoire-2)}
+.rev-head{display:flex;flex-direction:column;align-items:center;gap:6px;margin-bottom:8px}
+.rev-score{font-family:"Cardo",serif;font-size:2.6rem;color:var(--sapin);line-height:1}
+.rev-stars{color:var(--or);letter-spacing:2px;font-size:1.15rem}
+.rev-grid{display:grid;gap:16px;margin-top:28px}
+@media(min-width:760px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+.rev{background:var(--blanc);border:1px solid rgba(30,58,47,.1);border-radius:var(--rayon);padding:20px;box-shadow:0 8px 22px rgba(22,48,38,.06)}
+.rev .q{color:var(--or);font-family:"Cardo",serif;font-size:2.4rem;line-height:.4;height:18px;display:block}
+.rev p{font-style:italic;color:var(--encre);margin:6px 0 12px;font-size:.98rem}
+.rev .who{font-weight:600;font-size:.86rem;color:var(--sapin)}
+.rev .src{font-size:.74rem;color:var(--gris)}
+
+/* horaires + accès */
+.info-grid{display:grid;gap:22px;margin-top:24px}
+@media(min-width:820px){.info-grid{grid-template-columns:1fr 1fr}}
+.hours{list-style:none;margin:0;padding:0}
+.hours li{display:flex;justify-content:space-between;padding:11px 2px;border-bottom:1px solid rgba(30,58,47,.12)}
+.hours li.closed{color:var(--gris)}
+.hours li.closed .d{font-weight:600}
+.hours .badge-closed{background:rgba(30,58,47,.08);color:var(--gris);font-size:.74rem;padding:2px 9px;border-radius:999px}
+.hours li.today{background:rgba(184,146,67,.12);border-radius:8px;padding-left:8px;padding-right:8px}
+.hours .open-now{display:inline-block;margin-top:14px;font-weight:600;font-size:.88rem;color:var(--sapin)}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#3a8f5a;margin-right:6px;vertical-align:middle}
+.dot.off{background:#b15a4a}
+.access p{margin:0 0 8px}
+.access a{color:var(--sapin);font-weight:600}
+.map-link{display:inline-flex;align-items:center;gap:8px;margin-top:8px;color:var(--sapin);font-weight:600;text-decoration:none}
+.map-link:hover{color:var(--or)}
+
+/* footer */
+footer.site{background:var(--sapin-2);color:var(--ivoire);padding:42px 0 30px}
+footer .cols{display:grid;gap:26px}
+@media(min-width:760px){footer .cols{grid-template-columns:1.4fr 1fr 1fr}}
+footer h4{font-family:"Cardo",serif;color:var(--or-clair);font-size:1.2rem;margin:0 0 10px}
+footer a{color:rgba(244,238,226,.9);text-decoration:none}
+footer a:hover{color:var(--or-clair)}
+footer .brand-f b{font-family:"Cardo",serif;font-size:1.5rem;display:block}
+footer .brand-f span{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--or-clair)}
+footer p{color:rgba(244,238,226,.78);font-size:.9rem;margin:8px 0}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin:6px 0;font-size:.92rem}
+
+/* bandeau légal fixe */
+.legal{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;
+  background:rgba(15,30,24,.96);color:#d9d1bf;
+  font-size:.7rem;line-height:1.35;text-align:center;
+  padding:8px 14px;border-top:1px solid rgba(184,146,67,.5);
+  backdrop-filter:saturate(120%) blur(2px)
+}
+
+/* dialog démo */
+dialog{border:none;border-radius:18px;padding:0;max-width:440px;width:calc(100% - 32px);box-shadow:0 30px 80px rgba(0,0,0,.4);color:var(--encre)}
+dialog::backdrop{background:rgba(22,48,38,.62)}
+.modal-pad{padding:28px 26px 26px;text-align:center;background:var(--ivoire-2)}
+.modal-pad .seal{width:60px;height:60px;border-radius:50%;background:var(--sapin);color:var(--or-clair);display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.modal-pad h3{font-family:"Cardo",serif;color:var(--sapin);font-size:1.6rem;margin:0 0 8px}
+.modal-pad p{color:var(--gris);margin:0 0 8px;font-size:.95rem}
+.modal-recap{text-align:left;background:var(--blanc);border:1px solid rgba(30,58,47,.14);border-radius:12px;padding:14px 16px;margin:14px 0;font-size:.9rem}
+.modal-recap dt{font-weight:600;color:var(--sapin);float:left;clear:left;margin-right:6px}
+.modal-recap dd{margin:0 0 4px;color:var(--encre)}
+.modal-recap .tot{border-top:1px dashed rgba(30,58,47,.2);margin-top:8px;padding-top:8px;font-weight:700;color:var(--sapin)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<a class="sr-only" href="#main">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Cunin Mentré, accueil">
+      <b>Cunin&nbsp;Mentré</b>
+      <span>Charmes · depuis 1932</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#commander">Commander</a>
+      <a href="#specialites">Spécialités</a>
+      <a href="#histoire">L'histoire</a>
+      <a href="#avis">Avis</a>
+      <a href="#infos">Horaires</a>
+    </nav>
+    <a class="call" href="tel:+33329381237">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+      <span>03 29 38 12 37</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <span class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.95 6.36 6.99.78-5.2 4.73 1.43 6.88L12 17.77 5.83 21.5l1.43-6.88-5.2-4.73 6.99-.78z"/></svg>
+          Maison de famille · trois générations
+        </span>
+        <h1>Pâtisserie-chocolaterie à Charmes <em>depuis 1932</em></h1>
+        <p class="tag">Macarons primés, chocolats maison et gâteaux d'événements, façonnés rue Maurice&nbsp;Barrès depuis trois générations.</p>
+        <div class="stars" aria-label="Note Google 4,7 sur 5 sur 121 avis">
+          <span class="s" aria-hidden="true">★★★★★</span>
+          <span>4,7&nbsp;/&nbsp;5 · 121 avis Google</span>
+        </div>
+        <div class="cta">
+          <a class="btn btn-or" href="#commander">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            Commander en ligne
+          </a>
+          <a class="btn btn-ghost" href="tel:+33329381237">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            Appeler la boutique
+          </a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="img/hero-macarons.webp" width="1100" height="730" fetchpriority="high" alt="Macarons aux teintes pastel rangés en gros plan, spécialité de la maison Cunin Mentré">
+        <figcaption class="est">Établie en 1932</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST ===== -->
+<div class="trust">
+  <div class="wrap">
+    <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.95 6.36 6.99.78-5.2 4.73 1.43 6.88L12 17.77 5.83 21.5l1.43-6.88-5.2-4.73 6.99-.78z"/></svg> Macarons primés myrtille &amp; mirabelle</span>
+    <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7s-1.5-5-5-5a2.5 2.5 0 0 0 0 5z"/><path d="M12 7s1.5-5 5-5a2.5 2.5 0 0 1 0 5z"/></svg> Gâteaux de mariage &amp; événements</span>
+    <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Expédition de chocolats en France</span>
+  </div>
+</div>
+
+<!-- ===== WOW : COMMANDER ===== -->
+<section class="sec order" id="commander">
+  <div class="wrap center">
+    <span class="eyebrow">La boutique en ligne</span>
+    <h2>Commandez la maison Cunin&nbsp;Mentré</h2>
+    <div class="filet" aria-hidden="true"><span class="bar"></span><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.6 5.2L19 8l-4.4 3.5L16 17l-4-3-4 3 1.4-5.5L5 8l5.4-.8z"/></svg><span class="bar r"></span></div>
+    <p class="lead" style="margin-top:14px">Gâteau d'événement sur mesure, click &amp; collect de nos douceurs, ou expédition de nos chocolats : tout se prépare en quelques clics. <strong>Démonstration — aucun paiement n'est réellement encaissé.</strong></p>
+
+    <div class="tabs" role="tablist" aria-label="Choisir un mode de commande">
+      <button class="tab" role="tab" id="tab-event" aria-controls="panel-event" aria-selected="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2s4 3 4 7a4 4 0 1 1-8 0c0-4 4-7 4-7z"/><path d="M5 22h14"/><path d="M6 22v-5h12v5"/></svg>
+        Gâteau d'événement
+      </button>
+      <button class="tab" role="tab" id="tab-shop" aria-controls="panel-shop" aria-selected="false" tabindex="-1">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        Click &amp; collect
+      </button>
+      <button class="tab" role="tab" id="tab-ship" aria-controls="panel-ship" aria-selected="false" tabindex="-1">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        Expédier des chocolats
+      </button>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <!-- PANEL ÉVÉNEMENT -->
+    <div class="panel active" id="panel-event" role="tabpanel" aria-labelledby="tab-event">
+      <div class="order-split">
+        <figure class="order-fig">
+          <img src="img/wedding.webp" width="800" height="1000" loading="lazy" alt="Pièce montée de mariage à étages décorée de roses pastel">
+          <figcaption class="cap"><b>Pièces montées &amp; gâteaux d'événements</b><br>Mariage, baptême, anniversaire — sur mesure.</figcaption>
+        </figure>
+        <div class="card card-pad">
+          <h3 class="serif" style="color:var(--sapin);font-size:1.5rem;margin:0 0 4px">Demande de gâteau sur mesure</h3>
+          <p class="hint" style="margin-top:0">Indiquez votre projet, nous préparons un devis et confirmons la disponibilité.</p>
+          <form id="form-event" novalidate>
+            <div class="field">
+              <label for="ev-occasion">Occasion</label>
+              <select id="ev-occasion" name="occasion" required>
+                <option value="">Choisir…</option>
+                <option>Mariage</option>
+                <option>Baptême</option>
+                <option>Anniversaire</option>
+                <option>Communion</option>
+                <option>Autre événement</option>
+              </select>
+            </div>
+            <div class="grid2">
+              <div class="field">
+                <label for="ev-parts">Nombre de parts</label>
+                <input id="ev-parts" name="parts" type="number" min="6" max="300" step="1" placeholder="ex. 40" required>
+              </div>
+              <div class="field">
+                <label for="ev-date">Date de retrait</label>
+                <input id="ev-date" name="date" type="date" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="ev-msg">Message / inscription souhaitée</label>
+              <textarea id="ev-msg" name="message" placeholder="Parfums, couleurs, texte sur le gâteau…"></textarea>
+            </div>
+            <div class="grid2">
+              <div class="field">
+                <label for="ev-name">Votre nom</label>
+                <input id="ev-name" name="nom" type="text" autocomplete="name" placeholder="Nom et prénom" required>
+              </div>
+              <div class="field">
+                <label for="ev-tel">Téléphone</label>
+                <input id="ev-tel" name="tel" type="tel" autocomplete="tel" placeholder="06 ..." required>
+              </div>
+            </div>
+            <button class="btn btn-sapin" type="submit" style="width:100%">Envoyer ma demande</button>
+            <p class="hint center" style="margin-top:10px">Réponse sous 24&nbsp;h ouvrées. Sans engagement.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL CLICK & COLLECT -->
+    <div class="panel" id="panel-shop" role="tabpanel" aria-labelledby="tab-shop" hidden>
+      <!-- [À REMPLACER] Produits, descriptions et prix ci-dessous : exemples crédibles de pâtisserie-chocolaterie, à remplacer par la vraie carte de la maison. -->
+      <div class="shop" id="shop-grid">
+        <article class="prod card">
+          <div class="icon-chip" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg></div>
+          <div class="body">
+            <h4>Macarons myrtille</h4>
+            <p>Notre macaron primé, coque craquante et ganache de myrtille des Vosges.</p>
+            <div class="row">
+              <span class="price">12,50&nbsp;€ <small>/ boîte de 12</small></span>
+              <button class="add" data-name="Macarons myrtille (×12)" data-price="12.50">+ Ajouter</button>
+            </div>
+          </div>
+        </article>
+        <article class="prod card">
+          <div class="icon-chip" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg></div>
+          <div class="body">
+            <h4>Macarons mirabelle</h4>
+            <p>Le goût de la mirabelle de Lorraine en macaron, médaillé au concours.</p>
+            <div class="row">
+              <span class="price">12,50&nbsp;€ <small>/ boîte de 12</small></span>
+              <button class="add" data-name="Macarons mirabelle (×12)" data-price="12.50">+ Ajouter</button>
+            </div>
+          </div>
+        </article>
+        <article class="prod card">
+          <div class="icon-chip" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 4v16M15 4v16M4 9h16M4 15h16"/></svg></div>
+          <div class="body">
+            <h4>Ballotin de chocolats</h4>
+            <p>Assortiment maison de pralinés, ganaches et notre chocolat à la menthe.</p>
+            <div class="row">
+              <span class="price">18,00&nbsp;€ <small>/ 250 g</small></span>
+              <button class="add" data-name="Ballotin de chocolats (250 g)" data-price="18.00">+ Ajouter</button>
+            </div>
+          </div>
+        </article>
+        <article class="prod card">
+          <div class="icon-chip" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c-3 0-5 2-5 5 0 2 1 3 1 5h8c0-2 1-3 1-5 0-3-2-5-5-5z"/><path d="M8 18h8M9 21h6"/></svg></div>
+          <div class="body">
+            <h4>Choux à la nougatine</h4>
+            <p>Choux garnis et nougatine croquante, notre grand classique du dimanche.</p>
+            <div class="row">
+              <span class="price">2,80&nbsp;€ <small>/ pièce</small></span>
+              <button class="add" data-name="Chou à la nougatine" data-price="2.80">+ Ajouter</button>
+            </div>
+          </div>
+        </article>
+        <article class="prod card">
+          <div class="icon-chip" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-7 9 7"/><path d="M5 10v9h14v-9"/></svg></div>
+          <div class="body">
+            <h4>Tarte aux mirabelles</h4>
+            <p>Pâte sablée, crème d'amande et mirabelles de saison (6 parts).</p>
+            <div class="row">
+              <span class="price">19,90&nbsp;€ <small>/ 6 parts</small></span>
+              <button class="add" data-name="Tarte aux mirabelles (6 parts)" data-price="19.90">+ Ajouter</button>
+            </div>
+          </div>
+        </article>
+        <article class="prod card">
+          <div class="icon-chip" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12l-1 7H7z"/><path d="M7 10c0 4 2 6 5 6s5-2 5-6"/><path d="M9 16v4M15 16v4M8 21h8"/></svg></div>
+          <div class="body">
+            <h4>Tablettes de chocolat</h4>
+            <p>Tablettes de couverture, noir 70 % ou lait noisette, façonnées maison.</p>
+            <div class="row">
+              <span class="price">6,50&nbsp;€ <small>/ 100 g</small></span>
+              <button class="add" data-name="Tablette de chocolat (100 g)" data-price="6.50">+ Ajouter</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="card card-pad cart">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Mon panier
+        </h3>
+        <ul class="cart-items" id="cart-list" aria-live="polite"></ul>
+        <p class="cart-empty" id="cart-empty">Votre panier est vide — ajoutez vos douceurs préférées.</p>
+        <div class="cart-total"><span>Total</span><span id="cart-total">0,00&nbsp;€</span></div>
+        <form id="form-collect" novalidate>
+          <div class="grid2">
+            <div class="field">
+              <label for="cc-date">Jour de retrait</label>
+              <input id="cc-date" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="cc-slot">Créneau en boutique</label>
+              <select id="cc-slot" name="slot" required>
+                <option value="">Choisir…</option>
+                <option>09:00 – 09:30</option>
+                <option>10:30 – 11:00</option>
+                <option>11:30 – 12:00</option>
+                <option>15:00 – 15:30</option>
+                <option>16:30 – 17:00</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-or" type="submit" style="width:100%" id="cc-submit" disabled>Valider mon retrait en boutique</button>
+          <p class="hint center" style="margin-top:10px">Paiement au retrait, en boutique. Le panier est conservé sur votre appareil.</p>
+        </form>
+      </div>
+    </div>
+
+    <!-- PANEL EXPÉDITION -->
+    <div class="panel" id="panel-ship" role="tabpanel" aria-labelledby="tab-ship" hidden>
+      <div class="order-split">
+        <figure class="order-fig">
+          <img src="img/chocolat.webp" width="800" height="1000" loading="lazy" alt="Chocolats empilés garnis de fruits secs et d'une feuille de menthe sur fond sombre">
+          <figcaption class="cap"><b>Nos chocolats, partout en France</b><br>Emballage isotherme soigné, expédition suivie.</figcaption>
+        </figure>
+        <div class="card card-pad">
+          <h3 class="serif" style="color:var(--sapin);font-size:1.5rem;margin:0 0 4px">Expédier un coffret de chocolats</h3>
+          <p class="hint" style="margin-top:0">Estimez les frais de port selon le poids de votre coffret.</p>
+          <!-- [À REMPLACER] Tranches et tarifs de port factices, à caler sur les tarifs transporteur réels. -->
+          <table class="ship-table" aria-label="Tarifs d'expédition par tranche de poids">
+            <thead><tr><th>Poids du coffret</th><th>Frais de port</th></tr></thead>
+            <tbody>
+              <tr><td>Jusqu'à 500 g</td><td>6,90&nbsp;€</td></tr>
+              <tr><td>500 g à 1 kg</td><td>9,90&nbsp;€</td></tr>
+              <tr><td>1 kg à 2 kg</td><td>13,90&nbsp;€</td></tr>
+              <tr><td>Plus de 2 kg</td><td>16,90&nbsp;€</td></tr>
+            </tbody>
+          </table>
+          <form id="form-ship" novalidate>
+            <div class="grid2">
+              <div class="field">
+                <label for="sh-weight">Poids du coffret</label>
+                <select id="sh-weight" name="weight" required>
+                  <option value="">Choisir…</option>
+                  <option value="6.90">Jusqu'à 500 g</option>
+                  <option value="9.90">500 g à 1 kg</option>
+                  <option value="13.90">1 kg à 2 kg</option>
+                  <option value="16.90">Plus de 2 kg</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="sh-value">Montant des chocolats</label>
+                <input id="sh-value" name="value" type="number" min="20" step="0.5" placeholder="ex. 45" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="sh-zip">Code postal de livraison</label>
+              <input id="sh-zip" name="zip" type="text" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="ex. 75011" required>
+            </div>
+            <div class="ship-note" id="ship-estimate" aria-live="polite">Sélectionnez un poids pour estimer les frais de port.</div>
+            <button class="btn btn-sapin" type="submit" style="width:100%;margin-top:14px">Préparer l'expédition</button>
+            <p class="hint center" style="margin-top:10px">Livraison en France métropolitaine, 2 à 4 jours ouvrés.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== SPÉCIALITÉS ===== -->
+<section class="sec" id="specialites">
+  <div class="wrap center">
+    <span class="eyebrow">Le savoir-faire</span>
+    <h2>Nos spécialités</h2>
+    <div class="filet" aria-hidden="true"><span class="bar"></span><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.6 5.2L19 8l-4.4 3.5L16 17l-4-3-4 3 1.4-5.5L5 8l5.4-.8z"/></svg><span class="bar r"></span></div>
+    <!-- [À REMPLACER] Textes descriptifs des spécialités : crédibles, à valider avec la maison. -->
+    <div class="specs">
+      <article class="spec">
+        <div class="ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="9" rx="9" ry="4"/><path d="M3 9c0 2 4 4 9 4s9-2 9-4"/><path d="M3 9v6c0 2 4 4 9 4s9-2 9-4V9"/></svg></div>
+        <h3>Macarons primés</h3>
+        <p>Nos macarons myrtille et mirabelle, distingués en concours, restent la signature de la maison.</p>
+        <span class="award">★ Médaillés myrtille &amp; mirabelle</span>
+      </article>
+      <article class="spec">
+        <div class="ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 4v16M15 4v16M4 9h16M4 15h16"/></svg></div>
+        <h3>Chocolats maison</h3>
+        <p>Pralinés, ganaches et notre chocolat à la menthe, travaillés au laboratoire à chaque saison.</p>
+        <span class="award">Fabrication artisanale</span>
+      </article>
+      <article class="spec">
+        <div class="ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c-3 0-5 2-5 5 0 2 1 3 1 5h8c0-2 1-3 1-5 0-3-2-5-5-5z"/><path d="M8 18h8M9 21h6"/></svg></div>
+        <h3>Choux &amp; nougatine</h3>
+        <p>Choux garnis et nougatine croquante, et nos pièces montées pour vos grands jours.</p>
+        <span class="award">Pièces montées sur mesure</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HISTOIRE ===== -->
+<section class="sec story" id="histoire">
+  <div class="wrap center">
+    <span class="eyebrow">Le patrimoine</span>
+    <h2>Une maison de famille depuis 1932</h2>
+    <div class="filet" aria-hidden="true"><span class="bar"></span><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.6 5.2L19 8l-4.4 3.5L16 17l-4-3-4 3 1.4-5.5L5 8l5.4-.8z"/></svg><span class="bar r"></span></div>
+    <!-- [À REMPLACER] Récit de l'histoire : repères factuels et prudents (fondation 1932, trois générations). Détails à compléter et valider avec la maison. -->
+    <p class="lead" style="margin-top:14px">Depuis 1932, rue Maurice&nbsp;Barrès à Charmes, la maison Cunin&nbsp;Mentré transmet son métier de pâtissier-chocolatier de génération en génération. Trois générations plus tard, le même soin du geste perdure.</p>
+    <div class="timeline">
+      <div class="tl"><span class="year">1932</span><p><b>La fondation.</b> La pâtisserie ouvre ses portes au cœur de Charmes.</p></div>
+      <div class="tl"><span class="year" style="font-size:1.05rem;line-height:1.3">3<br>générations</span><p><b>La transmission.</b> Le savoir-faire passe de main en main, fidèle à l'esprit de la maison.</p></div>
+      <div class="tl"><span class="year">Auj.</span><p><b>Aujourd'hui.</b> Macarons primés, chocolats et gâteaux d'événements, dans la même exigence qu'hier.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AVIS ===== -->
+<section class="sec reviews" id="avis">
+  <div class="wrap center">
+    <span class="eyebrow">Ils en parlent</span>
+    <div class="rev-head" style="margin-top:6px">
+      <span class="rev-score">4,7</span>
+      <span class="rev-stars" aria-hidden="true">★★★★★</span>
+      <span style="color:var(--gris);font-size:.9rem">121 avis Google</span>
+    </div>
+    <!-- [À REMPLACER] Extraits d'avis illustratifs (≤ 15 mots) — à remplacer par de vrais avis Google publics. -->
+    <div class="rev-grid">
+      <article class="rev">
+        <span class="q" aria-hidden="true">“</span>
+        <p>Les meilleurs macarons de la région, on revient à chaque passage.</p>
+        <div class="who">Claire&nbsp;D.</div><div class="src">Avis Google</div>
+      </article>
+      <article class="rev">
+        <span class="q" aria-hidden="true">“</span>
+        <p>Pièce montée de mariage magnifique et délicieuse, merci la maison.</p>
+        <div class="who">Julien&nbsp;M.</div><div class="src">Avis Google</div>
+      </article>
+      <article class="rev">
+        <span class="q" aria-hidden="true">“</span>
+        <p>Chocolats fins et accueil chaleureux, une institution à Charmes.</p>
+        <div class="who">Sophie&nbsp;L.</div><div class="src">Avis Google</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INFOS : horaires + accès ===== -->
+<section class="sec" id="infos">
+  <div class="wrap center">
+    <span class="eyebrow">Nous trouver</span>
+    <h2>Horaires &amp; accès</h2>
+    <div class="filet" aria-hidden="true"><span class="bar"></span><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.6 5.2L19 8l-4.4 3.5L16 17l-4-3-4 3 1.4-5.5L5 8l5.4-.8z"/></svg><span class="bar r"></span></div>
+    <div class="info-grid" style="text-align:left">
+      <div class="card card-pad">
+        <h3 class="serif" style="color:var(--sapin);font-size:1.4rem;margin:0 0 10px">Horaires d'ouverture</h3>
+        <!-- [À REMPLACER] Horaires crédibles de pâtisserie ; seule la fermeture du lundi est une donnée publique confirmée. -->
+        <ul class="hours" id="hours">
+          <li class="closed" data-day="1"><span class="d">Lundi</span><span class="badge-closed">Fermé</span></li>
+          <li data-day="2"><span class="d">Mardi</span><span>8 h – 12 h 30 · 14 h – 19 h</span></li>
+          <li data-day="3"><span class="d">Mercredi</span><span>8 h – 12 h 30 · 14 h – 19 h</span></li>
+          <li data-day="4"><span class="d">Jeudi</span><span>8 h – 12 h 30 · 14 h – 19 h</span></li>
+          <li data-day="5"><span class="d">Vendredi</span><span>8 h – 12 h 30 · 14 h – 19 h</span></li>
+          <li data-day="6"><span class="d">Samedi</span><span>8 h – 12 h 30 · 14 h – 19 h</span></li>
+          <li data-day="0"><span class="d">Dimanche</span><span>8 h – 12 h 30</span></li>
+        </ul>
+        <span class="open-now" id="open-now" aria-live="polite"></span>
+      </div>
+      <div class="card card-pad access">
+        <h3 class="serif" style="color:var(--sapin);font-size:1.4rem;margin:0 0 10px">La boutique</h3>
+        <p><strong>Cunin&nbsp;Mentré</strong><br>3 rue Maurice&nbsp;Barrès<br>88130 Charmes</p>
+        <p><a href="tel:+33329381237">03 29 38 12 37</a></p>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Cunin+Mentr%C3%A9+3+rue+Maurice+Barr%C3%A8s+88130+Charmes" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Itinéraire sur Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <div class="brand-f"><b>Cunin&nbsp;Mentré</b><span>Pâtisserie · Chocolaterie · depuis 1932</span></div>
+      <p>Maison de famille à Charmes, trois générations de pâtissiers-chocolatiers. Macarons primés, chocolats et gâteaux d'événements.</p>
+    </div>
+    <div>
+      <h4>Nous contacter</h4>
+      <ul>
+        <li><a href="tel:+33329381237">03 29 38 12 37</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Cunin+Mentr%C3%A9+3+rue+Maurice+Barr%C3%A8s+88130+Charmes" target="_blank" rel="noopener">3 rue Maurice Barrès, 88130 Charmes</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Explorer</h4>
+      <ul>
+        <li><a href="#commander">Commander en ligne</a></li>
+        <li><a href="#specialites">Nos spécialités</a></li>
+        <li><a href="#histoire">L'histoire</a></li>
+        <li><a href="#infos">Horaires &amp; accès</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- DIALOG DÉMO -->
+<dialog id="demo-modal" aria-labelledby="demo-title">
+  <div class="modal-pad">
+    <div class="seal" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+    <h3 id="demo-title">Ceci est une démonstration</h3>
+    <p id="demo-sub">Récapitulatif de votre demande :</p>
+    <dl class="modal-recap" id="demo-recap"></dl>
+    <p class="hint">En production : confirmation par e-mail ou téléphone, paiement CB en ligne ou au retrait. Aucune donnée n'est ici envoyée ni encaissée.</p>
+    <button class="btn btn-sapin" id="demo-close" type="button" style="width:100%;margin-top:6px">Fermer</button>
+  </div>
+</dialog>
+
+<div class="legal" role="contentinfo">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</div>
+
+<script>
+(function(){
+  "use strict";
+  var euro=function(n){return n.toFixed(2).replace('.',',')+' €';};
+
+  /* ---- Onglets accessibles ---- */
+  var tabs=Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  function selectTab(tab){
+    tabs.forEach(function(t){
+      var sel=t===tab;
+      t.setAttribute('aria-selected',sel?'true':'false');
+      t.tabIndex=sel?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(sel){p.classList.add('active');p.hidden=false;}else{p.classList.remove('active');p.hidden=true;}
+    });
+  }
+  tabs.forEach(function(tab,i){
+    tab.addEventListener('click',function(){selectTab(tab);});
+    tab.addEventListener('keydown',function(e){
+      var idx=null;
+      if(e.key==='ArrowRight'){idx=(i+1)%tabs.length;}
+      else if(e.key==='ArrowLeft'){idx=(i-1+tabs.length)%tabs.length;}
+      else if(e.key==='Home'){idx=0;}
+      else if(e.key==='End'){idx=tabs.length-1;}
+      if(idx!==null){e.preventDefault();tabs[idx].focus();selectTab(tabs[idx]);}
+    });
+  });
+
+  /* ---- Modal démo ---- */
+  var modal=document.getElementById('demo-modal');
+  var recap=document.getElementById('demo-recap');
+  var sub=document.getElementById('demo-sub');
+  var lastFocus=null;
+  function openModal(pairs,subtitle){
+    sub.textContent=subtitle||'Récapitulatif de votre demande :';
+    recap.innerHTML='';
+    pairs.forEach(function(p){
+      var dt=document.createElement('dt');dt.textContent=p[0]+' :';
+      var dd=document.createElement('dd');dd.textContent=p[1];
+      if(p[2]==='tot'){dt.className='tot';dd.className='tot';}
+      recap.appendChild(dt);recap.appendChild(dd);
+    });
+    lastFocus=document.activeElement;
+    if(typeof modal.showModal==='function'){modal.showModal();}else{modal.setAttribute('open','');}
+    document.getElementById('demo-close').focus();
+  }
+  document.getElementById('demo-close').addEventListener('click',function(){modal.close&&modal.close();modal.removeAttribute('open');if(lastFocus)lastFocus.focus();});
+  modal.addEventListener('close',function(){if(lastFocus)lastFocus.focus();});
+
+  /* ---- Formulaire événement ---- */
+  document.getElementById('form-event').addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!this.reportValidity())return;
+    var f=this;
+    var parts=f.parts.value;
+    openModal([
+      ['Occasion',f.occasion.value],
+      ['Nombre de parts',parts+' parts'],
+      ['Date de retrait',f.date.value||'à préciser'],
+      ['Message',f.message.value||'—'],
+      ['Demandeur',f.nom.value+' · '+f.tel.value]
+    ],'Votre demande de gâteau a bien été préparée :');
+    f.reset();
+  });
+
+  /* ---- Click & collect : panier localStorage ---- */
+  var KEY='cunin_cart_v1';
+  var cart={};
+  try{cart=JSON.parse(localStorage.getItem(KEY))||{};}catch(e){cart={};}
+  var list=document.getElementById('cart-list');
+  var emptyMsg=document.getElementById('cart-empty');
+  var totalEl=document.getElementById('cart-total');
+  var ccSubmit=document.getElementById('cc-submit');
+
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(cart));}catch(e){}}
+  function renderCart(){
+    list.innerHTML='';
+    var keys=Object.keys(cart),total=0,count=0;
+    keys.forEach(function(k){
+      var it=cart[k];total+=it.price*it.qty;count+=it.qty;
+      var li=document.createElement('li');
+      var nm=document.createElement('div');nm.className='nm';
+      nm.innerHTML='<span>'+it.name+'</span><small>'+euro(it.price)+'</small>';
+      var q=document.createElement('div');q.className='qty';
+      var minus=document.createElement('button');minus.type='button';minus.textContent='−';minus.setAttribute('aria-label','Retirer un '+it.name);
+      var span=document.createElement('span');span.textContent=it.qty;
+      var plus=document.createElement('button');plus.type='button';plus.textContent='+';plus.setAttribute('aria-label','Ajouter un '+it.name);
+      minus.onclick=function(){it.qty--;if(it.qty<=0)delete cart[k];save();renderCart();};
+      plus.onclick=function(){it.qty++;save();renderCart();};
+      q.appendChild(minus);q.appendChild(span);q.appendChild(plus);
+      li.appendChild(nm);li.appendChild(q);list.appendChild(li);
+    });
+    emptyMsg.style.display=keys.length?'none':'block';
+    totalEl.innerHTML=euro(total);
+    ccSubmit.disabled=keys.length===0;
+  }
+  document.querySelectorAll('.add').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var name=btn.getAttribute('data-name'),price=parseFloat(btn.getAttribute('data-price'));
+      var k=name;
+      if(cart[k]){cart[k].qty++;}else{cart[k]={name:name,price:price,qty:1};}
+      save();renderCart();
+      btn.textContent='✓ Ajouté';setTimeout(function(){btn.textContent='+ Ajouter';},900);
+    });
+  });
+  renderCart();
+
+  document.getElementById('form-collect').addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!this.reportValidity())return;
+    var keys=Object.keys(cart);if(!keys.length)return;
+    var total=0,lines=[];
+    keys.forEach(function(k){var it=cart[k];total+=it.price*it.qty;lines.push([it.name,'× '+it.qty]);});
+    lines.push(['Retrait',this.date.value+' · '+this.slot.value]);
+    lines.push(['Total à régler au retrait',euro(total),'tot']);
+    openModal(lines,'Votre retrait en boutique est réservé :');
+    cart={};save();renderCart();this.reset();
+  });
+
+  /* ---- Expédition : estimation port ---- */
+  var shW=document.getElementById('sh-weight');
+  var shV=document.getElementById('sh-value');
+  var shEst=document.getElementById('ship-estimate');
+  function updateShip(){
+    var port=parseFloat(shW.value)||0;
+    var val=parseFloat(shV.value)||0;
+    if(!port){shEst.textContent='Sélectionnez un poids pour estimer les frais de port.';return;}
+    var txt='Frais de port : '+euro(port);
+    if(val>0)txt+=' · Total estimé : '+euro(val+port);
+    shEst.textContent=txt;
+  }
+  shW.addEventListener('change',updateShip);
+  shV.addEventListener('input',updateShip);
+  document.getElementById('form-ship').addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!this.reportValidity())return;
+    var port=parseFloat(this.weight.value)||0;
+    var val=parseFloat(this.value.value)||0;
+    var wtxt=shW.options[shW.selectedIndex].text;
+    openModal([
+      ['Coffret',wtxt],
+      ['Chocolats',euro(val)],
+      ['Frais de port',euro(port)],
+      ['Livraison',this.zip.value],
+      ['Total estimé',euro(val+port),'tot']
+    ],'Votre expédition est prête à être confirmée :');
+    this.reset();updateShip();
+  });
+
+  /* ---- Horaires : ouvert / fermé + jour ---- */
+  try{
+    var now=new Date();var day=now.getDay();var mins=now.getHours()*60+now.getMinutes();
+    var ranges={1:[],2:[[480,750],[840,1140]],3:[[480,750],[840,1140]],4:[[480,750],[840,1140]],5:[[480,750],[840,1140]],6:[[480,750],[840,1140]],0:[[480,750]]};
+    var li=document.querySelector('#hours li[data-day="'+day+'"]');if(li)li.classList.add('today');
+    var open=(ranges[day]||[]).some(function(r){return mins>=r[0]&&mins<r[1];});
+    var el=document.getElementById('open-now');
+    if(el)el.innerHTML=open?'<span class="dot"></span>Ouvert en ce moment':'<span class="dot off"></span>Actuellement fermé';
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
