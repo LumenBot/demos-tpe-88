@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>A LA BIEN' — Bar, pizzas & soirées à Thaon-les-Vosges, 4,9★</title>
+<meta name="description" content="A LA BIEN', le bar-brasserie convivial de Thaon-les-Vosges : pizzas, cocktails et soirées (karaoké, bachata). 4,9★ sur 62 avis. Ouvert tard ven-sam jusqu'à 1 h 30. 115 avenue des Fusillés.">
+<meta name="theme-color" content="#4A2C3F">
+
+<!-- Google Fonts non-bloquantes : preload + bascule (media print/onload), fallback noscript.
+     Bricolage Grotesque (display festif chaud) + Manrope (texte). Clash indisponible → Bricolage Grotesque. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Manrope:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Manrope:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Manrope:wght@400;500;700&display=swap"></noscript>
+
+<style>
+:root{
+  --prune:#4A2C3F; --prune2:#3a2231; --prune3:#5c3a4e;
+  --ambre:#E0922A; --ambre-d:#c47c1d; --creme:#F4ECE0; --creme2:#fbf6ee;
+  --fest:#E14B5A; /* touche festive (corail chaud) */
+  --txt:#2a1c25; --txt-soft:#6a5562; --txt-creme:#F4ECE0; --txt-creme-soft:#e3d3cd;
+  --line:#e7d8cc; --line-d:rgba(244,236,224,.16);
+  --ok:#3f8f5e; --radius:18px; --maxw:1080px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+body{
+  font-family:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  background:var(--creme); color:var(--txt); line-height:1.6;
+  -webkit-font-smoothing:antialiased; overflow-x:clip;
+  padding-bottom:58px; /* place pour le bandeau légal fixe */
+}
+h1,h2,h3,.display{font-family:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;line-height:1.1;letter-spacing:-.015em;font-weight:800}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 18px}
+section{padding:56px 0;position:relative}
+.eyebrow{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ambre-d);font-weight:700;margin-bottom:10px;font-family:"Manrope",sans-serif}
+h2{font-size:clamp(1.6rem,5.4vw,2.4rem);margin-bottom:10px}
+.lead{color:var(--txt-soft);max-width:60ch}
+
+/* Accessibilité focus */
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{
+  outline:3px solid var(--ambre);outline-offset:2px;border-radius:6px
+}
+.skip{position:absolute;left:-999px;top:0;background:var(--ambre);color:#2a1804;padding:10px 16px;font-weight:700;z-index:300;border-radius:0 0 10px 0}
+.skip:focus{left:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+
+/* Boutons / tap ≥ 44px */
+.btn{display:inline-flex;align-items:center;gap:9px;min-height:48px;padding:12px 22px;border-radius:999px;font-weight:700;font-family:"Manrope",sans-serif;font-size:1rem;cursor:pointer;border:2px solid transparent;transition:transform .15s ease,box-shadow .15s ease,background .15s;text-align:center;justify-content:center}
+.btn svg{width:20px;height:20px;flex:0 0 auto}
+.btn-amb{background:var(--ambre);color:#2a1804;box-shadow:0 8px 22px rgba(224,146,42,.32)}
+.btn-amb:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(224,146,42,.42)}
+.btn-fest{background:var(--fest);color:#fff;box-shadow:0 8px 22px rgba(225,75,90,.3)}
+.btn-fest:hover{transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--creme);border-color:var(--line-d)}
+.btn-ghost:hover{border-color:var(--ambre);color:var(--ambre)}
+.btn-outline{background:transparent;color:var(--prune);border-color:var(--prune)}
+.btn-outline:hover{background:var(--prune);color:var(--creme)}
+.btn-sm{min-height:44px;padding:9px 16px;font-size:.92rem}
+
+/* ====== HEADER ====== */
+header.nav{position:sticky;top:0;z-index:120;background:rgba(74,44,63,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-d);color:var(--txt-creme)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;gap:12px}
+.brand{display:flex;align-items:center;gap:9px;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.14rem;letter-spacing:.01em;color:var(--creme)}
+.brand .dot{width:11px;height:11px;border-radius:50%;background:var(--ambre);box-shadow:0 0 10px var(--ambre);animation:glow 2.6s ease-in-out infinite}
+@keyframes glow{0%,100%{opacity:1}50%{opacity:.5}}
+.brand b{color:var(--ambre)}
+.nav-cta{display:flex;gap:8px;align-items:center}
+.nav-links{display:none}
+.nav-links a{font-weight:600;color:var(--txt-creme-soft);font-size:.95rem;padding:6px 4px}
+.nav-links a:hover{color:var(--ambre)}
+@media(min-width:920px){.nav-links{display:flex;gap:22px}}
+
+/* ====== HERO ====== */
+.hero{padding:0;position:relative;overflow:hidden;background:var(--prune);color:var(--txt-creme)}
+.hero-inner{display:grid;gap:0;align-items:stretch;grid-template-columns:1fr}
+@media(min-width:900px){.hero-inner{grid-template-columns:1.04fr .96fr;gap:30px}}
+.hero-txt{padding:46px 18px 44px;position:relative;z-index:2}
+@media(min-width:900px){.hero-txt{padding:74px 0 74px 18px;max-width:600px;margin-left:auto;width:100%}}
+.badge-open{display:inline-flex;align-items:center;gap:8px;background:rgba(224,146,42,.14);border:1px solid rgba(224,146,42,.4);color:var(--ambre);font-weight:700;font-size:.82rem;padding:7px 14px;border-radius:999px;margin-bottom:18px}
+.badge-open .live{width:9px;height:9px;border-radius:50%;background:var(--ambre);box-shadow:0 0 8px var(--ambre);animation:glow 1.8s infinite}
+.hero h1{font-size:clamp(2.1rem,8.4vw,3.4rem);margin-bottom:16px}
+.hero h1 .amb{color:var(--ambre)}
+.hero h1 .fest{color:var(--fest)}
+.hero p.sub{color:var(--txt-creme-soft);font-size:1.06rem;margin-bottom:26px;max-width:46ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.stars{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-size:.92rem;color:var(--txt-creme-soft)}
+.stars b{color:var(--creme)}
+.stars .s{color:var(--ambre);letter-spacing:1px}
+.hero-media{position:relative;min-height:280px}
+.hero-media img{width:100%;height:100%;object-fit:cover;min-height:280px}
+@media(min-width:900px){.hero-media img{min-height:560px}}
+.hero-media::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(74,44,63,.5) 0%,rgba(74,44,63,0) 32%,rgba(74,44,63,0) 60%,rgba(74,44,63,.5) 100%)}
+@media(min-width:900px){.hero-media::after{background:linear-gradient(90deg,rgba(74,44,63,.96) 0%,rgba(74,44,63,0) 46%)}}
+/* halos festifs chauds */
+.halo{position:absolute;border-radius:50%;filter:blur(72px);opacity:.45;z-index:0;pointer-events:none}
+.halo.a{width:260px;height:260px;background:var(--ambre);top:-70px;left:-50px}
+.halo.f{width:220px;height:220px;background:var(--fest);bottom:-80px;right:-40px;opacity:.3}
+
+/* bandeau "tickets" festif */
+.ticker{background:var(--ambre);color:#2a1804;font-weight:700;font-size:.86rem;overflow:hidden;white-space:nowrap;position:relative;z-index:3}
+.ticker .tk-track{display:inline-flex;gap:34px;padding:10px 0;animation:tick 26s linear infinite}
+.ticker .tk-track span{display:inline-flex;align-items:center;gap:9px}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ====== AGENDA (WOW 1) ====== */
+#agenda{background:var(--prune);color:var(--txt-creme)}
+#agenda .eyebrow{color:var(--ambre)}
+#agenda .lead{color:var(--txt-creme-soft)}
+.agenda-banner{position:relative;margin-top:26px;border-radius:var(--radius);overflow:hidden}
+.agenda-banner img{width:100%;height:200px;object-fit:cover}
+.agenda-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(74,44,63,.7),rgba(74,44,63,.1))}
+.agenda-banner figcaption{position:absolute;left:18px;bottom:14px;z-index:2;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.1rem;color:var(--creme);max-width:70%;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+.agenda-grid{display:grid;gap:16px;grid-template-columns:1fr;margin-top:22px}
+@media(min-width:680px){.agenda-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.agenda-grid{grid-template-columns:1fr 1fr 1fr}}
+.ev{background:var(--prune2);border:1px solid var(--line-d);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:12px;transition:transform .15s,border-color .15s}
+.ev:hover{transform:translateY(-3px);border-color:rgba(224,146,42,.5)}
+.ev-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.ev-date{display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--ambre);color:#2a1804;border-radius:14px;min-width:62px;padding:9px 8px;line-height:1;font-family:"Bricolage Grotesque",sans-serif}
+.ev-date .d{font-size:1.5rem;font-weight:800}
+.ev-date .m{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-top:4px}
+.ev-date .dow{font-size:.64rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-top:3px;opacity:.8}
+.badge-theme{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:5px 11px;border-radius:999px;align-self:flex-start}
+.bt-karaoke{background:rgba(225,75,90,.18);color:#ff9aa3;border:1px solid rgba(225,75,90,.5)}
+.bt-bachata{background:rgba(224,146,42,.18);color:var(--ambre);border:1px solid rgba(224,146,42,.5)}
+.bt-blind{background:rgba(120,170,255,.16);color:#aecaff;border:1px solid rgba(120,170,255,.4)}
+.bt-live{background:rgba(120,210,150,.16);color:#9fe0b6;border:1px solid rgba(120,210,150,.4)}
+.ev h3{font-size:1.18rem}
+.ev .ev-desc{font-size:.92rem;color:var(--txt-creme-soft)}
+.ev .ev-meta{font-size:.84rem;color:var(--ambre);font-weight:700;display:flex;align-items:center;gap:7px;margin-top:auto}
+.ev .btn{width:100%}
+
+/* ====== RÉSERVATION (WOW 2) ====== */
+#reserver{background:var(--creme)}
+.resa{display:grid;gap:22px;grid-template-columns:1fr;margin-top:26px}
+@media(min-width:880px){.resa{grid-template-columns:1.25fr .9fr;align-items:start}}
+.panel{background:var(--creme2);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:0 10px 30px rgba(74,44,63,.06)}
+.panel h3{font-size:1.1rem;margin-bottom:4px}
+.toggle{display:flex;gap:8px;background:#efe2d6;border-radius:999px;padding:5px;margin:14px 0 6px}
+.toggle .opt{flex:1}
+.toggle .opt input{position:absolute;opacity:0;width:1px;height:1px}
+.toggle .opt label{display:flex;align-items:center;justify-content:center;gap:7px;min-height:44px;border-radius:999px;cursor:pointer;font-weight:700;font-size:.94rem;color:var(--txt-soft);transition:background .15s,color .15s}
+.toggle .opt input:checked+label{background:var(--prune);color:var(--creme)}
+.toggle .opt input:focus-visible+label{outline:3px solid var(--ambre);outline-offset:2px}
+.field{margin-top:16px}
+.field>label{display:block;font-weight:700;font-size:.86rem;margin-bottom:8px}
+.row2{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+input,select{width:100%;min-height:48px;background:#fff;color:var(--txt);border:1.5px solid var(--line);border-radius:12px;padding:10px 14px;font:inherit;font-weight:600}
+input::placeholder{color:#a796a0;font-weight:500}
+.steppers{display:flex;align-items:center;gap:14px}
+.steppers button{width:46px;height:46px;border-radius:12px;border:1.5px solid var(--line);background:#fff;font-size:1.4rem;font-weight:800;cursor:pointer;color:var(--prune);line-height:1;display:flex;align-items:center;justify-content:center}
+.steppers button:hover{border-color:var(--ambre);color:var(--ambre-d)}
+.steppers .count{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.5rem;min-width:42px;text-align:center}
+.soiree-pick{display:none}
+.note{font-size:.82rem;color:var(--txt-soft);margin-top:12px;display:flex;gap:7px;align-items:flex-start}
+.note svg{flex:0 0 auto;margin-top:2px;color:var(--ambre-d)}
+.recap{background:var(--prune);color:var(--txt-creme);border-radius:var(--radius);padding:22px}
+.recap h3{font-size:1.05rem;margin-bottom:14px;color:var(--ambre)}
+.recap dl{display:grid;grid-template-columns:auto 1fr;gap:10px 14px;font-size:.95rem}
+.recap dt{color:var(--txt-creme-soft);font-weight:600}
+.recap dd{text-align:right;font-weight:700}
+.recap .hr{grid-column:1/-1;height:1px;background:var(--line-d);margin:4px 0}
+.recap .btn{width:100%;margin-top:18px}
+
+/* ====== CARTE ====== */
+#carte{background:var(--prune2);color:var(--txt-creme)}
+#carte .eyebrow{color:var(--ambre)}
+.tabs{display:inline-flex;gap:6px;background:rgba(244,236,224,.08);border-radius:999px;padding:5px;margin:20px 0 4px}
+.tabs button{min-height:42px;padding:8px 20px;border-radius:999px;border:0;background:transparent;color:var(--txt-creme-soft);font-weight:700;font-size:.95rem;cursor:pointer;font-family:"Manrope",sans-serif}
+.tabs button[aria-selected="true"]{background:var(--ambre);color:#2a1804}
+.menu-grid{display:grid;gap:0;grid-template-columns:1fr;margin-top:22px}
+@media(min-width:760px){.menu-grid{grid-template-columns:1fr 1fr;gap:0 40px}}
+.menu-line{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:15px 0;border-bottom:1px dashed var(--line-d)}
+.ml-l{min-width:0}
+.ml-l b{font-weight:700;font-size:1.02rem}
+.ml-l span{display:block;font-size:.84rem;color:var(--txt-creme-soft);margin-top:2px}
+.ml-price{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;color:var(--ambre);white-space:nowrap;font-size:1.05rem}
+.carte-media{margin-top:30px;border-radius:var(--radius);overflow:hidden;position:relative}
+.carte-media img{width:100%;height:220px;object-fit:cover}
+.carte-media figcaption{position:absolute;left:0;bottom:0;right:0;padding:26px 18px 14px;font-size:.86rem;font-weight:600;color:var(--creme);background:linear-gradient(0deg,rgba(58,34,49,.85),transparent)}
+
+/* ====== AVIS ====== */
+#avis{background:var(--creme)}
+.note-big{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:8px}
+.note-big .n{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:3rem;color:var(--prune);line-height:1}
+.note-big .s{color:var(--ambre);font-size:1.3rem;letter-spacing:2px}
+.note-big .meta{color:var(--txt-soft);font-weight:600;font-size:.95rem}
+.reviews{display:grid;gap:16px;grid-template-columns:1fr;margin-top:26px}
+@media(min-width:720px){.reviews{grid-template-columns:1fr 1fr 1fr}}
+.rev{background:var(--creme2);border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:10px}
+.rev .s{color:var(--ambre);letter-spacing:1px;font-size:1rem}
+.rev p{font-size:.98rem}
+.rev .who{display:flex;align-items:center;gap:10px;margin-top:auto;font-size:.86rem;color:var(--txt-soft);font-weight:600}
+.rev .av{width:34px;height:34px;border-radius:50%;background:var(--prune);color:var(--creme);display:flex;align-items:center;justify-content:center;font-weight:800;font-family:"Bricolage Grotesque",sans-serif;flex:0 0 auto}
+.rev .gg{font-size:.74rem;color:var(--txt-soft);font-weight:600;display:inline-flex;align-items:center;gap:6px}
+
+/* ====== HORAIRES / ACCÈS ====== */
+#infos{background:var(--prune);color:var(--txt-creme)}
+#infos .eyebrow{color:var(--ambre)}
+.info-grid{display:grid;gap:24px;grid-template-columns:1fr;margin-top:26px}
+@media(min-width:820px){.info-grid{grid-template-columns:1fr 1fr}}
+.hours{list-style:none;display:flex;flex-direction:column;gap:2px}
+.hours li{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line-d);font-size:.96rem}
+.hours li:last-child{border-bottom:0}
+.hours .day{font-weight:700}
+.hours .h{color:var(--txt-creme-soft);font-weight:600}
+.hours li.closed .h{color:#d99}
+.hours li.late .h{color:var(--ambre)}
+.hours li.today{background:rgba(224,146,42,.1);border-radius:10px;padding-left:12px;padding-right:12px;margin:0 -12px;border-bottom:0}
+.info-card .row{display:flex;gap:13px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line-d)}
+.info-card .row:last-child{border-bottom:0}
+.info-card svg{flex:0 0 auto;color:var(--ambre);width:22px;height:22px;margin-top:2px}
+.info-card a{font-weight:700;color:var(--creme);text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(224,146,42,.5)}
+.info-card .lab{font-size:.78rem;color:var(--txt-creme-soft);text-transform:uppercase;letter-spacing:.08em;font-weight:700;margin-bottom:2px}
+
+/* ====== FOOTER ====== */
+footer.ft{background:var(--prune2);color:var(--txt-creme-soft);padding:40px 0 28px;border-top:1px solid var(--line-d)}
+.ft-grid{display:grid;gap:24px;grid-template-columns:1fr;align-items:start}
+@media(min-width:760px){.ft-grid{grid-template-columns:1.3fr 1fr 1fr}}
+.ft .brand{margin-bottom:12px}
+.ft h4{font-family:"Bricolage Grotesque",sans-serif;color:var(--creme);font-size:.95rem;margin-bottom:12px;letter-spacing:.04em}
+.ft a{color:var(--txt-creme-soft)}
+.ft a:hover{color:var(--ambre)}
+.ft ul{list-style:none;display:flex;flex-direction:column;gap:8px;font-size:.94rem}
+.ft .copy{margin-top:26px;padding-top:18px;border-top:1px solid var(--line-d);font-size:.82rem;color:var(--txt-creme-soft);display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:space-between}
+
+/* ====== MODALE DÉMO ====== */
+.modal{position:fixed;inset:0;z-index:400;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(42,28,37,.6);backdrop-filter:blur(4px)}
+.modal.on{display:flex}
+.modal-box{background:var(--creme2);color:var(--txt);border-radius:22px;max-width:430px;width:100%;padding:30px 26px;text-align:center;box-shadow:0 26px 60px rgba(0,0,0,.4);position:relative}
+.modal-box .ic{width:64px;height:64px;border-radius:50%;background:var(--ambre);color:#2a1804;display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.modal-box .ic svg{width:34px;height:34px}
+.modal-box h3{font-size:1.4rem;margin-bottom:10px}
+.modal-box p{color:var(--txt-soft);margin-bottom:8px}
+.modal-box .demo-recap{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-align:left;font-size:.92rem;margin:16px 0;font-weight:600}
+.modal-box .demo-recap span{color:var(--ambre-d)}
+.modal-box .btn{width:100%;margin-top:6px}
+.modal-close{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:0;background:#efe2d6;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--prune)}
+
+/* ====== BANDEAU LÉGAL FIXE ====== */
+.legal{position:fixed;left:0;right:0;bottom:0;z-index:200;background:var(--prune);color:var(--txt-creme-soft);font-size:.72rem;line-height:1.35;padding:9px 14px;text-align:center;border-top:1px solid var(--line-d)}
+.legal b{color:var(--ambre);font-weight:700}
+@media(min-width:560px){.legal{font-size:.76rem}}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Aller au contenu</a>
+
+<!-- ====== HEADER ====== -->
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="A LA BIEN', accueil">
+      <span class="dot" aria-hidden="true"></span> A LA <b>BIEN'</b>
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#agenda">Soirées</a>
+      <a href="#reserver">Réserver</a>
+      <a href="#carte">La carte</a>
+      <a href="#avis">Avis</a>
+      <a href="#infos">Horaires</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-amb btn-sm" href="tel:+33329399232">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="sr">Appeler </span>Appeler
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ====== HERO ====== -->
+<section class="hero" aria-labelledby="hero-h">
+  <span class="halo a" aria-hidden="true"></span>
+  <span class="halo f" aria-hidden="true"></span>
+  <div class="hero-inner">
+    <div class="hero-txt">
+      <span class="badge-open"><span class="live" aria-hidden="true"></span> <span id="open-state">Bar &amp; brasserie · Thaon-les-Vosges</span></span>
+      <h1 id="hero-h">Bar, pizzas &amp; <span class="amb">soirées</span> à&nbsp;Thaon <span class="fest">— 4,9★</span></h1>
+      <p class="sub">Le rendez-vous convivial de l'avenue des Fusillés : pizzas généreuses, cocktails au zinc et soirées karaoké &amp; bachata. On y vient pour boire un verre, on y reste pour la fête.</p>
+      <div class="hero-cta">
+        <a class="btn btn-amb" href="#agenda">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Voir les soirées
+        </a>
+        <a class="btn btn-ghost" href="#reserver">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Réserver
+        </a>
+      </div>
+      <p class="stars"><span class="s" aria-hidden="true">★★★★★</span> <b>4,9 / 5</b> · 62 avis Google</p>
+    </div>
+    <div class="hero-media">
+      <img src="img/hero-bar.webp" width="1040" height="690" alt="Intérieur chaleureux du bar A LA BIEN' : comptoir en bois, bouteilles et lumière ambrée" fetchpriority="high" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- bandeau festif défilant -->
+<div class="ticker" aria-hidden="true">
+  <div class="tk-track">
+    <span>★ Karaoké tous les vendredis</span><span>★ Soirées bachata</span><span>★ Pizzas maison</span><span>★ Cocktails au zinc</span><span>★ Ouvert jusqu'à 1 h 30 ven-sam</span>
+    <span>★ Karaoké tous les vendredis</span><span>★ Soirées bachata</span><span>★ Pizzas maison</span><span>★ Cocktails au zinc</span><span>★ Ouvert jusqu'à 1 h 30 ven-sam</span>
+  </div>
+</div>
+
+<!-- ====== WOW 1 : AGENDA DES SOIRÉES ====== -->
+<section id="agenda" aria-labelledby="agenda-h">
+  <div class="wrap">
+    <span class="eyebrow">L'agenda des soirées</span>
+    <h2 id="agenda-h">Les prochains rendez-vous festifs</h2>
+    <p class="lead">Karaoké, bachata, blind-test, concert live… Il se passe toujours quelque chose au A LA BIEN'. Réservez votre table ou votre place pour la soirée de votre choix.</p>
+    <figure class="agenda-banner">
+      <img src="img/soiree.webp" width="800" height="600" alt="Ambiance de soirée au A LA BIEN' : foule, scène et lumières colorées" loading="lazy" decoding="async">
+      <figcaption>Des soirées qui font vibrer Thaon</figcaption>
+    </figure>
+    <!-- [À REMPLACER] thèmes, descriptifs et entrées réelles à fournir par l'établissement ; dates générées automatiquement sur les prochains vendredis/samedis -->
+    <div class="agenda-grid" id="agenda-grid"></div>
+  </div>
+</section>
+
+<!-- ====== WOW 2 : RÉSERVATION ====== -->
+<section id="reserver" aria-labelledby="resa-h">
+  <div class="wrap">
+    <span class="eyebrow">Réservation en ligne</span>
+    <h2 id="resa-h">Réservez une table ou une soirée</h2>
+    <p class="lead">En quelques secondes, gardez votre place pour un verre entre amis ou pour l'une de nos soirées à thème. Confirmation immédiate.</p>
+
+    <form class="resa" id="resa-form" novalidate>
+      <div class="panel">
+        <h3>Votre demande</h3>
+        <div class="toggle" role="radiogroup" aria-label="Type de réservation">
+          <div class="opt"><input type="radio" name="type" id="t-table" value="table" checked><label for="t-table">🍽️ Une table</label></div>
+          <div class="opt"><input type="radio" name="type" id="t-soiree" value="soiree"><label for="t-soiree">🎉 Une soirée</label></div>
+        </div>
+
+        <div class="field soiree-pick" id="soiree-pick">
+          <label for="r-soiree">Soirée à thème</label>
+          <select id="r-soiree" name="soiree"></select>
+        </div>
+
+        <div class="row2">
+          <div class="field"><label for="r-date">Date</label><input type="date" id="r-date" name="date" required></div>
+          <div class="field"><label for="r-heure">Heure</label>
+            <select id="r-heure" name="heure" required>
+              <option value="19:00">19 h 00</option>
+              <option value="19:30">19 h 30</option>
+              <option value="20:00" selected>20 h 00</option>
+              <option value="20:30">20 h 30</option>
+              <option value="21:00">21 h 00</option>
+              <option value="21:30">21 h 30</option>
+              <option value="22:00">22 h 00</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label id="lbl-pers">Nombre de personnes</label>
+          <div class="steppers" role="group" aria-labelledby="lbl-pers">
+            <button type="button" id="minus" aria-label="Retirer une personne">−</button>
+            <span class="count" id="pers-count" aria-live="polite">2</span>
+            <button type="button" id="plus" aria-label="Ajouter une personne">+</button>
+          </div>
+        </div>
+
+        <div class="row2">
+          <div class="field"><label for="r-nom">Votre nom</label><input type="text" id="r-nom" name="nom" placeholder="Ex. Camille D." required autocomplete="name"></div>
+          <div class="field"><label for="r-tel">Téléphone</label><input type="tel" id="r-tel" name="tel" placeholder="06 12 34 56 78" required autocomplete="tel"></div>
+        </div>
+
+        <p class="note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          Les soirées à thème sont très demandées : réservez tôt votre table. Fermé le mardi.
+        </p>
+      </div>
+
+      <aside class="recap" aria-live="polite">
+        <h3>Récapitulatif</h3>
+        <dl>
+          <dt>Type</dt><dd id="rc-type">Table</dd>
+          <dt>Date</dt><dd id="rc-date">—</dd>
+          <dt>Heure</dt><dd id="rc-heure">20 h 00</dd>
+          <dt>Personnes</dt><dd id="rc-pers">2</dd>
+          <div class="hr"></div>
+          <dt>Lieu</dt><dd>A LA BIEN'</dd>
+        </dl>
+        <button type="submit" class="btn btn-amb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          Confirmer ma réservation
+        </button>
+      </aside>
+    </form>
+  </div>
+</section>
+
+<!-- ====== CARTE ====== -->
+<section id="carte" aria-labelledby="carte-h">
+  <div class="wrap">
+    <span class="eyebrow">La carte</span>
+    <h2 id="carte-h">Côté pizzas, côté bar</h2>
+    <p class="lead">Une sélection d'exemple de nos incontournables. Pizzas cuites minute et belle ardoise de boissons au comptoir.</p>
+
+    <div class="tabs" role="tablist" aria-label="Sections de la carte">
+      <button role="tab" id="tab-pizzas" aria-selected="true" aria-controls="p-pizzas">🍕 Pizzas</button>
+      <button role="tab" id="tab-bar" aria-selected="false" aria-controls="p-bar">🍹 Bar</button>
+    </div>
+
+    <!-- [À REMPLACER] noms, descriptifs et prix réels de la carte de l'établissement -->
+    <div id="p-pizzas" role="tabpanel" aria-labelledby="tab-pizzas">
+      <div class="menu-grid">
+        <div class="menu-line"><div class="ml-l"><b>Margherita</b><span>Sauce tomate, mozzarella, basilic</span></div><div class="ml-price">9,50 €</div></div>
+        <div class="menu-line"><div class="ml-l"><b>Reine</b><span>Tomate, mozza, jambon, champignons</span></div><div class="ml-price">11,50 €</div></div>
+        <div class="menu-line"><div class="ml-l"><b>4 Fromages</b><span>Mozza, chèvre, bleu, emmental</span></div><div class="ml-price">12,50 €</div></div>
+        <div class="menu-line"><div class="ml-l"><b>Vosgienne</b><span>Crème, lardons, munster, oignons</span></div><div class="ml-price">13,00 €</div></div>
+        <div class="menu-line"><div class="ml-l"><b>Chorizo Picante</b><span>Tomate, mozza, chorizo, piment</span></div><div class="ml-price">12,50 €</div></div>
+        <div class="menu-line"><div class="ml-l"><b>La BIEN'</b><span>Tomate, mozza, chèvre, miel, noix</span></div><div class="ml-price">13,50 €</div></div>
+      </div>
+    </div>
+
+    <div id="p-bar" role="tabpanel" aria-labelledby="tab-bar" hidden>
+      <div class="menu-grid">
+        <div class="menu-line"><div class="ml-l"><b>Pression 25 cl</b><span>Bière blonde du moment</span></div><div class="ml-price">3,50 €</div></div>
+        <div class="menu-line"><div class="ml-l"><b>Cocktail maison</b><span>Old Fashioned, Spritz, Mojito…</span></div><div class="ml-price">7,50 €</div></div>
+        <div class="menu-line"><div class="ml-l"><b>Verre de vin</b><span>Sélection régionale</span></div><div class="ml-price">4,00 €</div></div>
+        <div class="menu-line"><div class="ml-l"><b>Planche apéro</b><span>Charcuterie &amp; fromages à partager</span></div><div class="ml-price">14,00 €</div></div>
+        <div class="menu-line"><div class="ml-l"><b>Soft &amp; jus</b><span>Sodas, jus de fruits, eaux</span></div><div class="ml-price">2,80 €</div></div>
+        <div class="menu-line"><div class="ml-l"><b>Mocktail sans alcool</b><span>Frais &amp; fruité, sans modération</span></div><div class="ml-price">5,50 €</div></div>
+      </div>
+    </div>
+
+    <figure class="carte-media">
+      <img src="img/cocktail.webp" width="800" height="600" alt="Cocktail ambré versé sur glaçon avec zeste d'orange, posé sur le zinc du bar" loading="lazy" decoding="async">
+      <figcaption>Cocktails préparés minute au comptoir.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ====== AVIS ====== -->
+<section id="avis" aria-labelledby="avis-h">
+  <div class="wrap">
+    <span class="eyebrow">Ils sont venus, ils sont revenus</span>
+    <h2 id="avis-h">4,9★ sur Google</h2>
+    <div class="note-big">
+      <span class="n">4,9</span>
+      <div>
+        <div class="s" aria-hidden="true">★★★★★</div>
+        <div class="meta">sur 62 avis Google</div>
+      </div>
+    </div>
+
+    <!-- [À REMPLACER] extraits d'avis Google authentiques (≤ 15 mots chacun, mention « Avis Google ») -->
+    <div class="reviews">
+      <div class="rev">
+        <div class="s" aria-hidden="true">★★★★★</div>
+        <p>« Ambiance au top, super accueil et les soirées karaoké sont géniales ! »</p>
+        <div class="who"><span class="av" aria-hidden="true">M</span> Mathieu L. · <span class="gg">Avis Google</span></div>
+      </div>
+      <div class="rev">
+        <div class="s" aria-hidden="true">★★★★★</div>
+        <p>« Bonnes pizzas, cocktails maison et une équipe vraiment chaleureuse. »</p>
+        <div class="who"><span class="av" aria-hidden="true">S</span> Sophie R. · <span class="gg">Avis Google</span></div>
+      </div>
+      <div class="rev">
+        <div class="s" aria-hidden="true">★★★★★</div>
+        <p>« Notre bar préféré à Thaon, on y passe toutes nos soirées. »</p>
+        <div class="who"><span class="av" aria-hidden="true">K</span> Kévin B. · <span class="gg">Avis Google</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== HORAIRES / ACCÈS ====== -->
+<section id="infos" aria-labelledby="infos-h">
+  <div class="wrap">
+    <span class="eyebrow">Infos pratiques</span>
+    <h2 id="infos-h">Horaires &amp; accès</h2>
+    <div class="info-grid">
+      <div>
+        <ul class="hours" id="hours-list" aria-label="Horaires d'ouverture">
+          <li data-day="1"><span class="day">Lundi</span><span class="h">17 h 00 – 23 h 00</span></li>
+          <li data-day="2" class="closed"><span class="day">Mardi</span><span class="h">Fermé</span></li>
+          <li data-day="3"><span class="day">Mercredi</span><span class="h">17 h 00 – 23 h 00</span></li>
+          <li data-day="4"><span class="day">Jeudi</span><span class="h">17 h 00 – 23 h 00</span></li>
+          <li data-day="5" class="late"><span class="day">Vendredi</span><span class="h">17 h 00 – 1 h 30</span></li>
+          <li data-day="6" class="late"><span class="day">Samedi</span><span class="h">15 h 00 – 1 h 30</span></li>
+          <li data-day="0"><span class="day">Dimanche</span><span class="h">15 h 00 – 22 h 00</span></li>
+        </ul>
+        <!-- [À REMPLACER] horaires exacts à confirmer (ven-sam jusqu'à 1 h 30 ; fermé mardi confirmés) -->
+      </div>
+
+      <div class="info-card">
+        <div class="row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><div class="lab">Adresse</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=A+LA+BIEN%27+115+avenue+des+Fusill%C3%A9s+88150+Thaon-les-Vosges" target="_blank" rel="noopener">115 avenue des Fusillés, 88150 Thaon-les-Vosges</a>
+          </div>
+        </div>
+        <div class="row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div><div class="lab">Téléphone</div><a href="tel:+33329399232">03 29 39 92 32</a></div>
+        </div>
+        <div class="row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <div><div class="lab">Le bon plan</div><span style="color:var(--txt-creme-soft);font-weight:600">Ouvert tard les vendredis &amp; samedis, jusqu'à 1 h 30. La nuit est à vous.</span></div>
+        </div>
+        <div class="row" style="border-bottom:0">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <div><div class="lab">Soirées</div><a href="#agenda">Voir l'agenda des prochaines soirées</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ====== FOOTER ====== -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <a class="brand" href="#main"><span class="dot" aria-hidden="true"></span> A LA <b>BIEN'</b></a>
+        <p style="font-size:.94rem">Bar, brasserie, pizzas &amp; soirées à Thaon-les-Vosges. Le rendez-vous convivial de l'avenue des Fusillés.</p>
+      </div>
+      <div>
+        <h4>Coordonnées</h4>
+        <ul>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=A+LA+BIEN%27+115+avenue+des+Fusill%C3%A9s+88150+Thaon-les-Vosges" target="_blank" rel="noopener">115 av. des Fusillés<br>88150 Thaon-les-Vosges</a></li>
+          <li><a href="tel:+33329399232">03 29 39 92 32</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Naviguer</h4>
+        <ul>
+          <li><a href="#agenda">Les soirées</a></li>
+          <li><a href="#reserver">Réserver</a></li>
+          <li><a href="#carte">La carte</a></li>
+          <li><a href="#infos">Horaires &amp; accès</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© <span id="year">2026</span> A LA BIEN' · Thaon-les-Vosges</span>
+      <span>Maquette de démonstration — L'Atelier Web des Vosges</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ====== MODALE DÉMO ====== -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-h" aria-describedby="modal-d">
+  <div class="modal-box">
+    <button class="modal-close" id="modal-close" aria-label="Fermer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="ic" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+    </div>
+    <h3 id="modal-h">Ceci est une démonstration</h3>
+    <p id="modal-d">Votre demande a bien été simulée. Sur le site en production, elle serait transmise à l'équipe du A LA BIEN' avec confirmation par SMS.</p>
+    <div class="demo-recap" id="modal-recap"></div>
+    <button class="btn btn-amb" id="modal-ok">J'ai compris</button>
+  </div>
+</div>
+
+<!-- ====== BANDEAU LÉGAL FIXE ====== -->
+<p class="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</p>
+
+<!-- ====== JSON-LD ====== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "A LA BIEN'",
+  "image": "img/hero-bar.webp",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "115 avenue des Fusillés",
+    "postalCode": "88150",
+    "addressLocality": "Thaon-les-Vosges",
+    "addressCountry": "FR"
+  },
+  "telephone": "+33329399232",
+  "url": "",
+  "servesCuisine": ["Pizza", "Bar", "Brasserie"],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "62"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 48.245199, "longitude": 6.4163208 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday","Thursday"], "opens": "17:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "17:00", "closes": "01:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "15:00", "closes": "01:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "15:00", "closes": "22:00" }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  "use strict";
+  var MOIS = ["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."];
+  var JOURS = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---------- Génère les prochains vendredis/samedis pour l'agenda ---------- */
+  // [À REMPLACER] : remplacer ce planning d'exemple par le vrai calendrier de l'établissement
+  var PLANNING = [
+    {dow:5, theme:"Karaoké géant", cls:"bt-karaoke", desc:"Le micro est à vous ! Tubes d'hier et d'aujourd'hui, ambiance garantie.", meta:"Dès 21 h · Entrée libre"},
+    {dow:6, theme:"Soirée bachata", cls:"bt-bachata", desc:"Initiation puis bal : on chauffe la piste jusqu'au bout de la nuit.", meta:"Dès 21 h 30 · Initiation offerte"},
+    {dow:5, theme:"Blind-test", cls:"bt-blind", desc:"Équipes, buzzers et lots à gagner. Qui a la meilleure oreille ?", meta:"Dès 20 h 30 · Sur réservation"},
+    {dow:6, theme:"Concert live", cls:"bt-live", desc:"Groupe local sur scène, pizzas au four et cocktails au comptoir.", meta:"Dès 21 h · Entrée libre"},
+    {dow:5, theme:"Karaoké géant", cls:"bt-karaoke", desc:"Deuxième manche de la semaine pour les voix d'or de Thaon.", meta:"Dès 21 h · Entrée libre"},
+    {dow:6, theme:"Soirée bachata", cls:"bt-bachata", desc:"Le rendez-vous des danseurs, débutants bienvenus.", meta:"Dès 21 h 30 · Initiation offerte"}
+  ];
+
+  function nextDow(from, dow){
+    var d = new Date(from.getFullYear(), from.getMonth(), from.getDate());
+    var add = (dow - d.getDay() + 7) % 7;
+    if(add === 0) add = 7; // toujours à venir
+    d.setDate(d.getDate() + add);
+    return d;
+  }
+
+  // Construit la liste chronologique des prochaines occurrences
+  var today = new Date();
+  var cursor = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  var seen = {5:new Date(cursor), 6:new Date(cursor)};
+  var events = [];
+  var counts = {5:0, 6:0};
+  for(var i=0;i<PLANNING.length;i++){
+    var p = PLANNING[i];
+    var base = seen[p.dow];
+    var date = nextDow(base, p.dow);
+    seen[p.dow] = date; // avance pour la prochaine occurrence du même jour
+    events.push({date:date, p:p});
+  }
+  events.sort(function(a,b){return a.date - b.date;});
+
+  var grid = document.getElementById('agenda-grid');
+  var soireeSelect = document.getElementById('r-soiree');
+  events.forEach(function(ev, idx){
+    var d = ev.date, p = ev.p;
+    var card = document.createElement('article');
+    card.className = 'ev';
+    card.innerHTML =
+      '<div class="ev-top">'+
+        '<div class="ev-date"><span class="d">'+d.getDate()+'</span><span class="m">'+MOIS[d.getMonth()]+'</span><span class="dow">'+JOURS[d.getDay()].slice(0,3)+'</span></div>'+
+        '<span class="badge-theme '+p.cls+'">'+p.theme+'</span>'+
+      '</div>'+
+      '<h3>'+p.theme+'</h3>'+
+      '<p class="ev-desc">'+p.desc+'</p>'+
+      '<p class="ev-meta"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>'+p.meta+'</p>'+
+      '<button type="button" class="btn btn-fest btn-sm reserve-ev">Réserver pour cette soirée</button>';
+    grid.appendChild(card);
+
+    // peuple le menu déroulant de réservation
+    var label = p.theme + ' — ' + d.getDate() + ' ' + MOIS[d.getMonth()];
+    var opt = document.createElement('option');
+    opt.value = label;
+    opt.dataset.date = fmtISO(d);
+    opt.textContent = label;
+    soireeSelect.appendChild(opt);
+
+    card.querySelector('.reserve-ev').addEventListener('click', function(){
+      document.getElementById('t-soiree').checked = true;
+      onTypeChange();
+      soireeSelect.selectedIndex = idx;
+      dateInput.value = fmtISO(d);
+      updateRecap();
+      document.getElementById('reserver').scrollIntoView({behavior: prefersReduced()?'auto':'smooth'});
+      setTimeout(function(){document.getElementById('r-heure').focus();}, prefersReduced()?0:400);
+    });
+  });
+
+  function fmtISO(d){
+    var m = (d.getMonth()+1), day = d.getDate();
+    return d.getFullYear()+'-'+(m<10?'0'+m:m)+'-'+(day<10?'0'+day:day);
+  }
+  function prefersReduced(){
+    return window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  }
+
+  /* ---------- État "ouvert / fermé" du hero ---------- */
+  (function(){
+    var open = {1:[17,23],3:[17,23],4:[17,23],5:[17,25.5],6:[15,25.5],0:[15,22]}; // 25.5 = 1 h 30
+    var now = new Date(); var dow = now.getDay(); var h = now.getHours()+now.getMinutes()/60;
+    var rule = open[dow]; var isOpen = false;
+    if(rule){ isOpen = h >= rule[0] && h < (rule[1]>24?24:rule[1]); }
+    // gère le débordement après minuit (ven/sam → 1 h 30 le lendemain matin)
+    var prev = (dow+6)%7; var pr = open[prev];
+    if(!isOpen && pr && pr[1]>24 && h < (pr[1]-24)) isOpen = true;
+    var el = document.getElementById('open-state');
+    if(el){ el.textContent = isOpen ? "Ouvert maintenant · Thaon-les-Vosges" : "Bar & brasserie · Thaon-les-Vosges"; }
+    // surligne le jour courant dans les horaires
+    var li = document.querySelector('#hours-list li[data-day="'+dow+'"]');
+    if(li) li.classList.add('today');
+  })();
+
+  /* ---------- Réservation ---------- */
+  var form = document.getElementById('resa-form');
+  var dateInput = document.getElementById('r-date');
+  var heureSel = document.getElementById('r-heure');
+  var persCount = document.getElementById('pers-count');
+  var pers = 2;
+  // date par défaut = prochain vendredi
+  dateInput.value = fmtISO(nextDow(new Date(), 5));
+  dateInput.min = fmtISO(new Date());
+
+  function onTypeChange(){
+    var isSoiree = document.getElementById('t-soiree').checked;
+    document.getElementById('soiree-pick').style.display = isSoiree ? 'block' : 'none';
+    document.getElementById('rc-type').textContent = isSoiree ? 'Soirée' : 'Table';
+    if(isSoiree){
+      var opt = soireeSelect.options[soireeSelect.selectedIndex];
+      if(opt && opt.dataset.date) dateInput.value = opt.dataset.date;
+    }
+    updateRecap();
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('input[name="type"]'), function(r){
+    r.addEventListener('change', onTypeChange);
+  });
+  soireeSelect.addEventListener('change', function(){
+    var opt = soireeSelect.options[soireeSelect.selectedIndex];
+    if(opt && opt.dataset.date) dateInput.value = opt.dataset.date;
+    updateRecap();
+  });
+
+  document.getElementById('minus').addEventListener('click', function(){ if(pers>1){pers--; persCount.textContent=pers; updateRecap();} });
+  document.getElementById('plus').addEventListener('click', function(){ if(pers<20){pers++; persCount.textContent=pers; updateRecap();} });
+  dateInput.addEventListener('change', updateRecap);
+  heureSel.addEventListener('change', updateRecap);
+
+  function frDate(iso){
+    if(!iso) return '—';
+    var p = iso.split('-'); var d = new Date(+p[0], +p[1]-1, +p[2]);
+    return JOURS[d.getDay()].charAt(0).toUpperCase()+JOURS[d.getDay()].slice(1)+' '+d.getDate()+' '+MOIS[d.getMonth()];
+  }
+  function frHeure(v){ return v.replace(':',' h '); }
+
+  function updateRecap(){
+    document.getElementById('rc-date').textContent = frDate(dateInput.value);
+    document.getElementById('rc-heure').textContent = frHeure(heureSel.value);
+    document.getElementById('rc-pers').textContent = pers;
+  }
+  updateRecap();
+
+  /* ---------- Onglets carte ---------- */
+  var tabP = document.getElementById('tab-pizzas'), tabB = document.getElementById('tab-bar');
+  function selTab(active, other, panA, panB){
+    active.setAttribute('aria-selected','true'); other.setAttribute('aria-selected','false');
+    document.getElementById(panA).hidden = false; document.getElementById(panB).hidden = true;
+  }
+  tabP.addEventListener('click', function(){ selTab(tabP,tabB,'p-pizzas','p-bar'); });
+  tabB.addEventListener('click', function(){ selTab(tabB,tabP,'p-bar','p-pizzas'); });
+
+  /* ---------- Modale démo ---------- */
+  var modal = document.getElementById('modal');
+  var lastFocus = null;
+  function openModal(html){
+    document.getElementById('modal-recap').innerHTML = html;
+    lastFocus = document.activeElement;
+    modal.classList.add('on');
+    document.getElementById('modal-ok').focus();
+  }
+  function closeModal(){
+    modal.classList.remove('on');
+    if(lastFocus) lastFocus.focus();
+  }
+  document.getElementById('modal-ok').addEventListener('click', closeModal);
+  document.getElementById('modal-close').addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if(e.target===modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && modal.classList.contains('on')) closeModal(); });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var nom = document.getElementById('r-nom');
+    var tel = document.getElementById('r-tel');
+    if(!nom.value.trim()){ nom.focus(); nom.reportValidity(); return; }
+    if(!tel.value.trim()){ tel.focus(); tel.reportValidity(); return; }
+    var isSoiree = document.getElementById('t-soiree').checked;
+    var resa = {
+      type: isSoiree ? 'Soirée' : 'Table',
+      soiree: isSoiree ? soireeSelect.value : null,
+      date: dateInput.value, heure: heureSel.value, pers: pers,
+      nom: nom.value.trim(), tel: tel.value.trim(), ts: Date.now()
+    };
+    try{ localStorage.setItem('alabien_resa', JSON.stringify(resa)); }catch(err){}
+    var lines =
+      '<div>'+ (isSoiree ? '🎉 '+soireeSelect.value : '🍽️ Réservation de table') +'</div>'+
+      '<div>📅 <span>'+frDate(resa.date)+'</span> à <span>'+frHeure(resa.heure)+'</span></div>'+
+      '<div>👥 '+resa.pers+' personne'+(resa.pers>1?'s':'')+' · '+resa.nom+'</div>';
+    openModal(lines);
+    form.reset();
+    document.getElementById('t-table').checked = true;
+    pers = 2; persCount.textContent = pers;
+    dateInput.value = fmtISO(nextDow(new Date(), 5));
+    onTypeChange();
+  });
+
+  onTypeChange();
+})();
+</script>
+</body>
+</html>
