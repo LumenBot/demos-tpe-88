@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Boulangerie Remiremont — Le Fournil du Point du Jour | Pain & viennoiseries, ouvert le dimanche</title>
+<meta name="description" content="Le Fournil du Point du Jour, votre boulangerie de quartier à Remiremont (88200). Pains, viennoiseries et gâteaux. Click & collect en ligne, ouvert le dimanche. 4,2★ sur 297 avis.">
+<meta name="theme-color" content="#D89A3C">
+
+<!-- Polices Google : Newsreader (display chaleureux) + Albert Sans (texte) — chargement NON bloquant (preload + media print + noscript), fallbacks système -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Albert+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Albert+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Albert+Sans:wght@400;500;600;700&display=swap"></noscript>
+
+<!-- [À REMPLACER] Prix, descriptifs et contenu du click & collect, extraits d'avis : illustratifs.
+     NAP (nom, adresse, téléphone), note Google (4,2★/297) et ouverture le dimanche = données réelles publiques. -->
+<style>
+:root{
+  --ambre:#D89A3C;          /* blé doré */
+  --ambre-fonce:#A8702A;
+  --soleil:#E8A87C;         /* lever de soleil, rose-orangé doux */
+  --soleil-clair:#F4C9A6;
+  --creme:#FBF3E6;
+  --creme-2:#F4E7D0;
+  --encre:#3A2A1A;          /* brun encre, texte */
+  --encre-doux:#5E4A36;
+  --blanc:#FFFDF8;
+  --ok:#3F7A4E;
+  --rayon:16px;
+  --rayon-s:11px;
+  --ombre:0 10px 30px rgba(58,42,26,.12);
+  --ombre-s:0 4px 14px rgba(58,42,26,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:"Albert Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color:var(--encre);background:var(--creme);line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:96px; /* réserve sous le bandeau légal fixe (ajusté en JS) */
+}
+h1,h2,h3{font-family:"Newsreader","Georgia",serif;font-weight:600;line-height:1.12;margin:0 0 .4em;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,7.5vw,3.4rem)}
+h2{font-size:clamp(1.55rem,5vw,2.4rem)}
+h3{font-size:1.18rem}
+p{margin:0 0 1em}
+a{color:var(--ambre-fonce)}
+img{max-width:100%;display:block;height:auto}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 18px}
+section{padding:54px 0}
+.eyebrow{font-family:"Albert Sans",sans-serif;font-weight:700;text-transform:uppercase;
+  letter-spacing:.16em;font-size:.74rem;color:var(--ambre-fonce);margin:0 0 .6em}
+.lead{font-size:1.08rem;color:var(--encre-doux);max-width:60ch}
+:focus-visible{outline:3px solid var(--ambre-fonce);outline-offset:3px;border-radius:6px}
+
+/* ── Boutons ── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  min-height:48px;padding:13px 22px;border:0;border-radius:999px;cursor:pointer;
+  font-family:"Albert Sans",sans-serif;font-weight:700;font-size:1rem;text-decoration:none;
+  transition:transform .12s ease,box-shadow .12s ease,background .15s ease;line-height:1.1}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--encre);color:var(--creme);box-shadow:var(--ombre-s)}
+.btn-primary:hover{background:#2a1d10}
+.btn-soleil{background:linear-gradient(120deg,var(--ambre),var(--soleil));color:#3a2310;box-shadow:var(--ombre-s)}
+.btn-soleil:hover{filter:brightness(1.04)}
+.btn-ghost{background:var(--blanc);color:var(--encre);border:2px solid var(--creme-2)}
+.btn-ghost:hover{border-color:var(--ambre)}
+.btn-fin{min-height:44px;padding:9px 16px;font-size:.92rem}
+@media(max-width:440px){.nav-cta .btn-ghost{display:none}.brand b{font-size:1.05rem}}
+
+/* ── En-tête ── */
+header{position:sticky;top:0;z-index:80;background:rgba(251,243,230,.92);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--creme-2)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:62px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--encre)}
+.brand b{font-family:"Newsreader",serif;font-weight:600;font-size:1.18rem;line-height:1.05}
+.brand small{display:block;font-family:"Albert Sans",sans-serif;font-weight:600;
+  font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ambre-fonce)}
+.nav-cta{display:flex;align-items:center;gap:8px}
+#lien-panier{position:relative}
+#panier-compte{font-weight:700}
+
+/* ── Soleil levant signature ── */
+.sun-wrap{line-height:0}
+.sun{display:block}
+
+/* ── Hero ── */
+.hero{position:relative;overflow:hidden;padding:0}
+.hero-sky{position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(120% 80% at 50% 112%, var(--soleil) 0%, var(--soleil-clair) 26%, var(--creme) 60%);}
+.hero-inner{position:relative;z-index:2;padding:30px 0 46px;
+  display:grid;gap:26px;grid-template-columns:1fr}
+.hero-copy{max-width:60ch}
+.badge-row{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.badge{display:inline-flex;align-items:center;gap:6px;background:var(--blanc);
+  border:1px solid var(--creme-2);border-radius:999px;padding:6px 13px;
+  font-size:.82rem;font-weight:600;box-shadow:var(--ombre-s)}
+.badge .star{color:var(--ambre);font-weight:700}
+.badge-open{background:#eaf5ec;border-color:#cfe6d4;color:#235c33}
+.hero h1{margin-top:.1em}
+.hero .lead{margin-bottom:22px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:11px}
+.hero-figure{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--ombre);
+  border:6px solid var(--blanc)}
+.hero-figure img{width:100%;aspect-ratio:10/7;object-fit:cover}
+.hero-figure figcaption{position:absolute;left:12px;bottom:12px;
+  background:rgba(58,42,26,.82);color:var(--creme);font-size:.78rem;font-weight:600;
+  padding:6px 12px;border-radius:999px}
+
+/* ── Bandeau infos rapides ── */
+.quick{background:var(--encre);color:var(--creme);padding:16px 0}
+.quick .wrap{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:center;
+  font-size:.92rem;text-align:center}
+.quick a{color:var(--soleil-clair);font-weight:700;text-decoration:none}
+.quick a:hover{text-decoration:underline}
+.quick .dot{opacity:.4}
+
+/* ── Click & collect ── */
+#commander{background:linear-gradient(180deg,var(--creme) 0%,var(--creme-2) 100%)}
+.cc-head{display:grid;gap:6px;margin-bottom:24px}
+.cc-grid{display:grid;gap:22px;grid-template-columns:1fr}
+.cat-titre{font-size:1.02rem;margin:8px 0 12px;display:flex;align-items:center;gap:9px;
+  color:var(--ambre-fonce);text-transform:uppercase;letter-spacing:.06em;font-family:"Albert Sans",sans-serif;font-weight:700}
+.produits{display:grid;gap:14px;grid-template-columns:1fr}
+.produit{background:var(--blanc);border:1px solid var(--creme-2);border-radius:var(--rayon);
+  padding:16px 16px 14px;box-shadow:var(--ombre-s);display:flex;flex-direction:column;gap:6px}
+.produit h4{font-family:"Newsreader",serif;font-weight:600;font-size:1.16rem;margin:0}
+.produit .desc{font-size:.9rem;color:var(--encre-doux);margin:0;flex:1}
+.produit .bas{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:6px}
+.produit .prix{font-weight:700;font-size:1.05rem}
+.produit .prix small{font-weight:500;color:var(--encre-doux);font-size:.78rem}
+
+/* ── Panier ── */
+.panier{position:sticky;top:74px;align-self:start;background:var(--blanc);
+  border:1px solid var(--creme-2);border-radius:var(--rayon);box-shadow:var(--ombre);
+  padding:18px;display:flex;flex-direction:column;gap:12px}
+.panier h3{display:flex;align-items:center;gap:8px;margin:0}
+#panier-vide{color:var(--encre-doux);font-size:.92rem;margin:0}
+#panier-lignes{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+#panier-lignes li{display:grid;grid-template-columns:1fr auto;gap:4px 10px;
+  align-items:center;padding-bottom:12px;border-bottom:1px dashed var(--creme-2)}
+.l-nom{font-weight:600;font-size:.95rem}
+.l-nom small{display:block;font-weight:500;color:var(--encre-doux);font-size:.76rem}
+.l-qte{display:inline-flex;align-items:center;gap:2px;grid-row:2}
+.l-qte button{width:34px;height:34px;border:1px solid var(--creme-2);background:var(--creme);
+  border-radius:9px;font-size:1.1rem;cursor:pointer;color:var(--encre);line-height:1}
+.l-qte span{min-width:26px;text-align:center;font-weight:700}
+.l-total{font-weight:700;text-align:right}
+.l-suppr{grid-row:2;justify-self:end;background:none;border:0;color:var(--ambre-fonce);
+  font-size:.8rem;cursor:pointer;text-decoration:underline;padding:6px;min-height:34px}
+.panier-creneau{display:flex;flex-direction:column;gap:6px;margin-top:2px}
+.panier-creneau label{font-weight:600;font-size:.9rem}
+.panier-creneau select{min-height:46px;border:1px solid var(--creme-2);border-radius:10px;
+  padding:0 12px;font-family:inherit;font-size:1rem;background:var(--creme);color:var(--encre)}
+.panier-pied{border-top:2px solid var(--creme-2);padding-top:12px;display:flex;flex-direction:column;gap:10px}
+.panier-ligne-total{display:flex;justify-content:space-between;align-items:baseline;font-size:1.05rem}
+.panier-ligne-total b{font-size:1.3rem;font-family:"Newsreader",serif}
+.panier .note{font-size:.78rem;color:var(--encre-doux);margin:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ── Produits (vitrine) ── */
+.vitrine{display:grid;gap:18px;grid-template-columns:1fr;margin-top:8px}
+.v-card{background:var(--blanc);border-radius:var(--rayon);overflow:hidden;
+  box-shadow:var(--ombre-s);border:1px solid var(--creme-2)}
+.v-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.v-body{padding:18px}
+.v-body ul{margin:.4em 0 0;padding-left:1.1em;color:var(--encre-doux);font-size:.95rem}
+.v-body li{margin:.25em 0}
+
+/* ── Avis ── */
+#avis{background:var(--blanc)}
+.note-globale{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.note-chiffre{font-family:"Newsreader",serif;font-size:3rem;line-height:1;color:var(--ambre-fonce)}
+.stars{color:var(--ambre);font-size:1.2rem;letter-spacing:2px}
+.note-globale small{color:var(--encre-doux);font-size:.9rem}
+.avis-grid{display:grid;gap:16px;grid-template-columns:1fr}
+.avis-card{background:var(--creme);border:1px solid var(--creme-2);border-radius:var(--rayon);padding:18px}
+.avis-card .stars{font-size:1rem;margin-bottom:8px}
+.avis-card p{font-style:italic;font-size:1.05rem;font-family:"Newsreader",serif;margin:0 0 10px}
+.avis-card .qui{font-size:.84rem;color:var(--encre-doux);font-style:normal;font-weight:600;margin:0}
+.avis-src{font-size:.8rem;color:var(--encre-doux);margin-top:14px}
+
+/* ── Horaires ── */
+#horaires{background:linear-gradient(180deg,var(--creme-2),var(--creme))}
+.h-grid{display:grid;gap:22px;grid-template-columns:1fr}
+.h-table{background:var(--blanc);border-radius:var(--rayon);box-shadow:var(--ombre-s);
+  border:1px solid var(--creme-2);overflow:hidden}
+.h-row{display:flex;justify-content:space-between;gap:12px;padding:13px 18px;
+  border-bottom:1px solid var(--creme-2);font-size:.97rem}
+.h-row:last-child{border-bottom:0}
+.h-row.dim{background:linear-gradient(120deg,rgba(232,168,124,.22),rgba(216,154,60,.14));font-weight:700}
+.h-row .jour{font-weight:600}
+.h-row.dim .jour::after{content:" ☀";color:var(--ambre-fonce)}
+.h-row .ferme{color:var(--encre-doux);font-weight:500}
+.h-aside{background:var(--encre);color:var(--creme);border-radius:var(--rayon);padding:22px}
+.h-aside h3{color:var(--soleil-clair)}
+.h-aside a{color:var(--soleil-clair);font-weight:700}
+.h-aside .open-now{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);
+  border-radius:999px;padding:7px 14px;font-weight:600;font-size:.9rem;margin-bottom:6px}
+.open-now .pip{width:10px;height:10px;border-radius:50%;background:#7fd69a;box-shadow:0 0 0 4px rgba(127,214,154,.25)}
+.open-now.closed .pip{background:#e0a06b;box-shadow:0 0 0 4px rgba(224,160,107,.25)}
+
+/* ── Footer ── */
+footer{background:var(--encre);color:var(--creme);padding:46px 0 30px}
+.foot-grid{display:grid;gap:26px;grid-template-columns:1fr}
+.foot-grid h3{color:var(--creme)}
+footer a{color:var(--soleil-clair)}
+.foot-nap{font-style:normal;line-height:1.8}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:18px;
+  font-size:.82rem;color:#cbb89c}
+
+/* ── Bandeau légal fixe ── */
+#legal{position:fixed;left:0;right:0;bottom:0;z-index:90;background:#2a1d10;color:#e6d3b3;
+  font-size:.72rem;line-height:1.45;padding:9px 14px;text-align:center;
+  border-top:1px solid rgba(255,255,255,.1)}
+
+/* ── Overlay démo ── */
+#demo-overlay{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;
+  padding:20px;background:rgba(42,29,16,.74);backdrop-filter:blur(3px)}
+#demo-overlay.on{display:flex}
+.demo-box{background:var(--creme);border-radius:22px;max-width:440px;width:100%;padding:30px 26px;
+  text-align:center;box-shadow:var(--ombre);position:relative}
+.demo-box .sun{margin:0 auto 12px}
+.demo-box h3{font-size:1.7rem}
+.demo-box p{color:var(--encre-doux)}
+.demo-recap{background:var(--blanc);border:1px solid var(--creme-2);border-radius:var(--rayon-s);
+  padding:14px 16px;text-align:left;font-size:.92rem;margin:14px 0 18px}
+.demo-recap dt{font-weight:700;color:var(--ambre-fonce);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}
+.demo-recap dd{margin:2px 0 10px}
+.demo-recap dd:last-child{margin-bottom:0}
+
+/* ── Larges écrans ── */
+@media (min-width:760px){
+  .hero-inner{grid-template-columns:1.05fr .95fr;align-items:center;padding:46px 0 60px}
+  .produits{grid-template-columns:1fr 1fr}
+  .cc-grid{grid-template-columns:1.6fr 1fr}
+  .vitrine{grid-template-columns:1fr 1fr}
+  .avis-grid{grid-template-columns:1fr 1fr 1fr}
+  .h-grid{grid-template-columns:1.3fr 1fr}
+  .foot-grid{grid-template-columns:1.4fr 1fr 1fr}
+}
+@media (min-width:1024px){
+  .vitrine{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- ════════ EN-TÊTE ════════ -->
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Le Fournil du Point du Jour, accueil">
+      <span class="sun-wrap" aria-hidden="true">
+        <svg class="sun" width="34" height="34" viewBox="0 0 48 48" role="img">
+          <defs><linearGradient id="g-sun" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#E8A87C"/><stop offset="1" stop-color="#D89A3C"/>
+          </linearGradient></defs>
+          <line x1="24" y1="34" x2="44" y2="34" stroke="#A8702A" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M9 34 A15 15 0 0 1 39 34 Z" fill="url(#g-sun)"/>
+          <g stroke="#D89A3C" stroke-width="2.4" stroke-linecap="round">
+            <line x1="24" y1="6" x2="24" y2="12"/>
+            <line x1="8.5" y1="12.5" x2="12.6" y2="16.6"/>
+            <line x1="39.5" y1="12.5" x2="35.4" y2="16.6"/>
+          </g>
+        </svg>
+      </span>
+      <span><b>Le Fournil<br>du Point du Jour</b><small>Boulangerie · Remiremont</small></span>
+    </a>
+    <div class="nav-cta">
+      <a class="btn btn-ghost btn-fin" href="tel:+33652886261" aria-label="Appeler la boulangerie">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .6 3.6 1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+        <span class="sr-only">Appeler le </span>Appeler
+      </a>
+      <a class="btn btn-soleil btn-fin" id="lien-panier" href="#commander" aria-label="Commander en ligne, panier vide">
+        Commander <span id="panier-compte" aria-hidden="true">(0)</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ════════ HERO ════════ -->
+<section class="hero" aria-labelledby="h-hero">
+  <div class="hero-sky" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <div class="badge-row">
+        <span class="badge"><span class="star">★</span> 4,2 / 5 — 297 avis Google</span>
+        <span class="badge badge-open">● Ouvert le dimanche</span>
+      </div>
+      <p class="eyebrow">Le pain du petit matin</p>
+      <h1 id="h-hero">Votre boulangerie de quartier à Remiremont</h1>
+      <p class="lead">Pains de tradition, viennoiseries dorées et gâteaux, sortis du fournil dès l'aube.
+        Réservez en quelques clics et venez les chercher à l'heure qui vous arrange — même le dimanche.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#commander">Réserver en click &amp; collect</a>
+        <a class="btn btn-ghost" href="#produits">Voir les produits</a>
+      </div>
+    </div>
+    <figure class="hero-figure">
+      <img src="img/hero-pains.webp" width="1000" height="700" fetchpriority="high"
+           alt="Panier de pains variés dorés et croustillants, posés sur une table aux tons ambrés du petit matin">
+      <figcaption>La fournée du jour</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ════════ INFOS RAPIDES ════════ -->
+<div class="quick">
+  <div class="wrap">
+    <span>11 rue des États-Unis, 88200 Remiremont</span>
+    <span class="dot" aria-hidden="true">•</span>
+    <a href="tel:+33652886261">06 52 88 62 61</a>
+    <span class="dot" aria-hidden="true">•</span>
+    <a href="https://www.google.com/maps/search/?api=1&amp;query=Le+Fournil+du+Point+du+Jour+11+rue+des+États-Unis+88200+Remiremont" target="_blank" rel="noopener">Itinéraire ↗</a>
+  </div>
+</div>
+
+<!-- ════════ WOW : CLICK & COLLECT ════════ -->
+<section id="commander" aria-labelledby="h-cc">
+  <div class="wrap">
+    <div class="cc-head">
+      <p class="eyebrow">La nouveauté qui change tout</p>
+      <h2 id="h-cc">Réservez votre pain en ligne</h2>
+      <p class="lead">Pains spéciaux, viennoiseries et gâteaux à réserver pour le créneau qui vous arrange.
+        Tout est prêt à votre arrivée — fini la file le dimanche matin. Paiement à la boutique, au retrait.</p>
+    </div>
+
+    <div class="cc-grid">
+      <!-- Catalogue -->
+      <div>
+        <h3 class="cat-titre" id="cat-pains">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 14c-1.7 0-3-1.3-3-3 0-1.4 1-2.6 2.3-2.9C5 6 7 4.6 9.4 4.6c1.2 0 2.3.4 3.2 1 .8-.6 1.8-1 3-1 2.4 0 4.4 1.5 5.1 3.5C22 8.4 23 9.6 23 11c0 1.7-1.3 3-3 3z" stroke="#A8702A" stroke-width="1.6"/><path d="M5 14l1 5h12l1-5" stroke="#A8702A" stroke-width="1.6" stroke-linecap="round"/></svg>
+          Pains
+        </h3>
+        <div class="produits" id="cat-pains-grid"></div>
+
+        <h3 class="cat-titre" id="cat-vienn" style="margin-top:22px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 13c3-4 15-4 18 0-3 4-15 4-18 0z" stroke="#A8702A" stroke-width="1.6"/><path d="M7 11.5l1.5 3M11 10.8l1 3.4M15 11.5l1.5 3" stroke="#A8702A" stroke-width="1.4" stroke-linecap="round"/></svg>
+          Viennoiseries &amp; douceurs
+        </h3>
+        <div class="produits" id="cat-vienn-grid"></div>
+      </div>
+
+      <!-- Panier -->
+      <aside class="panier" aria-labelledby="h-panier">
+        <h3 id="h-panier">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 8h12l-1 11a2 2 0 0 1-2 1.8H9A2 2 0 0 1 7 19zM9 8a3 3 0 0 1 6 0" stroke="#3A2A1A" stroke-width="1.6" stroke-linecap="round"/></svg>
+          Votre panier
+        </h3>
+        <p id="panier-vide">Votre panier est vide. Ajoutez vos pains et viennoiseries préférés.</p>
+        <ul id="panier-lignes"></ul>
+
+        <div id="panier-suite" hidden>
+          <div class="panier-creneau">
+            <label for="creneau">Créneau de retrait</label>
+            <select id="creneau" aria-describedby="creneau-aide"></select>
+            <p class="note" id="creneau-aide">Retrait au fournil, 11 rue des États-Unis. Dimanche inclus.</p>
+          </div>
+          <div class="panier-pied">
+            <div class="panier-ligne-total">
+              <span>Total à régler au retrait</span>
+              <b id="panier-total">0,00 €</b>
+            </div>
+            <button type="button" class="btn btn-soleil" id="valider" style="width:100%">Valider ma réservation</button>
+            <p class="note">Paiement sur place, en espèces ou par carte. Aucune donnée n'est transmise dans cette démo.</p>
+          </div>
+        </div>
+        <p class="sr-only" id="panier-status" role="status" aria-live="polite"></p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ LES PRODUITS (vitrine) ════════ -->
+<section id="produits" aria-labelledby="h-prod">
+  <div class="wrap">
+    <p class="eyebrow">Le savoir-faire du fournil</p>
+    <h2 id="h-prod">Nos pains &amp; nos viennoiseries</h2>
+    <p class="lead">Pétris, façonnés et cuits sur place, chaque jour. Une fournée le matin, une l'après-midi,
+      pour du pain frais du premier au dernier client.</p>
+
+    <div class="vitrine">
+      <article class="v-card">
+        <img src="img/pain.webp" width="800" height="600" loading="lazy"
+             alt="Pain de campagne tranché posé sur une planche en bois">
+        <div class="v-body">
+          <h3>Les pains de tradition</h3>
+          <p>Croûte caramélisée, mie alvéolée, longue fermentation. Le goût d'un vrai pain de quartier.</p>
+          <ul>
+            <li>Baguette tradition &amp; baguette de campagne</li>
+            <li>Pain de campagne au levain</li>
+            <li>Pains spéciaux : céréales, seigle, complet</li>
+          </ul>
+        </div>
+      </article>
+      <article class="v-card">
+        <img src="img/viennoiseries.webp" width="800" height="600" loading="lazy"
+             alt="Assortiment de viennoiseries et pains spéciaux disposés en cadre sur fond sombre">
+        <div class="v-body">
+          <h3>Viennoiseries &amp; gourmandises</h3>
+          <p>Feuilletage pur beurre, doré et croustillant. À réserver pour le petit-déjeuner du dimanche.</p>
+          <ul>
+            <li>Croissants &amp; pains au chocolat pur beurre</li>
+            <li>Brioches, chaussons et pains aux raisins</li>
+            <li>Gâteaux &amp; tartes à commander</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ AVIS ════════ -->
+<section id="avis" aria-labelledby="h-avis">
+  <div class="wrap">
+    <p class="eyebrow">Ce qu'en disent les clients</p>
+    <h2 id="h-avis">Un quartier qui revient chaque matin</h2>
+    <div class="note-globale">
+      <span class="note-chiffre">4,2</span>
+      <span>
+        <span class="stars" aria-hidden="true">★★★★☆</span><br>
+        <small>Note moyenne sur <strong>297 avis Google</strong></small>
+      </span>
+    </div>
+    <div class="avis-grid">
+      <!-- [À REMPLACER] Extraits d'avis illustratifs (≤ 15 mots). À remplacer par de vrais avis Google publiés. -->
+      <article class="avis-card">
+        <span class="stars" aria-label="5 sur 5">★★★★★</span>
+        <p>« Du bon pain à toute heure, et ouvert le dimanche, un vrai plus. »</p>
+        <p class="qui">Client du quartier</p>
+      </article>
+      <article class="avis-card">
+        <span class="stars" aria-label="4 sur 5">★★★★☆</span>
+        <p>« Viennoiseries toujours fraîches, accueil souriant le matin. »</p>
+        <p class="qui">Habituée</p>
+      </article>
+      <article class="avis-card">
+        <span class="stars" aria-label="5 sur 5">★★★★★</span>
+        <p>« Pratique sur le chemin, la baguette tradition est top. »</p>
+        <p class="qui">Voisin de rue</p>
+      </article>
+    </div>
+    <p class="avis-src">Note et nombre d'avis : Google, juin 2026. Extraits illustratifs à remplacer par de vrais avis.</p>
+  </div>
+</section>
+
+<!-- ════════ HORAIRES ════════ -->
+<section id="horaires" aria-labelledby="h-hor">
+  <div class="wrap">
+    <p class="eyebrow">Toujours ouvert quand vous en avez besoin</p>
+    <h2 id="h-hor">Horaires &amp; accès</h2>
+    <div class="h-grid">
+      <!-- [À REMPLACER] Horaires d'exemple crédibles pour une boulangerie de quartier ouverte le dimanche.
+           Le JSON-LD ci-dessous doit refléter les mêmes horaires que ce tableau. -->
+      <div class="h-table" role="table" aria-label="Horaires d'ouverture">
+        <div class="h-row" role="row"><span class="jour" role="cell">Lundi</span><span role="cell">6 h 30 – 19 h 30</span></div>
+        <div class="h-row" role="row"><span class="jour" role="cell">Mardi</span><span role="cell">6 h 30 – 19 h 30</span></div>
+        <div class="h-row" role="row"><span class="jour" role="cell">Mercredi</span><span role="cell">6 h 30 – 19 h 30</span></div>
+        <div class="h-row" role="row"><span class="jour" role="cell">Jeudi</span><span role="cell">6 h 30 – 19 h 30</span></div>
+        <div class="h-row" role="row"><span class="jour" role="cell">Vendredi</span><span role="cell">6 h 30 – 19 h 30</span></div>
+        <div class="h-row" role="row"><span class="jour" role="cell">Samedi</span><span role="cell">6 h 30 – 19 h 30</span></div>
+        <div class="h-row dim" role="row"><span class="jour" role="cell">Dimanche</span><span role="cell">7 h 00 – 13 h 00</span></div>
+      </div>
+      <aside class="h-aside">
+        <div class="open-now" id="open-now"><span class="pip" aria-hidden="true"></span><span id="open-txt">Horaires</span></div>
+        <h3>Au cœur de Remiremont</h3>
+        <p>11 rue des États-Unis, 88200 Remiremont. Boulangerie de quartier à fort passage, facile d'accès à pied.</p>
+        <p>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Le+Fournil+du+Point+du+Jour+11+rue+des+États-Unis+88200+Remiremont" target="_blank" rel="noopener">Ouvrir dans Google Maps ↗</a><br>
+          <a href="tel:+33652886261">06 52 88 62 61</a>
+        </p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ════════ FOOTER ════════ -->
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <h3>Le Fournil du Point du Jour</h3>
+      <p style="color:#cbb89c;max-width:38ch">Votre boulangerie de quartier à Remiremont. Pain, viennoiseries
+        et gâteaux faits maison, du lundi au dimanche.</p>
+      <a class="btn btn-soleil btn-fin" href="#commander">Réserver en ligne</a>
+    </div>
+    <div>
+      <h3>Nous trouver</h3>
+      <address class="foot-nap" style="color:#e6d3b3">
+        11 rue des États-Unis<br>
+        88200 Remiremont<br>
+        <a href="tel:+33652886261">06 52 88 62 61</a><br>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Le+Fournil+du+Point+du+Jour+11+rue+des+États-Unis+88200+Remiremont" target="_blank" rel="noopener">Itinéraire ↗</a>
+      </address>
+    </div>
+    <div>
+      <h3>Horaires</h3>
+      <p style="color:#e6d3b3;line-height:1.8">
+        Lun – Sam : 6 h 30 – 19 h 30<br>
+        <strong style="color:#fff">Dimanche : 7 h 00 – 13 h 00</strong>
+      </p>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    Boulangerie Le Fournil du Point du Jour — Remiremont (Vosges, 88200).
+  </div>
+</footer>
+
+<!-- ════════ BANDEAU LÉGAL FIXE ════════ -->
+<p id="legal">Démonstration non contractuelle réalisée à l'initiative de L'Atelier Web des Vosges, sans lien avec l'établissement. Textes et photos d'illustration — vos contenus les remplaceront.</p>
+
+<!-- ════════ OVERLAY DÉMO ════════ -->
+<div id="demo-overlay" role="dialog" aria-modal="true" aria-labelledby="demo-titre" aria-describedby="demo-desc">
+  <div class="demo-box">
+    <svg class="sun" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+      <defs><linearGradient id="g-sun2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E8A87C"/><stop offset="1" stop-color="#D89A3C"/></linearGradient></defs>
+      <line x1="24" y1="34" x2="44" y2="34" stroke="#A8702A" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M9 34 A15 15 0 0 1 39 34 Z" fill="url(#g-sun2)"/>
+      <g stroke="#D89A3C" stroke-width="2.4" stroke-linecap="round"><line x1="24" y1="6" x2="24" y2="12"/><line x1="8.5" y1="12.5" x2="12.6" y2="16.6"/><line x1="39.5" y1="12.5" x2="35.4" y2="16.6"/></g>
+    </svg>
+    <h3 id="demo-titre">Ceci est une démonstration</h3>
+    <p id="demo-desc">Votre réservation a bien été « enregistrée » pour la démo. En production, vous recevriez
+      une confirmation et la boulangerie préparerait votre commande pour le créneau choisi.</p>
+    <dl class="demo-recap" id="demo-recap"></dl>
+    <button type="button" class="btn btn-primary" id="demo-fermer" style="width:100%">J'ai compris</button>
+  </div>
+</div>
+
+<!-- ════════ JSON-LD ════════ -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Bakery",
+  "name":"Le Fournil du Point du Jour",
+  "image":"https://lumenbot.github.io/demos-tpe-88/le-fournil/img/hero-pains.webp",
+  "address":{"@type":"PostalAddress","streetAddress":"11 rue des États-Unis","postalCode":"88200","addressLocality":"Remiremont","addressRegion":"Grand Est","addressCountry":"FR"},
+  "telephone":"+33652886261",
+  "geo":{"@type":"GeoCoordinates","latitude":48.0161389,"longitude":6.5847771},
+  "servesCuisine":"Boulangerie, viennoiserie",
+  "priceRange":"€",
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.2","reviewCount":"297"},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"06:30","closes":"19:30"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"07:00","closes":"13:00"}
+  ]
+}
+</script>
+
+<!-- ════════ JS ════════ -->
+<script>
+(function(){
+  "use strict";
+  var $ = function(s,r){ return (r||document).querySelector(s); };
+
+  /* ── Réserve sous le bandeau légal fixe ── */
+  function padLegal(){
+    var l = $("#legal");
+    if (l) document.body.style.paddingBottom = (l.offsetHeight + 10) + "px";
+  }
+  window.addEventListener("resize", padLegal);
+  padLegal();
+
+  /* ── Catalogue click & collect — prix factices crédibles ── */
+  /* [À REMPLACER] Produits, descriptifs et prix d'exemple d'une boulangerie de quartier. */
+  var PRODUITS = [
+    { id:"campagne",  nom:"Pain de campagne",     desc:"Au levain, croûte épaisse, longue fermentation — 500 g.", prix:3.40, cat:"pain" },
+    { id:"tradition", nom:"Baguette tradition",   desc:"Façonnée main, cuisson du jour, croustillante.",          prix:1.30, cat:"pain" },
+    { id:"cereales",  nom:"Pain aux céréales",    desc:"Tournesol, lin, sésame — rustique et parfumé.",           prix:3.70, cat:"pain" },
+    { id:"seigle",    nom:"Pain de seigle",       desc:"Mie dense, idéal avec le fromage et les fruits de mer.",  prix:3.20, cat:"pain" },
+    { id:"croissant", nom:"Croissant pur beurre", desc:"Feuilletage doré, beurre de tourage.",                    prix:1.30, cat:"vienn" },
+    { id:"painchoc",  nom:"Pain au chocolat",     desc:"Deux barres de chocolat, feuilletage croustillant.",      prix:1.40, cat:"vienn" },
+    { id:"raisins",   nom:"Pain aux raisins",     desc:"Crème pâtissière et raisins moelleux.",                   prix:1.50, cat:"vienn" },
+    { id:"tarte",     nom:"Tarte aux pommes (4 p.)", desc:"Pâte sablée, pommes fondantes — à réserver la veille.", prix:12.50, cat:"vienn" }
+  ];
+
+  /* ── Panier : localStorage avec repli mémoire ── */
+  var CLE = "le-fournil-panier";
+  var memoire = {};
+  function lirePanier(){
+    try { return JSON.parse(localStorage.getItem(CLE)) || {}; }
+    catch(e){ return memoire; }
+  }
+  function ecrirePanier(p){
+    memoire = p;
+    try { localStorage.setItem(CLE, JSON.stringify(p)); } catch(e){}
+  }
+  function eur(n){ return n.toFixed(2).replace(".", ",") + " €"; }
+  function prodById(id){ for (var i=0;i<PRODUITS.length;i++){ if (PRODUITS[i].id===id) return PRODUITS[i]; } return null; }
+  function annoncer(msg){ var s=$("#panier-status"); if(s) s.textContent = msg; }
+
+  /* ── Rendu des cartes produits ── */
+  (function rendreCatalogue(){
+    var gp = $("#cat-pains-grid"), gv = $("#cat-vienn-grid");
+    PRODUITS.forEach(function(prod){
+      var c = document.createElement("article"); c.className = "produit";
+      var h = document.createElement("h4"); h.textContent = prod.nom;
+      var d = document.createElement("p"); d.className = "desc"; d.textContent = prod.desc;
+      var bas = document.createElement("div"); bas.className = "bas";
+      var px = document.createElement("span"); px.className = "prix"; px.textContent = eur(prod.prix);
+      var btn = document.createElement("button");
+      btn.type = "button"; btn.className = "btn btn-soleil btn-fin"; btn.textContent = "Ajouter";
+      btn.setAttribute("aria-label", "Ajouter " + prod.nom + " au panier");
+      btn.addEventListener("click", function(){ changerQte(prod.id, 1); annoncer(prod.nom + " ajouté au panier."); });
+      bas.appendChild(px); bas.appendChild(btn);
+      c.appendChild(h); c.appendChild(d); c.appendChild(bas);
+      (prod.cat === "vienn" ? gv : gp).appendChild(c);
+    });
+  })();
+
+  function changerQte(id, delta){
+    var p = lirePanier();
+    var q = (p[id] || 0) + delta;
+    if (delta === -99) q = 0;
+    if (q <= 0) delete p[id]; else p[id] = q;
+    ecrirePanier(p);
+    rendrePanier();
+  }
+
+  function rendrePanier(){
+    var p = lirePanier(), ul = $("#panier-lignes"), ids = Object.keys(p);
+    ul.textContent = "";
+    var nb = 0, total = 0;
+    ids.forEach(function(id){
+      var prod = prodById(id); if (!prod) return;
+      var q = p[id]; nb += q; total += prod.prix * q;
+      var li = document.createElement("li");
+      var nom = document.createElement("span"); nom.className = "l-nom"; nom.textContent = prod.nom;
+      var su = document.createElement("small"); su.textContent = eur(prod.prix) + " l'unité"; nom.appendChild(su);
+      var qte = document.createElement("span"); qte.className = "l-qte";
+      var bm = document.createElement("button"); bm.type = "button"; bm.textContent = "−";
+      bm.setAttribute("aria-label", "Retirer un " + prod.nom);
+      bm.addEventListener("click", function(){ changerQte(id, -1); });
+      var nbq = document.createElement("span"); nbq.textContent = q;
+      var bp = document.createElement("button"); bp.type = "button"; bp.textContent = "+";
+      bp.setAttribute("aria-label", "Ajouter un " + prod.nom);
+      bp.addEventListener("click", function(){ changerQte(id, 1); });
+      qte.appendChild(bm); qte.appendChild(nbq); qte.appendChild(bp);
+      var tot = document.createElement("span"); tot.className = "l-total"; tot.textContent = eur(prod.prix * q);
+      var sup = document.createElement("button"); sup.type = "button"; sup.className = "l-suppr"; sup.textContent = "Supprimer";
+      sup.setAttribute("aria-label", "Supprimer " + prod.nom + " du panier");
+      sup.addEventListener("click", function(){ changerQte(id, -99); annoncer(prod.nom + " retiré du panier."); });
+      li.appendChild(nom); li.appendChild(qte); li.appendChild(tot); li.appendChild(sup);
+      ul.appendChild(li);
+    });
+    $("#panier-compte").textContent = "(" + nb + ")";
+    $("#lien-panier").setAttribute("aria-label", "Commander en ligne — " + nb + " article" + (nb > 1 ? "s" : "") + " au panier");
+    $("#panier-vide").hidden = nb > 0;
+    $("#panier-suite").hidden = nb === 0;
+    $("#panier-total").textContent = eur(total);
+  }
+
+  /* ── Créneaux de retrait — amplitude matinale, dimanche inclus ── */
+  (function remplirCreneaux(){
+    var sel = $("#creneau"); if (!sel) return;
+    var jours = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+    var heuresSem = ["7 h 00","8 h 30","10 h 00","11 h 30","16 h 00","17 h 30"];
+    var heuresDim = ["7 h 30","9 h 00","10 h 30","12 h 00"]; // dimanche 7 h-13 h
+    var d = new Date(), ajout = 0, n = 0;
+    while (n < 4 && ajout < 8){
+      ajout++;
+      var jd = new Date(d.getTime() + ajout*86400000);
+      var dow = jd.getDay();
+      var heures = (dow === 0) ? heuresDim : heuresSem;
+      var prefixe = (ajout === 1 ? "Demain " : "") + jours[dow] + " " + jd.getDate() + "/" + (jd.getMonth()+1);
+      heures.forEach(function(h){
+        var o = document.createElement("option");
+        o.value = prefixe + " à " + h;
+        o.textContent = prefixe + " — " + h + (dow === 0 ? " ☀" : "");
+        sel.appendChild(o);
+      });
+      n++;
+    }
+  })();
+
+  /* ── Validation → overlay démo ── */
+  function ouvrirOverlay(){
+    var p = lirePanier(), ids = Object.keys(p), recap = $("#demo-recap");
+    recap.textContent = "";
+    var total = 0, nb = 0;
+    ids.forEach(function(id){
+      var prod = prodById(id); if(!prod) return;
+      var q = p[id]; nb += q; total += prod.prix*q;
+      var dt = document.createElement("dt"); dt.textContent = prod.nom;
+      var dd = document.createElement("dd"); dd.textContent = "× " + q + "  —  " + eur(prod.prix*q);
+      recap.appendChild(dt); recap.appendChild(dd);
+    });
+    var dt2 = document.createElement("dt"); dt2.textContent = "Créneau de retrait";
+    var dd2 = document.createElement("dd"); dd2.textContent = $("#creneau").value || "à choisir";
+    var dt3 = document.createElement("dt"); dt3.textContent = "Total (au retrait)";
+    var dd3 = document.createElement("dd"); dd3.textContent = eur(total) + "  ·  " + nb + " article" + (nb>1?"s":"");
+    recap.appendChild(dt2); recap.appendChild(dd2); recap.appendChild(dt3); recap.appendChild(dd3);
+    var ov = $("#demo-overlay"); ov.classList.add("on");
+    $("#demo-fermer").focus();
+  }
+  function fermerOverlay(){ $("#demo-overlay").classList.remove("on"); $("#valider").focus(); }
+
+  $("#valider").addEventListener("click", function(){
+    if (Object.keys(lirePanier()).length === 0){ annoncer("Ajoutez au moins un produit avant de valider."); return; }
+    ouvrirOverlay();
+  });
+  $("#demo-fermer").addEventListener("click", fermerOverlay);
+  $("#demo-overlay").addEventListener("click", function(e){ if(e.target === this) fermerOverlay(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape" && $("#demo-overlay").classList.contains("on")) fermerOverlay(); });
+
+  /* ── Indicateur ouvert / fermé (horaires d'exemple) ── */
+  (function ouvertMaintenant(){
+    var el = $("#open-now"), txt = $("#open-txt"); if(!el) return;
+    var now = new Date(), dow = now.getDay(), m = now.getHours()*60 + now.getMinutes();
+    var ouvre, ferme;
+    if (dow === 0){ ouvre = 7*60; ferme = 13*60; } else { ouvre = 6*60+30; ferme = 19*60+30; }
+    var ouvert = m >= ouvre && m < ferme;
+    if (ouvert){ txt.textContent = "Ouvert maintenant"; el.classList.remove("closed"); }
+    else { txt.textContent = (dow === 0 ? "Fermé — réservez en ligne" : "Fermé — réservez en ligne pour demain"); el.classList.add("closed"); }
+  })();
+
+  rendrePanier();
+})();
+</script>
+</body>
+</html>
